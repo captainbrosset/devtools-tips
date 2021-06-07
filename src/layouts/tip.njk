@@ -1,0 +1,20 @@
+---
+layout: home.njk
+templateEngineOverride: njk
+---
+<main>
+    <div class="tip-content">
+        <h2>{{ title }}</h2>
+        {{ content | safe }}
+    </div>
+    <ul class="tags">
+    {%- for tag in tags | onlyTags -%}
+        <li class="hover-box tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+    {%- endfor -%}
+    </ul>
+    <ul class="browsers">
+    {%- for browser in tags | onlyBrowsers -%}
+        <li class="hover-box browser"><a href="/browser/{{ browser | processBrowserTagName }}">{{ browser | processBrowserTagName }}</a></li>
+    {%- endfor -%}
+    </ul>
+</main>

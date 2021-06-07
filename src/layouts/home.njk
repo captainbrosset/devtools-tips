@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools Tips</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">DevTools Tips</a></h1>
+      <label class="search">
+        <input type="text" id="search" placeholder="Start typing to find tips">
+      </label>
+      <ul class="search-results tips"></ul>
+    </header>
+    {{ content | safe }}
+    <script>
+      const allTips = [
+      {%- for post in collections.all -%}
+        {url: "{{ post.url }}", title: "{{ post.data.title }}"},
+      {%- endfor -%}
+      ];
+
+      function findMatchingTips(query) {
+        return allTips.filter(tip => {
+          // TODO.
+          return tip.title.toLowerCase().includes(query.toLowerCase());
+        });
+      }
+
+      let resultPanel = null;
+
+      function emptyResults() {
+        if (resultPanel) {
+          resultPanel.innerHTML = '';
+        }
+      }
+
+      function showMatchingTips(tips, query) {
+        if (!resultPanel) {
+          resultPanel = document.querySelector('.search-results');
+        }
+
+        resultPanel.innerHTML = '';
+
+        for (const {title, url} of tips) {
+          const li = document.createElement('li');
+          li.classList.add('result', 'hover-box', 'tip');
+
+          const a = document.createElement('a');
+          a.href = url;
+
+          const matchStart = title.toLowerCase().indexOf(query.toLowerCase());
+          const matchLength = query.length;
+
+          a.appendChild(document.createTextNode(title.substring(0, matchStart)));
+          
+          const highlighted = document.createElement('span');
+          highlighted.classList.add('highlight');
+          highlighted.textContent = title.substring(matchStart, matchStart + matchLength);
+          a.appendChild(highlighted);
+
+          a.appendChild(document.createTextNode(title.substring(matchStart + matchLength)));
+
+          li.appendChild(a);
+
+          resultPanel.appendChild(li);
+        }
+      }
+
+      const searchField = document.querySelector('#search');
+      searchField.addEventListener('input', () => {
+        const q = searchField.value.trim();
+        if (q.length < 2) {
+          emptyResults();
+          return;
+        }
+        const tips = findMatchingTips(q);
+        if (tips.length) {
+          showMatchingTips(tips, q);
+        } else {
+          emptyResults();
+        }
+      });
+    </script>
+  </body>
+</html>

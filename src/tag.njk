@@ -1,0 +1,24 @@
+---js
+{
+  layout: "home.njk",
+  templateEngineOverride: "njk",
+  eleventyExcludeFromCollections: true,
+  pagination: {
+      data: "collections",
+      size: 1,
+      alias: "tag",
+      before: function(data) {
+        return data.filter(entry => !entry.startsWith('browser:'));
+      }
+  },
+  permalink: "tag/{{ tag | slug }}/"
+}
+---
+<main>
+  <h2>{{ tag }} tips</h2>
+  <ul class="tips">
+    {%- for post in collections[tag] -%}
+    <li class="hover-box tip"><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {%- endfor -%}
+  </ul>
+</main>
