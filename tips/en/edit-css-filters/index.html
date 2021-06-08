@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools Tips</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">DevTools Tips</a></h1>
+      <label class="search">
+        <input type="text" id="search" placeholder="Start typing to find tips">
+      </label>
+      <ul class="search-results tips"></ul>
+    </header>
+    <main>
+    <h2>Edit CSS filters</h2>
+    <ul class="tags"><li class="hover-box tag"><a href="/tag/css">css</a></li></ul>
+    <ul class="browsers"><li class="hover-box browser"><a href="/browser/firefox">firefox</a></li></ul>
+    <div class="tip-content">
+        <p>The <a href="https://developer.mozilla.org/docs/Web/CSS/filter"><code>filter</code></a> property in CSS lets you change the way a particular element gets rendered.</p>
+<p>Firefox provides a visual editor to play with CSS filters. You can add or remove filter functions from the list, re-order them, edit individual functions and even create presets that you can reuse later.</p>
+<ul>
+<li>In the Rules panel, find an existing <code>filter</code> property, or add a new one.</li>
+<li>Click on the filter swatch icon next to the filter value.</li>
+</ul>
+<p><a href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Edit_CSS_filters">Learn mode on MDN</a>.</p>
+<p><img src="/assets/img/edit-css-filters.png" alt="Screenshot of the filter editing UI in Firefox"></p>
+
+    </div>
+</main>
+
+    <script>
+      const allTips = [{url: "/tips/en/change-color-theme/", title: "Change the color theme of DevTools"},{url: "/tips/en/copy-from-console/", title: "Copy an object from the console"},{url: "/tips/en/debugger-statement/", title: "Use the debugger statement to pause script execution"},{url: "/tips/en/edit-css-filters/", title: "Edit CSS filters"},{url: "/tips/en/execute-commands/", title: "Use commands to do things faster"},{url: "/tips/en/expand-nodes-recursively/", title: "Expand DOM nodes recursively"},{url: "/tips/en/find-css-changes/", title: "Find and export CSS changes"},{url: "/tips/en/find-inactive-styles/", title: "Find inactive CSS styles"},{url: "/tips/en/get-current-element-in-console/", title: "Get the selected element in the console"},{url: "/tips/en/highlight-matching-elements/", title: "Highlight all the elements that a CSS rule matches"},{url: "/tips/en/query-dom-from-console/", title: "Find DOM elements from the console"},{url: "/tips/en/see-the-page-in-3d/", title: "See the page in 3D"},{url: "/tips/en/simulate-pseudo-classes/", title: "Simulate pseudo CSS classes"},{url: "/tips/en/unminify-javascript-code/", title: "Unminify JavaScript code to easily read and debug it"},{url: "/tips/en/use-another-language/", title: "Switch DevTools to another language"},];
+    </script>
+    <script src="/assets/search.js"></script>
+  </body>
+</html>

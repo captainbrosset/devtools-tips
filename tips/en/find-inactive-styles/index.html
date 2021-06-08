@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools Tips</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">DevTools Tips</a></h1>
+      <label class="search">
+        <input type="text" id="search" placeholder="Start typing to find tips">
+      </label>
+      <ul class="search-results tips"></ul>
+    </header>
+    <main>
+    <h2>Find inactive CSS styles</h2>
+    <ul class="tags"><li class="hover-box tag"><a href="/tag/css">css</a></li><li class="hover-box tag"><a href="/tag/debug">debug</a></li></ul>
+    <ul class="browsers"><li class="hover-box browser"><a href="/browser/firefox">firefox</a></li></ul>
+    <div class="tip-content">
+        <p>Firefox has a unique feature that helps find CSS styles that don't have any effect on the page.</p>
+<p>This is not an audit tool that helps with removing useless CSS rules, but it is useful to know when a given CSS property isn't doing anything on the selected element.</p>
+<ul>
+<li>Select an element in the Inspector panel</li>
+<li>Look at the Rules sidebar panel</li>
+<li>If you see a property that is greyed out and has an information icon next to it, then that means it is currently inactive</li>
+<li>Hover over the information icon to know why the property is inactive</li>
+</ul>
+<p><img src="/assets/img/find-inactive-styles.webp" alt="Screenshot of the inactive style feature"></p>
+
+    </div>
+</main>
+
+    <script>
+      const allTips = [{url: "/tips/en/change-color-theme/", title: "Change the color theme of DevTools"},{url: "/tips/en/copy-from-console/", title: "Copy an object from the console"},{url: "/tips/en/debugger-statement/", title: "Use the debugger statement to pause script execution"},{url: "/tips/en/edit-css-filters/", title: "Edit CSS filters"},{url: "/tips/en/execute-commands/", title: "Use commands to do things faster"},{url: "/tips/en/expand-nodes-recursively/", title: "Expand DOM nodes recursively"},{url: "/tips/en/find-css-changes/", title: "Find and export CSS changes"},{url: "/tips/en/find-inactive-styles/", title: "Find inactive CSS styles"},{url: "/tips/en/get-current-element-in-console/", title: "Get the selected element in the console"},{url: "/tips/en/highlight-matching-elements/", title: "Highlight all the elements that a CSS rule matches"},{url: "/tips/en/query-dom-from-console/", title: "Find DOM elements from the console"},{url: "/tips/en/see-the-page-in-3d/", title: "See the page in 3D"},{url: "/tips/en/simulate-pseudo-classes/", title: "Simulate pseudo CSS classes"},{url: "/tips/en/unminify-javascript-code/", title: "Unminify JavaScript code to easily read and debug it"},{url: "/tips/en/use-another-language/", title: "Switch DevTools to another language"},];
+    </script>
+    <script src="/assets/search.js"></script>
+  </body>
+</html>

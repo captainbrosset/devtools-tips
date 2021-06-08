@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+
+body {
+	font-size: 13pt;
+    font-family: Arial;
+    margin: 0;
+	background: linear-gradient(to bottom, aliceblue, transparent);
+    background-repeat: repeat-x;
+}
+
+a {
+    color: #3e8f8b;
+}
+
+header {
+    padding: 2rem 2rem 0 2rem;
+}
+header h1 {
+    text-align: center;
+    border-radius: 4px;
+    font-size: 4rem;
+    font-weight: normal;
+    font-family: courier;
+}
+header a {
+    color: #285452;
+    text-decoration: none;
+}
+header .search {
+    margin-left: auto;
+}
+
+.search input {
+    padding: 1rem;
+    width: 100%;
+    border: 2px solid #8c7603;
+    border-radius: 4px;
+    background: #ffd70030;
+    margin: 1rem 0 0 0;
+}
+.search input:focus-visible {
+    outline: 2px solid gold;
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 2rem 2rem 2rem;
+    line-height: 1.5;
+}
+
+.hover-box {
+    border-radius: 4px;
+    line-height: 1;
+    text-align: center;
+}
+.hover-box:hover {
+    filter: brightness(80%);
+}
+.hover-box a {
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.browsers, .tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.tips {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.tips .tip {
+    background: #eee;
+}
+.tags .tag {
+    background: #69e1db;
+}
+.tips .tip a {
+    color: black;
+    height: 100%;
+}
+.tags .tag a {
+    color: black;
+}
+.browsers .browser {
+    background: gold;
+}
+.browsers .browser a {
+    color: black;
+}
+
+.hover-box a:focus-visible {
+    outline: none;
+}
+.hover-box:focus-within {
+    outline: 2px solid black;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.tip-content img {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    border: 1rem solid aliceblue;
+}
+
+.tip-content ul, .tip-content li {
+    list-style: square;
+    margin-left: 1rem;
+}
+
+.search-results:empty {
+    display: none;
+}
+.search-results {
+    margin: 1rem 0 0 0;
+}
+.search-results .highlight {
+    background: gold;
+}
+
+code {
+    font-size: small;
+    background: #333;
+    padding: .25rem;
+    border-radius: 4px;
+    color: white;
+    vertical-align: middle;
+    font-weight: bold;
+    letter-spacing: .07rem;
+}
