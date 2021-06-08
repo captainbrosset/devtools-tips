@@ -1,0 +1,22 @@
+name: Build site
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check-out the repo under $GITHUB_WORKSPACE
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      # Install deps
+      - name: Install deps
+        uses: bahmutov/npm-install@v1
+      
+      # Build with 11ty
+      - name: Build 11ty
+        uses: mcfitzgerald/action-build-eleventy@2.01
+        with:
+          path: $GITHUB_WORKSPACE
