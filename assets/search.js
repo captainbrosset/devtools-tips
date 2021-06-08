@@ -43,8 +43,6 @@ function showMatchingTips(tips, query) {
 
         li.appendChild(a);
 
-        debugger;
-
         resultPanel.appendChild(li);
     }
 }
