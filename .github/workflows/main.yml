@@ -13,7 +13,6 @@ jobs:
       # Check-out the repo under $GITHUB_WORKSPACE
       - name: Checkout repo
         uses: actions/checkout@v2
-        with: main
 
       # Install deps
       - name: Install deps
