@@ -1,5 +1,6 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addFilter("processBrowserTagName", function(name) {
     return name.split(':')[1];
