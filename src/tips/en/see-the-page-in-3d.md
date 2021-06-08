@@ -1,6 +1,6 @@
 ---
 title: See the page in 3D
-tags: ["elements", "dom", "3d", "css", "z-index", "browser:edge"]
+tags: ["html", "css", "browser:edge"]
 ---
 See your page in 3 dimensions to quickly find out how deeply nested it is and fix z-index stacking issues.
 

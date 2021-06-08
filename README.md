@@ -1,17 +1,11 @@
-# DevTools tips
+# DevTools Tips
 
 A collection of useful, cross-browser, tips and tricks to get more comfortable with using DevTools.
 
 ## TODO
 
-* A home page with:
-  * A random tip of the day
-  * A search field to find tips
-  * A way to browse by category
-  * And by browser
-* Each tip should have an image/gif
 * Add more tips
-* Review README and write a CONTRIBUTING guide too
+* Add an image for each tip
 * Add license
 * Domain name
 * Github task to build site (+auto build everyday to pick up a new tip of the day)
@@ -19,4 +13,6 @@ A collection of useful, cross-browser, tips and tricks to get more comfortable w
 
 ## Contributing
 
-See the [contributing](CONTRIBUTING.md) documentation.
+You can help us by improving existing tips (correcting typos, improving copy, adding images), adding new tips, or translating tips in other languages!
+
+See the [contribution documentation](CONTRIBUTING.md) to learn more.

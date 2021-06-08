@@ -1,6 +1,6 @@
 ---
 title: Highlight all the elements that a CSS rule matches
-tags: ["elements", "css", "rules", "highlighter", "selector", "browser:edge", "browser:firefox", "browser:chrome"]
+tags: ["html", "css", "highlighter", "browser:edge", "browser:firefox", "browser:chrome"]
 ---
 When you want to know which elements a given CSS rule will apply to, in addition to the currently selected element, you can:
 

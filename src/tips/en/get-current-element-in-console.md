@@ -1,6 +1,6 @@
 ---
 title: Get the selected element in the console
-tags: ["console", "elements", "browser:edge", "browser:firefox", "browser:chrome"]
+tags: ["console", "html", "productivity", "browser:edge", "browser:firefox", "browser:chrome"]
 ---
 If you selected an element in the elements panel (in Chrome or Edge) or the inspector panel (in Firefox), you can refer to it in the console using `$0`.
 

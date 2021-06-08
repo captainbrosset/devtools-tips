@@ -1,6 +1,6 @@
 ---
 title: Simulate pseudo CSS classes
-tags: ["elements", "css", "pseudo", "browser:edge", "browser:firefox", "browser:chrome"]
+tags: ["html", "css", "debug", "browser:edge", "browser:firefox", "browser:chrome"]
 ---
 If you use `:hover`, `:active`, and other such pseudo-classes in CSS, you can actually simulate these states in DevTools without having to hover over or click on buttons and links.
 

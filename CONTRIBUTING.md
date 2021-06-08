@@ -11,13 +11,17 @@
   * Add a front matter to the file with the following information:
     * `title`: A title for the tip
     * `tags`: A list of categories and browsers that correspond to this tip
-      * Try to reuse existing categories (found in other tips, like `css`, `console`, etc.)
+      * Reuse existing categories (found in other tips, like `css`, `console`, etc.)
       * At the end of the list, insert the browsers that this tip works on, by adding a tag that starts with `browser:` followed by either `edge`, `firefox` or `chrome`
   * Add the content of the tip in the file, as markdown. Don't use headings, but feel free to format your content with italic, bold, bullet points, line breaks, etc.
   * Try to add an image as this helps user a lot. Please include only 1 image if possible, and please add alt text.
     * Place the image in `src/assets/img` and give it the same name as the tip md file: `<the-new-id>.png`
 * Build the site locally to test that things work fine
 * Open a pull request to get your new tip reviewed and checked-in
+
+## Translating tips
+
+_TODO_
 
 ## Building and testing the site locally
 
@@ -26,3 +30,5 @@ First make sure you have cloned the repo locally, then open a command line at th
 * `npm init` to get all of the dependencies installed
 * `npx @11ty/eleventy --serve` to launch the build and start a local server
 * Then open a browser and navigate to [localhost:8080](localhost:8080)
+
+The page should auto-reload as you make changes to source code.

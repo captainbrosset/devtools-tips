@@ -3,10 +3,7 @@ layout: home.njk
 templateEngineOverride: njk
 ---
 <main>
-    <div class="tip-content">
-        <h2>{{ title }}</h2>
-        {{ content | safe }}
-    </div>
+    <h2>{{ title }}</h2>
     <ul class="tags">
     {%- for tag in tags | onlyTags -%}
         <li class="hover-box tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
@@ -17,4 +14,7 @@ templateEngineOverride: njk
         <li class="hover-box browser"><a href="/browser/{{ browser | processBrowserTagName }}">{{ browser | processBrowserTagName }}</a></li>
     {%- endfor -%}
     </ul>
+    <div class="tip-content">
+        {{ content | safe }}
+    </div>
 </main>

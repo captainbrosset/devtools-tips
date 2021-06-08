@@ -18,6 +18,10 @@ body {
     background-repeat: repeat-x;
 }
 
+a {
+    color: #3e8f8b;
+}
+
 header {
     padding: 2rem 2rem 0 2rem;
 }

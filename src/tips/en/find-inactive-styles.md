@@ -1,6 +1,6 @@
 ---
 title: Find inactive CSS styles
-tags: ["css", "inactive", "browser:firefox"]
+tags: ["css", "debug", "browser:firefox"]
 ---
 Firefox has a unique feature that helps find CSS styles that don't have any effect on the page.
 

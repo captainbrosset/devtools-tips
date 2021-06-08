@@ -1,6 +1,6 @@
 ---
 title: Switch DevTools to another language
-tags: ["i18n", "localization", "language", "ui", "browser:edge", "browser:firefox"]
+tags: ["personalization", "browser:edge", "browser:firefox"]
 ---
 If you want to use DevTools in another language than English, you can do it in Edge and Firefox.
 
