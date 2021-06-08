@@ -1,6 +1,6 @@
 # DevTools Tips
 
-A collection of useful, cross-browser, tips and tricks to get more comfortable with using DevTools.
+A collection of useful, cross-browser, tips and tricks to get more comfortable and productive with using DevTools.
 
 ## TODO
 
@@ -8,7 +8,6 @@ A collection of useful, cross-browser, tips and tricks to get more comfortable w
 * Add an image for each tip
 * Add license
 * Domain name
-* Github task to build site (+auto build everyday to pick up a new tip of the day)
 * i18n
 
 ## Contributing
