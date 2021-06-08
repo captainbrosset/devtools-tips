@@ -14,3 +14,5 @@ In Edge, you can choose between English and the language the browser is in. To d
 And then in DevTools:
 * Open the settings (press F1 or click the cog icon).
 * Click the "Match browser language" checkbox.
+
+![Screenshot of the settings panel in Edge showing a checkbox to match devtools with the browser language](/assets/img/use-another-language.png)
