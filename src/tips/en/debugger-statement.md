@@ -1,6 +1,6 @@
 ---
 title: Use the debugger statement to pause script execution
-tags: ["javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge"]
+tags: ["javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
 ---
 If you prefer to use `console.log()` statements rather than the JavaScript debugger because you find it difficult to set breakpoints in DevTools (or you can't), then you can use the `debugger` statement in JavaScript.
 

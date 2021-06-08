@@ -1,6 +1,6 @@
 ---
 title: Find DOM elements from the console
-tags: ["console", "html", "browser:edge", "browser:firefox", "browser:chrome"]
+tags: ["console", "html", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
 ---
 `$` and `$$` are 2 functions you can use in the console to find elements in the page.
 
