@@ -14,6 +14,8 @@ module.exports = function (eleventyConfig) {
     return browsers.filter(browser => browser.startsWith('browser:'));
   });
 
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
   return {
     dir: {
       input: "src",

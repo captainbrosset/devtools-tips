@@ -15,6 +15,10 @@
       <ul class="search-results tips"></ul>
     </header>
     {{ content | safe }}
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>&copy; {% year %} <a href="https://patrickbrosset.com">Patrick Brosset</a></p>
+    </footer>
     <script>
       const allTips = [
       {%- for post in collections.all -%}

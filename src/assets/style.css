@@ -14,7 +14,7 @@ body {
 	font-size: 13pt;
     font-family: Arial;
     margin: 0;
-	background: linear-gradient(to bottom, aliceblue, transparent);
+	background: linear-gradient(to bottom, aliceblue 0, transparent 70vh);
     background-repeat: repeat-x;
 }
 
@@ -139,12 +139,18 @@ main h2 {
 }
 
 code {
-    font-size: small;
+    font-size: 1rem;
     background: #333;
     padding: .25rem;
     border-radius: 4px;
     color: white;
     vertical-align: middle;
     font-weight: bold;
-    letter-spacing: .07rem;
+    white-space: nowrap;
+}
+
+footer {
+	text-align: center;
+	padding: 2rem;
+	background: aliceblue;
 }
