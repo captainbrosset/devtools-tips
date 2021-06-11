@@ -15,15 +15,15 @@
       <ul class="search-results tips"></ul>
     </header>
     <main>
-    <h2>Simulate pseudo CSS classes</h2>
+    <h2>View performance markers in order</h2>
     <div class="tip-content">
-        <p>If you use <code>:hover</code>, <code>:active</code>, and other such pseudo-classes in CSS, you can actually simulate these states in DevTools without having to hover over or click on buttons and links.</p>
-<p>Open the Styles panel (in Chrome, Edge or Safari) or the Rules panel (in Firefox), and click the <code>:hov</code> button. This will expand a section that allows you to lock one or multiple of these pseudo-classes on the selected element.</p>
-<p><img src="/assets/img/simulate-pseudo-classes.png" alt="Screenshot of the :hov panel to simulate various pseudo-classes"></p>
+        <p>When logging <code>performance.timing</code> events to the console, they appear in alphabetical order since they are properties of the <code>PerformanceTiming</code> object.</p>
+<p>In order to view them in order, you can use <code>console.table(performance.timing)</code> and click on the column heading to sort them by time.</p>
+<p><img src="/assets/img/view-perf-markers-in-order.png" alt="Screenshot of the console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties"></p>
 
     </div>
-    <ul class="tags"><li class="hover-box tag"><a href="/tag/html">html</a></li><li class="hover-box tag"><a href="/tag/css">css</a></li><li class="hover-box tag"><a href="/tag/debug">debug</a></li></ul>
-    <ul class="browsers"><li class="hover-box browser"><a href="/browser/edge">edge</a></li><li class="hover-box browser"><a href="/browser/firefox">firefox</a></li><li class="hover-box browser"><a href="/browser/chrome">chrome</a></li><li class="hover-box browser"><a href="/browser/safari">safari</a></li></ul>
+    <ul class="tags"><li class="hover-box tag"><a href="/tag/javascript">javascript</a></li><li class="hover-box tag"><a href="/tag/perf">perf</a></li><li class="hover-box tag"><a href="/tag/console">console</a></li></ul>
+    <ul class="browsers"><li class="hover-box browser"><a href="/browser/edge">edge</a></li><li class="hover-box browser"><a href="/browser/chrome">chrome</a></li><li class="hover-box browser"><a href="/browser/safari">safari</a></li></ul>
 </main>
 
     <script>
