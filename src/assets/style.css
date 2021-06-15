@@ -14,8 +14,6 @@ body {
 	font-size: 13pt;
     font-family: Arial;
     margin: 0;
-	background: linear-gradient(to bottom, aliceblue 0, transparent 70vh);
-    background-repeat: repeat-x;
 }
 
 a {
@@ -24,25 +22,25 @@ a {
 
 header {
     padding: 2rem 2rem 0 2rem;
+    text-align: center;
 }
 header h1 {
     text-align: center;
-    border-radius: 4px;
-    font-size: 4rem;
-    font-weight: normal;
-    font-family: courier;
 }
-header a {
-    color: #285452;
-    text-decoration: none;
-}
-header .search {
-    margin-left: auto;
+header h1 a {
+    display: inline-block;
+    text-indent: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 10rem;
+    height: 10rem;
+    background: url(/assets/logo.png) no-repeat center;
+    background-size: contain;
 }
 
 .search input {
     padding: 1rem;
-    width: 100%;
+    width: 50%;
     border: 2px solid #8c7603;
     border-radius: 4px;
     background: #ffd70030;
