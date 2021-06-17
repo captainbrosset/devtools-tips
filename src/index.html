@@ -23,24 +23,35 @@
     return browsers;
   },
   getRandomTipsOfTheDay: function(allTips) {
+    function extractImage(content) {
+      const match = content.match(/<img src="([^"]+)"/);
+      return match ? match[1] : null;
+    }
+
     let n = 5;
     const result = new Array(n);
     let len = allTips.length;
     const taken = new Array(len);
     while (n--) {
       const x = Math.floor(Math.random() * len);
-      result[n] = allTips[x in taken ? taken[x] : x];
+      const post = allTips[x in taken ? taken[x] : x];
+      const image = extractImage(post.templateContent);
+      result[n] = {
+        title: post.data.title,
+        url: post.url,
+        image
+      };
       taken[x] = --len in taken ? taken[len] : len;
     }
     return result;
   }
 }
 ---
-<main>
+<main class="home">
   <h2>tips of the day</h2>
   <ul class="tips">
   {%- for post in getRandomTipsOfTheDay(collections.all) -%}
-    <li class="hover-box tip"><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    <li class="hover-box tip"><a href="{{ post.url }}"{%if post.image %} style="background-image:url({{ post.image }});" class="has-image"{% endif %}>{{ post.title }}</a></li>
   {%- endfor -%}
   </ul>
 
