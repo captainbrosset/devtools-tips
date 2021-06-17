@@ -1,4 +1,6 @@
-# DevTools Tips [devtoolstips.org](https://devtoolstips.org/)
+<img src="https://raw.githubusercontent.com/captainbrosset/devtools-tips/main/src/assets/logo.png" width="200">
+
+# [DevTools Tips](https://devtoolstips.org/)
 
 A collection of nice and simple cross-browser tips and tricks to get you more comfortable and productive with using DevTools.
 
