@@ -13,7 +13,8 @@ h1, h2, h3 {
 body {
 	font-size: 13pt;
     font-family: Arial;
-    margin: 0;
+    margin: 0 auto;
+	max-width: 1000px;
 }
 
 a {
@@ -58,9 +59,9 @@ main {
 }
 
 .hover-box {
-    border-radius: 4px;
     line-height: 1;
     text-align: center;
+    border-radius: 4px;
 }
 .hover-box:hover {
     filter: brightness(80%);
@@ -69,6 +70,7 @@ main {
     padding: 1rem;
     text-decoration: none;
     display: block;
+    border-radius: inherit;
 }
 
 .browsers, .tags {
@@ -78,12 +80,14 @@ main {
     gap: .5rem;
 }
 .tips {
-    display: grid;
+    display: flex;
     gap: .5rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .tips .tip {
     background: #eee;
+    flex: 1 300px;
 }
 .tags .tag {
     background: #69e1db;
@@ -107,6 +111,15 @@ main {
 }
 .hover-box:focus-within {
     outline: 2px solid black;
+}
+
+.home .tip a {
+    padding: 1rem 1rem 8rem 1rem;
+}
+.home .tip a.has-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 4rem;
 }
 
 main h2 {

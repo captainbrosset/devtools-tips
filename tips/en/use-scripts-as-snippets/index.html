@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Use commands to do things faster</title>
+    <title>Re-use scripts as snippets</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -24,15 +24,21 @@
     </header>
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <main>
-    <h2>Use commands to do things faster</h2>
+    <h2>Re-use scripts as snippets</h2>
     <div class="tip-content">
-        <p>There is a command menu in Edge and Chrome that allows you to quickly access many different features of DevTools without having to navigate the UI.</p>
-<p>Press <code>ctrl+shift+P</code> (or <code>cmd+shift+P</code> on mac) to open the command menu, and just start typing.</p>
-<p>You can use this to, for example, switch to a different panel by typing its name, change the color theme, change settings, disable javascript, etc.</p>
-<p><img src="/assets/img/execute-commands.png" alt="Screenshot of Edge's command menu"></p>
+        <p>The console is great to write JavaScript to read from the document or manipulate it but it's a terrible editor.</p>
+<p>The sources panel (in Edge or Chrome), however, is a full editor and you can use it to write more complex scripts to run in the context of the current page and keep them for later re-use.</p>
+<p>These are called <a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/snippets">snippets</a> and you can access them in the Sources tool on the left hand side (you may have to use the <code>&gt;&gt;</code> to reach them). You can create as many named snippets as you like and remove ones you don't need any more.<br>
+Snippets have full access to the window object and you can use any of the console API methods in them too.</p>
+<p>For example, this script would replace each image in the document with its alternative text:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token function">$$</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">i</span><span class="token operator">=></span><span class="token punctuation">{</span><br>   <span class="token keyword">let</span> txt <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'span'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>   txt<span class="token punctuation">.</span>innerText <span class="token operator">=</span> i<span class="token punctuation">.</span>alt<span class="token punctuation">;</span><br>   i<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span><span class="token function">replaceChild</span><span class="token punctuation">(</span>txt<span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span><br>   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">.</span>alt<span class="token punctuation">)</span><span class="token punctuation">;</span> <br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>You can run snippets by pressing <code>ctrl + enter</code> (or <code>cmd + enter</code> on mac) or using the button on the bottom of the editor.</p>
+<p><img src="/assets/img/use-scripts-as-snippets-1.png" alt="The snippets editor in the Sources tool with a snippet open in the editor"></p>
+<p>Even better, you can use the <a href="/tips/en/execute-commands">command menu</a> to run snippets more easily. Simply press <code>ctrl + p</code> (or <code>cmd + p</code> on mac) and type <code>!</code> followed by the name of your Snippet.</p>
+<p><img src="/assets/img/use-scripts-as-snippets-2.gif" alt="Running a snippet from the Command menu"></p>
 
     </div>
-    <ul class="tags"><li class="hover-box tag"><a href="/tag/productivity">productivity</a></li></ul>
+    <ul class="tags"><li class="hover-box tag"><a href="/tag/javascript">javascript</a></li></ul>
     <ul class="browsers"><li class="hover-box browser"><a href="/browser/edge">edge</a></li><li class="hover-box browser"><a href="/browser/chrome">chrome</a></li></ul>
 </main>
 
