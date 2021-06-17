@@ -52,7 +52,8 @@ header h1 a {
 }
 
 main {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
     padding: 1rem 2rem 2rem 2rem;
     line-height: 1.5;
@@ -164,4 +165,11 @@ footer {
 	text-align: center;
 	padding: 2rem;
 	background: aliceblue;
+}
+
+pre {
+	overflow: auto;
+	max-height: 50vh;
+	width: 100%;
+	white-space: normal;
 }
