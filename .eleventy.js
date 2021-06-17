@@ -1,3 +1,5 @@
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("CNAME");
@@ -15,6 +17,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     dir: {
