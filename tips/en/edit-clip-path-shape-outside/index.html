@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Edit clip-path and shape-outside CSS properties by dragging points in the page</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -22,9 +22,26 @@
       </label>
       <ul class="search-results tips"></ul>
     </header>
-    <main>
-  <h2>help tips</h2>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/get-contextual-help/">Get contextual DevTools help</a></li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <h2>Edit clip-path and shape-outside CSS properties by dragging points in the page</h2>
+    <div class="tip-content">
+        <p>The <a href="https://developer.mozilla.org/docs/Web/CSS/clip-path"><code>clip-path</code> property</a> is a great way to change the final shape of an element and give it the shape that you want.<br>
+You can use this property to make an element be a circle, an ellipse, a polygon or any shape that can be described with an <a href="https://developer.mozilla.org/docs/Web/SVG/Tutorial/Paths">SVG path</a>.</p>
+<p>The <a href="https://developer.mozilla.org/docs/Web/CSS/shape-outside"><code>shape-outside</code> property</a> is similar in that you can define a shape, but it's useful to float other content around an element, along that shape.</p>
+<p>In Firefox, you can freely edit the polygon, circle or ellipse types of shapes with the mouse, by dragging points around in the page.</p>
+<ul>
+<li>Select an element that has a <code>clip-path</code> or <code>shape-outside</code> property applied.</li>
+<li>In the Rules sidebar (in the Inspector panel), the <code>clip-path</code> property will have a little shape icon. Click on this icon.</li>
+<li>The shape now gets highlighted in the page, with control points.</li>
+<li>Click-and-drag any of these points to change the shape to your likings.</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Edit_CSS_shapes">Learn more about this tool here</a></p>
+<p><img src="/assets/img/edit-clip-path-shape-outside.gif" alt="Gif demo of the shape editor in firefox, clicking on the Rules panel icon, and then moving points around in the page"></p>
+
+    </div>
+    <ul class="tags"><li class="hover-box tag"><a href="/tag/css">css</a></li><li class="hover-box tag"><a href="/tag/highlighter">highlighter</a></li></ul>
+    <ul class="browsers"><li class="hover-box browser"><a href="/browser/firefox">firefox</a></li></ul>
 </main>
 
     <footer role="contentinfo">
