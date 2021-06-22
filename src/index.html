@@ -25,7 +25,6 @@
   getRandomTipsOfTheDay: function(allTips) {
     function extractImage(content) {
       const match = content.match(/<img src="([^"]+)" alt="([^"]+)"/);
-      console.log(content)
       return match ? {src: match[1], alt: match[2]} : null;
     }
 
