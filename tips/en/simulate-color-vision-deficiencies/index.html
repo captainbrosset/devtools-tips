@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Simulate color vision deficiencies</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -22,9 +22,34 @@
       </label>
       <ul class="search-results tips"></ul>
     </header>
-    <main>
-  <h2>accessibility tips</h2>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/see-quick-a11y-info-on-hover/">See quick accessibility information on hover</a></li><li class="hover-box tip"><a href="/tips/en/simulate-color-vision-deficiencies/">Simulate color vision deficiencies</a></li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <h2>Simulate color vision deficiencies</h2>
+    <div class="tip-content">
+        <p>People who visit your web pages may have different types of color vision deficiencies that, if you incorrectly use colors for meaning, may affect their experience.</p>
+<p>Firefox, Chrome and Edge make it possible for you to test how a web page may appear to somebody with a color vision deficiency.</p>
+<ul>
+<li>In Firefox:
+<ul>
+<li>Go to the Accessibility panel</li>
+<li>In the toolbar at the top, choose from a selection of different color vision deficiencies in the &quot;Simulate&quot; drop-down</li>
+</ul>
+</li>
+</ul>
+<p><img src="/assets/img/simulate-color-vision-deficiencies-1.png" alt="Screenshot of the color vision simulation drop-down in Firefox"></p>
+<ul>
+<li>In Chrome, or in Edge:
+<ul>
+<li>You first need to open the Rendering panel. Either use the <a href="/tips/en/execute-commands/">command menu</a> and type <code>rendering</code> or use the main menu (the three-dots icon in the top-right corner of the screen) and go to More Tools to find it.</li>
+<li>Scroll down until you find the &quot;Emulate vision deficiencies&quot; section, and choose fro the drop-down</li>
+</ul>
+</li>
+</ul>
+<p><img src="/assets/img/simulate-color-vision-deficiencies-2.png" alt="Screenshot of the color vision simulation drop-down in Chrome"></p>
+
+    </div>
+    <ul class="tags"><li class="hover-box tag"><a href="/tag/accessibility">accessibility</a></li></ul>
+    <ul class="browsers"><li class="hover-box browser"><a href="/browser/firefox">firefox</a></li><li class="hover-box browser"><a href="/browser/chrome">chrome</a></li><li class="hover-box browser"><a href="/browser/edge">edge</a></li></ul>
 </main>
 
     <footer role="contentinfo">

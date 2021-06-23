@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Edit CSS angles</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -22,9 +22,17 @@
       </label>
       <ul class="search-results tips"></ul>
     </header>
-    <main>
-  <h2>accessibility tips</h2>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/see-quick-a11y-info-on-hover/">See quick accessibility information on hover</a></li><li class="hover-box tip"><a href="/tips/en/simulate-color-vision-deficiencies/">Simulate color vision deficiencies</a></li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <h2>Edit CSS angles</h2>
+    <div class="tip-content">
+        <p>In CSS, several different properties use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/angle">angle</a> unit values, such as the <code>rotate()</code> function of a <code>transform</code> or the <code>linear-gradient</code> orientation of a <code>background-image</code>, and more.</p>
+<p>In Chrome and Edge, wherever a value that uses an angle unit (e.g. <code>deg</code>, <code>rad</code>, <code>grad</code>, <code>turn</code>) is displayed in the Styles panel, you can edit it with a nice little visual editor instead of typing the number by hand.</p>
+<p><img src="/assets/img/edit-css-angles.gif" alt="Gif animation of the angle editor in Chrome, where a click is made on the angle swatch, and then the mouse is used to change the angle"></p>
+
+    </div>
+    <ul class="tags"><li class="hover-box tag"><a href="/tag/css">css</a></li></ul>
+    <ul class="browsers"><li class="hover-box browser"><a href="/browser/chrome">chrome</a></li><li class="hover-box browser"><a href="/browser/edge">edge</a></li></ul>
 </main>
 
     <footer role="contentinfo">
