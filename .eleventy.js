@@ -17,7 +17,7 @@ function execCommand(command) {
 
 async function getTipAuthors(tipPath) {
     const results = await execCommand(`git log --pretty=format:"%an" ${tipPath}`);
-    console.log('Found authors', results);
+    console.log('Found authors', results, 'from', `git log --pretty=format:"%an" ${tipPath}`);
     return [...new Set(results.split('\n'))];
 }
 
