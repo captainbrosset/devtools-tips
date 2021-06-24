@@ -25,6 +25,7 @@ header {
     background: white;
     padding: 2rem 1rem;
     gap: 1rem;
+    position: relative;
 }
 header h1 {
     text-align: center;
@@ -207,13 +208,16 @@ main h2 {
     display: none;
 }
 .search-results {
-    position: absolute;
-    top: 7rem;
-    z-index: 1;
-    background: white;
-    width: 100%;
-    left: 0;
-    padding: 2rem;
+	position: absolute;
+	z-index: 1;
+	background: white;
+	right: 1rem;
+	padding: 1rem;
+	border: 2px solid #8c7603;
+	border-radius: 5px;
+	top: calc(100% - 2rem);
+	margin: 0;
+	left: 1rem;
 }
 .search-results .highlight {
     background: gold;
