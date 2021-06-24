@@ -1,21 +1,26 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
-ul, li {
+
+ul,
+li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
 body {
-	font-size: 13pt;
+    font-size: 13pt;
     font-family: Arial;
     margin: 0;
-	max-width: 1000px;
-	margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 header {
@@ -27,9 +32,11 @@ header {
     gap: 1rem;
     position: relative;
 }
+
 header h1 {
     text-align: center;
 }
+
 header h1 a {
     display: block;
     width: 6.5rem;
@@ -40,6 +47,7 @@ header h1 a {
     background: url(/assets/logo.png) no-repeat center;
     background-size: cover;
 }
+
 header nav {
     margin: 0 auto;
 }
@@ -49,8 +57,11 @@ header nav {
     align-items: center;
     height: 100%;
 }
+
 @media only screen and (max-width: 750px) {
-    .header-menu { flex-direction: column; }
+    .header-menu {
+        flex-direction: column;
+    }
 }
 
 .header-menu li {
@@ -60,11 +71,12 @@ header nav {
 .header-menu a {
     color: black;
 }
+
 .header-menu a:hover {
     text-decoration-thickness: 2px;
 }
 
-.header-menu > li {
+.header-menu>li {
     padding: 1rem;
     border-radius: 5px;
     display: flex;
@@ -72,8 +84,8 @@ header nav {
     position: relative;
 }
 
-.header-menu > li:hover,
-.header-menu > li:focus-within {
+.header-menu>li:hover,
+.header-menu>li:focus-within {
     background: gold;
 }
 
@@ -91,12 +103,15 @@ header nav {
     z-index: 1;
     border-radius: 5px;
 }
+
 @media only screen and (max-width: 380px) {
-    .submenu-reveal { grid-template-columns: 1fr; }
+    .submenu-reveal {
+        grid-template-columns: 1fr;
+    }
 }
 
-.header-menu > li:hover .submenu-reveal,
-.header-menu > li:focus-within .submenu-reveal {
+.header-menu>li:hover .submenu-reveal,
+.header-menu>li:focus-within .submenu-reveal {
     display: grid;
 }
 
@@ -107,9 +122,13 @@ header nav {
     min-width: 0;
     max-width: 40vw;
 }
+
 @media only screen and (max-width: 380px) {
-    .search { display: none; }
+    .search {
+        display: none;
+    }
 }
+
 .search input {
     flex: 1;
     margin: 1rem 0;
@@ -119,13 +138,14 @@ header nav {
     background: #ffd70030;
     width: 0;
 }
+
 .search input:focus-visible {
     outline: 2px solid gold;
 }
 
 main {
-	padding: 2rem;
-	line-height: 1.5;
+    padding: 2rem;
+    line-height: 1.5;
     background: aliceblue;
 }
 
@@ -151,9 +171,9 @@ main h2 {
 }
 
 .tip img {
-	width: 100%;
-	margin: 1rem auto 0 auto;
-	display: block;
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    display: block;
 }
 
 .tip:hover {
@@ -178,6 +198,7 @@ main h2 {
     height: 1rem;
     left: 1rem;
 }
+
 .tip:hover a::after {
     background: gold;
 }
@@ -185,6 +206,7 @@ main h2 {
 .tip a:focus-visible {
     outline: none;
 }
+
 .tip:focus-within {
     outline: 2px solid black;
 }
@@ -195,30 +217,29 @@ main h2 {
     display: block;
 }
 
-.tip-content ul, .tip-content li {
+.tip-content ul,
+.tip-content li {
     list-style: square;
     margin-left: 1rem;
-}
-
-.tip-content p:last-child {
-    margin-bottom: 0;
 }
 
 .search-results:empty {
     display: none;
 }
+
 .search-results {
-	position: absolute;
-	z-index: 1;
-	background: white;
-	right: 1rem;
-	padding: 1rem;
-	border: 2px solid #8c7603;
-	border-radius: 5px;
-	top: calc(100% - 2rem);
-	margin: 0;
-	left: 1rem;
+    position: absolute;
+    z-index: 1;
+    background: white;
+    right: 1rem;
+    padding: 1rem;
+    border: 2px solid #8c7603;
+    border-radius: 5px;
+    top: calc(100% - 2rem);
+    margin: 0;
+    left: 1rem;
 }
+
 .search-results .highlight {
     background: gold;
 }
@@ -235,9 +256,9 @@ code {
 }
 
 footer {
-	text-align: center;
-	padding: 2rem 1rem;
-	background: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: white;
 }
 
 footer a {
@@ -245,10 +266,10 @@ footer a {
 }
 
 pre {
-	overflow: auto;
-	max-height: 50vh;
-	width: 100%;
-	white-space: normal;
+    overflow: auto;
+    max-height: 50vh;
+    width: 100%;
+    white-space: normal;
 }
 
 .tip-info {
@@ -257,11 +278,15 @@ pre {
     line-height: 2;
 }
 
-.tags, .browsers, .tags li, .browsers li {
+.tags,
+.browsers,
+.tags li,
+.browsers li {
     display: inline;
 }
 
-.tags a, .browsers a {
+.tags a,
+.browsers a {
     padding: .25rem;
     margin: 0 .25rem;
     display: inline-block;
@@ -278,4 +303,22 @@ pre {
 .browsers li a {
     background: #f06;
     color: black;
+}
+
+.authors {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.authors::before {
+    content: "Authors:";
+    color: #555;
+}
+
+.authors li:not(:last-child)::after {
+    content: ",";
+}
+
+.authors li {
+    margin-left: .25rem;
 }
