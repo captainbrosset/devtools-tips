@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find inactive CSS styles</title>
+    <title>Persist console messages across page navigations and reloads</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,21 +37,31 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/css">css</a></li><li class="tag"><a href="/tag/debug">debug</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/console">console</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/firefox">firefox</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
     </div>
-    <h2>Find inactive CSS styles</h2>
+    <h2>Persist console messages across page navigations and reloads</h2>
     <div class="tip-content">
-        <p>Firefox has a unique feature that helps find CSS styles that don't have any effect on the page.</p>
-<p>This is not an audit tool that helps with removing useless CSS rules, but it is useful to know when a given CSS property isn't doing anything on the selected element.</p>
+        <p>By default, the messages displayed in the console get removed as soon as you refresh the page (or navigate to a new page). If you want to keep those messages as long as DevTools is open, follow these steps:</p>
 <ul>
-<li>Select an element in the Inspector panel</li>
-<li>Look at the Rules sidebar panel</li>
-<li>If you see a property that is greyed out and has an information icon next to it, then that means it is currently inactive</li>
-<li>Hover over the information icon to know why the property is inactive</li>
+<li>In Firefox:
+<ul>
+<li>In the Console panel, click on the cog icon (top-right corner) and select &quot;Persist Logs&quot;</li>
 </ul>
-<p><img src="/assets/img/find-inactive-styles.webp" alt="Screenshot of the inactive style feature"></p>
+</li>
+<li>In Edge or Chrome:
+<ul>
+<li>In the Console panel, click on the cog icon (top-right corner) and check the &quot;Preserve Log&quot; box</li>
+</ul>
+</li>
+<li>In Safari:
+<ul>
+<li>In the Console panel, check the &quot;Preserve Log&quot; box in the top toolbar</li>
+</ul>
+</li>
+</ul>
+<p><img src="/assets/img/persist-logs-across-pages.png" alt="Screenshot of Edge devtools' console showing the settings panel at the top, with the &quot;perserve log&quot; box checked"></p>
 
     </div>
     <ul class="authors"><li>Patrick Brosset</li></ul>
