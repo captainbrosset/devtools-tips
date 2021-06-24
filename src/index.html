@@ -4,24 +4,6 @@
   layout: "home.njk",
   templateEngineOverride: "njk",
   eleventyExcludeFromCollections: true,
-  getTags: function(collections) {
-    const tags = [];
-    for (const name in collections) {
-      if (!name.startsWith('browser:') && name !== 'all') {
-        tags.push(name);
-      }
-    }
-    return tags;
-  },
-  getBrowsers: function(collections) {
-    const browsers = [];
-    for (const name in collections) {
-      if (name.startsWith('browser:')) {
-        browsers.push(name);
-      }
-    }
-    return browsers;
-  },
   getRandomTipsOfTheDay: function(allTips) {
     function extractImage(content) {
       const match = content.match(/<img src="([^"]+)" alt="([^"]+)"/);
@@ -47,11 +29,11 @@
   }
 }
 ---
-<main class="home">
-  <h2>tips of the day</h2>
+<main>
+  <h2>Today's tips</h2>
   <ul class="tips">
   {%- for post in getRandomTipsOfTheDay(collections.all) -%}
-    <li class="hover-box tip">
+    <li class="tip">
       <a href="{{ post.url }}">
         {{ post.title }}
         {% if post.image %}
@@ -61,20 +43,4 @@
     </li>
   {%- endfor -%}
   </ul>
-
-  <h2>explore categories</h2>
-  <ul class="tags">
-  {%- for tag in getTags(collections) -%}
-    <li class="hover-box tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
-  {%- endfor -%}
-  </ul>
-
-  <h2>search by browser</h2>
-  <ul class="browsers">
-  {%- for browser in getBrowsers(collections) -%}
-    <li class="hover-box browser"><a href="/browser/{{ browser | processBrowserTagName }}">{{ browser | processBrowserTagName }}</a></li>
-  {%- endfor -%}
-  </ul>
-
-  <h2>or see <a href="/all/">all the tips</a></h2>
 </main>
