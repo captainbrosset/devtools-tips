@@ -13,7 +13,7 @@ async function getTipAuthors(tipPath) {
         const data = await response.json();
         return [...new Set(data.map(d => d.commit.author.name))];
     } catch (e) {
-        console.error('Error finding authors for ${tipPath}', e);
+        console.error(`Error finding authors for ${tipPath}`, e);
         return [];
     }
 }

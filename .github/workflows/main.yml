@@ -21,6 +21,8 @@ jobs:
       # Build with 11ty
       - name: Build 11ty
         uses: mcfitzgerald/action-build-eleventy@2.01
+        env:
+          AUTHOR_API_TOKEN: ${{ secrets.AUTHOR_API_TOKEN }}
         with:
           path: $GITHUB_WORKSPACE
       
