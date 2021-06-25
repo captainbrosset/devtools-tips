@@ -1,24 +1,21 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const { exec } = require("child_process");
+const fetch = require('node-fetch');
 
-function execCommand(command) {
-    return new Promise((resolve, reject) => {
-        exec(command, function(err, stdout, stderr) {
-            if (err != null) {
-                reject(new Error(err));
-            } else if (typeof(stderr) != "string") {
-                reject(new Error(stderr));
-            } else {
-                resolve(stdout);
-            }
-        });
-    });
-}
+const token = process.env.AUTHOR_API_TOKEN;
 
 async function getTipAuthors(tipPath) {
-    const results = await execCommand(`git log --pretty=format:"%an" ${tipPath}`);
-    console.log('Found authors', results, 'from', `git log --pretty=format:"%an" ${tipPath}`);
-    return [...new Set(results.split('\n'))];
+    try {
+        const response = await fetch(`https://api.github.com/repos/captainbrosset/devtools-tips/commits?path=${tipPath}`, {
+            headers: {
+                Authorization: `token ${token}`
+            }
+        });
+        const data = await response.json();
+        return [...new Set(data.map(d => d.commit.author.name))];
+    } catch (e) {
+        console.error('Error finding authors for ${tipPath}', e);
+        return [];
+    }
 }
 
 module.exports = function(eleventyConfig) {
@@ -27,7 +24,7 @@ module.exports = function(eleventyConfig) {
 
         eleventyConfig.addNunjucksAsyncShortcode("authors", async function(path) {
                     const authors = await getTipAuthors(path);
-                    return `<ul class="authors">${authors.map(name => `<li>${name}</li>`).join('')}</ul>`;
+                    return authors.length ? `<ul class="authors">${authors.map(name => `<li>${name}</li>`).join('')}</ul>` : '';
   });
 
   eleventyConfig.addFilter("processBrowserTagName", function (name) {
