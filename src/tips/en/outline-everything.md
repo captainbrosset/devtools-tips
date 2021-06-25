@@ -1,20 +1,13 @@
 ---
-title: Debugging your CSS and page structure with outline visualizations.
-tags: ["highlighter", "css", "browser:chrome"]
+title: Draw a box around all elements to debug your CSS and page structure
+tags: ["highlighter", "css", "html", "browser:chrome", "browser:firefox", "browser:edge", "browser:safari"]
 ---
-`* { outline: 1px solid red; }` is a debugging debugging trick I learned some time ago from [@adamwathan](https://twitter.com/adamwathan).
+Simple, yet powerful, `* { outline: 1px solid red; }` is a useful debugging trick that helps understanding the page structure, finding overflow bugs or understand why elements are being pushed away for no apparent reason.
 
-It's (to me at least) a simple, yet powerful method for understanding the page structure and finding overflow bugs, knowing why your element is being pushed away for no apparent reason (very annoying right? 😂), etc.
+* Go to the Elements panel (in Chrome, Edge or Safari) or Inspector panel (in Firefox).
+* Click the `+` (new style) icon in the Styles or Rules sidebar.
+* Add the rule  `{ outline: 1px solid red; }` to the CSS Selector `*`.
 
-Here's how to do it:
+And voila! All elements are outlined and you can understand what's going on.
 
-1. Open Chrome's DevTools (F12).
-2. Go to the Elements Tab.
-3. Click the "+" (New Style) icon.
-4. Add the rule  `{ outline: 1px solid red; }` to the CSS Selector `*`.
-
-Here's the video:
-
-![outline-everything](/assets/img/outline-everything.gif)
-
-And voila! everything is outlined now so you can understand what's going on :)
+![Gif animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page](/assets/img/outline-everything.gif)
