@@ -11,7 +11,13 @@ async function getTipAuthors(tipPath) {
             }
         });
         const data = await response.json();
-        return [...new Set(data.map(d => d.commit.author.name))];
+        // Github commits don't always have github authors. Need to filter those out.
+        return [...new Set(data.filter(d => !!d.author).map(d => {
+            return {
+                login: d.author.login,
+                avatar: d.author.avatar_url
+            };
+        }))];
     } catch (e) {
         console.error(`Error finding authors for ${tipPath}`, e);
         return [];
@@ -24,7 +30,7 @@ module.exports = function(eleventyConfig) {
 
         eleventyConfig.addNunjucksAsyncShortcode("authors", async function(path) {
                     const authors = await getTipAuthors(path);
-                    return authors.length ? `<ul class="authors">${authors.map(name => `<li>${name}</li>`).join('')}</ul>` : '';
+                    return authors.length ? `<ul class="authors">${authors.map(data => `<li style="--avatar:url('${data.avatar}');"><a href="https://github.com/${data.login}">${data.login}</a></li>`).join('')}</ul>` : '';
   });
 
   eleventyConfig.addFilter("processBrowserTagName", function (name) {

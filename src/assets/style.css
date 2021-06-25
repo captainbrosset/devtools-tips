@@ -321,4 +321,17 @@ pre {
 
 .authors li {
     margin-left: .25rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.authors li::before {
+    content: "";
+    background-image: var(--avatar);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
 }
