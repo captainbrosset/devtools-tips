@@ -11,13 +11,22 @@ async function getTipAuthors(tipPath) {
             }
         });
         const data = await response.json();
-        // Github commits don't always have github authors. Need to filter those out.
-        return [...new Set(data.filter(d => !!d.author).map(d => {
+        const alreadySeenAuthors = new Set();
+        return data.map(d => {
             return {
-                login: d.author.login,
-                avatar: d.author.avatar_url
+                // Warning: if you ever feel like getting d.author instead, so you can link to github profiles, please remember that
+                // not all commits on github are linked to an actual github user, and so d.author may be null.
+                name: d.commit.author.name,
+                url: `https://github.com/captainbrosset/devtools-tips/commit/${d.sha}`
             };
-        }))];
+        }).filter(d => {
+            if (alreadySeenAuthors.has(d.name)) {
+                return false;
+            } else {
+                alreadySeenAuthors.add(d.name);
+                return true;
+            }
+        });
     } catch (e) {
         console.error(`Error finding authors for ${tipPath}`, e);
         return [];
@@ -30,7 +39,10 @@ module.exports = function(eleventyConfig) {
 
         eleventyConfig.addNunjucksAsyncShortcode("authors", async function(path) {
                     const authors = await getTipAuthors(path);
-                    return authors.length ? `<ul class="authors">${authors.map(data => `<li style="--avatar:url('${data.avatar}');"><a href="https://github.com/${data.login}">${data.login}</a></li>`).join('')}</ul>` : '';
+                    if (!authors.length) {
+                        return '';
+                    }
+                    return `<ul class="authors">${authors.map(data => `<li><a href="${data.url}">${data.name}</a></li>`).join('')}</ul>`;
   });
 
   eleventyConfig.addFilter("processBrowserTagName", function (name) {
