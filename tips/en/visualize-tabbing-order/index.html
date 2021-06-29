@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Draw a box around all elements to debug your CSS and page structure</title>
+    <title>Visualize the tabbing order on the page</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,23 +37,24 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/highlighter">highlighter</a></li><li class="tag"><a href="/tag/css">css</a></li><li class="tag"><a href="/tag/html">html</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/accessibility">accessibility</a></li><li class="tag"><a href="/tag/highlighter">highlighter</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/firefox">firefox</a></li></ul>
     </div>
-    <h2>Draw a box around all elements to debug your CSS and page structure</h2>
+    <h2>Visualize the tabbing order on the page</h2>
     <div class="tip-content">
-        <p>Simple, yet powerful, <code>* { outline: 1px solid red; }</code> is a useful debugging trick that helps understanding the page structure, finding overflow bugs or understand why elements are being pushed away for no apparent reason.</p>
+        <p>Firefox has a dedicated <a href="https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector">accessibility inspector panel</a> that, among other things, lets you visualize the tabbing order on a page.</p>
+<p>Users who do not or can't use a mouse or trackpad can use the tab key to navigate through focusable elements on the page. If the order in which those elements get focused is incorrect, this might give users a confusing experience.</p>
+<p>This tool adds a layer on the page that shows the order in which elements would become focused.</p>
 <ul>
-<li>Go to the Elements panel (in Chrome, Edge or Safari) or Inspector panel (in Firefox).</li>
-<li>Click the <code>+</code> (new style) icon in the Styles or Rules sidebar.</li>
-<li>Add the rule  <code>{ outline: 1px solid red; }</code> to the CSS Selector <code>*</code>.</li>
+<li>Go to the Accessibility panel</li>
+<li>In the toolbar, check the &quot;Show Tabbing Order&quot; box</li>
 </ul>
-<p>And voila! All elements are outlined and you can understand what's going on.</p>
-<p><img src="/assets/img/outline-everything.gif" alt="Gif animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page"></p>
+<p><img src="/assets/img/visualize-tabbing-order.png" alt="Screenshot of the tabbing order highlighter in Firefox, showing numbered boxes around focusable elements"></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector#show_web_page_tabbing_order">Learn more about it here</a>.</p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/7da744df12da8646c3d924f2716727aa75e2a121">Patrick Brosset</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/b652631e42d912234101ad7b2f81df5a198ec4d1">Januario</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/0d3b9a4562f409af742cc753ec6820c71165b5d0">Patrick Brosset</a></li></ul>
 </main>
 
     <footer role="contentinfo">
