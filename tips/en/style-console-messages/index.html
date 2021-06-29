@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find all images without alternative text</title>
+    <title>Apply CSS styles to console messages</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,25 +37,18 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/console">console</a></li><li class="tag"><a href="/tag/html">html</a></li><li class="tag"><a href="/tag/accessibility">accessibility</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/console">console</a></li><li class="tag"><a href="/tag/css">css</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
     </div>
-    <h2>Find all images without alternative text</h2>
+    <h2>Apply CSS styles to console messages</h2>
     <div class="tip-content">
-        <p>With HTML, you can add alternative text to images using the <code>alt</code> attribute. It can be used to add a text description to images, which is extremely useful for accessibility as some people may not be able to see the images. With <code>alt</code>, screen readers can announce the alternative text to the user.</p>
-<p>Using DevTools, you can quickly check which images on a page do not have an <code>alt</code> text, here is how:</p>
-<p>Execute this in the Console panel: <code>console.table($$('img').filter(i =&gt; !i.alt), ['src'])</code> and that's it! You'll have the list of image URLs that don't have an alternative text.</p>
-<p><img src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console"></p>
-<p>Here's what this command does:</p>
-<ul>
-<li><code>$$()</code> find all elements that match a given CSS selector (<a href="/tips/en/query-dom-from-console">learn more here</a>). Here it is used to find all images.</li>
-<li><code>filter()</code> is used to only keep the images that do not have an <code>alt</code> attribute.</li>
-<li>Finally, <code>console.table()</code> takes the array returned by <code>filter</code> and outputs a pretty table in the console based on it. Notice the second (optional) paramter that is used here to retrict the number of columns to just the <code>src</code> attribute from each image.</li>
-</ul>
+        <p>The <code>console.log</code> output can be styled in DevTools using CSS.</p>
+<pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'%c Hello World'</span><span class="token punctuation">,</span> <span class="token string">'color: orange; font-size: 2em;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><img src="/assets/img/style-console-messages.png" alt="Screenshot of a styled console message in Edge"></p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/dc3f27365434ca581a6f0a6e8fa3248473d2a19c">Patrick Brosset</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/1028610b5c5db0ea1caeaf1e50710933d0c2aefd">Patrick Brosset</a></li></ul>
 </main>
 
     <footer role="contentinfo">
