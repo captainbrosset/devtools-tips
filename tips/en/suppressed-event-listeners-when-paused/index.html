@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Use the debugger statement to pause script execution</title>
+    <title>Event listeners are suppressed when paused</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,23 +37,22 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/javascript">javascript</a></li><li class="tag"><a href="/tag/debug">debug</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/javascript">javascript</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
     </div>
-    <h2>Use the debugger statement to pause script execution</h2>
+    <h2>Event listeners are suppressed when paused</h2>
     <div class="tip-content">
-        <p>If you prefer to use <code>console.log()</code> statements rather than the JavaScript debugger because you find it difficult to set breakpoints in DevTools (or you can't), then you can use the <code>debugger</code> statement in JavaScript.</p>
-<ul>
-<li>Where you normally add a <code>console.log()</code>, add a <code>debugger</code>, directly in the code</li>
-<li>Open DevTools on your page</li>
-<li>Trigger the action that will make your code run</li>
-<li>The Sources panel (or Debugger panel in Firefox) will automatically open up, and pause script execution at that line, giving you a chance to see what are the values of local variables, the callstack, etc.</li>
-</ul>
-<p><img src="/assets/img/debugger-statement.png" alt="Screenshot of the Sources panel in Edge, paused at a debugger statement"></p>
+        <p>This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript.</p>
+<p>If you use breakpoints in the Sources (or Debugger) tab in DevTools to debug JavaScript, you should know that all event listeners are suppressed while paused at one of them.</p>
+<p>For example, if you have a button with an <code>onclick</code> handler, and you're paused at a breakpoint, then clicking that button won't execute the handler. It also won't execute it later when you resume execution.
+In fact, most DevTools display an overlay on top of the entire page that prevents you from accessing it at all.</p>
+<p>This also happens if you manually try to dispatch new events from the console using <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent"><code>dispatchEvent</code></a>. If there are handlers for these events, they also won't get called while execution is paused.</p>
+<p>The reason for this is that (ignoring workers) JavaScript on your page only runs in one thread. So while that thread is paused at one specific location, it's not supposed to be able to execute code from other locations.</p>
+<p><img src="/assets/img/suppressed-event-listeners-when-paused.png" alt="Screenshot of a page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page"></p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/259a7da155d6abbd105d1efdc5a818c0a764099a">Alex Lakatos</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/4b32deaf31021645f798098f174ce16ff2a7d291">Patrick Brosset</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/bf63fcce76d815025563a3d4d5c56ff511358314">Patrick Brosset</a></li></ul>
 </main>
 
     <footer role="contentinfo">
