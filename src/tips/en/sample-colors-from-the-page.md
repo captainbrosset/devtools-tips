@@ -9,17 +9,17 @@ Being able to sample colors from the page is super useful. Firefox, Edge and Chr
   * Go to the "More Tools" submenu
   * Click on the Eyedropper menu item
 
-![](/assets/img/sample-colors-from-the-page-1.gif)
+![Gif animation of the eyedropper tool being started from the firefox main menu](/assets/img/sample-colors-from-the-page-1.gif)
 
 * There is a second way to do this in Firefox from DevTools:
   * Open the Inspector panel
   * Click on the eye dropper button in the typ-right corner of the panel
 
-![](/assets/img/sample-colors-from-the-page-2.png)
+![Screenshot of the eyedropper button in Firefox's inspector panel](/assets/img/sample-colors-from-the-page-2.png)
 
 * In Chrome and Edge:
   * Open the Elements panel and select an element that has some CSS color set to it
   * Find the color in the Styles pane and click on the color swatch icon next to it
   * Just start moving the mouse over the page
 
-![](/assets/img/sample-colors-from-the-page-3.gif)
+![Gif animation of starting the eyedropper tool from chrome and edge's color pickers](/assets/img/sample-colors-from-the-page-3.gif)
