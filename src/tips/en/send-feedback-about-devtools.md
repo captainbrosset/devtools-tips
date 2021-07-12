@@ -18,9 +18,11 @@ Here are a few ways you can report bugs, ask questions or request features:
 * **Safari Web Inspector**:
   * Like Firefox, Safari uses the Bugzilla product to track their [webkit bugs](https://bugs.webkit.org/). Here is documentation about how to [search for bugs and report new ones](https://webkit.org/reporting-bugs/).
   * You can also get in touch with the team on Twitter with [@webkit](https://twitter.com/webkit).
+  * Finally, you can also signal bugs about Safari and the Safari Web Inspector using the [feedback assistant](https://developer.apple.com/bug-reporting/).
+* **Chromium**
+  * Chromium is an open-source project that several browsers are based on, including Google Chrome and Microsoft Edge. If you believe you found a bug that pertains to Chromium rather than just one of the browsers based on it, you can head over to the Monorail bug tracker that Chromium uses and [find all issues and create new ones here](https://bugs.chromium.org/p/chromium/issues/list).
 * **Edge DevTools**:
   * The easiest way to report a problem or ask for a feature is by using [the feedback button](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/#getting-in-touch-with-the-microsoft-edge-devtools-team) in DevTools (the little stick figure in the top-right corner of the tools)
   * Asking questions to the team works best over Twitter by mentioning the [@EdgeDevTools](https://twitter.com/EdgeDevTools) account.
 * **Chrome DevTools**:
-  * Chrome is based on the open-source Chromium project that uses Monorail as their bug tracker. You can [find all issues and create new ones here](https://bugs.chromium.org/p/chromium/issues/list).
-  * They also listen for feedback on [the devtools-dev mailing list](https://www.chromium.org/teams/devtools) as well as twitter on [@ChromeDevTools](https://twitter.com/ChromeDevTools).
+  * On top of the Chromium bug tracker, the team also listens for feedback on [the devtools-dev mailing list](https://www.chromium.org/teams/devtools) as well as on twitter at [@ChromeDevTools](https://twitter.com/ChromeDevTools).
