@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Convert font property units</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -33,10 +33,51 @@
       </label>
       <ul class="search-results tips"></ul>
     </header>
-    <main>
-  <h2>Tips supported in firefox</h2>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/change-color-theme/">Change the color theme of DevTools</a></li><li class="hover-box tip"><a href="/tips/en/convert-font-units/">Convert font property units</a></li><li class="hover-box tip"><a href="/tips/en/copy-from-console/">Copy an object from the console</a></li><li class="hover-box tip"><a href="/tips/en/debugger-statement/">Use the debugger statement to pause script execution</a></li><li class="hover-box tip"><a href="/tips/en/drag-drop-dom-nodes/">Drag and drop nodes in the DOM tree</a></li><li class="hover-box tip"><a href="/tips/en/edit-clip-path-shape-outside/">Edit clip-path and shape-outside CSS properties by dragging points in the page</a></li><li class="hover-box tip"><a href="/tips/en/edit-css-filters/">Edit CSS filters</a></li><li class="hover-box tip"><a href="/tips/en/expand-nodes-recursively/">Expand DOM nodes recursively</a></li><li class="hover-box tip"><a href="/tips/en/filter-network-requests/">Filter requests in the Network panel by status code, mime type and more</a></li><li class="hover-box tip"><a href="/tips/en/find-all-images-without-alt-text/">Find all images without alternative text</a></li><li class="hover-box tip"><a href="/tips/en/find-css-changes/">Find and export CSS changes</a></li><li class="hover-box tip"><a href="/tips/en/find-custom-elements-code/">Find your web component&#39;s custom element code</a></li><li class="hover-box tip"><a href="/tips/en/find-devtools-documentation/">Find DevTools reference documentation</a></li><li class="hover-box tip"><a href="/tips/en/find-inactive-styles/">Find inactive CSS styles</a></li><li class="hover-box tip"><a href="/tips/en/get-current-element-in-console/">Get the selected element in the console</a></li><li class="hover-box tip"><a href="/tips/en/highlight-matching-elements/">Highlight all the elements that a CSS rule matches</a></li><li class="hover-box tip"><a href="/tips/en/outline-everything/">Draw a box around all elements to debug your CSS and page structure</a></li><li class="hover-box tip"><a href="/tips/en/persist-logs-across-pages/">Persist console messages across page navigations and reloads</a></li><li class="hover-box tip"><a href="/tips/en/query-dom-from-console/">Find DOM elements from the console</a></li><li class="hover-box tip"><a href="/tips/en/sample-colors-from-the-page/">Sample colors from the page</a></li><li class="hover-box tip"><a href="/tips/en/send-feedback-about-devtools/">Send feedback, ask for features and report bugs</a></li><li class="hover-box tip"><a href="/tips/en/simulate-color-vision-deficiencies/">Simulate color vision deficiencies</a></li><li class="hover-box tip"><a href="/tips/en/simulate-pseudo-classes/">Simulate pseudo CSS classes</a></li><li class="hover-box tip"><a href="/tips/en/style-console-messages/">Apply CSS styles to console messages</a></li><li class="hover-box tip"><a href="/tips/en/suppressed-event-listeners-when-paused/">Event listeners are suppressed when paused</a></li><li class="hover-box tip"><a href="/tips/en/unminify-javascript-code/">Unminify JavaScript code to easily read and debug it</a></li><li class="hover-box tip"><a href="/tips/en/use-another-language/">Switch DevTools to another language</a></li><li class="hover-box tip"><a href="/tips/en/visualize-tabbing-order/">Visualize the tabbing order on the page</a></li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/css">css</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li></ul>
+    </div>
+    <h2>Convert font property units</h2>
+    <div class="tip-content">
+        <p>Font CSS properties such as <code>font-size</code>, <code>line-height</code> or <code>letter-spacing</code> can be expressed in multiple different length units (like many other CSS properties).</p>
+<p>Firefox, Chrome and Edge allow you to convert values between these units easily.</p>
+<ul>
+<li>In Firefox
+<ul>
+<li>Find an element in the Inspector panel that has font properties which you'd like to change</li>
+<li>Select the Fonts sidebar tab</li>
+<li>Use the unit drop-downs next to <code>Size</code>, <code>Line Height</code> or <code>Spacing</code> to convert the current value to another unit</li>
+</ul>
+</li>
+</ul>
+<p><img src="/assets/img/convert-font-units-1.png" alt="Screenshot of the fonts panel in Firefox, showing the unit conversion drop-down"></p>
+<ul>
+<li>In Chrome or Edge
+<ul>
+<li>You first need to enable the Fonts editor experiment
+<ul>
+<li>Go to the DevTools settings (F1)</li>
+<li>Go to the Experiments tab</li>
+<li>Check the &quot;Enable the new Font Editor tool within the Styles pane&quot; box</li>
+<li>Re-start DevTools</li>
+</ul>
+</li>
+<li>Find an element in the Elements panel that has font properties which you'd like to change</li>
+<li>Click on the <code>Aa</code> icon in the Styles sidebar, in the CSS rule that contains the property you want to convert</li>
+<li>Use the unit drop-downs next to <code>Font Size</code>, <code>Line Height</code>, <code>Font Weight</code> or <code>Spacing</code> to convert the current value to another unit</li>
+</ul>
+</li>
+</ul>
+<p><img src="/assets/img/convert-font-units-2.png" alt="Screenshot of the fonts panel in Edge, showing the unit conversion drop-down"></p>
+
+    </div>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/819dcdf6e7303e43c5178665f6d681886e22ba50">Patrick Brosset</a></li></ul>
 </main>
+
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2021 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>
