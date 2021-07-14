@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find inactive CSS styles</title>
+    <title>Evaluate XPath to find elements in the page</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,24 +37,36 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/css">css</a></li><li class="tag"><a href="/tag/debug">debug</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/html">html</a></li><li class="tag"><a href="/tag/testing">testing</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/firefox">firefox</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
     </div>
-    <h2>Find inactive CSS styles</h2>
+    <h2>Evaluate XPath to find elements in the page</h2>
     <div class="tip-content">
-        <p>Firefox has a unique feature that helps find CSS styles that don't have any effect on the page.</p>
-<p>This is not an audit tool that helps with removing useless CSS rules, but it is useful to know when a given CSS property isn't doing anything on the selected element.</p>
+        <p>DevTools supports 2 ways to evaluate <a href="https://developer.mozilla.org/en-US/docs/Web/XPath">XPath</a> expressions to help you locate elements in the page. All browsers support those 2 ways:</p>
 <ul>
-<li>Select an element in the Inspector panel</li>
-<li>Look at the Rules sidebar panel</li>
-<li>If you see a property that is greyed out and has an information icon next to it, then that means it is currently inactive</li>
-<li>Hover over the information icon to know why the property is inactive</li>
+<li>From the Elements (or Inspector) panel:
+<ul>
+<li>Click anywhere in the panel to make sure it has focus</li>
+<li>Press ctrl+F (or cmd+F on Mac) to focus the search field</li>
+<li>Enter your XPath expression and press enter to find the elements that match</li>
 </ul>
-<p><img src="/assets/img/find-inactive-styles.webp" alt="Screenshot of the inactive style feature"></p>
+</li>
+</ul>
+<p><img src="/assets/img/evaluate-xpath-1.png" alt="Screenshot of the Inspector panel in Firefox showing the search field with an XPath expression"></p>
+<p>Note that you can also <a href="/tips/en/copy-element-xpath/">copy the XPath expression from any element in DevTools</a>.</p>
+<ul>
+<li>From the Console panel:
+<ul>
+<li>You can use the built-in <code>$x()</code> helper function like this:</li>
+</ul>
+</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="token function">$x</span><span class="token punctuation">(</span><span class="token string">'//div/div/label'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><img src="/assets/img/evaluate-xpath-2.png" alt="Screenshot of the Console panel in Safari showing an array of elements, as the result of executing the above function"></p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/4b32deaf31021645f798098f174ce16ff2a7d291">Patrick Brosset</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/70031a888d52f3bdfa8bb625d1c41df906c83693">Patrick Brosset</a></li></ul>
 </main>
 
     <footer role="contentinfo">
