@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Highlight all the elements that a CSS rule matches</title>
+    <title>Edit CSS absolute and relative positions by dragging points in the page</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,30 +37,24 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/html">html</a></li><li class="tag"><a href="/tag/css">css</a></li><li class="tag"><a href="/tag/highlighter">highlighter</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/css">css</a></li><li class="tag"><a href="/tag/highlighter">highlighter</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/firefox">firefox</a></li></ul>
     </div>
-    <h2>Highlight all the elements that a CSS rule matches</h2>
+    <h2>Edit CSS absolute and relative positions by dragging points in the page</h2>
     <div class="tip-content">
-        <p>When you want to know which elements a given CSS rule will apply to, in addition to the currently selected element, you can:</p>
+        <p>Firefox features a position editor that lets you move elements in the page by drag and drop. This works with elements that are positioned in CSS with <code>position:relative</code> or <code>position:absolute</code> and that have at least one of <code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code> defined.</p>
 <ul>
-<li>In Firefox:
-<ul>
-<li>In the Style Editor panel: hover over any rule selector for some time.</li>
-<li>In the Rules panel: click on the selector icon next to any rule selector.</li>
+<li>Select an element with <code>position:relative</code> or <code>position:absolute</code> applied to it in the Inspector panel.</li>
+<li>Open the Layout sidebar panel, and scroll down to the Box Model section.</li>
+<li>Find the &quot;Edit Position&quot; icon and click it.</li>
+<li>Use the handles in the page to move the element around, within its positioned ancestor.</li>
 </ul>
-</li>
-<li>In Chrome, Edge or Safari:
-<ul>
-<li>In the Styles panel: hover over any rule selector for some time.</li>
-</ul>
-</li>
-</ul>
-<p><img src="/assets/img/highlight-matching-elements.gif" alt="GIF animation showing how hovering over selectors in chrome highlights the matching elements in the page"></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Reposition_elements_in_the_page">Learn more about this tool here</a></p>
+<p><img src="/assets/img/edit-position.gif" alt="Gif demo of the geometry editor in firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page"></p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/259a7da155d6abbd105d1efdc5a818c0a764099a">Alex Lakatos</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/4b32deaf31021645f798098f174ce16ff2a7d291">Patrick Brosset</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/7f66e331bccc20f118f04dce5acb278830d82bcc">Patrick Brosset</a></li></ul>
 </main>
 
     <footer role="contentinfo">
