@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Throttle the network speed to test your website on slower connections</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -33,10 +33,29 @@
       </label>
       <ul class="search-results tips"></ul>
     </header>
-    <main>
-  <h2>Tips supported in edge</h2>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/change-color-theme/">Change the color theme of DevTools</a></li><li class="hover-box tip"><a href="/tips/en/convert-font-units/">Convert font property units</a></li><li class="hover-box tip"><a href="/tips/en/copy-element-xpath/">Copy an element&#39;s XPath expression</a></li><li class="hover-box tip"><a href="/tips/en/copy-from-console/">Copy an object from the console</a></li><li class="hover-box tip"><a href="/tips/en/debugger-statement/">Use the debugger statement to pause script execution</a></li><li class="hover-box tip"><a href="/tips/en/drag-drop-dom-nodes/">Drag and drop nodes in the DOM tree</a></li><li class="hover-box tip"><a href="/tips/en/edit-css-angles/">Edit CSS angles</a></li><li class="hover-box tip"><a href="/tips/en/evaluate-xpath/">Evaluate XPath to find elements in the page</a></li><li class="hover-box tip"><a href="/tips/en/execute-commands/">Use commands to do things faster</a></li><li class="hover-box tip"><a href="/tips/en/expand-nodes-recursively/">Expand DOM nodes recursively</a></li><li class="hover-box tip"><a href="/tips/en/filter-network-requests/">Filter requests in the Network panel by status code, mime type and more</a></li><li class="hover-box tip"><a href="/tips/en/find-all-images-without-alt-text/">Find all images without alternative text</a></li><li class="hover-box tip"><a href="/tips/en/find-css-changes/">Find and export CSS changes</a></li><li class="hover-box tip"><a href="/tips/en/find-devtools-documentation/">Find DevTools reference documentation</a></li><li class="hover-box tip"><a href="/tips/en/get-contextual-help/">Get contextual DevTools help</a></li><li class="hover-box tip"><a href="/tips/en/get-current-element-in-console/">Get the selected element in the console</a></li><li class="hover-box tip"><a href="/tips/en/highlight-matching-elements/">Highlight all the elements that a CSS rule matches</a></li><li class="hover-box tip"><a href="/tips/en/outline-everything/">Draw a box around all elements to debug your CSS and page structure</a></li><li class="hover-box tip"><a href="/tips/en/persist-logs-across-pages/">Persist console messages across page navigations and reloads</a></li><li class="hover-box tip"><a href="/tips/en/query-dom-from-console/">Find DOM elements from the console</a></li><li class="hover-box tip"><a href="/tips/en/sample-colors-from-the-page/">Sample colors from the page</a></li><li class="hover-box tip"><a href="/tips/en/see-quick-a11y-info-on-hover/">See quick accessibility information on hover</a></li><li class="hover-box tip"><a href="/tips/en/see-the-page-in-3d/">See the page in 3D</a></li><li class="hover-box tip"><a href="/tips/en/send-feedback-about-devtools/">Send feedback, ask for features and report bugs</a></li><li class="hover-box tip"><a href="/tips/en/simulate-color-vision-deficiencies/">Simulate color vision deficiencies</a></li><li class="hover-box tip"><a href="/tips/en/simulate-pseudo-classes/">Simulate pseudo CSS classes</a></li><li class="hover-box tip"><a href="/tips/en/style-console-messages/">Apply CSS styles to console messages</a></li><li class="hover-box tip"><a href="/tips/en/suppressed-event-listeners-when-paused/">Event listeners are suppressed when paused</a></li><li class="hover-box tip"><a href="/tips/en/throttle-network-speed/">Throttle the network speed to test your website on slower connections</a></li><li class="hover-box tip"><a href="/tips/en/tweak-grid-flex-alignment/">Tweak css grid and flexbox alignment properties</a></li><li class="hover-box tip"><a href="/tips/en/unminify-javascript-code/">Unminify JavaScript code to easily read and debug it</a></li><li class="hover-box tip"><a href="/tips/en/use-another-language/">Switch DevTools to another language</a></li><li class="hover-box tip"><a href="/tips/en/use-scripts-as-snippets/">Re-use scripts as snippets</a></li><li class="hover-box tip"><a href="/tips/en/view-perf-markers-in-order/">View performance markers in order</a></li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/network">network</a></li><li class="tag"><a href="/tag/perf">perf</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li></ul>
+    </div>
+    <h2>Throttle the network speed to test your website on slower connections</h2>
+    <div class="tip-content">
+        <p>While you may develop your website on a fast network connection at home or at work, your users may not be able to use it with an equally fast connection. Perhaps they're in a moving car, or on the subway, or they don't have access to high-speed internet at their place. Whatever it is, they may experience your site very differently than you do because of this.</p>
+<p>Testing your site with a slower connection helps you understand how it loads and appears on the screen.</p>
+<p>Firefox, Chrome and Edge let you simulate slower network connections to do this. The procedure is the same in all of them:</p>
+<ul>
+<li>Go to the Network panel</li>
+<li>Use the dropdown that says <code>No throttling</code> and choose any of the other values.</li>
+</ul>
+<p><img src="/assets/img/throttle-network-speed.png" alt="Screenshot of the Network panel in Edge showing the network throttling drop-down"></p>
+
+    </div>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/e205e1ca894402ea17beeefb32260dc07a40d24c">Patrick Brosset</a></li></ul>
 </main>
+
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2021 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>
