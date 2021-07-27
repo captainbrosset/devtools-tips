@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find DevTools reference documentation</title>
+    <title>Capture node creation stack traces</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,23 +37,38 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/help">help</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/javascript">javascript</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/safari">safari</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li></ul>
     </div>
-    <h2>Find DevTools reference documentation</h2>
+    <h2>Capture node creation stack traces</h2>
     <div class="tip-content">
-        <p>If you want to learn more about what other tools exist in a browser, or what features a given tool provides, you can find reference documentation from all the major browsers here:</p>
+        <p>Have you ever wanted to know what caused a specific DOM node or element to be created in the page?
+When working on a site that uses a lot of JavaScript and especially when you don't know the codebase, this can be a life saver.</p>
+<p>It turns out there is a way to do this automatically without having to set breakpoints in the code at all. It is a hidden experiment for now so you will need to first enable it in Chrome or Edge.</p>
 <ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Tools">Firefox Developer Tools</a></li>
-<li><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/">Edge Developer Tools</a></li>
-<li><a href="https://developer.chrome.com/docs/devtools/">Chrome Developer Tools</a></li>
-<li><a href="https://webkit.org/web-inspector/">Safari Web Inspector</a></li>
+<li>
+<p>Go through the following steps once to enable the experiment:</p>
+<ul>
+<li>Go to the DevTools settings (press F1, or use the gear icon in the toolbar)</li>
+<li>Go to the <strong>Experiments</strong> tab</li>
+<li>Check the <strong>Capture node creation stacks</strong> box</li>
+<li>Reload DevTools</li>
 </ul>
-<p><img src="/assets/img/find-devtools-documentation.png" alt="Screenshot of the 4 documentation websites listed above"></p>
+</li>
+<li>
+<p>Make sure DevTools is opened when using the website so that stack traces get captured. When you want to know what created a node:</p>
+<ul>
+<li>Select the node in the Elements panel</li>
+<li>In the sidebar, select the <strong>Stack Trace</strong> panel (you might have to first click on the <strong>More tabs</strong> chevron <code>&gt;&gt;</code> to see the tab)</li>
+<li>The stack of JavaScript calls that led to the node creation (if any) should be displayed.</li>
+</ul>
+</li>
+</ul>
+<p><img src="/assets/img/capture-node-creation-stacks.png" alt="Screenshot of Edge DevTools' Elements panel with the Stack Trace sidebar visible, showing a stack of Vue JS function calls that created an element on the TODOMVC sample app"></p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/69cad62928d605542218ac5388fcd862139dce5d">Patrick Brosset</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/d9a823c8c2bda6e35c52c2502cb72fd677d526f5">Patrick Brosset</a></li></ul>
 </main>
 
     <footer role="contentinfo">
