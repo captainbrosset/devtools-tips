@@ -16,4 +16,4 @@ Turn off `designMode` with the expression `document.designMode="off"`.
 
 Changes are not persisted and will revert on page close or refresh.
 
-![Animated GIF of editable web page with designMode on](/assets/img/design-mode.gif)
+![Animated GIF of editable web page with designMode on](/assets/img/prototype-content-changes-with-designmode.gif)
