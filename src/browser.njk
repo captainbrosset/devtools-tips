@@ -1,5 +1,6 @@
 ---js
 {
+  title: "DevTools Tips",
   layout: "home.njk",
   templateEngineOverride: "njk",
   eleventyExcludeFromCollections: true,
@@ -15,7 +16,7 @@
 }
 ---
 <main>
-  <h2>{{ browser | processBrowserTagName }} tips</h2>
+  <h2>Tips supported in {{ browser | processBrowserTagName }}</h2>
   <ul class="tips">
     {%- for post in collections[browser] -%}
     <li class="hover-box tip"><a href="{{ post.url }}">{{ post.data.title }}</a></li>

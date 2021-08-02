@@ -1,14 +1,63 @@
+---js
+{
+  getTags: function(collections) {
+    const tags = [];
+    for (const name in collections) {
+      if (!name.startsWith('browser:') && name !== 'all') {
+        tags.push(name);
+      }
+    }
+    return tags.sort();
+  },
+  getBrowsers: function(collections) {
+    const browsers = [];
+    for (const name in collections) {
+      if (name.startsWith('browser:')) {
+        browsers.push(name);
+      }
+    }
+    return browsers.sort();
+  },
+}
+---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4P6B6NT4Y8');
+    </script>
   </head>
   <body>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal">
+              {%- for tag in getTags(collections) -%}
+              <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+              {%- endfor -%}
+            </ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal">
+              {%- for browser in getBrowsers(collections) -%}
+              <li><a href="/browser/{{ browser | processBrowserTagName }}">{{ browser | processBrowserTagName }}</a></li>
+              {%- endfor -%}
+            </ul>
+          </li>
+          <li><a href="/all">All Tips</a></li>
+        </ul>
+      </nav>
       <label class="search">
         <input type="text" id="search" placeholder="Start typing to find tips">
       </label>
