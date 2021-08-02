@@ -1,6 +1,6 @@
 ---
 title: Prototype content changes with designMode
-tags: ["console", "design", "html", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
+tags: ["console", "html", "productivity", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
 ---
 
 When creating or modifying a design prototype for the web, you may want to quickly edit content in the browser without having to find the relevant code.
