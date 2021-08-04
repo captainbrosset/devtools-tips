@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filter requests in the Network panel by status code, mime type and more</title>
+    <title>Prototype content changes with designMode</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,23 +37,25 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/network">network</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/console">console</a></li><li class="tag"><a href="/tag/html">html</a></li><li class="tag"><a href="/tag/productivity">productivity</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
     </div>
-    <h2>Filter requests in the Network panel by status code, mime type and more</h2>
+    <h2>Prototype content changes with designMode</h2>
     <div class="tip-content">
-        <p>The Network panel lets you filter requests by status code, or mime type, and more.</p>
+        <p>When creating or modifying a design prototype for the web, you may want to quickly edit content in the browser without having to find the relevant code.</p>
+<p>When you turn on <code>designMode</code> for the document or a given element, all associated text becomes editable directly in the browser. Images and other page content can be deleted, too. This is a quick way to prototype design changes such as seeing how a page responds to very long or very short headline copy.</p>
+<p><code>designMode</code> is not a DevTools-specific feature, as it is defined as part of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/designMode">Web API</a>. However, toggling <code>designMode</code> via the DevTools Console is a convenient way to temporarily make the page editable.</p>
 <ul>
-<li>Click in the filter input field in the toolbar.</li>
-<li>Start typing <code>status-code</code>, you should see an autocomplete popup letting you know of the possible accepted values. Use <code>status-code:404</code> to find all requests that ended up in a 404 error.</li>
-<li>Other possible filters include <code>mime-type</code>, <code>domain</code>, <code>larger-than</code>, <code>method</code>, and more.</li>
-<li>You can also negate the search by putting a <code>-</code> in front (e.g. <code>-status-code:404</code>).</li>
+<li>Open the Console</li>
+<li>Enter <code>document.designMode=&quot;on&quot;</code> and press Enter</li>
 </ul>
-<p><img src="/assets/img/filter-network-requests.png" alt="Screenshot of the Network panel in Edge showing the filter input field"></p>
+<p>Turn off <code>designMode</code> with the expression <code>document.designMode=&quot;off&quot;</code>.</p>
+<p>Changes are not persisted and will revert on page close or refresh.</p>
+<p><img src="/assets/img/prototype-content-changes-with-designmode.gif" alt="Animated GIF of editable web page with designMode on"></p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/cde6f8f672dff0848266e3123685164165e06e42">Patrick Brosset</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/3c7624cc195146d2e518ff3aadb185258bb7cac5">Rachel Simone Weil</a></li></ul>
 </main>
 
     <footer role="contentinfo">
