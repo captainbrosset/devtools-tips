@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find DOM elements from the console</title>
+    <title>Console.log() for the web with logpoints</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,19 +37,28 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/console">console</a></li><li class="tag"><a href="/tag/html">html</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/debug">debug</a></li><li class="tag"><a href="/tag/javascript">javascript</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
     </div>
-    <h2>Find DOM elements from the console</h2>
+    <h2>Console.log() for the web with logpoints</h2>
     <div class="tip-content">
-        <p><code>$</code> and <code>$$</code> are 2 functions you can use in the console to find elements in the page.</p>
-<p>They are essentially shortcuts to the longer <code>document.querySelector()</code> and <code>document.querySelectorAll()</code> functions, but <code>$$</code> returns an array instead of a <code>NodeList</code>.</p>
-<p>They're nice and short, and for those who worked with jQuery, they will feel familiar.</p>
-<p><img src="/assets/img/query-dom-from-console.png" alt="Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions"></p>
+        <p>Using the <a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/">console</a> to log some information is a very common way to debug your JavaScript. But you can also log information in any web site using <strong>Logpoints</strong> in the <a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/sources/">sources</a> panel.</p>
+<p><img src="/assets/img/use-logpoints.png" alt="Screenshots of the way to set a logpoint in the sources tool"></p>
+<p>Here's how to do it:</p>
+<ol>
+<li>In the Sources panel (or Debugger in Firefox), open a JavaScript file and right-click any line number.</li>
+<li>Select <code>Add logpoint</code> to open the editor</li>
+<li>In the editor, enter the JavaScript expression you'd like to log.</li>
+<li>Hit Enter to save and a badge shows on the line number.</li>
+<li>Go to the console, interact with the site and every time this line executes, you see the result of the logpoint expression.</li>
+<li>If you don't want to log information any longer, click the Logpoint again to remove it.</li>
+</ol>
+<p>You can see this in action in <a href="https://www.youtube.com/watch?v=DRRezUZvZ6I">this video on YouTube</a>.</p>
+<p>Logpoints are a way to inject a <code>console.log()</code> into any web site without editing its source code.</p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/7dc5108c98de534dc8f7ccb8d839d608aaffda8e">Patrick Brosset</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/259a7da155d6abbd105d1efdc5a818c0a764099a">Alex Lakatos</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/1d4f8efab63a070c711a6867948911fc404afc09">Patrick Brosset</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/94f3ed79737a9c8393e3c89fbdb286a2234c7f93">Christian Heilmann</a></li></ul>
 </main>
 
     <footer role="contentinfo">
