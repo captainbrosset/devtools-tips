@@ -10,3 +10,5 @@ DevTools supports a light and dark theme. You can change the theme based on your
   * Also go to settings (press F1) and select "light" or "dark" in the Themes drop-down
 * In Safari
   * Go to the settings and select "Appearance" between "System", "Light" or "Dark"
+
+![Screenshot of the settings panel in Chrome showing the Theme drop-down](/assets/img/change-color-theme.png)

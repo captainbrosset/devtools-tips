@@ -8,3 +8,5 @@ If you spent time changing CSS in DevTools, either in the Rules panel (in Firefo
   * The Changes panel (in the Inspector), which allows you to copy all changes, or copy a given CSS rule
 * In Chrome or Edge:
   * The Changes panel (which you can open from the command menu by typing `ctrl+shift+P` or `cmd+shift+P`)
+
+![Screenshot of the Changes panel in Firefox showing a diff-like view of all the CSS changes](/assets/img/find-css-changes.png)

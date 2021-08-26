@@ -1,140 +1,224 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
-ul, li {
+
+ul,
+li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
 body {
-	font-size: 13pt;
+    font-size: 13pt;
     font-family: Arial;
+    margin: 0;
+    max-width: 1000px;
     margin: 0 auto;
-	max-width: 1000px;
-}
-
-a {
-    color: #3e8f8b;
 }
 
 header {
-    padding: 2rem 2rem 0 2rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    position: relative;
 }
+
 header h1 {
     text-align: center;
 }
+
 header h1 a {
-    display: inline-block;
+    display: block;
+    width: 6.5rem;
+    height: 5rem;
     text-indent: 100vw;
     overflow: hidden;
     white-space: nowrap;
-    width: 10rem;
-    height: 10rem;
     background: url(/assets/logo.png) no-repeat center;
-    background-size: contain;
+    background-size: cover;
+}
+
+header nav {
+    margin: 0 auto;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .header-menu {
+        flex-direction: column;
+    }
+}
+
+.header-menu li {
+    white-space: nowrap;
+}
+
+.header-menu a {
+    color: black;
+}
+
+.header-menu a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.header-menu>li {
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-menu>li:hover,
+.header-menu>li:focus-within {
+    background: gold;
+}
+
+.submenu-reveal {
+    display: none;
+    position: absolute;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    top: calc(100% - 10px);
+    left: -1rem;
+    min-width: calc(100% + 2rem);
+    text-align: center;
+    background: gold;
+    padding: 1rem;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 380px) {
+    .submenu-reveal {
+        grid-template-columns: 1fr;
+    }
+}
+
+.header-menu>li:hover .submenu-reveal,
+.header-menu>li:focus-within .submenu-reveal {
+    display: grid;
+}
+
+.search {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: stretch;
+    min-width: 0;
+    max-width: 40vw;
+}
+
+@media only screen and (max-width: 380px) {
+    .search {
+        display: none;
+    }
 }
 
 .search input {
+    flex: 1;
+    margin: 1rem 0;
     padding: 1rem;
-    width: 50%;
     border: 2px solid #8c7603;
     border-radius: 4px;
     background: #ffd70030;
-    margin: 1rem 0 0 0;
+    width: 0;
 }
+
 .search input:focus-visible {
     outline: 2px solid gold;
 }
 
 main {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 2rem;
     line-height: 1.5;
-}
-
-.hover-box {
-    line-height: 1;
-    text-align: center;
-    border-radius: 4px;
-}
-.hover-box:hover {
-    filter: brightness(80%);
-}
-.hover-box a {
-    padding: 1rem;
-    text-decoration: none;
-    display: block;
-    border-radius: inherit;
-}
-
-.browsers, .tags {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: .5rem;
-}
-.tips {
-    display: flex;
-    gap: .5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.tips .tip {
-    background: #eee;
-    flex: 1 300px;
-}
-.tags .tag {
-    background: #69e1db;
-}
-.tips .tip a {
-    color: black;
-    height: 100%;
-}
-.tags .tag a {
-    color: black;
-}
-.browsers .browser {
-    background: gold;
-}
-.browsers .browser a {
-    color: black;
-}
-
-.hover-box a:focus-visible {
-    outline: none;
-}
-.hover-box:focus-within {
-    outline: 2px solid black;
-}
-
-.home .tip a {
-    padding: 1rem 1rem 8rem 1rem;
-}
-.home .tip a.has-image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 4rem;
+    background: aliceblue;
 }
 
 main h2 {
+    margin: 1rem 0;
+}
+
+.tips {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tip {
+    background: white;
     text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 0px #00000024;
+    flex: 1 300px;
+    position: relative;
+}
+
+.tip img {
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    display: block;
+}
+
+.tip:hover {
+    background: gold;
+}
+
+.tip a {
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    max-height: 300px;
+    overflow: hidden;
+    color: black;
+}
+
+.tip a::after {
+    content: "";
+    background: white;
+    width: calc(100% - 2rem);
+    position: absolute;
+    bottom: 0;
+    height: 1rem;
+    left: 1rem;
+}
+
+.tip:hover a::after {
+    background: gold;
+}
+
+.tip a:focus-visible {
+    outline: none;
+}
+
+.tip:focus-within {
+    outline: 2px solid black;
 }
 
 .tip-content img {
     width: 80%;
     max-width: 800px;
-    margin: 0 auto;
     display: block;
-    border: 1rem solid aliceblue;
 }
 
-.tip-content ul, .tip-content li {
+.tip-content ul,
+.tip-content li {
     list-style: square;
     margin-left: 1rem;
 }
@@ -142,9 +226,20 @@ main h2 {
 .search-results:empty {
     display: none;
 }
+
 .search-results {
-    margin: 1rem 0 0 0;
+    position: absolute;
+    z-index: 1;
+    background: white;
+    right: 1rem;
+    padding: 1rem;
+    border: 2px solid #8c7603;
+    border-radius: 5px;
+    top: calc(100% - 2rem);
+    margin: 0;
+    left: 1rem;
 }
+
 .search-results .highlight {
     background: gold;
 }
@@ -161,7 +256,69 @@ code {
 }
 
 footer {
-	text-align: center;
-	padding: 2rem;
-	background: aliceblue;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: white;
+}
+
+footer a {
+    color: #28706c;
+}
+
+pre {
+    overflow: auto;
+    max-height: 50vh;
+    width: 100%;
+    white-space: normal;
+}
+
+.tip-info {
+    font-size: smaller;
+    color: #555;
+    line-height: 2;
+}
+
+.tags,
+.browsers,
+.tags li,
+.browsers li {
+    display: inline;
+}
+
+.tags a,
+.browsers a {
+    padding: .25rem;
+    margin: 0 .25rem;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+    line-height: 1;
+}
+
+.tags li a {
+    background: gold;
+    color: black;
+}
+
+.browsers li a {
+    background: #f06;
+    color: black;
+}
+
+.authors {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.authors::before {
+    content: "Authors:";
+    color: #555;
+}
+
+.authors li:not(:last-child)::after {
+    content: ",";
+}
+
+.authors li {
+    margin-left: .25rem;
 }

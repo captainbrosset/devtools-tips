@@ -1,15 +1,20 @@
 {
-  "name": "devtools-tips",
-  "version": "1.0.0",
-  "description": "A collection of useful, cross-browser, tips and tricks to get more comfortable with using DevTools.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
-  }
+    "name": "devtools-tips",
+    "repository": {
+        "url": "https://github.com/captainbrosset/devtools-tips"
+    },
+    "version": "1.0.0",
+    "description": "A collection of useful, cross-browser, tips and tricks to get more comfortable with using DevTools.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.12.1",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+        "node-fetch": "^2.6.1"
+    }
 }
