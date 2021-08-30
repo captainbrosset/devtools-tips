@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find DOM elements from the console</title>
+    <title>Cut down on console noise using live expressions</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,19 +37,27 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/console">console</a></li><li class="tag"><a href="/tag/html">html</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/debug">debug</a></li><li class="tag"><a href="/tag/javascript">javascript</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li></ul>
     </div>
-    <h2>Find DOM elements from the console</h2>
+    <h2>Cut down on console noise using live expressions</h2>
     <div class="tip-content">
-        <p><code>$</code> and <code>$$</code> are 2 functions you can use in the console to find elements in the page.</p>
-<p>They are essentially shortcuts to the longer <code>document.querySelector()</code> and <code>document.querySelectorAll()</code> functions, but <code>$$</code> returns an array instead of a <code>NodeList</code>.</p>
-<p>They're nice and short, and for those who worked with jQuery, they will feel familiar.</p>
-<p><img src="/assets/img/query-dom-from-console.png" alt="Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions"></p>
+        <p>Using the <a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/">Console</a> of DevTools to log information that changes a lot is a bad idea. First of all, you flood it with information. Secondly, it can impact the performance of your product. And last but not least, you are most likely to only log this information to debug your project and end users should never get that information.</p>
+<p>An excellent alternative to logging a lot of information are <a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/live-expressions">live expressions</a>. To add a new live expression do the following:</p>
+<ol>
+<li>Click the eye icon in DevTools <img src="/assets/img/live-expressions-eye-icon.png" alt="The eye button in DevTools"></li>
+<li>This gives you an entry field to type in any JavaScript expression. <img src="/assets/img/live-expressions-field.png" alt="The field to enter your live expression"></li>
+<li>Save the expression by clicking outside the field or press CMD+Enter on Mac or Ctrl+Enter on Windows/Linux.</li>
+</ol>
+<p>This will pin the expression on top of the Console and show you the value returned from it. Any change will show live below the expression.</p>
+<p>You can use this, for example, to resize the window to a certain size by monitoring the <code>outerWidth</code> and <code>outerHeight</code> properties.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>window<span class="token punctuation">.</span>outerWidth<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> x </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>window<span class="token punctuation">.</span>outerHeight<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span></code></pre>
+<p><img src="/assets/img/live-expressions-window-resize.gif" alt="Monitoring the window size using live expressions"></p>
+<p>You can set as many live expressions as you want, and you can remove them by clicking the <code>x</code> icon next to them.</p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/7dc5108c98de534dc8f7ccb8d839d608aaffda8e">Patrick Brosset</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/259a7da155d6abbd105d1efdc5a818c0a764099a">Alex Lakatos</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/3b272848b61e71c71ae9dbcf2f1f877c91e5c914">Patrick Brosset</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/e9dde9b199bc694f3c1bd557dd7548111d4dadd0">Christian Heilmann</a></li></ul>
 </main>
 
     <footer role="contentinfo">
