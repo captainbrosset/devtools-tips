@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View performance markers in order</title>
+    <title>See formatted JSON responses</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,18 +37,26 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/javascript">javascript</a></li><li class="tag"><a href="/tag/perf">perf</a></li><li class="tag"><a href="/tag/console">console</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/network">network</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/firefox">firefox</a></li></ul>
     </div>
-    <h2>View performance markers in order</h2>
+    <h2>See formatted JSON responses</h2>
     <div class="tip-content">
-        <p>When logging <code>performance.timing</code> events to the console, they appear in alphabetical order since they are properties of the <code>PerformanceTiming</code> object.</p>
-<p>In order to view them in order, you can use <code>console.table(performance.timing)</code> and click on the column heading to sort them by time.</p>
-<p><img src="/assets/img/view-perf-markers-in-order.png" alt="Screenshot of the console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties"></p>
+        <p>Firefox comes with a very nice <a href="https://developer.mozilla.org/en-US/docs/Tools/JSON_viewer">JSON viewer</a> that makes it easy to review responses from your server directly in the browser window.</p>
+<p>You don't even need to open DevTools.</p>
+<p>Just enter the URL to a JSON response in a tab, and instead of getting the raw text back, the JSON will be formatted and a toolbar will appear, with buttons to:</p>
+<ul>
+<li>Search within the response</li>
+<li>See the raw text</li>
+<li>See the headers</li>
+<li>Save the file locally</li>
+</ul>
+<p><img src="/assets/img/see-json-responses.png" alt="Screenshot of the JSON viewer in Firefox"></p>
+<p>You can try it out with <a href="https://jsonplaceholder.typicode.com/posts/1/comments">this sample JSON response</a>.</p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/21f3f9912e3d461c537b801341120e91aa26a552">Patrick Brosset</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/5c3a9bac72f50edddb11c568459232bc31c82615">Patrick Brosset</a></li></ul>
 </main>
 
     <footer role="contentinfo">
