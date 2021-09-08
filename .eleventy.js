@@ -35,6 +35,8 @@ async function getTipAuthors(tipPath) {
 
 module.exports = function(eleventyConfig) {
         eleventyConfig.addPassthroughCopy("src/assets");
+        eleventyConfig.addPassthroughCopy("src/sw.js");
+        eleventyConfig.addPassthroughCopy("src/manifest.json");
         eleventyConfig.addPassthroughCopy("CNAME");
 
         eleventyConfig.addNunjucksAsyncShortcode("authors", async function(path) {
