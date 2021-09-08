@@ -8,5 +8,4 @@
 * https://blog.openreplay.com/15-devtool-secrets-for-javascript-developers
 * Bootstrap script: https://webkit.org/web-inspector/inspector-bootstrap-script/
 * queryInstances console and queryHolders
-* safari audio breakpoints
 * ...
