@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>See quick accessibility information on hover</title>
+    <title>Play a sound when a line of JavaScript is executed</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
@@ -37,21 +37,28 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/accessibility">accessibility</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/debug">debug</a></li><li class="tag"><a href="/tag/javascript">javascript</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/safari">safari</a></li></ul>
     </div>
-    <h2>See quick accessibility information on hover</h2>
+    <h2>Play a sound when a line of JavaScript is executed</h2>
     <div class="tip-content">
-        <p>In Edge and Chrome, whenever you use the element selector and hover over elements in the page, a tooltip appears with, among other things, some accessibility information about the hovered element.</p>
+        <p>Sometimes pausing execution when a line of JavaScript is executed is too much, sometimes you only want to know that the line was executed at all, not pause there.</p>
+<p>To do this you can add <code>console.log()</code> statements in your code, or <a href="/tips/en/use-logpoints/">use logpoints</a>.</p>
+<p>In Safari, you can play an audio beep instead! This way you can hear that the line got executed, and your console doesn't get cluttered with more messages.</p>
+<p>To add an audio breakpoint:</p>
 <ul>
-<li>To start the element selector, click on the mouse cursor icon in the top-left corner of the DevTools window.</li>
-<li>Then simply hover over elements in the page</li>
+<li>Add a breakpoint on a line of code by clicking in the line number gutter.</li>
+<li>Right-click on the breakpoint and select <strong>Edit breakpoint</strong>.</li>
+<li>Click <strong>Add action</strong> and select <strong>Play sound</strong> from the action dropdown.</li>
+<li>Check the <strong>Automatically continue after evaluating</strong> option to avoid pausing on this line.</li>
 </ul>
-<p><img src="/assets/img/see-quick-a11y-info-on-hover.gif" alt="gif animation of the a11y tooltip in chrome"></p>
+<p>And that's it! Now every time this line is executed, an audio beep will be played.</p>
+<p>You can remove the breakpoint by right-clicking on it and selecting <strong>Delete Breakpoint</strong>.</p>
+<p><img src="/assets/img/play-sound-on-js-execution.gif" alt="GIF animation showing how to add the audio breakpoint in Safari Web Inspector"></p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/66d5d1b1ffe76199f5aded51f26f1b65bfb91a52">Patrick Brosset</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/4e70e5894bf6347734d5043d8fec40d19fe722af">Patrick Brosset</a></li></ul>
 </main>
 
     <footer role="contentinfo">
