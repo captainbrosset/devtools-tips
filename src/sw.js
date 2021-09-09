@@ -2,10 +2,23 @@ const CACHE_NAME = 'devtools-tips-v1';
 const INITIAL_CACHED_RESOURCES = [
     '/',
     '/offline/',
+    '/all/',
+    '/browser/edge/',
+    '/browser/safari/',
+    '/browser/firefox/',
+    '/browser/chrome/',
     '/assets/style.css',
-    '/assets/search.js',
+    '/assets/filter-tip-list.js',
+    '/assets/share.js',
     '/assets/logo.png',
     'https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css',
+];
+// Cached resources that match the following strings should not be periodically updated.
+// These are the tips html pages themselves, and their images.
+// Everything else, we try to update on a regular basis, to make sure lists of tips get updated and css/js are recent too.
+const DONT_UPDATE_RESOURCES = [
+    '/tips/',
+    '/assets/img/'
 ];
 
 self.addEventListener('install', event => {
@@ -15,6 +28,9 @@ self.addEventListener('install', event => {
     })());
 });
 
+// We have a cache-first strategy, where we look for resources in the cache first
+// and only on the network if this fails.
+// We also periodically update the cache in the background for the main pages.
 self.addEventListener('fetch', event => {
     event.respondWith((async () => {
         const cache = await caches.open(CACHE_NAME);
@@ -46,3 +62,37 @@ self.addEventListener('fetch', event => {
         }
     })());
 });
+
+// Listen the periodic background sync events to update the cached resources.
+self.addEventListener('periodicsync', event => {
+    if (event.tag === 'update-cached-content') {
+        event.waitUntil(updateCachedContent());
+    }
+});
+
+async function updateCachedContent() {
+    const requests = await findCacheEntriesToBeRefreshed();
+    const cache = await caches.open(CACHE_NAME);
+
+    for (const request of requests) {
+        try {
+            // Fetch the new version.
+            const fetchResponse = await fetch(request);
+            // Refresh the cache.
+            await cache.put(request, fetchResponse.clone());
+        } catch (e) {
+            // Fail silently, we'll just keep whatever we already had in the cache.
+        }
+    }
+}
+
+// Find the entries that are already cached and that we do want to update. This way we only
+// update these ones and let the user visit new pages when they are online to populate more things
+// in the cache.
+async function findCacheEntriesToBeRefreshed() {
+    const cache = await caches.open(CACHE_NAME);
+    const requests = await cache.keys();
+    return requests.filter(request => {
+        return !DONT_UPDATE_RESOURCES.some(pattern => request.url.includes(pattern));
+    });
+}
