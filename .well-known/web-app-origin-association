@@ -3,9 +3,8 @@
         {
             "manifest": "https://devtoolstips.org/manifest.json",
             "details": {
-                "paths": [
-                    "/*"
-                ]
+                "paths": ["*"],
+                "exclude_paths": []
             }
         }
     ]
