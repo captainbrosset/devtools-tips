@@ -1,40 +1,45 @@
 "use strict";
 
+const HIGHLIGHTED_CLASS = 'highlighted';
+const allTips = [];
+const listEl = document.querySelector('.tips');
+
+function getAllTips() {
+    if (!allTips.length) {
+        document.querySelectorAll('.tips .tip').forEach(el => {
+            allTips.push({
+                el,
+                title: el.textContent
+            });
+        })
+    }
+
+    return allTips
+}
+
 function findMatchingTips(query) {
-    return allTips.filter(tip => {
-        // TODO.
+    return getAllTips().filter(tip => {
+        // TODO: make a better search.
         return tip.title.toLowerCase().includes(query.toLowerCase());
     });
 }
 
-let resultPanel = null;
-
-function emptyResults() {
-    if (resultPanel) {
-        resultPanel.innerHTML = '';
-    }
-}
-
-function hideResults() {
-    resultPanel.style.display = "none";
+function resetFilter() {
+    getAllTips().forEach(tip => tip.el.classList.remove(HIGHLIGHTED_CLASS));
+    listEl.classList.remove('searching');
 }
 
 function showMatchingTips(tips, query) {
-    if (!resultPanel) {
-        resultPanel = document.querySelector('.search-results');
-    }
+    resetFilter();
 
-    emptyResults();
-
-    for (const { title, url } of tips) {
-        const li = document.createElement('li');
-        li.classList.add('result', 'hover-box', 'tip');
-
-        const a = document.createElement('a');
-        a.href = url;
+    for (const { el, title } of tips) {
+        el.classList.add(HIGHLIGHTED_CLASS);
+        const a = el.firstElementChild;
 
         const matchStart = title.toLowerCase().indexOf(query.toLowerCase());
         const matchLength = query.length;
+
+        a.innerHTML = '';
 
         a.appendChild(document.createTextNode(title.substring(0, matchStart)));
 
@@ -44,33 +49,25 @@ function showMatchingTips(tips, query) {
         a.appendChild(highlighted);
 
         a.appendChild(document.createTextNode(title.substring(matchStart + matchLength)));
-
-        li.appendChild(a);
-
-        resultPanel.appendChild(li);
     }
 
-    resultPanel.style.display = "";
+    listEl.classList.add('searching');
 }
-
-const searchField = document.querySelector('#search');
 
 function maybeSearch() {
     const q = searchField.value.trim();
     if (q.length < 2) {
-        emptyResults();
+        resetFilter();
         return;
     }
     const tips = findMatchingTips(q);
     if (tips.length) {
         showMatchingTips(tips, q);
     } else {
-        emptyResults();
+        resetFilter();
     }
 }
 
+const searchField = document.querySelector('.search input');
 searchField.addEventListener('input', maybeSearch);
 searchField.addEventListener('focus', maybeSearch);
-searchField.addEventListener('blur', () => {
-    setTimeout(hideResults, 200);
-});

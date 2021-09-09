@@ -22,28 +22,26 @@
       <nav>
         <ul class="header-menu">
           <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility">accessibility</a></li><li><a href="/tag/console">console</a></li><li><a href="/tag/css">css</a></li><li><a href="/tag/debug">debug</a></li><li><a href="/tag/export">export</a></li><li><a href="/tag/help">help</a></li><li><a href="/tag/highlighter">highlighter</a></li><li><a href="/tag/html">html</a></li><li><a href="/tag/javascript">javascript</a></li><li><a href="/tag/network">network</a></li><li><a href="/tag/perf">perf</a></li><li><a href="/tag/personalization">personalization</a></li><li><a href="/tag/productivity">productivity</a></li><li><a href="/tag/testing">testing</a></li><li><a href="/tag/webcomponents">webcomponents</a></li></ul>
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
-            <ul class="submenu-reveal"><li><a href="/browser/chrome">chrome</a></li><li><a href="/browser/edge">edge</a></li><li><a href="/browser/firefox">firefox</a></li><li><a href="/browser/safari">safari</a></li></ul>
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all">All Tips</a></li>
+          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
-      <label class="search">
-        <input type="text" id="search" placeholder="Start typing to find tips">
-      </label>
-      <ul class="search-results tips"></ul>
     </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/console">console</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge">edge</a></li><li class="browser"><a href="/browser/firefox">firefox</a></li><li class="browser"><a href="/browser/chrome">chrome</a></li><li class="browser"><a href="/browser/safari">safari</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
     </div>
-    <h2>Persist console messages across page navigations and reloads</h2>
+    <h2 class="tip-title">Persist console messages across page navigations and reloads</h2>
     <div class="tip-content">
         <p>By default, the messages displayed in the console get removed as soon as you refresh the page (or navigate to a new page). If you want to keep those messages as long as DevTools is open, follow these steps:</p>
 <ul>
@@ -68,20 +66,48 @@
     </div>
     <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/e19894aba18ddea03e36763e7c87e015376fbf57">Patrick Brosset</a></li></ul>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2021 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>
     </footer>
     <script>
-      const allTips = [{url: "/tips/en/block-resources/", title: "Block resources to test your site without CSS or JavaScript"},{url: "/tips/en/capture-node-creation-stacks/", title: "Capture node creation stack traces"},{url: "/tips/en/change-color-theme/", title: "Change the color theme of DevTools"},{url: "/tips/en/convert-font-units/", title: "Convert font property units"},{url: "/tips/en/copy-element-xpath/", title: "Copy an element&#39;s XPath expression"},{url: "/tips/en/copy-from-console/", title: "Copy an object from the console"},{url: "/tips/en/debugger-statement/", title: "Use the debugger statement to pause script execution"},{url: "/tips/en/drag-drop-dom-nodes/", title: "Drag and drop nodes in the DOM tree"},{url: "/tips/en/edit-clip-path-shape-outside/", title: "Edit clip-path and shape-outside CSS properties by dragging points in the page"},{url: "/tips/en/edit-css-angles/", title: "Edit CSS angles"},{url: "/tips/en/edit-css-filters/", title: "Edit CSS filters"},{url: "/tips/en/edit-position/", title: "Edit CSS absolute and relative positions by dragging points in the page"},{url: "/tips/en/evaluate-xpath/", title: "Evaluate XPath to find elements in the page"},{url: "/tips/en/execute-commands/", title: "Use commands to do things faster"},{url: "/tips/en/expand-nodes-recursively/", title: "Expand DOM nodes recursively"},{url: "/tips/en/filter-network-requests/", title: "Filter requests in the Network panel by status code, mime type and more"},{url: "/tips/en/find-all-images-without-alt-text/", title: "Find all images without alternative text"},{url: "/tips/en/find-css-changes/", title: "Find and export CSS changes"},{url: "/tips/en/find-custom-elements-code/", title: "Find your web component&#39;s custom element code"},{url: "/tips/en/find-devtools-documentation/", title: "Find DevTools reference documentation"},{url: "/tips/en/find-inactive-styles/", title: "Find inactive CSS styles"},{url: "/tips/en/get-contextual-help/", title: "Get contextual DevTools help"},{url: "/tips/en/get-current-element-in-console/", title: "Get the selected element in the console"},{url: "/tips/en/highlight-matching-elements/", title: "Highlight all the elements that a CSS rule matches"},{url: "/tips/en/live-expressions/", title: "Cut down on console noise using live expressions"},{url: "/tips/en/outline-everything/", title: "Draw a box around all elements to debug your CSS and page structure"},{url: "/tips/en/persist-logs-across-pages/", title: "Persist console messages across page navigations and reloads"},{url: "/tips/en/play-sound-on-js-execution/", title: "Play a sound when a line of JavaScript is executed"},{url: "/tips/en/prototype-content-changes-with-designmode/", title: "Prototype content changes with designMode"},{url: "/tips/en/query-dom-from-console/", title: "Find DOM elements from the console"},{url: "/tips/en/sample-colors-from-the-page/", title: "Sample colors from the page"},{url: "/tips/en/see-json-responses/", title: "See formatted JSON responses"},{url: "/tips/en/see-quick-a11y-info-on-hover/", title: "See quick accessibility information on hover"},{url: "/tips/en/see-the-page-in-3d/", title: "See the page in 3D"},{url: "/tips/en/send-feedback-about-devtools/", title: "Send feedback, ask for features and report bugs"},{url: "/tips/en/simulate-color-vision-deficiencies/", title: "Simulate color vision deficiencies"},{url: "/tips/en/simulate-pseudo-classes/", title: "Simulate pseudo CSS classes"},{url: "/tips/en/style-console-messages/", title: "Apply CSS styles to console messages"},{url: "/tips/en/suppressed-event-listeners-when-paused/", title: "Event listeners are suppressed when paused"},{url: "/tips/en/throttle-network-speed/", title: "Throttle the network speed to test your website on slower connections"},{url: "/tips/en/tweak-grid-flex-alignment/", title: "Tweak css grid and flexbox alignment properties"},{url: "/tips/en/unminify-javascript-code/", title: "Unminify JavaScript code to easily read and debug it"},{url: "/tips/en/use-another-language/", title: "Switch DevTools to another language"},{url: "/tips/en/use-logpoints/", title: "Console.log() for the web with logpoints"},{url: "/tips/en/use-scripts-as-snippets/", title: "Re-use scripts as snippets"},{url: "/tips/en/view-perf-markers-in-order/", title: "View performance markers in order"},{url: "/tips/en/visualize-screenreader-order/", title: "Visualize the screen reader order for elements within the page"},{url: "/tips/en/visualize-tabbing-order/", title: "Visualize the tabbing order on the page"},];
-    </script>
-    <script src="/assets/search.js"></script>
-    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
       if('serviceWorker' in navigator) {
+        // Register the service worker
         navigator.serviceWorker.register('/sw.js', {
           scope: '/'
         });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
       }
     </script>
   </body>
