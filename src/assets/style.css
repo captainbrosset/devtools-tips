@@ -28,9 +28,11 @@ header {
     justify-content: space-between;
     align-items: center;
     background: white;
-    padding: 2rem 1rem;
+    padding: 1rem;
     gap: 1rem;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 header h1 {
@@ -39,17 +41,32 @@ header h1 {
 
 header h1 a {
     display: block;
-    width: 6.5rem;
-    height: 5rem;
+    width: 5rem;
+    height: 3rem;
     text-indent: 100vw;
     overflow: hidden;
     white-space: nowrap;
     background: url(/assets/logo.png) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 header nav {
     margin: 0 0 0 auto;
+}
+
+.header-shadow {
+    box-shadow: 0 0 5px 1px #0003;
+    height: 0;
+    position: sticky;
+    z-index: 1;
+    top: 5rem;
+}
+
+.header-shadow-block {
+    z-index: 2;
+    height: 1rem;
+    background: aliceblue;
+    position: sticky;
 }
 
 .header-menu {
@@ -58,7 +75,7 @@ header nav {
     height: 100%;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
     .header-menu {
         flex-direction: column;
     }
@@ -77,7 +94,7 @@ header nav {
 }
 
 .header-menu>li {
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -104,7 +121,7 @@ header nav {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
     .submenu-reveal {
         grid-template-columns: 1fr;
     }
@@ -144,6 +161,7 @@ main {
     line-height: 1.5;
     background: aliceblue;
     position: relative;
+    top: -1rem;
 }
 
 main h2 {
@@ -153,6 +171,7 @@ main h2 {
 main h2:not(.tip-title) {
     text-align: center;
     text-transform: capitalize;
+    margin-top: 0;
 }
 
 .tips {
@@ -271,7 +290,8 @@ code {
 
 footer {
     text-align: center;
-    padding: 2rem 1rem;
+    /* main is relatively positioned at -1rem to account for the header shadow. So reduce the top-padding to 1rem instead of 2rem here */
+    padding: 1rem 1rem 2rem 1rem;
     background: white;
 }
 
