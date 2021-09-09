@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulate pseudo CSS classes</title>
+    <title>DevTools Tips</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
@@ -33,24 +33,15 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<main>
-    <div class="tip-info">
-        Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
-        Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
-    </div>
-    <h2 class="tip-title">Simulate pseudo CSS classes</h2>
-    <div class="tip-content">
-        <p>If you use <code>:hover</code>, <code>:active</code>, and other such pseudo-classes in CSS, you can actually simulate these states in DevTools without having to hover over or click on buttons and links.</p>
-<p>Open the Styles panel (in Chrome, Edge or Safari) or the Rules panel (in Firefox), and click the <code>:hov</code> button. This will expand a section that allows you to lock one or multiple of these pseudo-classes on the selected element.</p>
-<p><img src="/assets/img/simulate-pseudo-classes.png" alt="Screenshot of the :hov panel to simulate various pseudo-classes"></p>
-
-    </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/259a7da155d6abbd105d1efdc5a818c0a764099a">Alex Lakatos</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/4b32deaf31021645f798098f174ce16ff2a7d291">Patrick Brosset</a></li></ul>
+    <main>
+  <h2>pwa tips</h2>
+  <label class="search">
+    <span>Filter list</span>
+    <input type="text">
+</label>
+<script async src="/assets/filter-tip-list.js"></script>
+  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/force-pwa-periodic-sync/">Block resources to test your site without CSS or JavaScript</a></li></ul>
 </main>
-<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>

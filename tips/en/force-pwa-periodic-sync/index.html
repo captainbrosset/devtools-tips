@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulate pseudo CSS classes</title>
+    <title>Block resources to test your site without CSS or JavaScript</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
@@ -37,18 +37,25 @@
 <main>
     <div class="tip-info">
         Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
+        <ul class="tags"><li class="tag"><a href="/tag/network/">network</a></li><li class="tag"><a href="/tag/pwa/">pwa</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
     </div>
-    <h2 class="tip-title">Simulate pseudo CSS classes</h2>
+    <h2 class="tip-title">Block resources to test your site without CSS or JavaScript</h2>
     <div class="tip-content">
-        <p>If you use <code>:hover</code>, <code>:active</code>, and other such pseudo-classes in CSS, you can actually simulate these states in DevTools without having to hover over or click on buttons and links.</p>
-<p>Open the Styles panel (in Chrome, Edge or Safari) or the Rules panel (in Firefox), and click the <code>:hov</code> button. This will expand a section that allows you to lock one or multiple of these pseudo-classes on the selected element.</p>
-<p><img src="/assets/img/simulate-pseudo-classes.png" alt="Screenshot of the :hov panel to simulate various pseudo-classes"></p>
+        <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Periodic_Background_Synchronization_API">periodic background sync API</a>, available to PWAs is a great way to fetch new content while the user isn't on the site, and while they have access to the network, to make sure they have the latest content when they come back to the app.</p>
+<p>It can be hard to debug though, as the sync only happen after the minimum interval has passed, and the browser thinks that now is a good time to trigger the sync.</p>
+<p>Thankfully, there is a way in Chrome and Edge to force the sync, so you don't have to wait for the browser to do it.</p>
+<ul>
+<li>Navigate to the <strong>Application</strong> panel.</li>
+<li>Select the <strong>Service Workers</strong> tab.</li>
+<li>Scroll down to the <strong>Periodic Sync</strong> input.</li>
+<li>Enter the tag name for your registered sync, and click the <strong>Periodic Sync</strong> button.</li>
+</ul>
+<p><img src="/assets/img/force-pwa-periodic-sync.png" alt="Screenshot of the Application panel in Edge showing the periodic sync input and buttons"></p>
 
     </div>
-    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/259a7da155d6abbd105d1efdc5a818c0a764099a">Alex Lakatos</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/4b32deaf31021645f798098f174ce16ff2a7d291">Patrick Brosset</a></li></ul>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/5fe12520917862974bc1203ae3b259e78aa86077">Patrick Brosset</a></li></ul>
 </main>
 <script async src="/assets/share.js"></script>
 
