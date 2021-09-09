@@ -5,6 +5,7 @@ const INITIAL_CACHED_RESOURCES = [
     '/assets/style.css',
     '/assets/search.js',
     '/assets/logo.png',
+    'https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css',
 ];
 
 self.addEventListener('install', event => {
