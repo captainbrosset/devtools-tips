@@ -1,0 +1,12 @@
+{
+    "web_apps": [
+        {
+            "manifest": "https://devtoolstips.org/manifest.json",
+            "details": {
+                "paths": [
+                    "/*"
+                ]
+            }
+        }
+    ]
+}
