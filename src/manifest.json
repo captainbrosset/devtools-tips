@@ -36,5 +36,10 @@
             "sizes": "1992x1773",
             "type": "image/png"
         }
+    ],
+    "url_handlers": [
+        {
+            "origin": "https://devtoolstips.org"
+        }
     ]
 }
