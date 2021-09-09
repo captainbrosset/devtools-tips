@@ -17,7 +17,7 @@ async function getImagesAsFiles(images) {
         const response = await fetch(image.src);
         const blob = await response.blob();
         const name = image.src.substring(image.src.lastIndexOf('/') + 1);
-        files.push(new File([blob], name));
+        files.push(new File([blob], name, {type: blob.type}));
     }
     return files;
 }
