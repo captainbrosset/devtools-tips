@@ -15,3 +15,4 @@
 ## Other features
 
 * Add periodic sync to the service worker to update the home page (for new tips to be shown, once a day). Should also update the list of all tips in JS for the search bar to pick up new tips.
+* Should do network-first approach for all pages but tips. Since this is where lists can change. Or periodic sync for those pages too.

@@ -147,6 +147,7 @@ main {
     padding: 2rem;
     line-height: 1.5;
     background: aliceblue;
+    position: relative;
 }
 
 main h2 {
@@ -221,6 +222,31 @@ main h2 {
 .tip-content li {
     list-style: square;
     margin-left: 1rem;
+}
+
+.share-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 3px;
+    border: 0;
+    font-size: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+    background: white;
+    padding: .5rem;
+}
+
+.share-button::after {
+    content: '';
+    margin-left: .25rem;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtbmFtZT0iTGF5ZXIgMSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHg9IjBweCIgeT0iMHB4Ij48dGl0bGU+QXJ0Ym9hcmQgNDwvdGl0bGU+PGc+PHBhdGggZD0iTTM0LDc4SDY2QTEyLDEyLDAsMCwwLDc4LDY2VjU0SDcwVjY2YTQsNCwwLDAsMS00LDRIMzRhNCw0LDAsMCwxLTQtNFYzNGE0LDQsMCwwLDEsNC00SDQ2VjIySDM0QTEyLDEyLDAsMCwwLDIyLDM0VjY2QTEyLDEyLDAsMCwwLDM0LDc4WiI+PC9wYXRoPjxwYXRoIGQ9Ik00Mi4zNCw1Miw0OCw1Ny42NmwyMi0yMlY0Nmg4VjI2YTQsNCwwLDAsMC00LTRINTR2OEg2NC4zNFoiPjwvcGF0aD48L2c+PC9zdmc+");
+    display: inline-block;
+    width: 17px;
+    aspect-ratio: 1 / 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: bottom;
 }
 
 .search-results:empty {
