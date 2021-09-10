@@ -1,5 +1,5 @@
 ---
-title: Block resources to test your site without CSS or JavaScript
+title: Force PWA periodic background syncs
 tags: ["network", "pwa", "browser:edge", "browser:chrome"]
 ---
 The [periodic background sync API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Periodic_Background_Synchronization_API), available to PWAs is a great way to fetch new content while the user isn't on the site, and while they have access to the network, to make sure they have the latest content when they come back to the app.
