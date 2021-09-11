@@ -150,6 +150,8 @@ header nav {
     border-radius: 4px;
     background: #ffd70030;
     width: 0;
+    /* Make font in input the same as elsewhere, and prevent iOS from zooming on tap */
+    font: inherit;
 }
 
 .search input:focus-visible {
