@@ -1,3 +1,5 @@
+self.importScripts('/assets/localforage-1.10.0.min.js');
+
 const CACHE_NAME = 'devtools-tips-v1';
 const INITIAL_CACHED_RESOURCES = [
     '/',
@@ -12,6 +14,7 @@ const INITIAL_CACHED_RESOURCES = [
     '/assets/share.js',
     '/assets/logo.png',
     'https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css',
+    '/assets/localforage-1.10.0.min.js'
 ];
 // Cached resources that match the following strings should not be periodically updated.
 // These are the tips html pages themselves, and their images.
@@ -55,12 +58,57 @@ self.addEventListener('fetch', event => {
             } catch (e) {
                 // Fetching didn't work let's go to the error page.
                 if (event.request.mode === 'navigate') {
+                    await rememberRequestedTip(event.request.url);
                     const errorResponse = await cache.match('/offline/');
                     return errorResponse;
                 }
             }
         }
     })());
+});
+
+async function rememberRequestedTip(url) {
+    let tips = await localforage.getItem('bg-tips');
+    if (!tips) {
+        tips = [];
+    }
+
+    tips.push(url);
+    await localforage.setItem('bg-tips', tips);
+}
+
+// Listen to background sync events to load requested tips that couldn't be retrieved when offline.
+self.addEventListener('sync', event => {
+    if (event.tag === 'bg-load-tip') {
+        event.waitUntil(backgroundSyncLoadTips());
+    }
+});
+
+// Fetch the requested tips now, and put them in cache.
+async function backgroundSyncLoadTips() {
+    const tips = await localforage.getItem('bg-tips');
+    if (!tips || !tips.length) {
+        return;
+    }
+
+    // Fetch and cache each tip.
+    const cache = await caches.open(CACHE_NAME);
+    await cache.addAll(tips);
+
+    // Re-engage user with a notification.
+    registration.showNotification(`${tips.length} DevTools Tips was/were loaded in the background and is/are ready`, {
+        icon: "/assets/logo-192.png",
+        body: "View the tip",
+        data: tips[0]
+    });
+
+    await localforage.removeItem('bg-tips');
+}
+
+self.addEventListener('notificationclick', event => {
+    // assuming only one type of notification right now
+    event.notification.close();
+    clients.openWindow(event.notification.data);
 });
 
 // Listen the periodic background sync events to update the cached resources.

@@ -359,3 +359,9 @@ pre {
 .authors li {
     margin-left: .25rem;
 }
+
+.bg-load-tip {
+    border: 0;
+    background: gold;
+    padding: .5rem;
+}

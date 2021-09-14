@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips Error</title>
+    <title>Query object instances and holders from the console</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
@@ -33,31 +33,32 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>You are offline</h2>
-  <p>The requested page could not be loaded. Please try again later, go back <a href="/">home</a>, or let us load it for you automatically!</p>
-  <p><button class="bg-load-tip">Load page in background</button></p>
-  <p class="success-message" style="display:none;">We'll load it as soon as we can (even if the app isn't running) and let you know when it's ready!</p>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    </div>
+    <h2 class="tip-title">Query object instances and holders from the console</h2>
+    <div class="tip-content">
+        <p>All browser DevTools have a few built-in functions in the console to do things like <a href="/tips/en/get-current-element-in-console/">get the current element</a>, or <a href="/tips/en/copy-from-console/">copy a string</a>. But Safari exposes 2 nice built-in functions:</p>
+<ul>
+<li><code>queryInstances</code></li>
+<li><code>queryHolders</code></li>
+</ul>
+<p>These two functions are really useful when your site starts using a lot of JavaScript objects. In some situations, it may become difficult to keep track of the dependencies between these objects, and memory leaks may start to appear, too.</p>
+<p>If <code>app.TodoItem</code> is a JavaScript class in your application, then <code>queryInstances(app.TodoItem)</code> will return an array of all of its instances.</p>
+<p><img src="/assets/img/query-instances-holders-1.png" alt="Screenshot of the console in Safari, showing the result of queryInstances(app.TodoItem)"></p>
+<p>Or if you want to know what refers to the object you're debugging, use <code>queryHolders(this)</code>, which will return an array of all the other objects that have references to <code>this</code>.</p>
+<p><img src="/assets/img/query-instances-holders-2.png" alt="Screenshot of the console in Safari, showing the result of queryHolders(this)"></p>
+<p>Learn more about these, and other, built-in functions <a href="https://webkit.org/web-inspector/console-command-line-api/#functions">here</a>.</p>
+
+    </div>
+    <ul class="authors"><li><a href="https://github.com/captainbrosset/devtools-tips/commit/ebfb2c7631464149ce3cc7700d77564656971ff4">Patrick Brosset</a></li></ul>
 </main>
-<script src="/assets/localforage-1.10.0.min.js" async></script>
-<script async>
-const button = document.querySelector('main button');
-const message = document.querySelector('main .success-message');
-
-async function requestBgTipLoad() {
-  const registration = await navigator.serviceWorker.ready;
-  await registration.sync.register('bg-load-tip');
-
-  await Notification.requestPermission();
-
-  button.style.display = 'none';
-  message.style.display = '';
-}
-
-button.addEventListener('click', () => {
-  requestBgTipLoad();
-});
-</script>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
