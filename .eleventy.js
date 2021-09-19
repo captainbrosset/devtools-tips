@@ -16,8 +16,8 @@ async function getTipAuthorsAndDate(tipPath) {
         const data = await response.json();
         const alreadySeenAuthors = new Set();
         authors = data.map(d => {
-            if (!date || new date(d.commit.author.date) > date) {
-              date = new date(d.commit.author.date);
+            if (!date || new Date(d.commit.author.date) > date) {
+              date = new Date(d.commit.author.date);
             }
 
             return {
@@ -35,7 +35,7 @@ async function getTipAuthorsAndDate(tipPath) {
             }
         });
     } catch (e) {
-        console.error(`Error finding authors for ${tipPath}`);
+        console.error(`Error finding authors for ${tipPath}`, e);
     }
 
     return {authors, date};
