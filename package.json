@@ -6,6 +6,7 @@
     "version": "1.0.0",
     "description": "A collection of useful, cross-browser, tips and tricks to get more comfortable with using DevTools.",
     "scripts": {
+        "build": "npx @11ty/eleventy",
         "watch": "npx @11ty/eleventy --serve"
     },
     "keywords": [],
@@ -13,6 +14,7 @@
     "license": "ISC",
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
+        "@11ty/eleventy-plugin-rss": "^1.1.1",
         "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
         "node-fetch": "^2.6.1"
     }
