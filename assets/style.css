@@ -111,7 +111,7 @@ header nav {
     position: absolute;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    top: calc(100% - 10px);
+    top: calc(100% - .25rem);
     left: -1rem;
     min-width: calc(100% + 2rem);
     text-align: center;
@@ -342,22 +342,27 @@ pre {
     color: black;
 }
 
-.authors {
-    margin-top: 2rem;
-    display: flex;
+.tip-footer {
+    margin: 2rem 0 0 0;
 }
 
-.authors::before {
-    content: "Authors:";
+.tip-footer * {
+    margin: 0;
+    display: inline;
     color: #555;
 }
 
-.authors li:not(:last-child)::after {
+.tip-footer .authors li:not(:last-child)::after {
     content: ",";
 }
 
-.authors li {
+.tip-footer .authors li, .tip-footer .last-edit time {
+    color: black;
     margin-left: .25rem;
+}
+
+.tip-footer .last-edit::before {
+    content: " - ";
 }
 
 .bg-load-tip {
