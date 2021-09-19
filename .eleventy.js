@@ -6,6 +6,21 @@ const token = process.env.AUTHOR_API_TOKEN;
 
 const ANTHORS_DATES_CACHE = new Map();
 
+async function getLastTipUpdate() {
+  try {
+    const response = await fetch('https://api.github.com/repos/captainbrosset/devtools-tips/commits?path=./src/tips/en/', {
+      headers: {
+        Authorization: `token ${token}`
+      }
+    });
+    const data = await response.json();
+    const lastCommit = data[0];
+    return new Date(lastCommit.author.date);
+  } catch (e) {
+    return new Date();
+  }
+}
+
 async function getTipAuthorsAndDate(tipPath) {
   if (ANTHORS_DATES_CACHE.has(tipPath)) {
     return ANTHORS_DATES_CACHE.get(tipPath);
@@ -56,9 +71,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/.well-known");
   eleventyConfig.addPassthroughCopy("CNAME");
 
-  eleventyConfig.addNunjucksAsyncShortcode("postdate", async function (path) {
-    const { date } = await getTipAuthorsAndDate(path);
-    return date.toISOString();
+  eleventyConfig.addNunjucksAsyncFilter("postdate", function(path, cb) {
+    getTipAuthorsAndDate(path).then(res => {
+      cb(null, res.date);
+    });
+  });
+
+  eleventyConfig.addNunjucksAsyncShortcode("lasttipupdate", async function () {
+    return (await getLastTipUpdate()).toISOString();
   });
 
   eleventyConfig.addNunjucksAsyncShortcode("authorsdate", async function (path) {
