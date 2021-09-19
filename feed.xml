@@ -14,7 +14,7 @@
   <entry>
     <title>Block resources to test your site without CSS or JavaScript</title>
     <link href="https://devtoolstips.org/tips/en/block-resources/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/block-resources/</id>
     <content type="html">&lt;p&gt;The various resources loaded by your site aren&#39;t always guaranteed to reach your users when they visit your site. Network problems can occur, JavaScript may be disabled, a CDN may be down, or the browser can decide to block a resource.&lt;/p&gt;
 &lt;p&gt;It&#39;s useful to test how your site looks when this occurs. It may also be useful to compare the performance of your site with and without certain resources.&lt;/p&gt;
@@ -48,7 +48,7 @@
   <entry>
     <title>Capture node creation stack traces</title>
     <link href="https://devtoolstips.org/tips/en/capture-node-creation-stacks/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/capture-node-creation-stacks/</id>
     <content type="html">&lt;p&gt;Have you ever wanted to know what caused a specific DOM node or element to be created in the page?
 When working on a site that uses a lot of JavaScript and especially when you don&#39;t know the codebase, this can be a life saver.&lt;/p&gt;
@@ -80,7 +80,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
   <entry>
     <title>Change the color theme of DevTools</title>
     <link href="https://devtoolstips.org/tips/en/change-color-theme/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/change-color-theme/</id>
     <content type="html">&lt;p&gt;DevTools supports a light and dark theme. You can change the theme based on your preference, to match your browser theme for example.&lt;/p&gt;
 &lt;ul&gt;
@@ -108,7 +108,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
   <entry>
     <title>Convert font property units</title>
     <link href="https://devtoolstips.org/tips/en/convert-font-units/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/convert-font-units/</id>
     <content type="html">&lt;p&gt;Font CSS properties such as &lt;code&gt;font-size&lt;/code&gt;, &lt;code&gt;line-height&lt;/code&gt; or &lt;code&gt;letter-spacing&lt;/code&gt; can be expressed in multiple different length units (like many other CSS properties).&lt;/p&gt;
 &lt;p&gt;Firefox, Chrome and Edge allow you to convert values between these units easily.&lt;/p&gt;
@@ -147,7 +147,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
   <entry>
     <title>Copy an element&#39;s XPath expression</title>
     <link href="https://devtoolstips.org/tips/en/copy-element-xpath/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/copy-element-xpath/</id>
     <content type="html">&lt;p&gt;You can easily copy an element&#39;s &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/XPath&quot;&gt;XPath&lt;/a&gt; expression from DevTools. This is useful if you need this expression for an automated test for example.&lt;/p&gt;
 &lt;ul&gt;
@@ -165,7 +165,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
   <entry>
     <title>Copy an object from the console</title>
     <link href="https://devtoolstips.org/tips/en/copy-from-console/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/copy-from-console/</id>
     <content type="html">&lt;p&gt;The console panel supports a very handy &lt;code&gt;copy()&lt;/code&gt; function that stringifies and copies anything you pass to it as an argument, so you can then paste it somewhere else.&lt;/p&gt;
 &lt;p&gt;For example: &lt;code&gt;copy($$(&#39;a&#39;).map(a =&amp;gt; a.href).join(&#39;\n&#39;))&lt;/code&gt; copies all of the links from the page.&lt;/p&gt;
@@ -177,7 +177,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
   <entry>
     <title>Use the debugger statement to pause script execution</title>
     <link href="https://devtoolstips.org/tips/en/debugger-statement/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/debugger-statement/</id>
     <content type="html">&lt;p&gt;If you prefer to use &lt;code&gt;console.log()&lt;/code&gt; statements rather than the JavaScript debugger because you find it difficult to set breakpoints in DevTools (or you can&#39;t), then you can use the &lt;code&gt;debugger&lt;/code&gt; statement in JavaScript.&lt;/p&gt;
 &lt;ul&gt;
@@ -194,7 +194,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
   <entry>
     <title>Drag and drop nodes in the DOM tree</title>
     <link href="https://devtoolstips.org/tips/en/drag-drop-dom-nodes/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/drag-drop-dom-nodes/</id>
     <content type="html">&lt;p&gt;If you need to move nodes or elements around in the DOM tree, to re-order things in the page, you can do it by drag and dropping nodes around in the Elements (or Inspector) panel.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/drag-drop-dom-nodes.gif&quot; alt=&quot;Gif animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge&quot; /&gt;&lt;/p&gt;
@@ -205,7 +205,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
   <entry>
     <title>Edit clip-path and shape-outside CSS properties by dragging points in the page</title>
     <link href="https://devtoolstips.org/tips/en/edit-clip-path-shape-outside/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/edit-clip-path-shape-outside/</id>
     <content type="html">&lt;p&gt;The &lt;a href=&quot;https://developer.mozilla.org/docs/Web/CSS/clip-path&quot;&gt;&lt;code&gt;clip-path&lt;/code&gt; property&lt;/a&gt; is a great way to change the final shape of an element and give it the shape that you want.&lt;br /&gt;
 You can use this property to make an element be a circle, an ellipse, a polygon or any shape that can be described with an &lt;a href=&quot;https://developer.mozilla.org/docs/Web/SVG/Tutorial/Paths&quot;&gt;SVG path&lt;/a&gt;.&lt;/p&gt;
@@ -226,7 +226,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Edit CSS angles</title>
     <link href="https://devtoolstips.org/tips/en/edit-css-angles/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/edit-css-angles/</id>
     <content type="html">&lt;p&gt;In CSS, several different properties use &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/angle&quot;&gt;angle&lt;/a&gt; unit values, such as the &lt;code&gt;rotate()&lt;/code&gt; function of a &lt;code&gt;transform&lt;/code&gt; or the &lt;code&gt;linear-gradient&lt;/code&gt; orientation of a &lt;code&gt;background-image&lt;/code&gt;, and more.&lt;/p&gt;
 &lt;p&gt;In Chrome and Edge, wherever a value that uses an angle unit (e.g. &lt;code&gt;deg&lt;/code&gt;, &lt;code&gt;rad&lt;/code&gt;, &lt;code&gt;grad&lt;/code&gt;, &lt;code&gt;turn&lt;/code&gt;) is displayed in the Styles panel, you can edit it with a nice little visual editor instead of typing the number by hand.&lt;/p&gt;
@@ -238,7 +238,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Edit CSS filters</title>
     <link href="https://devtoolstips.org/tips/en/edit-css-filters/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/edit-css-filters/</id>
     <content type="html">&lt;p&gt;The &lt;a href=&quot;https://developer.mozilla.org/docs/Web/CSS/filter&quot;&gt;&lt;code&gt;filter&lt;/code&gt;&lt;/a&gt; property in CSS lets you change the way a particular element gets rendered.&lt;/p&gt;
 &lt;p&gt;Firefox provides a visual editor to play with CSS filters. You can add or remove filter functions from the list, re-order them, edit individual functions and even create presets that you can reuse later.&lt;/p&gt;
@@ -255,7 +255,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Edit CSS absolute and relative positions by dragging points in the page</title>
     <link href="https://devtoolstips.org/tips/en/edit-position/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/edit-position/</id>
     <content type="html">&lt;p&gt;Firefox features a position editor that lets you move elements in the page by drag and drop. This works with elements that are positioned in CSS with &lt;code&gt;position:relative&lt;/code&gt; or &lt;code&gt;position:absolute&lt;/code&gt; and that have at least one of &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;right&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt; and &lt;code&gt;left&lt;/code&gt; defined.&lt;/p&gt;
 &lt;ul&gt;
@@ -273,7 +273,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Evaluate XPath to find elements in the page</title>
     <link href="https://devtoolstips.org/tips/en/evaluate-xpath/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/evaluate-xpath/</id>
     <content type="html">&lt;p&gt;DevTools supports 2 ways to evaluate &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/XPath&quot;&gt;XPath&lt;/a&gt; expressions to help you locate elements in the page. All browsers support those 2 ways:&lt;/p&gt;
 &lt;ul&gt;
@@ -303,7 +303,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Use commands to do things faster</title>
     <link href="https://devtoolstips.org/tips/en/execute-commands/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/execute-commands/</id>
     <content type="html">&lt;p&gt;There is a command menu in Edge and Chrome that allows you to quickly access many different features of DevTools without having to navigate the UI.&lt;/p&gt;
 &lt;p&gt;Press &lt;code&gt;ctrl+shift+P&lt;/code&gt; (or &lt;code&gt;cmd+shift+P&lt;/code&gt; on mac) to open the command menu, and just start typing.&lt;/p&gt;
@@ -316,7 +316,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Expand DOM nodes recursively</title>
     <link href="https://devtoolstips.org/tips/en/expand-nodes-recursively/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/expand-nodes-recursively/</id>
     <content type="html">&lt;p&gt;You can expand all descendants under a given DOM node in one go, to avoid having to expand each node one by one, which may take a while.&lt;/p&gt;
 &lt;ul&gt;
@@ -339,7 +339,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Filter requests in the Network panel by status code, mime type and more</title>
     <link href="https://devtoolstips.org/tips/en/filter-network-requests/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/filter-network-requests/</id>
     <content type="html">&lt;p&gt;The Network panel lets you filter requests by status code, or mime type, and more.&lt;/p&gt;
 &lt;ul&gt;
@@ -356,7 +356,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Find all images without alternative text</title>
     <link href="https://devtoolstips.org/tips/en/find-all-images-without-alt-text/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/find-all-images-without-alt-text/</id>
     <content type="html">&lt;p&gt;With HTML, you can add alternative text to images using the &lt;code&gt;alt&lt;/code&gt; attribute. It can be used to add a text description to images, which is extremely useful for accessibility as some people may not be able to see the images. With &lt;code&gt;alt&lt;/code&gt;, screen readers can announce the alternative text to the user.&lt;/p&gt;
 &lt;p&gt;Using DevTools, you can quickly check which images on a page do not have an &lt;code&gt;alt&lt;/code&gt; text, here is how:&lt;/p&gt;
@@ -375,7 +375,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Find and export CSS changes</title>
     <link href="https://devtoolstips.org/tips/en/find-css-changes/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/find-css-changes/</id>
     <content type="html">&lt;p&gt;If you spent time changing CSS in DevTools, either in the Rules panel (in Firefox), or in the Sources or Styles panels (in Chrome or Edge), and you don&#39;t remember all of the changes you made, you can find and extract them easily from:&lt;/p&gt;
 &lt;ul&gt;
@@ -398,7 +398,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Find your web component&#39;s custom element code</title>
     <link href="https://devtoolstips.org/tips/en/find-custom-elements-code/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/find-custom-elements-code/</id>
     <content type="html">&lt;p&gt;In Firefox, when inspecting elements (in the Inspector panel), you can click on the &lt;code&gt;custom&lt;/code&gt; badge to go straight to the custom element&#39;s JavaScript source code.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/find-custom-elements-code.gif&quot; alt=&quot;Gif animation showing the custom button in Firefox&#39;s inspector and that clicking on it goes to the debugger&quot; /&gt;&lt;/p&gt;
@@ -409,7 +409,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Find DevTools reference documentation</title>
     <link href="https://devtoolstips.org/tips/en/find-devtools-documentation/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/find-devtools-documentation/</id>
     <content type="html">&lt;p&gt;If you want to learn more about what other tools exist in a browser, or what features a given tool provides, you can find reference documentation from all the major browsers here:&lt;/p&gt;
 &lt;ul&gt;
@@ -426,7 +426,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Find inactive CSS styles</title>
     <link href="https://devtoolstips.org/tips/en/find-inactive-styles/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/find-inactive-styles/</id>
     <content type="html">&lt;p&gt;Firefox has a unique feature that helps find CSS styles that don&#39;t have any effect on the page.&lt;/p&gt;
 &lt;p&gt;This is not an audit tool that helps with removing useless CSS rules, but it is useful to know when a given CSS property isn&#39;t doing anything on the selected element.&lt;/p&gt;
@@ -444,7 +444,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Force PWA periodic background syncs</title>
     <link href="https://devtoolstips.org/tips/en/force-pwa-periodic-sync/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/force-pwa-periodic-sync/</id>
     <content type="html">&lt;p&gt;The &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Web_Periodic_Background_Synchronization_API&quot;&gt;periodic background sync API&lt;/a&gt;, available to PWAs is a great way to fetch new content while the user isn&#39;t on the site, and while they have access to the network, to make sure they have the latest content when they come back to the app.&lt;/p&gt;
 &lt;p&gt;It can be hard to debug though, as the sync only happen after the minimum interval has passed, and the browser thinks that now is a good time to trigger the sync.&lt;/p&gt;
@@ -463,7 +463,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Get contextual DevTools help</title>
     <link href="https://devtoolstips.org/tips/en/get-contextual-help/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/get-contextual-help/</id>
     <content type="html">&lt;p&gt;Edge has a feature called the &lt;strong&gt;DevTools Tooltips&lt;/strong&gt; that gives you help about the different tools right inside of DevTools.&lt;/p&gt;
 &lt;p&gt;There are several ways to enable it:&lt;/p&gt;
@@ -481,7 +481,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Get the selected element in the console</title>
     <link href="https://devtoolstips.org/tips/en/get-current-element-in-console/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/get-current-element-in-console/</id>
     <content type="html">&lt;p&gt;If you selected an element in the Elements panel (in Chrome, Safari or Edge) or the Inspector panel (in Firefox), you can refer to it in the console using &lt;code&gt;$0&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;This shortcut will return the DOM node instance, which you can then use to do things like getting computed styles, or check DOM properties, etc.&lt;/p&gt;
@@ -494,7 +494,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Highlight all the elements that a CSS rule matches</title>
     <link href="https://devtoolstips.org/tips/en/highlight-matching-elements/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/highlight-matching-elements/</id>
     <content type="html">&lt;p&gt;When you want to know which elements a given CSS rule will apply to, in addition to the currently selected element, you can:&lt;/p&gt;
 &lt;ul&gt;
@@ -518,7 +518,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Cut down on console noise using live expressions</title>
     <link href="https://devtoolstips.org/tips/en/live-expressions/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/live-expressions/</id>
     <content type="html">&lt;p&gt;Using the &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/&quot;&gt;Console&lt;/a&gt; of DevTools to log information that changes a lot is a bad idea. First of all, you flood it with information. Secondly, it can impact the performance of your product. And last but not least, you are most likely to only log this information to debug your project and end users should never get that information.&lt;/p&gt;
 &lt;p&gt;An excellent alternative to logging a lot of information are &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/live-expressions&quot;&gt;live expressions&lt;/a&gt;. To add a new live expression do the following:&lt;/p&gt;
@@ -539,7 +539,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Draw a box around all elements to debug your CSS and page structure</title>
     <link href="https://devtoolstips.org/tips/en/outline-everything/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/outline-everything/</id>
     <content type="html">&lt;p&gt;Simple, yet powerful, &lt;code&gt;* { outline: 1px solid red; }&lt;/code&gt; is a useful debugging trick that helps understanding the page structure, finding overflow bugs or understand why elements are being pushed away for no apparent reason.&lt;/p&gt;
 &lt;ul&gt;
@@ -556,7 +556,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Persist console messages across page navigations and reloads</title>
     <link href="https://devtoolstips.org/tips/en/persist-logs-across-pages/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/persist-logs-across-pages/</id>
     <content type="html">&lt;p&gt;By default, the messages displayed in the console get removed as soon as you refresh the page (or navigate to a new page). If you want to keep those messages as long as DevTools is open, follow these steps:&lt;/p&gt;
 &lt;ul&gt;
@@ -584,7 +584,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Play a sound when a line of JavaScript is executed</title>
     <link href="https://devtoolstips.org/tips/en/play-sound-on-js-execution/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/play-sound-on-js-execution/</id>
     <content type="html">&lt;p&gt;Sometimes pausing execution when a line of JavaScript is executed is too much, sometimes you only want to know that the line was executed at all, not pause there.&lt;/p&gt;
 &lt;p&gt;To do this you can add &lt;code&gt;console.log()&lt;/code&gt; statements in your code, or &lt;a href=&quot;https://devtoolstips.org/tips/en/use-logpoints/&quot;&gt;use logpoints&lt;/a&gt;.&lt;/p&gt;
@@ -606,7 +606,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Prototype content changes with designMode</title>
     <link href="https://devtoolstips.org/tips/en/prototype-content-changes-with-designmode/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/prototype-content-changes-with-designmode/</id>
     <content type="html">&lt;p&gt;When creating or modifying a design prototype for the web, you may want to quickly edit content in the browser without having to find the relevant code.&lt;/p&gt;
 &lt;p&gt;When you turn on &lt;code&gt;designMode&lt;/code&gt; for the document or a given element, all associated text becomes editable directly in the browser. Images and other page content can be deleted, too. This is a quick way to prototype design changes such as seeing how a page responds to very long or very short headline copy.&lt;/p&gt;
@@ -625,7 +625,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Find DOM elements from the console</title>
     <link href="https://devtoolstips.org/tips/en/query-dom-from-console/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/query-dom-from-console/</id>
     <content type="html">&lt;p&gt;&lt;code&gt;$&lt;/code&gt; and &lt;code&gt;$$&lt;/code&gt; are 2 functions you can use in the console to find elements in the page.&lt;/p&gt;
 &lt;p&gt;They are essentially shortcuts to the longer &lt;code&gt;document.querySelector()&lt;/code&gt; and &lt;code&gt;document.querySelectorAll()&lt;/code&gt; functions, but &lt;code&gt;$$&lt;/code&gt; returns an array instead of a &lt;code&gt;NodeList&lt;/code&gt;.&lt;/p&gt;
@@ -638,7 +638,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Query object instances and holders from the console</title>
     <link href="https://devtoolstips.org/tips/en/query-instances-holders/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/query-instances-holders/</id>
     <content type="html">&lt;p&gt;All browser DevTools have a few built-in functions in the console to do things like &lt;a href=&quot;https://devtoolstips.org/tips/en/get-current-element-in-console/&quot;&gt;get the current element&lt;/a&gt;, or &lt;a href=&quot;https://devtoolstips.org/tips/en/copy-from-console/&quot;&gt;copy a string&lt;/a&gt;. But Safari exposes 2 nice built-in functions:&lt;/p&gt;
 &lt;ul&gt;
@@ -658,7 +658,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Sample colors from the page</title>
     <link href="https://devtoolstips.org/tips/en/sample-colors-from-the-page/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/sample-colors-from-the-page/</id>
     <content type="html">&lt;p&gt;Being able to sample colors from the page is super useful. Firefox, Edge and Chrome all allow you to do this in 2 different ways:&lt;/p&gt;
 &lt;ul&gt;
@@ -697,7 +697,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>See formatted JSON responses</title>
     <link href="https://devtoolstips.org/tips/en/see-json-responses/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/see-json-responses/</id>
     <content type="html">&lt;p&gt;Firefox comes with a very nice &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Tools/JSON_viewer&quot;&gt;JSON viewer&lt;/a&gt; that makes it easy to review responses from your server directly in the browser window.&lt;/p&gt;
 &lt;p&gt;You don&#39;t even need to open DevTools.&lt;/p&gt;
@@ -717,7 +717,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>See quick accessibility information on hover</title>
     <link href="https://devtoolstips.org/tips/en/see-quick-a11y-info-on-hover/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/see-quick-a11y-info-on-hover/</id>
     <content type="html">&lt;p&gt;In Edge and Chrome, whenever you use the element selector and hover over elements in the page, a tooltip appears with, among other things, some accessibility information about the hovered element.&lt;/p&gt;
 &lt;ul&gt;
@@ -732,7 +732,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>See the page in 3D</title>
     <link href="https://devtoolstips.org/tips/en/see-the-page-in-3d/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/see-the-page-in-3d/</id>
     <content type="html">&lt;p&gt;See your page in 3 dimensions to quickly find out how deeply nested it is and fix z-index stacking issues.&lt;/p&gt;
 &lt;ul&gt;
@@ -757,7 +757,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Send feedback, ask for features and report bugs</title>
     <link href="https://devtoolstips.org/tips/en/send-feedback-about-devtools/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/send-feedback-about-devtools/</id>
     <content type="html">&lt;img src=&quot;https://devtoolstips.org/assets/img/send-feedback-about-devtools.png&quot; alt=&quot;A feedback illustration showing a stick figure with a speech bubble&quot; style=&quot;width:50px;&quot; /&gt;
 &lt;p&gt;Browser vendors depend on your feedback to build the right tools for you. Without hearing from you all about what problems you have, or what features you lack, they can&#39;t take the right decisions about what to build.&lt;/p&gt;
@@ -802,7 +802,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Simulate color vision deficiencies</title>
     <link href="https://devtoolstips.org/tips/en/simulate-color-vision-deficiencies/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/simulate-color-vision-deficiencies/</id>
     <content type="html">&lt;p&gt;People who visit your web pages may have different types of color vision deficiencies that, if you incorrectly use colors for meaning, may affect their experience.&lt;/p&gt;
 &lt;p&gt;Firefox, Chrome and Edge make it possible for you to test how a web page may appear to somebody with a color vision deficiency.&lt;/p&gt;
@@ -831,7 +831,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Simulate pseudo CSS classes</title>
     <link href="https://devtoolstips.org/tips/en/simulate-pseudo-classes/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/simulate-pseudo-classes/</id>
     <content type="html">&lt;p&gt;If you use &lt;code&gt;:hover&lt;/code&gt;, &lt;code&gt;:active&lt;/code&gt;, and other such pseudo-classes in CSS, you can actually simulate these states in DevTools without having to hover over or click on buttons and links.&lt;/p&gt;
 &lt;p&gt;Open the Styles panel (in Chrome, Edge or Safari) or the Rules panel (in Firefox), and click the &lt;code&gt;:hov&lt;/code&gt; button. This will expand a section that allows you to lock one or multiple of these pseudo-classes on the selected element.&lt;/p&gt;
@@ -843,7 +843,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Apply CSS styles to console messages</title>
     <link href="https://devtoolstips.org/tips/en/style-console-messages/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/style-console-messages/</id>
     <content type="html">&lt;p&gt;The &lt;code&gt;console.log&lt;/code&gt; output can be styled in DevTools using CSS.&lt;/p&gt;
 &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;%c Hello World&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;color: orange; font-size: 2em;&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -855,7 +855,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Event listeners are suppressed when paused</title>
     <link href="https://devtoolstips.org/tips/en/suppressed-event-listeners-when-paused/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/suppressed-event-listeners-when-paused/</id>
     <content type="html">&lt;p&gt;This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript.&lt;/p&gt;
 &lt;p&gt;If you use breakpoints in the Sources (or Debugger) tab in DevTools to debug JavaScript, you should know that all event listeners are suppressed while paused at one of them.&lt;/p&gt;
@@ -871,7 +871,7 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
   <entry>
     <title>Throttle the network speed to test your website on slower connections</title>
     <link href="https://devtoolstips.org/tips/en/throttle-network-speed/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/throttle-network-speed/</id>
     <content type="html">&lt;p&gt;While you may develop your website on a fast network connection at home or at work, your users may not be able to use it with an equally fast connection. Perhaps they&#39;re in a moving car, or on the subway, or they don&#39;t have access to high-speed internet at their place. Whatever it is, they may experience your site very differently than you do because of this.&lt;/p&gt;
 &lt;p&gt;Testing your site with a slower connection helps you understand how it loads and appears on the screen.&lt;/p&gt;
@@ -888,7 +888,7 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
   <entry>
     <title>Tweak css grid and flexbox alignment properties</title>
     <link href="https://devtoolstips.org/tips/en/tweak-grid-flex-alignment/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/tweak-grid-flex-alignment/</id>
     <content type="html">&lt;p&gt;Chrome and Edge both have a visual editor useful for tweaking flexbox and grid alignment properties.&lt;/p&gt;
 &lt;ul&gt;
@@ -905,7 +905,7 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
   <entry>
     <title>Unminify JavaScript code to easily read and debug it</title>
     <link href="https://devtoolstips.org/tips/en/unminify-javascript-code/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/unminify-javascript-code/</id>
     <content type="html">&lt;p&gt;Sometimes, the JavaScript code that runs on a website is minified and really hard to read. This is common in production.&lt;/p&gt;
 &lt;p&gt;You can unminify code in DevTools to read it more easily, and also set breakpoints.&lt;/p&gt;
@@ -921,7 +921,7 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
   <entry>
     <title>Switch DevTools to another language</title>
     <link href="https://devtoolstips.org/tips/en/use-another-language/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/use-another-language/</id>
     <content type="html">&lt;p&gt;If you want to use DevTools in another language than English, you can do it in Edge and Firefox.&lt;/p&gt;
 &lt;p&gt;In Firefox, DevTools will always match the language of the browser, so if you downloaded Firefox in French for instance, then DevTools will be in French too.&lt;/p&gt;
@@ -944,7 +944,7 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
   <entry>
     <title>Console.log() for the web with logpoints</title>
     <link href="https://devtoolstips.org/tips/en/use-logpoints/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/use-logpoints/</id>
     <content type="html">&lt;p&gt;Using the &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/&quot;&gt;console&lt;/a&gt; to log some information is a very common way to debug your JavaScript. But you can also log information in any web site using &lt;strong&gt;Logpoints&lt;/strong&gt; in the &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/sources/&quot;&gt;sources&lt;/a&gt; panel.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/use-logpoints.png&quot; alt=&quot;Screenshots of the way to set a logpoint in the sources tool&quot; /&gt;&lt;/p&gt;
@@ -966,7 +966,7 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
   <entry>
     <title>Re-use scripts as snippets</title>
     <link href="https://devtoolstips.org/tips/en/use-scripts-as-snippets/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/use-scripts-as-snippets/</id>
     <content type="html">&lt;p&gt;The console is great to write JavaScript to read from the document or manipulate it but it&#39;s a terrible editor.&lt;/p&gt;
 &lt;p&gt;The sources panel (in Edge or Chrome), however, is a full editor and you can use it to write more complex scripts to run in the context of the current page and keep them for later re-use.&lt;/p&gt;
@@ -985,7 +985,7 @@ Snippets have full access to the window object and you can use any of the consol
   <entry>
     <title>View performance markers in order</title>
     <link href="https://devtoolstips.org/tips/en/view-perf-markers-in-order/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/view-perf-markers-in-order/</id>
     <content type="html">&lt;p&gt;When logging &lt;code&gt;performance.timing&lt;/code&gt; events to the console, they appear in alphabetical order since they are properties of the &lt;code&gt;PerformanceTiming&lt;/code&gt; object.&lt;/p&gt;
 &lt;p&gt;In order to view them in order, you can use &lt;code&gt;console.table(performance.timing)&lt;/code&gt; and click on the column heading to sort them by time.&lt;/p&gt;
@@ -997,7 +997,7 @@ Snippets have full access to the window object and you can use any of the consol
   <entry>
     <title>Visualize the screen reader order for elements within the page</title>
     <link href="https://devtoolstips.org/tips/en/visualize-screenreader-order/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/visualize-screenreader-order/</id>
     <content type="html">&lt;p&gt;Edge has an &lt;a href=&quot;https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/accessibility-tab&quot;&gt;accessibility tab&lt;/a&gt; within the elements panel that, among other things, lets you visualize the order a screen reader will encounter elements on a page. This is determined by the order of elements in the HTML source code.&lt;/p&gt;
 &lt;p&gt;Users that can&#39;t view the screen may use a screen reader (e.g. Narrator, VoiceOver, NVDA) to consume the content of a page or focused element. If the order of the content read aloud is incorrect, it might give users a confusing experience. Incorrect ordering can occur if CSS is used to reorder elements visually in a way that is not reflected in the source order (&lt;a href=&quot;https://adrianroselli.com/2015/10/html-source-order-vs-css-display-order.html&quot;&gt;Examples here&lt;/a&gt;).&lt;/p&gt;
@@ -1016,7 +1016,7 @@ Snippets have full access to the window object and you can use any of the consol
   <entry>
     <title>Visualize the tabbing order on the page</title>
     <link href="https://devtoolstips.org/tips/en/visualize-tabbing-order/"/>
-    <updated>2021-09-19T13:52:38Z</updated>
+    <updated>2021-09-19T13:59:19Z</updated>
     <id>https://devtoolstips.org/tips/en/visualize-tabbing-order/</id>
     <content type="html">&lt;p&gt;Firefox has a dedicated &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector&quot;&gt;accessibility inspector panel&lt;/a&gt; that, among other things, lets you visualize the tabbing order on a page.&lt;/p&gt;
 &lt;p&gt;Users who do not or can&#39;t use a mouse or trackpad can use the tab key to navigate through focusable elements on the page. If the order in which those elements get focused is incorrect, this might give users a confusing experience.&lt;/p&gt;
