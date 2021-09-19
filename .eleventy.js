@@ -2,9 +2,15 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fetch = require('node-fetch');
 
-const token = process.env.AUTHOR_API_TOKEN;
+const token = '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'; //process.env.AUTHOR_API_TOKEN;
+
+const ANTHORS_DATES_CACHE = new Map();
 
 async function getTipAuthorsAndDate(tipPath) {
+  if (ANTHORS_DATES_CACHE.has(tipPath)) {
+    return ANTHORS_DATES_CACHE.get(tipPath);
+  }
+
   let authors = [];
   let date = null;
 
@@ -39,6 +45,7 @@ async function getTipAuthorsAndDate(tipPath) {
     console.error(`Error finding authors for ${tipPath}`, e);
   }
 
+  ANTHORS_DATES_CACHE.set(tipPath, {authors, date});
   return { authors, date };
 }
 
@@ -48,6 +55,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/manifest.json");
   eleventyConfig.addPassthroughCopy("src/.well-known");
   eleventyConfig.addPassthroughCopy("CNAME");
+
+  eleventyConfig.addNunjucksAsyncShortcode("postdate", async function (path) {
+    const { date } = await getTipAuthorsAndDate(path);
+    return date.toISOString();
+  });
 
   eleventyConfig.addNunjucksAsyncShortcode("authorsdate", async function (path) {
     const { authors, date } = await getTipAuthorsAndDate(path);

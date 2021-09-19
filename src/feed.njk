@@ -9,7 +9,8 @@
     "url": "https://devtoolstips.org/",
     "feedUrl": "https://devtoolstips.org/feed.xml",
     "author": {
-      "name": "Patrick Brosset"
+      "name": "Patrick Brosset",
+      "email": "patrickbrosset@gmail.com"
     }
   }
 }
@@ -20,7 +21,6 @@
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.all | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
@@ -28,6 +28,7 @@
   </author>
   {%- for post in collections.all %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  {% set postDate %}{% postdate post.inputPath %}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
