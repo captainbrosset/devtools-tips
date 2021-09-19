@@ -2,7 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fetch = require('node-fetch');
 
-const token = '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'; //process.env.AUTHOR_API_TOKEN;
+const token = process.env.AUTHOR_API_TOKEN;
 
 const ANTHORS_DATES_CACHE = new Map();
 
