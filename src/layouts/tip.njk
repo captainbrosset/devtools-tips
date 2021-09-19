@@ -22,6 +22,8 @@ templateEngineOverride: njk
     <div class="tip-content">
         {{ content | safe }}
     </div>
-    {% authors page.inputPath %}
+    <div class="tip-footer">
+        {% authorsdate page.inputPath %}
+    </div>
 </main>
 <script async src="/assets/share.js"></script>

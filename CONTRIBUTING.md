@@ -29,7 +29,7 @@ _TODO_
 First make sure you have cloned the repo locally, then open a command line at the root of the repo.
 
 * `npm init` to get all of the dependencies installed
-* `npx @11ty/eleventy --serve` to launch the build and start a local server
+* `npm run watch` to launch the build and start a local server
 * Then open a browser and navigate to [localhost:8080](localhost:8080)
 
 The page should auto-reload as you make changes to source code.

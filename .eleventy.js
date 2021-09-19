@@ -3,7 +3,10 @@ const fetch = require('node-fetch');
 
 const token = process.env.AUTHOR_API_TOKEN;
 
-async function getTipAuthors(tipPath) {
+async function getTipAuthorsAndDate(tipPath) {
+    let authors = [];
+    let date = null;
+
     try {
         const response = await fetch(`https://api.github.com/repos/captainbrosset/devtools-tips/commits?path=${tipPath}`, {
             headers: {
@@ -12,7 +15,11 @@ async function getTipAuthors(tipPath) {
         });
         const data = await response.json();
         const alreadySeenAuthors = new Set();
-        return data.map(d => {
+        authors = data.map(d => {
+            if (!date || new date(d.commit.author.date) > date) {
+              date = new date(d.commit.author.date);
+            }
+
             return {
                 // Warning: if you ever feel like getting d.author instead, so you can link to github profiles, please remember that
                 // not all commits on github are linked to an actual github user, and so d.author may be null.
@@ -28,9 +35,10 @@ async function getTipAuthors(tipPath) {
             }
         });
     } catch (e) {
-        console.error(`Error finding authors for ${tipPath}`, e);
-        return [];
+        console.error(`Error finding authors for ${tipPath}`);
     }
+
+    return {authors, date};
 }
 
 module.exports = function(eleventyConfig) {
@@ -40,12 +48,22 @@ module.exports = function(eleventyConfig) {
         eleventyConfig.addPassthroughCopy("src/.well-known");
         eleventyConfig.addPassthroughCopy("CNAME");
 
-        eleventyConfig.addNunjucksAsyncShortcode("authors", async function(path) {
-                    const authors = await getTipAuthors(path);
-                    if (!authors.length) {
-                        return '';
+        eleventyConfig.addNunjucksAsyncShortcode("authorsdate", async function(path) {
+                    const {authors, date} = await getTipAuthorsAndDate(path);
+
+                    let content = '<ul class="authors">Authors:';
+                    if (authors.length) {
+                        content += authors.map(data => `<li><a href="${data.url}">${data.name}</a></li>`).join('');
+                    } else {
+                        content += '<li>Not found</li>';
                     }
-                    return `<ul class="authors">${authors.map(data => `<li><a href="${data.url}">${data.name}</a></li>`).join('')}</ul>`;
+                    content += '</ul>';
+
+                    if (date) {
+                      content += `<p class="last-edit">Last edit: <time datetime="${date.toISOString()}">${date.toLocaleDateString()}</time></p>`;
+                    }
+                    
+                    return content;
   });
 
   eleventyConfig.addFilter("processBrowserTagName", function (name) {
