@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-09-20T00:43:02.744Z</updated>
+  <updated>2021-09-20T07:24:18.423Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -78,9 +78,10 @@ When working on a site that uses a lot of JavaScript and especially when you don
   <entry>
     <title>Change the color theme of DevTools</title>
     <link href="https://devtoolstips.org/tips/en/change-color-theme/"/>
-    <updated>2021-06-24T12:10:43Z</updated>
+    <updated>2021-09-20T07:11:21Z</updated>
     <id>https://devtoolstips.org/tips/en/change-color-theme/</id>
-    <content type="html">&lt;p&gt;DevTools supports a light and dark theme. You can change the theme based on your preference, to match your browser theme for example.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Chrome, Firefox and Safari all have a light and dark theme for their DevTools. Edge not only has those 2 themes, but also about 10 VS Code themes (like Monokai, Solarized Dark, etc.).&lt;/p&gt;
+&lt;p&gt;You can change the theme based on your preference.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In Firefox
 &lt;ul&gt;
@@ -89,7 +90,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
 &lt;/li&gt;
 &lt;li&gt;In Chrome or Edge
 &lt;ul&gt;
-&lt;li&gt;Also go to settings (press F1) and select &amp;quot;light&amp;quot; or &amp;quot;dark&amp;quot; in the Themes drop-down&lt;/li&gt;
+&lt;li&gt;Also go to settings (press F1) and select &amp;quot;light&amp;quot; or &amp;quot;dark&amp;quot; in the Themes drop-down, or any of the VS Code themes in Edge&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;In Safari
@@ -98,7 +99,22 @@ When working on a site that uses a lot of JavaScript and especially when you don
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/change-color-theme.png&quot; alt=&quot;Screenshot of the settings panel in Chrome showing the Theme drop-down&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/change-color-theme.png&quot; alt=&quot;Screenshot of the settings panel in Edge showing the Theme drop-down&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Convert color formats</title>
+    <link href="https://devtoolstips.org/tips/en/convert-color-formats/"/>
+    <updated>2021-09-20T07:23:12Z</updated>
+    <id>https://devtoolstips.org/tips/en/convert-color-formats/</id>
+    <content type="html">&lt;p&gt;Colors in CSS can be expressed in a number of different formats: keyword (e.g. &lt;code&gt;blue&lt;/code&gt;), RGB, HSL, hexadecimal, and others.&lt;/p&gt;
+&lt;p&gt;In DevTools, you can easily convert from one format to the next.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find an element in the &lt;strong&gt;Elements&lt;/strong&gt; panel (or &lt;strong&gt;Inspector&lt;/strong&gt; panel in Firefox) that has some CSS color properties applied.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Styles&lt;/strong&gt; panel (or &lt;strong&gt;Rules&lt;/strong&gt; in Firefox), hold &lt;strong&gt;Shift&lt;/strong&gt; and click on the color swatch (the little colored circle next to the color value) to cycle through the different formats.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/convert-color-formats.gif&quot; alt=&quot;Gif animation of the rules panel in Firefox, showing the color conversion&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   

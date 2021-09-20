@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Convert color formats</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
@@ -33,15 +33,30 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>css tips</h2>
-  <label class="search">
-    <span>Filter list</span>
-    <input type="text">
-</label>
-<script async src="/assets/filter-tip-list.js"></script>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/convert-color-formats/">Convert color formats</a></li><li class="hover-box tip"><a href="/tips/en/convert-font-units/">Convert font property units</a></li><li class="hover-box tip"><a href="/tips/en/edit-clip-path-shape-outside/">Edit clip-path and shape-outside CSS properties by dragging points in the page</a></li><li class="hover-box tip"><a href="/tips/en/edit-css-angles/">Edit CSS angles</a></li><li class="hover-box tip"><a href="/tips/en/edit-css-filters/">Edit CSS filters</a></li><li class="hover-box tip"><a href="/tips/en/edit-position/">Edit CSS absolute and relative positions by dragging points in the page</a></li><li class="hover-box tip"><a href="/tips/en/find-css-changes/">Find and export CSS changes</a></li><li class="hover-box tip"><a href="/tips/en/find-inactive-styles/">Find inactive CSS styles</a></li><li class="hover-box tip"><a href="/tips/en/highlight-matching-elements/">Highlight all the elements that a CSS rule matches</a></li><li class="hover-box tip"><a href="/tips/en/outline-everything/">Draw a box around all elements to debug your CSS and page structure</a></li><li class="hover-box tip"><a href="/tips/en/see-the-page-in-3d/">See the page in 3D</a></li><li class="hover-box tip"><a href="/tips/en/simulate-pseudo-classes/">Simulate pseudo CSS classes</a></li><li class="hover-box tip"><a href="/tips/en/style-console-messages/">Apply CSS styles to console messages</a></li><li class="hover-box tip"><a href="/tips/en/tweak-grid-flex-alignment/">Tweak css grid and flexbox alignment properties</a></li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+    </div>
+    <h2 class="tip-title">Convert color formats</h2>
+    <div class="tip-content">
+        <p>Colors in CSS can be expressed in a number of different formats: keyword (e.g. <code>blue</code>), RGB, HSL, hexadecimal, and others.</p>
+<p>In DevTools, you can easily convert from one format to the next.</p>
+<ul>
+<li>Find an element in the <strong>Elements</strong> panel (or <strong>Inspector</strong> panel in Firefox) that has some CSS color properties applied.</li>
+<li>In the <strong>Styles</strong> panel (or <strong>Rules</strong> in Firefox), hold <strong>Shift</strong> and click on the color swatch (the little colored circle next to the color value) to cycle through the different formats.</li>
+</ul>
+<p><img src="/assets/img/convert-color-formats.gif" alt="Gif animation of the rules panel in Firefox, showing the color conversion"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/2101198e3480010401aff31bae579af1220c95e2">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-09-20T07:23:12.000Z">9/20/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
