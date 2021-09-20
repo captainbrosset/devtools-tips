@@ -30,12 +30,20 @@ async function getTipAuthorsAndDate(tipPath) {
   let date = null;
 
   try {
-    const response = await fetch(`https://api.github.com/repos/captainbrosset/devtools-tips/commits?path=${tipPath}`, {
+    const options = token ? {
       headers: {
         Authorization: `token ${token}`
       }
-    });
-    const data = await response.json();
+    } : undefined;
+    
+    const response = await fetch(`https://api.github.com/repos/captainbrosset/devtools-tips/commits?path=${tipPath}`, options);
+    
+    let data = await response.json();
+    // We might get a rate limit error when not using a token here (in dev). Doesn't matter, just use an empty array.
+    if (!Array.isArray(data)) {
+      data = [];
+    }
+
     const alreadySeenAuthors = new Set();
     authors = data.map(d => {
       if (!date || new Date(d.commit.author.date) > date) {
@@ -73,7 +81,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addNunjucksAsyncFilter("postdate", function(path, cb) {
     getTipAuthorsAndDate(path).then(res => {
-      cb(null, res.date);
+      cb(null, res.date || new Date());
     });
   });
 
