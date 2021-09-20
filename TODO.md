@@ -2,7 +2,6 @@
 
 ## New tips to add
 
-* Convert color formats
 * Taking screenshots
 * Console.group
 * Show media queries
