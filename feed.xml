@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-09-22T00:39:24.852Z</updated>
+  <updated>2021-09-22T07:46:18.164Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -41,6 +41,30 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/block-resources-2.png&quot; alt=&quot;Screenshot of the Network panel in Firefox showing the contextual menu with the &amp;quot;block url&amp;quot; item and the &amp;quot;blocking&amp;quot; sidebar&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Pause script execution when the DOM changes</title>
+    <link href="https://devtoolstips.org/tips/en/break-on-dom-changes/"/>
+    <updated>2021-09-22T07:45:23Z</updated>
+    <id>https://devtoolstips.org/tips/en/break-on-dom-changes/</id>
+    <content type="html">&lt;p&gt;If you want to know what JavaScript code removes, adds, or modifies a DOM element in the page, you can use DOM breakpoints in DevTools. You can choose to break on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Subtree modification: this pauses execution when any element in the subtree of the selected element is modified (added, removed, or changed attribute).&lt;/li&gt;
+&lt;li&gt;Attribute modification: this pauses execution when an attribute of the selected element is modified.&lt;/li&gt;
+&lt;li&gt;Node removal: this pauses execution when the selected node is removed from the DOM tree.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is useful if you don&#39;t know the codebase you are debugging for example.&lt;/p&gt;
+&lt;p&gt;To add a DOM breakpoint:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Navigate to the &lt;strong&gt;Inspector/Elements&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;li&gt;Find the node which you want to add the breakpoint on.&lt;/li&gt;
+&lt;li&gt;Open the contextual menu (right-click).&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Break on&lt;/strong&gt; sub menu and choose the type of breakpoint you want to set.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/break-on-dom-changes.png&quot; alt=&quot;Screenshot of the Elements panel in Edge showing the &amp;quot;Break on&amp;quot; contextual menu on the selected node&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Once the requested DOM modification occurs, the JavaScript execution will pause and DevTools will navigate to the Sources/Debugger panel, showing the right line of code where execution is paused.&lt;/p&gt;
 </content>
   </entry>
   
