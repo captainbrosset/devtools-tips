@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-09-22T07:46:18.164Z</updated>
+  <updated>2021-09-22T12:17:40.736Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -1018,6 +1018,21 @@ Snippets have full access to the window object and you can use any of the consol
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/visualize-tabbing-order.png&quot; alt=&quot;Screenshot of the tabbing order highlighter in Firefox, showing numbered boxes around focusable elements&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector#show_web_page_tabbing_order&quot;&gt;Learn more about it here&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Zoom the DevTools UI to your liking</title>
+    <link href="https://devtoolstips.org/tips/en/zoom-devtools-content/"/>
+    <updated>2021-09-22T12:16:47Z</updated>
+    <id>https://devtoolstips.org/tips/en/zoom-devtools-content/</id>
+    <content type="html">&lt;p&gt;Do you find the UI of DevTools too small to comfortably work with? Because this UI is made of HTML and CSS, just like any other web pages, it can be zoomed in (or out) by the browser just like you can zoom in on web pages.&lt;/p&gt;
+&lt;p&gt;To zoom the UI of DevTools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure it has focus first (click somewhere in DevTools).&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;Ctrl +&lt;/code&gt; and &lt;code&gt;Ctrl -&lt;/code&gt; keyboard shortcuts to zoom in or out (replace &lt;code&gt;Ctrl&lt;/code&gt; with &lt;code&gt;Cmd&lt;/code&gt; on Mac).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/zoom-devtools-content.gif&quot; alt=&quot;Gif demo showing the UI of Chrome DevTools being zoomed in and out&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>

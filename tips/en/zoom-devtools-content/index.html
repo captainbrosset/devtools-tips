@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Zoom the DevTools UI to your liking</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
@@ -33,15 +33,30 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>accessibility tips</h2>
-  <label class="search">
-    <span>Filter list</span>
-    <input type="text">
-</label>
-<script async src="/assets/filter-tip-list.js"></script>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/find-all-images-without-alt-text/">Find all images without alternative text</a></li><li class="hover-box tip"><a href="/tips/en/see-quick-a11y-info-on-hover/">See quick accessibility information on hover</a></li><li class="hover-box tip"><a href="/tips/en/simulate-color-vision-deficiencies/">Simulate color vision deficiencies</a></li><li class="hover-box tip"><a href="/tips/en/visualize-screenreader-order/">Visualize the screen reader order for elements within the page</a></li><li class="hover-box tip"><a href="/tips/en/visualize-tabbing-order/">Visualize the tabbing order on the page</a></li><li class="hover-box tip"><a href="/tips/en/zoom-devtools-content/">Zoom the DevTools UI to your liking</a></li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/accessibility/">accessibility</a></li><li class="tag"><a href="/tag/personalization/">personalization</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    </div>
+    <h2 class="tip-title">Zoom the DevTools UI to your liking</h2>
+    <div class="tip-content">
+        <p>Do you find the UI of DevTools too small to comfortably work with? Because this UI is made of HTML and CSS, just like any other web pages, it can be zoomed in (or out) by the browser just like you can zoom in on web pages.</p>
+<p>To zoom the UI of DevTools:</p>
+<ul>
+<li>Make sure it has focus first (click somewhere in DevTools).</li>
+<li>Use the <code>Ctrl +</code> and <code>Ctrl -</code> keyboard shortcuts to zoom in or out (replace <code>Ctrl</code> with <code>Cmd</code> on Mac).</li>
+</ul>
+<p><img src="/assets/img/zoom-devtools-content.gif" alt="Gif demo showing the UI of Chrome DevTools being zoomed in and out"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/bb5eab3a50241f274424a33eabf5177215118588">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-09-22T12:16:47.000Z">9/22/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
