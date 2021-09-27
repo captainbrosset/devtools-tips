@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-09-27T00:39:07.954Z</updated>
+  <updated>2021-09-27T07:26:25.971Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -527,6 +527,26 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/highlight-matching-elements.gif&quot; alt=&quot;GIF animation showing how hovering over selectors in chrome highlights the matching elements in the page&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Jump from a CSS variable usage to where it is defined</title>
+    <link href="https://devtoolstips.org/tips/en/jump-to-css-variable/"/>
+    <updated>2021-09-27T07:25:15Z</updated>
+    <id>https://devtoolstips.org/tips/en/jump-to-css-variable/</id>
+    <content type="html">&lt;p&gt;CSS &lt;strong&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties&quot;&gt;custom properties&lt;/a&gt;&lt;/strong&gt; (also called &lt;strong&gt;variables&lt;/strong&gt;) are very useful to avoid repeating values in CSS, like colors for example.&lt;/p&gt;
+&lt;p&gt;You can define and use a custom property as shown below:&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;rule-1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;--my-main-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; blue&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token selector&quot;&gt;rule-2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--my-main-color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sometimes, it can be hard in DevTools to see both the place where the variable is used &lt;strong&gt;and&lt;/strong&gt; the place where it is defined. There may be a lot of rules and properties that apply to an element, requiring a lot of scrolling and searching.&lt;/p&gt;
+&lt;p&gt;In Edge and Chrome, you can simply click on a &lt;code&gt;var(--foo)&lt;/code&gt; function to jump to where the &lt;code&gt;--foo&lt;/code&gt; variable is defined!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Edge or Chrome, select an element in the &lt;strong&gt;Elements&lt;/strong&gt; panels which has CSS rules applied that use custom properties.&lt;/li&gt;
+&lt;li&gt;Hover over the property name inside the &lt;code&gt;var()&lt;/code&gt; function. You can see the value in a tooltip.&lt;/li&gt;
+&lt;li&gt;Click on the property name.&lt;/li&gt;
+&lt;li&gt;The Styles panel scrolls to where the property is defined and highlights it for a second.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/jump-to-css-variable.gif&quot; alt=&quot;GIF animation of clicking on a custom property link in the Styles panel in Edge&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   

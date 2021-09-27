@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Jump from a CSS variable usage to where it is defined</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
@@ -33,52 +33,35 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/simulate-color-vision-deficiencies/">
-        Simulate color vision deficiencies
-        
-        <img src="/assets/img/simulate-color-vision-deficiencies-1.png" alt="Screenshot of the color vision simulation drop-down in Firefox">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/persist-logs-across-pages/">
-        Persist console messages across page navigations and reloads
-        
-        <img src="/assets/img/persist-logs-across-pages.png" alt="Screenshot of Edge devtools&#39; console showing the settings panel at the top, with the &amp;quot;perserve log&amp;quot; box checked">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/use-scripts-as-snippets/">
-        Re-use scripts as snippets
-        
-        <img src="/assets/img/use-scripts-as-snippets-1.png" alt="The snippets editor in the Sources tool with a snippet open in the editor">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/change-color-theme/">
-        Change the color theme of DevTools
-        
-        <img src="/assets/img/change-color-theme.png" alt="Screenshot of the settings panel in Edge showing the Theme drop-down">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/live-expressions/">
-        Cut down on console noise using live expressions
-        
-        <img src="/assets/img/live-expressions-eye-icon.png" alt="The eye button in DevTools">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/zoom-devtools-content/">
-        Zoom the DevTools UI to your liking
-        
-        <img src="/assets/img/zoom-devtools-content.gif" alt="Gif demo showing the UI of Chrome DevTools being zoomed in and out">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
+    </div>
+    <h2 class="tip-title">Jump from a CSS variable usage to where it is defined</h2>
+    <div class="tip-content">
+        <p>CSS <strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">custom properties</a></strong> (also called <strong>variables</strong>) are very useful to avoid repeating values in CSS, like colors for example.</p>
+<p>You can define and use a custom property as shown below:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">rule-1</span> <span class="token punctuation">{</span><br>  <span class="token property">--my-main-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">rule-2</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--my-main-color<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Sometimes, it can be hard in DevTools to see both the place where the variable is used <strong>and</strong> the place where it is defined. There may be a lot of rules and properties that apply to an element, requiring a lot of scrolling and searching.</p>
+<p>In Edge and Chrome, you can simply click on a <code>var(--foo)</code> function to jump to where the <code>--foo</code> variable is defined!</p>
+<ul>
+<li>In Edge or Chrome, select an element in the <strong>Elements</strong> panels which has CSS rules applied that use custom properties.</li>
+<li>Hover over the property name inside the <code>var()</code> function. You can see the value in a tooltip.</li>
+<li>Click on the property name.</li>
+<li>The Styles panel scrolls to where the property is defined and highlights it for a second.</li>
+</ul>
+<p><img src="/assets/img/jump-to-css-variable.gif" alt="GIF animation of clicking on a custom property link in the Styles panel in Edge"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/9cdc769fea96f5c968771b89fa031cb408898160">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-09-27T07:25:15.000Z">9/27/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
