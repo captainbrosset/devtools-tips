@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-10-08T00:43:49.139Z</updated>
+  <updated>2021-10-08T11:24:20.260Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -504,6 +504,17 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
 &lt;p&gt;This shortcut will return the DOM node instance, which you can then use to do things like getting computed styles, or check DOM properties, etc.&lt;/p&gt;
 &lt;p&gt;Example: &lt;code&gt;getComputedStyles($0).display&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/get-current-element-in-console.jpg&quot; alt=&quot;screenshot of safari&#39;s console showing how the $0 shortcut returns the selected elemet&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Hide resources loaded by extensions in the Network panel</title>
+    <link href="https://devtoolstips.org/tips/en/hide-extension-resources/"/>
+    <updated>2021-10-08T11:23:32Z</updated>
+    <id>https://devtoolstips.org/tips/en/hide-extension-resources/</id>
+    <content type="html">&lt;p&gt;If you want to hide scripts and other resources loaded by browser extensions in the &lt;strong&gt;Network&lt;/strong&gt; panel, use the &lt;code&gt;-scheme:chrome-extension&lt;/code&gt; pattern in the filter input box.&lt;/p&gt;
+&lt;p&gt;Credits go to &lt;a href=&quot;https://www.coolcomputerclub.com/&quot;&gt;Sunil&lt;/a&gt; for his &lt;a href=&quot;https://twitter.com/threepointone/status/1446064032407080966&quot;&gt;post on twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/hide-extension-resources.jpg&quot; alt=&quot;Screenshot of the Network panel in Chrome DevTools showing the pattern used in the filter input box&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   

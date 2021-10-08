@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Hide resources loaded by extensions in the Network panel</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
@@ -33,52 +33,26 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/play-sound-on-js-execution/">
-        Play a sound when a line of JavaScript is executed
-        
-        <img src="/assets/img/play-sound-on-js-execution.gif" alt="GIF animation showing how to add the audio breakpoint in Safari Web Inspector">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/force-pwa-periodic-sync/">
-        Force PWA periodic background syncs
-        
-        <img src="/assets/img/force-pwa-periodic-sync.png" alt="Screenshot of the Application panel in Edge showing the periodic sync input and buttons">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/edit-css-angles/">
-        Edit CSS angles
-        
-        <img src="/assets/img/edit-css-angles.gif" alt="Gif animation of the angle editor in Chrome, where a click is made on the angle swatch, and then the mouse is used to change the angle">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/copy-element-xpath/">
-        Copy an element&#39;s XPath expression
-        
-        <img src="/assets/img/copy-element-xpath.png" alt="Screenshot of the Elements panel in Edge showing the copy xpath option in the contextual menu">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/edit-clip-path-shape-outside/">
-        Edit clip-path and shape-outside CSS properties by dragging points in the page
-        
-        <img src="/assets/img/edit-clip-path-shape-outside.gif" alt="Gif demo of the shape editor in firefox, clicking on the Rules panel icon, and then moving points around in the page">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/hide-extension-resources/">
-        Hide resources loaded by extensions in the Network panel
-        
-        <img src="/assets/img/hide-extension-resources.jpg" alt="Screenshot of the Network panel in Chrome DevTools showing the pattern used in the filter input box">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/network/">network</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+    </div>
+    <h2 class="tip-title">Hide resources loaded by extensions in the Network panel</h2>
+    <div class="tip-content">
+        <p>If you want to hide scripts and other resources loaded by browser extensions in the <strong>Network</strong> panel, use the <code>-scheme:chrome-extension</code> pattern in the filter input box.</p>
+<p>Credits go to <a href="https://www.coolcomputerclub.com/">Sunil</a> for his <a href="https://twitter.com/threepointone/status/1446064032407080966">post on twitter</a>.</p>
+<p><img src="/assets/img/hide-extension-resources.jpg" alt="Screenshot of the Network panel in Chrome DevTools showing the pattern used in the filter input box"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/b915c4099affe6ab16b236a3bd4751e157079ef5">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-10-08T11:23:32.000Z">10/8/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
