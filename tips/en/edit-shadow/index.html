@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Edit CSS shadow visually</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
@@ -33,52 +33,30 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/live-expressions/">
-        Cut down on console noise using live expressions
-        
-        <img src="/assets/img/live-expressions-eye-icon.png" alt="The eye button in DevTools">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/find-all-images-without-alt-text/">
-        Find all images without alternative text
-        
-        <img src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/convert-font-units/">
-        Convert font property units
-        
-        <img src="/assets/img/convert-font-units-1.png" alt="Screenshot of the fonts panel in Firefox, showing the unit conversion drop-down">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/view-perf-markers-in-order/">
-        View performance markers in order
-        
-        <img src="/assets/img/view-perf-markers-in-order.png" alt="Screenshot of the console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/simulate-color-vision-deficiencies/">
-        Simulate color vision deficiencies
-        
-        <img src="/assets/img/simulate-color-vision-deficiencies-1.png" alt="Screenshot of the color vision simulation drop-down in Firefox">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/find-devtools-documentation/">
-        Find DevTools reference documentation
-        
-        <img src="/assets/img/find-devtools-documentation.png" alt="Screenshot of the 4 documentation websites listed above">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+    </div>
+    <h2 class="tip-title">Edit CSS shadow visually</h2>
+    <div class="tip-content">
+        <p>If you don't remember the CSS syntax for the <code>box-shadow</code> property (and who does!), then Chrome and Edge can help you with their visual shadow editor!</p>
+<ul>
+<li>Select an element that has some shadow applied.</li>
+<li>Go to the <strong>Styles</strong> pane.</li>
+<li>Click on the little shadow editor icon next to the <code>box-shadow</code> property value.</li>
+</ul>
+<p><img src="/assets/img/edit-shadow.gif" alt="GIF animation showing the shadow editor in Edge's Styles pane"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/021254ac05dd8e6ca6294fcea7fae4cf5acc4e1f">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-10-11T13:07:13.000Z">10/11/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
