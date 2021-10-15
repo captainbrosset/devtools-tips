@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Monitor all events dispatched on an element</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
@@ -33,52 +33,34 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/visualize-screenreader-order/">
-        Visualize the screen reader order for elements within the page
-        
-        <img src="/assets/img/visualize-screenreader-order.png" alt="Screenshot of the source order viewer in Microsoft Edge, showing numbered boxes around elements">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/capture-node-creation-stacks/">
-        Capture node creation stack traces
-        
-        <img src="/assets/img/capture-node-creation-stacks.png" alt="Screenshot of Edge DevTools&#39; Elements panel with the Stack Trace sidebar visible, showing a stack of Vue JS function calls that created an element on the TODOMVC sample app">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/convert-color-formats/">
-        Convert color formats
-        
-        <img src="/assets/img/convert-color-formats.gif" alt="Gif animation of the rules panel in Firefox, showing the color conversion">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/node-screenshot/">
-        Take a screenshot of a single node
-        
-        <img src="/assets/img/node-screenshot.gif" alt="GIF animation showing taking a node screenshot in Firefox">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/simulate-pseudo-classes/">
-        Simulate pseudo CSS classes
-        
-        <img src="/assets/img/simulate-pseudo-classes.png" alt="Screenshot of the :hov panel to simulate various pseudo-classes">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/style-console-messages/">
-        Apply CSS styles to console messages
-        
-        <img src="/assets/img/style-console-messages.png" alt="Screenshot of a styled console message in Edge">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/debug/">debug</a></li><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+    </div>
+    <h2 class="tip-title">Monitor all events dispatched on an element</h2>
+    <div class="tip-content">
+        <p>You can use the <code>monitorEvents</code> global function in the <strong>Console</strong> panel to log all of the events dispatched on a particular element.</p>
+<ol>
+<li>Select an element in the <strong>Elements</strong> panel.</li>
+<li>Go to the <strong>Console</strong>.</li>
+<li>Type <code>monitorEvents($0, 'key');</code> and hit Enter.</li>
+<li>Interact with the selected element in the page to dispatch events.</li>
+</ol>
+<p>You can replace <code>$0</code> with a reference to any other element. <code>$0</code> is just a shortcut to the currently selected element.</p>
+<p>You can also change <code>key</code> to other event types like <code>mouse</code>.</p>
+<p><img src="/assets/img/monitor-element-events.gif" alt="GIF animation showing how events get automatically logged when using the monitorEvents function"></p>
+<p>Thank you to <a href="https://github.com/mgechev">Minko Gechev</a> for <a href="https://twitter.com/mgechev/status/1447419251120279558">tweeting</a> about this tip.</p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/bd6ba919de3fb7389af96096789177d8e7e31db3">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-10-15T07:20:50.000Z">10/15/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>

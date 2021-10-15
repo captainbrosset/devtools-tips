@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-10-15T00:43:25.240Z</updated>
+  <updated>2021-10-15T07:21:34.627Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -593,6 +593,25 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
 &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;outerWidth&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; x &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;outerHeight&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/live-expressions-window-resize.gif&quot; alt=&quot;Monitoring the window size using live expressions&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;You can set as many live expressions as you want, and you can remove them by clicking the &lt;code&gt;x&lt;/code&gt; icon next to them.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Monitor all events dispatched on an element</title>
+    <link href="https://devtoolstips.org/tips/en/monitor-element-events/"/>
+    <updated>2021-10-15T07:20:50Z</updated>
+    <id>https://devtoolstips.org/tips/en/monitor-element-events/</id>
+    <content type="html">&lt;p&gt;You can use the &lt;code&gt;monitorEvents&lt;/code&gt; global function in the &lt;strong&gt;Console&lt;/strong&gt; panel to log all of the events dispatched on a particular element.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select an element in the &lt;strong&gt;Elements&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;li&gt;Go to the &lt;strong&gt;Console&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;monitorEvents($0, &#39;key&#39;);&lt;/code&gt; and hit Enter.&lt;/li&gt;
+&lt;li&gt;Interact with the selected element in the page to dispatch events.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can replace &lt;code&gt;$0&lt;/code&gt; with a reference to any other element. &lt;code&gt;$0&lt;/code&gt; is just a shortcut to the currently selected element.&lt;/p&gt;
+&lt;p&gt;You can also change &lt;code&gt;key&lt;/code&gt; to other event types like &lt;code&gt;mouse&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/monitor-element-events.gif&quot; alt=&quot;GIF animation showing how events get automatically logged when using the monitorEvents function&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Thank you to &lt;a href=&quot;https://github.com/mgechev&quot;&gt;Minko Gechev&lt;/a&gt; for &lt;a href=&quot;https://twitter.com/mgechev/status/1447419251120279558&quot;&gt;tweeting&lt;/a&gt; about this tip.&lt;/p&gt;
 </content>
   </entry>
   
