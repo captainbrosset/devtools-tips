@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-10-15T07:21:34.627Z</updated>
+  <updated>2021-10-15T07:25:06.460Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -599,7 +599,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Monitor all events dispatched on an element</title>
     <link href="https://devtoolstips.org/tips/en/monitor-element-events/"/>
-    <updated>2021-10-15T07:20:50Z</updated>
+    <updated>2021-10-15T07:24:32Z</updated>
     <id>https://devtoolstips.org/tips/en/monitor-element-events/</id>
     <content type="html">&lt;p&gt;You can use the &lt;code&gt;monitorEvents&lt;/code&gt; global function in the &lt;strong&gt;Console&lt;/strong&gt; panel to log all of the events dispatched on a particular element.&lt;/p&gt;
 &lt;ol&gt;
