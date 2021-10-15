@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Debug popups that appear on hover using JS</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
@@ -33,52 +33,32 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/play-sound-on-js-execution/">
-        Play a sound when a line of JavaScript is executed
-        
-        <img src="/assets/img/play-sound-on-js-execution.gif" alt="GIF animation showing how to add the audio breakpoint in Safari Web Inspector">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/query-instances-holders/">
-        Query object instances and holders from the console
-        
-        <img src="/assets/img/query-instances-holders-1.png" alt="Screenshot of the console in Safari, showing the result of queryInstances(app.TodoItem)">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/break-on-dom-changes/">
-        Pause script execution when the DOM changes
-        
-        <img src="/assets/img/break-on-dom-changes.png" alt="Screenshot of the Elements panel in Edge showing the &amp;quot;Break on&amp;quot; contextual menu on the selected node">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/highlight-matching-elements/">
-        Highlight all the elements that a CSS rule matches
-        
-        <img src="/assets/img/highlight-matching-elements.gif" alt="GIF animation showing how hovering over selectors in chrome highlights the matching elements in the page">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/visualize-tabbing-order/">
-        Visualize the tabbing order on the page
-        
-        <img src="/assets/img/visualize-tabbing-order.png" alt="Screenshot of the tabbing order highlighter in Firefox, showing numbered boxes around focusable elements">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/query-dom-from-console/">
-        Find DOM elements from the console
-        
-        <img src="/assets/img/query-dom-from-console.png" alt="Firefox&#39;s console panel, showing 3 different examples of using the $ and $$ built-in console functions">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+    </div>
+    <h2 class="tip-title">Debug popups that appear on hover using JS</h2>
+    <div class="tip-content">
+        <p>Have you ever been frustrated because you couldn't style a popup or tooltip that appeared on hover? If it uses JavaScript to get displayed, it's hard to style without modifying the code to make it stay visible.</p>
+<ol>
+<li>Switch the <strong>Sources</strong>/<strong>Debugger</strong> panel.</li>
+<li>Then hover the element in the page so the popup appears, and leave the mouse there.</li>
+<li>Now press <code>F8</code> to pause the debugger.</li>
+</ol>
+<p>That's it! The JS engine will pause and freeze the state of the page. You can now switch back to <strong>Elements</strong>/<strong>Inspector</strong> and style the popup content!</p>
+<p><img src="/assets/img/debug-js-hover.gif" alt="GIF showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox"></p>
+<p>Thank you to <a href="https://twitter.com/samselikoff">Sam Selikoff</a> for <a href="https://twitter.com/samselikoff/status/1441142046492807176">tweeting</a> about this tip and making a <a href="https://www.youtube.com/watch?v=aNZ9ci_1gtM">youtube video</a> about it too.</p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/f468f93175ad1e0862f3d57692e0cd808f51b24e">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-10-15T13:24:52.000Z">10/15/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
