@@ -18,6 +18,10 @@
     }
     return browsers.sort();
   },
+  extractImage: function(content) {
+    const match = content.match(/<img src="([^"]+)"/);
+    return match ? 'http://devtoolstips.org' + match[1] : 'http://devtoolstips.org/assets/logo.png';
+  }
 }
 ---
 <!doctype html>
@@ -28,7 +32,18 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json">    
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org{{ page.url }}">
+    {% if page.url.includes('/tips/') %}
+    <meta property="og:image" content="{{ extractImage(content) }}">
+    <meta property="og:description" content="{{ title }}">
+    {% else %}
+    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
+    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    {% endif %}
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
     <script>
