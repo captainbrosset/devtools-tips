@@ -28,7 +28,7 @@ _TODO_
 
 First make sure you have cloned the repo locally, then open a command line at the root of the repo.
 
-* `npm init` to get all of the dependencies installed
+* `npm install` to get all of the dependencies installed
 * `npm run watch` to launch the build and start a local server
 * Then open a browser and navigate to [localhost:8080](localhost:8080)
 

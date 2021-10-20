@@ -15,6 +15,8 @@ Here's how to do it:
 1. Go to the console, interact with the site and every time this line executes, you see the result of the logpoint expression.
 1. If you don't want to log information any longer, click the Logpoint again to remove it.
 
-You can see this in action in [this video on YouTube](https://www.youtube.com/watch?v=DRRezUZvZ6I).
-
 Logpoints are a way to inject a `console.log()` into any web site without editing its source code.
+
+You can see this in action in this video on YouTube:
+
+https://www.youtube.com/watch?v=DRRezUZvZ6I
