@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-10-20T00:42:12.752Z</updated>
+  <updated>2021-10-20T13:37:23.981Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -211,7 +211,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
   <entry>
     <title>Debug popups that appear on hover using JS</title>
     <link href="https://devtoolstips.org/tips/en/debug-js-hover/"/>
-    <updated>2021-10-15T13:24:52Z</updated>
+    <updated>2021-10-20T13:36:36Z</updated>
     <id>https://devtoolstips.org/tips/en/debug-js-hover/</id>
     <content type="html">&lt;p&gt;Have you ever been frustrated because you couldn&#39;t style a popup or tooltip that appeared on hover? If it uses JavaScript to get displayed, it&#39;s hard to style without modifying the code to make it stay visible.&lt;/p&gt;
 &lt;ol&gt;
@@ -221,7 +221,8 @@ When working on a site that uses a lot of JavaScript and especially when you don
 &lt;/ol&gt;
 &lt;p&gt;That&#39;s it! The JS engine will pause and freeze the state of the page. You can now switch back to &lt;strong&gt;Elements&lt;/strong&gt;/&lt;strong&gt;Inspector&lt;/strong&gt; and style the popup content!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-js-hover.gif&quot; alt=&quot;GIF showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Thank you to &lt;a href=&quot;https://twitter.com/samselikoff&quot;&gt;Sam Selikoff&lt;/a&gt; for &lt;a href=&quot;https://twitter.com/samselikoff/status/1441142046492807176&quot;&gt;tweeting&lt;/a&gt; about this tip and making a &lt;a href=&quot;https://www.youtube.com/watch?v=aNZ9ci_1gtM&quot;&gt;youtube video&lt;/a&gt; about it too.&lt;/p&gt;
+&lt;p&gt;Thank you to &lt;a href=&quot;https://twitter.com/samselikoff&quot;&gt;Sam Selikoff&lt;/a&gt; for &lt;a href=&quot;https://twitter.com/samselikoff/status/1441142046492807176&quot;&gt;tweeting&lt;/a&gt; about this tip and making a youtube video about it too:&lt;/p&gt;
+&lt;p&gt;https://www.youtube.com/watch?v=aNZ9ci_1gtM&lt;/p&gt;
 </content>
   </entry>
   
@@ -834,24 +835,22 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>See the page in 3D</title>
     <link href="https://devtoolstips.org/tips/en/see-the-page-in-3d/"/>
-    <updated>2021-06-08T17:24:41Z</updated>
+    <updated>2021-10-20T13:36:36Z</updated>
     <id>https://devtoolstips.org/tips/en/see-the-page-in-3d/</id>
-    <content type="html">&lt;p&gt;See your page in 3 dimensions to quickly find out how deeply nested it is and fix z-index stacking issues.&lt;/p&gt;
+    <content type="html">&lt;p&gt;See your page in 3 dimensions to quickly find out how deeply nested it is, fix z-index stacking issues, and performance issues.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In Edge
+&lt;li&gt;In Edge:
 &lt;ul&gt;
 &lt;li&gt;Open the command menu (&lt;code&gt;ctrl+shift+P&lt;/code&gt; or &lt;code&gt;cmd+shift+P&lt;/code&gt;).&lt;/li&gt;
 &lt;li&gt;Type &lt;code&gt;3D&lt;/code&gt; and press Enter.&lt;/li&gt;
-&lt;li&gt;In the new panel that opens, switch between the 2 z-index and DOM modes to visualize the page in 3D.&lt;/li&gt;
+&lt;li&gt;In the new panel that opens, switch between the 3 modes: z-index, DOM, and Composited Layers to visualize the page in 3D.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;In Safari
-&lt;ul&gt;
-&lt;li&gt;Open the Layers panel&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;Chrome and Safari also have a Layers panel that provides the same information as Edge&#39;s Composited Layers 3D mode.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/see-the-page-in-3d.png&quot; alt=&quot;Screenshot of the 3D view tool showing a page&#39;s z-index stacking tree as a 3d scene&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;More information on Edge&#39;s 3D tool in this video:&lt;/p&gt;
+&lt;p&gt;https://www.youtube.com/watch?v=BZAH8ZXhHZA&lt;/p&gt;
 </content>
   </entry>
   
@@ -1036,7 +1035,7 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
   <entry>
     <title>Console.log() for the web with logpoints</title>
     <link href="https://devtoolstips.org/tips/en/use-logpoints/"/>
-    <updated>2021-08-26T14:53:45Z</updated>
+    <updated>2021-10-20T13:36:36Z</updated>
     <id>https://devtoolstips.org/tips/en/use-logpoints/</id>
     <content type="html">&lt;p&gt;Using the &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/&quot;&gt;console&lt;/a&gt; to log some information is a very common way to debug your JavaScript. But you can also log information in any web site using &lt;strong&gt;Logpoints&lt;/strong&gt; in the &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/sources/&quot;&gt;sources&lt;/a&gt; panel.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/use-logpoints.png&quot; alt=&quot;Screenshots of the way to set a logpoint in the sources tool&quot; /&gt;&lt;/p&gt;
@@ -1049,8 +1048,9 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 &lt;li&gt;Go to the console, interact with the site and every time this line executes, you see the result of the logpoint expression.&lt;/li&gt;
 &lt;li&gt;If you don&#39;t want to log information any longer, click the Logpoint again to remove it.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;You can see this in action in &lt;a href=&quot;https://www.youtube.com/watch?v=DRRezUZvZ6I&quot;&gt;this video on YouTube&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Logpoints are a way to inject a &lt;code&gt;console.log()&lt;/code&gt; into any web site without editing its source code.&lt;/p&gt;
+&lt;p&gt;You can see this in action in this video on YouTube:&lt;/p&gt;
+&lt;p&gt;https://www.youtube.com/watch?v=DRRezUZvZ6I&lt;/p&gt;
 </content>
   </entry>
   
