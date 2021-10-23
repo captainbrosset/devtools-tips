@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Store a node as a variable to use it in the console</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">    
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/store-node-as-variable/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/store-node-as-variable.png">
+    <meta property="og:description" content="Store a node as a variable to use it in the console">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -42,52 +42,32 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/break-on-dom-changes/">
-        Pause script execution when the DOM changes
-        
-        <img src="/assets/img/break-on-dom-changes.png" alt="Screenshot of the Elements panel in Edge showing the &amp;quot;Break on&amp;quot; contextual menu on the selected node">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/edit-shadow/">
-        Edit CSS shadow visually
-        
-        <img src="/assets/img/edit-shadow.gif" alt="GIF animation showing the shadow editor in Edge&#39;s Styles pane">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/outline-everything/">
-        Draw a box around all elements to debug your CSS and page structure
-        
-        <img src="/assets/img/outline-everything.gif" alt="Gif animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/find-inactive-styles/">
-        Find inactive CSS styles
-        
-        <img src="/assets/img/find-inactive-styles.webp" alt="Screenshot of the inactive style feature">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/tweak-grid-flex-alignment/">
-        Tweak css grid and flexbox alignment properties
-        
-        <img src="/assets/img/tweak-grid-flex-alignment.png" alt="Screenshot of the grid editor in the Styles pane of Microsoft Edge">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/see-the-page-in-3d/">
-        See the page in 3D
-        
-        <img src="/assets/img/see-the-page-in-3d.png" alt="Screenshot of the 3D view tool showing a page&#39;s z-index stacking tree as a 3d scene">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/console/">console</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    </div>
+    <h2 class="tip-title">Store a node as a variable to use it in the console</h2>
+    <div class="tip-content">
+        <p>If you want to use a DOM node from the page in the console:</p>
+<ul>
+<li>Right-click the node in the <strong>Elements</strong> (or <strong>Inspector</strong> in Firefox).</li>
+<li>Click on <strong>Store as global variable</strong> (or <strong>Use in Console</strong> in Firefox).</li>
+</ul>
+<p>The <strong>Console</strong> opens up, pre-filled with a new variable name (something like <code>temp1</code>) which you can use to refer to the node any time you want.</p>
+<p>Note that if you only want to refer to the currently selected node (and not create a new variable), you can also <a href="/tips/en/get-current-element-in-console">use <code>$0</code> in the console</a>.</p>
+<p><img src="/assets/img/store-node-as-variable.png" alt="screenshot of firefox's &quot;use in console&quot; context menu option in the Inspector, and also showing the Console with a couple of tempN variables"></p>
+<p>Thank you <a href="https://austingil.com/">Austin Gil</a> for sharing this tip on <a href="https://twitter.com/Stegosource/status/1451294683024355328">Twitter</a>!</p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/40d9496e5081f7bdc7c2adc40b98d40a66e254f3">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-10-23T05:34:58.000Z">10/23/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>

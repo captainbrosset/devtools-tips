@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-10-23T00:43:52.525Z</updated>
+  <updated>2021-10-23T05:35:56.484Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -934,6 +934,23 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
     <content type="html">&lt;p&gt;If you use &lt;code&gt;:hover&lt;/code&gt;, &lt;code&gt;:active&lt;/code&gt;, and other such pseudo-classes in CSS, you can actually simulate these states in DevTools without having to hover over or click on buttons and links.&lt;/p&gt;
 &lt;p&gt;Open the Styles panel (in Chrome, Edge or Safari) or the Rules panel (in Firefox), and click the &lt;code&gt;:hov&lt;/code&gt; button. This will expand a section that allows you to lock one or multiple of these pseudo-classes on the selected element.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/simulate-pseudo-classes.png&quot; alt=&quot;Screenshot of the :hov panel to simulate various pseudo-classes&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Store a node as a variable to use it in the console</title>
+    <link href="https://devtoolstips.org/tips/en/store-node-as-variable/"/>
+    <updated>2021-10-23T05:34:58Z</updated>
+    <id>https://devtoolstips.org/tips/en/store-node-as-variable/</id>
+    <content type="html">&lt;p&gt;If you want to use a DOM node from the page in the console:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Right-click the node in the &lt;strong&gt;Elements&lt;/strong&gt; (or &lt;strong&gt;Inspector&lt;/strong&gt; in Firefox).&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Store as global variable&lt;/strong&gt; (or &lt;strong&gt;Use in Console&lt;/strong&gt; in Firefox).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;strong&gt;Console&lt;/strong&gt; opens up, pre-filled with a new variable name (something like &lt;code&gt;temp1&lt;/code&gt;) which you can use to refer to the node any time you want.&lt;/p&gt;
+&lt;p&gt;Note that if you only want to refer to the currently selected node (and not create a new variable), you can also &lt;a href=&quot;https://devtoolstips.org/tips/en/get-current-element-in-console&quot;&gt;use &lt;code&gt;$0&lt;/code&gt; in the console&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/store-node-as-variable.png&quot; alt=&quot;screenshot of firefox&#39;s &amp;quot;use in console&amp;quot; context menu option in the Inspector, and also showing the Console with a couple of tempN variables&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Thank you &lt;a href=&quot;https://austingil.com/&quot;&gt;Austin Gil&lt;/a&gt; for sharing this tip on &lt;a href=&quot;https://twitter.com/Stegosource/status/1451294683024355328&quot;&gt;Twitter&lt;/a&gt;!&lt;/p&gt;
 </content>
   </entry>
   
