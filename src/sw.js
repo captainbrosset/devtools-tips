@@ -1,6 +1,6 @@
 self.importScripts('/assets/localforage-1.10.0.min.js');
 
-const CACHE_NAME = 'devtools-tips-v1';
+const CACHE_NAME = 'devtools-tips-v2';
 const INITIAL_CACHED_RESOURCES = [
     '/',
     '/offline/',
