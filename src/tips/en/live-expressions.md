@@ -8,7 +8,7 @@ An excellent alternative to logging a lot of information are [live expressions](
 
 1. Click the eye icon in DevTools ![The eye button in DevTools](/assets/img/live-expressions-eye-icon.png)
 1. This gives you an entry field to type in any JavaScript expression. ![The field to enter your live expression](/assets/img/live-expressions-field.png)
-1. Save the expression by clicking outside the field or press CMD+Enter on Mac or Ctrl+Enter on Windows/Linux.
+1. Save the expression by clicking outside the field or press <kbd>cmd</kbd>+<kbd>Enter</kbd> on Mac or <kbd>ctrl</kbd>+<kbd>Enter</kbd> on Windows/Linux.
 
 This will pin the expression on top of the Console and show you the value returned from it. Any change will show live below the expression.
 
