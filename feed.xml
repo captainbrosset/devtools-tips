@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-10-29T00:38:15.832Z</updated>
+  <updated>2021-10-29T07:19:11.256Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -334,14 +334,14 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Evaluate XPath to find elements in the page</title>
     <link href="https://devtoolstips.org/tips/en/evaluate-xpath/"/>
-    <updated>2021-07-13T09:24:10Z</updated>
+    <updated>2021-10-29T07:17:37Z</updated>
     <id>https://devtoolstips.org/tips/en/evaluate-xpath/</id>
     <content type="html">&lt;p&gt;DevTools supports 2 ways to evaluate &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/XPath&quot;&gt;XPath&lt;/a&gt; expressions to help you locate elements in the page. All browsers support those 2 ways:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;From the Elements (or Inspector) panel:
 &lt;ul&gt;
 &lt;li&gt;Click anywhere in the panel to make sure it has focus&lt;/li&gt;
-&lt;li&gt;Press ctrl+F (or cmd+F on Mac) to focus the search field&lt;/li&gt;
+&lt;li&gt;Press &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;F&lt;/kbd&gt; (or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;F&lt;/kbd&gt; on Mac) to focus the search field&lt;/li&gt;
 &lt;li&gt;Enter your XPath expression and press enter to find the elements that match&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -363,10 +363,10 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Use commands to do things faster</title>
     <link href="https://devtoolstips.org/tips/en/execute-commands/"/>
-    <updated>2021-06-15T13:47:08Z</updated>
+    <updated>2021-10-29T07:17:37Z</updated>
     <id>https://devtoolstips.org/tips/en/execute-commands/</id>
     <content type="html">&lt;p&gt;There is a command menu in Edge and Chrome that allows you to quickly access many different features of DevTools without having to navigate the UI.&lt;/p&gt;
-&lt;p&gt;Press &lt;code&gt;ctrl+shift+P&lt;/code&gt; (or &lt;code&gt;cmd+shift+P&lt;/code&gt; on mac) to open the command menu, and just start typing.&lt;/p&gt;
+&lt;p&gt;Press &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; (or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; on mac) to open the command menu, and just start typing.&lt;/p&gt;
 &lt;p&gt;You can use this to, for example, switch to a different panel by typing its name, change the color theme, change settings, disable javascript, etc.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/execute-commands.png&quot; alt=&quot;Screenshot of Edge&#39;s command menu&quot; /&gt;&lt;/p&gt;
 </content>
@@ -431,7 +431,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Find and export CSS changes</title>
     <link href="https://devtoolstips.org/tips/en/find-css-changes/"/>
-    <updated>2021-06-21T15:25:47Z</updated>
+    <updated>2021-10-29T07:17:37Z</updated>
     <id>https://devtoolstips.org/tips/en/find-css-changes/</id>
     <content type="html">&lt;p&gt;If you spent time changing CSS in DevTools, either in the Rules panel (in Firefox), or in the Sources or Styles panels (in Chrome or Edge), and you don&#39;t remember all of the changes you made, you can find and extract them easily from:&lt;/p&gt;
 &lt;ul&gt;
@@ -442,7 +442,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
 &lt;/li&gt;
 &lt;li&gt;In Chrome or Edge:
 &lt;ul&gt;
-&lt;li&gt;The Changes panel (which you can open from the command menu by typing &lt;code&gt;ctrl+shift+P&lt;/code&gt; or &lt;code&gt;cmd+shift+P&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;The Changes panel (which you can open from the command menu by typing &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -514,14 +514,14 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Get contextual DevTools help</title>
     <link href="https://devtoolstips.org/tips/en/get-contextual-help/"/>
-    <updated>2021-06-09T14:52:08Z</updated>
+    <updated>2021-10-29T07:17:37Z</updated>
     <id>https://devtoolstips.org/tips/en/get-contextual-help/</id>
     <content type="html">&lt;p&gt;Edge has a feature called the &lt;strong&gt;DevTools Tooltips&lt;/strong&gt; that gives you help about the different tools right inside of DevTools.&lt;/p&gt;
 &lt;p&gt;There are several ways to enable it:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;press &lt;code&gt;ctrl+shift+H&lt;/code&gt; (or &lt;code&gt;cmd+shift+H&lt;/code&gt; on Mac),&lt;/li&gt;
+&lt;li&gt;Press &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;H&lt;/kbd&gt; (or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;H&lt;/kbd&gt; on mac),&lt;/li&gt;
 &lt;li&gt;or click on the three-dots menu icon, then Help, then Toggle the DevTools Tooltips,&lt;/li&gt;
-&lt;li&gt;or using the command menu (&lt;code&gt;ctrl+shift+P&lt;/code&gt; or &lt;code&gt;cmd+shift+P&lt;/code&gt;) and typing tooltips&lt;/li&gt;
+&lt;li&gt;or using the command menu (&lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt;) and typing &amp;quot;tooltips&amp;quot;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When tooltips are enabled, you can hover over them to get documentation about the tools.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/get-contextual-help.gif&quot; alt=&quot;gif animation of the devtools tooltips in edge&quot; /&gt;&lt;/p&gt;
@@ -575,6 +575,26 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   </entry>
   
   <entry>
+    <title>Easily change CSS number values from the keyboard in increments of 0.1, 1, 10, 100</title>
+    <link href="https://devtoolstips.org/tips/en/increment-css-number-values/"/>
+    <updated>2021-10-29T07:17:15Z</updated>
+    <id>https://devtoolstips.org/tips/en/increment-css-number-values/</id>
+    <content type="html">&lt;p&gt;When playing with styling or layout code in DevTools, it&#39;s useful to be able to change widths, margins, and other CSS number values quickly.&lt;/p&gt;
+&lt;p&gt;Manually entering new numbers works of course, but it gets in the way of creativity a little bit.&lt;/p&gt;
+&lt;p&gt;In DevTools you can change numbers by using the arrow keys on your keyboard, this way you can easily and quickly test changes while checking the result in real time in the page. But there&#39;s more, you can also hold the various control keys to change the speed at which the numbers increment:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Focus a CSS value in the &lt;strong&gt;Styles&lt;/strong&gt;/&lt;strong&gt;Rules&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;li&gt;Make sure the text cursor is on a number.&lt;/li&gt;
+&lt;li&gt;Press the &lt;strong&gt;Up&lt;/strong&gt; or &lt;strong&gt;Down&lt;/strong&gt; arrow button on the keyboard to increment, or decrement the number by 1.&lt;/li&gt;
+&lt;li&gt;Hold &lt;kbd&gt;Shift&lt;/kbd&gt; at the same time to increment by 10.&lt;/li&gt;
+&lt;li&gt;Or, hold &lt;kbd&gt;Alt&lt;/kbd&gt; to increment by 0.1.&lt;/li&gt;
+&lt;li&gt;Or, hold &lt;kbd&gt;Ctrl&lt;/kbd&gt; to increment by 100.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/increment-css-number-values.gif&quot; alt=&quot;GIF animation of the Styles panel in Edge showing how numbers can be changed in various increments&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Jump from a CSS variable usage to where it is defined</title>
     <link href="https://devtoolstips.org/tips/en/jump-to-css-variable/"/>
     <updated>2021-09-27T07:25:15Z</updated>
@@ -597,14 +617,14 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Cut down on console noise using live expressions</title>
     <link href="https://devtoolstips.org/tips/en/live-expressions/"/>
-    <updated>2021-08-30T07:15:23Z</updated>
+    <updated>2021-10-29T07:17:37Z</updated>
     <id>https://devtoolstips.org/tips/en/live-expressions/</id>
     <content type="html">&lt;p&gt;Using the &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/&quot;&gt;Console&lt;/a&gt; of DevTools to log information that changes a lot is a bad idea. First of all, you flood it with information. Secondly, it can impact the performance of your product. And last but not least, you are most likely to only log this information to debug your project and end users should never get that information.&lt;/p&gt;
 &lt;p&gt;An excellent alternative to logging a lot of information are &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/live-expressions&quot;&gt;live expressions&lt;/a&gt;. To add a new live expression do the following:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Click the eye icon in DevTools &lt;img src=&quot;https://devtoolstips.org/assets/img/live-expressions-eye-icon.png&quot; alt=&quot;The eye button in DevTools&quot; /&gt;&lt;/li&gt;
 &lt;li&gt;This gives you an entry field to type in any JavaScript expression. &lt;img src=&quot;https://devtoolstips.org/assets/img/live-expressions-field.png&quot; alt=&quot;The field to enter your live expression&quot; /&gt;&lt;/li&gt;
-&lt;li&gt;Save the expression by clicking outside the field or press CMD+Enter on Mac or Ctrl+Enter on Windows/Linux.&lt;/li&gt;
+&lt;li&gt;Save the expression by clicking outside the field or press &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;Enter&lt;/kbd&gt; on Mac or &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;Enter&lt;/kbd&gt; on Windows/Linux.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This will pin the expression on top of the Console and show you the value returned from it. Any change will show live below the expression.&lt;/p&gt;
 &lt;p&gt;You can use this, for example, to resize the window to a certain size by monitoring the &lt;code&gt;outerWidth&lt;/code&gt; and &lt;code&gt;outerHeight&lt;/code&gt; properties.&lt;/p&gt;
@@ -835,13 +855,13 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>See the page in 3D</title>
     <link href="https://devtoolstips.org/tips/en/see-the-page-in-3d/"/>
-    <updated>2021-10-20T13:36:36Z</updated>
+    <updated>2021-10-29T07:17:37Z</updated>
     <id>https://devtoolstips.org/tips/en/see-the-page-in-3d/</id>
     <content type="html">&lt;p&gt;See your page in 3 dimensions to quickly find out how deeply nested it is, fix z-index stacking issues, and performance issues.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In Edge:
 &lt;ul&gt;
-&lt;li&gt;Open the command menu (&lt;code&gt;ctrl+shift+P&lt;/code&gt; or &lt;code&gt;cmd+shift+P&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Open the command menu (&lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt;).&lt;/li&gt;
 &lt;li&gt;Type &lt;code&gt;3D&lt;/code&gt; and press Enter.&lt;/li&gt;
 &lt;li&gt;In the new panel that opens, switch between the 3 modes: z-index, DOM, and Composited Layers to visualize the page in 3D.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1074,7 +1094,7 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
   <entry>
     <title>Re-use scripts as snippets</title>
     <link href="https://devtoolstips.org/tips/en/use-scripts-as-snippets/"/>
-    <updated>2021-06-17T09:43:21Z</updated>
+    <updated>2021-10-29T07:17:37Z</updated>
     <id>https://devtoolstips.org/tips/en/use-scripts-as-snippets/</id>
     <content type="html">&lt;p&gt;The console is great to write JavaScript to read from the document or manipulate it but it&#39;s a terrible editor.&lt;/p&gt;
 &lt;p&gt;The sources panel (in Edge or Chrome), however, is a full editor and you can use it to write more complex scripts to run in the context of the current page and keep them for later re-use.&lt;/p&gt;
@@ -1082,9 +1102,9 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 Snippets have full access to the window object and you can use any of the console API methods in them too.&lt;/p&gt;
 &lt;p&gt;For example, this script would replace each image in the document with its alternative text:&lt;/p&gt;
 &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token function&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;img&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;   &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; txt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;span&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;   txt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerText &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;alt&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;   i&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;parentNode&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replaceChild&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;txt&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;   console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;alt&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You can run snippets by pressing &lt;code&gt;ctrl + enter&lt;/code&gt; (or &lt;code&gt;cmd + enter&lt;/code&gt; on mac) or using the button on the bottom of the editor.&lt;/p&gt;
+&lt;p&gt;You can run snippets by pressing &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;Enter&lt;/kbd&gt; (or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;Enter&lt;/kbd&gt; on mac) or using the button on the bottom of the editor.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/use-scripts-as-snippets-1.png&quot; alt=&quot;The snippets editor in the Sources tool with a snippet open in the editor&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Even better, you can use the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands&quot;&gt;command menu&lt;/a&gt; to run snippets more easily. Simply press &lt;code&gt;ctrl + p&lt;/code&gt; (or &lt;code&gt;cmd + p&lt;/code&gt; on mac) and type &lt;code&gt;!&lt;/code&gt; followed by the name of your Snippet.&lt;/p&gt;
+&lt;p&gt;Even better, you can use the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands&quot;&gt;command menu&lt;/a&gt; to run snippets more easily. Simply press &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; (or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; on mac) and type &lt;code&gt;!&lt;/code&gt; followed by the name of your Snippet.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/use-scripts-as-snippets-2.gif&quot; alt=&quot;Running a snippet from the Command menu&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
@@ -1138,13 +1158,13 @@ Snippets have full access to the window object and you can use any of the consol
   <entry>
     <title>Zoom the DevTools UI to your liking</title>
     <link href="https://devtoolstips.org/tips/en/zoom-devtools-content/"/>
-    <updated>2021-09-22T12:16:47Z</updated>
+    <updated>2021-10-29T07:17:37Z</updated>
     <id>https://devtoolstips.org/tips/en/zoom-devtools-content/</id>
     <content type="html">&lt;p&gt;Do you find the UI of DevTools too small to comfortably work with? Because this UI is made of HTML and CSS, just like any other web pages, it can be zoomed in (or out) by the browser just like you can zoom in on web pages.&lt;/p&gt;
 &lt;p&gt;To zoom the UI of DevTools:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make sure it has focus first (click somewhere in DevTools).&lt;/li&gt;
-&lt;li&gt;Use the &lt;code&gt;Ctrl +&lt;/code&gt; and &lt;code&gt;Ctrl -&lt;/code&gt; keyboard shortcuts to zoom in or out (replace &lt;code&gt;Ctrl&lt;/code&gt; with &lt;code&gt;Cmd&lt;/code&gt; on Mac).&lt;/li&gt;
+&lt;li&gt;Use the &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;+&lt;/kbd&gt; and &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;-&lt;/kbd&gt; keyboard shortcuts to zoom in or out (replace &lt;kbd&gt;Ctrl&lt;/kbd&gt; with &lt;kbd&gt;Cmd&lt;/kbd&gt; on Mac).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/zoom-devtools-content.gif&quot; alt=&quot;Gif demo showing the UI of Chrome DevTools being zoomed in and out&quot; /&gt;&lt;/p&gt;
 </content>
