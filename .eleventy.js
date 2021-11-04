@@ -15,7 +15,7 @@ async function getLastTipUpdate() {
       }
     });
     const data = await response.json();
-    const lastCommit = data[0];
+    const lastCommit = data[0].commit;
     return new Date(lastCommit.author.date);
   } catch (e) {
     return new Date();
