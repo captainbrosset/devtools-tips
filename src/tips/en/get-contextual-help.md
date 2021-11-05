@@ -6,9 +6,9 @@ Edge has a feature called the __DevTools Tooltips__ that gives you help about th
 
 There are several ways to enable it:
 
-* press `ctrl+shift+H` (or `cmd+shift+H` on Mac),
+* Press <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>H</kbd> (or <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>H</kbd> on mac),
 * or click on the three-dots menu icon, then Help, then Toggle the DevTools Tooltips,
-* or using the command menu (`ctrl+shift+P` or `cmd+shift+P`) and typing tooltips
+* or using the command menu (<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> or <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd>) and typing "tooltips".
 
 When tooltips are enabled, you can hover over them to get documentation about the tools.
 

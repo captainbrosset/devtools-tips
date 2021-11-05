@@ -5,16 +5,18 @@
     },
     "version": "1.0.0",
     "description": "A collection of useful, cross-browser, tips and tricks to get more comfortable with using DevTools.",
-    "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "npx @11ty/eleventy",
+        "watch": "npx @11ty/eleventy --serve"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
+        "@11ty/eleventy-plugin-rss": "^1.1.1",
         "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+        "eleventy-plugin-youtube-embed": "^1.4.5",
         "node-fetch": "^2.6.1"
     }
 }

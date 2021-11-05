@@ -6,7 +6,7 @@ DevTools supports 2 ways to evaluate [XPath](https://developer.mozilla.org/en-US
 
 * From the Elements (or Inspector) panel:
   * Click anywhere in the panel to make sure it has focus
-  * Press ctrl+F (or cmd+F on Mac) to focus the search field
+  * Press <kbd>ctrl</kbd>+<kbd>F</kbd> (or <kbd>cmd</kbd>+<kbd>F</kbd> on Mac) to focus the search field
   * Enter your XPath expression and press enter to find the elements that match
 
 ![Screenshot of the Inspector panel in Firefox showing the search field with an XPath expression](/assets/img/evaluate-xpath-1.png)

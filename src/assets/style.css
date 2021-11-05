@@ -1,324 +1,380 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
 li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
 h2,
 h3 {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    font-size: 13pt;
-    font-family: Arial;
-    margin: 0;
-    max-width: 1000px;
-    margin: 0 auto;
+  font-size: 13pt;
+  font-family: Arial;
+  margin: 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    padding: 2rem 1rem;
-    gap: 1rem;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 header h1 {
-    text-align: center;
+  text-align: center;
 }
 
 header h1 a {
-    display: block;
-    width: 6.5rem;
-    height: 5rem;
-    text-indent: 100vw;
-    overflow: hidden;
-    white-space: nowrap;
-    background: url(/assets/logo.png) no-repeat center;
-    background-size: cover;
+  display: block;
+  width: 5rem;
+  height: 3rem;
+  text-indent: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
+  background: url(/assets/logo.png) no-repeat center;
+  background-size: contain;
 }
 
 header nav {
-    margin: 0 auto;
+  margin: 0 0 0 auto;
+}
+
+.header-shadow {
+  box-shadow: 0 0 5px 1px #0003;
+  height: 0;
+  position: sticky;
+  z-index: 1;
+  top: 5rem;
+}
+
+.header-shadow-block {
+  z-index: 2;
+  height: 1rem;
+  background: aliceblue;
+  position: sticky;
 }
 
 .header-menu {
-    display: flex;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-@media only screen and (max-width: 750px) {
-    .header-menu {
-        flex-direction: column;
-    }
+@media only screen and (max-width: 400px) {
+  .header-menu {
+    flex-direction: column;
+  }
 }
 
 .header-menu li {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .header-menu a {
-    color: black;
+  color: black;
 }
 
 .header-menu a:hover {
-    text-decoration-thickness: 2px;
+  text-decoration-thickness: 2px;
 }
 
 .header-menu>li {
-    padding: 1rem;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    position: relative;
+  padding: .5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .header-menu>li:hover,
 .header-menu>li:focus-within {
-    background: gold;
+  background: gold;
 }
 
 .submenu-reveal {
-    display: none;
-    position: absolute;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    top: calc(100% - 10px);
-    left: -1rem;
-    min-width: calc(100% + 2rem);
-    text-align: center;
-    background: gold;
-    padding: 1rem;
-    z-index: 1;
-    border-radius: 5px;
+  display: none;
+  position: absolute;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  top: calc(100% - .25rem);
+  left: -1rem;
+  min-width: calc(100% + 2rem);
+  text-align: center;
+  background: gold;
+  padding: 1rem;
+  z-index: 1;
+  border-radius: 5px;
 }
 
-@media only screen and (max-width: 380px) {
-    .submenu-reveal {
-        grid-template-columns: 1fr;
-    }
+@media only screen and (max-width: 400px) {
+  .submenu-reveal {
+    grid-template-columns: 1fr;
+  }
 }
 
 .header-menu>li:hover .submenu-reveal,
 .header-menu>li:focus-within .submenu-reveal {
-    display: grid;
+  display: grid;
 }
 
 .search {
-    flex: 1 1 40%;
-    display: flex;
-    justify-content: stretch;
-    min-width: 0;
-    max-width: 40vw;
-}
-
-@media only screen and (max-width: 380px) {
-    .search {
-        display: none;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .search input {
-    flex: 1;
-    margin: 1rem 0;
-    padding: 1rem;
-    border: 2px solid #8c7603;
-    border-radius: 4px;
-    background: #ffd70030;
-    width: 0;
+  flex: 1;
+  flex-basis: 3rem;
+  padding: 1rem;
+  border: 2px solid #8c7603;
+  border-radius: 4px;
+  background: #ffd70030;
+  width: 0;
+  /* Make font in input the same as elsewhere, and prevent iOS from zooming on tap */
+  font: inherit;
 }
 
 .search input:focus-visible {
-    outline: 2px solid gold;
+  outline: 2px solid gold;
 }
 
 main {
-    padding: 2rem;
-    line-height: 1.5;
-    background: aliceblue;
+  padding: 2rem;
+  line-height: 1.5;
+  background: aliceblue;
+  position: relative;
+  top: -1rem;
 }
 
 main h2 {
-    margin: 1rem 0;
+  margin: 1rem 0;
+}
+
+main h2:not(.tip-title) {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 0;
 }
 
 .tips {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tip {
-    background: white;
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: 0 0 5px 0px #00000024;
-    flex: 1 300px;
-    position: relative;
+  background: white;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 0px #00000024;
+  flex: 1 300px;
+  position: relative;
 }
 
 .tip img {
-    width: 100%;
-    margin: 1rem auto 0 auto;
-    display: block;
+  width: 100%;
+  margin: 1rem auto 0 auto;
+  display: block;
 }
 
 .tip:hover {
-    background: gold;
+  background: gold;
 }
 
 .tip a {
-    padding: 1rem;
-    text-decoration: none;
-    display: block;
-    max-height: 300px;
-    overflow: hidden;
-    color: black;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+  max-height: 300px;
+  overflow: hidden;
+  color: black;
 }
 
 .tip a::after {
-    content: "";
-    background: white;
-    width: calc(100% - 2rem);
-    position: absolute;
-    bottom: 0;
-    height: 1rem;
-    left: 1rem;
+  content: "";
+  background: white;
+  width: calc(100% - 2rem);
+  position: absolute;
+  bottom: 0;
+  height: 1rem;
+  left: 1rem;
 }
 
 .tip:hover a::after {
-    background: gold;
+  background: gold;
 }
 
 .tip a:focus-visible {
-    outline: none;
+  outline: none;
 }
 
 .tip:focus-within {
-    outline: 2px solid black;
+  outline: 2px solid black;
 }
 
 .tip-content img {
-    width: 80%;
-    max-width: 800px;
-    display: block;
+  width: 80%;
+  max-width: 800px;
+  display: block;
 }
 
 .tip-content ul,
 .tip-content li {
-    list-style: square;
-    margin-left: 1rem;
+  list-style: square;
+  margin-left: 1rem;
 }
 
-.search-results:empty {
-    display: none;
+.share-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border-radius: 3px;
+  border: 0;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+  background: white;
+  padding: .5rem;
 }
 
-.search-results {
-    position: absolute;
-    z-index: 1;
-    background: white;
-    right: 1rem;
-    padding: 1rem;
-    border: 2px solid #8c7603;
-    border-radius: 5px;
-    top: calc(100% - 2rem);
-    margin: 0;
-    left: 1rem;
+.share-button::after {
+  content: '';
+  margin-left: .25rem;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtbmFtZT0iTGF5ZXIgMSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHg9IjBweCIgeT0iMHB4Ij48dGl0bGU+QXJ0Ym9hcmQgNDwvdGl0bGU+PGc+PHBhdGggZD0iTTM0LDc4SDY2QTEyLDEyLDAsMCwwLDc4LDY2VjU0SDcwVjY2YTQsNCwwLDAsMS00LDRIMzRhNCw0LDAsMCwxLTQtNFYzNGE0LDQsMCwwLDEsNC00SDQ2VjIySDM0QTEyLDEyLDAsMCwwLDIyLDM0VjY2QTEyLDEyLDAsMCwwLDM0LDc4WiI+PC9wYXRoPjxwYXRoIGQ9Ik00Mi4zNCw1Miw0OCw1Ny42NmwyMi0yMlY0Nmg4VjI2YTQsNCwwLDAsMC00LTRINTR2OEg2NC4zNFoiPjwvcGF0aD48L2c+PC9zdmc+");
+  display: inline-block;
+  width: 17px;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
 }
 
-.search-results .highlight {
-    background: gold;
+.tips .tip.highlighted .highlight {
+  background: gold;
+}
+
+.tips.searching .tip:not(.highlighted) {
+  display: none;
 }
 
 code {
-    font-size: 1rem;
-    background: #333;
-    padding: .25rem;
-    border-radius: 4px;
-    color: white;
-    vertical-align: middle;
-    font-weight: bold;
-    white-space: nowrap;
+  font-size: 1rem;
+  background: #333;
+  padding: .25rem;
+  border-radius: 4px;
+  color: white;
+  vertical-align: middle;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+kbd {
+  padding: 2px;
+  border-radius: 3px;
+  background: #ddd;
+  box-shadow: 1px 1px 0 0 #bbb;
 }
 
 footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: white;
+  text-align: center;
+  /* main is relatively positioned at -1rem to account for the header shadow. So reduce the top-padding to 1rem instead of 2rem here */
+  padding: 1rem 1rem 2rem 1rem;
+  background: white;
 }
 
 footer a {
-    color: #28706c;
+  color: #28706c;
 }
 
 pre {
-    overflow: auto;
-    max-height: 50vh;
-    width: 100%;
-    white-space: normal;
+  overflow: auto;
+  max-height: 50vh;
+  width: 100%;
+  white-space: normal;
 }
 
 .tip-info {
-    font-size: smaller;
-    color: #555;
-    line-height: 2;
+  font-size: smaller;
+  color: #555;
+  line-height: 2;
+  padding-right: 7rem;
 }
 
 .tags,
 .browsers,
 .tags li,
 .browsers li {
-    display: inline;
+  display: inline;
 }
 
 .tags a,
 .browsers a {
-    padding: .25rem;
-    margin: 0 .25rem;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 3px;
-    line-height: 1;
+  padding: .25rem;
+  margin: 0 .25rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 3px;
+  line-height: 1;
 }
 
 .tags li a {
-    background: gold;
-    color: black;
+  background: gold;
+  color: black;
 }
 
 .browsers li a {
-    background: #f06;
-    color: black;
+  background: #f06;
+  color: black;
 }
 
-.authors {
-    margin-top: 2rem;
-    display: flex;
+.tip-footer {
+  margin: 2rem 0 0 0;
 }
 
-.authors::before {
-    content: "Authors:";
-    color: #555;
+.tip-footer * {
+  margin: 0;
+  display: inline;
+  color: #555;
 }
 
-.authors li:not(:last-child)::after {
-    content: ",";
+.tip-footer .authors li:not(:last-child)::after {
+  content: ",";
 }
 
-.authors li {
-    margin-left: .25rem;
+.tip-footer .authors li,
+.tip-footer .last-edit time {
+  color: black;
+  margin-left: .25rem;
+}
+
+.tip-footer .last-edit::before {
+  content: " - ";
+}
+
+.bg-load-tip {
+  border: 0;
+  background: gold;
+  padding: .5rem;
 }

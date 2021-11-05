@@ -8,19 +8,22 @@ templateEngineOverride: njk
         Categories:
         <ul class="tags">
         {%- for tag in tags | onlyTags -%}
-            <li class="tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+            <li class="tag"><a href="/tag/{{ tag }}/">{{ tag }}</a></li>
         {%- endfor -%}
         </ul>
         Supported by:
         <ul class="browsers">
         {%- for browser in tags | onlyBrowsers -%}
-            <li class="browser"><a href="/browser/{{ browser | processBrowserTagName }}">{{ browser | processBrowserTagName }}</a></li>
+            <li class="browser"><a href="/browser/{{ browser | processBrowserTagName }}/">{{ browser | processBrowserTagName }}</a></li>
         {%- endfor -%}
         </ul>
     </div>
-    <h2>{{ title }}</h2>
+    <h2 class="tip-title">{{ title }}</h2>
     <div class="tip-content">
         {{ content | safe }}
     </div>
-    {% authors page.inputPath %}
+    <div class="tip-footer">
+        {% authorsdate page.inputPath %}
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
