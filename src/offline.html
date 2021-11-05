@@ -1,0 +1,33 @@
+---js
+{
+  title: "DevTools Tips Error",
+  layout: "home.njk",
+  templateEngineOverride: "njk",
+  eleventyExcludeFromCollections: true
+}
+---
+<main>
+  <h2>You are offline</h2>
+  <p>The requested page could not be loaded. Please try again later, go back <a href="/">home</a>, or let us load it for you automatically!</p>
+  <p><button class="bg-load-tip">Load page in background</button></p>
+  <p class="success-message" style="display:none;">We'll load it as soon as we can (even if the app isn't running) and let you know when it's ready!</p>
+</main>
+<script src="/assets/localforage-1.10.0.min.js" async></script>
+<script async>
+const button = document.querySelector('main button');
+const message = document.querySelector('main .success-message');
+
+async function requestBgTipLoad() {
+  const registration = await navigator.serviceWorker.ready;
+  await registration.sync.register('bg-load-tip');
+
+  await Notification.requestPermission();
+
+  button.style.display = 'none';
+  message.style.display = '';
+}
+
+button.addEventListener('click', () => {
+  requestBgTipLoad();
+});
+</script>

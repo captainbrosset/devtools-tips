@@ -20,10 +20,10 @@ $$('img').forEach(i=>{
 });
 ```
 
-You can run snippets by pressing `ctrl + enter` (or `cmd + enter` on mac) or using the button on the bottom of the editor.
+You can run snippets by pressing <kbd>ctrl</kbd>+<kbd>Enter</kbd> (or <kbd>cmd</kbd>+<kbd>Enter</kbd> on mac) or using the button on the bottom of the editor.
 
 ![The snippets editor in the Sources tool with a snippet open in the editor](/assets/img/use-scripts-as-snippets-1.png)
 
-Even better, you can use the [command menu](/tips/en/execute-commands) to run snippets more easily. Simply press `ctrl + p` (or `cmd + p` on mac) and type `!` followed by the name of your Snippet.
+Even better, you can use the [command menu](/tips/en/execute-commands) to run snippets more easily. Simply press <kbd>ctrl</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>P</kbd> on mac) and type `!` followed by the name of your Snippet.
 
 ![Running a snippet from the Command menu](/assets/img/use-scripts-as-snippets-2.gif)
