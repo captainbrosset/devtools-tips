@@ -32,4 +32,4 @@ document.body.addEventListener('click', e => {
 
 You can see the difference in the following screencast or in [this quick demo on YouTube](https://www.youtube.com/watch?v=xTnqsA5vZX4).
 
-![Screencast showing the different ways the variables are logged with and without curly braces](/assets/img/logging-with-braces.gif)
+![Screencast showing the different ways the variables are logged with and without curly braces](/assets/img/automatically-log-name-and-value.gif)
