@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-11-10T08:40:09.000Z</updated>
+  <updated>2021-11-10T08:43:14.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -983,11 +983,14 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Simulate pseudo CSS classes</title>
     <link href="https://devtoolstips.org/tips/en/simulate-pseudo-classes/"/>
-    <updated>2021-06-08T17:24:41Z</updated>
+    <updated>2021-11-07T15:32:11Z</updated>
     <id>https://devtoolstips.org/tips/en/simulate-pseudo-classes/</id>
     <content type="html">&lt;p&gt;If you use &lt;code&gt;:hover&lt;/code&gt;, &lt;code&gt;:active&lt;/code&gt;, and other such pseudo-classes in CSS, you can actually simulate these states in DevTools without having to hover over or click on buttons and links.&lt;/p&gt;
 &lt;p&gt;Open the Styles panel (in Chrome, Edge or Safari) or the Rules panel (in Firefox), and click the &lt;code&gt;:hov&lt;/code&gt; button. This will expand a section that allows you to lock one or multiple of these pseudo-classes on the selected element.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/simulate-pseudo-classes.png&quot; alt=&quot;Screenshot of the :hov panel to simulate various pseudo-classes&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This is great when you write your styles, as you can define see the changes to - for example - a hover state of an element without having to use your mouse to see it in action.&lt;/p&gt;
+&lt;p&gt;It is even more useful when you want to test the different states of an element. In the following screencast you can see how to use the state simulation to check the hover, active, visited and focused state of a link without having to interact with the link using your keyboard or mouse. If you want to try it out yourself, &lt;a href=&quot;https://codepen.io/codepo8/pen/WNEMaPO&quot;&gt;here is the demo page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;https://www.youtube.com/watch?v=CgHuHYRyvXc&lt;/p&gt;
 </content>
   </entry>
   
