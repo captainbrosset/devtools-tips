@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Format console messages</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">    
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tag/console/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/format-console-messages/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/format-console-messages.png">
+    <meta property="og:description" content="Format console messages">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -42,15 +42,34 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>console tips</h2>
-  <label class="search">
-    <span>Filter list</span>
-    <input type="text">
-</label>
-<script async src="/assets/filter-tip-list.js"></script>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/automatically-log-name-and-value/">Automatically logging name and value in console.log()</a></li><li class="hover-box tip"><a href="/tips/en/copy-from-console/">Copy an object from the console</a></li><li class="hover-box tip"><a href="/tips/en/find-all-images-without-alt-text/">Find all images without alternative text</a></li><li class="hover-box tip"><a href="/tips/en/format-console-messages/">Format console messages</a></li><li class="hover-box tip"><a href="/tips/en/get-current-element-in-console/">Get the selected element in the console</a></li><li class="hover-box tip"><a href="/tips/en/monitor-element-events/">Monitor all events dispatched on an element</a></li><li class="hover-box tip"><a href="/tips/en/persist-logs-across-pages/">Persist console messages across page navigations and reloads</a></li><li class="hover-box tip"><a href="/tips/en/prototype-content-changes-with-designmode/">Prototype content changes with designMode</a></li><li class="hover-box tip"><a href="/tips/en/query-dom-from-console/">Find DOM elements from the console</a></li><li class="hover-box tip"><a href="/tips/en/query-instances-holders/">Query object instances and holders from the console</a></li><li class="hover-box tip"><a href="/tips/en/store-node-as-variable/">Store a node as a variable to use it in the console</a></li><li class="hover-box tip"><a href="/tips/en/style-console-messages/">Apply CSS styles to console messages</a></li><li class="hover-box tip"><a href="/tips/en/view-perf-markers-in-order/">View performance markers in order</a></li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    </div>
+    <h2 class="tip-title">Format console messages</h2>
+    <div class="tip-content">
+        <p>You can use special formatters in the <code>console.log</code> function to format logs just the way you want.</p>
+<ul>
+<li>Use <code>%s</code> to format a variable as a string.</li>
+<li>Use <code>%d</code> to format a variable as an integer.</li>
+<li>Use <code>%f</code> to format a variable as a float.</li>
+<li>Use <code>%o</code> to print a DOM element variable.</li>
+<li>Use <code>%O</code> to print an object variable.</li>
+</ul>
+<p>As a bonus, the <code>%c</code> formatter can also be used to <a href="/tips/en/style-console-messages">style console messages with CSS properties</a>!</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> el <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'%c There are %d elements in %O'</span><span class="token punctuation">,</span> <span class="token string">'color:lime;background:black;'</span><span class="token punctuation">,</span> el<span class="token punctuation">.</span>childElementCount<span class="token punctuation">,</span> el<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><img src="/assets/img/format-console-messages.png" alt="Screenshot of a formatted console message in Edge"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/541b834912569d763368e5b4d4b31086541cf3b3">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-11-10T08:40:09.000Z">11/10/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
