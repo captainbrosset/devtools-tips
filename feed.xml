@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-11-10T08:43:14.000Z</updated>
+  <updated>2021-11-15T10:40:04.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -684,6 +684,31 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
 &lt;p&gt;You can also change &lt;code&gt;key&lt;/code&gt; to other event types like &lt;code&gt;mouse&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/monitor-element-events.gif&quot; alt=&quot;GIF animation showing how events get automatically logged when using the monitorEvents function&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Thank you to &lt;a href=&quot;https://github.com/mgechev&quot;&gt;Minko Gechev&lt;/a&gt; for &lt;a href=&quot;https://twitter.com/mgechev/status/1447419251120279558&quot;&gt;tweeting&lt;/a&gt; about this tip.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Move panels to re-arrange them</title>
+    <link href="https://devtoolstips.org/tips/en/move-panels/"/>
+    <updated>2021-11-15T10:40:04Z</updated>
+    <id>https://devtoolstips.org/tips/en/move-panels/</id>
+    <content type="html">&lt;p&gt;Moving panels around the user interface can be very useful to make DevTools more unique to you and adapted to your needs.&lt;/p&gt;
+&lt;p&gt;There are 2 ways that you can re-arrange panels in DevTools today: dragging them horizontally in the toolbar, to re-order them, and moving them between the top toolbar and the bottom (drawer) toolbar&lt;/p&gt;
+&lt;h3&gt;To move tabs between the top and bottom areas (Edge only)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Right-click on any of the tabs.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Move to Bottom&lt;/strong&gt; or &lt;strong&gt;Move to Top&lt;/strong&gt; depending on where the tab is.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This only works in Edge at the moment is makes it super easy to see any 2 tools at once (more information about &lt;a href=&quot;https://blogs.windows.com/msedgedev/2021/09/14/edge-devtools-93-personalization/&quot;&gt;Edge personalization features&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/move-panels-1.gif&quot; alt=&quot;GIF animation in Edge DevTools showing the move to top/bottom menus&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;To re-order panels by dragging (Chrome, Edge, Firefox, Safari)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Click and hold any of the tabs in the toolbar.&lt;/li&gt;
+&lt;li&gt;Move that tag horizontally, left or right, until the desired location.&lt;/li&gt;
+&lt;li&gt;Release the tab. The new order will be persisted so every time you open DevTools, it will be there.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you use some tools more than others, this can be used to group them at the start of the toolbar for example.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/move-panels-2.gif&quot; alt=&quot;GIF animation in Firefox DevTools showing how to move panels in the toolbar&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   

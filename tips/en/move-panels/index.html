@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Move panels to re-arrange them</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">    
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/move-panels/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/move-panels-1.gif">
+    <meta property="og:description" content="Move panels to re-arrange them">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -42,52 +42,40 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/convert-font-units/">
-        Convert font property units
-        
-        <img src="/assets/img/convert-font-units-1.png" alt="Screenshot of the fonts panel in Firefox, showing the unit conversion drop-down">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/use-logpoints/">
-        Console.log() for the web with logpoints
-        
-        <img src="/assets/img/use-logpoints.png" alt="Screenshots of the way to set a logpoint in the sources tool">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/zoom-devtools-content/">
-        Zoom the DevTools UI to your liking
-        
-        <img src="/assets/img/zoom-devtools-content.gif" alt="Gif demo showing the UI of Chrome DevTools being zoomed in and out">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/format-console-messages/">
-        Format console messages
-        
-        <img src="/assets/img/format-console-messages.png" alt="Screenshot of a formatted console message in Edge">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/debugger-statement/">
-        Use the debugger statement to pause script execution
-        
-        <img src="/assets/img/debugger-statement.png" alt="Screenshot of the Sources panel in Edge, paused at a debugger statement">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/jump-to-css-variable/">
-        Jump from a CSS variable usage to where it is defined
-        
-        <img src="/assets/img/jump-to-css-variable.gif" alt="GIF animation of clicking on a custom property link in the Styles panel in Edge">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/personalization/">personalization</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    </div>
+    <h2 class="tip-title">Move panels to re-arrange them</h2>
+    <div class="tip-content">
+        <p>Moving panels around the user interface can be very useful to make DevTools more unique to you and adapted to your needs.</p>
+<p>There are 2 ways that you can re-arrange panels in DevTools today: dragging them horizontally in the toolbar, to re-order them, and moving them between the top toolbar and the bottom (drawer) toolbar</p>
+<h3>To move tabs between the top and bottom areas (Edge only)</h3>
+<ul>
+<li>Right-click on any of the tabs.</li>
+<li>Select <strong>Move to Bottom</strong> or <strong>Move to Top</strong> depending on where the tab is.</li>
+</ul>
+<p>This only works in Edge at the moment is makes it super easy to see any 2 tools at once (more information about <a href="https://blogs.windows.com/msedgedev/2021/09/14/edge-devtools-93-personalization/">Edge personalization features</a>).</p>
+<p><img src="/assets/img/move-panels-1.gif" alt="GIF animation in Edge DevTools showing the move to top/bottom menus"></p>
+<h3>To re-order panels by dragging (Chrome, Edge, Firefox, Safari)</h3>
+<ul>
+<li>Click and hold any of the tabs in the toolbar.</li>
+<li>Move that tag horizontally, left or right, until the desired location.</li>
+<li>Release the tab. The new order will be persisted so every time you open DevTools, it will be there.</li>
+</ul>
+<p>If you use some tools more than others, this can be used to group them at the start of the toolbar for example.</p>
+<p><img src="/assets/img/move-panels-2.gif" alt="GIF animation in Firefox DevTools showing how to move panels in the toolbar"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/ed8b231409dc8ccca70fd6d2bc946c13ffa337de">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-11-15T10:40:04.000Z">11/15/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
