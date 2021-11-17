@@ -1,6 +1,6 @@
 ---
 title: Take a screenshot of a single node
-tags: ["html", "testing", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["html", "export", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
 In Firefox, Chrome, and Edge DevTools, you can screenshot a single node from the page.
 
