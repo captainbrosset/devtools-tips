@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Take screenshots of your site in a device frame</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">    
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/take-in-device-screenshots/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/take-in-device-screenshots.png">
+    <meta property="og:description" content="Take screenshots of your site in a device frame">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -42,52 +42,38 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/debugger-statement/">
-        Use the debugger statement to pause script execution
-        
-        <img src="/assets/img/debugger-statement.png" alt="Screenshot of the Sources panel in Edge, paused at a debugger statement">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/prototype-content-changes-with-designmode/">
-        Prototype content changes with designMode
-        
-        <img src="/assets/img/prototype-content-changes-with-designmode.gif" alt="Animated GIF of editable web page with designMode on">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/take-in-device-screenshots/">
-        Take screenshots of your site in a device frame
-        
-        <img src="/assets/img/take-in-device-screenshots.png" alt="Screenshot of the devtoolstips.org website in an iPhone frame">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/find-inactive-styles/">
-        Find inactive CSS styles
-        
-        <img src="/assets/img/find-inactive-styles.webp" alt="Screenshot of the inactive style feature">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/find-devtools-documentation/">
-        Find DevTools reference documentation
-        
-        <img src="/assets/img/find-devtools-documentation.png" alt="Screenshot of the 4 documentation websites listed above">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/break-on-dom-changes/">
-        Pause script execution when the DOM changes
-        
-        <img src="/assets/img/break-on-dom-changes.png" alt="Screenshot of the Elements panel in Edge showing the &amp;quot;Break on&amp;quot; contextual menu on the selected node">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/export/">export</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
+    </div>
+    <h2 class="tip-title">Take screenshots of your site in a device frame</h2>
+    <div class="tip-content">
+        <p>Taking a photo of a mobile device or tablet is daunting as you have to deal with fingerprints, glare and focus issues. Using Device Emulation makes this a lot easier.</p>
+<p><img src="/assets/img/take-in-device-screenshots.png" alt="Screenshot of the devtoolstips.org website in an iPhone frame"></p>
+<p>To take a screenshot of a web page inside a device frame, use either Chrome or Edge (or any Chromium browser):</p>
+<ul>
+<li>In DevTools, turn on <strong>Device Emulation</strong> by clicking the icon or pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> (<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> on Mac).</li>
+<li>Select a device from the Device dropdown menu. Be aware that not all devices have graphical frames.
+<img src="/assets/img/take-in-device-screenshots-devices-dropdown.png" alt="The device dropdown menu open and showing all the options"></li>
+<li>Click the <strong>…</strong> button (<strong>More options</strong>) and select <strong>Show device frame</strong>.
+<img src="/assets/img/take-in-device-screenshots-show-device-frame.png" alt="Turning on device frame in the more options menu of the Device emulation tool"></li>
+<li>Click the <strong>…</strong> button again and select <strong>Capture screenshot</strong>.
+<img src="/assets/img/take-in-device-screenshots-capture-screenshot.png" alt="Selecting the screenshot option from the More Options menu"></li>
+</ul>
+<p>That's it, you now have a photo of your web page inside a device on transparent background.</p>
+<p>You can see this in action in the following video:</p>
+<div id="ZViLMjxpqEE" class="eleventy-plugin-youtube-embed"style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/ZViLMjxpqEE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/4ba8b7dae1baf612c360f73aff8f4c0238c688a7">Patrick Brosset</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/a527b48216f43078ba4c2428909b0a4c39df904c">Christian Heilmann</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-11-17T12:52:04.000Z">11/17/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>

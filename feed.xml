@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-11-15T10:40:04.000Z</updated>
+  <updated>2021-11-17T12:54:55.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -14,7 +14,7 @@
   <entry>
     <title>Automatically logging name and value in console.log()</title>
     <link href="https://devtoolstips.org/tips/en/automatically-log-name-and-value/"/>
-    <updated>2021-11-05T10:54:17Z</updated>
+    <updated>2021-11-17T12:54:55Z</updated>
     <id>https://devtoolstips.org/tips/en/automatically-log-name-and-value/</id>
     <content type="html">&lt;p&gt;Using the &lt;strong&gt;&lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/&quot;&gt;console&lt;/a&gt;&lt;/strong&gt; of DevTools you can to log some information to debug your JavaScript.&lt;/p&gt;
 &lt;p&gt;The common way to do that is to add a &lt;code&gt;console.log()&lt;/code&gt; statement where you want to learn the value of a certain variable. In the following example the mouse position and how far the document has scrolled.&lt;/p&gt;
@@ -715,7 +715,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Take a screenshot of a single node</title>
     <link href="https://devtoolstips.org/tips/en/node-screenshot/"/>
-    <updated>2021-09-28T16:02:39Z</updated>
+    <updated>2021-11-17T12:52:04Z</updated>
     <id>https://devtoolstips.org/tips/en/node-screenshot/</id>
     <content type="html">&lt;p&gt;In Firefox, Chrome, and Edge DevTools, you can screenshot a single node from the page.&lt;/p&gt;
 &lt;ul&gt;
@@ -1059,6 +1059,29 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 &lt;p&gt;This also happens if you manually try to dispatch new events from the console using &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent&quot;&gt;&lt;code&gt;dispatchEvent&lt;/code&gt;&lt;/a&gt;. If there are handlers for these events, they also won&#39;t get called while execution is paused.&lt;/p&gt;
 &lt;p&gt;The reason for this is that (ignoring workers) JavaScript on your page only runs in one thread. So while that thread is paused at one specific location, it&#39;s not supposed to be able to execute code from other locations.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/suppressed-event-listeners-when-paused.png&quot; alt=&quot;Screenshot of a page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Take screenshots of your site in a device frame</title>
+    <link href="https://devtoolstips.org/tips/en/take-in-device-screenshots/"/>
+    <updated>2021-11-17T12:52:04Z</updated>
+    <id>https://devtoolstips.org/tips/en/take-in-device-screenshots/</id>
+    <content type="html">&lt;p&gt;Taking a photo of a mobile device or tablet is daunting as you have to deal with fingerprints, glare and focus issues. Using Device Emulation makes this a lot easier.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/take-in-device-screenshots.png&quot; alt=&quot;Screenshot of the devtoolstips.org website in an iPhone frame&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;To take a screenshot of a web page inside a device frame, use either Chrome or Edge (or any Chromium browser):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In DevTools, turn on &lt;strong&gt;Device Emulation&lt;/strong&gt; by clicking the icon or pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;M&lt;/kbd&gt; (&lt;kbd&gt;Cmd&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;M&lt;/kbd&gt; on Mac).&lt;/li&gt;
+&lt;li&gt;Select a device from the Device dropdown menu. Be aware that not all devices have graphical frames.
+&lt;img src=&quot;https://devtoolstips.org/assets/img/take-in-device-screenshots-devices-dropdown.png&quot; alt=&quot;The device dropdown menu open and showing all the options&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;…&lt;/strong&gt; button (&lt;strong&gt;More options&lt;/strong&gt;) and select &lt;strong&gt;Show device frame&lt;/strong&gt;.
+&lt;img src=&quot;https://devtoolstips.org/assets/img/take-in-device-screenshots-show-device-frame.png&quot; alt=&quot;Turning on device frame in the more options menu of the Device emulation tool&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;…&lt;/strong&gt; button again and select &lt;strong&gt;Capture screenshot&lt;/strong&gt;.
+&lt;img src=&quot;https://devtoolstips.org/assets/img/take-in-device-screenshots-capture-screenshot.png&quot; alt=&quot;Selecting the screenshot option from the More Options menu&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&#39;s it, you now have a photo of your web page inside a device on transparent background.&lt;/p&gt;
+&lt;p&gt;You can see this in action in the following video:&lt;/p&gt;
+&lt;p&gt;https://www.youtube.com/watch?v=ZViLMjxpqEE&lt;/p&gt;
 </content>
   </entry>
   
