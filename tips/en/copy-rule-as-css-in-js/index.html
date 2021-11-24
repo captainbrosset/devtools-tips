@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy a CSS rule as CSS-in-JS format</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">    
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/copy-rule-as-css-in-js/">
+    
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/copy-rule-as-css-in-js.gif">
+    <meta property="og:description" content="Copy a CSS rule as CSS-in-JS format">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4P6B6NT4Y8');
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">DevTools Tips</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+          <li><a href="/all/">All Tips</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+    </div>
+    <h2 class="tip-title">Copy a CSS rule as CSS-in-JS format</h2>
+    <div class="tip-content">
+        <p>Do you use a CSS-in-JS framework? If so, you know how frustrating it can be to copy CSS from DevTools and paste it into your code.</p>
+<p>Indeed if the CSS you worked on in the <strong>Styles</strong> panel looks like this:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">h1</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> hotpink<span class="token punctuation">;</span><br>  <span class="token property">letter-spacing</span><span class="token punctuation">:</span> .5rem<span class="token punctuation">;</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 3rem<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>your CSS-in-JS framework probably expect it this way instead:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token punctuation">{</span><br>  background<span class="token operator">:</span> <span class="token string">'hotpink'</span><span class="token punctuation">,</span><br>  letterSpacing<span class="token operator">:</span> <span class="token string">'.5rem'</span><span class="token punctuation">,</span><br>  margin<span class="token operator">:</span> <span class="token string">'2rem'</span><span class="token punctuation">,</span><br>  fontSize<span class="token operator">:</span> <span class="token string">'3rem'</span><br><span class="token punctuation">}</span></code></pre>
+<p>Although the 2 are relatively similar, it's frustrating having to change semi-columns to commas, adding quotes, and swapping hyphen-separated property names with their camelCase equivalents.</p>
+<p>In Edge and Chrome, you don't have to. They both have an option that does the re-formatting for you:</p>
+<ul>
+<li>Right-click on any rule in the <strong>Styles</strong> pane.</li>
+<li>Select <strong>Copy all declarations as JS</strong>.</li>
+</ul>
+<p>Note that you can also use <strong>Copy declaration as JS</strong> if you only want one. But this feature really shines when you copy all declarations at once.</p>
+<p><img src="/assets/img/copy-rule-as-css-in-js.gif" alt="GIF showing the Styles pane in Edge, with the &quot;Copy all declarations as JS&quot; option being used, and then pasting the result in the Console to show that it is formatted"></p>
+<p><a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/css/css-in-js">Find out more about this feature</a></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/79652e9c8ac8b43d241a1751642e2ec340a9ee7c">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-11-24T14:17:52.000Z">11/24/2021</time></p>
+    </div>
+</main>
+<script async src="/assets/share.js"></script>
+
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>&copy; 2021 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>
+    </footer>
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+  </body>
+</html>
