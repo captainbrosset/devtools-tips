@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-11-24T14:17:52.000Z</updated>
+  <updated>2021-11-25T13:26:25.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -967,6 +967,19 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/see-the-page-in-3d.png&quot; alt=&quot;Screenshot of the 3D view tool showing a page&#39;s z-index stacking tree as a 3d scene&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;More information on Edge&#39;s 3D tool in this video:&lt;/p&gt;
 &lt;p&gt;https://www.youtube.com/watch?v=BZAH8ZXhHZA&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Select elements with pointer-events:none by holding Shift</title>
+    <link href="https://devtoolstips.org/tips/en/select-pointer-events-none-elements/"/>
+    <updated>2021-11-25T13:26:25Z</updated>
+    <id>https://devtoolstips.org/tips/en/select-pointer-events-none-elements/</id>
+    <content type="html">&lt;p&gt;When selecting elements from the page they normally get highlighted on hover and selected on click. However certain elements can&#39;t be selected.&lt;/p&gt;
+&lt;p&gt;Indeed, if an element does not react to pointer events because the &lt;code&gt;pointer-events:none&lt;/code&gt; CSS declaration is set, then you just can&#39;t select it, and the only way to get to it is to find it in the &lt;strong&gt;Elements&lt;/strong&gt;/&lt;strong&gt;Inspector&lt;/strong&gt; panel.&lt;/p&gt;
+&lt;p&gt;In Chrome and Edge, you can hold the &lt;kbd&gt;Shift&lt;/kbd&gt; key on your keyboard while hovering elements in the page! When you do this, even elements with &lt;code&gt;pointer-events:none&lt;/code&gt; can be selected!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/select-pointer-events-none-elements.gif&quot; alt=&quot;Gif animation showing how a pointer-events:none element normally can&#39;t be selected, except when Shift is pressed&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;If you wish Firefox had this too, make your voice heard on &lt;a href=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=1129488&quot;&gt;this bug&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   

@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Select elements with pointer-events:none by holding Shift</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">    
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/select-pointer-events-none-elements/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/select-pointer-events-none-elements.gif">
+    <meta property="og:description" content="Select elements with pointer-events:none by holding Shift">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -42,52 +42,28 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/copy-element-xpath/">
-        Copy an element&#39;s XPath expression
-        
-        <img src="/assets/img/copy-element-xpath.png" alt="Screenshot of the Elements panel in Edge showing the copy xpath option in the contextual menu">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/node-screenshot/">
-        Take a screenshot of a single node
-        
-        <img src="/assets/img/node-screenshot.gif" alt="GIF animation showing taking a node screenshot in Firefox">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/change-color-theme/">
-        Change the color theme of DevTools
-        
-        <img src="/assets/img/change-color-theme.png" alt="Screenshot of the settings panel in Edge showing the Theme drop-down">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/find-inactive-styles/">
-        Find inactive CSS styles
-        
-        <img src="/assets/img/find-inactive-styles.webp" alt="Screenshot of the inactive style feature">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/view-perf-markers-in-order/">
-        View performance markers in order
-        
-        <img src="/assets/img/view-perf-markers-in-order.png" alt="Screenshot of the console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/convert-font-units/">
-        Convert font property units
-        
-        <img src="/assets/img/convert-font-units-1.png" alt="Screenshot of the fonts panel in Firefox, showing the unit conversion drop-down">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/css/">css</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
+    </div>
+    <h2 class="tip-title">Select elements with pointer-events:none by holding Shift</h2>
+    <div class="tip-content">
+        <p>When selecting elements from the page they normally get highlighted on hover and selected on click. However certain elements can't be selected.</p>
+<p>Indeed, if an element does not react to pointer events because the <code>pointer-events:none</code> CSS declaration is set, then you just can't select it, and the only way to get to it is to find it in the <strong>Elements</strong>/<strong>Inspector</strong> panel.</p>
+<p>In Chrome and Edge, you can hold the <kbd>Shift</kbd> key on your keyboard while hovering elements in the page! When you do this, even elements with <code>pointer-events:none</code> can be selected!</p>
+<p><img src="/assets/img/select-pointer-events-none-elements.gif" alt="Gif animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed"></p>
+<p>If you wish Firefox had this too, make your voice heard on <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1129488">this bug</a>.</p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/c1dab48dc039a2e348fb5d74a2f2468b7083cb43">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-11-25T13:26:25.000Z">11/25/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
