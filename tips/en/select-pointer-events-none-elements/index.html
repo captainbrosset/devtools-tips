@@ -56,11 +56,16 @@
 <p>Indeed, if an element does not react to pointer events because the <code>pointer-events:none</code> CSS declaration is set, then you just can't select it, and the only way to get to it is to find it in the <strong>Elements</strong>/<strong>Inspector</strong> panel.</p>
 <p>In Chrome and Edge, you can hold the <kbd>Shift</kbd> key on your keyboard while hovering elements in the page! When you do this, even elements with <code>pointer-events:none</code> can be selected!</p>
 <p><img src="/assets/img/select-pointer-events-none-elements.gif" alt="Gif animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed"></p>
-<p>If you wish Firefox had this too, make your voice heard on <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1129488">this bug</a>.</p>
+<p>If you wish Firefox had this too, make your voice heard on <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1129488">this bug</a>. In the meantime, <a href="https://twitter.com/simevidas/status/1464501900586463236">Šime Vidas</a> proposed this work around for Firefox:</p>
+<ol>
+<li>Open the <strong>Accessibility</strong> tool.</li>
+<li>Use the accessibility picker tool (top-left corner) to pick the element from the page.</li>
+<li>Find the corresponding DOM node in the <strong>Properties</strong> sidebar panel, and click the inspect icon next to it.</li>
+</ol>
 
     </div>
     <div class="tip-footer">
-        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/c1dab48dc039a2e348fb5d74a2f2468b7083cb43">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-11-25T13:26:25.000Z">11/25/2021</time></p>
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/6c2dfaa34f168d6be816f5ebd2dc324ba798904c">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-11-29T09:32:17.000Z">11/29/2021</time></p>
     </div>
 </main>
 <script async src="/assets/share.js"></script>
