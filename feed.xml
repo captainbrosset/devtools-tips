@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-12-06T08:18:44.000Z</updated>
+  <updated>2021-12-09T08:53:18.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -605,6 +605,23 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
     <content type="html">&lt;p&gt;If you want to hide scripts and other resources loaded by browser extensions in the &lt;strong&gt;Network&lt;/strong&gt; panel, use the &lt;code&gt;-scheme:chrome-extension&lt;/code&gt; pattern in the filter input box.&lt;/p&gt;
 &lt;p&gt;Credits go to &lt;a href=&quot;https://www.coolcomputerclub.com/&quot;&gt;Sunil&lt;/a&gt; for his &lt;a href=&quot;https://twitter.com/threepointone/status/1446064032407080966&quot;&gt;post on twitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/hide-extension-resources.jpg&quot; alt=&quot;Screenshot of the Network panel in Chrome DevTools showing the pattern used in the filter input box&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Highlight the effect of individual CSS properties on hover</title>
+    <link href="https://devtoolstips.org/tips/en/highlight-css-properties-on-hover/"/>
+    <updated>2021-12-09T08:53:18Z</updated>
+    <id>https://devtoolstips.org/tips/en/highlight-css-properties-on-hover/</id>
+    <content type="html">&lt;p&gt;How do certain CSS properties apply to the page isn&#39;t always an easy question to answer.&lt;/p&gt;
+&lt;p&gt;While some properties might be considered simple, others have complex effects that depend on other factors. Properties like &lt;code&gt;justify-content&lt;/code&gt; or &lt;code&gt;gap&lt;/code&gt; depend on writing and layout direction for example.&lt;/p&gt;
+&lt;p&gt;Edge and Chrome help with this by highlighting the effect that individual CSS properties have in the page. This doesn&#39;t work with all properties, but does work with &lt;code&gt;margin&lt;/code&gt;, &lt;code&gt;padding&lt;/code&gt;, &lt;code&gt;border&lt;/code&gt;, &lt;code&gt;justify-content&lt;/code&gt;, &lt;code&gt;align-items&lt;/code&gt;, &lt;code&gt;gap&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find one of the above properties in the &lt;strong&gt;Styles&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;li&gt;Move your mouse cursor over it.&lt;/li&gt;
+&lt;li&gt;Watch as the corresponding affected region of the element gets highlighted in the page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/highlight-css-properties-on-hover.gif&quot; alt=&quot;GIF animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
