@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and resend faulty network requests to debug them</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">    
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/edit-and-resend-network-requests/">
+    
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/edit-and-resend-network-requests-curl.png">
+    <meta property="og:description" content="Edit and resend faulty network requests to debug them">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4P6B6NT4Y8');
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">DevTools Tips</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+          <li><a href="/all/">All Tips</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/network/">network</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+    </div>
+    <h2 class="tip-title">Edit and resend faulty network requests to debug them</h2>
+    <div class="tip-content">
+        <p>When you're investigating a bug where the backend you connect to doesn't respond with the right things it's useful to tweak the requests and try again quickly. You can do this by changing your frontend code, and reloading the page, but DevTools can help you be faster by editing and resending those requests without making any frontend code changes. Here's how!</p>
+<h3>Using cURL</h3>
+<p>You can copy any request from the <strong>Network</strong> panel as a cURL command, then paste it in your terminal, edit it to your liking, and execute it!</p>
+<p>This works in Firefox, Edge, and Chrome.</p>
+<ul>
+<li>Find the request you want to test in the <strong>Network</strong> panel.</li>
+<li>Right-click it and select <strong>Copy</strong> &gt; <strong>Copy as cURL</strong>.</li>
+</ul>
+<p><img src="/assets/img/edit-and-resend-network-requests-curl.png" alt="Screenshot of Chrome's copy as cURL feature and the corresponding command in the terminal"></p>
+<p>A similar approach is to use the <strong>Copy as Fetch</strong> option, and then use the copied code from the <strong>Console</strong> panel.</p>
+<h3>Using Firefox's Edit and Resend feature</h3>
+<p>Firefox has a built-in <strong>Edit and Resend</strong> feature that's very convenient because it doesn't require to switch to the terminal.</p>
+<ul>
+<li>Find the request you want to test in the <strong>Network</strong> panel.</li>
+<li>Right-click it and select <strong>Edit and Resend</strong>.</li>
+<li>In the new panel that appears, you can edit the request's method, url, query string, headers, and body.</li>
+<li>Press <strong>Send</strong> when you're happy with the values.</li>
+</ul>
+<p><img src="/assets/img/edit-and-resend-network-requests-firefox.png" alt="Screenshot of the Firefox's edit and resend feature"></p>
+<h3>Using Edge's Network Console experiment</h3>
+<p>Edge has a built-in feature very similar to Firefox's <strong>Edit and Resend</strong>, but that goes further in that it allows you to create any number of requests to test over time, like <a href="https://www.postman.com/">Postman</a>.</p>
+<p>The feature is called <strong>Network Console</strong> and is an experiment for the time being, so use with caution.</p>
+<ul>
+<li>Go to the <strong>Settings</strong> (<kbd>F1</kbd>), then <strong>Experiments</strong>, and check the <strong>Enable Network Console</strong> option (make sure to restart DevTools after that).</li>
+<li>You can then access the <strong>Network Console</strong> like any other panel, but the easiest way to get started is by going to the <strong>Network</strong> panel and finding the request you want to test.</li>
+<li>Right-click it and select <strong>Edit and Resend</strong>.</li>
+<li>In the new panel that appears, you can edit the method, url, query string, headers, body, etc.</li>
+<li>Press <strong>Send</strong> when you're happy with the values.</li>
+<li>You can also save this request for later. You can find all saved requests in the <strong>Network Console</strong> panel.</li>
+</ul>
+<p><img src="/assets/img/edit-and-resend-network-requests-edge.png" alt="Screenshot of the Edge's Network Console feature"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/d42642a32ecd73d6d847e4438e1bfd57be18e549">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-12-15T09:45:40.000Z">12/15/2021</time></p>
+    </div>
+</main>
+<script async src="/assets/share.js"></script>
+
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>&copy; 2021 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>
+    </footer>
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+  </body>
+</html>

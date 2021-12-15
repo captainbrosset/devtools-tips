@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-12-09T08:53:18.000Z</updated>
+  <updated>2021-12-15T09:45:40.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -287,6 +287,45 @@ When working on a site that uses a lot of JavaScript and especially when you don
     <id>https://devtoolstips.org/tips/en/drag-drop-dom-nodes/</id>
     <content type="html">&lt;p&gt;If you need to move nodes or elements around in the DOM tree, to re-order things in the page, you can do it by drag and dropping nodes around in the Elements (or Inspector) panel.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/drag-drop-dom-nodes.gif&quot; alt=&quot;Gif animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Edit and resend faulty network requests to debug them</title>
+    <link href="https://devtoolstips.org/tips/en/edit-and-resend-network-requests/"/>
+    <updated>2021-12-15T09:45:40Z</updated>
+    <id>https://devtoolstips.org/tips/en/edit-and-resend-network-requests/</id>
+    <content type="html">&lt;p&gt;When you&#39;re investigating a bug where the backend you connect to doesn&#39;t respond with the right things it&#39;s useful to tweak the requests and try again quickly. You can do this by changing your frontend code, and reloading the page, but DevTools can help you be faster by editing and resending those requests without making any frontend code changes. Here&#39;s how!&lt;/p&gt;
+&lt;h3&gt;Using cURL&lt;/h3&gt;
+&lt;p&gt;You can copy any request from the &lt;strong&gt;Network&lt;/strong&gt; panel as a cURL command, then paste it in your terminal, edit it to your liking, and execute it!&lt;/p&gt;
+&lt;p&gt;This works in Firefox, Edge, and Chrome.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find the request you want to test in the &lt;strong&gt;Network&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;li&gt;Right-click it and select &lt;strong&gt;Copy&lt;/strong&gt; &amp;gt; &lt;strong&gt;Copy as cURL&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/edit-and-resend-network-requests-curl.png&quot; alt=&quot;Screenshot of Chrome&#39;s copy as cURL feature and the corresponding command in the terminal&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;A similar approach is to use the &lt;strong&gt;Copy as Fetch&lt;/strong&gt; option, and then use the copied code from the &lt;strong&gt;Console&lt;/strong&gt; panel.&lt;/p&gt;
+&lt;h3&gt;Using Firefox&#39;s Edit and Resend feature&lt;/h3&gt;
+&lt;p&gt;Firefox has a built-in &lt;strong&gt;Edit and Resend&lt;/strong&gt; feature that&#39;s very convenient because it doesn&#39;t require to switch to the terminal.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find the request you want to test in the &lt;strong&gt;Network&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;li&gt;Right-click it and select &lt;strong&gt;Edit and Resend&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In the new panel that appears, you can edit the request&#39;s method, url, query string, headers, and body.&lt;/li&gt;
+&lt;li&gt;Press &lt;strong&gt;Send&lt;/strong&gt; when you&#39;re happy with the values.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/edit-and-resend-network-requests-firefox.png&quot; alt=&quot;Screenshot of the Firefox&#39;s edit and resend feature&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Using Edge&#39;s Network Console experiment&lt;/h3&gt;
+&lt;p&gt;Edge has a built-in feature very similar to Firefox&#39;s &lt;strong&gt;Edit and Resend&lt;/strong&gt;, but that goes further in that it allows you to create any number of requests to test over time, like &lt;a href=&quot;https://www.postman.com/&quot;&gt;Postman&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The feature is called &lt;strong&gt;Network Console&lt;/strong&gt; and is an experiment for the time being, so use with caution.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to the &lt;strong&gt;Settings&lt;/strong&gt; (&lt;kbd&gt;F1&lt;/kbd&gt;), then &lt;strong&gt;Experiments&lt;/strong&gt;, and check the &lt;strong&gt;Enable Network Console&lt;/strong&gt; option (make sure to restart DevTools after that).&lt;/li&gt;
+&lt;li&gt;You can then access the &lt;strong&gt;Network Console&lt;/strong&gt; like any other panel, but the easiest way to get started is by going to the &lt;strong&gt;Network&lt;/strong&gt; panel and finding the request you want to test.&lt;/li&gt;
+&lt;li&gt;Right-click it and select &lt;strong&gt;Edit and Resend&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In the new panel that appears, you can edit the method, url, query string, headers, body, etc.&lt;/li&gt;
+&lt;li&gt;Press &lt;strong&gt;Send&lt;/strong&gt; when you&#39;re happy with the values.&lt;/li&gt;
+&lt;li&gt;You can also save this request for later. You can find all saved requests in the &lt;strong&gt;Network Console&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/edit-and-resend-network-requests-edge.png&quot; alt=&quot;Screenshot of the Edge&#39;s Network Console feature&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
