@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Write code on multiple lines in the Console</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">    
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tag/console/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/multi-line-console/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/multi-line-console-firefox.png">
+    <meta property="og:description" content="Write code on multiple lines in the Console">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -42,15 +42,34 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>console tips</h2>
-  <label class="search">
-    <span>Filter list</span>
-    <input type="text">
-</label>
-<script async src="/assets/filter-tip-list.js"></script>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/automatically-log-name-and-value/">Automatically logging name and value in console.log()</a></li><li class="hover-box tip"><a href="/tips/en/copy-from-console/">Copy an object from the console</a></li><li class="hover-box tip"><a href="/tips/en/find-all-images-without-alt-text/">Find all images without alternative text</a></li><li class="hover-box tip"><a href="/tips/en/format-console-messages/">Format console messages</a></li><li class="hover-box tip"><a href="/tips/en/get-current-element-in-console/">Get the selected element in the console</a></li><li class="hover-box tip"><a href="/tips/en/monitor-element-events/">Monitor all events dispatched on an element</a></li><li class="hover-box tip"><a href="/tips/en/multi-line-console/">Write code on multiple lines in the Console</a></li><li class="hover-box tip"><a href="/tips/en/persist-logs-across-pages/">Persist console messages across page navigations and reloads</a></li><li class="hover-box tip"><a href="/tips/en/prototype-content-changes-with-designmode/">Prototype content changes with designMode</a></li><li class="hover-box tip"><a href="/tips/en/query-dom-from-console/">Find DOM elements from the console</a></li><li class="hover-box tip"><a href="/tips/en/query-instances-holders/">Query object instances and holders from the console</a></li><li class="hover-box tip"><a href="/tips/en/store-node-as-variable/">Store a node as a variable to use it in the console</a></li><li class="hover-box tip"><a href="/tips/en/style-console-messages/">Apply CSS styles to console messages</a></li><li class="hover-box tip"><a href="/tips/en/view-perf-markers-in-order/">View performance markers in order</a></li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    </div>
+    <h2 class="tip-title">Write code on multiple lines in the Console</h2>
+    <div class="tip-content">
+        <p>If you're feeling adventurous and want to write longer pieces of code in the <strong>Console</strong> to execute more complex things, it can quickly become difficult.</p>
+<p>Thankfully, there are a few ways to make your life easier by writing on multiple lines, like you would in a code editor:</p>
+<ul>
+<li>Use <kbd>Shift</kbd>+<kbd>Enter</kbd> to create a new line without executing the expression. This works in all browsers.</li>
+<li>Or ue Firefox's multiline editor. To do this, click on the <strong>Switch to multi-line editor mode</strong> button located in the top-right corner of the <strong>Console</strong> message area (or press <kbd>Ctrl</kbd>+<kbd>B</kbd>).</li>
+</ul>
+<p><img src="/assets/img/multi-line-console-firefox.png" alt="Screenshot showing the button to switch the Firefox console to the multi-line mode"></p>
+<ul>
+<li>Or you can create code snippets in Edge or Chrome's <strong>Sources</strong> panel. The added advantage of this technique is that code snippets are saved on your disk, and therefore can be used even after you've restarted the browser.</li>
+</ul>
+<p><img src="/assets/img/multi-line-console-snippet.png" alt="Screenshot showing the snippet tab in Edge's Sources panel"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/4e4a11757f654b893d7cb3b835982a11a57c62b2">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-12-16T14:08:30.000Z">12/16/2021</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
