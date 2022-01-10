@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2021-12-16T14:08:30.000Z</updated>
+  <updated>2022-01-10T13:47:02.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -650,6 +650,25 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   </entry>
   
   <entry>
+    <title>Get detached DOM elements to investigate memory leaks</title>
+    <link href="https://devtoolstips.org/tips/en/get-detached-elements/"/>
+    <updated>2022-01-10T13:47:02Z</updated>
+    <id>https://devtoolstips.org/tips/en/get-detached-elements/</id>
+    <content type="html">&lt;p&gt;Memory leaks can quickly become a big problem for long-running applications, and a common source of memory leaks is detached DOM elements (elements that are no longer attached to the DOM tree).
+It&#39;s usually very hard to investigate these memory leaks, because it&#39;s hard to know if elements are detached, and which ones, let alone find which part of your JavaScript code is causing them to be detached.&lt;/p&gt;
+&lt;p&gt;Edge has a tool just for this: the &lt;strong&gt;Detached Elements&lt;/strong&gt; panel. To use it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;command menu&lt;/strong&gt; and type &amp;quot;detached&amp;quot; to find and open the &lt;strong&gt;Detached Elements&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Get detached elements&lt;/strong&gt; button to list all of the currently detached elements.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Analyze&lt;/strong&gt; button to take a memory heap snapshot. Once done, you can then double-click any of the detached elements&#39; &lt;strong&gt;Id&lt;/strong&gt;s to find the link between these elements and your JavaScript code in the &lt;strong&gt;Memory&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;li&gt;Don&#39;t forget to click the &lt;strong&gt;Collect garbage&lt;/strong&gt; button every once in a while to force garbage collection. Then get the detached elements again. Indeed, some elements may remain in memory simply because the browser hasn&#39;t yet cleaned them up. Forcing GC makes sure the list only contains the elements that are detached and cannot be cleaned up.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can find out much more about this tool in this &lt;a href=&quot;https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/&quot;&gt;blog post&lt;/a&gt; and over at Microsoft&#39;s &lt;a href=&quot;https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks&quot;&gt;documentation&lt;/a&gt; site.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/get-detached-elements.png&quot; alt=&quot;Screenshot of the Detached Elements panel in Edge, with the Memory panel next to it&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Hide resources loaded by extensions in the Network panel</title>
     <link href="https://devtoolstips.org/tips/en/hide-extension-resources/"/>
     <updated>2021-10-08T11:23:32Z</updated>
@@ -935,7 +954,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
   <entry>
     <title>Query object instances and holders from the console</title>
     <link href="https://devtoolstips.org/tips/en/query-instances-holders/"/>
-    <updated>2021-09-14T08:13:43Z</updated>
+    <updated>2022-01-10T13:47:02Z</updated>
     <id>https://devtoolstips.org/tips/en/query-instances-holders/</id>
     <content type="html">&lt;p&gt;All browser DevTools have a few built-in functions in the console to do things like &lt;a href=&quot;https://devtoolstips.org/tips/en/get-current-element-in-console/&quot;&gt;get the current element&lt;/a&gt;, or &lt;a href=&quot;https://devtoolstips.org/tips/en/copy-from-console/&quot;&gt;copy a string&lt;/a&gt;. But Safari exposes 2 nice built-in functions:&lt;/p&gt;
 &lt;ul&gt;
