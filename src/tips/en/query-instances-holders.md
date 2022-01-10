@@ -1,6 +1,6 @@
 ---
 title: Query object instances and holders from the console
-tags: ["console", "browser:safari"]
+tags: ["console", "perf", "browser:safari"]
 ---
 All browser DevTools have a few built-in functions in the console to do things like [get the current element](/tips/en/get-current-element-in-console/), or [copy a string](/tips/en/copy-from-console/). But Safari exposes 2 nice built-in functions:
 
