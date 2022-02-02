@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Record and replay user flows</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tag/perf/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/record-replay/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/record-replay.png">
+    <meta property="og:description" content="Record and replay user flows">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -43,15 +43,40 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>perf tips</h2>
-  <label class="search">
-    <span>Filter list</span>
-    <input type="text">
-</label>
-<script async src="/assets/filter-tip-list.js"></script>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/get-detached-elements/">Get detached DOM elements to investigate memory leaks</a></li><li class="hover-box tip"><a href="/tips/en/query-instances-holders/">Query object instances and holders from the console</a></li><li class="hover-box tip"><a href="/tips/en/record-replay/">Record and replay user flows</a></li><li class="hover-box tip"><a href="/tips/en/throttle-network-speed/">Throttle the network speed to test your website on slower connections</a></li><li class="hover-box tip"><a href="/tips/en/view-perf-markers-in-order/">View performance markers in order</a></li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/testing/">testing</a></li><li class="tag"><a href="/tag/perf/">perf</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+    </div>
+    <h2 class="tip-title">Record and replay user flows</h2>
+    <div class="tip-content">
+        <p>Have you ever had to test the same user scenario again and again while working on a fix or performance improvement?
+Sometimes you just have to click the same buttons and do the same actions every time you reload the page to test something. And this can be very time consuming and frustrating.</p>
+<p>Chrome has a very handy <strong>Recorder</strong> panel to help with this. This panel lets you record any user flow once and then replay this flow as many times as you want.</p>
+<p>To record a new flow:</p>
+<ul>
+<li>Open the <strong>Recorder</strong> panel by going to <strong>More options</strong> &gt; <strong>More tools</strong> &gt; <strong>Recorder</strong> (or using the <a href="/tips/en/execute-commands">command menu</a> to open it from the keyboard).</li>
+<li>Click <strong>Start new recording</strong>, give your recording a name, and click the record button to start.</li>
+<li>Use the page as normal, clicking on buttons, using form controls, navigating to other pages, etc.</li>
+<li>When you're done with the user flow you want to record, click <strong>End recording</strong>.</li>
+</ul>
+<p>From that point on, the recording will be available in the <strong>Recorder</strong> panel and you can simply replay it any time you want:</p>
+<ul>
+<li>Find your recording in the panel's initial screen, or from the dropdown located in the panel's toolbar.</li>
+<li>Click the <strong>Play recording</strong> button.</li>
+</ul>
+<p><img src="/assets/img/record-replay.png" alt="GIF animation of the Recorder panel automatically replaying a set of recorded steps"></p>
+<p>You can learn a lot more about this panel (including how to edit a recording and how to use it to test performance improvements) in <a href="https://developer.chrome.com/docs/devtools/recorder/">the Recorder documentation</a>.</p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/f2d36c57ab3cd747ce808143b4875bcef624590e">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-02-02T15:15:26.000Z">2/2/2022</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>

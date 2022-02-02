@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-01-26T17:32:19.000Z</updated>
+  <updated>2022-02-02T15:15:26.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -1008,6 +1008,31 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;p&gt;Or if you want to know what refers to the object you&#39;re debugging, use &lt;code&gt;queryHolders(this)&lt;/code&gt;, which will return an array of all the other objects that have references to &lt;code&gt;this&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/query-instances-holders-2.png&quot; alt=&quot;Screenshot of the console in Safari, showing the result of queryHolders(this)&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Learn more about these, and other, built-in functions &lt;a href=&quot;https://webkit.org/web-inspector/console-command-line-api/#functions&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Record and replay user flows</title>
+    <link href="https://devtoolstips.org/tips/en/record-replay/"/>
+    <updated>2022-02-02T15:15:26Z</updated>
+    <id>https://devtoolstips.org/tips/en/record-replay/</id>
+    <content type="html">&lt;p&gt;Have you ever had to test the same user scenario again and again while working on a fix or performance improvement?
+Sometimes you just have to click the same buttons and do the same actions every time you reload the page to test something. And this can be very time consuming and frustrating.&lt;/p&gt;
+&lt;p&gt;Chrome has a very handy &lt;strong&gt;Recorder&lt;/strong&gt; panel to help with this. This panel lets you record any user flow once and then replay this flow as many times as you want.&lt;/p&gt;
+&lt;p&gt;To record a new flow:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Recorder&lt;/strong&gt; panel by going to &lt;strong&gt;More options&lt;/strong&gt; &amp;gt; &lt;strong&gt;More tools&lt;/strong&gt; &amp;gt; &lt;strong&gt;Recorder&lt;/strong&gt; (or using the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands&quot;&gt;command menu&lt;/a&gt; to open it from the keyboard).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Start new recording&lt;/strong&gt;, give your recording a name, and click the record button to start.&lt;/li&gt;
+&lt;li&gt;Use the page as normal, clicking on buttons, using form controls, navigating to other pages, etc.&lt;/li&gt;
+&lt;li&gt;When you&#39;re done with the user flow you want to record, click &lt;strong&gt;End recording&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;From that point on, the recording will be available in the &lt;strong&gt;Recorder&lt;/strong&gt; panel and you can simply replay it any time you want:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find your recording in the panel&#39;s initial screen, or from the dropdown located in the panel&#39;s toolbar.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Play recording&lt;/strong&gt; button.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/record-replay.png&quot; alt=&quot;GIF animation of the Recorder panel automatically replaying a set of recorded steps&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can learn a lot more about this panel (including how to edit a recording and how to use it to test performance improvements) in &lt;a href=&quot;https://developer.chrome.com/docs/devtools/recorder/&quot;&gt;the Recorder documentation&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
