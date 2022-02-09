@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Use full browser window for device emulation</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/use-full-browser-for-device-emulation/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/use-full-browser-for-device-emulation.gif">
+    <meta property="og:description" content="Use full browser window for device emulation">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -43,52 +43,27 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/get-current-element-in-console/">
-        Get the selected element in the console
-        
-        <img src="/assets/img/get-current-element-in-console.jpg" alt="screenshot of safari&#39;s console showing how the $0 shortcut returns the selected elemet">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/visualize-screenreader-order/">
-        Visualize the screen reader order for elements within the page
-        
-        <img src="/assets/img/visualize-screenreader-order.png" alt="Screenshot of the source order viewer in Microsoft Edge, showing numbered boxes around elements">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/take-in-device-screenshots/">
-        Take screenshots of your site in a device frame
-        
-        <img src="/assets/img/take-in-device-screenshots.png" alt="Screenshot of the devtoolstips.org website in an iPhone frame">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/select-pointer-events-none-elements/">
-        Select elements with pointer-events:none by holding Shift
-        
-        <img src="/assets/img/select-pointer-events-none-elements.gif" alt="Gif animation showing how a pointer-events:none element normally can&#39;t be selected, except when Shift is pressed">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/convert-font-units/">
-        Convert font property units
-        
-        <img src="/assets/img/convert-font-units-1.png" alt="Screenshot of the fonts panel in Firefox, showing the unit conversion drop-down">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/visualize-css-transforms/">
-        Visualize the effect of CSS transforms
-        
-        <img src="/assets/img/visualize-css-transforms.gif" alt="GIF animation showing how the CSS transform highlighter appears on the page when hovering over a transform CSS property in the Rules panel">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/testing/">testing</a></li><li class="tag"><a href="/tag/productivity/">productivity</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+    </div>
+    <h2 class="tip-title">Use full browser window for device emulation</h2>
+    <div class="tip-content">
+        <p>Emulating different devices in the browser is incredibly useful. It gets tricky when you are on a device with limited resolution as the emulated device needs to be zoomed down to fit the screen as a large part of the window is taken up by the Developer Tools.</p>
+<p>Firefox has a keyboard shortcut to show device emulation without Developer Tools - <kbd>command</kbd> + <kbd>option</kbd> + <kbd>M</kbd> on Mac and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>M</kbd> on Windows/Linux.</p>
+<p>On Chromium based browsers like Chrome and Edge the trick is to start the device emulation and then un-dock the Developer Tools. You can un-dock the tools into their own window using the <code>…</code> menu. This gives you the full browser as an emulation playground.</p>
+<p><img src="/assets/img/use-full-browser-for-device-emulation.gif" alt="Screencast showing device emulation andhow to undock the Developer Tools into an own window"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/0475bdc67de4e93177c9dc4e80a51609a441035e">Patrick Brosset</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/68ae8372382f126fdcd29996c3b41b1026b3e262">Christian Heilmann</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-02-09T14:30:56.000Z">2/9/2022</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
