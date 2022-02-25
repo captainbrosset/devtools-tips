@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-02-21T16:57:29.000Z</updated>
+  <updated>2022-02-25T16:34:12.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -911,6 +911,20 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;/ul&gt;
 &lt;p&gt;And voila! All elements are outlined and you can understand what&#39;s going on.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/outline-everything.gif&quot; alt=&quot;Gif animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Paste multiple CSS declarations at once</title>
+    <link href="https://devtoolstips.org/tips/en/past-several-css-declarations/"/>
+    <updated>2022-02-25T16:34:12Z</updated>
+    <id>https://devtoolstips.org/tips/en/past-several-css-declarations/</id>
+    <content type="html">&lt;p&gt;You know how you can paste a CSS property name or value in the &lt;strong&gt;Styles&lt;/strong&gt; (or &lt;strong&gt;Rules&lt;/strong&gt;) panel? Well, you can actually paste several declarations at once too!&lt;/p&gt;
+&lt;p&gt;For example, try copying the following entire CSS code snippet, which includes multiple declarations:&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token property&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; courier&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token property&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 14pt&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #f06&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 4rem&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now open DevTools, and the &lt;strong&gt;Elements&lt;/strong&gt; (or &lt;strong&gt;Inspector&lt;/strong&gt;) panel, find a CSS rule and click somewhere in it as if you were about to type a new property.&lt;/p&gt;
+&lt;p&gt;And now paste the code in. Instead of everything getting pasted in just this one text field, see how DevTools noticed that your clipboard contained multiple declarations, and created them all for you!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/paste-several-css-declarations.gif&quot; alt=&quot;GIF animation showing how pasting several declarations in a CSS rule in DevTools creates them all&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   

@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Paste multiple CSS declarations at once</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/past-several-css-declarations/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/paste-several-css-declarations.gif">
+    <meta property="og:description" content="Paste multiple CSS declarations at once">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -43,52 +43,29 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/style-console-messages/">
-        Apply CSS styles to console messages
-        
-        <img src="/assets/img/style-console-messages.png" alt="Screenshot of a styled console message in Edge">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/visualize-screenreader-order/">
-        Visualize the screen reader order for elements within the page
-        
-        <img src="/assets/img/visualize-screenreader-order.png" alt="Screenshot of the source order viewer in Microsoft Edge, showing numbered boxes around elements">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/increment-css-number-values/">
-        Easily change CSS number values from the keyboard in increments of 0.1, 1, 10, 100
-        
-        <img src="/assets/img/increment-css-number-values.gif" alt="GIF animation of the Styles panel in Edge showing how numbers can be changed in various increments">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/edit-clip-path-shape-outside/">
-        Edit clip-path and shape-outside CSS properties by dragging points in the page
-        
-        <img src="/assets/img/edit-clip-path-shape-outside.gif" alt="Gif demo of the shape editor in firefox, clicking on the Rules panel icon, and then moving points around in the page">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/drag-drop-dom-nodes/">
-        Drag and drop nodes in the DOM tree
-        
-        <img src="/assets/img/drag-drop-dom-nodes.gif" alt="Gif animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/find-devtools-documentation/">
-        Find DevTools reference documentation
-        
-        <img src="/assets/img/find-devtools-documentation.png" alt="Screenshot of the 4 documentation websites listed above">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
+    </div>
+    <h2 class="tip-title">Paste multiple CSS declarations at once</h2>
+    <div class="tip-content">
+        <p>You know how you can paste a CSS property name or value in the <strong>Styles</strong> (or <strong>Rules</strong>) panel? Well, you can actually paste several declarations at once too!</p>
+<p>For example, try copying the following entire CSS code snippet, which includes multiple declarations:</p>
+<pre class="language-css"><code class="language-css"><span class="token property">font-family</span><span class="token punctuation">:</span> courier<span class="token punctuation">;</span><br><span class="token property">font-size</span><span class="token punctuation">:</span> 14pt<span class="token punctuation">;</span><br><span class="token property">color</span><span class="token punctuation">:</span> #f06<span class="token punctuation">;</span><br><span class="token property">margin</span><span class="token punctuation">:</span> 4rem<span class="token punctuation">;</span></code></pre>
+<p>Now open DevTools, and the <strong>Elements</strong> (or <strong>Inspector</strong>) panel, find a CSS rule and click somewhere in it as if you were about to type a new property.</p>
+<p>And now paste the code in. Instead of everything getting pasted in just this one text field, see how DevTools noticed that your clipboard contained multiple declarations, and created them all for you!</p>
+<p><img src="/assets/img/paste-several-css-declarations.gif" alt="GIF animation showing how pasting several declarations in a CSS rule in DevTools creates them all"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/9e1fd773a204f7ff2d7172f21c322ff4b598fde9">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-02-25T16:34:12.000Z">2/25/2022</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
