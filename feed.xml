@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-03-03T08:31:42.000Z</updated>
+  <updated>2022-03-03T08:38:46.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -281,9 +281,9 @@ When working on a site that uses a lot of JavaScript and especially when you don
   </entry>
   
   <entry>
-    <title>Detect and fix low color contrast issues</title>
+    <title>Detect low color contrast issues</title>
     <link href="https://devtoolstips.org/tips/en/detect-low-color-contrast/"/>
-    <updated>2022-03-03T08:31:42Z</updated>
+    <updated>2022-03-03T08:38:46Z</updated>
     <id>https://devtoolstips.org/tips/en/detect-low-color-contrast/</id>
     <content type="html">&lt;p&gt;Low color vision is very common, and your choice of text and background colors can negatively impact people&#39;s experience of your website. What seems legible to you might not be for everyone.&lt;/p&gt;
 &lt;p&gt;DevTools comes with a number of features to help you detect possible color contrast issues:&lt;/p&gt;
