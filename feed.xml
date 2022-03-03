@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-02-25T16:34:12.000Z</updated>
+  <updated>2022-03-03T08:31:42.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -277,6 +277,42 @@ When working on a site that uses a lot of JavaScript and especially when you don
 &lt;li&gt;The Sources panel (or Debugger panel in Firefox) will automatically open up, and pause script execution at that line, giving you a chance to see what are the values of local variables, the callstack, etc.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debugger-statement.png&quot; alt=&quot;Screenshot of the Sources panel in Edge, paused at a debugger statement&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Detect and fix low color contrast issues</title>
+    <link href="https://devtoolstips.org/tips/en/detect-low-color-contrast/"/>
+    <updated>2022-03-03T08:31:42Z</updated>
+    <id>https://devtoolstips.org/tips/en/detect-low-color-contrast/</id>
+    <content type="html">&lt;p&gt;Low color vision is very common, and your choice of text and background colors can negatively impact people&#39;s experience of your website. What seems legible to you might not be for everyone.&lt;/p&gt;
+&lt;p&gt;DevTools comes with a number of features to help you detect possible color contrast issues:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can simulate various color vision deficiencies ➡️ &lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-color-vision-deficiencies/&quot;&gt;Simulate color vision deficiencies&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can get color contrast ratios on hover, when using the inspect tool ➡️ &lt;a href=&quot;https://devtoolstips.org/tips/en/see-quick-a11y-info-on-hover/&quot;&gt;See quick accessibility information on hover&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Chrome and Edge, you can list all contrast issues at once with the &lt;strong&gt;CSS Overview&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands/&quot;&gt;Command Menu&lt;/a&gt;: &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; (or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; on mac).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Capture overview&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Colors&lt;/strong&gt; tab in the sidebar and scroll down to the &lt;strong&gt;Contrast issues&lt;/strong&gt; section.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/detect-low-color-contrast-css-overview.png&quot; alt=&quot;Screenshot of the CSS Overview panel in Chrome, showing the color contrast issues section&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Firefox, you can find all contrast issues too, using the &lt;strong&gt;Accessibility&lt;/strong&gt; panel.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Accessibility&lt;/strong&gt; panel from the toolbar.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Check for issues&lt;/strong&gt; drop-down, select &lt;strong&gt;Contrast&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click each item in the table and review the color contrast ratio.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/detect-low-color-contrast-accessibility-panel.png&quot; alt=&quot;Screenshot of the Accessibility panel in Firefox, showing the list of contrast issues&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   

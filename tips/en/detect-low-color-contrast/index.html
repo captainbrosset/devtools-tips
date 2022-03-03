@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Detect and fix low color contrast issues</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/detect-low-color-contrast/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/detect-low-color-contrast-css-overview.png">
+    <meta property="og:description" content="Detect and fix low color contrast issues">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -43,52 +43,51 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/style-console-messages/">
-        Apply CSS styles to console messages
-        
-        <img src="/assets/img/style-console-messages.png" alt="Screenshot of a styled console message in Edge">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/play-sound-on-js-execution/">
-        Play a sound when a line of JavaScript is executed
-        
-        <img src="/assets/img/play-sound-on-js-execution.gif" alt="GIF animation showing how to add the audio breakpoint in Safari Web Inspector">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/edit-position/">
-        Edit CSS absolute and relative positions by dragging points in the page
-        
-        <img src="/assets/img/edit-position.gif" alt="Gif demo of the geometry editor in firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/debug-js-hover/">
-        Debug popups that appear on hover using JS
-        
-        <img src="/assets/img/debug-js-hover.gif" alt="GIF showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/see-json-responses/">
-        See formatted JSON responses
-        
-        <img src="/assets/img/see-json-responses.png" alt="Screenshot of the JSON viewer in Firefox">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/visualize-screenreader-order/">
-        Visualize the screen reader order for elements within the page
-        
-        <img src="/assets/img/visualize-screenreader-order.png" alt="Screenshot of the source order viewer in Microsoft Edge, showing numbered boxes around elements">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/accessibility/">accessibility</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+    </div>
+    <h2 class="tip-title">Detect and fix low color contrast issues</h2>
+    <div class="tip-content">
+        <p>Low color vision is very common, and your choice of text and background colors can negatively impact people's experience of your website. What seems legible to you might not be for everyone.</p>
+<p>DevTools comes with a number of features to help you detect possible color contrast issues:</p>
+<ul>
+<li>
+<p>You can simulate various color vision deficiencies ➡️ <a href="/tips/en/simulate-color-vision-deficiencies/">Simulate color vision deficiencies</a>.</p>
+</li>
+<li>
+<p>You can get color contrast ratios on hover, when using the inspect tool ➡️ <a href="/tips/en/see-quick-a11y-info-on-hover/">See quick accessibility information on hover</a>.</p>
+</li>
+<li>
+<p>In Chrome and Edge, you can list all contrast issues at once with the <strong>CSS Overview</strong> tool.</p>
+<ul>
+<li>Open the <a href="/tips/en/execute-commands/">Command Menu</a>: <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> on mac).</li>
+<li>Click <strong>Capture overview</strong>.</li>
+<li>Click the <strong>Colors</strong> tab in the sidebar and scroll down to the <strong>Contrast issues</strong> section.</li>
+</ul>
+<p><img src="/assets/img/detect-low-color-contrast-css-overview.png" alt="Screenshot of the CSS Overview panel in Chrome, showing the color contrast issues section"></p>
+</li>
+<li>
+<p>In Firefox, you can find all contrast issues too, using the <strong>Accessibility</strong> panel.</p>
+<ul>
+<li>Open the <strong>Accessibility</strong> panel from the toolbar.</li>
+<li>In the <strong>Check for issues</strong> drop-down, select <strong>Contrast</strong>.</li>
+<li>Click each item in the table and review the color contrast ratio.</li>
+</ul>
+<p><img src="/assets/img/detect-low-color-contrast-accessibility-panel.png" alt="Screenshot of the Accessibility panel in Firefox, showing the list of contrast issues"></p>
+</li>
+</ul>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/ee39118c36b4cd5c9ccdb13648b3dc2fec365a4e">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-03-03T08:31:42.000Z">3/3/2022</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
