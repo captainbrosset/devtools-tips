@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-03-09T16:38:41.000Z</updated>
+  <updated>2022-03-10T13:49:24.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -859,7 +859,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
   <entry>
     <title>Manipulate complex JSON files using DevTools</title>
     <link href="https://devtoolstips.org/tips/en/manipulate-complex-json/"/>
-    <updated>2022-03-09T16:38:41Z</updated>
+    <updated>2022-03-10T08:17:18Z</updated>
     <id>https://devtoolstips.org/tips/en/manipulate-complex-json/</id>
     <content type="html">&lt;p&gt;I often work with large amount of data that I need to go through and gather interesting information from. Sometimes this data is in JSON format. When that&#39;s the case, I like using DevTools to turn it into what I want, using JavaScript!&lt;/p&gt;
 &lt;ul&gt;
@@ -871,7 +871,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;p&gt;Take a look at the following video to see my workflow in action:&lt;/p&gt;
 &lt;p&gt;https://www.youtube.com/watch?v=W8s9UiEhaLE&lt;/p&gt;
 &lt;p&gt;Note that while the workflow works in every browser, the &lt;strong&gt;Snippets&lt;/strong&gt; pane only exists in Edge and Chrome. In Firefox, you can use the &lt;a href=&quot;https://devtoolstips.org/tips/en/multi-line-console&quot;&gt;multi-line console&lt;/a&gt; to do the same thing.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/images/manipulate-complex-json.png&quot; alt=&quot;Screenshot of VSCode with some JSON data and DevTools next to it with the snippets panel containing JS code to manipulate the JSON&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/manipulate-complex-json.png&quot; alt=&quot;Screenshot of VSCode with some JSON data and DevTools next to it with the snippets panel containing JS code to manipulate the JSON&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -1234,7 +1234,7 @@ Sometimes you just have to click the same buttons and do the same actions every 
   <entry>
     <title>Send feedback, ask for features and report bugs</title>
     <link href="https://devtoolstips.org/tips/en/send-feedback-about-devtools/"/>
-    <updated>2021-07-12T13:40:22Z</updated>
+    <updated>2022-03-10T13:49:24Z</updated>
     <id>https://devtoolstips.org/tips/en/send-feedback-about-devtools/</id>
     <content type="html">&lt;img src=&quot;https://devtoolstips.org/assets/img/send-feedback-about-devtools.png&quot; alt=&quot;A feedback illustration showing a stick figure with a speech bubble&quot; style=&quot;width:50px;&quot; /&gt;
 &lt;p&gt;Browser vendors depend on your feedback to build the right tools for you. Without hearing from you all about what problems you have, or what features you lack, they can&#39;t take the right decisions about what to build.&lt;/p&gt;
@@ -1262,8 +1262,8 @@ Sometimes you just have to click the same buttons and do the same actions every 
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Edge DevTools&lt;/strong&gt;:
 &lt;ul&gt;
-&lt;li&gt;The easiest way to report a problem or ask for a feature is by using &lt;a href=&quot;https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/#getting-in-touch-with-the-microsoft-edge-devtools-team&quot;&gt;the feedback button&lt;/a&gt; in DevTools (the little stick figure in the top-right corner of the tools)&lt;/li&gt;
-&lt;li&gt;Asking questions to the team works best over Twitter by mentioning the &lt;a href=&quot;https://twitter.com/EdgeDevTools&quot;&gt;@EdgeDevTools&lt;/a&gt; account.&lt;/li&gt;
+&lt;li&gt;The easiest way to report a problem you encountered while using the tools is by using &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/contact#use-the-send-feedback-window&quot;&gt;the feedback button&lt;/a&gt; in DevTools (the little stick figure in the top-right corner of the tools).&lt;/li&gt;
+&lt;li&gt;But if you have ideas, questions, feedback, and want to have longer conversations, use the &lt;a href=&quot;https://github.com/MicrosoftEdge/DevTools/&quot;&gt;Edge DevTools feedback repository&lt;/a&gt; instead.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Chrome DevTools&lt;/strong&gt;:
