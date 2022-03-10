@@ -22,7 +22,7 @@ Here are a few ways you can report bugs, ask questions or request features:
 * **Chromium**
   * Chromium is an open-source project that several browsers are based on, including Google Chrome and Microsoft Edge. If you believe you found a bug that pertains to Chromium rather than just one of the browsers based on it, you can head over to the Monorail bug tracker that Chromium uses and [find all issues and create new ones here](https://bugs.chromium.org/p/chromium/issues/list).
 * **Edge DevTools**:
-  * The easiest way to report a problem or ask for a feature is by using [the feedback button](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/#getting-in-touch-with-the-microsoft-edge-devtools-team) in DevTools (the little stick figure in the top-right corner of the tools)
-  * Asking questions to the team works best over Twitter by mentioning the [@EdgeDevTools](https://twitter.com/EdgeDevTools) account.
+  * The easiest way to report a problem you encountered while using the tools is by using [the feedback button](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/contact#use-the-send-feedback-window) in DevTools (the little stick figure in the top-right corner of the tools).
+  * But if you have ideas, questions, feedback, and want to have longer conversations, use the [Edge DevTools feedback repository](https://github.com/MicrosoftEdge/DevTools/) instead.
 * **Chrome DevTools**:
   * On top of the Chromium bug tracker, the team also listens for feedback on [the devtools-dev mailing list](https://www.chromium.org/teams/devtools) as well as on twitter at [@ChromeDevTools](https://twitter.com/ChromeDevTools).
