@@ -19,10 +19,10 @@ jobs:
         uses: bahmutov/npm-install@v1
       
       # Build with 11ty
-      - name: Build 11ty
-        uses: TartanLlama/actions-eleventy@v1.3
-        env:
-          AUTHOR_API_TOKEN: ${{ secrets.AUTHOR_API_TOKEN }}
+      - name: Set environment
+        run: echo "AUTHOR_API_TOKEN"=${{ secrets.AUTHOR_API_TOKEN }} >> $GITHUB_ENV
+      - name: Run the build script
+        run: npm run build
       
       # Publish to github pages
       - name: Deploy
