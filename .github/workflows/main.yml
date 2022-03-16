@@ -20,11 +20,9 @@ jobs:
       
       # Build with 11ty
       - name: Build 11ty
-        uses: mcfitzgerald/action-build-eleventy@2.01
+        uses: TartanLlama/actions-eleventy@v1.3
         env:
           AUTHOR_API_TOKEN: ${{ secrets.AUTHOR_API_TOKEN }}
-        with:
-          path: $GITHUB_WORKSPACE
       
       # Publish to github pages
       - name: Deploy
