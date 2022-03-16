@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Debug CSS grid areas</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/debug-grid-areas/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/debug-grid-areas.png">
+    <meta property="og:description" content="Debug CSS grid areas">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -43,52 +43,34 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/execute-commands/">
-        Use commands to do things faster
-        
-        <img src="/assets/img/execute-commands.png" alt="Screenshot of Edge&#39;s command menu">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/disable-event-listeners/">
-        Remove or disable event listeners
-        
-        <img src="/assets/img/disable-event-listeners-firefox.png" alt="Screenshot of the Firefox event popup in the Inspector panel, showing the checkbox to toggle events">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/query-dom-from-console/">
-        Find DOM elements from the console
-        
-        <img src="/assets/img/query-dom-from-console.png" alt="Firefox&#39;s console panel, showing 3 different examples of using the $ and $$ built-in console functions">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/live-expressions/">
-        Cut down on console noise using live expressions
-        
-        <img src="/assets/img/live-expressions-eye-icon.png" alt="The eye button in DevTools">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/detect-low-color-contrast/">
-        Detect low color contrast issues
-        
-        <img src="/assets/img/detect-low-color-contrast-css-overview.png" alt="Screenshot of the CSS Overview panel in Chrome, showing the color contrast issues section">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/multi-line-console/">
-        Write code on multiple lines in the Console
-        
-        <img src="/assets/img/multi-line-console-firefox.png" alt="Screenshot showing the button to switch the Firefox console to the multi-line mode">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+    </div>
+    <h2 class="tip-title">Debug CSS grid areas</h2>
+    <div class="tip-content">
+        <p>A really useful way to position elements on a CSS grid is using the <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas"><code>grid-template-areas</code></a> property. With it, you can give names to various areas of your grid (potentially spanning multiple cells), and then simply position your elements by referring to those names.</p>
+<p>The syntax for the <code>grid-template-areas</code> property is a bit special though. It consists in a series of strings where each corresponds to one row in the grid. For example:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">grid-template-areas</span><span class="token punctuation">:</span> <span class="token string">"header  header"</span><br>                       <span class="token string">"sidebar main  "</span><br>                       <span class="token string">"sidebar footer"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>DevTools in Firefox, Chrome, and Edge make it very easy to debug potential problems that may occur when making mistakes with the above syntax.</p>
+<ul>
+<li>Open the <strong>Elements</strong> panel (or <strong>Inspector</strong> panel in Firefox).</li>
+<li>Highlight a grid on your page that has named areas (you can use the <strong>grid</strong> badge in the DOM tree for example).</li>
+<li>Go to the <strong>Layout</strong> sidebar pane.</li>
+<li>Under the <strong>Grid</strong> section, check the <strong>Show area names</strong> box.</li>
+</ul>
+<p><img src="/assets/img/debug-grid-areas.png" alt="Screenshot of Firefox, with a highlighted grid in the page showing the area names, and devtools below it with the &quot;display area names&quot; option checked"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/6b7ba1632d1c68f051f34436e6dbeab3d185f65a">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-03-16T08:29:37.000Z">3/16/2022</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>

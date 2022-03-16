@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Check if your site can be instantly reloaded from bfcache</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/check-bfcache-readiness/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/check-bfcache-readiness.png">
+    <meta property="og:description" content="Check if your site can be instantly reloaded from bfcache">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -43,52 +43,34 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/execute-commands/">
-        Use commands to do things faster
-        
-        <img src="/assets/img/execute-commands.png" alt="Screenshot of Edge&#39;s command menu">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/disable-event-listeners/">
-        Remove or disable event listeners
-        
-        <img src="/assets/img/disable-event-listeners-firefox.png" alt="Screenshot of the Firefox event popup in the Inspector panel, showing the checkbox to toggle events">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/query-dom-from-console/">
-        Find DOM elements from the console
-        
-        <img src="/assets/img/query-dom-from-console.png" alt="Firefox&#39;s console panel, showing 3 different examples of using the $ and $$ built-in console functions">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/live-expressions/">
-        Cut down on console noise using live expressions
-        
-        <img src="/assets/img/live-expressions-eye-icon.png" alt="The eye button in DevTools">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/detect-low-color-contrast/">
-        Detect low color contrast issues
-        
-        <img src="/assets/img/detect-low-color-contrast-css-overview.png" alt="Screenshot of the CSS Overview panel in Chrome, showing the color contrast issues section">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/multi-line-console/">
-        Write code on multiple lines in the Console
-        
-        <img src="/assets/img/multi-line-console-firefox.png" alt="Screenshot showing the button to switch the Firefox console to the multi-line mode">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+    </div>
+    <h2 class="tip-title">Check if your site can be instantly reloaded from bfcache</h2>
+    <div class="tip-content">
+        <p>Most browsers are now able to instantly go back to previously visited pages without having to wait for them to load. This ability is powered by the back/forward cache (or bfcache). Firefox, Safari, and Chromium-based browsers support it, and it's massive performance boost when hitting the back button.</p>
+<p>The way the bfcache works is by storing a snapshot of the page in memory, in a way that no work needs to be done when going back to it, other than displaying the pixels on the screen.</p>
+<p>Not all web pages can be cached in bfcache though. Chrome and Edge have a new tool that lets you detect potential issues with a page that might prevent it from being bfcache'd.</p>
+<p>To test if your page can be cached:</p>
+<ul>
+<li>Open the <strong>Application</strong> tool.</li>
+<li>Click <strong>Back/forward cache</strong> in the side bar.</li>
+<li>Click the <strong>Test back/forward cache</strong> button.</li>
+</ul>
+<p>A report will be displayed, telling you whether your page can be cached, and if not, why.</p>
+<p><img src="/assets/img/check-bfcache-readiness.png" alt="Screenshot of Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/176dd328f938d22903f934e74d438d32c329239f">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-03-15T16:26:56.000Z">3/15/2022</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>

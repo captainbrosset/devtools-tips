@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Emulate forced-color mode</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/emulate-forced-colors/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/emulate-forced-colors.png">
+    <meta property="og:description" content="Emulate forced-color mode">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -43,52 +43,33 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/execute-commands/">
-        Use commands to do things faster
-        
-        <img src="/assets/img/execute-commands.png" alt="Screenshot of Edge&#39;s command menu">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/disable-event-listeners/">
-        Remove or disable event listeners
-        
-        <img src="/assets/img/disable-event-listeners-firefox.png" alt="Screenshot of the Firefox event popup in the Inspector panel, showing the checkbox to toggle events">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/query-dom-from-console/">
-        Find DOM elements from the console
-        
-        <img src="/assets/img/query-dom-from-console.png" alt="Firefox&#39;s console panel, showing 3 different examples of using the $ and $$ built-in console functions">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/live-expressions/">
-        Cut down on console noise using live expressions
-        
-        <img src="/assets/img/live-expressions-eye-icon.png" alt="The eye button in DevTools">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/detect-low-color-contrast/">
-        Detect low color contrast issues
-        
-        <img src="/assets/img/detect-low-color-contrast-css-overview.png" alt="Screenshot of the CSS Overview panel in Chrome, showing the color contrast issues section">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/multi-line-console/">
-        Write code on multiple lines in the Console
-        
-        <img src="/assets/img/multi-line-console-firefox.png" alt="Screenshot showing the button to switch the Firefox console to the multi-line mode">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/accessibility/">accessibility</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+    </div>
+    <h2 class="tip-title">Emulate forced-color mode</h2>
+    <div class="tip-content">
+        <p>Operating systems offer an accessibility feature where the colors shown on the screen are converted to offer higher contrast. When you use this feature, it impacts all the content on the screen: your desktop, folders, native apps, web browser and its web content, etc.</p>
+<p>This means web pages are not displayed in their usual colors, but in a high-contrast mode instead. Learn more about the Windows high-contrast mode and how to style a website with it <a href="https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/">here</a> and about the <code>forced-colors</code> media query <a href="https://developer.mozilla.org/docs/Web/CSS/@media/forced-colors">here</a>.</p>
+<p>If you are not using this high-contrast mode yourself though, you won't know how your website looks to users who do. To make sure your content is fully accessible to users of this mode, and to avoid having to switch your entire OS to it, you can use Edge's or Chrome's ability to emulate the forced-color mode.</p>
+<p>In Edge or Chrome:</p>
+<ul>
+<li>Open the <a href="/tips/en/execute-commands/">Command Menu</a>: <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> on mac).</li>
+<li>Type <strong>Rendering</strong> and press <kbd>Enter</kbd>.</li>
+<li>In the <strong>Rendering</strong> panel, scroll down to the <strong>Emulate CSS media feature forced-colors</strong> and activate it from the drop-down.</li>
+</ul>
+<p><img src="/assets/img/emulate-forced-colors.png" alt="Screenshot of Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools"></p>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/3236bb14ab8fa3ad2beb1ab977b0851446505e1e">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-03-15T18:21:10.000Z">3/15/2022</time></p>
+    </div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>

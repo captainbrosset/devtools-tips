@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-03-10T13:49:24.000Z</updated>
+  <updated>2022-03-16T08:42:10.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -143,6 +143,25 @@ When working on a site that uses a lot of JavaScript and especially when you don
   </entry>
   
   <entry>
+    <title>Check if your site can be instantly reloaded from bfcache</title>
+    <link href="https://devtoolstips.org/tips/en/check-bfcache-readiness/"/>
+    <updated>2022-03-15T16:26:56Z</updated>
+    <id>https://devtoolstips.org/tips/en/check-bfcache-readiness/</id>
+    <content type="html">&lt;p&gt;Most browsers are now able to instantly go back to previously visited pages without having to wait for them to load. This ability is powered by the back/forward cache (or bfcache). Firefox, Safari, and Chromium-based browsers support it, and it&#39;s massive performance boost when hitting the back button.&lt;/p&gt;
+&lt;p&gt;The way the bfcache works is by storing a snapshot of the page in memory, in a way that no work needs to be done when going back to it, other than displaying the pixels on the screen.&lt;/p&gt;
+&lt;p&gt;Not all web pages can be cached in bfcache though. Chrome and Edge have a new tool that lets you detect potential issues with a page that might prevent it from being bfcache&#39;d.&lt;/p&gt;
+&lt;p&gt;To test if your page can be cached:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Application&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Back/forward cache&lt;/strong&gt; in the side bar.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Test back/forward cache&lt;/strong&gt; button.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A report will be displayed, telling you whether your page can be cached, and if not, why.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/check-bfcache-readiness.png&quot; alt=&quot;Screenshot of Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can&#39;t be cached&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Convert color formats</title>
     <link href="https://devtoolstips.org/tips/en/convert-color-formats/"/>
     <updated>2021-09-20T07:23:12Z</updated>
@@ -247,6 +266,25 @@ When working on a site that uses a lot of JavaScript and especially when you don
   </entry>
   
   <entry>
+    <title>Debug CSS grid areas</title>
+    <link href="https://devtoolstips.org/tips/en/debug-grid-areas/"/>
+    <updated>2022-03-16T08:29:37Z</updated>
+    <id>https://devtoolstips.org/tips/en/debug-grid-areas/</id>
+    <content type="html">&lt;p&gt;A really useful way to position elements on a CSS grid is using the &lt;a href=&quot;https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas&quot;&gt;&lt;code&gt;grid-template-areas&lt;/code&gt;&lt;/a&gt; property. With it, you can give names to various areas of your grid (potentially spanning multiple cells), and then simply position your elements by referring to those names.&lt;/p&gt;
+&lt;p&gt;The syntax for the &lt;code&gt;grid-template-areas&lt;/code&gt; property is a bit special though. It consists in a series of strings where each corresponds to one row in the grid. For example:&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;grid-template-areas&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;header  header&quot;&lt;/span&gt;&lt;br /&gt;                       &lt;span class=&quot;token string&quot;&gt;&quot;sidebar main  &quot;&lt;/span&gt;&lt;br /&gt;                       &lt;span class=&quot;token string&quot;&gt;&quot;sidebar footer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;DevTools in Firefox, Chrome, and Edge make it very easy to debug potential problems that may occur when making mistakes with the above syntax.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Elements&lt;/strong&gt; panel (or &lt;strong&gt;Inspector&lt;/strong&gt; panel in Firefox).&lt;/li&gt;
+&lt;li&gt;Highlight a grid on your page that has named areas (you can use the &lt;strong&gt;grid&lt;/strong&gt; badge in the DOM tree for example).&lt;/li&gt;
+&lt;li&gt;Go to the &lt;strong&gt;Layout&lt;/strong&gt; sidebar pane.&lt;/li&gt;
+&lt;li&gt;Under the &lt;strong&gt;Grid&lt;/strong&gt; section, check the &lt;strong&gt;Show area names&lt;/strong&gt; box.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-grid-areas.png&quot; alt=&quot;Screenshot of Firefox, with a highlighted grid in the page showing the area names, and devtools below it with the &amp;quot;display area names&amp;quot; option checked&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Debug popups that appear on hover using JS</title>
     <link href="https://devtoolstips.org/tips/en/debug-js-hover/"/>
     <updated>2021-10-20T13:36:36Z</updated>
@@ -261,6 +299,22 @@ When working on a site that uses a lot of JavaScript and especially when you don
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-js-hover.gif&quot; alt=&quot;GIF showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Thank you to &lt;a href=&quot;https://twitter.com/samselikoff&quot;&gt;Sam Selikoff&lt;/a&gt; for &lt;a href=&quot;https://twitter.com/samselikoff/status/1441142046492807176&quot;&gt;tweeting&lt;/a&gt; about this tip and making a youtube video about it too:&lt;/p&gt;
 &lt;p&gt;https://www.youtube.com/watch?v=aNZ9ci_1gtM&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Debug unwanted scrollbars</title>
+    <link href="https://devtoolstips.org/tips/en/debug-unwanted-scrollbars/"/>
+    <updated>2022-03-16T08:42:10Z</updated>
+    <id>https://devtoolstips.org/tips/en/debug-unwanted-scrollbars/</id>
+    <content type="html">&lt;p&gt;Sometimes scrollbars appear on a web page in places we don&#39;t want them to. And when this happens, it&#39;s not always very straightforward to fix the problem. Which container is responsible for the scrollbars in the first place? Which elements are even causing the scrollbars to appear? Why are they too big?&lt;/p&gt;
+&lt;p&gt;All very good questions that can cause a lot of time lost and frustration.&lt;/p&gt;
+&lt;p&gt;Thankfully, Firefox has a tool just for this. In the &lt;strong&gt;Inspector&lt;/strong&gt; panel, where the DOM tree of the page is displayed, you will notice &lt;strong&gt;scroll&lt;/strong&gt; badges next to all elements that have scrollbars!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-unwanted-scrollbars-1.png&quot; alt=&quot;Screenshot of Firefox DevTools, with the Inspector panel showing the Scroll badge on an element&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This takes care of our first question: which element is scrolling? As for the second question: which elements are causing the scrolling, if you just click on one of the &lt;strong&gt;scroll&lt;/strong&gt; badges, the &lt;strong&gt;Inspector&lt;/strong&gt; will jump to the element (or elements) that caused the scrollbars to appear and highlight them for you!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-unwanted-scrollbars-2.png&quot; alt=&quot;Screenshot of Firefox DevTools, with the Inspector panel showing the Overflow badge on 3 highlighted elements&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Now this feature won&#39;t answer our third question: Why are these elements too big? But once you know which elements are the root cause of the problem, you can use the &lt;strong&gt;Rules&lt;/strong&gt; siderbar pane to figure out which CSS properties are responsible for it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Debug_Scrollable_Overflow&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
@@ -481,6 +535,24 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
 &lt;li&gt;Click on the little shadow editor icon next to the &lt;code&gt;box-shadow&lt;/code&gt; property value.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/edit-shadow.gif&quot; alt=&quot;GIF animation showing the shadow editor in Edge&#39;s Styles pane&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Emulate forced-color mode</title>
+    <link href="https://devtoolstips.org/tips/en/emulate-forced-colors/"/>
+    <updated>2022-03-15T18:21:10Z</updated>
+    <id>https://devtoolstips.org/tips/en/emulate-forced-colors/</id>
+    <content type="html">&lt;p&gt;Operating systems offer an accessibility feature where the colors shown on the screen are converted to offer higher contrast. When you use this feature, it impacts all the content on the screen: your desktop, folders, native apps, web browser and its web content, etc.&lt;/p&gt;
+&lt;p&gt;This means web pages are not displayed in their usual colors, but in a high-contrast mode instead. Learn more about the Windows high-contrast mode and how to style a website with it &lt;a href=&quot;https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/&quot;&gt;here&lt;/a&gt; and about the &lt;code&gt;forced-colors&lt;/code&gt; media query &lt;a href=&quot;https://developer.mozilla.org/docs/Web/CSS/@media/forced-colors&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are not using this high-contrast mode yourself though, you won&#39;t know how your website looks to users who do. To make sure your content is fully accessible to users of this mode, and to avoid having to switch your entire OS to it, you can use Edge&#39;s or Chrome&#39;s ability to emulate the forced-color mode.&lt;/p&gt;
+&lt;p&gt;In Edge or Chrome:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands/&quot;&gt;Command Menu&lt;/a&gt;: &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; (or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; on mac).&lt;/li&gt;
+&lt;li&gt;Type &lt;strong&gt;Rendering&lt;/strong&gt; and press &lt;kbd&gt;Enter&lt;/kbd&gt;.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Rendering&lt;/strong&gt; panel, scroll down to the &lt;strong&gt;Emulate CSS media feature forced-colors&lt;/strong&gt; and activate it from the drop-down.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/emulate-forced-colors.png&quot; alt=&quot;Screenshot of Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
