@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-03-16T08:42:10.000Z</updated>
+  <updated>2022-03-25T09:27:19.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -1118,6 +1118,42 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;p&gt;Turn off &lt;code&gt;designMode&lt;/code&gt; with the expression &lt;code&gt;document.designMode=&amp;quot;off&amp;quot;&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Changes are not persisted and will revert on page close or refresh.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/prototype-content-changes-with-designmode.gif&quot; alt=&quot;Animated GIF of editable web page with designMode on&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Start your HTML and CSS prototypes in the browser directly</title>
+    <link href="https://devtoolstips.org/tips/en/prototype-in-the-browser/"/>
+    <updated>2022-03-25T09:27:19Z</updated>
+    <id>https://devtoolstips.org/tips/en/prototype-in-the-browser/</id>
+    <content type="html">&lt;p&gt;Sometimes I need a blank canvas to prototype an idea with HTML and CSS. Something outside of the website I&#39;m working on. Maybe I need a new layout or component and I&#39;m not sure yet how to do it.&lt;/p&gt;
+&lt;p&gt;In this case, starting from a blank HTML page makes a lot of sense since I don&#39;t have to worry about the rest of the site yet and only focus on my prototype.&lt;/p&gt;
+&lt;p&gt;Turns out a quick way to do this is to start it directly in the browser, instead of creating a new HTML file somewhere in a &lt;code&gt;dev&lt;/code&gt; folder! Here&#39;s how I do it:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;I open my favorite browser and type something like this in the address bar: &lt;code&gt;data:text/html,&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This is a data URL that will tell the browser to just load the HTML content I provided after the &lt;code&gt;data:text/html,&lt;/code&gt; prefix, instead of loading a remote website.
+I can also write more fancy HTML, maybe add more elements, and attributes. But usually just one div is enough to get me started, because my next step ...&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I immediately open DevTools and dock it to the side of the browser window.&lt;/p&gt;
+&lt;p&gt;I like having it on the side because it gives me a simple way to resize the space available to my prototype by just dragging the splitter between DevTools and the page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;And then that&#39;s when the prototyping begin.&lt;/p&gt;
+&lt;p&gt;Using the &lt;strong&gt;Elements&lt;/strong&gt;/&lt;strong&gt;Inspector&lt;/strong&gt; panel, I can add more elements with the &lt;strong&gt;Edit as HTML&lt;/strong&gt; feature, add and modify attributes by double-clicking them, add classes from the &lt;strong&gt;Styles&lt;/strong&gt;/&lt;strong&gt;Rules&lt;/strong&gt; panel, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When I&#39;m done coding in the browser and feel like I have what I wanted, it&#39;s time to export my changes so they don&#39;t disappear when close the browser window.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To export the HTML code, I usually do this: right-click on the &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; element and choose &lt;strong&gt;Copy inner HTML&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;To export the CSS code: in Firefox, I open the &lt;strong&gt;Changes&lt;/strong&gt; sidebar panel and click &lt;strong&gt;Copy All Changes&lt;/strong&gt; (&lt;a href=&quot;https://devtoolstips.org/tips/en/find-css-changes&quot;&gt;learn more&lt;/a&gt;), and Chrome/Edge I go to &lt;strong&gt;Sources&lt;/strong&gt;, find the &lt;strong&gt;inspector-stylesheet&lt;/strong&gt; source and copy the content from it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/prototype-in-the-browser.png&quot; alt=&quot;Screenshot of Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Here is a quick demo I did 4 years ago showing roughly this workflow. Things have changed a bit, but most of it still applies:&lt;/p&gt;
+&lt;p&gt;https://www.youtube.com/watch?v=o5wy237B5qc&lt;/p&gt;
 </content>
   </entry>
   

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start your HTML and CSS prototypes in the browser directly</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/prototype-in-the-browser/">
+    
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/prototype-in-the-browser.png">
+    <meta property="og:description" content="Start your HTML and CSS prototypes in the browser directly">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4P6B6NT4Y8');
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">DevTools Tips</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+          <li><a href="/all/">All Tips</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/testing/">testing</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    </div>
+    <h2 class="tip-title">Start your HTML and CSS prototypes in the browser directly</h2>
+    <div class="tip-content">
+        <p>Sometimes I need a blank canvas to prototype an idea with HTML and CSS. Something outside of the website I'm working on. Maybe I need a new layout or component and I'm not sure yet how to do it.</p>
+<p>In this case, starting from a blank HTML page makes a lot of sense since I don't have to worry about the rest of the site yet and only focus on my prototype.</p>
+<p>Turns out a quick way to do this is to start it directly in the browser, instead of creating a new HTML file somewhere in a <code>dev</code> folder! Here's how I do it:</p>
+<ol>
+<li>
+<p>I open my favorite browser and type something like this in the address bar: <code>data:text/html,&lt;div&gt;&lt;/div&gt;</code>.</p>
+<p>This is a data URL that will tell the browser to just load the HTML content I provided after the <code>data:text/html,</code> prefix, instead of loading a remote website.
+I can also write more fancy HTML, maybe add more elements, and attributes. But usually just one div is enough to get me started, because my next step ...</p>
+</li>
+<li>
+<p>I immediately open DevTools and dock it to the side of the browser window.</p>
+<p>I like having it on the side because it gives me a simple way to resize the space available to my prototype by just dragging the splitter between DevTools and the page.</p>
+</li>
+<li>
+<p>And then that's when the prototyping begin.</p>
+<p>Using the <strong>Elements</strong>/<strong>Inspector</strong> panel, I can add more elements with the <strong>Edit as HTML</strong> feature, add and modify attributes by double-clicking them, add classes from the <strong>Styles</strong>/<strong>Rules</strong> panel, etc.</p>
+</li>
+<li>
+<p>When I'm done coding in the browser and feel like I have what I wanted, it's time to export my changes so they don't disappear when close the browser window.</p>
+<ul>
+<li>To export the HTML code, I usually do this: right-click on the <code>&lt;body&gt;</code> element and choose <strong>Copy inner HTML</strong>.</li>
+<li>To export the CSS code: in Firefox, I open the <strong>Changes</strong> sidebar panel and click <strong>Copy All Changes</strong> (<a href="../find-css-changes">learn more</a>), and Chrome/Edge I go to <strong>Sources</strong>, find the <strong>inspector-stylesheet</strong> source and copy the content from it.</li>
+</ul>
+</li>
+</ol>
+<p><img src="/assets/img/prototype-in-the-browser.png" alt="Screenshot of Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made"></p>
+<p>Here is a quick demo I did 4 years ago showing roughly this workflow. Things have changed a bit, but most of it still applies:</p>
+<div id="o5wy237B5qc" class="eleventy-plugin-youtube-embed"style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/o5wy237B5qc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+    </div>
+    <div class="tip-footer">
+        <ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/189c0fd8e0f25a1137cc46acf26834e9500dad4a">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-03-25T09:27:19.000Z">3/25/2022</time></p>
+    </div>
+</main>
+<script async src="/assets/share.js"></script>
+
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>
+    </footer>
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+  </body>
+</html>
