@@ -23,7 +23,7 @@ templateEngineOverride: njk
         {{ content | safe }}
     </div>
     <div class="tip-footer">
-        {% authorsdate page.inputPath %}
+        {%- if not isTweet -%}{% authorsdate page.inputPath %}{%- endif -%}
     </div>
 </main>
 <script async src="/assets/share.js"></script>

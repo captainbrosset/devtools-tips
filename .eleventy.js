@@ -2,6 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fetch = require('node-fetch');
 const embedYouTube = require("eleventy-plugin-youtube-embed");
+const embedTwitter = require("eleventy-plugin-embed-twitter");
 
 const token = process.env.AUTHOR_API_TOKEN;
 
@@ -125,6 +126,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(embedYouTube);
+  eleventyConfig.addPlugin(embedTwitter);
 
   return {
     dir: {
