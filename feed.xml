@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-03-25T09:27:19.000Z</updated>
+  <updated>2022-03-25T14:14:42.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -162,6 +162,15 @@ When working on a site that uses a lot of JavaScript and especially when you don
   </entry>
   
   <entry>
+    <title>console.log() is great, but do you know console.table()? console.group()? console.assert()?</title>
+    <link href="https://devtoolstips.org/tips/en/console-table-group-assert/"/>
+    <updated>2022-03-25T14:14:42Z</updated>
+    <id>https://devtoolstips.org/tips/en/console-table-group-assert/</id>
+    <content type="html">&lt;p&gt;https://twitter.com/nghuuphuoc/status/1505892172700299268&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Convert color formats</title>
     <link href="https://devtoolstips.org/tips/en/convert-color-formats/"/>
     <updated>2021-09-20T07:23:12Z</updated>
@@ -281,6 +290,17 @@ When working on a site that uses a lot of JavaScript and especially when you don
 &lt;li&gt;Under the &lt;strong&gt;Grid&lt;/strong&gt; section, check the &lt;strong&gt;Show area names&lt;/strong&gt; box.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-grid-areas.png&quot; alt=&quot;Screenshot of Firefox, with a highlighted grid in the page showing the area names, and devtools below it with the &amp;quot;display area names&amp;quot; option checked&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Debug popups that appear on hover using the debugger statement</title>
+    <link href="https://devtoolstips.org/tips/en/debug-js-hover-2/"/>
+    <updated>2022-03-25T14:14:42Z</updated>
+    <id>https://devtoolstips.org/tips/en/debug-js-hover-2/</id>
+    <content type="html">&lt;p&gt;In &lt;a href=&quot;https://devtoolstips.org/tips/en/debug-js-hover&quot;&gt;Debug popups that appear on hover using JS&lt;/a&gt; we described how to pause the debugger to inspect popups that appear on hover and disappear as soon as the cursor moves away.&lt;/p&gt;
+&lt;p&gt;Here&#39;s another way to do this by &lt;a href=&quot;https://twitter.com/mzainzafar90&quot;&gt;Zain Zafar&lt;/a&gt; which involves using the &lt;code&gt;debugger&lt;/code&gt; statement in the &lt;strong&gt;Console&lt;/strong&gt;. Pretty neat!&lt;/p&gt;
+&lt;p&gt;https://twitter.com/mzainzafar90/status/1485510393409773571&lt;/p&gt;
 </content>
   </entry>
   
@@ -729,6 +749,16 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
 &lt;li&gt;Hover over the information icon to know why the property is inactive&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/find-inactive-styles.webp&quot; alt=&quot;Screenshot of the inactive style feature&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Fix low color contrast issues</title>
+    <link href="https://devtoolstips.org/tips/en/fix-color-contrast-issues/"/>
+    <updated>2022-03-25T14:14:42Z</updated>
+    <id>https://devtoolstips.org/tips/en/fix-color-contrast-issues/</id>
+    <content type="html">&lt;p&gt;With DevTools you can &lt;a href=&quot;https://devtoolstips.org/tips/en/detect-low-color-contrast&quot;&gt;detect low color contrast issues&lt;/a&gt; which is great. But DevTools in Chrome and Edge go one step further and help you fix these issues too! &lt;a href=&quot;https://twitter.com/domizajac&quot;&gt;Domi&lt;/a&gt; tells us all about it.&lt;/p&gt;
+&lt;p&gt;https://twitter.com/domizajac/status/1507310081624444929&lt;/p&gt;
 </content>
   </entry>
   
@@ -1189,6 +1219,16 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
   </entry>
   
   <entry>
+    <title>Quickly reference nodes, expressions, and react components in the console</title>
+    <link href="https://devtoolstips.org/tips/en/quickly-reference-things-from-console/"/>
+    <updated>2022-03-25T14:14:42Z</updated>
+    <id>https://devtoolstips.org/tips/en/quickly-reference-things-from-console/</id>
+    <content type="html">&lt;p&gt;https://twitter.com/ChatterboxDev/status/1506299424712142864&lt;/p&gt;
+&lt;p&gt;Also learn more about &lt;a href=&quot;https://devtoolstips.org/tips/en/get-current-element-in-console&quot;&gt;getting the selected element in the console&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Record and replay user flows</title>
     <link href="https://devtoolstips.org/tips/en/record-replay/"/>
     <updated>2022-02-02T15:19:15Z</updated>
@@ -1248,6 +1288,16 @@ Sometimes you just have to click the same buttons and do the same actions every 
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/sample-colors-from-the-page-3.gif&quot; alt=&quot;Gif animation of starting the eyedropper tool from chrome and edge&#39;s color pickers&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Take a screenshot of part of a webpage from the command menu</title>
+    <link href="https://devtoolstips.org/tips/en/screenshot-part-of-page-command-menu/"/>
+    <updated>2022-03-25T14:14:42Z</updated>
+    <id>https://devtoolstips.org/tips/en/screenshot-part-of-page-command-menu/</id>
+    <content type="html">&lt;p&gt;The &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands&quot;&gt;Command menu&lt;/a&gt; in Edge and Chrome is great. Here is one more thing it can do:&lt;/p&gt;
+&lt;p&gt;https://twitter.com/csaba_kissi/status/1506904947631304708&lt;/p&gt;
 </content>
   </entry>
   
@@ -1536,6 +1586,15 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 &lt;li&gt;Click the little icon next to this declaration&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/tweak-grid-flex-alignment.png&quot; alt=&quot;Screenshot of the grid editor in the Styles pane of Microsoft Edge&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Embed tweets</title>
+    <link href="https://devtoolstips.org/tips/en/twitter-embed-test/"/>
+    <updated>2022-03-25T14:14:42Z</updated>
+    <id>https://devtoolstips.org/tips/en/twitter-embed-test/</id>
+    <content type="html">&lt;p&gt;https://twitter.com/KittyGiraudel/status/1494260516721770496&lt;/p&gt;
 </content>
   </entry>
   
