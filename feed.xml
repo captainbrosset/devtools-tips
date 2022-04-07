@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-04-07T08:21:19.000Z</updated>
+  <updated>2022-04-07T08:49:46.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -850,7 +850,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
   <entry>
     <title>Automatically get issues your site has with performance, accessibility, security, compatibility, and others.</title>
     <link href="https://devtoolstips.org/tips/en/get-website-issues/"/>
-    <updated>2022-04-07T08:21:19Z</updated>
+    <updated>2022-04-07T08:49:46Z</updated>
     <id>https://devtoolstips.org/tips/en/get-website-issues/</id>
     <content type="html">&lt;p&gt;Edge has a very useful &lt;strong&gt;Issues&lt;/strong&gt; panel that can automatically list a lot of different issues with your site. It can detect common issues related to browser compatibility, accessibility, performance, security, and more.&lt;/p&gt;
 &lt;p&gt;To see issues with the current page in Edge:&lt;/p&gt;
@@ -859,7 +859,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;p&gt;Open DevTools (&lt;kbd&gt;F12&lt;/kbd&gt;).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Click &lt;strong&gt;More tools&lt;/strong&gt; (&lt;code&gt;+&lt;/code&gt;) and click &lt;strong&gt;Issues&lt;/strong&gt; (you can also open the panel by using the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands.md&quot;&gt;Command menu&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Click &lt;strong&gt;More tools&lt;/strong&gt; (&lt;code&gt;+&lt;/code&gt;) and click &lt;strong&gt;Issues&lt;/strong&gt; (you can also open the panel by using the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands&quot;&gt;Command menu&lt;/a&gt;).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Issues are listed in the panel, organized by category, and severity.&lt;/p&gt;
