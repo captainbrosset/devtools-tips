@@ -8,7 +8,7 @@ To see issues with the current page in Edge:
 
 1. Open DevTools (<kbd>F12</kbd>).
 
-1. Click **More tools** (`+`) and click **Issues** (you can also open the panel by using the [Command menu](./execute-commands.md)).
+1. Click **More tools** (`+`) and click **Issues** (you can also open the panel by using the [Command menu](/tips/en/execute-commands.md)).
 
 1. Issues are listed in the panel, organized by category, and severity.
 
