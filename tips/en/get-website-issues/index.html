@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Automatically get issues your site has with performance, accessibility, security, compatibility, and others.</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tag/accessibility/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/get-website-issues/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/get-website-issues.png">
+    <meta property="og:description" content="Automatically get issues your site has with performance, accessibility, security, compatibility, and others.">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -43,15 +43,42 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>accessibility tips</h2>
-  <label class="search">
-    <span>Filter list</span>
-    <input type="text">
-</label>
-<script async src="/assets/filter-tip-list.js"></script>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/detect-low-color-contrast/">Detect low color contrast issues</a></li><li class="hover-box tip"><a href="/tips/en/emulate-forced-colors/">Emulate forced-color mode</a></li><li class="hover-box tip"><a href="/tips/en/find-all-images-without-alt-text/">Find all images without alternative text</a></li><li class="hover-box tip"><a href="/tips/en/fix-color-contrast-issues/">Fix low color contrast issues</a></li><li class="hover-box tip"><a href="/tips/en/get-website-issues/">Automatically get issues your site has with performance, accessibility, security, compatibility, and others.</a></li><li class="hover-box tip"><a href="/tips/en/see-quick-a11y-info-on-hover/">See quick accessibility information on hover</a></li><li class="hover-box tip"><a href="/tips/en/simulate-color-vision-deficiencies/">Simulate color vision deficiencies</a></li><li class="hover-box tip"><a href="/tips/en/visualize-screenreader-order/">Visualize the screen reader order for elements within the page</a></li><li class="hover-box tip"><a href="/tips/en/visualize-tabbing-order/">Visualize the tabbing order on the page</a></li><li class="hover-box tip"><a href="/tips/en/zoom-devtools-content/">Zoom the DevTools UI to your liking</a></li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/accessibility/">accessibility</a></li><li class="tag"><a href="/tag/perf/">perf</a></li><li class="tag"><a href="/tag/testing/">testing</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
+    </div>
+    <h2 class="tip-title">Automatically get issues your site has with performance, accessibility, security, compatibility, and others.</h2>
+    <div class="tip-content">
+        <p>Edge has a very useful <strong>Issues</strong> panel that can automatically list a lot of different issues with your site. It can detect common issues related to browser compatibility, accessibility, performance, security, and more.</p>
+<p>To see issues with the current page in Edge:</p>
+<ol>
+<li>
+<p>Open DevTools (<kbd>F12</kbd>).</p>
+</li>
+<li>
+<p>Click <strong>More tools</strong> (<code>+</code>) and click <strong>Issues</strong> (you can also open the panel by using the <a href="./execute-commands.md">Command menu</a>).</p>
+</li>
+<li>
+<p>Issues are listed in the panel, organized by category, and severity.</p>
+</li>
+<li>
+<p>At this point, reload the page to make sure all issues are listed, as some of them depend on how your page loads over the network.</p>
+</li>
+<li>
+<p>You can use the toolbar at the top to filter issues too. The <strong>Browser</strong> filter, in particular, lets you filter down the compatibility issues to just the browsers you care about.</p>
+</li>
+</ol>
+<p><a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/issues/">Learn more about this tool</a>.</p>
+<p><img src="/assets/img/get-website-issues.png" alt="Screenshot of the issues panel in Edge, showing many different issues about the page"></p>
+
+    </div>
+    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/528f368c27863e2f0bfabcd4406bd6c8f009dd08">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-04-07T08:12:08.000Z">4/7/2022</time></p></div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
