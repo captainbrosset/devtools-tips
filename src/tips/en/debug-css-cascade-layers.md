@@ -9,7 +9,7 @@ If you want to learn more about cascade layers, check out [Miriam Suzanne's comp
 
 Firefox, Chrome, and Edge all have support for layers in their **Styles**/**Rules** panels.
 
-## Firefox
+### Firefox
 
 1. Open a page that uses cascade layers like [this one](https://codepen.io/web-dot-dev/full/LYzqPEp).
 1. Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.
@@ -18,7 +18,7 @@ Firefox, Chrome, and Edge all have support for layers in their **Styles**/**Rule
 
 ![Screenshot of Firefox, with a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules](/assets/img/debug-css-cascade-layers-firefox.png)
 
-## Edge and Chrome
+### Edge and Chrome
 
 1. Open a page that uses cascade layers like [this one](https://codepen.io/web-dot-dev/full/LYzqPEp).
 1. Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.
