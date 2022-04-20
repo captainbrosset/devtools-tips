@@ -49,33 +49,32 @@
         Categories:
         <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
         Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+        <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
     </div>
     <h2 class="tip-title">Visualize and debug CSS cascade layers</h2>
     <div class="tip-content">
         <p>CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which they apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using <code>!important</code> or artificially making selectors have higher specificity.</p>
 <p>If you want to learn more about cascade layers, check out <a href="https://css-tricks.com/css-cascade-layers/">Miriam Suzanne's complete guide on CSS Tricks</a>, but here let's see how we can visualize and debug layers in DevTools.</p>
-<p>Firefox, Chrome, and Edge all have support for layers in their <strong>Styles</strong>/<strong>Rules</strong> panels.</p>
-<h3>Firefox</h3>
+<p>Safari, Firefox, Chrome, and Edge all have support for layers in their <strong>Styles</strong>/<strong>Rules</strong> panels.</p>
+<h3>All browsers</h3>
 <ol>
 <li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
 <li>Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.</li>
-<li>In the <strong>Rules</strong> sidebar panel, CSS rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.</li>
+<li>In the sidebar where CSS rules are displayed, rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.</li>
 <li>Rules that are part of a cascade layer have a <code>@layer &lt;layername&gt;</code> label above them.</li>
 </ol>
 <p><img src="/assets/img/debug-css-cascade-layers-firefox.png" alt="Screenshot of Firefox, with a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules"></p>
-<h3>Edge and Chrome</h3>
+<h3>Only Edge and Chrome</h3>
+<p>On top of the above, Edge and Chrome have a layers view:</p>
 <ol>
 <li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
 <li>Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.</li>
-<li>In the <strong>Styles</strong> sidebar panel, CSS rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.</li>
-<li>Rules that are part of a cascade layer have a <code>@layer &lt;layername&gt;</code> label above them.</li>
 <li>Click <strong>Toggle CSS layers view</strong> in the <strong>Styles</strong> panel toolbar (next to the search field) to reveal the list of layers.</li>
 </ol>
 <p><img src="/assets/img/debug-css-cascade-layers-edge.png" alt="Screenshot of Edge, with a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules and the layers view"></p>
 
     </div>
-    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/a49d1a4762e4daab3aa722fbae95e264bd5a2b5a">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-04-20T08:07:32.000Z">4/20/2022</time></p></div>
+    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/4393001c762120ae764007bf221d495d0912e869">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-04-20T08:28:47.000Z">4/20/2022</time></p></div>
 </main>
 <script async src="/assets/share.js"></script>
 
