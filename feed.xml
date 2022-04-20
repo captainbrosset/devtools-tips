@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-04-07T08:49:46.000Z</updated>
+  <updated>2022-04-20T08:02:26.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -271,6 +271,34 @@ When working on a site that uses a lot of JavaScript and especially when you don
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/copy-rule-as-css-in-js.gif&quot; alt=&quot;GIF showing the Styles pane in Edge, with the &amp;quot;Copy all declarations as JS&amp;quot; option being used, and then pasting the result in the Console to show that it is formatted&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Find out more about this feature on &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/css/css-in-js&quot;&gt;the Microsoft DevTools docs website&lt;/a&gt;, or take a look at this short screencast:&lt;/p&gt;
 &lt;p&gt;https://www.youtube.com/watch?v=DCWSV0J5C8A&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Visualize and debug CSS cascade layers</title>
+    <link href="https://devtoolstips.org/tips/en/debug-css-cascade-layers/"/>
+    <updated>2022-04-20T08:02:26Z</updated>
+    <id>https://devtoolstips.org/tips/en/debug-css-cascade-layers/</id>
+    <content type="html">&lt;p&gt;CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which they apply. Cascade layers are meant to bring an elegant solution to problems we&#39;ve historically been fixing by using &lt;code&gt;!important&lt;/code&gt; or artificially making selectors have higher specificity.&lt;/p&gt;
+&lt;p&gt;If you want to learn more about cascade layers, check out &lt;a href=&quot;https://css-tricks.com/css-cascade-layers/&quot;&gt;Miriam Suzanne&#39;s complete guide on CSS Tricks&lt;/a&gt;, but here let&#39;s see how we can visualize and debug layers in DevTools.&lt;/p&gt;
+&lt;p&gt;Firefox, Chrome, and Edge all have support for layers in their &lt;strong&gt;Styles&lt;/strong&gt;/&lt;strong&gt;Rules&lt;/strong&gt; panels.&lt;/p&gt;
+&lt;h2&gt;Firefox&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a page that uses cascade layers like &lt;a href=&quot;https://codepen.io/web-dot-dev/full/LYzqPEp&quot;&gt;this one&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Rules&lt;/strong&gt; sidebar panel, CSS rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.&lt;/li&gt;
+&lt;li&gt;Rules that are part of a cascade layer have a &lt;code&gt;@layer &amp;lt;layername&amp;gt;&lt;/code&gt; label above them.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-css-cascade-layers-firefox.png&quot; alt=&quot;Screenshot of Firefox, with a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Edge and Chrome&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a page that uses cascade layers like &lt;a href=&quot;https://codepen.io/web-dot-dev/full/LYzqPEp&quot;&gt;this one&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Styles&lt;/strong&gt; sidebar panel, CSS rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.&lt;/li&gt;
+&lt;li&gt;Rules that are part of a cascade layer have a &lt;code&gt;@layer &amp;lt;layername&amp;gt;&lt;/code&gt; label above them.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Toggle CSS layers view&lt;/strong&gt; in the &lt;strong&gt;Styles&lt;/strong&gt; panel toolbar (next to the search field) to reveal the list of layers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-css-cascade-layers-edge.png&quot; alt=&quot;Screenshot of Edge, with a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules and the layers view&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   

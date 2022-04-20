@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>Visualize and debug CSS cascade layers</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/debug-css-cascade-layers/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/debug-css-cascade-layers-firefox.png">
+    <meta property="og:description" content="Visualize and debug CSS cascade layers">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -43,52 +43,41 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>Today's tips</h2>
-  <ul class="tips"><li class="tip">
-      <a href="/tips/en/use-full-browser-for-device-emulation/">
-        Use full browser window for device emulation
-        
-        <img src="/assets/img/use-full-browser-for-device-emulation.gif" alt="Screencast showing device emulation andhow to undock the Developer Tools into an own window">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/debug-grid-areas/">
-        Debug CSS grid areas
-        
-        <img src="/assets/img/debug-grid-areas.png" alt="Screenshot of Firefox, with a highlighted grid in the page showing the area names, and devtools below it with the &amp;quot;display area names&amp;quot; option checked">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/automatically-log-name-and-value/">
-        Automatically logging name and value in console.log()
-        
-        <img src="/assets/img/automatically-log-name-and-value.gif" alt="Screencast showing the different ways the variables are logged with and without curly braces">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/edit-clip-path-shape-outside/">
-        Edit clip-path and shape-outside CSS properties by dragging points in the page
-        
-        <img src="/assets/img/edit-clip-path-shape-outside.gif" alt="Gif demo of the shape editor in firefox, clicking on the Rules panel icon, and then moving points around in the page">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/multi-line-console/">
-        Write code on multiple lines in the Console
-        
-        <img src="/assets/img/multi-line-console-firefox.png" alt="Screenshot showing the button to switch the Firefox console to the multi-line mode">
-        
-      </a>
-    </li><li class="tip">
-      <a href="/tips/en/download-all-images/">
-        Download all images from the page
-        
-        <img src="/assets/img/download-all-images.png" alt="Screenshot of the Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded">
-        
-      </a>
-    </li></ul>
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<main>
+    <div class="tip-info">
+        Categories:
+        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+        Supported by:
+        <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+    </div>
+    <h2 class="tip-title">Visualize and debug CSS cascade layers</h2>
+    <div class="tip-content">
+        <p>CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which they apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using <code>!important</code> or artificially making selectors have higher specificity.</p>
+<p>If you want to learn more about cascade layers, check out <a href="https://css-tricks.com/css-cascade-layers/">Miriam Suzanne's complete guide on CSS Tricks</a>, but here let's see how we can visualize and debug layers in DevTools.</p>
+<p>Firefox, Chrome, and Edge all have support for layers in their <strong>Styles</strong>/<strong>Rules</strong> panels.</p>
+<h2>Firefox</h2>
+<ol>
+<li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
+<li>Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.</li>
+<li>In the <strong>Rules</strong> sidebar panel, CSS rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.</li>
+<li>Rules that are part of a cascade layer have a <code>@layer &lt;layername&gt;</code> label above them.</li>
+</ol>
+<p><img src="/assets/img/debug-css-cascade-layers-firefox.png" alt="Screenshot of Firefox, with a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules"></p>
+<h2>Edge and Chrome</h2>
+<ol>
+<li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
+<li>Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.</li>
+<li>In the <strong>Styles</strong> sidebar panel, CSS rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.</li>
+<li>Rules that are part of a cascade layer have a <code>@layer &lt;layername&gt;</code> label above them.</li>
+<li>Click <strong>Toggle CSS layers view</strong> in the <strong>Styles</strong> panel toolbar (next to the search field) to reveal the list of layers.</li>
+</ol>
+<p><img src="/assets/img/debug-css-cascade-layers-edge.png" alt="Screenshot of Edge, with a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules and the layers view"></p>
+
+    </div>
+    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/4d3e930ef7c1c105496af04b7b7e596258332d69">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-04-20T08:02:26.000Z">4/20/2022</time></p></div>
 </main>
+<script async src="/assets/share.js"></script>
 
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
