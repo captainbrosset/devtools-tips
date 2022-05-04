@@ -1,0 +1,41 @@
+---js
+{
+  title: "DevTools Tips",
+  layout: "home.njk",
+  templateEngineOverride: "njk",
+  eleventyExcludeFromCollections: true,
+  extractImage: function(content) {
+    const match = content.match(/<img src="([^"]+)" alt="([^"]+)"/);
+    return match ? {src: match[1], alt: match[2]} : null;
+  }
+}
+---
+<main>
+  <h2>All DevTools Tips</h2>
+  {% include 'filter-tip-list.njk' %}
+  <ul class="tips">
+  {%- for post in collections.all -%}
+    <li class="hover-box tip">
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <div class="tip-info">
+        Categories:
+        <ul class="tags">
+        {%- for tag in post.data.tags | onlyTags -%}
+            <li class="tag"><a href="/tag/{{ tag }}/">{{ tag }}</a></li>
+        {%- endfor -%}
+        </ul>
+        Supported by:
+        <ul class="browsers">
+        {%- for browser in post.data.tags | onlyBrowsers -%}
+            <li class="browser"><a href="/browser/{{ browser | processBrowserTagName }}/">{{ browser | processBrowserTagName }}</a></li>
+        {%- endfor -%}
+        </ul>
+        {%- set image = extractImage(post.templateContent) -%}
+        {% if image %}
+        <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
+        {% endif %}
+    </div>
+    </li>
+  {%- endfor -%}
+  </ul>
+</main>

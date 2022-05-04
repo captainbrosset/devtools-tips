@@ -9,7 +9,7 @@ function getAllTips() {
         document.querySelectorAll('.tips .tip').forEach(el => {
             allTips.push({
                 el,
-                title: el.textContent
+                title: el.firstElementChild.textContent
             });
         })
     }

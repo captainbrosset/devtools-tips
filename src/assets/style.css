@@ -177,24 +177,20 @@ main h2:not(.tip-title) {
 }
 
 .tips {
-  display: flex;
-  gap: 1rem;
   margin-top: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .tip {
   background: white;
-  text-align: center;
   border-radius: 4px;
+  margin: 1rem;
   box-shadow: 0 0 5px 0px #00000024;
   flex: 1 300px;
   position: relative;
 }
 
 .tip img {
-  width: 100%;
+  max-height: 200px;
   margin: 1rem auto 0 auto;
   display: block;
 }
