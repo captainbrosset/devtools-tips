@@ -1,3 +1,5 @@
+/* Resets */
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +17,8 @@ h3 {
   margin: 0;
 }
 
+/* Main styles */
+
 body {
   font-size: 13pt;
   font-family: Arial;
@@ -22,6 +26,12 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+:focus-visible {
+  outline: 2px dashed #333;
+}
+
+/* Header */
 
 header {
   display: flex;
@@ -132,6 +142,8 @@ header nav {
   display: grid;
 }
 
+/* Filter bar */
+
 .search {
   display: flex;
   flex-wrap: wrap;
@@ -154,9 +166,7 @@ header nav {
   font: inherit;
 }
 
-.search input:focus-visible {
-  outline: 2px solid gold;
-}
+/* Content area */
 
 main {
   padding: 2rem;
@@ -176,59 +186,57 @@ main h2:not(.tip-title) {
   margin-top: 0;
 }
 
+/* List of tips */
+
 .tips {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .tip {
   background: white;
   border-radius: 4px;
-  margin: 1rem;
-  box-shadow: 0 0 5px 0px #00000024;
-  flex: 1 300px;
-  position: relative;
-}
-
-.tip img {
-  max-height: 200px;
-  margin: 1rem auto 0 auto;
-  display: block;
-}
-
-.tip:hover {
-  background: gold;
+  overflow: hidden;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 40%;
+  grid-template-rows: min-content 1fr;
 }
 
 .tip a {
-  padding: 1rem;
-  text-decoration: none;
-  display: block;
-  max-height: 300px;
-  overflow: hidden;
-  color: black;
+	color: black;
+	margin: 1rem 0 0 1rem;
 }
 
-.tip a::after {
-  content: "";
-  background: white;
-  width: calc(100% - 2rem);
-  position: absolute;
-  bottom: 0;
-  height: 1rem;
-  left: 1rem;
+.tip img {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid aliceblue;
 }
 
-.tip:hover a::after {
+.tip .tip-info {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+  place-content: start;
+  margin: 0 0 1rem 1rem;
+  padding: 0;
+  grid-column: 1;
+}
+
+.tips .tip.highlighted .highlight {
   background: gold;
 }
 
-.tip a:focus-visible {
-  outline: none;
+.tips.searching .tip:not(.highlighted) {
+  display: none;
 }
 
-.tip:focus-within {
-  outline: 2px solid black;
-}
+/* Tip page */
 
 .tip-content img {
   width: 80%;
@@ -240,6 +248,13 @@ main h2:not(.tip-title) {
 .tip-content li {
   list-style: square;
   margin-left: 1rem;
+}
+
+.tip-info {
+  font-size: smaller;
+  color: #555;
+  line-height: 2;
+  padding-right: 7rem;
 }
 
 .share-button {
@@ -267,14 +282,6 @@ main h2:not(.tip-title) {
   vertical-align: bottom;
 }
 
-.tips .tip.highlighted .highlight {
-  background: gold;
-}
-
-.tips.searching .tip:not(.highlighted) {
-  display: none;
-}
-
 code {
   font-size: 1rem;
   background: #333;
@@ -292,17 +299,6 @@ kbd {
   box-shadow: 1px 1px 0 0 #bbb;
 }
 
-footer {
-  text-align: center;
-  /* main is relatively positioned at -1rem to account for the header shadow. So reduce the top-padding to 1rem instead of 2rem here */
-  padding: 1rem 1rem 2rem 1rem;
-  background: white;
-}
-
-footer a {
-  color: #28706c;
-}
-
 pre {
   overflow: auto;
   max-height: 50vh;
@@ -310,12 +306,31 @@ pre {
   white-space: normal;
 }
 
-.tip-info {
-  font-size: smaller;
-  color: #555;
-  line-height: 2;
-  padding-right: 7rem;
+.tip-footer {
+  margin: 2rem 0 0 0;
 }
+
+.tip-footer * {
+  margin: 0;
+  display: inline;
+  color: #555;
+}
+
+.tip-footer .authors li:not(:last-child)::after {
+  content: ",";
+}
+
+.tip-footer .authors li,
+.tip-footer .last-edit time {
+  color: black;
+  margin-left: .25rem;
+}
+
+.tip-footer .last-edit::before {
+  content: " - ";
+}
+
+/* List of tags and browsers */
 
 .tags,
 .browsers,
@@ -344,32 +359,29 @@ pre {
   color: black;
 }
 
-.tip-footer {
-  margin: 2rem 0 0 0;
+/* Footer */
+
+footer {
+  text-align: center;
+  /* main is relatively positioned at -1rem to account for the header shadow. So reduce the top-padding to 1rem instead of 2rem here */
+  padding: 1rem 1rem 2rem 1rem;
+  background: white;
 }
 
-.tip-footer * {
-  margin: 0;
-  display: inline;
-  color: #555;
+footer a {
+  color: #28706c;
 }
 
-.tip-footer .authors li:not(:last-child)::after {
-  content: ",";
-}
-
-.tip-footer .authors li,
-.tip-footer .last-edit time {
-  color: black;
-  margin-left: .25rem;
-}
-
-.tip-footer .last-edit::before {
-  content: " - ";
-}
+/* Misc. */
 
 .bg-load-tip {
   border: 0;
   background: gold;
   padding: .5rem;
+}
+
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
