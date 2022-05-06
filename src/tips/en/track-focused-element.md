@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2022-2-21
 authors: authors
 title: Detect the element with focus at any time
 tags: ["console", "javascript", "browser:edge", "browser:chrome"]

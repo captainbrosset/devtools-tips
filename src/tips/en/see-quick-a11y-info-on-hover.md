@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2021-6-15
 authors: authors
 title: See quick accessibility information on hover
 tags: ["accessibility", "browser:edge", "browser:chrome"]

@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2021-9-1
 authors: authors
 title: See formatted JSON responses
 tags: ["network", "browser:firefox"]

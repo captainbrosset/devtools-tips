@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2022-2-9
 authors: authors
 title: Use full browser window for device emulation
 tags: ["testing", "productivity", "browser:edge", "browser:chrome", "browser:firefox"]

@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2021-12-6
 authors: authors
 title: Visualize the effect of CSS transforms
 tags: ["css", "highlighter", "browser:firefox"]

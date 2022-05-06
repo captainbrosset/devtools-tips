@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2021-10-29
 authors: authors
 title: Re-use scripts as snippets
 tags: ["javascript", "browser:edge", "browser:chrome"]

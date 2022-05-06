@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2021-6-22
 authors: authors
 title: Simulate color vision deficiencies
 tags: ["accessibility", "browser:firefox", "browser:chrome", "browser:edge"]

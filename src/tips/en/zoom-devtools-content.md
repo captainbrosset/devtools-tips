@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2021-10-29
 authors: authors
 title: Zoom the DevTools UI to your liking
 tags: ["accessibility", "personalization", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]

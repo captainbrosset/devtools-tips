@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2021-6-8
 authors: authors
 title: Switch DevTools to another language
 tags: ["personalization", "browser:edge", "browser:firefox"]

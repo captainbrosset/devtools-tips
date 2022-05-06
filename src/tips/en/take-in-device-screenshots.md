@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2021-11-17
 authors: authors
 title: Take screenshots of your site in a device frame
 tags: ["export", "browser:chrome", "browser:edge"]

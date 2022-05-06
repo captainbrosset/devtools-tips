@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2021-11-7
 authors: authors
 title: Simulate pseudo CSS classes
 tags: ["html", "css", "debug", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]

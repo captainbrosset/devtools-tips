@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2021-10-29
 authors: authors
 title: See the page in 3D
 tags: ["html", "css", "browser:edge", "browser:safari", "browser:chrome"]

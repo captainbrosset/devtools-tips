@@ -1,5 +1,5 @@
 ---
-date: date
+date: 2022-3-10
 authors: authors
 title: Send feedback, ask for features and report bugs
 tags: ["help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
