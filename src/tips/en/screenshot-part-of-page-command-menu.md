@@ -1,4 +1,6 @@
 ---
+date: 2022-3-25
+authors: authors
 title: Take a screenshot of part of a webpage from the command menu
 tags: ["html", "export", "browser:edge", "browser:chrome"]
 isTweet: true

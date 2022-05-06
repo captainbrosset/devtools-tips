@@ -1,4 +1,6 @@
 ---
+date: 2021-6-11
+authors: authors
 title: Filter requests in the Network panel by status code, mime type and more
 tags: ["network", "browser:edge", "browser:chrome", "browser:firefox"]
 ---

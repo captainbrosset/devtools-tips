@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Re-use scripts as snippets
 tags: ["javascript", "browser:edge", "browser:chrome"]
 ---

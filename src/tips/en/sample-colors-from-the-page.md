@@ -1,4 +1,6 @@
 ---
+date: 2021-6-30
+authors: authors
 title: Sample colors from the page
 tags: ["productivity", "browser:edge", "browser:chrome", "browser:firefox"]
 ---

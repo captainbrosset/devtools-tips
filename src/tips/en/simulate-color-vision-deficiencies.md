@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Simulate color vision deficiencies
 tags: ["accessibility", "browser:firefox", "browser:chrome", "browser:edge"]
 ---

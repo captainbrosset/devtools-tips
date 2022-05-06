@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: See formatted JSON responses
 tags: ["network", "browser:firefox"]
 ---

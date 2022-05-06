@@ -1,4 +1,6 @@
 ---
+date: 2021-6-8
+authors: authors
 title: Edit CSS filters
 tags: ["css", "browser:firefox"]
 ---

@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: View performance markers in order
 tags: ["javascript", "perf", "console", "browser:edge", "browser:chrome", "browser:safari"]
 ---

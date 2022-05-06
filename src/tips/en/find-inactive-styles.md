@@ -1,4 +1,6 @@
 ---
+date: 2021-6-8
+authors: authors
 title: Find inactive CSS styles
 tags: ["css", "debug", "browser:firefox"]
 ---

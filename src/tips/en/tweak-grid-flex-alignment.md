@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Tweak css grid and flexbox alignment properties
 tags: ["css", "browser:edge", "browser:chrome"]
 ---

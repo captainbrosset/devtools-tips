@@ -3,6 +3,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fetch = require('node-fetch');
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 const embedTwitter = require("eleventy-plugin-embed-twitter");
+const striptags = require("striptags");
 
 const token = process.env.AUTHOR_API_TOKEN;
 
@@ -74,6 +75,25 @@ async function getTipAuthorsAndDate(tipPath) {
   return { authors, date };
 }
 
+function extractExcerpt(article) {
+  if (!article.hasOwnProperty("templateContent")) {
+    console.warn(
+      'Failed to extract excerpt: Document has no property "templateContent".'
+    );
+    return null;
+  }
+
+  let excerpt = null;
+  const content = article.templateContent;
+
+  excerpt = striptags(content)
+    .substring(0, 100)
+    .replace(/^\s+|\s+$|\s+(?=\s)/g, "")
+    .trim()
+    .concat("...");
+  return excerpt;
+}
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/sw.js");
@@ -88,7 +108,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addNunjucksAsyncShortcode("lasttipupdate", async function () {
-    return (await getLastTipUpdate()).toISOString();
+    // return (await getLastTipUpdate()).toISOString();
+    return '';
   });
 
   eleventyConfig.addNunjucksAsyncShortcode("authorsdate", async function (path) {
@@ -122,6 +143,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  eleventyConfig.addShortcode("excerpt", (article) => extractExcerpt(article));
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);

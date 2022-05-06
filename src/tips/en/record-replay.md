@@ -1,4 +1,6 @@
 ---
+date: 2022-2-2
+authors: authors
 title: Record and replay user flows
 tags: ["testing", "perf", "browser:chrome"]
 ---

@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Visualize the tabbing order on the page
 tags: ["accessibility", "highlighter", "browser:firefox"]
 ---

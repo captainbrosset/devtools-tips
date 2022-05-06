@@ -1,4 +1,6 @@
 ---
+date: 2022-3-16
+authors: authors
 title: Debug CSS grid areas
 tags: ["css", "browser:edge", "browser:chrome", "browser:firefox"]
 ---

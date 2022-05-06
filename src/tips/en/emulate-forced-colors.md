@@ -1,4 +1,6 @@
 ---
+date: 2022-3-15
+authors: authors
 title: Emulate forced-color mode
 tags: ["css", "accessibility", "browser:edge", "browser:chrome"]
 ---

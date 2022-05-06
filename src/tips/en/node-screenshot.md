@@ -1,4 +1,6 @@
 ---
+date: 2021-11-17
+authors: authors
 title: Take a screenshot of a single node
 tags: ["html", "export", "browser:edge", "browser:chrome", "browser:firefox"]
 ---

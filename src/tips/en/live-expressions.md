@@ -1,4 +1,6 @@
 ---
+date: 2021-10-29
+authors: authors
 title: Cut down on console noise using live expressions
 tags: ["debug", "javascript", "browser:edge", "browser:chrome"]
 ---

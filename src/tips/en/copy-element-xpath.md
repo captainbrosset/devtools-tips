@@ -1,4 +1,6 @@
 ---
+date: 2021-7-13
+authors: authors
 title: Copy an element's XPath expression
 tags: ["html", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---

@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Select elements with pointer-events:none by holding Shift
 tags: ["html", "css", "browser:chrome", "browser:edge", "browser:firefox"]
 ---

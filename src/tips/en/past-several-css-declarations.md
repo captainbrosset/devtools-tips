@@ -1,4 +1,6 @@
 ---
+date: 2022-2-25
+authors: authors
 title: Paste multiple CSS declarations at once
 tags: ["css", "browser:firefox", "browser:safari", "browser:chrome", "browser:edge"]
 ---

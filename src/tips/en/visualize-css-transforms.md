@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Visualize the effect of CSS transforms
 tags: ["css", "highlighter", "browser:firefox"]
 ---

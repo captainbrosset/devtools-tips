@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Send feedback, ask for features and report bugs
 tags: ["help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
 ---

@@ -1,4 +1,6 @@
 ---
+date: 2022-3-15
+authors: authors
 title: Check if your site can be instantly reloaded from bfcache
 tags: ["perf", "browser:edge", "browser:chrome"]
 ---

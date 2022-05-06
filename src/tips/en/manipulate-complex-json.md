@@ -1,4 +1,6 @@
 ---
+date: 2022-3-10
+authors: authors
 title: Manipulate complex JSON files using DevTools
 tags: ["javascript", "browser:edge", "browser:firefox", "browser:chrome"]
 ---

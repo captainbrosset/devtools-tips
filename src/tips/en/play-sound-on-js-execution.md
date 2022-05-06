@@ -1,4 +1,6 @@
 ---
+date: 2021-9-8
+authors: authors
 title: Play a sound when a line of JavaScript is executed
 tags: ["debug", "javascript", "browser:safari"]
 ---

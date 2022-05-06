@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Throttle the network speed to test your website on slower connections
 tags: ["network", "perf", "browser:edge", "browser:chrome", "browser:firefox"]
 ---

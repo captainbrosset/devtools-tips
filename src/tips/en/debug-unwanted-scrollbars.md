@@ -1,4 +1,6 @@
 ---
+date: 2022-3-16
+authors: authors
 title: Debug unwanted scrollbars
 tags: ["css", "browser:firefox"]
 ---

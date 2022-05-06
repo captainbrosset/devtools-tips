@@ -1,4 +1,6 @@
 ---
+date: 2021-9-27
+authors: authors
 title: Jump from a CSS variable usage to where it is defined
 tags: ["css", "browser:chrome", "browser:edge"]
 ---

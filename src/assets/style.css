@@ -201,18 +201,20 @@ main h2:not(.tip-title) {
   overflow: hidden;
   display: grid;
   gap: 1rem;
+  padding-left: 1rem;
   grid-template-columns: 1fr 40%;
-  grid-template-rows: min-content 1fr;
+  grid-template-rows: min-content min-content 1fr;
 }
 
-.tip a {
+.tip .tip-title {
 	color: black;
-	margin: 1rem 0 0 1rem;
+	margin-top: 1rem;
+  font-weight: bold;
 }
 
 .tip img {
   grid-column: 2;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 3;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -223,9 +225,17 @@ main h2:not(.tip-title) {
 	display: grid;
 	grid-template-columns: max-content 1fr;
   place-content: start;
-  margin: 0 0 1rem 1rem;
+  margin-bottom: 1rem;
   padding: 0;
   grid-column: 1;
+}
+
+.tip .tip-excerpt {
+  grid-column: 1;
+}
+
+.tip .tip-excerpt * {
+  margin: 0;
 }
 
 .tips .tip.highlighted .highlight {

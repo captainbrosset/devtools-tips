@@ -1,4 +1,6 @@
 ---
+date: 2022-1-10
+authors: authors
 title: Query object instances and holders from the console
 tags: ["console", "perf", "browser:safari"]
 ---

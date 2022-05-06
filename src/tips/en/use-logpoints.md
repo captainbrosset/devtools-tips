@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Console.log() for the web with logpoints
 tags: ["debug", "javascript", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---

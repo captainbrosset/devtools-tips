@@ -1,4 +1,6 @@
 ---
+date: 2021-10-20
+authors: authors
 title: Debug popups that appear on hover using JS
 tags: ["debug", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
 ---

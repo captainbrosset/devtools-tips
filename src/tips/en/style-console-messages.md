@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Apply CSS styles to console messages
 tags: ["console", "css", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---

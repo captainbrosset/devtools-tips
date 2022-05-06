@@ -15,11 +15,15 @@
   <ul class="tips">
   {%- for post in collections.all -%}
     <li class="hover-box tip">
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <a href="{{ post.url }}" class="tip-title">{{ post.data.title }}</a>
       {%- set image = extractImage(post.templateContent) -%}
       {% if image %}
       <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
       {% endif %}
+      <div class="tip-excerpt">
+        {% excerpt post %}
+        <a href="{{ post.url }}">Read more</a>
+      </div>
       <div class="tip-info">
         Categories:
         <ul class="tags">

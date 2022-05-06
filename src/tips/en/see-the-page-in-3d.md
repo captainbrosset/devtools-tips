@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: See the page in 3D
 tags: ["html", "css", "browser:edge", "browser:safari", "browser:chrome"]
 ---

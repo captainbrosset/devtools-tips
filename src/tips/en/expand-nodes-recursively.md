@@ -1,4 +1,6 @@
 ---
+date: 2021-6-8
+authors: authors
 title: Expand DOM nodes recursively
 tags: ["html", "productivity", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
 ---

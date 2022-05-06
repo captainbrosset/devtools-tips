@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Event listeners are suppressed when paused
 tags: ["javascript", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
 ---

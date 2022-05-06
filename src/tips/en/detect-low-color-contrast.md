@@ -1,4 +1,6 @@
 ---
+date: 2022-3-3
+authors: authors
 title: Detect low color contrast issues
 tags: ["accessibility", "browser:edge", "browser:chrome", "browser:firefox"]
 ---

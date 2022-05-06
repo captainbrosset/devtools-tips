@@ -1,4 +1,6 @@
 ---
+date: 2021-9-22
+authors: authors
 title: Pause script execution when the DOM changes
 tags: ["javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
 ---

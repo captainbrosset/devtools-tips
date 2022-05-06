@@ -1,4 +1,6 @@
 ---
+date: 2021-10-29
+authors: authors
 title: Use commands to do things faster
 tags: ["productivity", "browser:edge", "browser:chrome"]
 ---

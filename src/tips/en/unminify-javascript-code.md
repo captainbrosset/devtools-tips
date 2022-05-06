@@ -1,4 +1,6 @@
 ---
+date: date
+authors: authors
 title: Unminify JavaScript code to easily read and debug it
 tags: ["javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
 ---

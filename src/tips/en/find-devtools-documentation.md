@@ -1,4 +1,6 @@
 ---
+date: 2021-7-2
+authors: authors
 title: Find DevTools reference documentation
 tags: ["help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
 ---

@@ -1,4 +1,6 @@
 ---
+date: 2021-8-19
+authors: authors
 title: Block resources to test your site without CSS or JavaScript
 tags: ["network", "testing", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
