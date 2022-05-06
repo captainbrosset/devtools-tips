@@ -4,6 +4,23 @@ const embedYouTube = require("eleventy-plugin-youtube-embed");
 const embedTwitter = require("eleventy-plugin-embed-twitter");
 const striptags = require("striptags");
 
+function extractImage(article) {
+  if (!article.hasOwnProperty("templateContent")) {
+    console.warn(
+      'Failed to extract excerpt: Document has no property "templateContent".'
+    );
+    return '';
+  }
+
+  const match = article.templateContent.match(/<img src="([^"]+)" alt="([^"]+)"/);
+
+  if (match) {
+    return `<img src="${match[1]}" alt="${match[2]}" loading="lazy"></img>`;
+  }
+
+  return '';
+}
+
 function extractExcerpt(article) {
   if (!article.hasOwnProperty("templateContent")) {
     console.warn(
@@ -45,6 +62,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   eleventyConfig.addShortcode("excerpt", (article) => extractExcerpt(article));
+
+  eleventyConfig.addShortcode("mainImage", (article) => extractImage(article));
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
