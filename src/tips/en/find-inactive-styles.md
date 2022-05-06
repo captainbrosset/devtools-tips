@@ -1,5 +1,5 @@
 ---
-date: 2021-6-8
+date: 2021-06-08
 authors: Patrick Brosset
 title: Find inactive CSS styles
 tags: ["css", "debug", "browser:firefox"]

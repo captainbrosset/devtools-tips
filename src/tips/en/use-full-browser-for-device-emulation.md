@@ -1,5 +1,5 @@
 ---
-date: 2022-2-9
+date: 2022-02-09
 authors: Patrick Brosset, Christian Heilmann
 title: Use full browser window for device emulation
 tags: ["testing", "productivity", "browser:edge", "browser:chrome", "browser:firefox"]

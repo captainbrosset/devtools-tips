@@ -1,5 +1,5 @@
 ---
-date: 2022-3-10
+date: 2022-03-10
 authors: Patrick Brosset
 title: Manipulate complex JSON files using DevTools
 tags: ["javascript", "browser:edge", "browser:firefox", "browser:chrome"]

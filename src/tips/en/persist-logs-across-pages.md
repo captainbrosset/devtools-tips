@@ -1,5 +1,5 @@
 ---
-date: 2021-6-24
+date: 2021-06-24
 authors: Patrick Brosset
 title: Persist console messages across page navigations and reloads
 tags: ["console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]

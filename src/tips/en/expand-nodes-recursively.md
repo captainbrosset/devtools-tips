@@ -1,5 +1,5 @@
 ---
-date: 2021-6-8
+date: 2021-06-08
 authors: Patrick Brosset, Alex Lakatos
 title: Expand DOM nodes recursively
 tags: ["html", "productivity", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]

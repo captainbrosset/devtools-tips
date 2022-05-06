@@ -1,5 +1,5 @@
 ---
-date: 2022-3-15
+date: 2022-03-15
 authors: Patrick Brosset
 title: Emulate forced-color mode
 tags: ["css", "accessibility", "browser:edge", "browser:chrome"]

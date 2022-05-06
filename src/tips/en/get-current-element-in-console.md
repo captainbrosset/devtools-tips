@@ -1,5 +1,5 @@
 ---
-date: 2021-6-17
+date: 2021-06-17
 authors: Patrick Brosset, Alex Lakatos
 title: Get the selected element in the console
 tags: ["console", "html", "productivity", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]

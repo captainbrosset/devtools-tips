@@ -1,5 +1,5 @@
 ---
-date: 2022-1-10
+date: 2022-01-10
 authors: Patrick Brosset
 title: Get detached DOM elements to investigate memory leaks
 tags: ["perf", "browser:edge"]

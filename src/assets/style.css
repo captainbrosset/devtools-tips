@@ -326,11 +326,7 @@ pre {
   color: #555;
 }
 
-.tip-footer .authors li:not(:last-child)::after {
-  content: ",";
-}
-
-.tip-footer .authors li,
+.tip-footer .authors span,
 .tip-footer .last-edit time {
   color: black;
   margin-left: .25rem;

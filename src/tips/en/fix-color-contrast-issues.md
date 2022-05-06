@@ -1,5 +1,5 @@
 ---
-date: 2022-3-25
+date: 2022-03-25
 authors: Patrick Brosset
 title: Fix low color contrast issues
 tags: ["accessibility", "browser:edge", "browser:chrome"]

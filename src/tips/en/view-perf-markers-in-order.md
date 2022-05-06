@@ -1,5 +1,5 @@
 ---
-date: 2021-6-10
+date: 2021-06-10
 authors: Patrick Brosset
 title: View performance markers in order
 tags: ["javascript", "perf", "console", "browser:edge", "browser:chrome", "browser:safari"]

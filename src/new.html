@@ -13,7 +13,7 @@
 <main id="maincontent">
   {% include 'filter-tip-list.njk' %}
   <ul class="tips">
-  {%- for post in collections.all -%}
+  {%- for post in collections.all | reverse -%}
     <li class="hover-box tip">
       <a href="{{ post.url }}" class="tip-title">{{ post.data.title }}</a>
       {%- set image = extractImage(post.templateContent) -%}

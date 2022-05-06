@@ -1,5 +1,5 @@
 ---
-date: 2022-3-25
+date: 2022-03-25
 authors: Patrick Brosset
 title: console.log() is great, but do you know console.table()? console.group()? console.assert()?
 tags: ["console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]

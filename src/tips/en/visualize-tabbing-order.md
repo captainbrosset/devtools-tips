@@ -1,5 +1,5 @@
 ---
-date: 2021-6-29
+date: 2021-06-29
 authors: Patrick Brosset
 title: Visualize the tabbing order on the page
 tags: ["accessibility", "highlighter", "browser:firefox"]

@@ -1,5 +1,5 @@
 ---
-date: 2022-3-25
+date: 2022-03-25
 authors: Patrick Brosset
 title: Start your HTML and CSS prototypes in the browser directly
 tags: ["css", "html", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]

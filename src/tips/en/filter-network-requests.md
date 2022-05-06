@@ -1,5 +1,5 @@
 ---
-date: 2021-6-11
+date: 2021-06-11
 authors: Patrick Brosset
 title: Filter requests in the Network panel by status code, mime type and more
 tags: ["network", "browser:edge", "browser:chrome", "browser:firefox"]

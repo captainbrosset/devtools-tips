@@ -1,5 +1,5 @@
 ---
-date: 2021-6-25
+date: 2021-06-25
 authors: Patrick Brosset, Januario
 title: Draw a box around all elements to debug your CSS and page structure
 tags: ["highlighter", "css", "html", "browser:chrome", "browser:firefox", "browser:edge", "browser:safari"]

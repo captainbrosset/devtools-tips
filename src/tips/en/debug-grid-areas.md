@@ -1,5 +1,5 @@
 ---
-date: 2022-3-16
+date: 2022-03-16
 authors: Patrick Brosset
 title: Debug CSS grid areas
 tags: ["css", "browser:edge", "browser:chrome", "browser:firefox"]

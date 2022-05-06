@@ -1,5 +1,5 @@
 ---
-date: 2021-6-22
+date: 2021-06-22
 authors: Patrick Brosset
 title: Edit CSS angles
 tags: ["css", "browser:chrome", "browser:edge"]

@@ -1,5 +1,5 @@
 ---
-date: 2021-6-30
+date: 2021-06-30
 authors: Patrick Brosset
 title: Sample colors from the page
 tags: ["productivity", "browser:edge", "browser:chrome", "browser:firefox"]

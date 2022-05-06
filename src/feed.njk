@@ -22,7 +22,7 @@
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
   <id>{{ metadata.url }}</id>
-  <updated>{% lasttipupdate %}</updated>
+  {# <updated>{% lasttipupdate %}</updated> #}
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
@@ -32,7 +32,7 @@
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.inputPath | postdate | dateToRfc3339 }}</updated>
+    {# <updated>{{ post.inputPath | postdate | dateToRfc3339 }}</updated> #}
     <id>{{ absolutePostUrl }}</id>
     <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>

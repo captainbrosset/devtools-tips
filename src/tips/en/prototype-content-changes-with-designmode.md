@@ -1,5 +1,5 @@
 ---
-date: 2021-8-2
+date: 2021-08-02
 authors: Patrick Brosset, Rachel Simone Weil
 title: Prototype content changes with designMode
 tags: ["console", "html", "productivity", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]

@@ -23,7 +23,10 @@ templateEngineOverride: njk
         {{ content | safe }}
     </div>
     <div class="tip-footer">
-        {%- if not isTweet -%}{% authorsdate page.inputPath %}{%- endif -%}
+        {%- if not isTweet -%}
+            <div class="authors">Authors: <span>{{ authors }}</span></div>
+            <p class="last-edit">Last edit: <time datetime="{{ page.date.toISOString() }}">{{ page.date.toLocaleDateString() }}</time></p>
+        {%- endif -%}
     </div>
 </main>
 <script async src="/assets/share.js"></script>

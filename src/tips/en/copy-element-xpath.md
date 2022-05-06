@@ -1,5 +1,5 @@
 ---
-date: 2021-7-13
+date: 2021-07-13
 authors: Patrick Brosset
 title: Copy an element's XPath expression
 tags: ["html", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]

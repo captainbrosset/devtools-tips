@@ -1,5 +1,5 @@
 ---
-date: 2021-6-21
+date: 2021-06-21
 authors: Patrick Brosset, Alex Lakatos
 title: Copy an object from the console
 tags: ["console", "javascript", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]

@@ -1,5 +1,5 @@
 ---
-date: 2021-9-20
+date: 2021-09-20
 authors: Patrick Brosset
 title: Convert color formats
 tags: ["css", "browser:edge", "browser:chrome", "browser:firefox"]

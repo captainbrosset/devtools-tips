@@ -1,5 +1,5 @@
 ---
-date: 2022-3-16
+date: 2022-03-16
 authors: Patrick Brosset
 title: Debug unwanted scrollbars
 tags: ["css", "browser:firefox"]
