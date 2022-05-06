@@ -1,6 +1,6 @@
 ---
 date: 2021-6-8
-authors: authors
+authors: Patrick Brosset, Alex Lakatos
 title: Unminify JavaScript code to easily read and debug it
 tags: ["javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
 ---

@@ -1,6 +1,6 @@
 ---
 date: 2021-9-8
-authors: authors
+authors: Patrick Brosset
 title: Play a sound when a line of JavaScript is executed
 tags: ["debug", "javascript", "browser:safari"]
 ---

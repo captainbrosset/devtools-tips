@@ -1,6 +1,6 @@
 ---
 date: 2021-10-8
-authors: authors
+authors: Patrick Brosset
 title: Hide resources loaded by extensions in the Network panel
 tags: ["network", "browser:edge", "browser:chrome"]
 ---

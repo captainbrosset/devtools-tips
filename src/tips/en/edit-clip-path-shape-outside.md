@@ -1,6 +1,6 @@
 ---
 date: 2021-6-21
-authors: authors
+authors: Patrick Brosset
 title: Edit clip-path and shape-outside CSS properties by dragging points in the page
 tags: ["css", "highlighter", "browser:firefox"]
 ---

@@ -1,6 +1,6 @@
 ---
 date: 2021-10-29
-authors: authors
+authors: Patrick Brosset
 title: Evaluate XPath to find elements in the page
 tags: ["html", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---

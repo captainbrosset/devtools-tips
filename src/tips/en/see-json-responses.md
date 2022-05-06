@@ -1,6 +1,6 @@
 ---
 date: 2021-9-1
-authors: authors
+authors: Patrick Brosset
 title: See formatted JSON responses
 tags: ["network", "browser:firefox"]
 ---

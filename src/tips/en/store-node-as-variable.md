@@ -1,6 +1,6 @@
 ---
 date: 2021-10-23
-authors: authors
+authors: Patrick Brosset
 title: Store a node as a variable to use it in the console
 tags: ["html", "console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
 ---

@@ -1,6 +1,6 @@
 ---
 date: 2021-11-17
-authors: authors
+authors: Patrick Brosset, Christian Heilmann
 title: Automatically logging name and value in console.log()
 tags: ["console", "javascript", "browser:edge", "browser:chrome", "browser:firefox","browser:safari"]
 ---

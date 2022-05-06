@@ -1,6 +1,6 @@
 ---
 date: 2021-12-15
-authors: authors
+authors: Patrick Brosset
 title: Edit and resend faulty network requests to debug them
 tags: ["network", "browser:edge", "browser:chrome", "browser:firefox"]
 ---

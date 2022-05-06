@@ -1,6 +1,6 @@
 ---
 date: 2021-11-30
-authors: authors
+authors: Patrick Brosset
 title: Copy a CSS rule as CSS-in-JS format
 tags: ["css", "javascript", "browser:edge", "browser:chrome"]
 ---

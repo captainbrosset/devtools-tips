@@ -1,6 +1,6 @@
 ---
 date: 2021-10-29
-authors: authors
+authors: Patrick Brosset, Alex Lakatos
 title: See the page in 3D
 tags: ["html", "css", "browser:edge", "browser:safari", "browser:chrome"]
 ---

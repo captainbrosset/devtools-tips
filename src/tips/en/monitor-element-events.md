@@ -1,6 +1,6 @@
 ---
 date: 2021-10-15
-authors: authors
+authors: Patrick Brosset
 title: Monitor all events dispatched on an element
 tags: ["console", "debug", "browser:edge", "browser:chrome"]
 ---

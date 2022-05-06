@@ -1,6 +1,6 @@
 ---
 date: 2021-12-16
-authors: authors
+authors: Patrick Brosset
 title: Download all images from the page
 tags: ["productivity", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---

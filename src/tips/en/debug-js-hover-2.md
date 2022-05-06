@@ -1,6 +1,6 @@
 ---
 date: 2022-3-25
-authors: authors
+authors: Patrick Brosset
 title: Debug popups that appear on hover using the debugger statement
 tags: ["debug", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
 isTweet: true

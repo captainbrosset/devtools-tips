@@ -1,6 +1,6 @@
 ---
 date: 2021-7-20
-authors: authors
+authors: Patrick Brosset
 title: Throttle the network speed to test your website on slower connections
 tags: ["network", "perf", "browser:edge", "browser:chrome", "browser:firefox"]
 ---

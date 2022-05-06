@@ -1,6 +1,6 @@
 ---
 date: 2021-6-15
-authors: authors
+authors: Patrick Brosset
 title: Tweak css grid and flexbox alignment properties
 tags: ["css", "browser:edge", "browser:chrome"]
 ---

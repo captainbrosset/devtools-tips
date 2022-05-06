@@ -1,6 +1,6 @@
 ---
 date: 2021-7-12
-authors: authors
+authors: Patrick Brosset
 title: Convert font property units
 tags: ["css", "browser:edge", "browser:chrome", "browser:firefox"]
 ---

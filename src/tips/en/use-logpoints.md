@@ -1,6 +1,6 @@
 ---
 date: 2021-10-20
-authors: authors
+authors: Patrick Brosset, Christian Heilmann
 title: Console.log() for the web with logpoints
 tags: ["debug", "javascript", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---

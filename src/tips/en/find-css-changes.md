@@ -1,6 +1,6 @@
 ---
 date: 2021-10-29
-authors: authors
+authors: Patrick Brosset, Alex Lakatos
 title: Find and export CSS changes
 tags: ["css", "export", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---

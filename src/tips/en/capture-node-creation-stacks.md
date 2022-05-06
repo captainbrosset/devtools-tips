@@ -1,6 +1,6 @@
 ---
 date: 2021-7-27
-authors: authors
+authors: Patrick Brosset
 title: Capture node creation stack traces
 tags: ["javascript", "browser:edge", "browser:chrome"]
 ---

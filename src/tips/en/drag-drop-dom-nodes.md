@@ -1,6 +1,6 @@
 ---
 date: 2021-7-1
-authors: authors
+authors: Patrick Brosset
 title: Drag and drop nodes in the DOM tree
 tags: ["html", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---

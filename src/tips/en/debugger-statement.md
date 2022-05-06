@@ -1,6 +1,6 @@
 ---
 date: 2021-6-8
-authors: authors
+authors: Patrick Brosset, Alex Lakatos
 title: Use the debugger statement to pause script execution
 tags: ["javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
 ---

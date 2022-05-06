@@ -1,6 +1,6 @@
 ---
 date: 2021-6-15
-authors: authors
+authors: Patrick Brosset
 title: See quick accessibility information on hover
 tags: ["accessibility", "browser:edge", "browser:chrome"]
 ---

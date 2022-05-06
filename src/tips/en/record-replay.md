@@ -1,6 +1,6 @@
 ---
 date: 2022-2-2
-authors: authors
+authors: Patrick Brosset
 title: Record and replay user flows
 tags: ["testing", "perf", "browser:chrome"]
 ---

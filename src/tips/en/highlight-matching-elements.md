@@ -1,6 +1,6 @@
 ---
 date: 2021-6-8
-authors: authors
+authors: Patrick Brosset, Alex Lakatos
 title: Highlight all the elements that a CSS rule matches
 tags: ["html", "css", "highlighter", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
 ---

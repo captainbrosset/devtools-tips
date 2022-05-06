@@ -1,6 +1,6 @@
 ---
 date: 2021-10-29
-authors: authors
+authors: Patrick Brosset, Christian Heilmann
 title: Re-use scripts as snippets
 tags: ["javascript", "browser:edge", "browser:chrome"]
 ---

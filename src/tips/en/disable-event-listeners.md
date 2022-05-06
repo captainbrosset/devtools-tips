@@ -1,6 +1,6 @@
 ---
 date: 2022-1-26
-authors: authors
+authors: Patrick Brosset
 title: Remove or disable event listeners
 tags: ["javascript", "browser:firefox", "browser:edge", "browser:chrome"]
 ---

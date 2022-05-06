@@ -1,6 +1,6 @@
 ---
 date: 2021-12-16
-authors: authors
+authors: Patrick Brosset
 title: Write code on multiple lines in the Console
 tags: ["console", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---

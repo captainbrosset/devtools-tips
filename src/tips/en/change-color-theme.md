@@ -1,6 +1,6 @@
 ---
 date: 2021-9-20
-authors: authors
+authors: Patrick Brosset, Alex Lakatos
 title: Change the color theme of DevTools
 tags: ["personalization", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---

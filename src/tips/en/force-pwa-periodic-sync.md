@@ -1,6 +1,6 @@
 ---
 date: 2021-9-10
-authors: authors
+authors: Patrick Brosset
 title: Force PWA periodic background syncs
 tags: ["network", "pwa", "browser:edge", "browser:chrome"]
 ---

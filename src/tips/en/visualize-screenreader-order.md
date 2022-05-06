@@ -1,6 +1,6 @@
 ---
 date: 2021-8-30
-authors: authors
+authors: Patrick Brosset, Olivia Flynn
 title: Visualize the screen reader order for elements within the page
 tags: ["accessibility", "highlighter", "browser:edge", "browser:chrome"]
 ---

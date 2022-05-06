@@ -1,6 +1,6 @@
 ---
 date: 2021-6-8
-authors: authors
+authors: Patrick Brosset, Julian Descottes
 title: Edit CSS filters
 tags: ["css", "browser:firefox"]
 ---
