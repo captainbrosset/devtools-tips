@@ -182,7 +182,6 @@ main h2 {
 
 main h2:not(.tip-title) {
   text-align: center;
-  text-transform: capitalize;
   margin-top: 0;
 }
 

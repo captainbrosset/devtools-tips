@@ -15,12 +15,10 @@
   permalink: "browser/{{ browser | slug | processBrowserTagName }}/"
 }
 ---
-<main id="maincontent">
-  <h2>Tips supported in {{ browser | processBrowserTagName }}</h2>
-  {% include 'filter-tip-list.njk' %}
-  <ul class="tips">
-  {%- for post in collections[browser] | reverse -%}
-    {% include 'tip-in-list.njk' %}
-  {%- endfor -%}
-  </ul>
-</main>
+<h2>{{ collections[browser].length  }} DevTools Tips for {{ browser | processBrowserTagName }}</h2>
+{% include 'filter-tip-list.njk' %}
+<ul class="tips">
+{%- for post in collections[browser] | reverse -%}
+  {% include 'tip-in-list.njk' %}
+{%- endfor -%}
+</ul>
