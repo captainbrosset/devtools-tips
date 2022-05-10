@@ -65,6 +65,17 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("mainImage", (article) => extractImage(article));
 
+  eleventyConfig.addShortcode("lastTipDate", (collection) => {
+    let lastDate = null;
+    for (const post of collection) {
+      if (!lastDate || post.date > lastDate) {
+        lastDate = post.date;
+      }
+    }
+
+    return lastDate.toISOString();
+  });
+
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(embedYouTube);
