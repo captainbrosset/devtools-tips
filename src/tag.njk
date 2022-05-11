@@ -15,8 +15,10 @@
   permalink: "tag/{{ tag | slug }}/"
 }
 ---
-<h2>{{collections[tag].length }} {{ tag }} DevTools Tips</h2>
-{% include 'filter-tip-list.njk' %}
+<div class="page-toolbar">
+  <h2>{{collections[tag].length }} {{ tag }} DevTools Tips</h2>
+  {% include 'filter-tip-list.njk' %}
+</div>
 <ul class="tips">
 {%- for post in collections[tag] | reverse -%}
   {% include 'tip-in-list.njk' %}

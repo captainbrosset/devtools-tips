@@ -6,8 +6,10 @@
   eleventyExcludeFromCollections: true
 }
 ---
-<h2>{{collections.all.length }} DevTools Tips</h2>
-{% include 'filter-tip-list.njk' %}
+<div class="page-toolbar">
+  <h2>{{collections.all.length }} DevTools Tips</h2>
+  {% include 'filter-tip-list.njk' %}
+</div>
 <ul class="tips">
 {%- for post in collections.all | reverse -%}
   {% include 'tip-in-list.njk' %}

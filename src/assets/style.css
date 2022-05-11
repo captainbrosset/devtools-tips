@@ -146,12 +146,17 @@ header nav {
 
 .search {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 60%;
-  margin: 0 auto;
+  max-width: 60%;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .search {
+    max-width: 100%;
+  }
 }
 
 .search input {
@@ -176,16 +181,30 @@ main {
   top: -1rem;
 }
 
-main h2 {
-  margin: 1rem 0;
-}
-
-main h2:not(.tip-title) {
-  text-align: center;
-  margin-top: 0;
+main h2.tip-title {
+  padding-right: 7rem;
+  margin-bottom: 1rem;
 }
 
 /* List of tips */
+
+.page-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.page-toolbar h2 {
+  margin-right: auto;
+}
 
 .tips {
   margin-top: 2rem;
@@ -217,6 +236,7 @@ main h2:not(.tip-title) {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  max-height: 300px;
   border-left: 2px solid aliceblue;
 }
 
@@ -231,6 +251,42 @@ main h2:not(.tip-title) {
 
 .tip .tip-excerpt {
   grid-column: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 600px) {
+  .tip {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding: 0;
+  }
+
+  .tip .tip-title {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 1rem 1rem 0 1rem;
+  }
+
+  .tip .tip-excerpt {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0 1rem;
+  }
+
+  .tip .tip-info {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 0 1rem;
+  }
+
+  .tip img {
+    grid-column: 1;
+    grid-row: 4;
+    border: none;
+    border-top: 2px solid aliceblue;
+    max-height: 150px;
+  }
 }
 
 .tip .tip-excerpt * {
@@ -263,7 +319,6 @@ main h2:not(.tip-title) {
   font-size: smaller;
   color: #555;
   line-height: 2;
-  padding-right: 7rem;
 }
 
 .share-button {
