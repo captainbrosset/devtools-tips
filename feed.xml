@@ -5,7 +5,7 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-05-11T10:37:16.952Z</updated>
+  <updated>2022-05-11T13:02:44.506Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
@@ -14,9 +14,26 @@
   <entry>
     <title>Use document.designMode to spell check your webpage</title>
     <link href="https://devtoolstips.org/tips/en/use-designmode-to-spell-check/"/>
-    <updated>2022-05-11T10:37:16.952Z</updated>
+    <updated>2022-05-11T13:02:44.506Z</updated>
     <id>https://devtoolstips.org/tips/en/use-designmode-to-spell-check/</id>
     <content type="html">&lt;p&gt;https://twitter.com/AmeliasBrain/status/1521146127327801345&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Copy an elements styles</title>
+    <link href="https://devtoolstips.org/tips/en/copy-element-styles/"/>
+    <updated>2022-05-11T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/copy-element-styles/</id>
+    <content type="html">&lt;p&gt;You can extract all the styles of an element in one go by using the &lt;strong&gt;Copy styles&lt;/strong&gt; feature.&lt;/p&gt;
+&lt;p&gt;No need to go through all CSS rules and properties that apply to the element in the &lt;strong&gt;Styles&lt;/strong&gt; pane, and manually build the resulting list. With this feature, you can get the whole list at once, with all of the needed styles:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the element you want to extract the styles from by right-clicking on it and choosing &lt;strong&gt;Inspect&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Elements&lt;/strong&gt; tool, right-click the selected element.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Copy&lt;/strong&gt; &amp;gt; &lt;strong&gt;Copy styles&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Paste the result in a text editor and use however you want.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/copy-element-styles.png&quot; alt=&quot;Screenshot of the Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
