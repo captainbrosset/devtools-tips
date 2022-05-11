@@ -1,4 +1,6 @@
 ---
+date: 2021-06-22
+authors: Patrick Brosset
 title: Simulate color vision deficiencies
 tags: ["accessibility", "browser:firefox", "browser:chrome", "browser:edge"]
 ---

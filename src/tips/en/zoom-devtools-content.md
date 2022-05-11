@@ -1,4 +1,6 @@
 ---
+date: 2021-10-29
+authors: Patrick Brosset
 title: Zoom the DevTools UI to your liking
 tags: ["accessibility", "personalization", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
 ---

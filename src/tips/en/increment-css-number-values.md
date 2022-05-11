@@ -1,4 +1,6 @@
 ---
+date: 2021-10-29
+authors: Patrick Brosset
 title: Easily change CSS number values from the keyboard in increments of 0.1, 1, 10, 100
 tags: ["css", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
 ---

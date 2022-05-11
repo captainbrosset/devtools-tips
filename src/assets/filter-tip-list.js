@@ -9,7 +9,8 @@ function getAllTips() {
         document.querySelectorAll('.tips .tip').forEach(el => {
             allTips.push({
                 el,
-                title: el.textContent
+                title: el.querySelector('.tip-title'),
+                excerpt: el.querySelector('.tip-excerpt')
             });
         })
     }
@@ -17,38 +18,63 @@ function getAllTips() {
     return allTips
 }
 
+const tipMatchers = {
+    includes: function (s, hay) {
+        return hay.toLowerCase().includes(s.toLowerCase());
+    },
+    fuzzy: function (s, hay) {
+        let i = 0, n = -1, l;
+        hay = hay.toLowerCase();
+        s = s.toLowerCase();
+        for (; l = s[i++];) if (!~(n = hay.indexOf(l, n + 1))) return false;
+        return true;
+    }
+};
+
 function findMatchingTips(query) {
     return getAllTips().filter(tip => {
-        // TODO: make a better search.
-        return tip.title.toLowerCase().includes(query.toLowerCase());
+        return tipMatchers.includes(query, tip.title.textContent) ||
+               tipMatchers.includes(query, tip.excerpt.textContent);
     });
 }
 
 function resetFilter() {
-    getAllTips().forEach(tip => tip.el.classList.remove(HIGHLIGHTED_CLASS));
+    getAllTips().forEach(tip => {
+        tip.el.classList.remove(HIGHLIGHTED_CLASS);
+        tip.title.textContent = tip.title.textContent;
+        tip.title.excerpt = tip.title.excerpt;
+    });
     listEl.classList.remove('searching');
+}
+
+function highlightTextElement(el, query) {
+    const text = el.textContent;
+    const matchStart = text.toLowerCase().indexOf(query.toLowerCase());
+    if (matchStart === -1) {
+        return;
+    }
+    const matchLength = query.length;
+
+    el.innerHTML = '';
+
+    el.appendChild(document.createTextNode(text.substring(0, matchStart)));
+
+    const highlighted = document.createElement('span');
+    highlighted.classList.add('highlight');
+    highlighted.textContent = text.substring(matchStart, matchStart + matchLength);
+    el.appendChild(highlighted);
+
+    el.appendChild(document.createTextNode(text.substring(matchStart + matchLength)));
 }
 
 function showMatchingTips(tips, query) {
     resetFilter();
 
-    for (const { el, title } of tips) {
+    for (const { el, title, excerpt } of tips) {
         el.classList.add(HIGHLIGHTED_CLASS);
-        const a = el.firstElementChild;
 
-        const matchStart = title.toLowerCase().indexOf(query.toLowerCase());
-        const matchLength = query.length;
-
-        a.innerHTML = '';
-
-        a.appendChild(document.createTextNode(title.substring(0, matchStart)));
-
-        const highlighted = document.createElement('span');
-        highlighted.classList.add('highlight');
-        highlighted.textContent = title.substring(matchStart, matchStart + matchLength);
-        a.appendChild(highlighted);
-
-        a.appendChild(document.createTextNode(title.substring(matchStart + matchLength)));
+        highlightTextElement(title, query);
+        highlightTextElement(excerpt, query);
     }
 
     listEl.classList.add('searching');
@@ -61,11 +87,12 @@ function maybeSearch() {
         return;
     }
     const tips = findMatchingTips(q);
-    if (tips.length) {
-        showMatchingTips(tips, q);
-    } else {
-        resetFilter();
-    }
+    showMatchingTips(tips, q);
+    // if (tips.length) {
+    //     showMatchingTips(tips, q);
+    // } else {
+    //     resetFilter();
+    // }
 }
 
 const searchField = document.querySelector('.search input');

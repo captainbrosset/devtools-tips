@@ -1,4 +1,6 @@
 ---
+date: 2022-03-03
+authors: Patrick Brosset
 title: Detect low color contrast issues
 tags: ["accessibility", "browser:edge", "browser:chrome", "browser:firefox"]
 ---

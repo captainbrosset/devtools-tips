@@ -1,0 +1,22 @@
+<li class="hover-box tip">
+  <a href="{{ post.url }}" class="tip-title">{{ post.data.title }}</a>
+  {% mainImage post %}
+  <div class="tip-excerpt">
+    {% excerpt post %}
+    <a href="{{ post.url }}">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags">
+    {%- for tag in post.data.tags | onlyTags -%}
+      <li class="tag"><a href="/tag/{{ tag }}/" title="See all tips about {{tag}}">{{ tag }}</a></li>
+    {%- endfor -%}
+    </ul>
+    Supported by:
+    <ul class="browsers">
+    {%- for browser in post.data.tags | onlyBrowsers -%}
+      <li class="browser"><a href="/browser/{{ browser | processBrowserTagName }}/" title="See all tips supported on {{ browser | processBrowserTagName }}">{{ browser | processBrowserTagName }}</a></li>
+    {%- endfor -%}
+    </ul>
+  </div>
+</li>

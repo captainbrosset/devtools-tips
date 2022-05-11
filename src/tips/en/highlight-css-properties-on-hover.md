@@ -1,4 +1,6 @@
 ---
+date: 2021-12-09
+authors: Patrick Brosset
 title: Highlight the effect of individual CSS properties on hover
 tags: ["css", "highlighter", "browser:chrome", "browser:edge"]
 ---

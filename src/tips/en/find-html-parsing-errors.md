@@ -1,4 +1,6 @@
 ---
+date: 2022-01-17
+authors: Patrick Brosset
 title: Find HTML parsing errors
 tags: ["html", "browser:firefox"]
 ---

@@ -1,4 +1,6 @@
 ---
+date: 2021-10-11
+authors: Patrick Brosset
 title: Edit CSS shadow visually
 tags: ["css", "browser:edge", "browser:chrome"]
 ---

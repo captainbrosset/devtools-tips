@@ -1,4 +1,6 @@
 ---
+date: 2021-07-19
+authors: Patrick Brosset
 title: Edit CSS absolute and relative positions by dragging points in the page
 tags: ["css", "highlighter", "browser:firefox"]
 ---

@@ -1,4 +1,6 @@
 ---
+date: 2021-11-15
+authors: Patrick Brosset
 title: Move panels to re-arrange them
 tags: ["personalization", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---

@@ -1,4 +1,6 @@
 ---
+date: 2022-03-10
+authors: Patrick Brosset
 title: Send feedback, ask for features and report bugs
 tags: ["help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
 ---

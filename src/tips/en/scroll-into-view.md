@@ -1,4 +1,6 @@
 ---
+date: 2021-11-23
+authors: Patrick Brosset
 title: Scroll an element into view
 tags: ["html", "browser:edge", "browser:chrome", "browser:firefox"]
 ---

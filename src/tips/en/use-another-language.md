@@ -1,4 +1,6 @@
 ---
+date: 2021-06-08
+authors: Patrick Brosset
 title: Switch DevTools to another language
 tags: ["personalization", "browser:edge", "browser:firefox"]
 ---

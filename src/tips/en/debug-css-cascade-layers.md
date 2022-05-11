@@ -1,4 +1,6 @@
 ---
+date: 2022-04-20
+authors: Patrick Brosset
 title: Visualize and debug CSS cascade layers
 tags: ["css", "browser:chrome", "browser:edge", "browser:firefox", "browser:safari"]
 ---

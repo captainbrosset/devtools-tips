@@ -1,4 +1,6 @@
 ---
+date: 2022-01-13
+authors: Patrick Brosset
 title: Select elements with pointer-events:none by holding Shift
 tags: ["html", "css", "browser:chrome", "browser:edge", "browser:firefox"]
 ---

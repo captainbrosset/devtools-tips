@@ -1,4 +1,6 @@
 ---
+date: 2022-03-25
+authors: Patrick Brosset
 title: Quickly reference nodes, expressions, and react components in the console
 tags: ["console", "productivity", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
 isTweet: true

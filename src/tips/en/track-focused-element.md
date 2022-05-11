@@ -1,4 +1,6 @@
 ---
+date: 2022-02-21
+authors: Patrick Brosset
 title: Detect the element with focus at any time
 tags: ["console", "javascript", "browser:edge", "browser:chrome"]
 ---

@@ -1,4 +1,6 @@
 ---
+date: 2021-12-06
+authors: Patrick Brosset
 title: Visualize the effect of CSS transforms
 tags: ["css", "highlighter", "browser:firefox"]
 ---

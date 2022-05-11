@@ -1,4 +1,6 @@
 ---
+date: 2021-06-17
+authors: Patrick Brosset
 title: Find your web component's custom element code
 tags: ["webcomponents", "javascript", "browser:firefox"]
 ---

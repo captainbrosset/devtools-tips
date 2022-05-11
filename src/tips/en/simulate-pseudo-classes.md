@@ -1,4 +1,6 @@
 ---
+date: 2021-11-07
+authors: Patrick Brosset, Christian Heilmann, Alex Lakatos
 title: Simulate pseudo CSS classes
 tags: ["html", "css", "debug", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
 ---

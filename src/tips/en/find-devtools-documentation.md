@@ -1,4 +1,6 @@
 ---
+date: 2021-07-02
+authors: Patrick Brosset
 title: Find DevTools reference documentation
 tags: ["help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
 ---

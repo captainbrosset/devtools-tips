@@ -1,4 +1,6 @@
 ---
+date: 2021-06-28
+authors: Patrick Brosset
 title: Find all images without alternative text
 tags: ["console", "html", "accessibility", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
 ---
