@@ -27,33 +27,34 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<main>
-    <div class="tip-info">
-        Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
-        Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
-    </div>
-    <h2 class="tip-title">Easily change CSS number values from the keyboard in increments of 0.1, 1, 10, 100</h2>
-    <div class="tip-content">
-        <p>When playing with styling or layout code in DevTools, it's useful to be able to change widths, margins, and other CSS number values quickly.</p>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Easily change CSS number values from the keyboard in increments of 0.1, 1, 10, 100</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>When playing with styling or layout code in DevTools, it's useful to be able to change widths, margins, and other CSS number values quickly.</p>
 <p>Manually entering new numbers works of course, but it gets in the way of creativity a little bit.</p>
 <p>In DevTools you can change numbers by using the arrow keys on your keyboard, this way you can easily and quickly test changes while checking the result in real time in the page. But there's more, you can also hold the various control keys to change the speed at which the numbers increment:</p>
 <ul>
@@ -66,11 +67,12 @@
 </ul>
 <p><img src="/assets/img/increment-css-number-values.gif" alt="GIF animation of the Styles panel in Edge showing how numbers can be changed in various increments"></p>
 
-    </div>
-    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/b199d3c7abf02d31de53864b927dce9217ef0d8a">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-10-29T07:17:15.000Z">10/29/2021</time></p></div>
-</main>
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset</span></div>
+        <p class="last-edit">Last edit: <time datetime="2021-10-29T00:00:00.000Z">10/29/2021</time></p></div>
 <script async src="/assets/share.js"></script>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

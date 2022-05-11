@@ -27,33 +27,34 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<main>
-    <div class="tip-info">
-        Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
-        Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
-    </div>
-    <h2 class="tip-title">Visualize and debug CSS cascade layers</h2>
-    <div class="tip-content">
-        <p>CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which they apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using <code>!important</code> or artificially making selectors have higher specificity.</p>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Visualize and debug CSS cascade layers</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which they apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using <code>!important</code> or artificially making selectors have higher specificity.</p>
 <p>If you want to learn more about cascade layers, check out <a href="https://css-tricks.com/css-cascade-layers/">Miriam Suzanne's complete guide on CSS Tricks</a>, but here let's see how we can visualize and debug layers in DevTools.</p>
 <p>Safari, Firefox, Chrome, and Edge all have support for layers in their <strong>Styles</strong>/<strong>Rules</strong> panels.</p>
 <h3>All browsers</h3>
@@ -73,11 +74,12 @@
 </ol>
 <p><img src="/assets/img/debug-css-cascade-layers-edge.png" alt="Screenshot of Edge, with a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules and the layers view"></p>
 
-    </div>
-    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/4393001c762120ae764007bf221d495d0912e869">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-04-20T08:28:47.000Z">4/20/2022</time></p></div>
-</main>
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset</span></div>
+        <p class="last-edit">Last edit: <time datetime="2022-04-20T00:00:00.000Z">4/20/2022</time></p></div>
 <script async src="/assets/share.js"></script>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

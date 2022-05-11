@@ -1,3 +1,5 @@
+/* Resets */
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +17,8 @@ h3 {
   margin: 0;
 }
 
+/* Main styles */
+
 body {
   font-size: 13pt;
   font-family: Arial;
@@ -22,6 +26,12 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+:focus-visible {
+  outline: 2px dashed #333;
+}
+
+/* Header */
 
 header {
   display: flex;
@@ -132,14 +142,21 @@ header nav {
   display: grid;
 }
 
+/* Filter bar */
+
 .search {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 60%;
-  margin: 0 auto;
+  max-width: 60%;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .search {
+    max-width: 100%;
+  }
 }
 
 .search input {
@@ -154,9 +171,7 @@ header nav {
   font: inherit;
 }
 
-.search input:focus-visible {
-  outline: 2px solid gold;
-}
+/* Content area */
 
 main {
   padding: 2rem;
@@ -166,73 +181,127 @@ main {
   top: -1rem;
 }
 
-main h2 {
-  margin: 1rem 0;
+main h2.tip-title {
+  padding-right: 7rem;
+  margin-bottom: 1rem;
 }
 
-main h2:not(.tip-title) {
-  text-align: center;
-  text-transform: capitalize;
-  margin-top: 0;
+/* List of tips */
+
+.page-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.page-toolbar h2 {
+  margin-right: auto;
 }
 
 .tips {
-  display: flex;
-  gap: 1rem;
   margin-top: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .tip {
   background: white;
-  text-align: center;
   border-radius: 4px;
-  box-shadow: 0 0 5px 0px #00000024;
-  flex: 1 300px;
-  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 1rem;
+  padding-left: 1rem;
+  grid-template-columns: 1fr 40%;
+  grid-template-rows: min-content min-content 1fr;
+}
+
+.tip .tip-title {
+	color: black;
+	margin-top: 1rem;
+  font-weight: bold;
 }
 
 .tip img {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  object-fit: cover;
   width: 100%;
-  margin: 1rem auto 0 auto;
-  display: block;
-}
-
-.tip:hover {
-  background: gold;
-}
-
-.tip a {
-  padding: 1rem;
-  text-decoration: none;
-  display: block;
+  height: 100%;
   max-height: 300px;
+  border-left: 2px solid aliceblue;
+}
+
+.tip .tip-info {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+  place-content: start;
+  margin-bottom: 1rem;
+  padding: 0;
+  grid-column: 1;
+}
+
+.tip .tip-excerpt {
+  grid-column: 1;
   overflow: hidden;
-  color: black;
+  text-overflow: ellipsis;
 }
 
-.tip a::after {
-  content: "";
-  background: white;
-  width: calc(100% - 2rem);
-  position: absolute;
-  bottom: 0;
-  height: 1rem;
-  left: 1rem;
+@media only screen and (max-width: 600px) {
+  .tip {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding: 0;
+  }
+
+  .tip .tip-title {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 1rem 1rem 0 1rem;
+  }
+
+  .tip .tip-excerpt {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0 1rem;
+  }
+
+  .tip .tip-info {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 0 1rem;
+  }
+
+  .tip img {
+    grid-column: 1;
+    grid-row: 4;
+    border: none;
+    border-top: 2px solid aliceblue;
+    max-height: 150px;
+  }
 }
 
-.tip:hover a::after {
+.tip .tip-excerpt * {
+  margin: 0;
+}
+
+.tips .tip.highlighted .highlight {
   background: gold;
 }
 
-.tip a:focus-visible {
-  outline: none;
+.tips.searching .tip:not(.highlighted) {
+  display: none;
 }
 
-.tip:focus-within {
-  outline: 2px solid black;
-}
+/* Tip page */
 
 .tip-content img {
   width: 80%;
@@ -244,6 +313,12 @@ main h2:not(.tip-title) {
 .tip-content li {
   list-style: square;
   margin-left: 1rem;
+}
+
+.tip-info {
+  font-size: smaller;
+  color: #555;
+  line-height: 2;
 }
 
 .share-button {
@@ -271,14 +346,6 @@ main h2:not(.tip-title) {
   vertical-align: bottom;
 }
 
-.tips .tip.highlighted .highlight {
-  background: gold;
-}
-
-.tips.searching .tip:not(.highlighted) {
-  display: none;
-}
-
 code {
   font-size: 1rem;
   background: #333;
@@ -296,17 +363,6 @@ kbd {
   box-shadow: 1px 1px 0 0 #bbb;
 }
 
-footer {
-  text-align: center;
-  /* main is relatively positioned at -1rem to account for the header shadow. So reduce the top-padding to 1rem instead of 2rem here */
-  padding: 1rem 1rem 2rem 1rem;
-  background: white;
-}
-
-footer a {
-  color: #28706c;
-}
-
 pre {
   overflow: auto;
   max-height: 50vh;
@@ -314,12 +370,27 @@ pre {
   white-space: normal;
 }
 
-.tip-info {
-  font-size: smaller;
-  color: #555;
-  line-height: 2;
-  padding-right: 7rem;
+.tip-footer {
+  margin: 2rem 0 0 0;
 }
+
+.tip-footer * {
+  margin: 0;
+  display: inline;
+  color: #555;
+}
+
+.tip-footer .authors span,
+.tip-footer .last-edit time {
+  color: black;
+  margin-left: .25rem;
+}
+
+.tip-footer .last-edit::before {
+  content: " - ";
+}
+
+/* List of tags and browsers */
 
 .tags,
 .browsers,
@@ -348,32 +419,29 @@ pre {
   color: black;
 }
 
-.tip-footer {
-  margin: 2rem 0 0 0;
+/* Footer */
+
+footer {
+  text-align: center;
+  /* main is relatively positioned at -1rem to account for the header shadow. So reduce the top-padding to 1rem instead of 2rem here */
+  padding: 1rem 1rem 2rem 1rem;
+  background: white;
 }
 
-.tip-footer * {
-  margin: 0;
-  display: inline;
-  color: #555;
+footer a {
+  color: #28706c;
 }
 
-.tip-footer .authors li:not(:last-child)::after {
-  content: ",";
-}
-
-.tip-footer .authors li,
-.tip-footer .last-edit time {
-  color: black;
-  margin-left: .25rem;
-}
-
-.tip-footer .last-edit::before {
-  content: " - ";
-}
+/* Misc. */
 
 .bg-load-tip {
   border: 0;
   background: gold;
   padding: .5rem;
+}
+
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }

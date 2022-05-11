@@ -27,33 +27,34 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<main>
-    <div class="tip-info">
-        Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/productivity/">productivity</a></li></ul>
-        Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
-    </div>
-    <h2 class="tip-title">Prototype content changes with designMode</h2>
-    <div class="tip-content">
-        <p>When creating or modifying a design prototype for the web, you may want to quickly edit content in the browser without having to find the relevant code.</p>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Prototype content changes with designMode</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/productivity/">productivity</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>When creating or modifying a design prototype for the web, you may want to quickly edit content in the browser without having to find the relevant code.</p>
 <p>When you turn on <code>designMode</code> for the document or a given element, all associated text becomes editable directly in the browser. Images and other page content can be deleted, too. This is a quick way to prototype design changes such as seeing how a page responds to very long or very short headline copy.</p>
 <p><code>designMode</code> is not a DevTools-specific feature, as it is defined as part of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/designMode">Web API</a>. However, toggling <code>designMode</code> via the DevTools Console is a convenient way to temporarily make the page editable.</p>
 <ul>
@@ -64,11 +65,12 @@
 <p>Changes are not persisted and will revert on page close or refresh.</p>
 <p><img src="/assets/img/prototype-content-changes-with-designmode.gif" alt="Animated GIF of editable web page with designMode on"></p>
 
-    </div>
-    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/3c7624cc195146d2e518ff3aadb185258bb7cac5">Rachel Simone Weil</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-08-02T19:12:12.000Z">8/2/2021</time></p></div>
-</main>
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset, Rachel Simone Weil</span></div>
+        <p class="last-edit">Last edit: <time datetime="2021-08-02T00:00:00.000Z">8/2/2021</time></p></div>
 <script async src="/assets/share.js"></script>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

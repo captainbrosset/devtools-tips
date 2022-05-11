@@ -27,33 +27,34 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<main>
-    <div class="tip-info">
-        Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
-        Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
-    </div>
-    <h2 class="tip-title">Debug unwanted scrollbars</h2>
-    <div class="tip-content">
-        <p>Sometimes scrollbars appear on a web page in places we don't want them to. And when this happens, it's not always very straightforward to fix the problem. Which container is responsible for the scrollbars in the first place? Which elements are even causing the scrollbars to appear? Why are they too big?</p>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Debug unwanted scrollbars</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>Sometimes scrollbars appear on a web page in places we don't want them to. And when this happens, it's not always very straightforward to fix the problem. Which container is responsible for the scrollbars in the first place? Which elements are even causing the scrollbars to appear? Why are they too big?</p>
 <p>All very good questions that can cause a lot of time lost and frustration.</p>
 <p>Thankfully, Firefox has a tool just for this. In the <strong>Inspector</strong> panel, where the DOM tree of the page is displayed, you will notice <strong>scroll</strong> badges next to all elements that have scrollbars!</p>
 <p><img src="/assets/img/debug-unwanted-scrollbars-1.png" alt="Screenshot of Firefox DevTools, with the Inspector panel showing the Scroll badge on an element"></p>
@@ -62,11 +63,12 @@
 <p>Now this feature won't answer our third question: Why are these elements too big? But once you know which elements are the root cause of the problem, you can use the <strong>Rules</strong> siderbar pane to figure out which CSS properties are responsible for it.</p>
 <p><a href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Debug_Scrollable_Overflow">Learn more here</a>.</p>
 
-    </div>
-    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/1340bd64710ae6a2a5ea7692de3b41d9c08fec4c">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-03-16T08:42:10.000Z">3/16/2022</time></p></div>
-</main>
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset</span></div>
+        <p class="last-edit">Last edit: <time datetime="2022-03-16T00:00:00.000Z">3/16/2022</time></p></div>
 <script async src="/assets/share.js"></script>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

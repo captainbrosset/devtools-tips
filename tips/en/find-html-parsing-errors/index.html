@@ -27,44 +27,46 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<main>
-    <div class="tip-info">
-        Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li></ul>
-        Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
-    </div>
-    <h2 class="tip-title">Find HTML parsing errors</h2>
-    <div class="tip-content">
-        <p>DevTools is so full of features these days that we hardly ever use View-Source anymore. But it turns out that it has one trick up its sleeves that other tools don't, at least in Firefox.</p>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Find HTML parsing errors</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>DevTools is so full of features these days that we hardly ever use View-Source anymore. But it turns out that it has one trick up its sleeves that other tools don't, at least in Firefox.</p>
 <p>Indeed, in that browser, on top of showing the HTML source code of the page, it also highlights in red the HTML parsing errors!</p>
 <p>Consider the following HTML code:</p>
 <pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><br>    Lorem ipsum dolor sit...<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><br>    Lorem ipsum dolor sit...<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><br>    Lorem ipsum dolor sit<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>, ...<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span></code></pre>
 <p>Firefox's view-source makes it easy to find the stray <code>&lt;/em&gt;</code> ending tag! You can also hover over it to reveal more information about the type of parsing error.</p>
 <p><img src="/assets/img/find-html-parsing-errors.png" alt="Screenshot of the View-Source page in Firefox, with a stray em closing tag highlighted in red, with a tooltip"></p>
 
-    </div>
-    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/541180c7f8aac4b87d5b7dcf51dcb579921360c6">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2022-01-17T12:57:50.000Z">1/17/2022</time></p></div>
-</main>
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset</span></div>
+        <p class="last-edit">Last edit: <time datetime="2022-01-17T00:00:00.000Z">1/17/2022</time></p></div>
 <script async src="/assets/share.js"></script>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

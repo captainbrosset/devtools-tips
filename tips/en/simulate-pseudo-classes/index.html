@@ -27,44 +27,46 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<main>
-    <div class="tip-info">
-        Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
-        Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
-    </div>
-    <h2 class="tip-title">Simulate pseudo CSS classes</h2>
-    <div class="tip-content">
-        <p>If you use <code>:hover</code>, <code>:active</code>, and other such pseudo-classes in CSS, you can actually simulate these states in DevTools without having to hover over or click on buttons and links.</p>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Simulate pseudo CSS classes</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>If you use <code>:hover</code>, <code>:active</code>, and other such pseudo-classes in CSS, you can actually simulate these states in DevTools without having to hover over or click on buttons and links.</p>
 <p>Open the Styles panel (in Chrome, Edge or Safari) or the Rules panel (in Firefox), and click the <code>:hov</code> button. This will expand a section that allows you to lock one or multiple of these pseudo-classes on the selected element.</p>
 <p><img src="/assets/img/simulate-pseudo-classes.png" alt="Screenshot of the :hov panel to simulate various pseudo-classes"></p>
 <p>This is great when you write your styles, as you can define see the changes to - for example - a hover state of an element without having to use your mouse to see it in action.</p>
 <p>It is even more useful when you want to test the different states of an element. In the following screencast you can see how to use the state simulation to check the hover, active, visited and focused state of a link without having to interact with the link using your keyboard or mouse. If you want to try it out yourself, <a href="https://codepen.io/codepo8/pen/WNEMaPO">here is the demo page</a>.</p>
 <div id="CgHuHYRyvXc" class="eleventy-plugin-youtube-embed"style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/CgHuHYRyvXc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-    </div>
-    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/a37eb356b19f2722d585d987d529af7eccb96174">Christian Heilmann</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/259a7da155d6abbd105d1efdc5a818c0a764099a">Alex Lakatos</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/4b32deaf31021645f798098f174ce16ff2a7d291">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-11-07T15:32:11.000Z">11/7/2021</time></p></div>
-</main>
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset, Christian Heilmann, Alex Lakatos</span></div>
+        <p class="last-edit">Last edit: <time datetime="2021-11-07T00:00:00.000Z">11/7/2021</time></p></div>
 <script async src="/assets/share.js"></script>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

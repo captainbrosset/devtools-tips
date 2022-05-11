@@ -27,32 +27,179 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>debug tips</h2>
+    <main id="maincontent">
+      <div class="page-toolbar">
+  <h2>11 debug DevTools Tips</h2>
   <label class="search">
     <span>Filter list</span>
     <input type="text">
 </label>
 <script async src="/assets/filter-tip-list.js"></script>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/break-on-dom-changes/">Pause script execution when the DOM changes</a></li><li class="hover-box tip"><a href="/tips/en/debug-js-hover-2/">Debug popups that appear on hover using the debugger statement</a></li><li class="hover-box tip"><a href="/tips/en/debug-js-hover/">Debug popups that appear on hover using JS</a></li><li class="hover-box tip"><a href="/tips/en/debugger-statement/">Use the debugger statement to pause script execution</a></li><li class="hover-box tip"><a href="/tips/en/find-inactive-styles/">Find inactive CSS styles</a></li><li class="hover-box tip"><a href="/tips/en/live-expressions/">Cut down on console noise using live expressions</a></li><li class="hover-box tip"><a href="/tips/en/monitor-element-events/">Monitor all events dispatched on an element</a></li><li class="hover-box tip"><a href="/tips/en/play-sound-on-js-execution/">Play a sound when a line of JavaScript is executed</a></li><li class="hover-box tip"><a href="/tips/en/simulate-pseudo-classes/">Simulate pseudo CSS classes</a></li><li class="hover-box tip"><a href="/tips/en/unminify-javascript-code/">Unminify JavaScript code to easily read and debug it</a></li><li class="hover-box tip"><a href="/tips/en/use-logpoints/">Console.log() for the web with logpoints</a></li></ul>
-</main>
+</div>
+<ul class="tips"><li class="hover-box tip">
+  <a href="/tips/en/debug-js-hover-2/" class="tip-title">Debug popups that appear on hover using the debugger statement</a>
+  
+  <div class="tip-excerpt">
+    In Debug popups that appear on hover using JS we described how to pause the debugger to inspect popu...
+    <a href="/tips/en/debug-js-hover-2/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/simulate-pseudo-classes/" class="tip-title">Simulate pseudo CSS classes</a>
+  <img src="/assets/img/simulate-pseudo-classes.png" alt="Screenshot of the :hov panel to simulate various pseudo-classes" loading="lazy"></img>
+  <div class="tip-excerpt">
+    If you use :hover, :active, and other such pseudo-classes in CSS, you can actually simulate these st...
+    <a href="/tips/en/simulate-pseudo-classes/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/live-expressions/" class="tip-title">Cut down on console noise using live expressions</a>
+  <img src="/assets/img/live-expressions-eye-icon.png" alt="The eye button in DevTools" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Using the Console of DevTools to log information that changes a lot is a bad idea. First of all, you...
+    <a href="/tips/en/live-expressions/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/use-logpoints/" class="tip-title">Console.log() for the web with logpoints</a>
+  <img src="/assets/img/use-logpoints.png" alt="Screenshots of the way to set a logpoint in the sources tool" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Using the console to log some information is a very common way to debug your JavaScript. But you can...
+    <a href="/tips/en/use-logpoints/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/debug-js-hover/" class="tip-title">Debug popups that appear on hover using JS</a>
+  <img src="/assets/img/debug-js-hover.gif" alt="GIF showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Have you ever been frustrated because you couldn't style a popup or tooltip that appeared on hover?...
+    <a href="/tips/en/debug-js-hover/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/monitor-element-events/" class="tip-title">Monitor all events dispatched on an element</a>
+  <img src="/assets/img/monitor-element-events.gif" alt="GIF animation showing how events get automatically logged when using the monitorEvents function" loading="lazy"></img>
+  <div class="tip-excerpt">
+    You can use the monitorEvents global function in the Console panel to log all of the events dispatch...
+    <a href="/tips/en/monitor-element-events/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/break-on-dom-changes/" class="tip-title">Pause script execution when the DOM changes</a>
+  <img src="/assets/img/break-on-dom-changes.png" alt="Screenshot of the Elements panel in Edge showing the &quot;Break on&quot; contextual menu on the selected node" loading="lazy"></img>
+  <div class="tip-excerpt">
+    If you want to know what JavaScript code removes, adds, or modifies a DOM element in the page, you c...
+    <a href="/tips/en/break-on-dom-changes/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/play-sound-on-js-execution/" class="tip-title">Play a sound when a line of JavaScript is executed</a>
+  <img src="/assets/img/play-sound-on-js-execution.gif" alt="GIF animation showing how to add the audio breakpoint in Safari Web Inspector" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Sometimes pausing execution when a line of JavaScript is executed is too much, sometimes you only wa...
+    <a href="/tips/en/play-sound-on-js-execution/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/unminify-javascript-code/" class="tip-title">Unminify JavaScript code to easily read and debug it</a>
+  <img src="/assets/img/unminify-javascript-code.gif" alt="Screenshot of the Sources panel in Chrome, showing the pretty-print button" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Sometimes, the JavaScript code that runs on a website is minified and really hard to read. This is c...
+    <a href="/tips/en/unminify-javascript-code/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/find-inactive-styles/" class="tip-title">Find inactive CSS styles</a>
+  <img src="/assets/img/find-inactive-styles.webp" alt="Screenshot of the inactive style feature" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Firefox has a unique feature that helps find CSS styles that don't have any effect on the page.
+This...
+    <a href="/tips/en/find-inactive-styles/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/debugger-statement/" class="tip-title">Use the debugger statement to pause script execution</a>
+  <img src="/assets/img/debugger-statement.png" alt="Screenshot of the Sources panel in Edge, paused at a debugger statement" loading="lazy"></img>
+  <div class="tip-excerpt">
+    If you prefer to use console.log() statements rather than the JavaScript debugger because you find i...
+    <a href="/tips/en/debugger-statement/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li></ul>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

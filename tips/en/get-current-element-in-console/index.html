@@ -27,42 +27,44 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<main>
-    <div class="tip-info">
-        Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/productivity/">productivity</a></li></ul>
-        Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
-    </div>
-    <h2 class="tip-title">Get the selected element in the console</h2>
-    <div class="tip-content">
-        <p>If you selected an element in the Elements panel (in Chrome, Safari or Edge) or the Inspector panel (in Firefox), you can refer to it in the console using <code>$0</code>.</p>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Get the selected element in the console</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/productivity/">productivity</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>If you selected an element in the Elements panel (in Chrome, Safari or Edge) or the Inspector panel (in Firefox), you can refer to it in the console using <code>$0</code>.</p>
 <p>This shortcut will return the DOM node instance, which you can then use to do things like getting computed styles, or check DOM properties, etc.</p>
 <p>Example: <code>getComputedStyles($0).display</code>.</p>
 <p><img src="/assets/img/get-current-element-in-console.jpg" alt="screenshot of safari's console showing how the $0 shortcut returns the selected elemet"></p>
 
-    </div>
-    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/e5e002843ab479c3321ab846daed6b734c329373">Patrick Brosset</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/259a7da155d6abbd105d1efdc5a818c0a764099a">Alex Lakatos</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-06-17T08:03:19.000Z">6/17/2021</time></p></div>
-</main>
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset, Alex Lakatos</span></div>
+        <p class="last-edit">Last edit: <time datetime="2021-06-17T00:00:00.000Z">6/17/2021</time></p></div>
 <script async src="/assets/share.js"></script>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

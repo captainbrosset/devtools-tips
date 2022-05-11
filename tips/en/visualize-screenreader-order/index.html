@@ -27,33 +27,34 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<main>
-    <div class="tip-info">
-        Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/accessibility/">accessibility</a></li><li class="tag"><a href="/tag/highlighter/">highlighter</a></li></ul>
-        Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
-    </div>
-    <h2 class="tip-title">Visualize the screen reader order for elements within the page</h2>
-    <div class="tip-content">
-        <p>Edge has an <a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/accessibility-tab">accessibility tab</a> within the elements panel that, among other things, lets you visualize the order a screen reader will encounter elements on a page. This is determined by the order of elements in the HTML source code.</p>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Visualize the screen reader order for elements within the page</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/">accessibility</a></li><li class="tag"><a href="/tag/highlighter/">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>Edge has an <a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/accessibility-tab">accessibility tab</a> within the elements panel that, among other things, lets you visualize the order a screen reader will encounter elements on a page. This is determined by the order of elements in the HTML source code.</p>
 <p>Users that can't view the screen may use a screen reader (e.g. Narrator, VoiceOver, NVDA) to consume the content of a page or focused element. If the order of the content read aloud is incorrect, it might give users a confusing experience. Incorrect ordering can occur if CSS is used to reorder elements visually in a way that is not reflected in the source order (<a href="https://adrianroselli.com/2015/10/html-source-order-vs-css-display-order.html">Examples here</a>).</p>
 <p>This tool adds a layer on the page that shows the order in which elements would be read (i.e. their source order).</p>
 <ul>
@@ -64,11 +65,12 @@
 <p><img src="/assets/img/visualize-screenreader-order.png" alt="Screenshot of the source order viewer in Microsoft Edge, showing numbered boxes around elements"></p>
 <p><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer#analyzing-the-order-of-keyboard-access-through-sections-of-the-page">Learn more about it here</a>.</p>
 
-    </div>
-    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/bb877d3c96711339f83a5142de30c6839313d1ee">Olivia Flynn</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-08-30T16:24:39.000Z">8/30/2021</time></p></div>
-</main>
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset, Olivia Flynn</span></div>
+        <p class="last-edit">Last edit: <time datetime="2021-08-30T00:00:00.000Z">8/30/2021</time></p></div>
 <script async src="/assets/share.js"></script>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

@@ -27,32 +27,48 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>pwa tips</h2>
+    <main id="maincontent">
+      <div class="page-toolbar">
+  <h2>1 pwa DevTools Tips</h2>
   <label class="search">
     <span>Filter list</span>
     <input type="text">
 </label>
 <script async src="/assets/filter-tip-list.js"></script>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/force-pwa-periodic-sync/">Force PWA periodic background syncs</a></li></ul>
-</main>
+</div>
+<ul class="tips"><li class="hover-box tip">
+  <a href="/tips/en/force-pwa-periodic-sync/" class="tip-title">Force PWA periodic background syncs</a>
+  <img src="/assets/img/force-pwa-periodic-sync.png" alt="Screenshot of the Application panel in Edge showing the periodic sync input and buttons" loading="lazy"></img>
+  <div class="tip-excerpt">
+    The periodic background sync API, available to PWAs is a great way to fetch new content while the us...
+    <a href="/tips/en/force-pwa-periodic-sync/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/network/" title="See all tips about network">network</a></li><li class="tag"><a href="/tag/pwa/" title="See all tips about pwa">pwa</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li></ul>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

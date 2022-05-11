@@ -27,33 +27,34 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<main>
-    <div class="tip-info">
-        Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/network/">network</a></li><li class="tag"><a href="/tag/pwa/">pwa</a></li></ul>
-        Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
-    </div>
-    <h2 class="tip-title">Force PWA periodic background syncs</h2>
-    <div class="tip-content">
-        <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Periodic_Background_Synchronization_API">periodic background sync API</a>, available to PWAs is a great way to fetch new content while the user isn't on the site, and while they have access to the network, to make sure they have the latest content when they come back to the app.</p>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Force PWA periodic background syncs</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/network/">network</a></li><li class="tag"><a href="/tag/pwa/">pwa</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Periodic_Background_Synchronization_API">periodic background sync API</a>, available to PWAs is a great way to fetch new content while the user isn't on the site, and while they have access to the network, to make sure they have the latest content when they come back to the app.</p>
 <p>It can be hard to debug though, as the sync only happen after the minimum interval has passed, and the browser thinks that now is a good time to trigger the sync.</p>
 <p>Thankfully, there is a way in Chrome and Edge to force the sync, so you don't have to wait for the browser to do it.</p>
 <ul>
@@ -64,11 +65,12 @@
 </ul>
 <p><img src="/assets/img/force-pwa-periodic-sync.png" alt="Screenshot of the Application panel in Edge showing the periodic sync input and buttons"></p>
 
-    </div>
-    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/22b264a8bb40107bd27af5ae4fb16c4aa1458b8b">Patrick Brosset</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-09-10T07:23:51.000Z">9/10/2021</time></p></div>
-</main>
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset</span></div>
+        <p class="last-edit">Last edit: <time datetime="2021-09-10T00:00:00.000Z">9/10/2021</time></p></div>
 <script async src="/assets/share.js"></script>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

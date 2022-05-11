@@ -27,32 +27,165 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>accessibility tips</h2>
+    <main id="maincontent">
+      <div class="page-toolbar">
+  <h2>10 accessibility DevTools Tips</h2>
   <label class="search">
     <span>Filter list</span>
     <input type="text">
 </label>
 <script async src="/assets/filter-tip-list.js"></script>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/detect-low-color-contrast/">Detect low color contrast issues</a></li><li class="hover-box tip"><a href="/tips/en/emulate-forced-colors/">Emulate forced-color mode</a></li><li class="hover-box tip"><a href="/tips/en/find-all-images-without-alt-text/">Find all images without alternative text</a></li><li class="hover-box tip"><a href="/tips/en/fix-color-contrast-issues/">Fix low color contrast issues</a></li><li class="hover-box tip"><a href="/tips/en/get-website-issues/">Automatically get issues your site has with performance, accessibility, security, compatibility, and others.</a></li><li class="hover-box tip"><a href="/tips/en/see-quick-a11y-info-on-hover/">See quick accessibility information on hover</a></li><li class="hover-box tip"><a href="/tips/en/simulate-color-vision-deficiencies/">Simulate color vision deficiencies</a></li><li class="hover-box tip"><a href="/tips/en/visualize-screenreader-order/">Visualize the screen reader order for elements within the page</a></li><li class="hover-box tip"><a href="/tips/en/visualize-tabbing-order/">Visualize the tabbing order on the page</a></li><li class="hover-box tip"><a href="/tips/en/zoom-devtools-content/">Zoom the DevTools UI to your liking</a></li></ul>
-</main>
+</div>
+<ul class="tips"><li class="hover-box tip">
+  <a href="/tips/en/get-website-issues/" class="tip-title">Automatically get issues your site has with performance, accessibility, security, compatibility, and others.</a>
+  <img src="/assets/img/get-website-issues.png" alt="Screenshot of the issues panel in Edge, showing many different issues about the page" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Edge has a very useful Issues panel that can automatically list a lot of different issues with your...
+    <a href="/tips/en/get-website-issues/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li><li class="tag"><a href="/tag/perf/" title="See all tips about perf">perf</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/fix-color-contrast-issues/" class="tip-title">Fix low color contrast issues</a>
+  
+  <div class="tip-excerpt">
+    With DevTools you can detect low color contrast issues which is great. But DevTools in Chrome and Ed...
+    <a href="/tips/en/fix-color-contrast-issues/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/emulate-forced-colors/" class="tip-title">Emulate forced-color mode</a>
+  <img src="/assets/img/emulate-forced-colors.png" alt="Screenshot of Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Operating systems offer an accessibility feature where the colors shown on the screen are converted...
+    <a href="/tips/en/emulate-forced-colors/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/detect-low-color-contrast/" class="tip-title">Detect low color contrast issues</a>
+  <img src="/assets/img/detect-low-color-contrast-css-overview.png" alt="Screenshot of the CSS Overview panel in Chrome, showing the color contrast issues section" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Low color vision is very common, and your choice of text and background colors can negatively impact...
+    <a href="/tips/en/detect-low-color-contrast/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/zoom-devtools-content/" class="tip-title">Zoom the DevTools UI to your liking</a>
+  <img src="/assets/img/zoom-devtools-content.gif" alt="Gif demo showing the UI of Chrome DevTools being zoomed in and out" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Do you find the UI of DevTools too small to comfortably work with? Because this UI is made of HTML a...
+    <a href="/tips/en/zoom-devtools-content/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li><li class="tag"><a href="/tag/personalization/" title="See all tips about personalization">personalization</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/visualize-screenreader-order/" class="tip-title">Visualize the screen reader order for elements within the page</a>
+  <img src="/assets/img/visualize-screenreader-order.png" alt="Screenshot of the source order viewer in Microsoft Edge, showing numbered boxes around elements" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Edge has an accessibility tab within the elements panel that, among other things, lets you visualize...
+    <a href="/tips/en/visualize-screenreader-order/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/visualize-tabbing-order/" class="tip-title">Visualize the tabbing order on the page</a>
+  <img src="/assets/img/visualize-tabbing-order.png" alt="Screenshot of the tabbing order highlighter in Firefox, showing numbered boxes around focusable elements" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Firefox has a dedicated accessibility inspector panel that, among other things, lets you visualize t...
+    <a href="/tips/en/visualize-tabbing-order/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/find-all-images-without-alt-text/" class="tip-title">Find all images without alternative text</a>
+  <img src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console" loading="lazy"></img>
+  <div class="tip-excerpt">
+    With HTML, you can add alternative text to images using the alt attribute. It can be used to add a t...
+    <a href="/tips/en/find-all-images-without-alt-text/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/simulate-color-vision-deficiencies/" class="tip-title">Simulate color vision deficiencies</a>
+  <img src="/assets/img/simulate-color-vision-deficiencies-1.png" alt="Screenshot of the color vision simulation drop-down in Firefox" loading="lazy"></img>
+  <div class="tip-excerpt">
+    People who visit your web pages may have different types of color vision deficiencies that, if you i...
+    <a href="/tips/en/simulate-color-vision-deficiencies/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/see-quick-a11y-info-on-hover/" class="tip-title">See quick accessibility information on hover</a>
+  <img src="/assets/img/see-quick-a11y-info-on-hover.gif" alt="gif animation of the a11y tooltip in chrome" loading="lazy"></img>
+  <div class="tip-excerpt">
+    In Edge and Chrome, whenever you use the element selector and hover over elements in the page, a too...
+    <a href="/tips/en/see-quick-a11y-info-on-hover/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li></ul>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

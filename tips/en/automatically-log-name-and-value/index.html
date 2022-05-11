@@ -27,33 +27,34 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<main>
-    <div class="tip-info">
-        Categories:
-        <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
-        Supported by:
-        <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
-    </div>
-    <h2 class="tip-title">Automatically logging name and value in console.log()</h2>
-    <div class="tip-content">
-        <p>Using the <strong><a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/">console</a></strong> of DevTools you can to log some information to debug your JavaScript.</p>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Automatically logging name and value in console.log()</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>Using the <strong><a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/">console</a></strong> of DevTools you can to log some information to debug your JavaScript.</p>
 <p>The common way to do that is to add a <code>console.log()</code> statement where you want to learn the value of a certain variable. In the following example the mouse position and how far the document has scrolled.</p>
 <pre class="language-javascript"><code class="language-javascript">document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token parameter">e</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>  <span class="token keyword">let</span> x <span class="token operator">=</span> e<span class="token punctuation">.</span>pageX<span class="token punctuation">;</span><br>  <span class="token keyword">let</span> y <span class="token operator">=</span> e<span class="token punctuation">.</span>pageY<span class="token punctuation">;</span><br>  <span class="token keyword">let</span> top <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>  <br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>  <br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>top<span class="token punctuation">)</span><span class="token punctuation">;</span>  <br><span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
 <p>The problem is that this results in lots of numbers in the console without explanations about what they are. If you wrap the values you want to read out in curly brackets <code>{}</code>, the console automatically displays both the name and the value of the variable.</p>
@@ -61,11 +62,12 @@
 <p><img src="/assets/img/automatically-log-name-and-value.gif" alt="Screencast showing the different ways the variables are logged with and without curly braces"></p>
 <div id="xTnqsA5vZX4" class="eleventy-plugin-youtube-embed"style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/xTnqsA5vZX4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-    </div>
-    <div class="tip-footer"><ul class="authors">Authors:<li><a href="https://github.com/captainbrosset/devtools-tips/commit/8bce251664f0d17cad06d6ad1b147ae6ade41da0">Patrick Brosset</a></li><li><a href="https://github.com/captainbrosset/devtools-tips/commit/e1dfc85d1d5028af2d35f0b44af51d6c57f0095a">Christian Heilmann</a></li></ul><p class="last-edit">Last edit: <time datetime="2021-11-17T12:54:55.000Z">11/17/2021</time></p></div>
-</main>
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset, Christian Heilmann</span></div>
+        <p class="last-edit">Last edit: <time datetime="2021-11-17T00:00:00.000Z">11/17/2021</time></p></div>
 <script async src="/assets/share.js"></script>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>

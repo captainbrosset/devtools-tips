@@ -27,32 +27,140 @@
     </script>
   </head>
   <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
       <h1><a href="/">DevTools Tips</a></h1>
       <nav>
         <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
-          <li><a href="/all/">All Tips</a></li>
         </ul>
       </nav>
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main>
-  <h2>highlighter tips</h2>
+    <main id="maincontent">
+      <div class="page-toolbar">
+  <h2>8 highlighter DevTools Tips</h2>
   <label class="search">
     <span>Filter list</span>
     <input type="text">
 </label>
 <script async src="/assets/filter-tip-list.js"></script>
-  <ul class="tips"><li class="hover-box tip"><a href="/tips/en/edit-clip-path-shape-outside/">Edit clip-path and shape-outside CSS properties by dragging points in the page</a></li><li class="hover-box tip"><a href="/tips/en/edit-position/">Edit CSS absolute and relative positions by dragging points in the page</a></li><li class="hover-box tip"><a href="/tips/en/highlight-css-properties-on-hover/">Highlight the effect of individual CSS properties on hover</a></li><li class="hover-box tip"><a href="/tips/en/highlight-matching-elements/">Highlight all the elements that a CSS rule matches</a></li><li class="hover-box tip"><a href="/tips/en/outline-everything/">Draw a box around all elements to debug your CSS and page structure</a></li><li class="hover-box tip"><a href="/tips/en/visualize-css-transforms/">Visualize the effect of CSS transforms</a></li><li class="hover-box tip"><a href="/tips/en/visualize-screenreader-order/">Visualize the screen reader order for elements within the page</a></li><li class="hover-box tip"><a href="/tips/en/visualize-tabbing-order/">Visualize the tabbing order on the page</a></li></ul>
-</main>
+</div>
+<ul class="tips"><li class="hover-box tip">
+  <a href="/tips/en/highlight-css-properties-on-hover/" class="tip-title">Highlight the effect of individual CSS properties on hover</a>
+  <img src="/assets/img/highlight-css-properties-on-hover.gif" alt="GIF animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane" loading="lazy"></img>
+  <div class="tip-excerpt">
+    How do certain CSS properties apply to the page isn't always an easy question to answer.
+While some...
+    <a href="/tips/en/highlight-css-properties-on-hover/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/visualize-css-transforms/" class="tip-title">Visualize the effect of CSS transforms</a>
+  <img src="/assets/img/visualize-css-transforms.gif" alt="GIF animation showing how the CSS transform highlighter appears on the page when hovering over a transform CSS property in the Rules panel" loading="lazy"></img>
+  <div class="tip-excerpt">
+    CSS transforms can sometimes be hard to wrap your head around, especially when chaining multiple tra...
+    <a href="/tips/en/visualize-css-transforms/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/visualize-screenreader-order/" class="tip-title">Visualize the screen reader order for elements within the page</a>
+  <img src="/assets/img/visualize-screenreader-order.png" alt="Screenshot of the source order viewer in Microsoft Edge, showing numbered boxes around elements" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Edge has an accessibility tab within the elements panel that, among other things, lets you visualize...
+    <a href="/tips/en/visualize-screenreader-order/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/edit-position/" class="tip-title">Edit CSS absolute and relative positions by dragging points in the page</a>
+  <img src="/assets/img/edit-position.gif" alt="Gif demo of the geometry editor in firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Firefox features a position editor that lets you move elements in the page by drag and drop. This wo...
+    <a href="/tips/en/edit-position/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/visualize-tabbing-order/" class="tip-title">Visualize the tabbing order on the page</a>
+  <img src="/assets/img/visualize-tabbing-order.png" alt="Screenshot of the tabbing order highlighter in Firefox, showing numbered boxes around focusable elements" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Firefox has a dedicated accessibility inspector panel that, among other things, lets you visualize t...
+    <a href="/tips/en/visualize-tabbing-order/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/outline-everything/" class="tip-title">Draw a box around all elements to debug your CSS and page structure</a>
+  <img src="/assets/img/outline-everything.gif" alt="Gif animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page" loading="lazy"></img>
+  <div class="tip-excerpt">
+    Simple, yet powerful, * { outline: 1px solid red; } is a useful debugging trick that helps understan...
+    <a href="/tips/en/outline-everything/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/edit-clip-path-shape-outside/" class="tip-title">Edit clip-path and shape-outside CSS properties by dragging points in the page</a>
+  <img src="/assets/img/edit-clip-path-shape-outside.gif" alt="Gif demo of the shape editor in firefox, clicking on the Rules panel icon, and then moving points around in the page" loading="lazy"></img>
+  <div class="tip-excerpt">
+    The clip-path property is a great way to change the final shape of an element and give it the shape...
+    <a href="/tips/en/edit-clip-path-shape-outside/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li><li class="hover-box tip">
+  <a href="/tips/en/highlight-matching-elements/" class="tip-title">Highlight all the elements that a CSS rule matches</a>
+  <img src="/assets/img/highlight-matching-elements.gif" alt="GIF animation showing how hovering over selectors in chrome highlights the matching elements in the page" loading="lazy"></img>
+  <div class="tip-excerpt">
+    When you want to know which elements a given CSS rule will apply to, in addition to the currently se...
+    <a href="/tips/en/highlight-matching-elements/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li></ul>
 
+    </main>
     <footer role="contentinfo">
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>
