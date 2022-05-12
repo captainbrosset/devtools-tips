@@ -1,8 +1,8 @@
 self.importScripts('/assets/localforage-1.10.0.min.js');
 
-// UPDATED: 5/6/22
+// UPDATED: 5/12/22
 
-const VERSION = 'v5';
+const VERSION = 'v6';
 const CACHE_NAME = `devtools-tips-${VERSION}`;
 
 const PERIODIC_UPDATE_SUPPORTED = ('periodicSync' in registration);
@@ -54,10 +54,12 @@ self.addEventListener('install', event => {
 // On fetch, we have a cache-first strategy, where we look for resources in the cache first
 // and only on the network if the resource is not found there.
 // The exception to this is: if periodicSync is not supported, then we go to the network first
-// for all lists of tips (/browser, /all, and /tag), otherwise users can't see new tips there.
+// for all lists of tips (/, /browser, and /tag), otherwise users can't see new tips there.
 // When periodicSync is supported, we just always go to cache and update the cache in the background at intervals.
 self.addEventListener('fetch', event => {
-  const isTipListingPage = event.request.url.includes('/browser') || event.request.url.includes('/tag') || event.request.url.includes('/all');
+  const isTipListingPage = event.request.url === registration.scope ||
+                           event.request.url.includes('/browser') ||
+                           event.request.url.includes('/tag');
   const goNetworkFirst = isTipListingPage && !PERIODIC_UPDATE_SUPPORTED;
 
   event.respondWith((async () => {
