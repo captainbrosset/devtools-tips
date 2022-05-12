@@ -1,5 +1,8 @@
 ---js
 {
+  eleventyComputed: {
+    title: "{{ browser | processBrowserTagName | capitalize  }} DevTools Tips",
+  },
   title: "DevTools Tips",
   layout: "home.njk",
   templateEngineOverride: "njk",
@@ -16,7 +19,7 @@
 }
 ---
 <div class="page-toolbar">
-  <h2>{{ collections[browser].length  }} DevTools Tips for {{ browser | processBrowserTagName }}</h2>
+  <h2>{{ collections[browser].length  }} {{ browser | processBrowserTagName | capitalize }} DevTools Tips</h2>
   {% include 'filter-tip-list.njk' %}
 </div>
 <ul class="tips">

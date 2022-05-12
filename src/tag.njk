@@ -1,6 +1,8 @@
 ---js
 {
-  title: "DevTools Tips",
+  eleventyComputed: {
+    title: "{{ tag | capitalize  }} DevTools Tips",
+  },
   layout: "home.njk",
   templateEngineOverride: "njk",
   eleventyExcludeFromCollections: true,
