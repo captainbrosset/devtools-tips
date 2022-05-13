@@ -5,11 +5,131 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-05-11T00:00:00.000Z</updated>
+  <updated>2022-05-13T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Discover all the tools</title>
+    <link href="https://devtoolstips.org/tips/en/discover-all-tools/"/>
+    <updated>2022-05-13T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/discover-all-tools/</id>
+    <content type="html">&lt;p&gt;DevTools is confusing! There&#39;s so much functionality packed in such a small UI. Did you know that Chrome DevTools had more than 30 individual tools! Yes, that&#39;s right, 30.&lt;/p&gt;
+&lt;p&gt;It&#39;s hard for both new users and more experienced users. New users may feel overwhelmed, and more experienced users will tend to stay in the same few tools and not know that others exist.&lt;/p&gt;
+&lt;p&gt;So here is a list of all the panels available in DevTools, per browser! Want to test your knowledge? Play &lt;a href=&quot;https://patrickbrosset.com/lab/whats-that-tool/&quot;&gt;What&#39;s That Tool?&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Firefox&lt;/strong&gt;  (📕&lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/index.html&quot;&gt;Docs&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Accessibility&lt;/strong&gt;: Navigate the internal accessibility tree that assistive technology uses to present web pages to users.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application&lt;/strong&gt;: Debug Service Workers and Web App Manifests.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Console&lt;/strong&gt;: View log messages, errors, and execute JavaScript expressions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Debugger&lt;/strong&gt;: Debug JavaScript code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DOM&lt;/strong&gt;: Navigate the list of DOM properties on the page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inspector&lt;/strong&gt;: View the DOM tree, authored and computed styles, edit CSS, and get layout information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory&lt;/strong&gt;: Capture and navigate memory snapshots of the current page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network&lt;/strong&gt;: View network traffic on the page and inspect individual HTTP requests and responses.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance&lt;/strong&gt;: Measure the runtime performance of the page and understand bottlenecks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage&lt;/strong&gt;: View and edit cookies, local storage, cache, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Style editor&lt;/strong&gt;: Edit stylesheets on the page and create new ones.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Chrome&lt;/strong&gt; (📕&lt;a href=&quot;https://developer.chrome.com/docs/devtools/overview/&quot;&gt;Docs&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Animations&lt;/strong&gt;: View and edit CSS animations, transitions, and Web Animations API animations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application&lt;/strong&gt;: Debug your PWA Service Workers, Web Apps Manifest. View and edit IndexedDB, local storage, cache. Debug background services such as notifications and background sync.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changes&lt;/strong&gt;: See all the CSS changes you made on the page in DevTools.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Console&lt;/strong&gt;: View log messages, errors, and execute JavaScript expressions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coverage&lt;/strong&gt;: Generate code coverage reports for JavaScript and CSS to detect how much code is used.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CSS overview&lt;/strong&gt;: Get a summary of the CSS styles on the page, including colors, contrast ratio, and fonts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Developer resources&lt;/strong&gt;: &lt;em&gt;missing, please help by editing &lt;a href=&quot;https://github.com/captainbrosset/devtools-tips/blob/main/src/tips/en/discover-all-tools.md&quot;&gt;this file&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Elements&lt;/strong&gt;: View the DOM tree, authored and computed styles, edit CSS, and get layout information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Issues&lt;/strong&gt;: Detect common issues with your webpage.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Javascript profiler&lt;/strong&gt;: Record JavaScript code execution on the page for some time and then view time spent in each function.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Layers&lt;/strong&gt;: See the various compositing layers the browser engine created based on your page&#39;s DOM and CSS code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lighthouse&lt;/strong&gt;: Run &lt;a href=&quot;https://developers.google.com/web/tools/lighthouse/&quot;&gt;Lighthouse&lt;/a&gt; audits on your page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media&lt;/strong&gt;: &lt;em&gt;missing, please help by editing &lt;a href=&quot;https://github.com/captainbrosset/devtools-tips/blob/main/src/tips/en/discover-all-tools.md&quot;&gt;this file&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory&lt;/strong&gt;: Capture memory snapshot of the current page and understand what retains objects in memory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory inspector&lt;/strong&gt;: Inspector JavaScript ArrayBuffers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network&lt;/strong&gt;: View network traffic on the page and inspect individual HTTP requests and responses.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network conditions&lt;/strong&gt;: Modify certain network conditions such as cache, speed, and user-agent.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network request blocking&lt;/strong&gt;: Define custom patterns for URLs you want to block.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance&lt;/strong&gt;: Analyze your page&#39;s runtime performance, including CPU usage, GPU activity, memory usage, refresh rate, user interactions, layout and graphic engine operations, and more.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance insights&lt;/strong&gt;: Get actionable performance insights about your page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance monitor&lt;/strong&gt;: Monitor your page&#39;s performance live with CPU usage, memory size, DOM node numbers, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Protocol monitor&lt;/strong&gt;: Monitor the CDP (Chrome DevTools Protocol) traffic that DevTools relies on to debug your page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quick source&lt;/strong&gt;: A simpler version of the Sources panel.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recorder&lt;/strong&gt;: Record user scenarios in the tab, and easily replay them automatically.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rendering&lt;/strong&gt;: Emulate different rendering modes: media features, color vision deficiencies, and more.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search&lt;/strong&gt;: Search within the resources loaded on the page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;: Get an overview of the page&#39;s security aspects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sensors&lt;/strong&gt;: Simulate device location, orientation and touch events.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sources&lt;/strong&gt;: View the currently loaded resources on the page, edit stylesheets, and debug JavaScript code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Web audio&lt;/strong&gt;: View the audio node graph.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Webauthn&lt;/strong&gt;: Create virtual authentication environments to debug your web authentication flows.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What&#39;s new&lt;/strong&gt;: Get highlights from the most recent DevTools update.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Edge&lt;/strong&gt; (📕&lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/landing/&quot;&gt;Docs&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;3D view&lt;/strong&gt;: View your page&#39;s DOM, z-index stacking, or layers tree in 3D.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Animations&lt;/strong&gt;: View and edit CSS animations, transitions, and Web Animations API animations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application&lt;/strong&gt;: Debug your PWA Service Workers, Web Apps Manifest. View and edit IndexedDB, local storage, cache. Debug background services such as notifications and background sync.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changes&lt;/strong&gt;: See all the CSS changes you made on the page in DevTools.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Console&lt;/strong&gt;: View log messages, errors, and execute JavaScript expressions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coverage&lt;/strong&gt;: Generate code coverage reports for JavaScript and CSS to detect how much code is used.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Css overview&lt;/strong&gt;: Get a summary of the CSS styles on the page, including colors, contrast ratio, and fonts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Detached elements&lt;/strong&gt;: Find DOM elements in memory that are no longer attached to the DOM, and record heap snapshots to find what retains them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Developer resources&lt;/strong&gt;: &lt;em&gt;missing, please help by editing &lt;a href=&quot;https://github.com/captainbrosset/devtools-tips/blob/main/src/tips/en/discover-all-tools.md&quot;&gt;this file&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Elements&lt;/strong&gt;: View the DOM tree, authored and computed styles, edit CSS, and get layout information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Issues&lt;/strong&gt;: Detect common issues with your webpage. The issues are powered by &lt;a href=&quot;https://webhint.io/&quot;&gt;webhint&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Javascript profiler&lt;/strong&gt;: Record JavaScript code execution on the page for some time and then view time spent in each function.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Layers&lt;/strong&gt;: See the various compositing layers the browser engine created based on your page&#39;s DOM and CSS code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lighthouse&lt;/strong&gt;: Run &lt;a href=&quot;https://developers.google.com/web/tools/lighthouse/&quot;&gt;Lighthouse&lt;/a&gt; audits on your page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media&lt;/strong&gt;: &lt;em&gt;missing, please help by editing &lt;a href=&quot;https://github.com/captainbrosset/devtools-tips/blob/main/src/tips/en/discover-all-tools.md&quot;&gt;this file&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory&lt;/strong&gt;: Capture memory snapshot of the current page and understand what retains objects in memory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory inspector&lt;/strong&gt;: Inspector JavaScript ArrayBuffers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network&lt;/strong&gt;: View network traffic on the page and inspect individual HTTP requests and responses.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network conditions&lt;/strong&gt;: Modify certain network conditions such as cache, speed, and user-agent.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network console&lt;/strong&gt;: Create and manage your API requests and test them whenever you want.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network request blocking&lt;/strong&gt;: Define custom patterns for URLs you want to block.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance&lt;/strong&gt;: Analyze your page&#39;s runtime performance, including CPU usage, GPU activity, memory usage, refresh rate, user interactions, layout and graphic engine operations, and more.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance monitor&lt;/strong&gt;: Monitor your page&#39;s performance live with CPU usage, memory size, DOM node numbers, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Protocol monitor&lt;/strong&gt;: Monitor the CDP (Chrome DevTools Protocol) traffic that DevTools relies on to debug your page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quick source&lt;/strong&gt;: A simpler version of the Sources panel.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rendering&lt;/strong&gt;: Emulate different rendering modes: media features, color vision deficiencies, and more.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search&lt;/strong&gt;: Search within the resources loaded on the page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;: Get an overview of the page&#39;s security aspects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sensors&lt;/strong&gt;: Simulate device location, orientation and touch events.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Source maps monitor&lt;/strong&gt;: Check where source maps are downloaded from.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sources&lt;/strong&gt;: View the currently loaded resources on the page, edit stylesheets, and debug JavaScript code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Webaudio&lt;/strong&gt;: View the audio node graph.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Webauthn&lt;/strong&gt;: Create virtual authentication environments to debug your web authentication flows.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Welcome&lt;/strong&gt;: Get help, resources, and latest news.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Safari&lt;/strong&gt; (📕&lt;a href=&quot;https://webkit.org/web-inspector/&quot;&gt;Docs&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Elements&lt;/strong&gt;: View the DOM tree, authored and computed styles, edit CSS, and get layout information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Console&lt;/strong&gt;: View log messages, errors, and execute JavaScript expressions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sources&lt;/strong&gt;: View the currently loaded resources on the page, edit stylesheets, and debug JavaScript code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network&lt;/strong&gt;: View network traffic on the page and inspect individual HTTP requests and responses.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Timelines&lt;/strong&gt;: Record performance profiles on your page and visualize network requests, layout and rendering operations, user events and JavaScript execution, and CPU usage.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage&lt;/strong&gt;: View and edit local storage.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Graphics&lt;/strong&gt;: &lt;em&gt;missing, please help by editing &lt;a href=&quot;https://github.com/captainbrosset/devtools-tips/blob/main/src/tips/en/discover-all-tools.md&quot;&gt;this file&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Layers&lt;/strong&gt;: See the various compositing layers the browser engine created based on your page&#39;s DOM and CSS code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Audit&lt;/strong&gt;: Run audits on the page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/discover-all-tools.png&quot; alt=&quot;The list of most tools in Edge DevTools, just to illustrate how many there are&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Copy an elements styles</title>
@@ -1387,7 +1507,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
     <id>https://devtoolstips.org/tips/en/find-devtools-documentation/</id>
     <content type="html">&lt;p&gt;If you want to learn more about what other tools exist in a browser, or what features a given tool provides, you can find reference documentation from all the major browsers here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Tools&quot;&gt;Firefox Developer Tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/index.html&quot;&gt;Firefox Developer Tools&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/&quot;&gt;Edge Developer Tools&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/docs/devtools/&quot;&gt;Chrome Developer Tools&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://webkit.org/web-inspector/&quot;&gt;Safari Web Inspector&lt;/a&gt;&lt;/li&gt;
