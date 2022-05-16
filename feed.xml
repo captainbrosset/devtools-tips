@@ -18,7 +18,7 @@
     <id>https://devtoolstips.org/tips/en/discover-all-tools/</id>
     <content type="html">&lt;p&gt;DevTools is confusing! There&#39;s so much functionality packed in such a small UI. Did you know that Chrome DevTools had more than 30 individual tools! Yes, that&#39;s right, 30.&lt;/p&gt;
 &lt;p&gt;It&#39;s hard for both new users and more experienced users. New users may feel overwhelmed, and more experienced users will tend to stay in the same few tools and not know that others exist.&lt;/p&gt;
-&lt;p&gt;So here is a list of all the panels available in DevTools, per browser! Want to test your knowledge? Play &lt;a href=&quot;https://patrickbrosset.com/lab/whats-that-tool/&quot;&gt;What&#39;s That Tool?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So here is a list of all the panels available in DevTools, per browser! Want to test your knowledge? Play &lt;a href=&quot;https://patrickbrosset.com/lab/2022-05-13-whats-that-tool/&quot;&gt;What&#39;s That Tool?&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Firefox&lt;/strong&gt;  (📕&lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/index.html&quot;&gt;Docs&lt;/a&gt;)&lt;/p&gt;
