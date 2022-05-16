@@ -9,7 +9,7 @@ DevTools is confusing! There's so much functionality packed in such a small UI. 
 
 It's hard for both new users and more experienced users. New users may feel overwhelmed, and more experienced users will tend to stay in the same few tools and not know that others exist.
 
-So here is a list of all the panels available in DevTools, per browser! Want to test your knowledge? Play [What's That Tool?](https://patrickbrosset.com/lab/whats-that-tool/)
+So here is a list of all the panels available in DevTools, per browser! Want to test your knowledge? Play [What's That Tool?](https://patrickbrosset.com/lab/2022-05-13-whats-that-tool/)
 
 * **Firefox**  (📕[Docs](https://firefox-source-docs.mozilla.org/devtools-user/index.html))
   * **Accessibility**: Navigate the internal accessibility tree that assistive technology uses to present web pages to users.
