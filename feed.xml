@@ -5,11 +5,28 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-05-13T00:00:00.000Z</updated>
+  <updated>2022-05-16T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Create your own simulated devices</title>
+    <link href="https://devtoolstips.org/tips/en/add-new-devices/"/>
+    <updated>2022-05-16T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/add-new-devices/</id>
+    <content type="html">&lt;p&gt;You can simulate various different devices from DevTools, to get an idea of how your webpage might render on those devices (note that this is only a simulation, the tool only changes the screen dimensions, touch event handling, and user agent string, but ultimately, the rendering of the webpage is still done by the browser you are using).&lt;/p&gt;
+&lt;p&gt;But what&#39;s even better, is that you can create your own simulated devices. This is useful if what&#39;s available in the list isn&#39;t enough for you. Here&#39;s how:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open DevTools (press &lt;kbd&gt;F12&lt;/kbd&gt;), and start the device mode (on Edge and Chrome, click the &lt;strong&gt;Toggle device emulation&lt;/strong&gt; button, on Firefox, click &lt;strong&gt;Responsive Design Mode&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;In the device simulation screen, expand the device drop-down and click &lt;strong&gt;Edit...&lt;/strong&gt;. The device customization screen appears.&lt;/li&gt;
+&lt;li&gt;From this screen, you can check or uncheck devices to customize the device drop-down, and you can click &lt;strong&gt;Add Custom Device...&lt;/strong&gt; to add your own devices.&lt;/li&gt;
+&lt;li&gt;Choose a device name, dimensions, dpr, and user agent string, and submit. Your new device should now be available in the device drop-down!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/add-new-devices.gif&quot; alt=&quot;GIF animation of the device mode in Firefox, showing how to customize the list of devices, including adding custom devices&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Discover all the tools</title>
