@@ -5,11 +5,31 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-05-16T00:00:00.000Z</updated>
+  <updated>2022-05-17T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Edit an element&#39;s attributes and tag name with the keyboard</title>
+    <link href="https://devtoolstips.org/tips/en/edit-elements-with-the-keyboard/"/>
+    <updated>2022-05-17T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/edit-elements-with-the-keyboard/</id>
+    <content type="html">&lt;p&gt;Using the keyboard can be faster than using a mouse in certain cases (and for some people). One such case is editing an element&#39;s tag name and attributes in DevTools.&lt;/p&gt;
+&lt;p&gt;To do this, select an element in the &lt;strong&gt;Elements&lt;/strong&gt; tool (called &lt;strong&gt;Inspector&lt;/strong&gt; in Firefox) and:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Press &lt;kbd&gt;Enter&lt;/kbd&gt; to start the editing mode. The first attribute of the element becomes editable with the keyboard! (Note: on Firefox, the tag name becomes editable first).&lt;/li&gt;
+&lt;li&gt;After you have made the necessary changes, you can:
+&lt;ul&gt;
+&lt;li&gt;Either press &lt;kbd&gt;Enter&lt;/kbd&gt; again to commit the change.&lt;/li&gt;
+&lt;li&gt;Or, press &lt;kbd&gt;Tab&lt;/kbd&gt; or &lt;kbd&gt;Shift&lt;/kbd&gt;+&lt;kbd&gt;Tab&lt;/kbd&gt; to move to the next or previous attribute, or the tag name if there are no other attributes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/edit-elements-with-the-keyboard.gif&quot; alt=&quot;GIF animation of a part of the Inspector panel in Firefox, showing how pressing Enter on a focused element goes into edit mode and how Tab allows to navigate from field to field&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Create your own simulated devices</title>
