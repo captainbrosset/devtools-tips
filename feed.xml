@@ -5,11 +5,26 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-06-02T00:00:00.000Z</updated>
+  <updated>2022-06-14T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Empty the cache and hard refresh</title>
+    <link href="https://devtoolstips.org/tips/en/empty-cache-refresh/"/>
+    <updated>2022-06-14T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/empty-cache-refresh/</id>
+    <content type="html">&lt;p&gt;Here is a nice tip to quickly empty your cache and refresh the page, in order to test new code changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Chrome, or Edge, open DevTools (&lt;kbd&gt;F12&lt;/kbd&gt;).&lt;/li&gt;
+&lt;li&gt;Right-click on the page refresh icon, in the browser toolbar.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Empty cache and hard refresh&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/empty-cache-refresh.png&quot; alt=&quot;Screenshot of the Microsoft Edge browser toolbar, showing the contextual menu of the refresh button, with the empty cache and hard refresh menu item&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Quickly spot out-of-viewport elements</title>
