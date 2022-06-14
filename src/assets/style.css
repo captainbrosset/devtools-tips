@@ -122,7 +122,7 @@ header nav {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   top: calc(100% - .25rem);
-  left: -1rem;
+  left: -4rem;
   min-width: calc(100% + 2rem);
   text-align: center;
   background: gold;
@@ -298,6 +298,10 @@ main h2.tip-title {
 }
 
 .tips.searching .tip:not(.highlighted) {
+  display: none;
+}
+
+.show-unique-browser-feature .tip:not(.unique-browser-feature) {
   display: none;
 }
 

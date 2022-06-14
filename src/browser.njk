@@ -22,6 +22,7 @@
   <h2>{{ collections[browser].length  }} {{ browser | processBrowserTagName | capitalize }} DevTools Tips</h2>
   {% include 'filter-tip-list.njk' %}
 </div>
+{% include 'unique-browser-features.njk' %}
 <ul class="tips">
 {%- for post in collections[browser] | reverse -%}
   {% include 'tip-in-list.njk' %}
