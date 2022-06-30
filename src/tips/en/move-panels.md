@@ -20,8 +20,8 @@ This only works in Edge at the moment is makes it super easy to see any 2 tools 
 ### To re-order panels by dragging (Chrome, Edge, Firefox, Safari)
 
 * Click and hold any of the tabs in the toolbar.
-* Move that tag horizontally, left or right, until the desired location.
-* Release the tab. The new order will be persisted so every time you open DevTools, it will be there.
+* Move the tab horizontally, left or right, until the desired location is reached.
+* Release the mouse button. The new order will be persisted every time you open DevTools.
 
 If you use some tools more than others, this can be used to group them at the start of the toolbar for example.
 
