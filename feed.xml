@@ -5,11 +5,33 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-06-14T00:00:00.000Z</updated>
+  <updated>2022-06-30T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Fix color contrast issues using the element tooltip</title>
+    <link href="https://devtoolstips.org/tips/en/fix-color-contrast-issues-with-element-tooltip/"/>
+    <updated>2022-06-30T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/fix-color-contrast-issues-with-element-tooltip/</id>
+    <content type="html">&lt;p&gt;There are multiple ways to detect and fix color contrast issues with DevTools, but here is a nice one to keep in mind. It&#39;s not straightforward to use and takes a few steps, but makes it very nice to see the resulting contrast ratio as you change the color value.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https://twitter.com/argyleink&quot;&gt;Adam Argyle&lt;/a&gt; for &lt;a href=&quot;https://twitter.com/argyleink/status/1255236249255845892&quot;&gt;sharing this on Twitter&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the &lt;strong&gt;Styles&lt;/strong&gt; panel, click on the color value you want to change, to focus the field.&lt;/li&gt;
+&lt;li&gt;Press &lt;kbd&gt;Ctrl+Shift+C&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+C&lt;/kbd&gt; on Mac) to start the inspect tool.&lt;/li&gt;
+&lt;li&gt;Position your mouse over the element which you are changing the color for. Don&#39;t click anywhere, we want to keep the color value field focused, just hover over the element so the element tooltip appears.&lt;/li&gt;
+&lt;li&gt;Now change the color value with the keyboard and check the contrast ratio in the tooltip as you do so.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/fix-color-contrast-issues-with-element-tooltip.gif&quot; alt=&quot;GIF animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Related tips:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/detect-low-color-contrast&quot;&gt;Detect low color contrast issues&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/fix-color-contrast-issues&quot;&gt;Fix low color contrast issues&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Empty the cache and hard refresh</title>
@@ -918,8 +940,8 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;h3&gt;To re-order panels by dragging (Chrome, Edge, Firefox, Safari)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Click and hold any of the tabs in the toolbar.&lt;/li&gt;
-&lt;li&gt;Move that tag horizontally, left or right, until the desired location.&lt;/li&gt;
-&lt;li&gt;Release the tab. The new order will be persisted so every time you open DevTools, it will be there.&lt;/li&gt;
+&lt;li&gt;Move the tab horizontally, left or right, until the desired location is reached.&lt;/li&gt;
+&lt;li&gt;Release the mouse button. The new order will be persisted every time you open DevTools.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If you use some tools more than others, this can be used to group them at the start of the toolbar for example.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/move-panels-2.gif&quot; alt=&quot;GIF animation in Firefox DevTools showing how to move panels in the toolbar&quot; /&gt;&lt;/p&gt;
