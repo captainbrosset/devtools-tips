@@ -5,11 +5,31 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-06-30T00:00:00.000Z</updated>
+  <updated>2022-07-01T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Jump from a label `for` attribute to the linked input (and more)</title>
+    <link href="https://devtoolstips.org/tips/en/jump-to-referenced-elements/"/>
+    <updated>2022-07-01T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/jump-to-referenced-elements/</id>
+    <content type="html">&lt;p&gt;In Firefox, you can jump from an element that references the ID attribute of an other element, to that other element, by &lt;kbd&gt;Cmd&lt;/kbd&gt;+clicking (or &lt;kbd&gt;Ctrl&lt;/kbd&gt;+clicking) the attribute.&lt;/p&gt;
+&lt;p&gt;Here is a common example for when this is useful:&lt;/p&gt;
+&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;label&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;foo&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Label&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;...&lt;br /&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;foo&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the above example, clicking the &lt;code&gt;foo&lt;/code&gt; attribute value in the &lt;code&gt;label&lt;/code&gt; element (while holding the &lt;kbd&gt;Cmd&lt;/kbd&gt; or &lt;kbd&gt;Ctrl&lt;/kbd&gt; key) will jump to the &lt;code&gt;input&lt;/code&gt; element and select it. This can be very useful if the elements are far apart in the DOM tree.&lt;/p&gt;
+&lt;p&gt;Note that this also works for other kinds of &amp;quot;links&amp;quot; like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;button form=&amp;quot;formID&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;input list=&amp;quot;datalistID&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;td headers=&amp;quot;header1ID,header2ID&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/jump-to-referenced-elements.gif&quot; alt=&quot;GIF animation showing the Firefox DevTools Inspector panel, the mouse clicks the for attribute of a label element and the selection jumps to the related input element&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Thank you to &lt;a href=&quot;https://twitter.com/mmatuzo&quot;&gt;Manuel Matuzović&lt;/a&gt; for &lt;a href=&quot;https://twitter.com/mmatuzo/status/1542768792836636672&quot;&gt;sharing on twitter&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Fix color contrast issues using the element tooltip</title>
