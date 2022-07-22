@@ -5,11 +5,27 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-07-01T00:00:00.000Z</updated>
+  <updated>2022-07-22T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Copy an element&#39;s JavaScript path</title>
+    <link href="https://devtoolstips.org/tips/en/copy-element-js-path/"/>
+    <updated>2022-07-22T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/copy-element-js-path/</id>
+    <content type="html">&lt;p&gt;JavaScript often needs references to DOM nodes on the page. Getting a reference is sometimes easy with &lt;code&gt;document.getElementById()&lt;/code&gt; or similar. Other times however, a more complicated CSS selector needs to be created and used with &lt;code&gt;document.querySelector()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To automatically get the right JavaScript expression to use for any node:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Find the node you are interested in in the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Right-click the node and select &lt;strong&gt;Copy&lt;/strong&gt; &amp;gt; &lt;strong&gt;Copy JS path&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The right &lt;code&gt;document.querySelector()&lt;/code&gt; expression is now in your clipboard. You can paste it anywhere you need it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/copy-element-js-path.png&quot; alt=&quot;Screenshot of the Elements tool in Edge showing the context menu on an element, with the Copy JS path option&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Jump from a label `for` attribute to the linked input (and more)</title>
