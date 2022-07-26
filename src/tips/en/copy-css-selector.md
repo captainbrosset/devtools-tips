@@ -18,3 +18,5 @@ This will copy the CSS selector for the element, which can then be used in JavaS
 > document.querySelector("#maincontent > div > h2")
   <h2>104 DevTools Tips</h2>
 ```
+
+![Screenshot of Edge DevTools, showing how to access the Copy CSS selector option](/assets/img/copy-css-selector.png)
