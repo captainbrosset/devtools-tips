@@ -5,11 +5,29 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-07-26T00:00:00.000Z</updated>
+  <updated>2022-08-09T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Remove annoying page overlays and other elements</title>
+    <link href="https://devtoolstips.org/tips/en/remove-annoying-overlays/"/>
+    <updated>2022-08-09T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/remove-annoying-overlays/</id>
+    <content type="html">&lt;p&gt;A lot of websites these days get covered with overlays and crammed with lots of ads and other things that make it hard to just read the content of the page.&lt;/p&gt;
+&lt;p&gt;To get rid of an annoying overlay, or any other element for that matter:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open DevTools (press &lt;kbd&gt;F12&lt;/kbd&gt;).&lt;/li&gt;
+&lt;li&gt;Start the inspect tool by clicking the pointer icon in the DevTools toolbar.&lt;/li&gt;
+&lt;li&gt;On the webpage, select the element which you want to remove. As you hover elements, they will get highlighted. Use this highlight to make sure you&#39;re selecting the right element.&lt;/li&gt;
+&lt;li&gt;Now, with the element selected in the &lt;strong&gt;Inspector&lt;/strong&gt;/&lt;strong&gt;Elements&lt;/strong&gt; panel, just press &lt;kbd&gt;Delete&lt;/kbd&gt; on your keyboard to remove the element.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/remove-annoying-overlays.gif&quot; alt=&quot;GIF animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Credits go to &lt;a href=&quot;https://christianheilmann.com/&quot;&gt;Chris Heilmann&lt;/a&gt; for this tip and other cool DevTools tips for non-developers, which you can find here: &lt;a href=&quot;https://codepo8.github.io/web-cheatcodes/&quot;&gt;web cheatcodes&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Copy CSS selector of an element</title>
