@@ -16,3 +16,5 @@ For Chromium browsers (Chrome/Edge),
 
 For Firefox,
 - Inspect the element that uses CSS animations. Open the **Animations** pane from the right sidebar. Trigger the animation to view a synchronized timeline in the pane. Use the draggable widget to scrub through the timeline or jump to a specific point. You can also change the playback speed and do much [more](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/work_with_animations/index.html).
+
+![GIF of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector](/assets/img/inspect-css-animation.png)
