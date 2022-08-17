@@ -31,7 +31,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;p&gt;Inspect an element that uses an animation in the &lt;strong&gt;Inspector&lt;/strong&gt; tool (or a parent of that element) and open the &lt;strong&gt;Animations&lt;/strong&gt; pane from the right sidebar.&lt;/p&gt;
 &lt;p&gt;Next, trigger the animation to view its timeline in the &lt;strong&gt;Animations&lt;/strong&gt; pane.&lt;/p&gt;
 &lt;p&gt;Use the draggable vertical line to scrub through the timeline or jump to a specific point. You can also change the playback speed and do much &lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/work_with_animations/index.html&quot;&gt;more&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/inspect-css-animation.png&quot; alt=&quot;GIF of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/inspect-css-animation.gif&quot; alt=&quot;GIF of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
