@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspect CSS animations</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/inspect-css-animations/">
+    
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/inspect-css-animation.png">
+    <meta property="og:description" content="Inspect CSS animations">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4P6B6NT4Y8');
+    </script>
+  </head>
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+      <h1><a href="/">DevTools Tips</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Inspect CSS animations</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>Modern browser DevTools provide a handy tool to inspect and modify CSS animations, CSS transitions, and Web animations. These tools not only help you debug animations, but also let you modify the various animation properties.</p>
+<p><strong>For Chromium browsers (Chrome/Edge)</strong></p>
+<p>Open the <a href="/tips/en/execute-commands">Command Menu</a> (<code>Cmd+Shift+P</code> or <code>Ctrl+Shift+P</code>), type &quot;Show Animations&quot;, and press Enter.
+This will open the <strong>Animations</strong> tool.</p>
+<p>Next, trigger an animation in the webpage to record it in the tool. The <strong>Animations</strong> tool is divided into 4 sections:</p>
+<ol>
+<li><strong>Controls</strong>: From here, you can clear all currently captured animation groups, or change the speed of the currently selected animation group.</li>
+<li><strong>Overview</strong>: Select an animation group here to inspect and modify it in the Details pane.</li>
+<li><strong>Timeline</strong>: Pause and start an animation from here, or jump to a specific point in the animation.</li>
+<li><strong>Details</strong>: Inspect and modify the currently selected animation group like adding delay or changing timing duration.</li>
+</ol>
+<p><strong>For Firefox</strong></p>
+<p>Inspect an element that uses an animation in the <strong>Inspector</strong> tool (or a parent of that element) and open the <strong>Animations</strong> pane from the right sidebar.</p>
+<p>Next, trigger the animation to view its timeline in the <strong>Animations</strong> pane.</p>
+<p>Use the draggable vertical line to scrub through the timeline or jump to a specific point. You can also change the playback speed and do much <a href="https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/work_with_animations/index.html">more</a>.</p>
+<p><img src="/assets/img/inspect-css-animation.png" alt="GIF of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector"></p>
+
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Pankaj Parashar, Patrick Brosset</span></div>
+        <p class="last-edit">Last edit: <time datetime="2022-08-17T00:00:00.000Z">8/17/2022</time></p></div>
+<script async src="/assets/share.js"></script>
+
+    </main>
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>
+    </footer>
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+  </body>
+</html>

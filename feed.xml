@@ -5,11 +5,35 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-08-09T00:00:00.000Z</updated>
+  <updated>2022-08-17T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Inspect CSS animations</title>
+    <link href="https://devtoolstips.org/tips/en/inspect-css-animations/"/>
+    <updated>2022-08-17T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/inspect-css-animations/</id>
+    <content type="html">&lt;p&gt;Modern browser DevTools provide a handy tool to inspect and modify CSS animations, CSS transitions, and Web animations. These tools not only help you debug animations, but also let you modify the various animation properties.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For Chromium browsers (Chrome/Edge)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Open the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands&quot;&gt;Command Menu&lt;/a&gt; (&lt;code&gt;Cmd+Shift+P&lt;/code&gt; or &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;), type &amp;quot;Show Animations&amp;quot;, and press Enter.
+This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;p&gt;Next, trigger an animation in the webpage to record it in the tool. The &lt;strong&gt;Animations&lt;/strong&gt; tool is divided into 4 sections:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Controls&lt;/strong&gt;: From here, you can clear all currently captured animation groups, or change the speed of the currently selected animation group.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Overview&lt;/strong&gt;: Select an animation group here to inspect and modify it in the Details pane.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Timeline&lt;/strong&gt;: Pause and start an animation from here, or jump to a specific point in the animation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Details&lt;/strong&gt;: Inspect and modify the currently selected animation group like adding delay or changing timing duration.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;For Firefox&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Inspect an element that uses an animation in the &lt;strong&gt;Inspector&lt;/strong&gt; tool (or a parent of that element) and open the &lt;strong&gt;Animations&lt;/strong&gt; pane from the right sidebar.&lt;/p&gt;
+&lt;p&gt;Next, trigger the animation to view its timeline in the &lt;strong&gt;Animations&lt;/strong&gt; pane.&lt;/p&gt;
+&lt;p&gt;Use the draggable vertical line to scrub through the timeline or jump to a specific point. You can also change the playback speed and do much &lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/work_with_animations/index.html&quot;&gt;more&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/inspect-css-animation.png&quot; alt=&quot;GIF of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Remove annoying page overlays and other elements</title>
