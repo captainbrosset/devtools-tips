@@ -27,4 +27,4 @@ Next, trigger the animation to view its timeline in the **Animations** pane.
 
 Use the draggable vertical line to scrub through the timeline or jump to a specific point. You can also change the playback speed and do much [more](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/work_with_animations/index.html).
 
-![GIF of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector](/assets/img/inspect-css-animation.png)
+![GIF of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector](/assets/img/inspect-css-animation.gif)
