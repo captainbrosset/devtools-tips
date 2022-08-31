@@ -5,11 +5,28 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-08-17T00:00:00.000Z</updated>
+  <updated>2022-08-31T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Get the recently selected DOM nodes in the console</title>
+    <link href="https://devtoolstips.org/tips/en/get-recently-selected-dom-nodes-in-console/"/>
+    <updated>2022-08-31T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/get-recently-selected-dom-nodes-in-console/</id>
+    <content type="html">&lt;p&gt;If you type &lt;code&gt;$0&lt;/code&gt; in the &lt;strong&gt;Console&lt;/strong&gt; tool, in any browser, the currently selected DOM node is returned. This is very handy. To learn more, check &lt;a href=&quot;https://devtoolstips.org/tips/en/get-current-element-in-console&quot;&gt;Get the selected element in the console&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On top of this, in Edge and Chrome, the &lt;code&gt;$1&lt;/code&gt;, &lt;code&gt;$2&lt;/code&gt;, &lt;code&gt;$3&lt;/code&gt;, and &lt;code&gt;$4&lt;/code&gt; shortcuts are also defined!&lt;/p&gt;
+&lt;p&gt;They can be used to access the recently selected DOM nodes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$1&lt;/code&gt; returns the DOM node you selected just before the currently selected one.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$2&lt;/code&gt; returns the DOM node you selected before that.&lt;/li&gt;
+&lt;li&gt;And so on!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/get-recently-selected-dom-nodes-in-console.gif&quot; alt=&quot;Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Inspect CSS animations</title>
