@@ -5,11 +5,29 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-09-02T00:00:00.000Z</updated>
+  <updated>2022-09-15T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Simulate a different latitude/longitude geolocation</title>
+    <link href="https://devtoolstips.org/tips/en/simulate-geolocation/"/>
+    <updated>2022-09-15T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/simulate-geolocation/</id>
+    <content type="html">&lt;p&gt;If your website has features that depend on the geographic location of your users, you can test these features by simulating different geolocations right from DevTools!&lt;/p&gt;
+&lt;p&gt;Chrome and Edge DevTools have a built-in way to simulate any location:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In DevTools, press &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; (or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; on mac) to open the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands&quot;&gt;Command Menu&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Type &amp;quot;Sensors&amp;quot; in the command menu and press &lt;kbd&gt;Enter&lt;/kbd&gt;.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Sensors&lt;/strong&gt; tool, find the &lt;strong&gt;Location&lt;/strong&gt; drop-down.&lt;/li&gt;
+&lt;li&gt;Choose any of the preset locations (or create your own by clicking &lt;strong&gt;Manage&lt;/strong&gt;) and refresh the webpage.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the following screenshot, the webpage is google.com and the location was set to São Paulo, Brazil. After a refresh, the google.com homepage shows the text in Portuguese.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/simulate-geolocation.png&quot; alt=&quot;Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Find inactive CSS styles</title>
