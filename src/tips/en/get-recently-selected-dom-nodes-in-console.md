@@ -2,11 +2,11 @@
 date: 2022-08-31
 authors: Patrick Brosset
 title: Get the recently selected DOM nodes in the console
-tags: ["console", "html", "browser:edge", "browser:chrome"]
+tags: ["console", "html", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 If you type `$0` in the **Console** tool, in any browser, the currently selected DOM node is returned. This is very handy. To learn more, check [Get the selected element in the console](/tips/en/get-current-element-in-console).
 
-On top of this, in Edge and Chrome, the `$1`, `$2`, `$3`, and `$4` shortcuts are also defined!
+On top of this, in Edge, Chrome and Safari, the `$1`, `$2`, `$3`, and `$4` shortcuts are also defined!
 
 They can be used to access the recently selected DOM nodes:
 
