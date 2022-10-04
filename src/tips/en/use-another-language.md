@@ -1,6 +1,6 @@
 ---
 date: 2021-06-08
-authors: Patrick Brosset
+authors: Patrick Brosset, Pankaj Parashar
 title: Use DevTools in another language
 tags: ["personalization", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
 ---
