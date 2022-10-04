@@ -19,7 +19,7 @@ And then in DevTools:
 
 Alternatively, you can only change the language of the DevTools using the following steps,
 * Open DevTools Settings (F1 or Shift+?)
-* Preferences > (Under Appearance) Language > Select a language > Reload DevTools
+* **Preferences** > **Appearance** > **Language**. Select a language and then click **Reload DevTools**.
 
 For Safari, you can set the app level language in MacOS by using **System preferences** > **Language & Region** > **Apps**.
 
