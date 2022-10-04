@@ -5,11 +5,40 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-09-29T00:00:00.000Z</updated>
+  <updated>2022-10-04T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Use DevTools in another language</title>
+    <link href="https://devtoolstips.org/tips/en/use-another-language/"/>
+    <updated>2022-10-04T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/use-another-language/</id>
+    <content type="html">&lt;p&gt;If you want to use DevTools in another language than English, you can do it across all major browsers.&lt;/p&gt;
+&lt;p&gt;In Firefox, DevTools will always match the language of the browser, so if you downloaded Firefox in French for instance, then DevTools will be in French too.&lt;/p&gt;
+&lt;p&gt;In Edge &amp;amp; Chrome, you can choose between English and the language the browser is in. To do so,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to Settings.&lt;/li&gt;
+&lt;li&gt;Go to Languages.&lt;/li&gt;
+&lt;li&gt;Add the language of your choice and select &amp;quot;Display Microsoft Edge in this language&amp;quot;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And then in DevTools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the settings (press F1 or click the cog icon).&lt;/li&gt;
+&lt;li&gt;Click the &amp;quot;Match browser language&amp;quot; checkbox.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Alternatively, you can only change the language of the DevTools using the following steps,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open DevTools Settings (&lt;kbd&gt;F1&lt;/kbd&gt; or &lt;kbd&gt;Shift+?&lt;/kbd&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preferences&lt;/strong&gt; &amp;gt; &lt;strong&gt;Appearance&lt;/strong&gt; &amp;gt; &lt;strong&gt;Language&lt;/strong&gt;. Select a language and then click &lt;strong&gt;Reload DevTools&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For Safari, you can set the app level language in MacOS by using &lt;strong&gt;System preferences&lt;/strong&gt; &amp;gt; &lt;strong&gt;Language &amp;amp; Region&lt;/strong&gt; &amp;gt; &lt;strong&gt;Apps&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Add the Safari app and choose the language. Restart Safari.  and then the browser &amp;amp; the DevTools will use the selected language.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/use-another-language.png&quot; alt=&quot;Screenshot of the settings panel in Edge showing a checkbox to match devtools with the browser language&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Access results from recent Console evaluations</title>
@@ -2098,28 +2127,6 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
     <content type="html">&lt;p&gt;When logging &lt;code&gt;performance.timing&lt;/code&gt; events to the console, they appear in alphabetical order since they are properties of the &lt;code&gt;PerformanceTiming&lt;/code&gt; object.&lt;/p&gt;
 &lt;p&gt;In order to view them in order, you can use &lt;code&gt;console.table(performance.timing)&lt;/code&gt; and click on the column heading to sort them by time.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/view-perf-markers-in-order.png&quot; alt=&quot;Screenshot of the console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties&quot; /&gt;&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>Switch DevTools to another language</title>
-    <link href="https://devtoolstips.org/tips/en/use-another-language/"/>
-    <updated>2021-06-08T00:00:00.000Z</updated>
-    <id>https://devtoolstips.org/tips/en/use-another-language/</id>
-    <content type="html">&lt;p&gt;If you want to use DevTools in another language than English, you can do it in Edge and Firefox.&lt;/p&gt;
-&lt;p&gt;In Firefox, DevTools will always match the language of the browser, so if you downloaded Firefox in French for instance, then DevTools will be in French too.&lt;/p&gt;
-&lt;p&gt;In Edge, you can choose between English and the language the browser is in. To do so, in Edge:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Go to Settings.&lt;/li&gt;
-&lt;li&gt;Go to Languages.&lt;/li&gt;
-&lt;li&gt;Add the language of your choice and select &amp;quot;Display Microsoft Edge in this language&amp;quot;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And then in DevTools:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Open the settings (press F1 or click the cog icon).&lt;/li&gt;
-&lt;li&gt;Click the &amp;quot;Match browser language&amp;quot; checkbox.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/use-another-language.png&quot; alt=&quot;Screenshot of the settings panel in Edge showing a checkbox to match devtools with the browser language&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
