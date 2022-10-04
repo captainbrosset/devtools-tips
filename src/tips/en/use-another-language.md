@@ -21,6 +21,8 @@ Alternatively, you can only change the language of the DevTools using the follow
 * Open DevTools Settings (F1 or Shift+?)
 * Preferences > (Under Appearance) Language > Select a language > Reload DevTools
 
-For Safari, you can set app level language in MacOS, using System preferences > Language & Region > Apps > Add the Safari app and choose the language. Restart Safari and then bth the browser & the DevTools will use the selected language.
+For Safari, you can set the app level language in MacOS by using **System preferences** > **Language & Region** > **Apps**.
+
+Add the Safari app and choose the language. Restart Safari.  and then the browser & the DevTools will use the selected language.
 
 ![Screenshot of the settings panel in Edge showing a checkbox to match devtools with the browser language](/assets/img/use-another-language.png)
