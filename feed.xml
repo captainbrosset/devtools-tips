@@ -5,11 +5,31 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-10-04T00:00:00.000Z</updated>
+  <updated>2022-10-14T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Install or create extensions to customize DevTools</title>
+    <link href="https://devtoolstips.org/tips/en/extend-devtools/"/>
+    <updated>2022-10-14T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/extend-devtools/</id>
+    <content type="html">&lt;p&gt;There&#39;s &lt;a href=&quot;https://devtoolstips.org/tips/en/discover-all-tools&quot;&gt;a lot of tools&lt;/a&gt; in DevTools already, probably more than you use. But in some cases, you may need very specific tools that aren&#39;t available by default.&lt;/p&gt;
+&lt;p&gt;Thankfully, DevTools can be extended with custom tools! You can either download extensions others have created to customize the DevTools UI, or even &lt;strong&gt;create your own&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For example, you can download the &lt;a href=&quot;https://github.com/facebook/react/tree/main/packages/react-devtools-extensions#installation&quot;&gt;React DevTools extension&lt;/a&gt; for Chrome, Firefox, or Edge.&lt;/p&gt;
+&lt;p&gt;All browsers have their own extension stores where you can find other DevTools extensions: &lt;a href=&quot;https://chrome.google.com/webstore/category/extensions&quot;&gt;Chrome&lt;/a&gt;, &lt;a href=&quot;https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home&quot;&gt;Edge&lt;/a&gt;, &lt;a href=&quot;https://addons.mozilla.org/firefox/&quot;&gt;Firefox&lt;/a&gt;, &lt;a href=&quot;https://developer.apple.com/safari/extensions/&quot;&gt;Safari&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To go further, you can create your own extensions. Here are a few links to learn about developing your own extensions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://learn.microsoft.com/microsoft-edge/extensions-chromium/developer-guide/devtools-extension&quot;&gt;Create an extension that customizes the DevTools UI&lt;/a&gt; on learn.microsoft.com.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/docs/extensions/mv3/devtools/&quot;&gt;Extending DevTools&lt;/a&gt; on developer.chrome.com.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools&quot;&gt;Extending the developer tools&lt;/a&gt; on MDN.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.apple.com/documentation/safariservices/safari_web_extensions/adding_a_web_development_tool_to_safari_web_inspector&quot;&gt;Adding a web development tool to Safari Web Inspector&lt;/a&gt; on developer.apple.com.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/extend-devtools.png&quot; alt=&quot;Microsoft Edge, with DevTools opened, showing a custom panel&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Use DevTools in another language</title>
