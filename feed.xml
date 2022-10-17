@@ -5,11 +5,60 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-10-14T00:00:00.000Z</updated>
+  <updated>2022-10-17T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Ignore JavaScript code to ease debugging</title>
+    <link href="https://devtoolstips.org/tips/en/ignore-scripts/"/>
+    <updated>2022-10-17T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/ignore-scripts/</id>
+    <content type="html">&lt;p&gt;Debugging JavaScript can quickly get out of hand when you have a lot of code and many functions that call each other.&lt;/p&gt;
+&lt;p&gt;What&#39;s even worse is when a lot of this code isn&#39;t even yours. This can happen when you use frameworks or libraries. You don&#39;t really want to debug the library code, but sometimes it gets in the way when trying to step through your own code while using breakpoints.&lt;/p&gt;
+&lt;p&gt;To help with this, you can ignore third-party scripts (like library source files) in DevTools. When ignored, those files don&#39;t appear in your callstacks when debugging, and you don&#39;t step through them anymore.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To ignore a script in Chrome: right-click anywhere in the file and click &lt;strong&gt;Add script to ignore list&lt;/strong&gt; (&lt;a href=&quot;https://developer.chrome.com/docs/devtools/javascript/reference/#ignore-list&quot;&gt;learn more&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;To ignore a script in Edge: right-click anywhere in the file and click &lt;strong&gt;Mark as Library code&lt;/strong&gt; (&lt;a href=&quot;https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/reference#ignore-a-script-or-pattern-of-scripts&quot;&gt;learn more&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;And, in Firefox: right-click in the file and click &lt;strong&gt;Ignore source&lt;/strong&gt;. Or click the &lt;strong&gt;Ignore source&lt;/strong&gt; button in the bottom left corner of the file (&lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/debugger/how_to/ignore_a_source/index.html&quot;&gt;learn more&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Firefox, you can go even further than this and ignore parts of a script only. Maybe you have a utility function in your file that gets called over and over again but isn&#39;t related to what you&#39;re trying to debug.&lt;/p&gt;
+&lt;p&gt;To ignore part of script only in Firefox:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Select the code you want to ignore.&lt;/li&gt;
+&lt;li&gt;Right-click the select and click &lt;strong&gt;Ignore lines&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/ignore-scripts.png&quot; alt=&quot;Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Edit JavaScript functions while debugging to test a quick fix</title>
+    <link href="https://devtoolstips.org/tips/en/edit-javascript-while-debugging/"/>
+    <updated>2022-10-17T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/edit-javascript-while-debugging/</id>
+    <content type="html">&lt;p&gt;Sometimes, when debugging JavaScript code in DevTools, you may want to test a quick change and see whether that fixes the bug.&lt;/p&gt;
+&lt;p&gt;Usually, this involves the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pause at a breakpoint, or an error.&lt;/li&gt;
+&lt;li&gt;Look at the code and local variables to understand the problem.&lt;/li&gt;
+&lt;li&gt;Go to your editor, make the change to the code, and save it.&lt;/li&gt;
+&lt;li&gt;Go back to the browser, reload the page, hit the breakpoint again (which may involve doing a bunch of other steps first).&lt;/li&gt;
+&lt;li&gt;Check if the fix was right.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now in Chromium-based browsers, you can test those quick fixes much faster without ever leaving DevTools:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pause at a breakpoint, or an error.&lt;/li&gt;
+&lt;li&gt;Look at the code and local variables to understand the problem.&lt;/li&gt;
+&lt;li&gt;Make your change &lt;strong&gt;directly in the source shown in DevTools&lt;/strong&gt;, and press &lt;kbd&gt;Ctrl+S&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+S&lt;/kbd&gt;) to save it.&lt;/li&gt;
+&lt;li&gt;The function is automatically restarted, with the new code, and you can verify your fix right away.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This means you don&#39;t need to leave DevTools, make your change to the original code, reload the page, and wait to hit the breakpoint or error again!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/edit-javascript-while-debugging.gif&quot; alt=&quot;GIf animation showing that it is possible to write code in the Sources panel, while debugging, to test fixes&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Install or create extensions to customize DevTools</title>
