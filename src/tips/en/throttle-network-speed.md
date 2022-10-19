@@ -8,9 +8,13 @@ While you may develop your website on a fast network connection at home or at wo
 
 Testing your site with a slower connection helps you understand how it loads and appears on the screen.
 
-Firefox, Chrome and Edge let you simulate slower network connections to do this. The procedure is the same in all of them:
+Firefox, Chrome and Edge let you simulate slower network connections to do this.
 
-* Go to the Network panel
+To throttle your connection:
+
+* Go to the **Network** tool.
 * Use the dropdown that says `No throttling` and choose any of the other values.
+
+You can also do this from the [device simulation](/tips/en/simulate-devices) mode by using the same dropdown there.
 
 ![Screenshot of the Network panel in Edge showing the network throttling drop-down](/assets/img/throttle-network-speed.png)
