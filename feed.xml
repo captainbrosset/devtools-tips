@@ -5,11 +5,52 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-10-17T00:00:00.000Z</updated>
+  <updated>2022-10-19T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Simulate different devices and screen sizes</title>
+    <link href="https://devtoolstips.org/tips/en/simulate-devices/"/>
+    <updated>2022-10-19T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/simulate-devices/</id>
+    <content type="html">&lt;p&gt;There is a great mode in all major browser developer tools that makes it really easy to test your webpage under different screen sizes and even simulate other devices.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/simulate-devices.gif&quot; alt=&quot;Animation showing how the tool makes it easy to resize the screen size by dragging the mouse&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;To enable it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In Chrome:&lt;/p&gt;
+&lt;p&gt;In DevTools, click &lt;strong&gt;Toggle Device Toolbar&lt;/strong&gt; or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Edge:&lt;/p&gt;
+&lt;p&gt;In DevTools, click &lt;strong&gt;Toggle device emulation&lt;/strong&gt; or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Firefox:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can do it even without opening DevTools: go to &lt;strong&gt;Application menu&lt;/strong&gt; &amp;gt; &lt;strong&gt;More tools&lt;/strong&gt; &amp;gt; &lt;strong&gt;Responsive design mode&lt;/strong&gt;, or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/li&gt;
+&lt;li&gt;Or, if you&#39;re in DevTools, click &lt;strong&gt;Responsive Design Mode&lt;/strong&gt;, or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Safari:&lt;/p&gt;
+&lt;p&gt;In the &lt;strong&gt;Develop&lt;/strong&gt; menu bar item, click &lt;strong&gt;Enter Responsive Design Mode&lt;/strong&gt;, or press &lt;kbd&gt;Ctrl+Command+R&lt;/kbd&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When enabled, you can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Resize the screen size by hand.&lt;/li&gt;
+&lt;li&gt;Choose one of the pre-defined devices to simulate. &lt;strong&gt;Note&lt;/strong&gt;: this option only simulates the screen size, user agent string, and touch events (when necessary), but doesn&#39;t render the page like the real device would. Always test your webpage with the real device too.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/add-new-devices&quot;&gt;Create your own simulated devices&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/take-in-device-screenshots&quot;&gt;Capture screenshots&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/throttle-network-speed&quot;&gt;Throttle the network speed to test your website on slower connections&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;And more.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Ignore JavaScript code to ease debugging</title>
@@ -1789,11 +1830,13 @@ When working on a site that uses a lot of JavaScript and especially when you don
     <id>https://devtoolstips.org/tips/en/throttle-network-speed/</id>
     <content type="html">&lt;p&gt;While you may develop your website on a fast network connection at home or at work, your users may not be able to use it with an equally fast connection. Perhaps they&#39;re in a moving car, or on the subway, or they don&#39;t have access to high-speed internet at their place. Whatever it is, they may experience your site very differently than you do because of this.&lt;/p&gt;
 &lt;p&gt;Testing your site with a slower connection helps you understand how it loads and appears on the screen.&lt;/p&gt;
-&lt;p&gt;Firefox, Chrome and Edge let you simulate slower network connections to do this. The procedure is the same in all of them:&lt;/p&gt;
+&lt;p&gt;Firefox, Chrome and Edge let you simulate slower network connections to do this.&lt;/p&gt;
+&lt;p&gt;To throttle your connection:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Go to the Network panel&lt;/li&gt;
+&lt;li&gt;Go to the &lt;strong&gt;Network&lt;/strong&gt; tool.&lt;/li&gt;
 &lt;li&gt;Use the dropdown that says &lt;code&gt;No throttling&lt;/code&gt; and choose any of the other values.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;You can also do this from the &lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-devices&quot;&gt;device simulation&lt;/a&gt; mode by using the same dropdown there.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/throttle-network-speed.png&quot; alt=&quot;Screenshot of the Network panel in Edge showing the network throttling drop-down&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
