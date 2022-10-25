@@ -51,23 +51,28 @@
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
 <div class="tip-content">
-    <p>The console is great to write JavaScript to read from the document or manipulate it but it's a terrible editor.</p>
-<p>The sources panel (in Edge or Chrome), however, is a full editor and you can use it to write more complex scripts to run in the context of the current page and keep them for later re-use.</p>
-<p>These are called <a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/snippets">snippets</a> and you can access them in the Sources tool on the left hand side (you may have to use the <code>&gt;&gt;</code> to reach them). You can create as many named snippets as you like and remove ones you don't need any more.<br>
-Snippets have full access to the window object and you can use any of the console API methods in them too.</p>
-<p>For example, this script would replace each image in the document with its alternative text:</p>
+    <p>The <strong>Console</strong> is great to write short JavaScript expressions that read from the document or manipulate it. But it's also a terrible editor.</p>
+<p>You can actually use a full editor in Edge, Chrome, and Safari to write more complex scripts and run them in the context of the current page and even keep them for later re-use.</p>
+<p>Note: if you're looking for a way to do this in Firefox, there isn't currently one. However, you can <a href="/tips/en/multi-line-console/">write code on multiple lines</a> which helps a lot already, and even search through previous Console expressions by pressing <code>F9</code> in the <strong>Console</strong> tool.</p>
+<h3>In Edge &amp; Chrome</h3>
+<p>In Chromium-based browsers, these are called <a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/snippets"><strong>snippets</strong></a> and you can access them in the <strong>Sources</strong> tool by clicking <strong>Snippets</strong> in the left hand side toolbar (you may have to use the <code>&gt;&gt;</code> to reach them).</p>
+<p>You can create as many named snippets as you like and remove ones you don't need any more.</p>
+<p>Snippets have full access to the window object and you can use any of the console API methods in them too. For example, this script would replace each image in the document with its alternative text:</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token function">$$</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">i</span><span class="token operator">=></span><span class="token punctuation">{</span><br>   <span class="token keyword">let</span> txt <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'span'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>   txt<span class="token punctuation">.</span>innerText <span class="token operator">=</span> i<span class="token punctuation">.</span>alt<span class="token punctuation">;</span><br>   i<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span><span class="token function">replaceChild</span><span class="token punctuation">(</span>txt<span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span><br>   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">.</span>alt<span class="token punctuation">)</span><span class="token punctuation">;</span> <br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>You can run snippets by pressing <kbd>ctrl</kbd>+<kbd>Enter</kbd> (or <kbd>cmd</kbd>+<kbd>Enter</kbd> on mac) or using the button on the bottom of the editor.</p>
 <p><img src="/assets/img/use-scripts-as-snippets-1.png" alt="The snippets editor in the Sources tool with a snippet open in the editor"></p>
-<p>Even better, you can use the <a href="/tips/en/execute-commands">command menu</a> to run snippets more easily. Simply press <kbd>ctrl</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>P</kbd> on mac) and type <code>!</code> followed by the name of your Snippet.</p>
+<p>Even better, you can use the <a href="/tips/en/execute-commands">Command menu</a> to run snippets more easily. Simply press <kbd>ctrl</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>P</kbd> on mac) and type <code>!</code> followed by the name of your Snippet.</p>
 <p><img src="/assets/img/use-scripts-as-snippets-2.gif" alt="Running a snippet from the Command menu"></p>
+<h3>In Safari</h3>
+<p>In Safari, these scripts are called Console Snippets and can also be created from the <strong>Sources</strong> tool by clicking the <code>+</code> icon at the bottom of the tool, and choosing <strong>Console Snippet...</strong>.</p>
+<p><img src="/assets/img/use-scripts-as-snippets-3.gif" alt="Creating a snippet in Safari"></p>
 
 </div>
-<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset, Christian Heilmann</span></div>
-        <p class="last-edit">Last edit: <time datetime="2021-10-29T00:00:00.000Z">10/29/2021</time></p></div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset, Christian Heilmann, Pankaj Parashar</span></div>
+        <p class="last-edit">Last edit: <time datetime="2022-10-25T00:00:00.000Z">10/25/2022</time></p></div>
 <script async src="/assets/share.js"></script>
 
     </main>
