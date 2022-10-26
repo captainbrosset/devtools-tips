@@ -5,11 +5,63 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-10-25T00:00:00.000Z</updated>
+  <updated>2022-10-26T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Understand flexbox item sizing</title>
+    <link href="https://devtoolstips.org/tips/en/understand-flexbox-item-sizing/"/>
+    <updated>2022-10-26T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/understand-flexbox-item-sizing/</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox&quot;&gt;Flexbox&lt;/a&gt; is a great way to easily distribute elements and empty space in a row or a column, and create interesting layouts.&lt;/p&gt;
+&lt;p&gt;It only takes a couple of CSS properties to create nice layouts that automatically adapt to the available space.&lt;/p&gt;
+&lt;p&gt;But, all of this power also means that the complexity that the browser engine deals with is hidden from you, the developer. While this is, in general, fine, it tends to become an issue when your flexbox layout isn&#39;t doing the things you want it to do.&lt;/p&gt;
+&lt;p&gt;If you&#39;ve ever used flexbox, there might have been times when you&#39;ve wondered: &lt;em&gt;why is this element this big?&lt;/em&gt;, or &lt;em&gt;why is this element not growing to fill that gap?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Firefox has a wonderful tool that can help with this.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Right-click on the flexbox item that you&#39;re interested in and select &lt;strong&gt;Inspect&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;DevTools opens up, and the &lt;strong&gt;Inspector&lt;/strong&gt; tool is displayed, with the corresponding element selected.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Layout&lt;/strong&gt; in the &lt;strong&gt;Inspector&lt;/strong&gt; sidebar.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You now have a diagram that represents the size of the flex item, with some annotations that might be useful for understanding why this particular item has been sized this way.&lt;/p&gt;
+&lt;p&gt;Here is the information that might be displayed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Content size&lt;/strong&gt;: the size the flex item needs to display its content.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Base size&lt;/strong&gt;: the size that corresponds to the &lt;code&gt;flex-basis&lt;/code&gt; property (or &lt;code&gt;width&lt;/code&gt; in row direction, or &lt;code&gt;height&lt;/code&gt; in column direction). That&#39;s the base size that you wanted to give to this element, before any shrinking or growing happened as part of the flexbox layout.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flexibility&lt;/strong&gt;: whether the item grew or shrank and by how much. Note that this can also mean &lt;em&gt;how much the item &lt;strong&gt;wanted&lt;/strong&gt; to grow or shrink&lt;/em&gt;, but it might not correspond to the final size. See below.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Max or min size&lt;/strong&gt;: whether the item has a max or min size defined (e.g. using &lt;code&gt;min-width&lt;/code&gt; or &lt;code&gt;max-width&lt;/code&gt; in row direction). This can &lt;em&gt;clamp&lt;/em&gt; the item, even if it wanted to grow or shrink more.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Final size&lt;/strong&gt;: the actual final size of the item.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/understand-flexbox-item-sizing.png&quot; alt=&quot;Firefox, with the DevTools Inspector tool opened, showing the Layout sidebar that contains the flex item diagram&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Customize keyboard shortcuts</title>
+    <link href="https://devtoolstips.org/tips/en/customize-keyboard-shortcuts/"/>
+    <updated>2022-10-26T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/customize-keyboard-shortcuts/</id>
+    <content type="html">&lt;p&gt;DevTools comes with tons of keyboard shortcuts. Some are well known (like &lt;code&gt;F12&lt;/code&gt; to open DevTools), but there are many others which you might not be familiar with, and which could make your life easier.&lt;/p&gt;
+&lt;p&gt;Chrome and Edge have a screen where you can not only find all of the keyboard shortcuts, but also &lt;strong&gt;customize&lt;/strong&gt; them. Chrome enabled this screen in version 107, and Edge has had it for a longer while.&lt;/p&gt;
+&lt;p&gt;To list the shortcuts:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open DevTools (&lt;code&gt;F12&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Go to the Settings by pressing &lt;code&gt;F1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Shortcuts&lt;/strong&gt; in the sidebar.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can also find the full list of shortcuts here: &lt;a href=&quot;https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/shortcuts/&quot;&gt;Edge&lt;/a&gt;, &lt;a href=&quot;https://developer.chrome.com/docs/devtools/shortcuts/&quot;&gt;Chrome&lt;/a&gt;, &lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/keyboard_shortcuts/index.html&quot;&gt;Firefox&lt;/a&gt;, &lt;a href=&quot;https://webkit.org/web-inspector/keyboard-shortcuts/&quot;&gt;Safari&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To customize the shortcuts:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Hover one of the shortcuts and click the edit icon (the icon looks like a pencil).&lt;/li&gt;
+&lt;li&gt;Press the new key combination you want for this shortcut.&lt;/li&gt;
+&lt;li&gt;You can then save the new shortcut, cancel your change, or revert to the shortcut&#39;s initial value.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/customize-keyboard-shortcuts.png&quot; alt=&quot;The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Re-use scripts as snippets</title>

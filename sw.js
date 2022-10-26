@@ -1,8 +1,8 @@
 self.importScripts('/assets/localforage-1.10.0.min.js');
 
-// UPDATED: 5/12/22
+// UPDATED: 26/10/22
 
-const VERSION = 'v6';
+const VERSION = 'v7';
 const CACHE_NAME = `devtools-tips-${VERSION}`;
 
 const PERIODIC_UPDATE_SUPPORTED = ('periodicSync' in registration);
@@ -20,12 +20,9 @@ const INITIAL_CACHED_RESOURCES = [
 ];
 
 // Cached resources that match the following strings should not be periodically updated.
-// These are the tips html pages themselves, and their images, and a couple of JS deps.
 // They are assumed to almost never change. So the periodic update should not worry about them.
 // Everything else, we try to update on a regular basis, to make sure lists of tips get updated.
 const DONT_UPDATE_RESOURCES = [
-  '/tips/',
-  '/assets/img/',
   '/offline/',
   'prismjs',
   'localforage'

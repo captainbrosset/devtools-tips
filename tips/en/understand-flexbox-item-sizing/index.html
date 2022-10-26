@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understand flexbox item sizing</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/understand-flexbox-item-sizing/">
+    
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/understand-flexbox-item-sizing.png">
+    <meta property="og:description" content="Understand flexbox item sizing">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4P6B6NT4Y8');
+    </script>
+  </head>
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+      <h1><a href="/">DevTools Tips</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">Understand flexbox item sizing</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+</div>
+<div class="tip-content">
+    <p><a href="https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a> is a great way to easily distribute elements and empty space in a row or a column, and create interesting layouts.</p>
+<p>It only takes a couple of CSS properties to create nice layouts that automatically adapt to the available space.</p>
+<p>But, all of this power also means that the complexity that the browser engine deals with is hidden from you, the developer. While this is, in general, fine, it tends to become an issue when your flexbox layout isn't doing the things you want it to do.</p>
+<p>If you've ever used flexbox, there might have been times when you've wondered: <em>why is this element this big?</em>, or <em>why is this element not growing to fill that gap?</em></p>
+<p>Firefox has a wonderful tool that can help with this.</p>
+<ol>
+<li>Right-click on the flexbox item that you're interested in and select <strong>Inspect</strong>.</li>
+<li>DevTools opens up, and the <strong>Inspector</strong> tool is displayed, with the corresponding element selected.</li>
+<li>Click <strong>Layout</strong> in the <strong>Inspector</strong> sidebar.</li>
+</ol>
+<p>You now have a diagram that represents the size of the flex item, with some annotations that might be useful for understanding why this particular item has been sized this way.</p>
+<p>Here is the information that might be displayed:</p>
+<ul>
+<li><strong>Content size</strong>: the size the flex item needs to display its content.</li>
+<li><strong>Base size</strong>: the size that corresponds to the <code>flex-basis</code> property (or <code>width</code> in row direction, or <code>height</code> in column direction). That's the base size that you wanted to give to this element, before any shrinking or growing happened as part of the flexbox layout.</li>
+<li><strong>Flexibility</strong>: whether the item grew or shrank and by how much. Note that this can also mean <em>how much the item <strong>wanted</strong> to grow or shrink</em>, but it might not correspond to the final size. See below.</li>
+<li><strong>Max or min size</strong>: whether the item has a max or min size defined (e.g. using <code>min-width</code> or <code>max-width</code> in row direction). This can <em>clamp</em> the item, even if it wanted to grow or shrink more.</li>
+<li><strong>Final size</strong>: the actual final size of the item.</li>
+</ul>
+<p><img src="/assets/img/understand-flexbox-item-sizing.png" alt="Firefox, with the DevTools Inspector tool opened, showing the Layout sidebar that contains the flex item diagram"></p>
+
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset</span></div>
+        <p class="last-edit">Last edit: <time datetime="2022-10-26T00:00:00.000Z">10/26/2022</time></p></div>
+<script async src="/assets/share.js"></script>
+
+    </main>
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>&copy; 2022 <a href="https://patrickbrosset.com">Patrick Brosset</a></p>
+    </footer>
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+  </body>
+</html>
