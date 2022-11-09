@@ -8,7 +8,7 @@ The **Console** is great to write short JavaScript expressions that read from th
 
 You can actually use a full editor in Edge, Chrome, and Safari to write more complex scripts and run them in the context of the current page and even keep them for later re-use.
 
-Note: if you're looking for a way to do this in Firefox, there isn't currently one. However, you can [write code on multiple lines](/tips/en/multi-line-console/) which helps a lot already, and even search through previous Console expressions by pressing `F9` in the **Console** tool.
+Note: if you're looking for a way to do this in Firefox, there isn't currently one. However, you can [write code on multiple lines](/tips/en/multi-line-console/) which helps a lot already, and even search through previous Console expressions by pressing <kbd>F9</kbd> in the **Console** tool.
 
 ### In Edge & Chrome
 
