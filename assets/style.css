@@ -1,3 +1,58 @@
+/* Themes  */
+:root {
+  --text-color: black;
+  --background-color: white;
+
+  --code-text-color: white;
+  --code-background-color: #333;
+  
+  --keyboard-text-color: black;
+  --keyboard-background-color: #ddd;
+
+  --browser-tag-background-color: #f06;
+  --browser-tag-text-color: black;
+
+  --category-tag-background-color: gold;
+  --category-tag-text-color: black;
+
+  --alternate-background-color: aliceblue;
+  --sub-text-color: #555;
+
+  --accent-color: gold;
+  --accent-color-lighter: rgb(243, 241, 207);
+  --accent-color-darker: #8c7603;
+  --link-color: #28706c;
+  --focus-border-color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: white;
+    --background-color: black;
+  
+    --code-text-color: white;
+    --code-background-color: #333;
+    
+    --keyboard-text-color: black;
+    --keyboard-background-color: #ddd;
+  
+    --browser-tag-background-color: #f06;
+    --browser-tag-text-color: black;
+  
+    --category-tag-background-color: gold;
+    --category-tag-text-color: black;
+  
+    --alternate-background-color: #111;
+    --sub-text-color: #cbcbcb;
+  
+    --accent-color: #bc1b6e;
+    --accent-color-lighter: #e163a4;
+    --accent-color-darker: #740f43;
+    --link-color: #e163a4;
+    --focus-border-color: rgb(223, 223, 223);
+  }
+}
+
 /* Resets */
 
 * {
@@ -25,10 +80,16 @@ body {
   margin: 0;
   max-width: 1000px;
   margin: 0 auto;
+  color: var(--text-color);
+  background: var(--background-color);
 }
 
 :focus-visible {
-  outline: 2px dashed #333;
+  outline: 2px dashed var(--focus-border-color);
+}
+
+a {
+  color: var(--link-color);
 }
 
 /* Header */
@@ -37,7 +98,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: var(--background-color);
   padding: 1rem;
   gap: 1rem;
   position: sticky;
@@ -60,6 +121,12 @@ header h1 a {
   background-size: contain;
 }
 
+@media (prefers-color-scheme: dark) {
+  header h1 a {
+    filter: invert(100);
+  }
+}
+
 header nav {
   margin: 0 0 0 auto;
 }
@@ -75,7 +142,7 @@ header nav {
 .header-shadow-block {
   z-index: 2;
   height: 1rem;
-  background: aliceblue;
+  background: var(--alternate-background-color);
   position: sticky;
 }
 
@@ -96,7 +163,7 @@ header nav {
 }
 
 .header-menu a {
-  color: black;
+  color: var(--text-color);
 }
 
 .header-menu a:hover {
@@ -113,7 +180,7 @@ header nav {
 
 .header-menu>li:hover,
 .header-menu>li:focus-within {
-  background: gold;
+  background: var(--accent-color);
 }
 
 .submenu-reveal {
@@ -125,7 +192,7 @@ header nav {
   left: -4rem;
   min-width: calc(100% + 2rem);
   text-align: center;
-  background: gold;
+  background: var(--accent-color);
   padding: 1rem;
   z-index: 1;
   border-radius: 5px;
@@ -163,9 +230,9 @@ header nav {
   flex: 1;
   flex-basis: 3rem;
   padding: 1rem;
-  border: 2px solid #8c7603;
+  border: 2px solid var(--accent-color-darker);
   border-radius: 4px;
-  background: #ffd70030;
+  background: var(--accent-color-lighter);
   width: 0;
   /* Make font in input the same as elsewhere, and prevent iOS from zooming on tap */
   font: inherit;
@@ -176,7 +243,7 @@ header nav {
 main {
   padding: 2rem;
   line-height: 1.5;
-  background: aliceblue;
+  background: var(--alternate-background-color);
   position: relative;
   top: -1rem;
 }
@@ -214,7 +281,7 @@ main h2.tip-title {
 }
 
 .tip {
-  background: white;
+  background: var(--background-color);
   border-radius: 4px;
   overflow: hidden;
   display: grid;
@@ -225,7 +292,7 @@ main h2.tip-title {
 }
 
 .tip .tip-title {
-	color: black;
+	color: var(--text-color);
 	margin-top: 1rem;
   font-weight: bold;
 }
@@ -237,7 +304,7 @@ main h2.tip-title {
   width: 100%;
   height: 100%;
   max-height: 300px;
-  border-left: 2px solid aliceblue;
+  border-left: 2px solid var(--alternate-background-color);
 }
 
 .tip .tip-info {
@@ -284,7 +351,7 @@ main h2.tip-title {
     grid-column: 1;
     grid-row: 4;
     border: none;
-    border-top: 2px solid aliceblue;
+    border-top: 2px solid var(--alternate-background-color);
     max-height: 150px;
   }
 }
@@ -294,7 +361,7 @@ main h2.tip-title {
 }
 
 .tips .tip.highlighted .highlight {
-  background: gold;
+  background: var(--accent-color);
 }
 
 .tips.searching .tip:not(.highlighted) {
@@ -321,7 +388,7 @@ main h2.tip-title {
 
 .tip-info {
   font-size: smaller;
-  color: #555;
+  color: var(--sub-text-color);
   line-height: 2;
 }
 
@@ -334,7 +401,8 @@ main h2.tip-title {
   font-size: 1rem;
   text-decoration: underline;
   cursor: pointer;
-  background: white;
+  background: var(--background-color);
+  color: var(--text-color);
   padding: .5rem;
 }
 
@@ -350,12 +418,18 @@ main h2.tip-title {
   vertical-align: bottom;
 }
 
+@media (prefers-color-scheme: dark) {
+  .share-button::after {
+    filter: invert(100);
+  }
+}
+
 code {
   font-size: 1rem;
-  background: #333;
+  background: var(--code-background-color);
   padding: .25rem;
   border-radius: 4px;
-  color: white;
+  color: var(--code-text-color);
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -363,7 +437,8 @@ code {
 kbd {
   padding: 2px;
   border-radius: 3px;
-  background: #ddd;
+  background: var(--keyboard-background-color);
+  color: var(--keyboard-text-color);
   box-shadow: 1px 1px 0 0 #bbb;
 }
 
@@ -376,17 +451,18 @@ pre {
 
 .tip-footer {
   margin: 2rem 0 0 0;
+  font-size: smaller;
 }
 
 .tip-footer * {
   margin: 0;
   display: inline;
-  color: #555;
+  color: var(--sub-text-color);
 }
 
 .tip-footer .authors span,
 .tip-footer .last-edit time {
-  color: black;
+  color: var(--text-color);
   margin-left: .25rem;
 }
 
@@ -414,13 +490,13 @@ pre {
 }
 
 .tags li a {
-  background: gold;
-  color: black;
+  background: var(--category-tag-background-color);
+  color: var(--category-tag-text-color);
 }
 
 .browsers li a {
-  background: #f06;
-  color: black;
+  background: var(--browser-tag-background-color);
+  color: var(--browser-tag-text-color);
 }
 
 /* Footer */
@@ -429,18 +505,18 @@ footer {
   text-align: center;
   /* main is relatively positioned at -1rem to account for the header shadow. So reduce the top-padding to 1rem instead of 2rem here */
   padding: 1rem 1rem 2rem 1rem;
-  background: white;
+  background: var(--background-color);
 }
 
 footer a {
-  color: #28706c;
+  color: var(--link-color);
 }
 
 /* Misc. */
 
 .bg-load-tip {
   border: 0;
-  background: gold;
+  background: var(--accent-color);
   padding: .5rem;
 }
 
