@@ -17,4 +17,5 @@ console.log(console);
 Related:
 
 * [console.log() is great, but do you know console.table()? console.group()? console.assert()?](/tips/en/console-table-group-assert)
+* [The console documentation on MDN](https://developer.mozilla.org/docs/Web/API/console).
 * [The Console API specification](https://console.spec.whatwg.org/).
