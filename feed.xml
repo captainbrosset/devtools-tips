@@ -5,11 +5,28 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-10-27T00:00:00.000Z</updated>
+  <updated>2022-11-23T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>List all supported console functions</title>
+    <link href="https://devtoolstips.org/tips/en/list-console-functions/"/>
+    <updated>2022-11-23T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/list-console-functions/</id>
+    <content type="html">&lt;p&gt;You&#39;ve probably already used &lt;code&gt;console.log()&lt;/code&gt; in your code to print debugging values to the &lt;strong&gt;Console&lt;/strong&gt; tool in DevTools. But the &lt;code&gt;console&lt;/code&gt; namespace actually has many other functions too!&lt;/p&gt;
+&lt;p&gt;To list them all, open the &lt;strong&gt;Console&lt;/strong&gt; tool and type:&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;console&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/list-console-functions.png&quot; alt=&quot;Chrome, with the Console panel opened on the side in DevTools, showing the  command result, which is an object containing a list of functions such as assert, clear, debug.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Related:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/console-table-group-assert&quot;&gt;console.log() is great, but do you know console.table()? console.group()? console.assert()?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://console.spec.whatwg.org/&quot;&gt;The Console API specification&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Hide or pin the information tooltip while inspecting page elements</title>
