@@ -23,6 +23,7 @@
 &lt;p&gt;Related:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/console-table-group-assert&quot;&gt;console.log() is great, but do you know console.table()? console.group()? console.assert()?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/docs/Web/API/console&quot;&gt;The console documentation on MDN&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://console.spec.whatwg.org/&quot;&gt;The Console API specification&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
