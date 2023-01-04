@@ -1,20 +1,20 @@
 ---
-date: 2021-09-01
+date: 2023-01-04
 authors: Patrick Brosset
 title: See formatted JSON responses
-tags: ["network", "browser:firefox"]
+tags: ["network", "browser:firefox", "browser:edge"]
 ---
-Firefox comes with a very nice [JSON viewer](https://developer.mozilla.org/en-US/docs/Tools/JSON_viewer) that makes it easy to review responses from your server directly in the browser window.
+Edge and Firefox both have a very nice **JSON viewer** tool that makes it easy to review JSON responses from your server directly in the browser window.
 
-You don't even need to open DevTools.
+You don't even need to open DevTools for it to work! Just enter the URL to a JSON response in a browser tab, in Edge or Firefox, and instead of getting the raw text back, the JSON will be formatted and highlighted.
 
-Just enter the URL to a JSON response in a tab, and instead of getting the raw text back, the JSON will be formatted and a toolbar will appear, with buttons to:
+You can try it out with [this sample JSON response](https://jsonplaceholder.typicode.com/posts/1/comments), or [these JSON test files](https://codepo8.github.io/json-dummy-data/).
 
-* Search within the response
-* See the raw text
-* See the headers
-* Save the file locally
+![The JSON viewer in Microsoft Edge](/assets/img/see-json-responses.png)
 
-![Screenshot of the JSON viewer in Firefox](/assets/img/see-json-responses.png)
+Note that in Firefox, the JSON viewer has a few more options not yet available in Edge:
 
-You can try it out with [this sample JSON response](https://jsonplaceholder.typicode.com/posts/1/comments).
+* Search within the response.
+* See the raw text.
+* See the headers.
+* Save the file locally.
