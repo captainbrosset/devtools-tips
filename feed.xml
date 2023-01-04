@@ -47,6 +47,25 @@
   </entry>
   
   <entry>
+    <title>See formatted JSON responses</title>
+    <link href="https://devtoolstips.org/tips/en/see-json-responses/"/>
+    <updated>2023-01-04T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/see-json-responses/</id>
+    <content type="html">&lt;p&gt;Edge (starting with 110) and Firefox both have a very nice &lt;strong&gt;JSON viewer&lt;/strong&gt; tool that makes it easy to view JSON responses from your server directly in the browser window.&lt;/p&gt;
+&lt;p&gt;You don&#39;t even need to open DevTools for it to work! Just enter the URL to a JSON response in a browser tab, in Edge or Firefox, and instead of getting the raw text back, the JSON will be formatted and highlighted.&lt;/p&gt;
+&lt;p&gt;You can try it out with &lt;a href=&quot;https://jsonplaceholder.typicode.com/posts/1/comments&quot;&gt;this sample JSON response&lt;/a&gt;, or &lt;a href=&quot;https://codepo8.github.io/json-dummy-data/&quot;&gt;these JSON test files&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/see-json-responses.png&quot; alt=&quot;The JSON viewer in Microsoft Edge&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Note that in Firefox, the JSON viewer has a few more options not yet available in Edge:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Search within the response.&lt;/li&gt;
+&lt;li&gt;See the raw text.&lt;/li&gt;
+&lt;li&gt;See the headers.&lt;/li&gt;
+&lt;li&gt;Save the file locally.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Emulate idle detection states</title>
     <link href="https://devtoolstips.org/tips/en/emulate-idle-detection-states/"/>
     <updated>2023-01-04T00:00:00.000Z</updated>
@@ -1882,25 +1901,6 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;p&gt;And that&#39;s it! Now every time this line is executed, an audio beep will be played.&lt;/p&gt;
 &lt;p&gt;You can remove the breakpoint by right-clicking on it and selecting &lt;strong&gt;Delete Breakpoint&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/play-sound-on-js-execution.gif&quot; alt=&quot;GIF animation showing how to add the audio breakpoint in Safari Web Inspector&quot; /&gt;&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>See formatted JSON responses</title>
-    <link href="https://devtoolstips.org/tips/en/see-json-responses/"/>
-    <updated>2021-09-01T00:00:00.000Z</updated>
-    <id>https://devtoolstips.org/tips/en/see-json-responses/</id>
-    <content type="html">&lt;p&gt;Firefox comes with a very nice &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Tools/JSON_viewer&quot;&gt;JSON viewer&lt;/a&gt; that makes it easy to review responses from your server directly in the browser window.&lt;/p&gt;
-&lt;p&gt;You don&#39;t even need to open DevTools.&lt;/p&gt;
-&lt;p&gt;Just enter the URL to a JSON response in a tab, and instead of getting the raw text back, the JSON will be formatted and a toolbar will appear, with buttons to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Search within the response&lt;/li&gt;
-&lt;li&gt;See the raw text&lt;/li&gt;
-&lt;li&gt;See the headers&lt;/li&gt;
-&lt;li&gt;Save the file locally&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/see-json-responses.png&quot; alt=&quot;Screenshot of the JSON viewer in Firefox&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;You can try it out with &lt;a href=&quot;https://jsonplaceholder.typicode.com/posts/1/comments&quot;&gt;this sample JSON response&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
