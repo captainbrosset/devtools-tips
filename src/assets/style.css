@@ -5,7 +5,7 @@
 
   --code-text-color: white;
   --code-background-color: #333;
-  
+
   --keyboard-text-color: black;
   --keyboard-background-color: #ddd;
 
@@ -29,22 +29,22 @@
   :root {
     --text-color: white;
     --background-color: black;
-  
+
     --code-text-color: white;
     --code-background-color: #333;
-    
+
     --keyboard-text-color: black;
     --keyboard-background-color: #ddd;
-  
+
     --browser-tag-background-color: #f06;
     --browser-tag-text-color: black;
-  
+
     --category-tag-background-color: gold;
     --category-tag-text-color: black;
-  
+
     --alternate-background-color: #111;
     --sub-text-color: #cbcbcb;
-  
+
     --accent-color: #bc1b6e;
     --accent-color-lighter: #e163a4;
     --accent-color-darker: #740f43;
@@ -375,8 +375,8 @@ main h2.tip-title {
 /* Tip page */
 
 .tip-content img {
-  width: 80%;
-  max-width: 800px;
+  max-width: min(80%, 800px);
+  width: auto;
   display: block;
 }
 

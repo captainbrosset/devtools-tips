@@ -2,14 +2,14 @@
 date: 2022-04-20
 authors: Patrick Brosset
 title: Visualize and debug CSS cascade layers
-tags: ["css", "browser:chrome", "browser:edge", "browser:firefox", "browser:safari"]
+tags: ["css", "browser:chrome", "browser:edge", "browser:firefox", "browser:safari", "browser:polypane"]
 ---
 
 CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which they apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using `!important` or artificially making selectors have higher specificity.
 
 If you want to learn more about cascade layers, check out [Miriam Suzanne's complete guide on CSS Tricks](https://css-tricks.com/css-cascade-layers/), but here let's see how we can visualize and debug layers in DevTools.
 
-Safari, Firefox, Chrome, and Edge all have support for layers in their **Styles**/**Rules** panels.
+Safari, Firefox, Chrome, Polypane and Edge all have support for layers in their **Styles**/**Rules** panels.
 
 ### All browsers
 

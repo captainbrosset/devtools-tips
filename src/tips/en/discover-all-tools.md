@@ -1,8 +1,8 @@
 ---
 date: 2022-05-13
-authors: Patrick Brosset
+authors: Patrick Brosset, Kilian Valkhof
 title: Discover all the tools
-tags: ["help",  "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["help",  "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
 ---
 
 DevTools is confusing! There's so much functionality packed in such a small UI. Did you know that Chrome DevTools had more than 30 individual tools! Yes, that's right, 30.
@@ -104,5 +104,19 @@ So here is a list of all the panels available in DevTools, per browser! Want to 
   * **Graphics**: _missing, please help by editing [this file](https://github.com/captainbrosset/devtools-tips/blob/main/src/tips/en/discover-all-tools.md)_
   * **Layers**: See the various compositing layers the browser engine created based on your page's DOM and CSS code.
   * **Audit**: Run audits on the page.
+
+* **Polypane** (📕[Docs](https://polypane.app/docs/))
+  * **Meta**: An overview of all meta data, robots.txt, structured data, webmanifest and social media previews
+  * **Outline**: View the heading, landmark, image, link outlines, as well as the focus order of the page.
+  * **Storage**: An overview of the localstorage, sessionstorage and cookies of the page.
+  * **Accessibility**: Run an automated accessibility scan.
+  * **Source**: Show a formatted version of the HTML source of the page along with HTML validation.
+  * **Elements**: View the DOM tree, authored and computed styles, edit CSS, get layout and accessibility information.
+  * **Console**: View log messages, errors, and execute JavaScript expressions.
+  * **Live CSS**: Inject CSS into the current page.
+  * **Devtools**: Access the regular Chromium devtools. _(See above)_
+  * **Browse**: Open a second URL along your main one
+  * **Workspaces**: Save and restore different sets of devices to test on.
+
 
 ![The list of most tools in Edge DevTools, just to illustrate how many there are](/assets/img/discover-all-tools.png)

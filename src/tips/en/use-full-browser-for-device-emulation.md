@@ -1,10 +1,12 @@
 ---
 date: 2022-02-09
-authors: Patrick Brosset, Christian Heilmann
+authors: Patrick Brosset, Christian Heilmann, Kilian Valkhof
 title: Use full browser window for device emulation
-tags: ["testing", "productivity", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["testing", "productivity", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
 ---
-Emulating different devices in the browser is incredibly useful. It gets tricky when you are on a device with limited resolution as the emulated device needs to be zoomed down to fit the screen as a large part of the window is taken up by the Developer Tools.  
+Emulating different devices in the browser is incredibly useful. It gets tricky when you are on a device with limited resolution as the emulated device needs to be zoomed down to fit the screen as a large part of the window is taken up by the Developer Tools.
+
+In Polypane, responsive design mode with multiple devices is the default.
 
 Firefox has a keyboard shortcut to show device emulation without Developer Tools - <kbd>command</kbd> + <kbd>option</kbd> + <kbd>M</kbd> on Mac and <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>M</kbd> on Windows/Linux.
 

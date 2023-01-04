@@ -1,6 +1,6 @@
 ---
 date: 2023-01-04
-authors: Patrick Brosset, Kilian Valkhof
+authors: ["Patrick Brosset", "Kilian Valkhof"]
 title: See formatted JSON responses
 tags: ["network", "browser:firefox", "browser:edge", "browser:polypane"]
 ---

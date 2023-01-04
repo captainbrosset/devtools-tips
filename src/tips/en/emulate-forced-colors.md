@@ -1,9 +1,11 @@
 ---
 date: 2022-03-15
-authors: Patrick Brosset
+authors: Patrick Brosset, Kilian Valkhof
 title: Emulate forced-color mode
-tags: ["css", "accessibility", "browser:edge", "browser:chrome"]
+tags:
+  ["css", "accessibility", "browser:edge", "browser:chrome", "browser:polypane"]
 ---
+
 Operating systems offer an accessibility feature where the colors shown on the screen are converted to offer higher contrast. When you use this feature, it impacts all the content on the screen: your desktop, folders, native apps, web browser and its web content, etc.
 
 This means web pages are not displayed in their usual colors, but in a high-contrast mode instead. Learn more about the Windows high-contrast mode and how to style a website with it [here](https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/) and about the `forced-colors` media query [here](https://developer.mozilla.org/docs/Web/CSS/@media/forced-colors).
@@ -12,8 +14,16 @@ If you are not using this high-contrast mode yourself though, you won't know how
 
 In Edge or Chrome:
 
-* Open the [Command Menu](/tips/en/execute-commands/): <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> on mac).
-* Type **Rendering** and press <kbd>Enter</kbd>.
-* In the **Rendering** panel, scroll down to the **Emulate CSS media feature forced-colors** and activate it from the drop-down.
+- Open the [Command Menu](/tips/en/execute-commands/): <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> on mac).
+- Type **Rendering** and press <kbd>Enter</kbd>.
+- In the **Rendering** panel, scroll down to the **Emulate CSS media feature forced-colors** and activate it from the drop-down.
 
 ![Screenshot of Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools](/assets/img/emulate-forced-colors.png)
+
+In Polypane:
+
+- Open the **Emulation options**.
+- Toggle **Forced colors**.
+- (Optionally) Toggle the `prefers-color-scheme` to test both a light and dark forced color mode.
+
+![Screenshot of Polypane showing a webpage in forced-colors mode, with the Emulation options opened above it, the "forced colors" option is active and highlighted](/assets/img/emulate-forced-colors-polypane.png)
