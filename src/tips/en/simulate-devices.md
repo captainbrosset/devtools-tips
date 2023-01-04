@@ -31,6 +31,8 @@ To enable it:
 
   This is the default mode in Polypane. Unique to Polypane is that it allows you to see multiple differeny sizes side-by-side.
 
+  ![Polypane showing three different devices side-by-side.](/assets/img/simulate-devices-polypane.png)
+
 When enabled, you can:
 
 * Resize the screen size by hand.
