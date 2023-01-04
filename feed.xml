@@ -5,11 +5,65 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2022-12-14T00:00:00.000Z</updated>
+  <updated>2023-01-04T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Test your PWA protocol handlers</title>
+    <link href="https://devtoolstips.org/tips/en/test-pwa-protocol-handlers/"/>
+    <updated>2023-01-04T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/test-pwa-protocol-handlers/</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/docs/Web/Progressive_web_apps&quot;&gt;Progressive Web Apps (PWA)&lt;/a&gt; can register themselves to handle URIs with pre-defined or custom protocols (such as &lt;code&gt;mailto&lt;/code&gt;, &lt;code&gt;geo&lt;/code&gt;, or &lt;code&gt;web+foo&lt;/code&gt;). This is a great capability that makes it possible for installed PWAs to feel more like real apps.&lt;/p&gt;
+&lt;p&gt;To learn more about how to register a PWA as a protocol handler, see &lt;a href=&quot;https://learn.microsoft.com/microsoft-edge/progressive-web-apps-chromium/how-to/handle-protocols&quot;&gt;Handle protocols in Progressive Web Apps&lt;/a&gt; or  &lt;a href=&quot;https://developer.chrome.com/articles/url-protocol-handler/&quot;&gt;URL protocol handler registration for PWAs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, testing your protocol handlers can be difficult. Thankfully, DevTools in both Chrome and Edge, provide a nice little tool that makes it all a lot easier.&lt;/p&gt;
+&lt;p&gt;To test your handler:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Make sure your PWA is installed first.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open your PWA in a browser tab, and open DevTools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;strong&gt;Application&lt;/strong&gt; tool and then click &lt;strong&gt;Manifest&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Scroll down to the &lt;strong&gt;Protocol Handlers&lt;/strong&gt; section.&lt;/p&gt;
+&lt;p&gt;If you see a green checkmark, that means your protocol handlers were detected correctly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the dropdown to select the protocol you want to test, and the textfield to type the rest of the URI.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Test protocol&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Your installed PWA should now be launched automatically, and you can test your protocol handling code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/test-pwa-protocol-handlers.png&quot; alt=&quot;Microsoft Edge, with the Application tool opened on the side, showing the Protocol Handlers section&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Emulate idle detection states</title>
+    <link href="https://devtoolstips.org/tips/en/emulate-idle-detection-states/"/>
+    <updated>2023-01-04T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/emulate-idle-detection-states/</id>
+    <content type="html">&lt;p&gt;The &lt;a href=&quot;https://developer.mozilla.org/docs/Web/API/Idle_Detection_API&quot;&gt;Idle Detection API&lt;/a&gt; is useful for web developers to detect when the user isn&#39;t interacting with their device. This can be useful for chat applications, for example, to mark the user as away.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: this API is only available on Chrome, Opera, and Samsung Internet.&lt;/p&gt;
+&lt;p&gt;The problem is testing the code that uses this API can be tricky, or even impossible. In order for your device to be idle, you need to stop using the mouse and keyboard. But in order to check that the code works correctly, you need to interact with the browser DevTools in some way.&lt;/p&gt;
+&lt;p&gt;Thankfully, Chrome has a nice little feature in its DevTools to emulate various idle detection states. Here&#39;s how:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Using the &lt;strong&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands&quot;&gt;Command Menu&lt;/a&gt;&lt;/strong&gt;, open the &lt;strong&gt;Sensors&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Scroll down and look for the &lt;strong&gt;Emulate Idle Detector state&lt;/strong&gt; section.&lt;/li&gt;
+&lt;li&gt;Choose one of the states to test if your code does what it&#39;s supposed to.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/emulate-idle-detection-states.png&quot; alt=&quot;Chrome DevTools&#39; Sensors panel, showing a drop-down list with the different states that can be emulated&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.chrome.com/articles/idle-detection/#devtools-support&quot;&gt;Learn more about the Idle Detection API and the corresponding DevTools support&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Find the most expensive CSS selectors</title>
