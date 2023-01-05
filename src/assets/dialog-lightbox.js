@@ -27,15 +27,16 @@ function createDialogs(selector) {
     const form = dialog.querySelector("form");
     const span = dialog.querySelector("form > span");
 
-    dialog.style.setProperty("width", img.naturalWidth + "px");
-
     span.before(img.cloneNode());
     span.textContent = img.getAttribute("alt");
     img.before(button);
     button.append(img);
     button.after(dialog);
 
-    button.addEventListener("click", () => dialog.showModal());
+    button.addEventListener("click", () => {
+      dialog.style.setProperty("width", img.naturalWidth + "px");
+      dialog.showModal();
+    });
 
     dialog.addEventListener(
       "click",
