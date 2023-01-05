@@ -575,14 +575,14 @@ footer a {
   padding: 3%;
   border-radius: 20%;
   background-origin: padding-box;
-  background: #f061 url(/assets/zoom.svg) no-repeat center/80%;
+  background: var(--accent-color-lighter) url(/assets/zoom.svg) no-repeat
+    center/80%;
   z-index: 1;
   transition: 0.25s ease-in-out background;
-  backdrop-filter: blur(4px);
 }
 
 .lightbox-button:hover::after {
-  background-color: #f062;
+  background-color: var(--accent-color);
 }
 
 .lightbox {
@@ -652,11 +652,10 @@ footer a {
   padding: 0 1rem;
   border-bottom-left-radius: 1rem;
   border-top-right-radius: 5px;
-  background-color: #f061;
-  color: #f06;
-  backdrop-filter: blur(4px);
+  background-color: var(--accent-color-lighter);
+  color: var(--accent-color-darker);
   transition: 0.25s ease-in-out background;
 }
 .lightbox button:hover {
-  background-color: #f062;
+  background-color: var(--accent-color);
 }
