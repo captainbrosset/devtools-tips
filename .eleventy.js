@@ -78,19 +78,17 @@ module.exports = function (eleventyConfig) {
     return lastDate.toISOString();
   });
 
-eleventyConfig.addShortcode("formatAuthors", authors => {
-  const authorArray = Array.isArray(authors)
-    ? authors
-    : [...authors.split(", ")];
+  eleventyConfig.addShortcode("formatAuthors", authors => {
+    const authorArray = Array.isArray(authors)
+      ? authors
+      : authors.split(",").map(a => a.trim());
 
-  return authorArray
-    .map(author =>
-      AUTHORS[author] ? `<a href="${AUTHORS[author]}">${author}</a>` : author
-    )
-    .join(", ");
-});
-
-
+    return authorArray
+      .map(author =>
+        AUTHORS[author] ? `<a href="${AUTHORS[author]}">${author}</a>` : author
+      )
+      .join(", ");
+  });
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
