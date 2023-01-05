@@ -453,7 +453,9 @@ code {
   border-radius: 4px;
   color: var(--code-text-color);
   vertical-align: middle;
-  white-space: nowrap;
+  white-space: pre-wrap;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 kbd {
