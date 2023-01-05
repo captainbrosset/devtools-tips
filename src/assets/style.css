@@ -55,8 +55,7 @@
   }
 }
 
-/* Resets */
-
+/* Screenreader-only class. Makes content available for assistive technologies while hiding it visually */
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
@@ -71,6 +70,7 @@
   white-space: nowrap !important; /* 3 */
 }
 
+/* Resets */
 * {
   box-sizing: border-box;
 }
