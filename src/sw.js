@@ -2,7 +2,7 @@ self.importScripts('/assets/localforage-1.10.0.min.js');
 
 // UPDATED: 05/01/2023
 
-const VERSION = 'v8';
+const VERSION = 'v9';
 const CACHE_NAME = `devtools-tips-${VERSION}`;
 
 const PERIODIC_UPDATE_SUPPORTED = ('periodicSync' in registration);
@@ -48,44 +48,31 @@ self.addEventListener('install', event => {
   })());
 });
 
-// On fetch, we have a cache-first strategy, where we look for resources in the cache first
-// and only on the network if the resource is not found there.
-// The exception to this is: if periodicSync is not supported, then we go to the network first
-// for all lists of tips (/, /browser, and /tag), otherwise users can't see new tips there.
-// When periodicSync is supported, we just always go to cache and update the cache in the background at intervals.
+// On fetch, we have a network-first strategy, where we look for resources on the network first
+// and only fall back to the cache if the network fails.
 self.addEventListener('fetch', event => {
-  const isTipListingPage = event.request.url === registration.scope ||
-                           event.request.url.includes('/browser') ||
-                           event.request.url.includes('/tag');
-  const goNetworkFirst = isTipListingPage && !PERIODIC_UPDATE_SUPPORTED;
-
   event.respondWith((async () => {
     const cache = await caches.open(CACHE_NAME);
 
-    // Try the cache first.
-    const cachedResponse = await cache.match(event.request);
-    if (cachedResponse !== undefined && !goNetworkFirst) {
-      // Cache hit, let's send the cached resource.
-      return cachedResponse;
-    } else {
-      // Nothing in cache, or we were told to go network first, let's go to the network.
+    try {
+      const fetchResponse = await fetch(event.request);
+      if (!event.request.url.includes('google-analytics') && !event.request.url.includes('browser-sync')) {
+        // Save the new resource in the cache (responses are streams, so we need to clone in order to use it here).
+        cache.put(event.request, fetchResponse.clone());
+      }
 
-      try {
-        const fetchResponse = await fetch(event.request);
-        if (!event.request.url.includes('google-analytics') && !event.request.url.includes('browser-sync')) {
-          // Save the new resource in the cache (responses are streams, so we need to clone in order to use it here).
-          cache.put(event.request, fetchResponse.clone());
-        }
-
-        // And return it.
-        return fetchResponse;
-      } catch (e) {
-        // Fetching didn't work let's go to the error page.
-        if (event.request.mode === 'navigate') {
-          await rememberRequestedTip(event.request.url);
-          const errorResponse = await cache.match('/offline/');
-          return errorResponse;
-        }
+      // And return it.
+      return fetchResponse;
+    } catch (e) {
+      // Fetching didn't work, try the cache.
+      const cachedResponse = await cache.match(event.request);
+      if (cachedResponse) {
+        return cachedResponse;
+      } else if (event.request.mode === 'navigate') {
+        // Couldn't find anything in the cache, and this is a request to a page, let's go to the error page.
+        await rememberRequestedTip(event.request.url);
+        const errorResponse = await cache.match('/offline/');
+        return errorResponse;
       }
     }
   })());
