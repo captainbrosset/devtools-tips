@@ -2,7 +2,7 @@
 date: 2022-03-10
 authors: Patrick Brosset
 title: Send feedback, ask for features and report bugs
-tags: ["help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
+tags: ["help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox", "browser:polypane"]
 ---
 <img src="/assets/img/send-feedback-about-devtools.png" alt="A feedback illustration showing a stick figure with a speech bubble" style="width:50px;">
 
@@ -28,3 +28,5 @@ Here are a few ways you can report bugs, ask questions or request features:
   * But if you have ideas, questions, feedback, and want to have longer conversations, use the [Edge DevTools feedback repository](https://github.com/MicrosoftEdge/DevTools/) instead.
 * **Chrome DevTools**:
   * On top of the Chromium bug tracker, the team also listens for feedback on [the devtools-dev mailing list](https://www.chromium.org/teams/devtools) as well as on twitter at [@ChromeDevTools](https://twitter.com/ChromeDevTools).
+* **Polypane**:
+    * In the Help menu select "Chat with us" to chat with Polypane directly, or click "Get Support" to email them. On top of chat and email, the team also listens for feedback on twitter at [@polypane](https://twitter.com/Polypane).

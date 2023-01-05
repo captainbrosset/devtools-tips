@@ -18,6 +18,9 @@
     }
     return browsers.sort();
   },
+  formatAuthor: function(author) {
+    return Array.isArray(author) ? author.join(", ") : author;
+  },
   extractImage: function(content) {
     const match = content.match(/<img src="([^"]+)"/);
     return match ? 'http://devtoolstips.org' + match[1] : 'http://devtoolstips.org/assets/logo.png';

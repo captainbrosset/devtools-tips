@@ -1,8 +1,8 @@
 ---
 date: 2022-05-11
-authors: Patrick Brosset
+authors: Patrick Brosset, Kilian Valkhof
 title: Copy an elements styles
-tags: ["css", "export", "browser:edge", "browser:chrome"]
+tags: ["css", "export", "browser:edge", "browser:chrome", "browser:polypane"]
 ---
 
 You can extract all the styles of an element in one go by using the **Copy styles** feature.
@@ -15,3 +15,10 @@ No need to go through all CSS rules and properties that apply to the element in 
 1. Paste the result in a text editor and use however you want.
 
 ![Screenshot of the Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.](/assets/img/copy-element-styles.png)
+
+In Polypane,
+
+1. Select the element you want to extract the styles from by right-clicking on it and choosing **Inspect**.
+1. In the **Elements Panel** go to the **Computed** tab
+1. Click **Copy Styles**
+2. Paste the result in a text editor and use however you want.

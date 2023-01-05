@@ -1,8 +1,8 @@
 ---
 date: 2022-03-03
-authors: Patrick Brosset
+authors: Patrick Brosset, Kilian Valkhof
 title: Detect low color contrast issues
-tags: ["accessibility", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["accessibility", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
 ---
 Low color vision is very common, and your choice of text and background colors can negatively impact people's experience of your website. What seems legible to you might not be for everyone.
 
@@ -25,3 +25,11 @@ DevTools comes with a number of features to help you detect possible color contr
   * Click each item in the table and review the color contrast ratio.
 
   ![Screenshot of the Accessibility panel in Firefox, showing the list of contrast issues](/assets/img/detect-low-color-contrast-accessibility-panel.png)
+
+* In Polypane, you can find all contrast issues with the **Color Contrast debug tool**.
+  * Open the **Debug Tools** settings of a pane.
+  * Find **Contrast Checker** Under **Accessibility**.
+  * Select whether you want to check for WCAG **AA** or **AAA** compliance.
+  * Contrast issues are displayed inline on the page. Where available, Polypane suggests improved colors.
+
+  ![Screenshot of a Polypane Pane with the Contrast checker debug tool active](/assets/img/detect-low-color-contrast-inline.png)
