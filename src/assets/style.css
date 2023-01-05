@@ -16,7 +16,6 @@
   --category-tag-text-color: black;
 
   --alternate-background-color: aliceblue;
-  --alternate-background-color-transparent: rgb(240 248 255/0.2);
   --sub-text-color: #555;
 
   --accent-color: gold;
@@ -48,7 +47,6 @@
     --category-tag-text-color: black;
 
     --alternate-background-color: #111;
-    --alternate-background-color-transparent: rgb(33 33 33/0.2);
     --sub-text-color: #cbcbcb;
 
     --accent-color: #bc1b6e;
