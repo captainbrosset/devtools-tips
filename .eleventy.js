@@ -4,6 +4,8 @@ const embedYouTube = require("eleventy-plugin-youtube-embed");
 const embedTwitter = require("eleventy-plugin-embed-twitter");
 const striptags = require("striptags");
 
+const AUTHORS = require("./src/data/AUTHORS.json");
+
 function extractImage(article) {
   if (!article.hasOwnProperty("templateContent")) {
     console.warn(
@@ -74,6 +76,18 @@ module.exports = function (eleventyConfig) {
     }
 
     return lastDate.toISOString();
+  });
+
+  eleventyConfig.addShortcode("formatAuthors", authors => {
+    const authorArray = Array.isArray(authors)
+      ? authors
+      : authors.split(",").map(a => a.trim());
+
+    return authorArray
+      .map(author =>
+        AUTHORS[author] ? `<a href="${AUTHORS[author]}">${author}</a>` : author
+      )
+      .join(", ");
   });
 
   eleventyConfig.addPlugin(syntaxHighlight);

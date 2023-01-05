@@ -23,7 +23,7 @@ templateEngineOverride: njk
 </div>
 <div class="tip-footer">
     {%- if not isTweet -%}
-        <div class="authors">Authors: <span>{{ formatAuthor(authors) }}</span></div>
+        <div class="authors">Authors: <span>{% formatAuthors authors %}</span></div>
         <p class="last-edit">Last edit: <time datetime="{{ page.date.toISOString() }}">{{ page.date.toLocaleDateString() }}</time></p>
     {%- endif -%}
 </div>
