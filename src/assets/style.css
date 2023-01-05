@@ -26,6 +26,10 @@
   --focus-border-color: #333;
 }
 
+::backdrop {
+  --lightbox-backdrop: #fff;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: white;
@@ -52,6 +56,10 @@
     --accent-color-darker: #740f43;
     --link-color: #e163a4;
     --focus-border-color: rgb(223, 223, 223);
+  }
+
+  ::backdrop {
+    --lightbox-backdrop: #111;
   }
 }
 
@@ -599,18 +607,6 @@ footer a {
       opacity: 1;
     }
   }
-
-  .lightbox[open]::backdrop {
-    animation: blur 0.25s ease-in-out normal;
-  }
-  @keyframes blur {
-    from {
-      backdrop-filter: blur(0px);
-    }
-    to {
-      backdrop-filter: blur(2px);
-    }
-  }
 }
 
 :root:has(.lightbox[open]) {
@@ -618,8 +614,7 @@ footer a {
 }
 
 .lightbox::backdrop {
-  background: var(--alternate-background-color-transparent);
-  backdrop-filter: blur(2px);
+  background: var(--lightbox-backdrop);
 }
 
 .lightbox form {
