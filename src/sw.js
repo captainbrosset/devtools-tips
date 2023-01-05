@@ -1,8 +1,8 @@
 self.importScripts('/assets/localforage-1.10.0.min.js');
 
-// UPDATED: 26/10/22
+// UPDATED: 05/01/2023
 
-const VERSION = 'v7';
+const VERSION = 'v8';
 const CACHE_NAME = `devtools-tips-${VERSION}`;
 
 const PERIODIC_UPDATE_SUPPORTED = ('periodicSync' in registration);
