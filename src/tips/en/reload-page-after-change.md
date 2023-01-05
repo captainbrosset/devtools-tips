@@ -11,11 +11,11 @@ Polypane contains a **Live reload** panel that lets you target a folder, and any
 
 Open the **Live Reload** panel:
 
-1. Right-click the **reload** button
-2. Select "Live reload"
-3. In the configuration screen (See below) select a directory and click start watching
-4. The reload button will show a lightning bolt when live reloading is active
+1. Right-click the **reload** button.
+2. Select **Live reload**.
+3. In the configuration screen (see screenshot below) select a directory and click **Start watching**.
+4. The reload button will show a lightning bolt when live reloading is active.
 
 ![Polypane with the live reload panel and reload context menu visible](/assets/img/reload-page-after-change.png)
 
-There are specific options to tweak, like which file system events to listen for, how long to wait before reloading (to account for things like SASS compilation time) and whether to show notifications of which files changed. [learn more here](https://polypane.app/docs/live-auto-reloading/).
+There are specific options to tweak, like which file system events to listen for, how long to wait before reloading (to account for things like SASS compilation time) and whether to show notifications of which files changed. [Learn more here](https://polypane.app/docs/live-auto-reloading/).
