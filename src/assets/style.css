@@ -16,6 +16,7 @@
   --category-tag-text-color: black;
 
   --alternate-background-color: aliceblue;
+  --alternate-background-color-transparent: rgb(240 248 255/0.2);
   --sub-text-color: #555;
 
   --accent-color: gold;
@@ -43,6 +44,7 @@
     --category-tag-text-color: black;
 
     --alternate-background-color: #111;
+    --alternate-background-color-transparent: rgb(33 33 33/0.2);
     --sub-text-color: #cbcbcb;
 
     --accent-color: #bc1b6e;
@@ -54,6 +56,20 @@
 }
 
 /* Resets */
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
 
 * {
   box-sizing: border-box;
@@ -170,16 +186,16 @@ header nav {
   text-decoration-thickness: 2px;
 }
 
-.header-menu>li {
-  padding: .5rem;
+.header-menu > li {
+  padding: 0.5rem;
   border-radius: 5px;
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.header-menu>li:hover,
-.header-menu>li:focus-within {
+.header-menu > li:hover,
+.header-menu > li:focus-within {
   background: var(--accent-color);
 }
 
@@ -188,7 +204,7 @@ header nav {
   position: absolute;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  top: calc(100% - .25rem);
+  top: calc(100% - 0.25rem);
   left: -4rem;
   min-width: calc(100% + 2rem);
   text-align: center;
@@ -204,8 +220,8 @@ header nav {
   }
 }
 
-.header-menu>li:hover .submenu-reveal,
-.header-menu>li:focus-within .submenu-reveal {
+.header-menu > li:hover .submenu-reveal,
+.header-menu > li:focus-within .submenu-reveal {
   display: grid;
 }
 
@@ -292,8 +308,8 @@ main h2.tip-title {
 }
 
 .tip .tip-title {
-	color: var(--text-color);
-	margin-top: 1rem;
+  color: var(--text-color);
+  margin-top: 1rem;
   font-weight: bold;
 }
 
@@ -308,8 +324,8 @@ main h2.tip-title {
 }
 
 .tip .tip-info {
-	display: grid;
-	grid-template-columns: max-content 1fr;
+  display: grid;
+  grid-template-columns: max-content 1fr;
   place-content: start;
   margin-bottom: 1rem;
   padding: 0;
@@ -403,12 +419,12 @@ main h2.tip-title {
   cursor: pointer;
   background: var(--background-color);
   color: var(--text-color);
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .share-button::after {
-  content: '';
-  margin-left: .25rem;
+  content: "";
+  margin-left: 0.25rem;
   background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtbmFtZT0iTGF5ZXIgMSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHg9IjBweCIgeT0iMHB4Ij48dGl0bGU+QXJ0Ym9hcmQgNDwvdGl0bGU+PGc+PHBhdGggZD0iTTM0LDc4SDY2QTEyLDEyLDAsMCwwLDc4LDY2VjU0SDcwVjY2YTQsNCwwLDAsMS00LDRIMzRhNCw0LDAsMCwxLTQtNFYzNGE0LDQsMCwwLDEsNC00SDQ2VjIySDM0QTEyLDEyLDAsMCwwLDIyLDM0VjY2QTEyLDEyLDAsMCwwLDM0LDc4WiI+PC9wYXRoPjxwYXRoIGQ9Ik00Mi4zNCw1Miw0OCw1Ny42NmwyMi0yMlY0Nmg4VjI2YTQsNCwwLDAsMC00LTRINTR2OEg2NC4zNFoiPjwvcGF0aD48L2c+PC9zdmc+");
   display: inline-block;
   width: 17px;
@@ -427,7 +443,7 @@ main h2.tip-title {
 code {
   font-size: 1rem;
   background: var(--code-background-color);
-  padding: .25rem;
+  padding: 0.25rem;
   border-radius: 4px;
   color: var(--code-text-color);
   vertical-align: middle;
@@ -463,7 +479,7 @@ pre {
 .tip-footer .authors span,
 .tip-footer .last-edit time {
   color: var(--text-color);
-  margin-left: .25rem;
+  margin-left: 0.25rem;
 }
 
 .tip-footer .last-edit::before {
@@ -481,8 +497,8 @@ pre {
 
 .tags a,
 .browsers a {
-  padding: .25rem;
-  margin: 0 .25rem;
+  padding: 0.25rem;
+  margin: 0 0.25rem;
   display: inline-block;
   text-decoration: none;
   border-radius: 3px;
@@ -517,11 +533,135 @@ footer a {
 .bg-load-tip {
   border: 0;
   background: var(--accent-color);
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .skip-link {
   position: absolute;
   top: -9999px;
   left: -9999px;
+}
+
+/* Lightbox */
+
+.lightbox-button {
+  position: relative;
+  background: none;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  max-width: min(80%, 800px);
+  width: auto;
+}
+.lightbox-button > img {
+  max-width: 100%;
+}
+.lightbox-button::after {
+  content: "";
+  width: 2%;
+  aspect-ratio: 1;
+  display: block;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  padding: 3%;
+  border-radius: 20%;
+  background-origin: padding-box;
+  background: #f061 url(/assets/zoom.svg) no-repeat center/80%;
+  z-index: 1;
+  transition: 0.25s ease-in-out background;
+  backdrop-filter: blur(4px);
+}
+
+.lightbox-button:hover::after {
+  background-color: #f062;
+}
+
+.lightbox {
+  border: none;
+  background: none;
+  padding: 0;
+  max-width: 98vw;
+  max-height: 98vh;
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .lightbox[open] {
+    animation: show 0.25s ease-in-out normal;
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .lightbox[open]::backdrop {
+    animation: blur 0.25s ease-in-out normal;
+  }
+  @keyframes blur {
+    from {
+      backdrop-filter: blur(0px);
+    }
+    to {
+      backdrop-filter: blur(2px);
+    }
+  }
+}
+
+:root:has(.lightbox[open]) {
+  overflow: clip;
+}
+
+.lightbox::backdrop {
+  background: var(--alternate-background-color-transparent);
+  backdrop-filter: blur(2px);
+}
+
+.lightbox form {
+  background: var(--alternate-background-color);
+  display: grid;
+  border-radius: 5px;
+  padding: 1rem 1rem 0;
+  grid-template-rows: 0 1fr min-content;
+}
+
+.lightbox img {
+  width: auto;
+  max-width: 100%;
+}
+.lightbox form > span {
+  background: var(--alternate-background-color);
+  position: sticky;
+  bottom: 0rem;
+  width: auto;
+  padding: 1rem 0;
+}
+
+.lightbox button {
+  width: 3rem;
+  text-align: center;
+  aspect-ratio: 1;
+  border: none;
+  font-size: 2rem;
+  display: block;
+  justify-self: end;
+  position: sticky;
+  top: 0;
+  right: 0;
+  margin: -1rem -1rem 0 0;
+  padding: 0 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 5px;
+  background-color: #f061;
+  color: #f06;
+  backdrop-filter: blur(4px);
+  transition: 0.25s ease-in-out background;
+}
+.lightbox button:hover {
+  background-color: #f062;
 }
