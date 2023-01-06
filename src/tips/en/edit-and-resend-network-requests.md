@@ -28,7 +28,7 @@ Firefox has a built-in **Edit and Resend** feature that's very convenient becaus
 * In the new panel that appears, you can edit the request's method, url, query string, headers, and body.
 * Press **Send** when you're happy with the values.
 
-![Screenshot of the Firefox's edit and resend feature](/assets/img/edit-and-resend-network-requests-firefox.png)
+![The Firefox's edit and resend feature.](/assets/img/edit-and-resend-network-requests-firefox.png)
 
 ### Using Edge's Network Console experiment
 
@@ -43,4 +43,4 @@ The feature is called **Network Console** and is an experiment for the time bein
 * Press **Send** when you're happy with the values.
 * You can also save this request for later. You can find all saved requests in the **Network Console** panel.
 
-![Screenshot of the Edge's Network Console feature](/assets/img/edit-and-resend-network-requests-edge.png)
+![The Edge's Network Console feature.](/assets/img/edit-and-resend-network-requests-edge.png)

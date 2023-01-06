@@ -14,4 +14,4 @@ When you want to know which elements a given CSS rule will apply to, in addition
 * In Polypane:
   * In the Elements panel: Click the `[+]` icon next to each selector.
 
-![GIF animation showing how hovering over selectors in chrome highlights the matching elements in the page](/assets/img/highlight-matching-elements.gif)
+![Animation showing how hovering over selectors in chrome highlights the matching elements in the page.](/assets/img/highlight-matching-elements.gif)

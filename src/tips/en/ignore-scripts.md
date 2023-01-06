@@ -21,4 +21,4 @@ To ignore part of script only in Firefox:
 * Select the code you want to ignore.
 * Right-click the select and click **Ignore lines**.
 
-![Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code](/assets/img/ignore-scripts.png)
+![Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code.](/assets/img/ignore-scripts.png)

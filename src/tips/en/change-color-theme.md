@@ -15,4 +15,4 @@ You can change the theme based on your preference.
 * In Safari
   * Go to the settings and select "Appearance" between "System", "Light" or "Dark"
 
-![Screenshot of the settings panel in Edge showing the Theme drop-down](/assets/img/change-color-theme.png)
+![the settings panel in Edge showing the Theme drop-down.](/assets/img/change-color-theme.png)

@@ -17,7 +17,7 @@ Firefox innovated with very cool feature that helps find these "inactive" CSS pr
 * Inactive properties are greyed out and have an information icon next to them.
 * Hover over the information icon to know why the property is inactive.
 
-![Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item](/assets/img/find-inactive-styles.png)
+![Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.](/assets/img/find-inactive-styles.png)
 
 **In Chrome or Edge**:
 
@@ -30,6 +30,6 @@ Firefox innovated with very cool feature that helps find these "inactive" CSS pr
 * Inactive properties have an information icon next to them. If you see one, that means an authoring hint is available for this property.
 * Hover over the icon to reveal the tooltip with information about the property.
 
-![Part of the Styles panel in Chrome, showing a greyed out align-content property, with a tooltip saying that the property is inactive because the selected flex container is not set to wrap](/assets/img/find-inactive-styles-chromium.png)
+![Part of the Styles panel in Chrome, showing a greyed out align-content property, with a tooltip saying that the property is inactive because the selected flex container is not set to wrap.](/assets/img/find-inactive-styles-chromium.png)
 
 **Note**: this is not an audit tool! It won't help you remove useless CSS rules throughout your codebase. Its value is when inspecting specific elements only, to easily detect when a given CSS property isn't doing anything on it.

@@ -14,4 +14,4 @@ To do this, select an element in the **Elements** tool (called **Inspector** in 
   * Either press <kbd>Enter</kbd> again to commit the change.
   * Or, press <kbd>Tab</kbd> or <kbd>Shift</kbd>+<kbd>Tab</kbd> to move to the next or previous attribute, or the tag name if there are no other attributes.
 
-![GIF animation of a part of the Inspector panel in Firefox, showing how pressing Enter on a focused element goes into edit mode and how Tab allows to navigate from field to field](/assets/img/edit-elements-with-the-keyboard.gif)
+![Animation of a part of the Inspector panel in Firefox, showing how pressing Enter on a focused element goes into edit mode and how Tab allows to navigate from field to field.](/assets/img/edit-elements-with-the-keyboard.gif)

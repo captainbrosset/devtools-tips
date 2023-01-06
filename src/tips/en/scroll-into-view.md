@@ -11,4 +11,4 @@ DevTools has got your back here! You can easily reveal where the selected elemen
 * Right-click the element in the **Elements** panel (or **Inspector** panel in Firefox).
 * Click **Scroll into view** (in Firefox, you can also press <kbd>S</kbd>).
 
-![GIF animation showing how the page is scrolled to reveal the selected element](/assets/img/scroll-into-view.gif)
+![Animation showing how the page is scrolled to reveal the selected element.](/assets/img/scroll-into-view.gif)

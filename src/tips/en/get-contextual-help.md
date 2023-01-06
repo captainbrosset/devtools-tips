@@ -14,4 +14,4 @@ There are several ways to enable it:
 
 When tooltips are enabled, you can hover over them to get documentation about the tools.
 
-![gif animation of the devtools tooltips in edge](/assets/img/get-contextual-help.gif)
+![Animation of the devtools tooltips in Edge.](/assets/img/get-contextual-help.gif)

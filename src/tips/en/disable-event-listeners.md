@@ -16,7 +16,7 @@ In Firefox, you can disable (and re-enable) events from the **Inspector** panel:
 * Find the event type you are interested in.
 * Check or uncheck the box next to the event listener to enable or disable it.
 
-![Screenshot of the Firefox event popup in the Inspector panel, showing the checkbox to toggle events](/assets/img/disable-event-listeners-firefox.png)
+![The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.](/assets/img/disable-event-listeners-firefox.png)
 
 In Chrome and Edge, you can remove events from the **Elements** panel (but not add them again):
 
@@ -25,4 +25,4 @@ In Chrome and Edge, you can remove events from the **Elements** panel (but not a
 * Find the event type you are interested in and expand it.
 * Click the **Remove** button next to the listener you want to remove.
 
-![Screenshot of the Chrome Event Listeners sidebar pane, showing the Remove button](/assets/img/disable-event-listeners-chrome.png)
+![The Chrome Event Listeners sidebar pane, showing the Remove button.](/assets/img/disable-event-listeners-chrome.png)

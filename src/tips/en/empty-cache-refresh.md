@@ -10,4 +10,4 @@ Here is a nice tip to quickly empty your cache and refresh the page, in order to
 * Right-click on the page refresh icon, in the browser toolbar.
 * Click **Empty cache and hard refresh**.
 
-![Screenshot of the Microsoft Edge browser toolbar, showing the contextual menu of the refresh button, with the empty cache and hard refresh menu item](/assets/img/empty-cache-refresh.png)
+![The Microsoft Edge browser toolbar, showing the contextual menu of the refresh button, with the empty cache and hard refresh menu item.](/assets/img/empty-cache-refresh.png)

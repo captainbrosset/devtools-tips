@@ -17,7 +17,7 @@ To throttle your connection:
 
 You can also do this from the [device simulation](/tips/en/simulate-devices) mode by using the same dropdown there.
 
-![Screenshot of the Network panel in Edge showing the network throttling drop-down](/assets/img/throttle-network-speed.png)
+![The Network panel in Edge showing the network throttling drop-down.](/assets/img/throttle-network-speed.png)
 
 In Polypane:
 
@@ -25,4 +25,4 @@ In Polypane:
 * Go to the **Network** tab.
 * Toggle between the different network speed settings
 
-![Screenshot of the Network option in Polypane](/assets/img/throttle-network-speed-2.png)
+![The Network option in Polypane.](/assets/img/throttle-network-speed-2.png)

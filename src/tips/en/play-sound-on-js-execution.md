@@ -21,4 +21,4 @@ And that's it! Now every time this line is executed, an audio beep will be playe
 
 You can remove the breakpoint by right-clicking on it and selecting **Delete Breakpoint**.
 
-![GIF animation showing how to add the audio breakpoint in Safari Web Inspector](/assets/img/play-sound-on-js-execution.gif)
+![Animation showing how to add the audio breakpoint in Safari Web Inspector.](/assets/img/play-sound-on-js-execution.gif)

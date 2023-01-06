@@ -14,4 +14,4 @@ Edge and Chrome help with this by highlighting the effect that individual CSS pr
 * Move your mouse cursor over it.
 * Watch as the corresponding affected region of the element gets highlighted in the page.
 
-![GIF animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane](/assets/img/highlight-css-properties-on-hover.gif)
+![Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.](/assets/img/highlight-css-properties-on-hover.gif)

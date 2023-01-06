@@ -25,4 +25,4 @@ For Safari, you can set the app level language in MacOS by using **System prefer
 
 Add the Safari app and choose the language. Restart Safari.  and then the browser & the DevTools will use the selected language.
 
-![Screenshot of the settings panel in Edge showing a checkbox to match devtools with the browser language](/assets/img/use-another-language.png)
+![The settings panel in Edge showing a checkbox to match devtools with the browser language.](/assets/img/use-another-language.png)

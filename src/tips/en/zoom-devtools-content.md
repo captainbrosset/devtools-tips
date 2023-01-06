@@ -11,4 +11,4 @@ To zoom the UI of DevTools:
 * Make sure it has focus first (click somewhere in DevTools).
 * Use the <kbd>Ctrl</kbd>+<kbd>+</kbd> and <kbd>Ctrl</kbd>+<kbd>-</kbd> keyboard shortcuts to zoom in or out (replace <kbd>Ctrl</kbd> with <kbd>Cmd</kbd> on Mac).
 
-![Gif demo showing the UI of Chrome DevTools being zoomed in and out](/assets/img/zoom-devtools-content.gif)
+![Animation showing the UI of Chrome DevTools being zoomed in and out.](/assets/img/zoom-devtools-content.gif)

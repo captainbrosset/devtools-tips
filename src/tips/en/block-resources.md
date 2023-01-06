@@ -16,7 +16,7 @@ With DevTools you can block individual URLs or more global patterns.
   * Reload the page
   * You can also use the **Network request blocking** panel (which opens automatically when you block a request) to add, edit and remove URLs or URL patterns
 
-![Screenshot of the Network panel in Edge showing the contextual menu with the "block request url" item](/assets/img/block-resources-1.png)
+![The Network panel in Edge showing the contextual menu with the "block request url" item.](/assets/img/block-resources-1.png)
 
 * With Firefox:
   * Go to the **Network** panel
@@ -24,4 +24,4 @@ With DevTools you can block individual URLs or more global patterns.
   * Reload the page
   * You can also use the **Blocking** sidebar (which opens automatically when you block a request) to add, edit and remove URLs or URL patterns
 
-![Screenshot of the Network panel in Firefox showing the contextual menu with the "block url" item and the "blocking" sidebar](/assets/img/block-resources-2.png)
+![The Network panel in Firefox showing the contextual menu with the "block url" item and the "blocking" sidebar.](/assets/img/block-resources-2.png)

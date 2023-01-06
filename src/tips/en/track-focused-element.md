@@ -11,4 +11,4 @@ If you want to know which element has the focus on the web page at any time, you
 1. In the text box that appears, type `document.activeElement`.
 1. Now click/tab around on the page and see the live expression update to reflect which element is currently focused.
 
-![GIF animation showing a web page with focus going through different element, and the Edge Console panel with the live expression showing a preview of the focused element](/assets/img/track-focused-element.gif)
+![Animation showing a web page with focus going through different element, and the Edge Console panel with the live expression showing a preview of the focused element.](/assets/img/track-focused-element.gif)

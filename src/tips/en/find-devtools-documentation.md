@@ -12,4 +12,4 @@ If you want to learn more about what other tools exist in a browser, or what fea
 * [Safari Web Inspector](https://webkit.org/web-inspector/)
 * [Polypane developer tools](https://polypane.app/docs/)
 
-![Screenshot of the 4 documentation websites listed above](/assets/img/find-devtools-documentation.png)
+![The 4 documentation websites listed above.](/assets/img/find-devtools-documentation.png)
