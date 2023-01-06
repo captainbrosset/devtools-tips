@@ -6,7 +6,7 @@ tags: ["testing", "browser:edge", "browser:firefox", "browser:chrome", "browser:
 ---
 There is a great mode in all major browser developer tools that makes it really easy to test your webpage under different screen sizes and even simulate other devices.
 
-![Animation showing how the tool makes it easy to resize the screen size by dragging the mouse](/assets/img/simulate-devices.gif)
+![Animation showing how the tool makes it easy to resize the screen size by dragging the mouse.](/assets/img/simulate-devices.gif)
 
 To enable it:
 
@@ -29,7 +29,7 @@ To enable it:
 
 * In Polypane:
 
-  This is the default mode in Polypane. Unique to Polypane is that it allows you to see multiple differeny sizes side-by-side.
+  This is the default mode in Polypane. Unique to Polypane is that it allows you to see multiple different sizes side-by-side.
 
   ![Polypane showing three different devices side-by-side.](/assets/img/simulate-devices-polypane.png)
 

@@ -16,4 +16,4 @@ Chrome and Edge DevTools have a built-in way to simulate any location:
 
 In the following screenshot, the webpage is google.com and the location was set to São Paulo, Brazil. After a refresh, the google.com homepage shows the text in Portuguese.
 
-![Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo](/assets/img/simulate-geolocation.png)
+![Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.](/assets/img/simulate-geolocation.png)

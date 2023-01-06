@@ -13,6 +13,6 @@ The **Console** opens up, pre-filled with a new variable name (something like `t
 
 Note that if you only want to refer to the currently selected node (and not create a new variable), you can also [use `$0` in the console](/tips/en/get-current-element-in-console).
 
-![screenshot of firefox's "use in console" context menu option in the Inspector, and also showing the Console with a couple of tempN variables](/assets/img/store-node-as-variable.png)
+![Firefox's "use in console" context menu option in the Inspector, and also showing the Console with a couple of tempN variables.](/assets/img/store-node-as-variable.png)
 
 Thank you [Austin Gil](https://austingil.com/) for sharing this tip on [Twitter](https://twitter.com/Stegosource/status/1451294683024355328)!

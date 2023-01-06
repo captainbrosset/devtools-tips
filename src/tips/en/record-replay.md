@@ -21,6 +21,6 @@ From that point on, the recording will be available in the **Recorder** panel an
 * Find your recording in the panel's initial screen, or from the dropdown located in the panel's toolbar.
 * Click the **Play recording** button.
 
-![GIF animation of the Recorder panel automatically replaying a set of recorded steps](/assets/img/record-replay.gif)
+![Animation of the Recorder panel automatically replaying a set of recorded steps.](/assets/img/record-replay.gif)
 
 You can learn a lot more about this panel (including how to edit a recording and how to use it to test performance improvements) in [the Recorder documentation](https://developer.chrome.com/docs/devtools/recorder/).

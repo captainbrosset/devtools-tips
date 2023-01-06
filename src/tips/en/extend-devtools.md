@@ -19,4 +19,4 @@ To go further, you can create your own extensions. Here are a few links to learn
 * [Extending the developer tools](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools) on MDN.
 * [Adding a web development tool to Safari Web Inspector](https://developer.apple.com/documentation/safariservices/safari_web_extensions/adding_a_web_development_tool_to_safari_web_inspector) on developer.apple.com.
 
-![Microsoft Edge, with DevTools opened, showing a custom panel](/assets/img/extend-devtools.png)
+![Microsoft Edge, with DevTools opened, showing a custom panel.](/assets/img/extend-devtools.png)

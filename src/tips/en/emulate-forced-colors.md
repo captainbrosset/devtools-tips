@@ -18,7 +18,7 @@ In Edge or Chrome:
 - Type **Rendering** and press <kbd>Enter</kbd>.
 - In the **Rendering** panel, scroll down to the **Emulate CSS media feature forced-colors** and activate it from the drop-down.
 
-![Screenshot of Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools](/assets/img/emulate-forced-colors.png)
+![Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools.](/assets/img/emulate-forced-colors.png)
 
 In Polypane:
 
@@ -26,4 +26,4 @@ In Polypane:
 - Toggle **Forced colors**.
 - (Optionally) Toggle the `prefers-color-scheme` to test both a light and dark forced color mode.
 
-![Screenshot of Polypane showing a webpage in forced-colors mode, with the Emulation options opened above it, the "forced colors" option is active and highlighted](/assets/img/emulate-forced-colors-polypane.png)
+![Polypane showing a webpage in forced-colors mode, with the Emulation options opened above it, the "forced colors" option is active and highlighted.](/assets/img/emulate-forced-colors-polypane.png)

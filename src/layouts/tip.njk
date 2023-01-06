@@ -24,7 +24,7 @@ templateEngineOverride: njk
 <div class="tip-footer">
     {%- if not isTweet -%}
         <div class="authors">Authors: <span>{% formatAuthors authors %}</span></div>
-        <p class="last-edit">Last edit: <time datetime="{{ page.date.toISOString() }}">{{ page.date.toLocaleDateString() }}</time></p>
+        <p class="last-edit">Last edit: <time datetime="{{ page.date.toISOString() }}">{{ page.date.toLocaleDateString() }}</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/{{ page.inputPath }}">Edit page</a></p>
     {%- endif -%}
 </div>
 <script async src="/assets/share.js"></script>

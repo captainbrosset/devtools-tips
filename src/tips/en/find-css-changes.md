@@ -11,4 +11,4 @@ If you spent time changing CSS in DevTools, either in the Rules panel (in Firefo
 * In Chrome or Edge:
   * The Changes panel (which you can open from the command menu by typing <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> or <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd>)
 
-![Screenshot of the Changes panel in Firefox showing a diff-like view of all the CSS changes](/assets/img/find-css-changes.png)
+![The Changes panel in Firefox showing a diff-like view of all the CSS changes.](/assets/img/find-css-changes.png)

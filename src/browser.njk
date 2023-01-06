@@ -19,7 +19,7 @@
 }
 ---
 <div class="page-toolbar">
-  <h2>{{ collections[browser].length  }} {{ browser | processBrowserTagName | capitalize }} DevTools Tips</h2>
+  <h2>{{ collections[browser].length  }} <span class="browser-name">{{ browser | processBrowserTagName | capitalize }}</span> DevTools Tips </h2>
   {% include 'filter-tip-list.njk' %}
 </div>
 {% include 'unique-browser-features.njk' %}

@@ -17,4 +17,4 @@ In DevTools you can change numbers by using the arrow keys on your keyboard, thi
 * Or, hold <kbd>Alt</kbd> to increment by 0.1.
 * Or, hold <kbd>Ctrl</kbd> to increment by 100.
 
-![GIF animation of the Styles panel in Edge showing how numbers can be changed in various increments](/assets/img/increment-css-number-values.gif)
+![Animation of the Styles panel in Edge showing how numbers can be changed in various increments.](/assets/img/increment-css-number-values.gif)

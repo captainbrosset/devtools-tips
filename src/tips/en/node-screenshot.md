@@ -10,7 +10,7 @@ In Firefox, Chrome, Polypane and Edge DevTools, you can screenshot a single node
 * Right-click on the node you want to screenshot.
 * Select **Capture node screenshot** (or **Screenshot node** in Firefox).
 
-![GIF animation showing taking a node screenshot in Firefox](/assets/img/node-screenshot.gif)
+![Animation showing taking a node screenshot in Firefox.](/assets/img/node-screenshot.gif)
 
 **In Polypane:**
 
@@ -18,4 +18,4 @@ In Firefox, Chrome, Polypane and Edge DevTools, you can screenshot a single node
 * Select "Element".
 * Click the element on your page you want to screenshot.
 
-![GIF animation showing taking a node screenshot in Polypane](/assets/img/node-screenshot-polypane.gif)
+![Animation showing taking a node screenshot in Polypane.](/assets/img/node-screenshot-polypane.gif)

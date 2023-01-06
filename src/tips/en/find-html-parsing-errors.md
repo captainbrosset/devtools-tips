@@ -27,6 +27,6 @@ Consider the following HTML code:
 
 Firefox's view-source makes it easy to find the stray `</em>` ending tag! You can also hover over it to reveal more information about the type of parsing error.
 
-![Screenshot of the View-Source page in Firefox, with a stray em closing tag highlighted in red, with a tooltip](/assets/img/find-html-parsing-errors.png)
+![The View-Source page in Firefox, with a stray em closing tag highlighted in red, with a tooltip.](/assets/img/find-html-parsing-errors.png)
 
 Polypane additionally shows all validation errors in a list above the source.

@@ -19,4 +19,4 @@ var el = document.body;
 console.log('%c There are %d elements in %O', 'color:lime;background:black;', el.childElementCount, el);
 ```
 
-![Screenshot of a formatted console message in Edge](/assets/img/format-console-messages.png)
+![A formatted console message in Edge.](/assets/img/format-console-messages.png)

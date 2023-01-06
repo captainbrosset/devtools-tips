@@ -11,7 +11,7 @@ DevTools supports 2 ways to evaluate [XPath](https://developer.mozilla.org/en-US
   * Press <kbd>ctrl</kbd>+<kbd>F</kbd> (or <kbd>cmd</kbd>+<kbd>F</kbd> on Mac) to focus the search field
   * Enter your XPath expression and press enter to find the elements that match
 
-![Screenshot of the Inspector panel in Firefox showing the search field with an XPath expression](/assets/img/evaluate-xpath-1.png)
+![The Inspector panel in Firefox showing the search field with an XPath expression.](/assets/img/evaluate-xpath-1.png)
 
 Note that you can also [copy the XPath expression from any element in DevTools](/tips/en/copy-element-xpath/).
 
@@ -22,4 +22,4 @@ Note that you can also [copy the XPath expression from any element in DevTools](
 $x('//div/div/label');
 ```
 
-![Screenshot of the Console panel in Safari showing an array of elements, as the result of executing the above function](/assets/img/evaluate-xpath-2.png)
+![The Console panel in Safari showing an array of elements, as the result of executing the above function.](/assets/img/evaluate-xpath-2.png)

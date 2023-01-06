@@ -8,4 +8,4 @@ If you want to hide scripts and other resources loaded by browser extensions in 
 
 Credits go to [Sunil](https://www.coolcomputerclub.com/) for his [post on twitter](https://twitter.com/threepointone/status/1446064032407080966).
 
-![Screenshot of the Network panel in Chrome DevTools showing the pattern used in the filter input box](/assets/img/hide-extension-resources.jpg)
+![The Network panel in Chrome DevTools showing the pattern used in the filter input box.](/assets/img/hide-extension-resources.jpg)

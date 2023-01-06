@@ -10,7 +10,7 @@ If you want to download all of the images on a webpage in one go, you can use th
 $$('img').forEach(async (img) => {
   try {
     const src = img.src;
-    
+
     // Fetch the image as a blob.
     const fetchResponse = await fetch(src);
     const blob = await fetchResponse.blob();
@@ -22,7 +22,7 @@ $$('img').forEach(async (img) => {
     let name = src.substring(start, end === -1 ? undefined : end);
     name = name.replace(/[^a-zA-Z0-9]+/g, '-');
     name += '.' + mimeType.substring(mimeType.lastIndexOf('/') + 1);
-    
+
     // Download the blob using a <a> element.
     const a = document.createElement('a');
     a.setAttribute('href', URL.createObjectURL(blob));
@@ -36,4 +36,4 @@ This will list all of the `img` elements on the page, then attempt to fetch them
 
 If you want to reuse this script often, you can store it in your **Snippets** on Chrome or Edge (learn how to do it [here](/tips/en/multi-line-console)).
 
-![Screenshot of the Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded](/assets/img/download-all-images.png)
+![The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded].(/assets/img/download-all-images.png)

@@ -10,7 +10,7 @@ Using DevTools, you can quickly check which images on a page do not have an `alt
 
 Execute this in the Console panel: `console.table($$('img').filter(i => !i.alt), ['src'])` and that's it! You'll have the list of image URLs that don't have an alternative text.
 
-![The output of the console.table command from above shown in the Firefox DevTools console](/assets/img/find-all-images-without-alt-text.png)
+![The output of the console.table command from above shown in the Firefox DevTools console.](/assets/img/find-all-images-without-alt-text.png)
 
 Here's what this command does:
 

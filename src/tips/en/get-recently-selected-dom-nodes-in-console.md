@@ -14,4 +14,4 @@ They can be used to access the recently selected DOM nodes:
 * `$2` returns the DOM node you selected before that.
 * And so on!
 
-![Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes](/assets/img/get-recently-selected-dom-nodes-in-console.gif)
+![Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.](/assets/img/get-recently-selected-dom-nodes-in-console.gif)

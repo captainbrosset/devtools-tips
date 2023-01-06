@@ -11,8 +11,8 @@ Thankfully, there are a few ways to make your life easier by writing on multiple
 * Use <kbd>Shift</kbd>+<kbd>Enter</kbd> to create a new line without executing the expression. This works in all browsers.
 * Or use Firefox's multiline editor. To do this, click on the **Switch to multi-line editor mode** button located in the top-right corner of the **Console** message area (or press <kbd>Ctrl</kbd>+<kbd>B</kbd>).
 
-   ![Screenshot showing the button to switch the Firefox console to the multi-line mode](/assets/img/multi-line-console-firefox.png)
+   ![Tthe button to switch the Firefox console to the multi-line mode.](/assets/img/multi-line-console-firefox.png)
 
 * Or you can create code snippets in Edge, Chrome, or Safari's **Sources** tools. The added advantage of this technique is that code snippets are saved on your disk, and therefore can be used even after you've restarted the browser. See [Re-use scripts as snippets](/tips/en/use-scripts-as-snippets) for more information.
 
-   ![Screenshot showing the snippet tab in Edge's Sources panel](/assets/img/multi-line-console-snippet.png)
+   ![The snippet tab in Edge's Sources panel.](/assets/img/multi-line-console-snippet.png)

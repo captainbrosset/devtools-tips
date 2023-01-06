@@ -17,4 +17,4 @@ Edge has a tool just for this: the **Detached Elements** panel. To use it:
 
 You can find out much more about this tool in this [blog post](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/) and over at Microsoft's [documentation](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks) site.
 
-![Screenshot of the Detached Elements panel in Edge, with the Memory panel next to it](/assets/img/get-detached-elements.png)
+![The Detached Elements panel in Edge, with the Memory panel next to it.](/assets/img/get-detached-elements.png)

@@ -6,4 +6,4 @@ tags: ["html", "browser:edge", "browser:chrome", "browser:firefox", "browser:saf
 ---
 If you need to move nodes or elements around in the DOM tree, to re-order things in the page, you can do it by drag and dropping nodes around in the Elements (or Inspector) panel.
 
-![Gif animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge](/assets/img/drag-drop-dom-nodes.gif)
+![Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge.](/assets/img/drag-drop-dom-nodes.gif)

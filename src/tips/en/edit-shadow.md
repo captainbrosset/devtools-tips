@@ -10,4 +10,4 @@ If you don't remember the CSS syntax for the `box-shadow` property (and who does
 * Go to the **Styles** pane.
 * Click on the little shadow editor icon next to the `box-shadow` property value.
 
-![GIF animation showing the shadow editor in Edge's Styles pane](/assets/img/edit-shadow.gif)
+![Animation showing the shadow editor in Edge's Styles pane.](/assets/img/edit-shadow.gif)
