@@ -37,7 +37,7 @@
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
-            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
         </ul>
       </nav>
@@ -51,18 +51,20 @@
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/productivity/">productivity</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
 <div class="tip-content">
-    <p>If you selected an element in the Elements panel (in Chrome, Safari or Edge) or the Inspector panel (in Firefox), you can refer to it in the console using <code>$0</code>.</p>
+    <p>If you selected an element in the Elements panel (in Chrome, Safari, Polypane or Edge) or the Inspector panel (in Firefox), you can refer to it in the console using <code>$0</code>.</p>
 <p>This shortcut will return the DOM node instance, which you can then use to do things like getting computed styles, or check DOM properties, etc.</p>
 <p>Example: <code>getComputedStyles($0).display</code>.</p>
-<p><img src="/assets/img/get-current-element-in-console.jpg" alt="screenshot of safari's console showing how the $0 shortcut returns the selected elemet"></p>
+<p><img src="/assets/img/get-current-element-in-console.jpg" alt="screenshot of safari's console showing how the $0 shortcut returns the selected elememt"></p>
+<p>In Chrome, Polypane and Edge, the last 4 previously selected elements are additionally available as <code>$1</code>, <code>$2</code>, <code>$3</code> and <code>$4</code>. <a href="/tips/en/get-current-element-in-console/">Learn more here</a>.</p>
 
 </div>
-<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset, Alex Lakatos</span></div>
+<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://alexlakatos.com/about/">Alex Lakatos</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2021-06-17T00:00:00.000Z">6/17/2021</time></p></div>
 <script async src="/assets/share.js"></script>
+<script async src="/assets/dialog-lightbox.js"></script>
 
     </main>
     <footer role="contentinfo">

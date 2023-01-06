@@ -5,11 +5,30 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-01-04T00:00:00.000Z</updated>
+  <updated>2023-01-05T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Reload a page when there&#39;s changes on disk</title>
+    <link href="https://devtoolstips.org/tips/en/reload-page-after-change/"/>
+    <updated>2023-01-05T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/reload-page-after-change/</id>
+    <content type="html">&lt;p&gt;While working on a page locally and you&#39;re not using a hot reloading dev server, you need to reload the browser yourself to see the change. You need to do this every time you save a file. Wouldn&#39;t it be great if this happened automatically?&lt;/p&gt;
+&lt;p&gt;Polypane contains a &lt;strong&gt;Live reload&lt;/strong&gt; panel that lets you target a folder, and any change in that folder will either reload the page, or replace just the CSS or image file that you changed without reloading the rest of the page. This way you wont have to leave your code editor even when working on a plain HTML or CSS file and the browser will keep up to date.&lt;/p&gt;
+&lt;p&gt;Open the &lt;strong&gt;Live Reload&lt;/strong&gt; panel:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Right-click the &lt;strong&gt;reload&lt;/strong&gt; button.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Live reload&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In the configuration screen (see screenshot below) select a directory and click &lt;strong&gt;Start watching&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The reload button will show a lightning bolt when live reloading is active.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/reload-page-after-change.png&quot; alt=&quot;Polypane with the live reload panel and reload context menu visible&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;There are specific options to tweak, like which file system events to listen for, how long to wait before reloading (to account for things like SASS compilation time) and whether to show notifications of which files changed. &lt;a href=&quot;https://polypane.app/docs/live-auto-reloading/&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Test your PWA protocol handlers</title>
@@ -51,16 +70,17 @@
     <link href="https://devtoolstips.org/tips/en/see-json-responses/"/>
     <updated>2023-01-04T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/see-json-responses/</id>
-    <content type="html">&lt;p&gt;Edge (starting with 110) and Firefox both have a very nice &lt;strong&gt;JSON viewer&lt;/strong&gt; tool that makes it easy to view JSON responses from your server directly in the browser window.&lt;/p&gt;
-&lt;p&gt;You don&#39;t even need to open DevTools for it to work! Just enter the URL to a JSON response in a browser tab, in Edge or Firefox, and instead of getting the raw text back, the JSON will be formatted and highlighted.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Edge (starting with 110), Firefox and Polypane all have a very nice &lt;strong&gt;JSON viewer&lt;/strong&gt; tool that makes it easy to view JSON responses from your server directly in the browser window.&lt;/p&gt;
+&lt;p&gt;You don&#39;t even need to open DevTools for it to work! Just enter the URL to a JSON response in a browser tab, in Edge, Firefox or Polypane, and instead of getting the raw text back, the JSON will be formatted and highlighted.&lt;/p&gt;
 &lt;p&gt;You can try it out with &lt;a href=&quot;https://jsonplaceholder.typicode.com/posts/1/comments&quot;&gt;this sample JSON response&lt;/a&gt;, or &lt;a href=&quot;https://codepo8.github.io/json-dummy-data/&quot;&gt;these JSON test files&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/see-json-responses.png&quot; alt=&quot;The JSON viewer in Microsoft Edge&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Note that in Firefox, the JSON viewer has a few more options not yet available in Edge:&lt;/p&gt;
+&lt;p&gt;Note that in Firefox and Polypane, the JSON viewer has a few more options not yet available in Edge:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Search within the response.&lt;/li&gt;
 &lt;li&gt;See the raw text.&lt;/li&gt;
 &lt;li&gt;See the headers.&lt;/li&gt;
 &lt;li&gt;Save the file locally.&lt;/li&gt;
+&lt;li&gt;Expand and collapse specific sections (Polypane only)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>
@@ -81,6 +101,30 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/emulate-idle-detection-states.png&quot; alt=&quot;Chrome DevTools&#39; Sensors panel, showing a drop-down list with the different states that can be emulated&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://developer.chrome.com/articles/idle-detection/#devtools-support&quot;&gt;Learn more about the Idle Detection API and the corresponding DevTools support&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Debug unwanted scrollbars</title>
+    <link href="https://devtoolstips.org/tips/en/debug-unwanted-scrollbars/"/>
+    <updated>2023-01-04T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/debug-unwanted-scrollbars/</id>
+    <content type="html">&lt;p&gt;Sometimes scrollbars appear on a web page in places we don&#39;t want them to. And when this happens, it&#39;s not always very straightforward to fix the problem. Which container is responsible for the scrollbars in the first place? Which elements are even causing the scrollbars to appear? Why are they too big?&lt;/p&gt;
+&lt;p&gt;All very good questions that can cause a lot of time lost and frustration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In Firefox&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the &lt;strong&gt;Inspector&lt;/strong&gt; panel, where the DOM tree of the page is displayed, you will notice &lt;strong&gt;scroll&lt;/strong&gt; badges next to all elements that have scrollbars!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-unwanted-scrollbars-1.png&quot; alt=&quot;Screenshot of Firefox DevTools, with the Inspector panel showing the Scroll badge on an element&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This takes care of our first question: which element is scrolling? As for the second question: which elements are causing the scrolling, if you just click on one of the &lt;strong&gt;scroll&lt;/strong&gt; badges, the &lt;strong&gt;Inspector&lt;/strong&gt; will jump to the element (or elements) that caused the scrollbars to appear and highlight them for you!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-unwanted-scrollbars-2.png&quot; alt=&quot;Screenshot of Firefox DevTools, with the Inspector panel showing the Overflow badge on 3 highlighted elements&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Now this feature won&#39;t answer our third question: Why are these elements too big? But once you know which elements are the root cause of the problem, you can use the &lt;strong&gt;Rules&lt;/strong&gt; siderbar pane to figure out which CSS properties are responsible for it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Debug_Scrollable_Overflow&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In Polypane&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When a page has a horizontal scrollbar, Polypane will display an &lt;strong&gt;Overflow icon&lt;/strong&gt; below it. This will tell you why there is a horizontal overflow: either there are elements that are too wide or there is a &lt;code&gt;100vw&lt;/code&gt; applied to the page.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-unwanted-scrollbars-3.png&quot; alt=&quot;Screenshot of Polypane, with an overflow icon below a Pane. The text in the tooltip reads &amp;quot;Horizontal overflow detected!&amp;quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;After clicking the icon, Polypane finds the elements causing an overflow in your page and highlights them in red.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-unwanted-scrollbars-4.png&quot; alt=&quot;Screenshot of Polypane showing a page. A single element is highlighted in red and is clearly expanding beyond the edge.&amp;quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;From here, you can inspect the element and find the cause of the problem.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://polypane.app/docs/horizontal-overflow/&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
@@ -252,6 +296,11 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
 &lt;li&gt;
 &lt;p&gt;In Safari:&lt;/p&gt;
 &lt;p&gt;In the &lt;strong&gt;Develop&lt;/strong&gt; menu bar item, click &lt;strong&gt;Enter Responsive Design Mode&lt;/strong&gt;, or press &lt;kbd&gt;Ctrl+Command+R&lt;/kbd&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Polypane:&lt;/p&gt;
+&lt;p&gt;This is the default mode in Polypane. Unique to Polypane is that it allows you to see multiple differeny sizes side-by-side.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/simulate-devices-polypane.png&quot; alt=&quot;Polypane showing three different devices side-by-side.&quot; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When enabled, you can:&lt;/p&gt;
@@ -438,7 +487,7 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
     <updated>2022-08-31T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/get-recently-selected-dom-nodes-in-console/</id>
     <content type="html">&lt;p&gt;If you type &lt;code&gt;$0&lt;/code&gt; in the &lt;strong&gt;Console&lt;/strong&gt; tool, in any browser, the currently selected DOM node is returned. This is very handy. To learn more, check &lt;a href=&quot;https://devtoolstips.org/tips/en/get-current-element-in-console&quot;&gt;Get the selected element in the console&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;On top of this, in Edge and Chrome, the &lt;code&gt;$1&lt;/code&gt;, &lt;code&gt;$2&lt;/code&gt;, &lt;code&gt;$3&lt;/code&gt;, and &lt;code&gt;$4&lt;/code&gt; shortcuts are also defined!&lt;/p&gt;
+&lt;p&gt;On top of this, in Edge, Polypane and Chrome, the &lt;code&gt;$1&lt;/code&gt;, &lt;code&gt;$2&lt;/code&gt;, &lt;code&gt;$3&lt;/code&gt;, and &lt;code&gt;$4&lt;/code&gt; shortcuts are also defined!&lt;/p&gt;
 &lt;p&gt;They can be used to access the recently selected DOM nodes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;$1&lt;/code&gt; returns the DOM node you selected just before the currently selected one.&lt;/li&gt;
@@ -574,7 +623,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
     <id>https://devtoolstips.org/tips/en/empty-cache-refresh/</id>
     <content type="html">&lt;p&gt;Here is a nice tip to quickly empty your cache and refresh the page, in order to test new code changes:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In Chrome, or Edge, open DevTools (&lt;kbd&gt;F12&lt;/kbd&gt;).&lt;/li&gt;
+&lt;li&gt;In Chrome, or Edge, open DevTools (&lt;kbd&gt;F12&lt;/kbd&gt;). This step is not needed for Polypane.&lt;/li&gt;
 &lt;li&gt;Right-click on the page refresh icon, in the browser toolbar.&lt;/li&gt;
 &lt;li&gt;Click &lt;strong&gt;Empty cache and hard refresh&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
@@ -633,6 +682,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;li&gt;Choose a device name, dimensions, dpr, and user agent string, and submit. Your new device should now be available in the device drop-down!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/add-new-devices.gif&quot; alt=&quot;GIF animation of the device mode in Firefox, showing how to customize the list of devices, including adding custom devices&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In Polypane these steps are not needed. Double-click anywhere to add a new device and configure its settings from the &lt;strong&gt;Emulation options&lt;/strong&gt;.&lt;/p&gt;
 </content>
   </entry>
   
@@ -751,6 +801,22 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Audit&lt;/strong&gt;: Run audits on the page.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Polypane&lt;/strong&gt; (📕&lt;a href=&quot;https://polypane.app/docs/&quot;&gt;Docs&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Meta&lt;/strong&gt;: An overview of all meta data, robots.txt, structured data, webmanifest and social media previews&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Outline&lt;/strong&gt;: View the heading, landmark, image, link outlines, as well as the focus order of the page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage&lt;/strong&gt;: An overview of the localstorage, sessionstorage and cookies of the page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accessibility&lt;/strong&gt;: Run an automated accessibility scan.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Source&lt;/strong&gt;: Show a formatted version of the HTML source of the page along with HTML validation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Elements&lt;/strong&gt;: View the DOM tree, authored and computed styles, edit CSS, get layout and accessibility information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Console&lt;/strong&gt;: View log messages, errors, and execute JavaScript expressions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Live CSS&lt;/strong&gt;: Inject CSS into the current page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Devtools&lt;/strong&gt;: Access the regular Chromium devtools. &lt;em&gt;(See above)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Browse&lt;/strong&gt;: Open a second URL along your main one&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Workspaces&lt;/strong&gt;: Save and restore different sets of devices to test on.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/discover-all-tools.png&quot; alt=&quot;The list of most tools in Edge DevTools, just to illustrate how many there are&quot; /&gt;&lt;/p&gt;
 </content>
@@ -770,6 +836,13 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;li&gt;Paste the result in a text editor and use however you want.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/copy-element-styles.png&quot; alt=&quot;Screenshot of the Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In Polypane,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the element you want to extract the styles from by right-clicking on it and choosing &lt;strong&gt;Inspect&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Elements Panel&lt;/strong&gt; go to the &lt;strong&gt;Computed&lt;/strong&gt; tab&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Copy Styles&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Paste the result in a text editor and use however you want.&lt;/li&gt;
+&lt;/ol&gt;
 </content>
   </entry>
   
@@ -789,7 +862,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
     <id>https://devtoolstips.org/tips/en/debug-css-cascade-layers/</id>
     <content type="html">&lt;p&gt;CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which they apply. Cascade layers are meant to bring an elegant solution to problems we&#39;ve historically been fixing by using &lt;code&gt;!important&lt;/code&gt; or artificially making selectors have higher specificity.&lt;/p&gt;
 &lt;p&gt;If you want to learn more about cascade layers, check out &lt;a href=&quot;https://css-tricks.com/css-cascade-layers/&quot;&gt;Miriam Suzanne&#39;s complete guide on CSS Tricks&lt;/a&gt;, but here let&#39;s see how we can visualize and debug layers in DevTools.&lt;/p&gt;
-&lt;p&gt;Safari, Firefox, Chrome, and Edge all have support for layers in their &lt;strong&gt;Styles&lt;/strong&gt;/&lt;strong&gt;Rules&lt;/strong&gt; panels.&lt;/p&gt;
+&lt;p&gt;Safari, Firefox, Chrome, Polypane and Edge all have support for layers in their &lt;strong&gt;Styles&lt;/strong&gt;/&lt;strong&gt;Rules&lt;/strong&gt; panels.&lt;/p&gt;
 &lt;h3&gt;All browsers&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Open a page that uses cascade layers like &lt;a href=&quot;https://codepen.io/web-dot-dev/full/LYzqPEp&quot;&gt;this one&lt;/a&gt;.&lt;/li&gt;
@@ -901,6 +974,8 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <id>https://devtoolstips.org/tips/en/fix-color-contrast-issues/</id>
     <content type="html">&lt;p&gt;With DevTools you can &lt;a href=&quot;https://devtoolstips.org/tips/en/detect-low-color-contrast&quot;&gt;detect low color contrast issues&lt;/a&gt; which is great. But DevTools in Chrome and Edge go one step further and help you fix these issues too! &lt;a href=&quot;https://twitter.com/domizajac&quot;&gt;Domi&lt;/a&gt; tells us all about it.&lt;/p&gt;
 &lt;p&gt;https://twitter.com/domizajac/status/1507310081624444929&lt;/p&gt;
+&lt;p&gt;In Polypane, these suggestions are made inline on the page itself when enabling the &lt;strong&gt;Contrast checker debug tool&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/detect-low-color-contrast-inline.png&quot; alt=&quot;Screenshot of a Polypane Pane with the Contrast checker debug tool active&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -921,22 +996,6 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <updated>2022-03-25T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/console-table-group-assert/</id>
     <content type="html">&lt;p&gt;https://twitter.com/nghuuphuoc/status/1505892172700299268&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>Debug unwanted scrollbars</title>
-    <link href="https://devtoolstips.org/tips/en/debug-unwanted-scrollbars/"/>
-    <updated>2022-03-16T00:00:00.000Z</updated>
-    <id>https://devtoolstips.org/tips/en/debug-unwanted-scrollbars/</id>
-    <content type="html">&lt;p&gt;Sometimes scrollbars appear on a web page in places we don&#39;t want them to. And when this happens, it&#39;s not always very straightforward to fix the problem. Which container is responsible for the scrollbars in the first place? Which elements are even causing the scrollbars to appear? Why are they too big?&lt;/p&gt;
-&lt;p&gt;All very good questions that can cause a lot of time lost and frustration.&lt;/p&gt;
-&lt;p&gt;Thankfully, Firefox has a tool just for this. In the &lt;strong&gt;Inspector&lt;/strong&gt; panel, where the DOM tree of the page is displayed, you will notice &lt;strong&gt;scroll&lt;/strong&gt; badges next to all elements that have scrollbars!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-unwanted-scrollbars-1.png&quot; alt=&quot;Screenshot of Firefox DevTools, with the Inspector panel showing the Scroll badge on an element&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;This takes care of our first question: which element is scrolling? As for the second question: which elements are causing the scrolling, if you just click on one of the &lt;strong&gt;scroll&lt;/strong&gt; badges, the &lt;strong&gt;Inspector&lt;/strong&gt; will jump to the element (or elements) that caused the scrollbars to appear and highlight them for you!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/debug-unwanted-scrollbars-2.png&quot; alt=&quot;Screenshot of Firefox DevTools, with the Inspector panel showing the Overflow badge on 3 highlighted elements&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Now this feature won&#39;t answer our third question: Why are these elements too big? But once you know which elements are the root cause of the problem, you can use the &lt;strong&gt;Rules&lt;/strong&gt; siderbar pane to figure out which CSS properties are responsible for it.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Debug_Scrollable_Overflow&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
@@ -974,6 +1033,13 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
 &lt;li&gt;In the &lt;strong&gt;Rendering&lt;/strong&gt; panel, scroll down to the &lt;strong&gt;Emulate CSS media feature forced-colors&lt;/strong&gt; and activate it from the drop-down.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/emulate-forced-colors.png&quot; alt=&quot;Screenshot of Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In Polypane:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Emulation options&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Toggle &lt;strong&gt;Forced colors&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;(Optionally) Toggle the &lt;code&gt;prefers-color-scheme&lt;/code&gt; to test both a light and dark forced color mode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/emulate-forced-colors-polypane.png&quot; alt=&quot;Screenshot of Polypane showing a webpage in forced-colors mode, with the Emulation options opened above it, the &amp;quot;forced colors&amp;quot; option is active and highlighted&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -1036,6 +1102,11 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
 &lt;li&gt;On top of the Chromium bug tracker, the team also listens for feedback on &lt;a href=&quot;https://www.chromium.org/teams/devtools&quot;&gt;the devtools-dev mailing list&lt;/a&gt; as well as on twitter at &lt;a href=&quot;https://twitter.com/ChromeDevTools&quot;&gt;@ChromeDevTools&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Polypane&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;In the Help menu select &amp;quot;Chat with us&amp;quot; to chat with Polypane directly, or click &amp;quot;Get Support&amp;quot; to email them. On top of chat and email, the team also listens for feedback on twitter at &lt;a href=&quot;https://twitter.com/Polypane&quot;&gt;@polypane&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>
@@ -1091,6 +1162,16 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/detect-low-color-contrast-accessibility-panel.png&quot; alt=&quot;Screenshot of the Accessibility panel in Firefox, showing the list of contrast issues&quot; /&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Polypane, you can find all contrast issues with the &lt;strong&gt;Color Contrast debug tool&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Debug Tools&lt;/strong&gt; settings of a pane.&lt;/li&gt;
+&lt;li&gt;Find &lt;strong&gt;Contrast Checker&lt;/strong&gt; Under &lt;strong&gt;Accessibility&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Select whether you want to check for WCAG &lt;strong&gt;AA&lt;/strong&gt; or &lt;strong&gt;AAA&lt;/strong&gt; compliance.&lt;/li&gt;
+&lt;li&gt;Contrast issues are displayed inline on the page. Where available, Polypane suggests improved colors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/detect-low-color-contrast-inline.png&quot; alt=&quot;Screenshot of a Polypane Pane with the Contrast checker debug tool active&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>
@@ -1131,6 +1212,7 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <updated>2022-02-09T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/use-full-browser-for-device-emulation/</id>
     <content type="html">&lt;p&gt;Emulating different devices in the browser is incredibly useful. It gets tricky when you are on a device with limited resolution as the emulated device needs to be zoomed down to fit the screen as a large part of the window is taken up by the Developer Tools.&lt;/p&gt;
+&lt;p&gt;In Polypane, responsive design mode with multiple devices is the default.&lt;/p&gt;
 &lt;p&gt;Firefox has a keyboard shortcut to show device emulation without Developer Tools - &lt;kbd&gt;command&lt;/kbd&gt; + &lt;kbd&gt;option&lt;/kbd&gt; + &lt;kbd&gt;M&lt;/kbd&gt; on Mac and &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;shift&lt;/kbd&gt; + &lt;kbd&gt;M&lt;/kbd&gt; on Windows/Linux.&lt;/p&gt;
 &lt;p&gt;On Chromium based browsers like Chrome and Edge the trick is to start the device emulation and then un-dock the Developer Tools. You can un-dock the tools into their own window using the &lt;code&gt;…&lt;/code&gt; menu. This gives you the full browser as an emulation playground.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/use-full-browser-for-device-emulation.gif&quot; alt=&quot;Screencast showing device emulation andhow to undock the Developer Tools into an own window&quot; /&gt;&lt;/p&gt;
@@ -1194,12 +1276,13 @@ Imagine a &lt;code&gt;mousemove&lt;/code&gt; event listener that changes some of
     <link href="https://devtoolstips.org/tips/en/find-html-parsing-errors/"/>
     <updated>2022-01-17T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/find-html-parsing-errors/</id>
-    <content type="html">&lt;p&gt;DevTools is so full of features these days that we hardly ever use View-Source anymore. But it turns out that it has one trick up its sleeves that other tools don&#39;t, at least in Firefox.&lt;/p&gt;
-&lt;p&gt;Indeed, in that browser, on top of showing the HTML source code of the page, it also highlights in red the HTML parsing errors!&lt;/p&gt;
+    <content type="html">&lt;p&gt;DevTools is so full of features these days that we hardly ever use View-Source anymore. But it turns out that it has one trick up its sleeves that other tools don&#39;t, at least in Firefox and Polypane.&lt;/p&gt;
+&lt;p&gt;Indeed, in those browsers, on top of showing the HTML source code of the page, it also highlights in red the HTML parsing errors!&lt;/p&gt;
 &lt;p&gt;Consider the following HTML code:&lt;/p&gt;
 &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;!&lt;/span&gt;&lt;span class=&quot;token doctype-tag&quot;&gt;DOCTYPE&lt;/span&gt; &lt;span class=&quot;token name&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;    Lorem ipsum dolor sit...&lt;br /&gt;  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;    Lorem ipsum dolor sit...&lt;br /&gt;  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;    Lorem ipsum dolor sit&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;em&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;, ...&lt;br /&gt;  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Firefox&#39;s view-source makes it easy to find the stray &lt;code&gt;&amp;lt;/em&amp;gt;&lt;/code&gt; ending tag! You can also hover over it to reveal more information about the type of parsing error.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/find-html-parsing-errors.png&quot; alt=&quot;Screenshot of the View-Source page in Firefox, with a stray em closing tag highlighted in red, with a tooltip&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Polypane additionally shows all validation errors in a list above the source.&lt;/p&gt;
 </content>
   </entry>
   
@@ -1210,7 +1293,7 @@ Imagine a &lt;code&gt;mousemove&lt;/code&gt; event listener that changes some of
     <id>https://devtoolstips.org/tips/en/select-pointer-events-none-elements/</id>
     <content type="html">&lt;p&gt;When selecting elements from the page they normally get highlighted on hover and selected on click. However certain elements can&#39;t be selected.&lt;/p&gt;
 &lt;p&gt;Indeed, if an element does not react to pointer events because the &lt;code&gt;pointer-events:none&lt;/code&gt; CSS declaration is set, then you just can&#39;t select it, and the only way to get to it is to find it in the &lt;strong&gt;Elements&lt;/strong&gt;/&lt;strong&gt;Inspector&lt;/strong&gt; panel.&lt;/p&gt;
-&lt;p&gt;In Chrome, Edge, and Firefox, you can hold the &lt;kbd&gt;Shift&lt;/kbd&gt; key on your keyboard while hovering elements in the page! When you do this, even elements with &lt;code&gt;pointer-events:none&lt;/code&gt; can be selected!&lt;/p&gt;
+&lt;p&gt;In Chrome, Edge, Polypane and Firefox, you can hold the &lt;kbd&gt;Shift&lt;/kbd&gt; key on your keyboard while hovering elements in the page! When you do this, even elements with &lt;code&gt;pointer-events:none&lt;/code&gt; can be selected!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/select-pointer-events-none-elements.gif&quot; alt=&quot;Gif animation showing how a pointer-events:none element normally can&#39;t be selected, except when Shift is pressed&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/simevidas/status/1464501900586463236&quot;&gt;Šime Vidas&lt;/a&gt; also proposed this alternative solution in Firefox:&lt;/p&gt;
 &lt;ol&gt;
@@ -1271,7 +1354,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;p&gt;Use &lt;kbd&gt;Shift&lt;/kbd&gt;+&lt;kbd&gt;Enter&lt;/kbd&gt; to create a new line without executing the expression. This works in all browsers.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Or ue Firefox&#39;s multiline editor. To do this, click on the &lt;strong&gt;Switch to multi-line editor mode&lt;/strong&gt; button located in the top-right corner of the &lt;strong&gt;Console&lt;/strong&gt; message area (or press &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;B&lt;/kbd&gt;).&lt;/p&gt;
+&lt;p&gt;Or use Firefox&#39;s multiline editor. To do this, click on the &lt;strong&gt;Switch to multi-line editor mode&lt;/strong&gt; button located in the top-right corner of the &lt;strong&gt;Console&lt;/strong&gt; message area (or press &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;B&lt;/kbd&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/multi-line-console-firefox.png&quot; alt=&quot;Screenshot showing the button to switch the Firefox console to the multi-line mode&quot; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -1436,13 +1519,20 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
     <link href="https://devtoolstips.org/tips/en/node-screenshot/"/>
     <updated>2021-11-17T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/node-screenshot/</id>
-    <content type="html">&lt;p&gt;In Firefox, Chrome, and Edge DevTools, you can screenshot a single node from the page.&lt;/p&gt;
+    <content type="html">&lt;p&gt;In Firefox, Chrome, Polypane and Edge DevTools, you can screenshot a single node from the page.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to the &lt;strong&gt;Elements&lt;/strong&gt; panel (or &lt;strong&gt;Inspector&lt;/strong&gt; panel in Firefox).&lt;/li&gt;
 &lt;li&gt;Right-click on the node you want to screenshot.&lt;/li&gt;
 &lt;li&gt;Select &lt;strong&gt;Capture node screenshot&lt;/strong&gt; (or &lt;strong&gt;Screenshot node&lt;/strong&gt; in Firefox).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/node-screenshot.gif&quot; alt=&quot;GIF animation showing taking a node screenshot in Firefox&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In Polypane:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Click the &amp;quot;Make a screenshot&amp;quot; option.&lt;/li&gt;
+&lt;li&gt;Select &amp;quot;Element&amp;quot;.&lt;/li&gt;
+&lt;li&gt;Click the element on your page you want to screenshot.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/node-screenshot-polypane.gif&quot; alt=&quot;GIF animation showing taking a node screenshot in Polypane&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -1453,9 +1543,9 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
     <id>https://devtoolstips.org/tips/en/automatically-log-name-and-value/</id>
     <content type="html">&lt;p&gt;Using the &lt;strong&gt;&lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/&quot;&gt;console&lt;/a&gt;&lt;/strong&gt; of DevTools you can to log some information to debug your JavaScript.&lt;/p&gt;
 &lt;p&gt;The common way to do that is to add a &lt;code&gt;console.log()&lt;/code&gt; statement where you want to learn the value of a certain variable. In the following example the mouse position and how far the document has scrolled.&lt;/p&gt;
-&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;click&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pageX&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pageY&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; top &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;documentElement&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;scrollTop&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;top&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;click&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pageX&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pageY&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; top &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;documentElement&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;scrollTop&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;top&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The problem is that this results in lots of numbers in the console without explanations about what they are. If you wrap the values you want to read out in curly brackets &lt;code&gt;{}&lt;/code&gt;, the console automatically displays both the name and the value of the variable.&lt;/p&gt;
-&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;click&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pageX&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pageY&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; top &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;documentElement&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;scrollTop&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;y&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;top&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  &lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;click&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pageX&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pageY&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; top &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;documentElement&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;scrollTop&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;y&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;top&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/automatically-log-name-and-value.gif&quot; alt=&quot;Screencast showing the different ways the variables are logged with and without curly braces&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;https://www.youtube.com/watch?v=xTnqsA5vZX4&lt;/p&gt;
 </content>
@@ -1585,7 +1675,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;p&gt;Manually entering new numbers works of course, but it gets in the way of creativity a little bit.&lt;/p&gt;
 &lt;p&gt;In DevTools you can change numbers by using the arrow keys on your keyboard, this way you can easily and quickly test changes while checking the result in real time in the page. But there&#39;s more, you can also hold the various control keys to change the speed at which the numbers increment:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Focus a CSS value in the &lt;strong&gt;Styles&lt;/strong&gt;/&lt;strong&gt;Rules&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;li&gt;Focus a CSS value in the &lt;strong&gt;Styles&lt;/strong&gt;/&lt;strong&gt;Rules&lt;/strong&gt;/&lt;strong&gt;Elements&lt;/strong&gt; panel.&lt;/li&gt;
 &lt;li&gt;Make sure the text cursor is on a number.&lt;/li&gt;
 &lt;li&gt;Press the &lt;strong&gt;Up&lt;/strong&gt; or &lt;strong&gt;Down&lt;/strong&gt; arrow button on the keyboard to increment, or decrement the number by 1.&lt;/li&gt;
 &lt;li&gt;Hold &lt;kbd&gt;Shift&lt;/kbd&gt; at the same time to increment by 10.&lt;/li&gt;
@@ -1968,6 +2058,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;li&gt;Enter &lt;code&gt;document.designMode=&amp;quot;on&amp;quot;&lt;/code&gt; and press Enter&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Turn off &lt;code&gt;designMode&lt;/code&gt; with the expression &lt;code&gt;document.designMode=&amp;quot;off&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In Polypane these steps are not neede and it&#39;s enough to open the &lt;strong&gt;Debug tools&lt;/strong&gt; and activating &lt;strong&gt;Edit content&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Changes are not persisted and will revert on page close or refresh.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/prototype-content-changes-with-designmode.gif&quot; alt=&quot;Animated GIF of editable web page with designMode on&quot; /&gt;&lt;/p&gt;
 </content>
@@ -2019,6 +2110,13 @@ When working on a site that uses a lot of JavaScript and especially when you don
 &lt;/ul&gt;
 &lt;p&gt;You can also do this from the &lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-devices&quot;&gt;device simulation&lt;/a&gt; mode by using the same dropdown there.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/throttle-network-speed.png&quot; alt=&quot;Screenshot of the Network panel in Edge showing the network throttling drop-down&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In Polypane:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Emulation options&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Go to the &lt;strong&gt;Network&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;Toggle between the different network speed settings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/throttle-network-speed-2.png&quot; alt=&quot;Screenshot of the Network option in Polypane&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -2105,6 +2203,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
 &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/&quot;&gt;Edge Developer Tools&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/docs/devtools/&quot;&gt;Chrome Developer Tools&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://webkit.org/web-inspector/&quot;&gt;Safari Web Inspector&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://polypane.app/docs/&quot;&gt;Polypane developer tools&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/find-devtools-documentation.png&quot; alt=&quot;Screenshot of the 4 documentation websites listed above&quot; /&gt;&lt;/p&gt;
 </content>
@@ -2161,6 +2260,17 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/sample-colors-from-the-page-2.png&quot; alt=&quot;Screenshot of the eyedropper button in Firefox&#39;s inspector panel&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In Polypane you also do not need devtools&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Click the eye dropper icon in the address bar.&lt;/li&gt;
+&lt;li&gt;Or use the keyboard shortcut &lt;code&gt;Shift Alt P&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After selecting a color, an overview of previously selected colors, previews and contrast ratios is shown.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/sample-colors-from-the-page-4.gif&quot; alt=&quot;GIF animation of starting the eyedropper tool from Polypane&#39;s address bar&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;In Chrome and Edge:
 &lt;ul&gt;
 &lt;li&gt;Open the Elements panel and select an element that has some CSS color set to it&lt;/li&gt;
@@ -2178,8 +2288,9 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
     <link href="https://devtoolstips.org/tips/en/visualize-tabbing-order/"/>
     <updated>2021-06-29T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/visualize-tabbing-order/</id>
-    <content type="html">&lt;p&gt;Firefox has a dedicated &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector&quot;&gt;accessibility inspector panel&lt;/a&gt; that, among other things, lets you visualize the tabbing order on a page.&lt;/p&gt;
-&lt;p&gt;Users who do not or can&#39;t use a mouse or trackpad can use the tab key to navigate through focusable elements on the page. If the order in which those elements get focused is incorrect, this might give users a confusing experience.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Users who do not or can&#39;t use a mouse or trackpad can use the tab key to navigate through focusable elements on the page. If the order in which those elements get focused is incorrect, this might give users a confusing experience.&lt;/p&gt;
+&lt;p&gt;In Firefox:&lt;/p&gt;
+&lt;p&gt;Firefox has a dedicated &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector&quot;&gt;accessibility inspector panel&lt;/a&gt; that, among other things, lets you visualize the tabbing order on a page.&lt;/p&gt;
 &lt;p&gt;This tool adds a layer on the page that shows the order in which elements would become focused.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to the Accessibility panel&lt;/li&gt;
@@ -2187,6 +2298,12 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/visualize-tabbing-order.png&quot; alt=&quot;Screenshot of the tabbing order highlighter in Firefox, showing numbered boxes around focusable elements&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector#show_web_page_tabbing_order&quot;&gt;Learn more about it here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Polypane:&lt;/p&gt;
+&lt;p&gt;Polypane has an &lt;strong&gt;outline panel&lt;/strong&gt; that, among other things, lets you visualize the focus (tabbing) order on a page.&lt;/p&gt;
+&lt;p&gt;This tool shows the tabbing order in a list that also warns you about issues with non-interactive elements, wrong tabindices and when the tab order is illogical for the current reading direction. The current active element is shown with an arrow.&lt;/p&gt;
+&lt;p&gt;Click &lt;strong&gt;Show overlay&lt;/strong&gt; to add a layer to the page that draws a line from each element to the next, to make it easy to follow.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/visualize-tabbing-order-polypane.png&quot; alt=&quot;Screenshot of the tabbing order highlighter in Polypane, showing numbered boxes and a line going from each focusable element to the next&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://polypane.app/docs/outline-panel/#focus-order-tab-order&quot;&gt;Learn more about it here&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
@@ -2216,6 +2333,14 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 &lt;li&gt;&lt;code&gt;filter()&lt;/code&gt; is used to only keep the images that do not have an &lt;code&gt;alt&lt;/code&gt; attribute.&lt;/li&gt;
 &lt;li&gt;Finally, &lt;code&gt;console.table()&lt;/code&gt; takes the array returned by &lt;code&gt;filter&lt;/code&gt; and outputs a pretty table in the console based on it. Notice the second (optional) paramter that is used here to retrict the number of columns to just the &lt;code&gt;src&lt;/code&gt; attribute from each image.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;In Polypane:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;outline panel&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Images&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;See which images in the list have an &amp;quot;Alt: missing!&amp;quot; warning.&lt;/li&gt;
+&lt;li&gt;(Optionally) click &lt;strong&gt;Show overlay&lt;/strong&gt; to highlight the missing images on the page.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/find-all-images-without-alt-text-polypane.png&quot; alt=&quot;The outline panel in Polypane showing a &#39;missing&#39; warning for an image.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -2225,10 +2350,15 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
     <updated>2021-06-25T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/outline-everything/</id>
     <content type="html">&lt;p&gt;Simple, yet powerful, &lt;code&gt;* { outline: 1px solid red; }&lt;/code&gt; is a useful debugging trick that helps understanding the page structure, finding overflow bugs or understand why elements are being pushed away for no apparent reason.&lt;/p&gt;
+&lt;p&gt;In Edge, Chrome, Firefox and Safari:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to the Elements panel (in Chrome, Edge or Safari) or Inspector panel (in Firefox).&lt;/li&gt;
 &lt;li&gt;Click the &lt;code&gt;+&lt;/code&gt; (new style) icon in the Styles or Rules sidebar.&lt;/li&gt;
 &lt;li&gt;Add the rule  &lt;code&gt;{ outline: 1px solid red; }&lt;/code&gt; to the CSS Selector &lt;code&gt;*&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Polypane:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Press &lt;code&gt;ctrl/cmd + d&lt;/code&gt; to automatically add outlines around all elements.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And voila! All elements are outlined and you can understand what&#39;s going on.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/outline-everything.gif&quot; alt=&quot;Gif animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page&quot; /&gt;&lt;/p&gt;
@@ -2269,6 +2399,11 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 &lt;li&gt;In the Console panel, check the &amp;quot;Preserve Log&amp;quot; box in the top toolbar&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;In Polypane:
+&lt;ul&gt;
+&lt;li&gt;In the Console panel, check the &amp;quot;Preserve&amp;quot; box in the top toolbar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/persist-logs-across-pages.png&quot; alt=&quot;Screenshot of Edge devtools&#39; console showing the settings panel at the top, with the &amp;quot;perserve log&amp;quot; box checked&quot; /&gt;&lt;/p&gt;
 </content>
@@ -2280,7 +2415,7 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
     <updated>2021-06-22T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/simulate-color-vision-deficiencies/</id>
     <content type="html">&lt;p&gt;People who visit your web pages may have different types of color vision deficiencies that, if you incorrectly use colors for meaning, may affect their experience.&lt;/p&gt;
-&lt;p&gt;Firefox, Chrome and Edge make it possible for you to test how a web page may appear to somebody with a color vision deficiency.&lt;/p&gt;
+&lt;p&gt;Firefox, Chrome, Polypane and Edge make it possible for you to test how a web page may appear to somebody with a color vision deficiency.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In Firefox:
 &lt;ul&gt;
@@ -2294,11 +2429,21 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 &lt;li&gt;In Chrome, or in Edge:
 &lt;ul&gt;
 &lt;li&gt;You first need to open the Rendering panel. Either use the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands/&quot;&gt;command menu&lt;/a&gt; and type &lt;code&gt;rendering&lt;/code&gt; or use the main menu (the three-dots icon in the top-right corner of the screen) and go to More Tools to find it.&lt;/li&gt;
-&lt;li&gt;Scroll down until you find the &amp;quot;Emulate vision deficiencies&amp;quot; section, and choose fro the drop-down&lt;/li&gt;
+&lt;li&gt;Scroll down until you find the &amp;quot;Emulate vision deficiencies&amp;quot; section, and choose from the drop-down&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/simulate-color-vision-deficiencies-2.png&quot; alt=&quot;Screenshot of the color vision simulation drop-down in Chrome&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Polypane:
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Debug tools&lt;/strong&gt; option of a pane.&lt;/li&gt;
+&lt;li&gt;Switch to &lt;strong&gt;Simulators&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Select one of the nine available color vision simulators or hover over the &amp;quot;i&amp;quot; icon for additional information.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/simulate-color-vision-deficiencies-3.png&quot; alt=&quot;Screenshot of the simulator drop-down in Polypane&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -2349,10 +2494,11 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
     <link href="https://devtoolstips.org/tips/en/get-current-element-in-console/"/>
     <updated>2021-06-17T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/get-current-element-in-console/</id>
-    <content type="html">&lt;p&gt;If you selected an element in the Elements panel (in Chrome, Safari or Edge) or the Inspector panel (in Firefox), you can refer to it in the console using &lt;code&gt;$0&lt;/code&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;If you selected an element in the Elements panel (in Chrome, Safari, Polypane or Edge) or the Inspector panel (in Firefox), you can refer to it in the console using &lt;code&gt;$0&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;This shortcut will return the DOM node instance, which you can then use to do things like getting computed styles, or check DOM properties, etc.&lt;/p&gt;
 &lt;p&gt;Example: &lt;code&gt;getComputedStyles($0).display&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/get-current-element-in-console.jpg&quot; alt=&quot;screenshot of safari&#39;s console showing how the $0 shortcut returns the selected elemet&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/get-current-element-in-console.jpg&quot; alt=&quot;screenshot of safari&#39;s console showing how the $0 shortcut returns the selected elememt&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In Chrome, Polypane and Edge, the last 4 previously selected elements are additionally available as &lt;code&gt;$1&lt;/code&gt;, &lt;code&gt;$2&lt;/code&gt;, &lt;code&gt;$3&lt;/code&gt; and &lt;code&gt;$4&lt;/code&gt;. &lt;a href=&quot;https://devtoolstips.org/tips/en/get-current-element-in-console/&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
@@ -2387,7 +2533,7 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
     <link href="https://devtoolstips.org/tips/en/see-quick-a11y-info-on-hover/"/>
     <updated>2021-06-15T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/see-quick-a11y-info-on-hover/</id>
-    <content type="html">&lt;p&gt;In Edge and Chrome, whenever you use the element selector and hover over elements in the page, a tooltip appears with, among other things, some accessibility information about the hovered element.&lt;/p&gt;
+    <content type="html">&lt;p&gt;In Edge, Polypane and Chrome, whenever you use the element selector and hover over elements in the page, a tooltip appears with, among other things, some accessibility information about the hovered element.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;To start the element selector, click on the mouse cursor icon in the top-left corner of the DevTools window.&lt;/li&gt;
 &lt;li&gt;Then simply hover over elements in the page&lt;/li&gt;
@@ -2454,6 +2600,11 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
 &lt;li&gt;In Chrome, Edge or Safari:
 &lt;ul&gt;
 &lt;li&gt;In the Styles panel: hover over any rule selector for some time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;In Polypane:
+&lt;ul&gt;
+&lt;li&gt;In the Elements panel: Click the &lt;code&gt;[+]&lt;/code&gt; icon next to each selector.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

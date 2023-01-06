@@ -37,7 +37,7 @@
             <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
-            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
         </ul>
       </nav>
@@ -51,22 +51,28 @@
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/highlighter/">highlighter</a></li><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/html/">html</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
 <div class="tip-content">
     <p>Simple, yet powerful, <code>* { outline: 1px solid red; }</code> is a useful debugging trick that helps understanding the page structure, finding overflow bugs or understand why elements are being pushed away for no apparent reason.</p>
+<p>In Edge, Chrome, Firefox and Safari:</p>
 <ul>
 <li>Go to the Elements panel (in Chrome, Edge or Safari) or Inspector panel (in Firefox).</li>
 <li>Click the <code>+</code> (new style) icon in the Styles or Rules sidebar.</li>
 <li>Add the rule  <code>{ outline: 1px solid red; }</code> to the CSS Selector <code>*</code>.</li>
 </ul>
+<p>In Polypane:</p>
+<ul>
+<li>Press <code>ctrl/cmd + d</code> to automatically add outlines around all elements.</li>
+</ul>
 <p>And voila! All elements are outlined and you can understand what's going on.</p>
 <p><img src="/assets/img/outline-everything.gif" alt="Gif animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page"></p>
 
 </div>
-<div class="tip-footer"><div class="authors">Authors: <span>Patrick Brosset, Januario</span></div>
+<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, Januario, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2021-06-25T00:00:00.000Z">6/25/2021</time></p></div>
 <script async src="/assets/share.js"></script>
+<script async src="/assets/dialog-lightbox.js"></script>
 
     </main>
     <footer role="contentinfo">
