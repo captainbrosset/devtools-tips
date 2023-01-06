@@ -558,6 +558,15 @@ footer a {
   left: -9999px;
 }
 
+.browser-name {
+  color: var(--accent-color-darker);
+}
+@media (prefers-color-scheme: dark) {
+  .browser-name {
+    color: var(--accent-color-lighter);
+  }
+}
+
 /* Lightbox */
 
 .lightbox-button {
