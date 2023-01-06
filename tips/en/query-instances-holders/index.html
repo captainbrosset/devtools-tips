@@ -61,14 +61,14 @@
 </ul>
 <p>These two functions are really useful when your site starts using a lot of JavaScript objects. In some situations, it may become difficult to keep track of the dependencies between these objects, and memory leaks may start to appear, too.</p>
 <p>If <code>app.TodoItem</code> is a JavaScript class in your application, then <code>queryInstances(app.TodoItem)</code> will return an array of all of its instances.</p>
-<p><img src="/assets/img/query-instances-holders-1.png" alt="Screenshot of the console in Safari, showing the result of queryInstances(app.TodoItem)"></p>
+<p><img src="/assets/img/query-instances-holders-1.png" alt="The console in Safari, showing the result of queryInstances(app.TodoItem)."></p>
 <p>Or if you want to know what refers to the object you're debugging, use <code>queryHolders(this)</code>, which will return an array of all the other objects that have references to <code>this</code>.</p>
-<p><img src="/assets/img/query-instances-holders-2.png" alt="Screenshot of the console in Safari, showing the result of queryHolders(this)"></p>
+<p><img src="/assets/img/query-instances-holders-2.png" alt="The console in Safari, showing the result of queryHolders(this)."></p>
 <p>Learn more about these, and other, built-in functions <a href="https://webkit.org/web-inspector/console-command-line-api/#functions">here</a>.</p>
 
 </div>
 <div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-        <p class="last-edit">Last edit: <time datetime="2022-01-10T00:00:00.000Z">1/10/2022</time></p></div>
+        <p class="last-edit">Last edit: <time datetime="2022-01-10T00:00:00.000Z">1/10/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/query-instances-holders.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>
 

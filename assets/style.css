@@ -258,6 +258,14 @@ header nav {
   width: 0;
   /* Make font in input the same as elsewhere, and prevent iOS from zooming on tap */
   font: inherit;
+  color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .search input {
+    border: 2px solid var(--accent-color-lighter);
+    background: var(--accent-color-darker);
+  }
 }
 
 /* Content area */
@@ -548,6 +556,15 @@ footer a {
   position: absolute;
   top: -9999px;
   left: -9999px;
+}
+
+.browser-name {
+  color: var(--accent-color-darker);
+}
+@media (prefers-color-scheme: dark) {
+  .browser-name {
+    color: var(--accent-color-lighter);
+  }
 }
 
 /* Lightbox */

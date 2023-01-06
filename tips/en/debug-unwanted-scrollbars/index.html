@@ -58,22 +58,22 @@
 <p>All very good questions that can cause a lot of time lost and frustration.</p>
 <p><strong>In Firefox</strong></p>
 <p>In the <strong>Inspector</strong> panel, where the DOM tree of the page is displayed, you will notice <strong>scroll</strong> badges next to all elements that have scrollbars!</p>
-<p><img src="/assets/img/debug-unwanted-scrollbars-1.png" alt="Screenshot of Firefox DevTools, with the Inspector panel showing the Scroll badge on an element"></p>
+<p><img src="/assets/img/debug-unwanted-scrollbars-1.png" alt="Firefox DevTools, with the Inspector panel showing the Scroll badge on an element."></p>
 <p>This takes care of our first question: which element is scrolling? As for the second question: which elements are causing the scrolling, if you just click on one of the <strong>scroll</strong> badges, the <strong>Inspector</strong> will jump to the element (or elements) that caused the scrollbars to appear and highlight them for you!</p>
-<p><img src="/assets/img/debug-unwanted-scrollbars-2.png" alt="Screenshot of Firefox DevTools, with the Inspector panel showing the Overflow badge on 3 highlighted elements"></p>
+<p><img src="/assets/img/debug-unwanted-scrollbars-2.png" alt="Firefox DevTools, with the Inspector panel showing the Overflow badge on 3 highlighted elements."></p>
 <p>Now this feature won't answer our third question: Why are these elements too big? But once you know which elements are the root cause of the problem, you can use the <strong>Rules</strong> siderbar pane to figure out which CSS properties are responsible for it.</p>
 <p><a href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Debug_Scrollable_Overflow">Learn more here</a>.</p>
 <p><strong>In Polypane</strong></p>
 <p>When a page has a horizontal scrollbar, Polypane will display an <strong>Overflow icon</strong> below it. This will tell you why there is a horizontal overflow: either there are elements that are too wide or there is a <code>100vw</code> applied to the page.</p>
-<p><img src="/assets/img/debug-unwanted-scrollbars-3.png" alt="Screenshot of Polypane, with an overflow icon below a Pane. The text in the tooltip reads &quot;Horizontal overflow detected!&quot;"></p>
+<p><img src="/assets/img/debug-unwanted-scrollbars-3.png" alt="Polypane, with an overflow icon below a Pane. The text in the tooltip reads &quot;Horizontal overflow detected!&quot;."></p>
 <p>After clicking the icon, Polypane finds the elements causing an overflow in your page and highlights them in red.</p>
-<p><img src="/assets/img/debug-unwanted-scrollbars-4.png" alt="Screenshot of Polypane showing a page. A single element is highlighted in red and is clearly expanding beyond the edge.&quot;"></p>
+<p><img src="/assets/img/debug-unwanted-scrollbars-4.png" alt="Polypane showing a page. A single element is highlighted in red and is clearly expanding beyond the edge&quot;."></p>
 <p>From here, you can inspect the element and find the cause of the problem.</p>
 <p><a href="https://polypane.app/docs/horizontal-overflow/">Learn more here</a>.</p>
 
 </div>
 <div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
-        <p class="last-edit">Last edit: <time datetime="2023-01-04T00:00:00.000Z">1/4/2023</time></p></div>
+        <p class="last-edit">Last edit: <time datetime="2023-01-04T00:00:00.000Z">1/4/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-unwanted-scrollbars.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>
 

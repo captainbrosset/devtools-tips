@@ -60,11 +60,11 @@
 In fact, most DevTools display an overlay on top of the entire page that prevents you from accessing it at all.</p>
 <p>This also happens if you manually try to dispatch new events from the console using <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent"><code>dispatchEvent</code></a>. If there are handlers for these events, they also won't get called while execution is paused.</p>
 <p>The reason for this is that (ignoring workers) JavaScript on your page only runs in one thread. So while that thread is paused at one specific location, it's not supposed to be able to execute code from other locations.</p>
-<p><img src="/assets/img/suppressed-event-listeners-when-paused.png" alt="Screenshot of a page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page"></p>
+<p><img src="/assets/img/suppressed-event-listeners-when-paused.png" alt="A page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page."></p>
 
 </div>
 <div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-        <p class="last-edit">Last edit: <time datetime="2021-06-30T00:00:00.000Z">6/30/2021</time></p></div>
+        <p class="last-edit">Last edit: <time datetime="2021-06-30T00:00:00.000Z">6/30/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/suppressed-event-listeners-when-paused.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>
 

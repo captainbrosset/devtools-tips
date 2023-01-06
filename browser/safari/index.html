@@ -46,7 +46,7 @@
     <div class="header-shadow-block"></div>
     <main id="maincontent">
       <div class="page-toolbar">
-  <h2>53 Safari DevTools Tips</h2>
+  <h2>54 <span class="browser-name">Safari</span> DevTools Tips </h2>
   <label class="search">
     <span>Filter list</span>
     <input type="text">
@@ -54,11 +54,25 @@
 <script async src="/assets/filter-tip-list.js"></script>
 </div>
 <label class="unique-browser">
-    <span>Only show tips unique to this browser</span>
+    <span>Show tips that only work in Safari</span>
     <input type="checkbox">
 </label>
 <script async src="/assets/unique-browser-features.js"></script>
 <ul class="tips">
+<li class="hover-box tip unique-browser-feature">
+  <a href="/tips/en/manipulate-global-objects-on-page-load/" class="tip-title">Manipulate global objects on page load, before other scripts run</a>
+  <img src="/assets/img/manipulate-global-objects-on-page-load.png" alt="The Sources tab in Safari's WebInspector, showing the Add resource button and the Bootstrap script type" loading="lazy"></img>
+  <div class="tip-excerpt">
+    When a page loads, and all of its global objects are ready, but before the JavaScript code of the pa...
+    <a href="/tips/en/manipulate-global-objects-on-page-load/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li>
 <li class="hover-box tip ">
   <a href="/tips/en/list-console-functions/" class="tip-title">List all supported console functions</a>
   <img src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the  command result, which is an object containing a list of functions such as assert, clear, debug." loading="lazy"></img>
@@ -75,7 +89,7 @@
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/use-scripts-as-snippets/" class="tip-title">Re-use scripts as snippets</a>
-  <img src="/assets/img/use-scripts-as-snippets-1.png" alt="The snippets editor in the Sources tool with a snippet open in the editor" loading="lazy"></img>
+  <img src="/assets/img/use-scripts-as-snippets-1.png" alt="The snippets editor in the Sources tool with a snippet open in the editor." loading="lazy"></img>
   <div class="tip-excerpt">
     The Console is great to write short JavaScript expressions that read from the document or manipulate...
     <a href="/tips/en/use-scripts-as-snippets/">Read more</a>
@@ -89,7 +103,7 @@
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/simulate-devices/" class="tip-title">Simulate different devices and screen sizes</a>
-  <img src="/assets/img/simulate-devices.gif" alt="Animation showing how the tool makes it easy to resize the screen size by dragging the mouse" loading="lazy"></img>
+  <img src="/assets/img/simulate-devices.gif" alt="Animation showing how the tool makes it easy to resize the screen size by dragging the mouse." loading="lazy"></img>
   <div class="tip-excerpt">
     There is a great mode in all major browser developer tools that makes it really easy to test your we...
     <a href="/tips/en/simulate-devices/">Read more</a>
@@ -103,7 +117,7 @@
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/extend-devtools/" class="tip-title">Install or create extensions to customize DevTools</a>
-  <img src="/assets/img/extend-devtools.png" alt="Microsoft Edge, with DevTools opened, showing a custom panel" loading="lazy"></img>
+  <img src="/assets/img/extend-devtools.png" alt="Microsoft Edge, with DevTools opened, showing a custom panel." loading="lazy"></img>
   <div class="tip-excerpt">
     There's a lot of tools in DevTools already, probably more than you use. But in some cases, you may n...
     <a href="/tips/en/extend-devtools/">Read more</a>
@@ -117,7 +131,7 @@
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/use-another-language/" class="tip-title">Use DevTools in another language</a>
-  <img src="/assets/img/use-another-language.png" alt="Screenshot of the settings panel in Edge showing a checkbox to match devtools with the browser language" loading="lazy"></img>
+  <img src="/assets/img/use-another-language.png" alt="The settings panel in Edge showing a checkbox to match devtools with the browser language." loading="lazy"></img>
   <div class="tip-excerpt">
     If you want to use DevTools in another language than English, you can do it across all major browser...
     <a href="/tips/en/use-another-language/">Read more</a>
@@ -145,7 +159,7 @@
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/remove-annoying-overlays/" class="tip-title">Remove annoying page overlays and other elements</a>
-  <img src="/assets/img/remove-annoying-overlays.gif" alt="GIF animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page" loading="lazy"></img>
+  <img src="/assets/img/remove-annoying-overlays.gif" alt="Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page." loading="lazy"></img>
   <div class="tip-excerpt">
     A lot of websites these days get covered with overlays and crammed with lots of ads and other things...
     <a href="/tips/en/remove-annoying-overlays/">Read more</a>
@@ -159,7 +173,7 @@
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/copy-css-selector/" class="tip-title">Copy CSS selector of an element</a>
-  <img src="/assets/img/copy-css-selector.png" alt="Screenshot of Edge DevTools, showing how to access the Copy CSS selector option" loading="lazy"></img>
+  <img src="/assets/img/copy-css-selector.png" alt="Edge DevTools, showing how to access the Copy CSS selector option." loading="lazy"></img>
   <div class="tip-excerpt">
     Sometimes we need to uniquely identify an element that lacks an identifier, so that it can be refere...
     <a href="/tips/en/copy-css-selector/">Read more</a>
@@ -173,7 +187,7 @@
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/edit-elements-with-the-keyboard/" class="tip-title">Edit an element&#39;s attributes and tag name with the keyboard</a>
-  <img src="/assets/img/edit-elements-with-the-keyboard.gif" alt="GIF animation of a part of the Inspector panel in Firefox, showing how pressing Enter on a focused element goes into edit mode and how Tab allows to navigate from field to field" loading="lazy"></img>
+  <img src="/assets/img/edit-elements-with-the-keyboard.gif" alt="Animation of a part of the Inspector panel in Firefox, showing how pressing Enter on a focused element goes into edit mode and how Tab allows to navigate from field to field." loading="lazy"></img>
   <div class="tip-excerpt">
     Using the keyboard can be faster than using a mouse in certain cases (and for some people). One such...
     <a href="/tips/en/edit-elements-with-the-keyboard/">Read more</a>
@@ -215,7 +229,7 @@
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/debug-css-cascade-layers/" class="tip-title">Visualize and debug CSS cascade layers</a>
-  <img src="/assets/img/debug-css-cascade-layers-firefox.png" alt="Screenshot of Firefox, with a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules" loading="lazy"></img>
+  <img src="/assets/img/debug-css-cascade-layers-firefox.png" alt="Firefox showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules." loading="lazy"></img>
   <div class="tip-excerpt">
     CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multipl...
     <a href="/tips/en/debug-css-cascade-layers/">Read more</a>
@@ -244,7 +258,7 @@ Also learn more about getting the selec...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/prototype-in-the-browser/" class="tip-title">Start your HTML and CSS prototypes in the browser directly</a>
-  <img src="/assets/img/prototype-in-the-browser.png" alt="Screenshot of Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made" loading="lazy"></img>
+  <img src="/assets/img/prototype-in-the-browser.png" alt="Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made." loading="lazy"></img>
   <div class="tip-excerpt">
     Sometimes I need a blank canvas to prototype an idea with HTML and CSS. Something outside of the web...
     <a href="/tips/en/prototype-in-the-browser/">Read more</a>
@@ -300,7 +314,7 @@ Also learn more about getting the selec...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/past-several-css-declarations/" class="tip-title">Paste multiple CSS declarations at once</a>
-  <img src="/assets/img/paste-several-css-declarations.gif" alt="GIF animation showing how pasting several declarations in a CSS rule in DevTools creates them all" loading="lazy"></img>
+  <img src="/assets/img/paste-several-css-declarations.gif" alt="Animation showing how pasting several declarations in a CSS rule in DevTools creates them all." loading="lazy"></img>
   <div class="tip-excerpt">
     You know how you can paste a CSS property name or value in the Styles (or Rules) panel? Well, you ca...
     <a href="/tips/en/past-several-css-declarations/">Read more</a>
@@ -314,7 +328,7 @@ Also learn more about getting the selec...
 </li>
 <li class="hover-box tip unique-browser-feature">
   <a href="/tips/en/query-instances-holders/" class="tip-title">Query object instances and holders from the console</a>
-  <img src="/assets/img/query-instances-holders-1.png" alt="Screenshot of the console in Safari, showing the result of queryInstances(app.TodoItem)" loading="lazy"></img>
+  <img src="/assets/img/query-instances-holders-1.png" alt="The console in Safari, showing the result of queryInstances(app.TodoItem)." loading="lazy"></img>
   <div class="tip-excerpt">
     All browser DevTools have a few built-in functions in the console to do things like get the current...
     <a href="/tips/en/query-instances-holders/">Read more</a>
@@ -328,7 +342,7 @@ Also learn more about getting the selec...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/multi-line-console/" class="tip-title">Write code on multiple lines in the Console</a>
-  <img src="/assets/img/multi-line-console-firefox.png" alt="Screenshot showing the button to switch the Firefox console to the multi-line mode" loading="lazy"></img>
+  <img src="/assets/img/multi-line-console-firefox.png" alt="Tthe button to switch the Firefox console to the multi-line mode." loading="lazy"></img>
   <div class="tip-excerpt">
     If you're feeling adventurous and want to write longer pieces of code in the Console to execute more...
     <a href="/tips/en/multi-line-console/">Read more</a>
@@ -342,7 +356,7 @@ Also learn more about getting the selec...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/download-all-images/" class="tip-title">Download all images from the page</a>
-  <img src="/assets/img/download-all-images.png" alt="Screenshot of the Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded" loading="lazy"></img>
+  
   <div class="tip-excerpt">
     If you want to download all of the images on a webpage in one go, you can use the following few line...
     <a href="/tips/en/download-all-images/">Read more</a>
@@ -356,7 +370,7 @@ Also learn more about getting the selec...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/automatically-log-name-and-value/" class="tip-title">Automatically logging name and value in console.log()</a>
-  <img src="/assets/img/automatically-log-name-and-value.gif" alt="Screencast showing the different ways the variables are logged with and without curly braces" loading="lazy"></img>
+  <img src="/assets/img/automatically-log-name-and-value.gif" alt="Animation showing the different ways the variables are logged with and without curly braces." loading="lazy"></img>
   <div class="tip-excerpt">
     Using the console of DevTools you can to log some information to debug your JavaScript.
 The common w...
@@ -371,7 +385,7 @@ The common w...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/move-panels/" class="tip-title">Move panels to re-arrange them</a>
-  <img src="/assets/img/move-panels-1.gif" alt="GIF animation in Edge DevTools showing the move to top/bottom menus" loading="lazy"></img>
+  <img src="/assets/img/move-panels-1.gif" alt="Animation in Edge DevTools showing the move to top/bottom menus." loading="lazy"></img>
   <div class="tip-excerpt">
     Moving panels around the user interface can be very useful to make DevTools more unique to you and a...
     <a href="/tips/en/move-panels/">Read more</a>
@@ -385,7 +399,7 @@ The common w...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/format-console-messages/" class="tip-title">Format console messages</a>
-  <img src="/assets/img/format-console-messages.png" alt="Screenshot of a formatted console message in Edge" loading="lazy"></img>
+  <img src="/assets/img/format-console-messages.png" alt="A formatted console message in Edge." loading="lazy"></img>
   <div class="tip-excerpt">
     You can use special formatters in the console.log function to format logs just the way you want.
 Us...
@@ -400,7 +414,7 @@ Us...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/simulate-pseudo-classes/" class="tip-title">Simulate pseudo CSS classes</a>
-  <img src="/assets/img/simulate-pseudo-classes.png" alt="Screenshot of the :hov panel to simulate various pseudo-classes" loading="lazy"></img>
+  <img src="/assets/img/simulate-pseudo-classes.png" alt="The :hov panel to simulate various pseudo-classes." loading="lazy"></img>
   <div class="tip-excerpt">
     If you use :hover, :active, and other such pseudo-classes in CSS, you can actually simulate these st...
     <a href="/tips/en/simulate-pseudo-classes/">Read more</a>
@@ -414,7 +428,7 @@ Us...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/zoom-devtools-content/" class="tip-title">Zoom the DevTools UI to your liking</a>
-  <img src="/assets/img/zoom-devtools-content.gif" alt="Gif demo showing the UI of Chrome DevTools being zoomed in and out" loading="lazy"></img>
+  <img src="/assets/img/zoom-devtools-content.gif" alt="Animation showing the UI of Chrome DevTools being zoomed in and out." loading="lazy"></img>
   <div class="tip-excerpt">
     Do you find the UI of DevTools too small to comfortably work with? Because this UI is made of HTML a...
     <a href="/tips/en/zoom-devtools-content/">Read more</a>
@@ -428,7 +442,7 @@ Us...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/see-the-page-in-3d/" class="tip-title">See the page in 3D</a>
-  <img src="/assets/img/see-the-page-in-3d.png" alt="Screenshot of the 3D view tool showing a page's z-index stacking tree as a 3d scene" loading="lazy"></img>
+  <img src="/assets/img/see-the-page-in-3d.png" alt="The 3D view tool showing a page's z-index stacking tree as a 3d scene." loading="lazy"></img>
   <div class="tip-excerpt">
     See your page in 3 dimensions to quickly find out how deeply nested it is, fix z-index stacking issu...
     <a href="/tips/en/see-the-page-in-3d/">Read more</a>
@@ -442,7 +456,7 @@ Us...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/increment-css-number-values/" class="tip-title">Easily change CSS number values from the keyboard in increments of 0.1, 1, 10, 100</a>
-  <img src="/assets/img/increment-css-number-values.gif" alt="GIF animation of the Styles panel in Edge showing how numbers can be changed in various increments" loading="lazy"></img>
+  <img src="/assets/img/increment-css-number-values.gif" alt="Animation of the Styles panel in Edge showing how numbers can be changed in various increments." loading="lazy"></img>
   <div class="tip-excerpt">
     When playing with styling or layout code in DevTools, it's useful to be able to change widths, margi...
     <a href="/tips/en/increment-css-number-values/">Read more</a>
@@ -456,7 +470,7 @@ Us...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/find-css-changes/" class="tip-title">Find and export CSS changes</a>
-  <img src="/assets/img/find-css-changes.png" alt="Screenshot of the Changes panel in Firefox showing a diff-like view of all the CSS changes" loading="lazy"></img>
+  <img src="/assets/img/find-css-changes.png" alt="The Changes panel in Firefox showing a diff-like view of all the CSS changes." loading="lazy"></img>
   <div class="tip-excerpt">
     If you spent time changing CSS in DevTools, either in the Rules panel (in Firefox), or in the Source...
     <a href="/tips/en/find-css-changes/">Read more</a>
@@ -470,7 +484,7 @@ Us...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/evaluate-xpath/" class="tip-title">Evaluate XPath to find elements in the page</a>
-  <img src="/assets/img/evaluate-xpath-1.png" alt="Screenshot of the Inspector panel in Firefox showing the search field with an XPath expression" loading="lazy"></img>
+  <img src="/assets/img/evaluate-xpath-1.png" alt="The Inspector panel in Firefox showing the search field with an XPath expression." loading="lazy"></img>
   <div class="tip-excerpt">
     DevTools supports 2 ways to evaluate XPath expressions to help you locate elements in the page. All...
     <a href="/tips/en/evaluate-xpath/">Read more</a>
@@ -484,7 +498,7 @@ Us...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/store-node-as-variable/" class="tip-title">Store a node as a variable to use it in the console</a>
-  <img src="/assets/img/store-node-as-variable.png" alt="screenshot of firefox's &quot;use in console&quot; context menu option in the Inspector, and also showing the Console with a couple of tempN variables" loading="lazy"></img>
+  <img src="/assets/img/store-node-as-variable.png" alt="Firefox's &quot;use in console&quot; context menu option in the Inspector, and also showing the Console with a couple of tempN variables." loading="lazy"></img>
   <div class="tip-excerpt">
     If you want to use a DOM node from the page in the console:
 Right-click the node in the Elements (o...
@@ -499,7 +513,7 @@ Right-click the node in the Elements (o...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/use-logpoints/" class="tip-title">Console.log() for the web with logpoints</a>
-  <img src="/assets/img/use-logpoints.png" alt="Screenshots of the way to set a logpoint in the sources tool" loading="lazy"></img>
+  <img src="/assets/img/use-logpoints.png" alt="Setting a logpoint in the sources tool." loading="lazy"></img>
   <div class="tip-excerpt">
     Using the console to log some information is a very common way to debug your JavaScript. But you can...
     <a href="/tips/en/use-logpoints/">Read more</a>
@@ -513,7 +527,7 @@ Right-click the node in the Elements (o...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/debug-js-hover/" class="tip-title">Debug popups that appear on hover using JS</a>
-  <img src="/assets/img/debug-js-hover.gif" alt="GIF showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox" loading="lazy"></img>
+  <img src="/assets/img/debug-js-hover.gif" alt="Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox." loading="lazy"></img>
   <div class="tip-excerpt">
     Have you ever been frustrated because you couldn't style a popup or tooltip that appeared on hover?...
     <a href="/tips/en/debug-js-hover/">Read more</a>
@@ -527,7 +541,7 @@ Right-click the node in the Elements (o...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/break-on-dom-changes/" class="tip-title">Pause script execution when the DOM changes</a>
-  <img src="/assets/img/break-on-dom-changes.png" alt="Screenshot of the Elements panel in Edge showing the &quot;Break on&quot; contextual menu on the selected node" loading="lazy"></img>
+  <img src="/assets/img/break-on-dom-changes.png" alt="The Elements panel in Edge showing the &quot;Break on&quot; contextual menu on the selected node." loading="lazy"></img>
   <div class="tip-excerpt">
     If you want to know what JavaScript code removes, adds, or modifies a DOM element in the page, you c...
     <a href="/tips/en/break-on-dom-changes/">Read more</a>
@@ -541,7 +555,7 @@ Right-click the node in the Elements (o...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/change-color-theme/" class="tip-title">Change the color theme of DevTools</a>
-  <img src="/assets/img/change-color-theme.png" alt="Screenshot of the settings panel in Edge showing the Theme drop-down" loading="lazy"></img>
+  <img src="/assets/img/change-color-theme.png" alt="the settings panel in Edge showing the Theme drop-down." loading="lazy"></img>
   <div class="tip-excerpt">
     Chrome, Firefox and Safari all have a light and dark theme for their DevTools. Edge not only has tho...
     <a href="/tips/en/change-color-theme/">Read more</a>
@@ -555,7 +569,7 @@ Right-click the node in the Elements (o...
 </li>
 <li class="hover-box tip unique-browser-feature">
   <a href="/tips/en/play-sound-on-js-execution/" class="tip-title">Play a sound when a line of JavaScript is executed</a>
-  <img src="/assets/img/play-sound-on-js-execution.gif" alt="GIF animation showing how to add the audio breakpoint in Safari Web Inspector" loading="lazy"></img>
+  <img src="/assets/img/play-sound-on-js-execution.gif" alt="Animation showing how to add the audio breakpoint in Safari Web Inspector." loading="lazy"></img>
   <div class="tip-excerpt">
     Sometimes pausing execution when a line of JavaScript is executed is too much, sometimes you only wa...
     <a href="/tips/en/play-sound-on-js-execution/">Read more</a>
@@ -569,7 +583,7 @@ Right-click the node in the Elements (o...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/prototype-content-changes-with-designmode/" class="tip-title">Prototype content changes with designMode</a>
-  <img src="/assets/img/prototype-content-changes-with-designmode.gif" alt="Animated GIF of editable web page with designMode on" loading="lazy"></img>
+  <img src="/assets/img/prototype-content-changes-with-designmode.gif" alt="Animation of editable web page with designMode on." loading="lazy"></img>
   <div class="tip-excerpt">
     When creating or modifying a design prototype for the web, you may want to quickly edit content in t...
     <a href="/tips/en/prototype-content-changes-with-designmode/">Read more</a>
@@ -583,7 +597,7 @@ Right-click the node in the Elements (o...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/copy-element-xpath/" class="tip-title">Copy an element&#39;s XPath expression</a>
-  <img src="/assets/img/copy-element-xpath.png" alt="Screenshot of the Elements panel in Edge showing the copy xpath option in the contextual menu" loading="lazy"></img>
+  <img src="/assets/img/copy-element-xpath.png" alt="The Elements panel in Edge showing the copy xpath option in the contextual menu." loading="lazy"></img>
   <div class="tip-excerpt">
     You can easily copy an element's XPath expression from DevTools. This is useful if you need this exp...
     <a href="/tips/en/copy-element-xpath/">Read more</a>
@@ -597,7 +611,7 @@ Right-click the node in the Elements (o...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/find-devtools-documentation/" class="tip-title">Find DevTools reference documentation</a>
-  <img src="/assets/img/find-devtools-documentation.png" alt="Screenshot of the 4 documentation websites listed above" loading="lazy"></img>
+  <img src="/assets/img/find-devtools-documentation.png" alt="The 4 documentation websites listed above." loading="lazy"></img>
   <div class="tip-excerpt">
     If you want to learn more about what other tools exist in a browser, or what features a given tool p...
     <a href="/tips/en/find-devtools-documentation/">Read more</a>
@@ -611,7 +625,7 @@ Right-click the node in the Elements (o...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/drag-drop-dom-nodes/" class="tip-title">Drag and drop nodes in the DOM tree</a>
-  <img src="/assets/img/drag-drop-dom-nodes.gif" alt="Gif animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge" loading="lazy"></img>
+  <img src="/assets/img/drag-drop-dom-nodes.gif" alt="Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge." loading="lazy"></img>
   <div class="tip-excerpt">
     If you need to move nodes or elements around in the DOM tree, to re-order things in the page, you ca...
     <a href="/tips/en/drag-drop-dom-nodes/">Read more</a>
@@ -625,7 +639,7 @@ Right-click the node in the Elements (o...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/suppressed-event-listeners-when-paused/" class="tip-title">Event listeners are suppressed when paused</a>
-  <img src="/assets/img/suppressed-event-listeners-when-paused.png" alt="Screenshot of a page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page" loading="lazy"></img>
+  <img src="/assets/img/suppressed-event-listeners-when-paused.png" alt="A page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page." loading="lazy"></img>
   <div class="tip-excerpt">
     This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript....
     <a href="/tips/en/suppressed-event-listeners-when-paused/">Read more</a>
@@ -639,7 +653,7 @@ Right-click the node in the Elements (o...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/style-console-messages/" class="tip-title">Apply CSS styles to console messages</a>
-  <img src="/assets/img/style-console-messages.png" alt="Screenshot of a styled console message in Edge" loading="lazy"></img>
+  <img src="/assets/img/style-console-messages.png" alt="A styled console message in Edge." loading="lazy"></img>
   <div class="tip-excerpt">
     The console.log output can be styled in DevTools using CSS.
 console.log('%c Hello World', 'color: or...
@@ -654,7 +668,7 @@ console.log('%c Hello World', 'color: or...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/find-all-images-without-alt-text/" class="tip-title">Find all images without alternative text</a>
-  <img src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console" loading="lazy"></img>
+  <img src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console." loading="lazy"></img>
   <div class="tip-excerpt">
     With HTML, you can add alternative text to images using the alt attribute. It can be used to add a t...
     <a href="/tips/en/find-all-images-without-alt-text/">Read more</a>
@@ -668,7 +682,7 @@ console.log('%c Hello World', 'color: or...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/outline-everything/" class="tip-title">Draw a box around all elements to debug your CSS and page structure</a>
-  <img src="/assets/img/outline-everything.gif" alt="Gif animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page" loading="lazy"></img>
+  <img src="/assets/img/outline-everything.gif" alt="Animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page." loading="lazy"></img>
   <div class="tip-excerpt">
     Simple, yet powerful, * { outline: 1px solid red; } is a useful debugging trick that helps understan...
     <a href="/tips/en/outline-everything/">Read more</a>
@@ -682,7 +696,7 @@ console.log('%c Hello World', 'color: or...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/query-dom-from-console/" class="tip-title">Find DOM elements from the console</a>
-  <img src="/assets/img/query-dom-from-console.png" alt="Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions" loading="lazy"></img>
+  <img src="/assets/img/query-dom-from-console.png" alt="Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions." loading="lazy"></img>
   <div class="tip-excerpt">
     $ and $$ are 2 functions you can use in the console to find elements in the page.
 They are essential...
@@ -697,7 +711,7 @@ They are essential...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/persist-logs-across-pages/" class="tip-title">Persist console messages across page navigations and reloads</a>
-  <img src="/assets/img/persist-logs-across-pages.png" alt="Screenshot of Edge devtools' console showing the settings panel at the top, with the &quot;perserve log&quot; box checked" loading="lazy"></img>
+  <img src="/assets/img/persist-logs-across-pages.png" alt="Edge devtools' console showing the settings panel at the top, with the &quot;perserve log&quot; box checked." loading="lazy"></img>
   <div class="tip-excerpt">
     By default, the messages displayed in the console get removed as soon as you refresh the page (or na...
     <a href="/tips/en/persist-logs-across-pages/">Read more</a>
@@ -711,7 +725,7 @@ They are essential...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/copy-from-console/" class="tip-title">Copy an object from the console</a>
-  <img src="/assets/img/copy-from-console.png" alt="Screenshot of Chrome devtools' console with a line of code using the copy() function" loading="lazy"></img>
+  <img src="/assets/img/copy-from-console.png" alt="Chrome devtools' console with a line of code using the copy() function." loading="lazy"></img>
   <div class="tip-excerpt">
     The console panel supports a very handy copy() function that stringifies and copies anything you pas...
     <a href="/tips/en/copy-from-console/">Read more</a>
@@ -725,7 +739,7 @@ They are essential...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/get-current-element-in-console/" class="tip-title">Get the selected element in the console</a>
-  <img src="/assets/img/get-current-element-in-console.jpg" alt="screenshot of safari's console showing how the $0 shortcut returns the selected elememt" loading="lazy"></img>
+  <img src="/assets/img/get-current-element-in-console.jpg" alt="Safari's console showing how the $0 shortcut returns the selected element." loading="lazy"></img>
   <div class="tip-excerpt">
     If you selected an element in the Elements panel (in Chrome, Safari, Polypane or Edge) or the Inspec...
     <a href="/tips/en/get-current-element-in-console/">Read more</a>
@@ -739,7 +753,7 @@ They are essential...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/view-perf-markers-in-order/" class="tip-title">View performance markers in order</a>
-  <img src="/assets/img/view-perf-markers-in-order.png" alt="Screenshot of the console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties" loading="lazy"></img>
+  <img src="/assets/img/view-perf-markers-in-order.png" alt="The console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties." loading="lazy"></img>
   <div class="tip-excerpt">
     When logging performance.timing events to the console, they appear in alphabetical order since they...
     <a href="/tips/en/view-perf-markers-in-order/">Read more</a>
@@ -753,7 +767,7 @@ They are essential...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/unminify-javascript-code/" class="tip-title">Unminify JavaScript code to easily read and debug it</a>
-  <img src="/assets/img/unminify-javascript-code.gif" alt="Screenshot of the Sources panel in Chrome, showing the pretty-print button" loading="lazy"></img>
+  <img src="/assets/img/unminify-javascript-code.gif" alt="The Sources panel in Chrome, showing the pretty-print button." loading="lazy"></img>
   <div class="tip-excerpt">
     Sometimes, the JavaScript code that runs on a website is minified and really hard to read. This is c...
     <a href="/tips/en/unminify-javascript-code/">Read more</a>
@@ -767,7 +781,7 @@ They are essential...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/highlight-matching-elements/" class="tip-title">Highlight all the elements that a CSS rule matches</a>
-  <img src="/assets/img/highlight-matching-elements.gif" alt="GIF animation showing how hovering over selectors in chrome highlights the matching elements in the page" loading="lazy"></img>
+  <img src="/assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page." loading="lazy"></img>
   <div class="tip-excerpt">
     When you want to know which elements a given CSS rule will apply to, in addition to the currently se...
     <a href="/tips/en/highlight-matching-elements/">Read more</a>
@@ -781,7 +795,7 @@ They are essential...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/expand-nodes-recursively/" class="tip-title">Expand DOM nodes recursively</a>
-  <img src="/assets/img/expand-nodes-recursively.gif" alt="GIF animation showing right-clicking on a node in Chrome's Elements panel and choosing &quot;expand recursively&quot;" loading="lazy"></img>
+  <img src="/assets/img/expand-nodes-recursively.gif" alt="Animation showing right-clicking on a node in Chrome's Elements panel and choosing &quot;expand recursively&quot;." loading="lazy"></img>
   <div class="tip-excerpt">
     You can expand all descendants under a given DOM node in one go, to avoid having to expand each node...
     <a href="/tips/en/expand-nodes-recursively/">Read more</a>
@@ -795,7 +809,7 @@ They are essential...
 </li>
 <li class="hover-box tip ">
   <a href="/tips/en/debugger-statement/" class="tip-title">Use the debugger statement to pause script execution</a>
-  <img src="/assets/img/debugger-statement.png" alt="Screenshot of the Sources panel in Edge, paused at a debugger statement" loading="lazy"></img>
+  <img src="/assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement." loading="lazy"></img>
   <div class="tip-excerpt">
     If you prefer to use console.log() statements rather than the JavaScript debugger because you find i...
     <a href="/tips/en/debugger-statement/">Read more</a>
