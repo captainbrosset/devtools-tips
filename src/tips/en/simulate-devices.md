@@ -29,7 +29,7 @@ To enable it:
 
 * In Polypane:
 
-  This is the default mode in Polypane. Unique to Polypane is that it allows you to see multiple different sizes side-by-side.
+  This is the default mode in Polypane. Unique to Polypane is that it allows you to see [multiple different sizes side-by-side](/tips/en/simulate-multiple-devices/).
 
   ![Polypane showing three different devices side-by-side.](/assets/img/simulate-devices-polypane.png)
 
