@@ -18,4 +18,4 @@ To test if your page can be cached:
 
 A report will be displayed, telling you whether your page can be cached, and if not, why.
 
-![Screenshot of Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached](/assets/img/check-bfcache-readiness.png)
+![Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached.](/assets/img/check-bfcache-readiness.png)

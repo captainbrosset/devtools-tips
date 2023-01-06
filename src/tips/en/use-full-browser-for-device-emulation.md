@@ -12,4 +12,4 @@ Firefox has a keyboard shortcut to show device emulation without Developer Tools
 
 On Chromium based browsers like Chrome and Edge the trick is to start the device emulation and then un-dock the Developer Tools. You can un-dock the tools into their own window using the `…` menu. This gives you the full browser as an emulation playground.
 
-![Screencast showing device emulation andhow to undock the Developer Tools into an own window](/assets/img/use-full-browser-for-device-emulation.gif)
+![Animation showing device emulation and how to undock the Developer Tools into an own window.](/assets/img/use-full-browser-for-device-emulation.gif)

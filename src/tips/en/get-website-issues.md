@@ -20,4 +20,4 @@ To see issues with the current page in Edge:
 
 [Learn more about this tool](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/issues/).
 
-![Screenshot of the issues panel in Edge, showing many different issues about the page](/assets/img/get-website-issues.png)
+![The issues panel in Edge, showing many different issues about the page.](/assets/img/get-website-issues.png)

@@ -15,4 +15,4 @@ By default, the messages displayed in the console get removed as soon as you ref
 * In Polypane:
   * In the Console panel, check the "Preserve" box in the top toolbar
 
-![Screenshot of Edge devtools' console showing the settings panel at the top, with the "perserve log" box checked](/assets/img/persist-logs-across-pages.png)
+![Edge devtools' console showing the settings panel at the top, with the "perserve log" box checked.](/assets/img/persist-logs-across-pages.png)

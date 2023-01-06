@@ -15,4 +15,4 @@ Thankfully, there is a way in Chrome and Edge to force the sync, so you don't ha
 * Scroll down to the **Periodic Sync** input.
 * Enter the tag name for your registered sync, and click the **Periodic Sync** button.
 
-![Screenshot of the Application panel in Edge showing the periodic sync input and buttons](/assets/img/force-pwa-periodic-sync.png)
+![The Application panel in Edge showing the periodic sync input and buttons.](/assets/img/force-pwa-periodic-sync.png)

@@ -17,7 +17,7 @@ This tool adds a layer on the page that shows the order in which elements would 
 * Go to the Accessibility panel
 * In the toolbar, check the "Show Tabbing Order" box
 
-![Screenshot of the tabbing order highlighter in Firefox, showing numbered boxes around focusable elements](/assets/img/visualize-tabbing-order.png)
+![The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.](/assets/img/visualize-tabbing-order.png)
 
 [Learn more about it here](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector#show_web_page_tabbing_order).
 
@@ -29,6 +29,6 @@ This tool shows the tabbing order in a list that also warns you about issues wit
 
 Click **Show overlay** to add a layer to the page that draws a line from each element to the next, to make it easy to follow.
 
-![Screenshot of the tabbing order highlighter in Polypane, showing numbered boxes and a line going from each focusable element to the next](/assets/img/visualize-tabbing-order-polypane.png)
+![The tabbing order highlighter in Polypane, showing numbered boxes and a line going from each focusable element to the next.](/assets/img/visualize-tabbing-order-polypane.png)
 
 [Learn more about it here](https://polypane.app/docs/outline-panel/#focus-order-tab-order).

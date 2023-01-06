@@ -20,4 +20,4 @@ It turns out there is a way to do this automatically without having to set break
   * In the sidebar, select the **Stack Trace** panel (you might have to first click on the **More tabs** chevron `>>` to see the tab)
   * The stack of JavaScript calls that led to the node creation (if any) should be displayed.
 
-![Screenshot of Edge DevTools' Elements panel with the Stack Trace sidebar visible, showing a stack of Vue JS function calls that created an element on the TODOMVC sample app](/assets/img/capture-node-creation-stacks.png)
+![Edge DevTools' Elements panel with the Stack Trace sidebar visible, showing a stack of Vue JS function calls that created an element on the TODOMVC sample app.](/assets/img/capture-node-creation-stacks.png)

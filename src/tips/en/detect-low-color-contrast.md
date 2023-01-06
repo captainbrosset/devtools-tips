@@ -17,14 +17,14 @@ DevTools comes with a number of features to help you detect possible color contr
   * Click **Capture overview**.
   * Click the **Colors** tab in the sidebar and scroll down to the **Contrast issues** section.
 
-  ![Screenshot of the CSS Overview panel in Chrome, showing the color contrast issues section](/assets/img/detect-low-color-contrast-css-overview.png)
+  ![The CSS Overview panel in Chrome, showing the color contrast issues section.](/assets/img/detect-low-color-contrast-css-overview.png)
 
 * In Firefox, you can find all contrast issues too, using the **Accessibility** panel.
   * Open the **Accessibility** panel from the toolbar.
   * In the **Check for issues** drop-down, select **Contrast**.
   * Click each item in the table and review the color contrast ratio.
 
-  ![Screenshot of the Accessibility panel in Firefox, showing the list of contrast issues](/assets/img/detect-low-color-contrast-accessibility-panel.png)
+  ![The Accessibility panel in Firefox, showing the list of contrast issues.](/assets/img/detect-low-color-contrast-accessibility-panel.png)
 
 * In Polypane, you can find all contrast issues with the **Color Contrast debug tool**.
   * Open the **Debug Tools** settings of a pane.
@@ -32,4 +32,4 @@ DevTools comes with a number of features to help you detect possible color contr
   * Select whether you want to check for WCAG **AA** or **AAA** compliance.
   * Contrast issues are displayed inline on the page. Where available, Polypane suggests improved colors.
 
-  ![Screenshot of a Polypane Pane with the Contrast checker debug tool active](/assets/img/detect-low-color-contrast-inline.png)
+  ![A Polypane Pane with the Contrast checker debug tool active.](/assets/img/detect-low-color-contrast-inline.png)

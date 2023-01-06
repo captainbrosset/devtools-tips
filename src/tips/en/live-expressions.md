@@ -20,6 +20,6 @@ You can use this, for example, to resize the window to a certain size by monitor
 `${window.outerWidth} x ${window.outerHeight}`
 ```
 
-![Monitoring the window size using live expressions](/assets/img/live-expressions-window-resize.gif)
+![Monitoring the window size using live expressions.](/assets/img/live-expressions-window-resize.gif)
 
 You can set as many live expressions as you want, and you can remove them by clicking the `x` icon next to them.

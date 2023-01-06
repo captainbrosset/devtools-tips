@@ -6,7 +6,7 @@ tags: ["testing", "browser:edge", "browser:firefox", "browser:chrome", "browser:
 ---
 There is a great mode in all major browser developer tools that makes it really easy to test your webpage under different screen sizes and even simulate other devices.
 
-![Animation showing how the tool makes it easy to resize the screen size by dragging the mouse](/assets/img/simulate-devices.gif)
+![Animation showing how the tool makes it easy to resize the screen size by dragging the mouse.](/assets/img/simulate-devices.gif)
 
 To enable it:
 

@@ -23,4 +23,4 @@ Now in Chromium-based browsers, you can test those quick fixes much faster witho
 
 This means you don't need to leave DevTools, make your change to the original code, reload the page, and wait to hit the breakpoint or error again!
 
-![GIf animation showing that it is possible to write code in the Sources panel, while debugging, to test fixes](/assets/img/edit-javascript-while-debugging.gif)
+![Animation showing that it is possible to write code in the Sources panel, while debugging, to test fixes.](/assets/img/edit-javascript-while-debugging.gif)

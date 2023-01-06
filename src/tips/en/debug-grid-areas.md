@@ -23,4 +23,4 @@ DevTools in Firefox, Chrome, and Edge make it very easy to debug potential probl
 * Go to the **Layout** sidebar pane.
 * Under the **Grid** section, check the **Show area names** box.
 
-![Screenshot of Firefox, with a highlighted grid in the page showing the area names, and devtools below it with the "display area names" option checked](/assets/img/debug-grid-areas.png)
+![Firefox showing a highlighted grid in the page showing the area names, and devtools below it with the "display area names" option checked.](/assets/img/debug-grid-areas.png)

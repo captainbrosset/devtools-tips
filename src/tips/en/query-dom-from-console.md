@@ -10,4 +10,4 @@ They are essentially shortcuts to the longer `document.querySelector()` and `doc
 
 They're nice and short, and for those who worked with jQuery, they will feel familiar.
 
-![Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions](/assets/img/query-dom-from-console.png)
+![Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.](/assets/img/query-dom-from-console.png)

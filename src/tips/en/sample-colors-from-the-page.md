@@ -11,13 +11,13 @@ Being able to sample colors from the page is super useful. Firefox, Edge and Chr
   * Go to the "More Tools" submenu
   * Click on the Eyedropper menu item
 
-![Gif animation of the eyedropper tool being started from the firefox main menu](/assets/img/sample-colors-from-the-page-1.gif)
+![Animation of the eyedropper tool being started from the Firefox main menu.](/assets/img/sample-colors-from-the-page-1.gif)
 
 * There is a second way to do this in Firefox from DevTools:
   * Open the Inspector panel
   * Click on the eye dropper button in the typ-right corner of the panel
 
-![Screenshot of the eyedropper button in Firefox's inspector panel](/assets/img/sample-colors-from-the-page-2.png)
+![The eyedropper button in Firefox's inspector panel.](/assets/img/sample-colors-from-the-page-2.png)
 
 * In Polypane you also do not need devtools
   * Click the eye dropper icon in the address bar.
@@ -25,7 +25,7 @@ Being able to sample colors from the page is super useful. Firefox, Edge and Chr
 
   After selecting a color, an overview of previously selected colors, previews and contrast ratios is shown.
 
-![GIF animation of starting the eyedropper tool from Polypane's address bar](/assets/img/sample-colors-from-the-page-4.gif)
+![Animation of starting the eyedropper tool from Polypane's address bar.](/assets/img/sample-colors-from-the-page-4.gif)
 
 
 
@@ -35,4 +35,4 @@ Being able to sample colors from the page is super useful. Firefox, Edge and Chr
   * Find the color in the Styles pane and click on the color swatch icon next to it
   * Just start moving the mouse over the page
 
-![Gif animation of starting the eyedropper tool from chrome and edge's color pickers](/assets/img/sample-colors-from-the-page-3.gif)
+![Animation of starting the eyedropper tool from chrome and edge's color pickers.](/assets/img/sample-colors-from-the-page-3.gif)

@@ -23,6 +23,6 @@ Note that this also works for other kinds of "links" like:
 * `<input list="datalistID">`
 * `<td headers="header1ID,header2ID">`
 
-![GIF animation showing the Firefox DevTools Inspector panel, the mouse clicks the for attribute of a label element and the selection jumps to the related input element](/assets/img/jump-to-referenced-elements.gif)
+![Animation showing the Firefox DevTools Inspector panel, the mouse clicks the for attribute of a label element and the selection jumps to the related input element.](/assets/img/jump-to-referenced-elements.gif)
 
 Thank you to [Manuel Matuzović](https://twitter.com/mmatuzo) for [sharing on twitter](https://twitter.com/mmatuzo/status/1542768792836636672).

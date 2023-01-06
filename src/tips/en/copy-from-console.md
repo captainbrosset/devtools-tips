@@ -8,4 +8,4 @@ The console panel supports a very handy `copy()` function that stringifies and c
 
 For example: `copy($$('a').map(a => a.href).join('\n'))` copies all of the links from the page.
 
-![Screenshot of Chrome devtools' console with a line of code using the copy() function](/assets/img/copy-from-console.png)
+![Chrome devtools' console with a line of code using the copy() function.](/assets/img/copy-from-console.png)

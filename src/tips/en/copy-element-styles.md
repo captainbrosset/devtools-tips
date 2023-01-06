@@ -14,7 +14,7 @@ No need to go through all CSS rules and properties that apply to the element in 
 1. Click **Copy** > **Copy styles**.
 1. Paste the result in a text editor and use however you want.
 
-![Screenshot of the Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.](/assets/img/copy-element-styles.png)
+![The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.](/assets/img/copy-element-styles.png)
 
 In Polypane,
 

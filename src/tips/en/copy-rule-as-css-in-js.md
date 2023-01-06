@@ -37,7 +37,7 @@ In Edge and Chrome, you don't have to. They both have an option that does the re
 
 Note that you can also use **Copy declaration as JS** if you only want one. But this feature really shines when you copy all declarations at once.
 
-![GIF showing the Styles pane in Edge, with the "Copy all declarations as JS" option being used, and then pasting the result in the Console to show that it is formatted](/assets/img/copy-rule-as-css-in-js.gif)
+![Aimation showing the Styles pane in Edge, with the "Copy all declarations as JS" option being used, and then pasting the result in the Console to show that it is formatted.](/assets/img/copy-rule-as-css-in-js.gif)
 
 Find out more about this feature on [the Microsoft DevTools docs website](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/css/css-in-js), or take a look at this short screencast:
 

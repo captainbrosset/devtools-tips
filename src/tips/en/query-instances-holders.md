@@ -13,10 +13,10 @@ These two functions are really useful when your site starts using a lot of JavaS
 
 If `app.TodoItem` is a JavaScript class in your application, then `queryInstances(app.TodoItem)` will return an array of all of its instances.
 
-![Screenshot of the console in Safari, showing the result of queryInstances(app.TodoItem)](/assets/img/query-instances-holders-1.png)
+![The console in Safari, showing the result of queryInstances(app.TodoItem).](/assets/img/query-instances-holders-1.png)
 
 Or if you want to know what refers to the object you're debugging, use `queryHolders(this)`, which will return an array of all the other objects that have references to `this`.
 
-![Screenshot of the console in Safari, showing the result of queryHolders(this)](/assets/img/query-instances-holders-2.png)
+![The console in Safari, showing the result of queryHolders(this).](/assets/img/query-instances-holders-2.png)
 
 Learn more about these, and other, built-in functions [here](https://webkit.org/web-inspector/console-command-line-api/#functions).

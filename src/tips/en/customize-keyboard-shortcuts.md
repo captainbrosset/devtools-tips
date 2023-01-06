@@ -22,4 +22,4 @@ To customize the shortcuts:
 1. Press the new key combination you want for this shortcut.
 1. You can then save the new shortcut, cancel your change, or revert to the shortcut's initial value.
 
-![The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen](/assets/img/customize-keyboard-shortcuts.png)
+![The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.](/assets/img/customize-keyboard-shortcuts.png)

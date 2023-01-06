@@ -17,4 +17,4 @@ https://www.youtube.com/watch?v=W8s9UiEhaLE
 
 Note that while the workflow works in every browser, the **Snippets** pane only exists in Edge and Chrome. In Firefox, you can use the [multi-line console](/tips/en/multi-line-console) to do the same thing.
 
-![Screenshot of VSCode with some JSON data and DevTools next to it with the snippets panel containing JS code to manipulate the JSON](/assets/img/manipulate-complex-json.png)
+![VSCode with some JSON data and DevTools next to it with the snippets panel containing JS code to manipulate the JSON.](/assets/img/manipulate-complex-json.png)

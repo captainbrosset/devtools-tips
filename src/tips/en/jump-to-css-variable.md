@@ -26,4 +26,4 @@ In Edge and Chrome, you can simply click on a `var(--foo)` function to jump to w
 * Click on the property name.
 * The Styles panel scrolls to where the property is defined and highlights it for a second.
 
-![GIF animation of clicking on a custom property link in the Styles panel in Edge](/assets/img/jump-to-css-variable.gif)
+![Animation of clicking on a custom property link in the Styles panel in Edge.](/assets/img/jump-to-css-variable.gif)

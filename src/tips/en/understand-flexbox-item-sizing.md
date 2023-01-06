@@ -28,4 +28,4 @@ Here is the information that might be displayed:
 * **Max or min size**: whether the item has a max or min size defined (e.g. using `min-width` or `max-width` in row direction). This can _clamp_ the item, even if it wanted to grow or shrink more.
 * **Final size**: the actual final size of the item.
 
-![Firefox, with the DevTools Inspector tool opened, showing the Layout sidebar that contains the flex item diagram](/assets/img/understand-flexbox-item-sizing.png)
+![Firefox, with the DevTools Inspector tool opened, showing the Layout sidebar that contains the flex item diagram.](/assets/img/understand-flexbox-item-sizing.png)
