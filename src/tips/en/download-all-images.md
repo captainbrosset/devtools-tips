@@ -36,4 +36,4 @@ This will list all of the `img` elements on the page, then attempt to fetch them
 
 If you want to reuse this script often, you can store it in your **Snippets** on Chrome or Edge (learn how to do it [here](/tips/en/multi-line-console)).
 
-![The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded].(/assets/img/download-all-images.png)
+![The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded](/assets/img/download-all-images.png)
