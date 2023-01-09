@@ -11,12 +11,13 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/download-all-images/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/download-all-images.png">
     <meta property="og:description" content="Download all images from the page">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
     <script>
@@ -25,6 +26,7 @@
       gtag('js', new Date());
       gtag('config', 'G-4P6B6NT4Y8');
     </script>
+    
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -58,7 +60,7 @@
 <pre class="language-javascript"><code class="language-javascript"><span class="token function">$$</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">img</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>  <span class="token keyword">try</span> <span class="token punctuation">{</span><br>    <span class="token keyword">const</span> src <span class="token operator">=</span> img<span class="token punctuation">.</span>src<span class="token punctuation">;</span><br><br>    <span class="token comment">// Fetch the image as a blob.</span><br>    <span class="token keyword">const</span> fetchResponse <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>src<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">const</span> blob <span class="token operator">=</span> <span class="token keyword">await</span> fetchResponse<span class="token punctuation">.</span><span class="token function">blob</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">const</span> mimeType <span class="token operator">=</span> blob<span class="token punctuation">.</span>type<span class="token punctuation">;</span><br><br>    <span class="token comment">// Figure out a name for it from the src and the mime-type.</span><br>    <span class="token keyword">const</span> start <span class="token operator">=</span> src<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span><br>    <span class="token keyword">const</span> end <span class="token operator">=</span> src<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">,</span> start<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">let</span> name <span class="token operator">=</span> src<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>start<span class="token punctuation">,</span> end <span class="token operator">===</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">?</span> <span class="token keyword">undefined</span> <span class="token operator">:</span> end<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    name <span class="token operator">=</span> name<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[^a-zA-Z0-9]+</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">'-'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    name <span class="token operator">+=</span> <span class="token string">'.'</span> <span class="token operator">+</span> mimeType<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>mimeType<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    <span class="token comment">// Download the blob using a &lt;a> element.</span><br>    <span class="token keyword">const</span> a <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    a<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'href'</span><span class="token punctuation">,</span> <span class="token constant">URL</span><span class="token punctuation">.</span><span class="token function">createObjectURL</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    a<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'download'</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    a<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>This will list all of the <code>img</code> elements on the page, then attempt to fetch them from the server (which might fail for some, depending on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">CSP</a> on the page), and then trigger the download of each one of them by the browser, using a <code>&lt;a download&gt;</code> element.</p>
 <p>If you want to reuse this script often, you can store it in your <strong>Snippets</strong> on Chrome or Edge (learn how to do it <a href="/tips/en/multi-line-console">here</a>).</p>
-<p>![The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded].(/assets/img/download-all-images.png)</p>
+<p><img src="/assets/img/download-all-images.png" alt="The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded"></p>
 
 </div>
 <div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
@@ -71,6 +73,7 @@
       <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
       <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
     </footer>
+    
     <script>
       async function registerPeriodicSync() {
         const registration = await navigator.serviceWorker.ready;
@@ -109,5 +112,6 @@
         registerPeriodicSync();
       }
     </script>
+    
   </body>
 </html>
