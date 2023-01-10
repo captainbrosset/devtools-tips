@@ -1,7 +1,7 @@
 ---
 date: 2023-01-06
 authors: Kilian Valkhof
-title: Work on multiple synced devices
+title: Simulate multiple devices that are kept in sync
 tags: ["productivity", "testing", "browser:polypane"]
 ---
 
