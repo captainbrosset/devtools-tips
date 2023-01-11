@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulate different devices and screen sizes</title>
+    <title>Show web vitals</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/simulate-devices/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/show-web-vitals/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/img/simulate-devices.gif">
-    <meta property="og:description" content="Simulate different devices and screen sizes">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/show-web-vitals.png">
+    <meta property="og:description" content="Show web vitals">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -48,56 +48,29 @@
     <div class="header-shadow-block"></div>
     <main id="maincontent">
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h2 class="tip-title">Simulate different devices and screen sizes</h2>
+<h2 class="tip-title">Show web vitals</h2>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/">testing</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li><li class="tag"><a href="/tag/testing/">testing</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
 <div class="tip-content">
-    <p>There is a great mode in all major browser developer tools that makes it really easy to test your webpage under different screen sizes and even simulate other devices.</p>
-<p><img src="/assets/img/simulate-devices.gif" alt="Animation showing how the tool makes it easy to resize the screen size by dragging the mouse."></p>
-<p>To enable it:</p>
+    <p>Web vitals are a set of metrics that help you determine how well-built your page is. You can <a href="https://web.dev/vitals/">learn more about them here</a>. These scores can be obtained with various online checks like <a href="https://web.dev/measure/">PageSpeed Insights</a>.</p>
+<p>In Polypane you can show the current web vitals score of a page and compare it to global averages (CrUX data), as well as find out which parts of the page contribute to your scores.</p>
+<p>To turn them on:</p>
 <ul>
-<li>
-<p>In Chrome:</p>
-<p>In DevTools, click <strong>Toggle Device Toolbar</strong> or press <kbd>Ctrl+Shift+M</kbd> (or <kbd>Cmd+Shift+M</kbd> on macOS).</p>
-</li>
-<li>
-<p>In Edge:</p>
-<p>In DevTools, click <strong>Toggle device emulation</strong> or press <kbd>Ctrl+Shift+M</kbd> (or <kbd>Cmd+Shift+M</kbd> on macOS).</p>
-</li>
-<li>
-<p>In Firefox:</p>
-<ul>
-<li>You can do it even without opening DevTools: go to <strong>Application menu</strong> &gt; <strong>More tools</strong> &gt; <strong>Responsive design mode</strong>, or press <kbd>Ctrl+Shift+M</kbd> (or <kbd>Cmd+Shift+M</kbd> on macOS).</li>
-<li>Or, if you're in DevTools, click <strong>Responsive Design Mode</strong>, or press <kbd>Ctrl+Shift+M</kbd> (or <kbd>Cmd+Shift+M</kbd> on macOS).</li>
+<li>Open the <strong>Settings menu</strong></li>
+<li>Toggle <strong>Web Vitals Status</strong></li>
+<li>Each pane now shows a small icon that will change from a circle to a square to a rectangle depending on your web vitals score.</li>
+<li>Hover the icon to show an overview:</li>
 </ul>
-</li>
-<li>
-<p>In Safari:</p>
-<p>In the <strong>Develop</strong> menu bar item, click <strong>Enter Responsive Design Mode</strong>, or press <kbd>Ctrl+Command+R</kbd>.</p>
-</li>
-<li>
-<p>In Polypane:</p>
-<p>This is the default mode in Polypane. Unique to Polypane is that it allows you to see <a href="/tips/en/simulate-multiple-devices/">multiple different sizes side-by-side</a>.</p>
-<p><img src="/assets/img/simulate-devices-polypane.png" alt="Polypane showing three different devices side-by-side."></p>
-</li>
-</ul>
-<p>When enabled, you can:</p>
-<ul>
-<li>Resize the screen size by hand.</li>
-<li>Choose one of the pre-defined devices to simulate. <strong>Note</strong>: this option only simulates the screen size, user agent string, and touch events (when necessary), but doesn't render the page like the real device would. Always test your webpage with the real device too.</li>
-<li><a href="/tips/en/add-new-devices">Create your own simulated devices</a>.</li>
-<li><a href="/tips/en/take-in-device-screenshots">Capture screenshots</a>.</li>
-<li><a href="/tips/en/throttle-network-speed">Throttle the network speed to test your website on slower connections</a>.</li>
-<li>And more.</li>
-</ul>
+<p><img src="/assets/img/show-web-vitals.png" alt="The web vitals tooltip in Polypane showing a good CLS, LCP and FCP score and a FID score that needs improvement."></p>
+<p>In the overview you will find for each web vital the score for the current page and a bar chart of what percentage of visits were good, needed improvement or were bad. Click the <strong>Eye icon</strong> in front of a web vital, when available, will show which elements contributed to that score. <a href="https://polypane.app/docs/web-vitals/">Learn more here</a>.</p>
 
 </div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
-        <p class="last-edit">Last edit: <time datetime="2022-10-19T00:00:00.000Z">10/19/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/simulate-devices.md">Edit page</a></p></div>
+<div class="tip-footer"><div class="authors">Authors: <span><a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
+        <p class="last-edit">Last edit: <time datetime="2023-01-06T00:00:00.000Z">1/6/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/show-web-vitals.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>
 

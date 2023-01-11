@@ -12,6 +12,37 @@
   </author>
   
   <entry>
+    <title>Simulate multiple devices that are kept in sync</title>
+    <link href="https://devtoolstips.org/tips/en/simulate-multiple-devices/"/>
+    <updated>2023-01-06T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/simulate-multiple-devices/</id>
+    <content type="html">&lt;p&gt;Instead of &lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-devices/&quot;&gt;simulating devices one by one&lt;/a&gt; and switching between them, Polypane supports testing on multiple simulated devices and viewports at the same time.&lt;/p&gt;
+&lt;p&gt;It lets you test different simulated devices, viewports and media query features (like light and dark mode) side-by-side while keeping all your interactions (like clicks, hovers and keyboard input) in sync across all devices. This means anything you do in one device happens in all of them.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/simulate-devices-polypane.png&quot; alt=&quot;Polypane showing three different devices side-by-side.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://polypane.app/docs/&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Show web vitals</title>
+    <link href="https://devtoolstips.org/tips/en/show-web-vitals/"/>
+    <updated>2023-01-06T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/show-web-vitals/</id>
+    <content type="html">&lt;p&gt;Web vitals are a set of metrics that help you determine how well-built your page is. You can &lt;a href=&quot;https://web.dev/vitals/&quot;&gt;learn more about them here&lt;/a&gt;. These scores can be obtained with various online checks like &lt;a href=&quot;https://web.dev/measure/&quot;&gt;PageSpeed Insights&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Polypane you can show the current web vitals score of a page and compare it to global averages (CrUX data), as well as find out which parts of the page contribute to your scores.&lt;/p&gt;
+&lt;p&gt;To turn them on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Settings menu&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Toggle &lt;strong&gt;Web Vitals Status&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Each pane now shows a small icon that will change from a circle to a square to a rectangle depending on your web vitals score.&lt;/li&gt;
+&lt;li&gt;Hover the icon to show an overview:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/show-web-vitals.png&quot; alt=&quot;The web vitals tooltip in Polypane showing a good CLS, LCP and FCP score and a FID score that needs improvement.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In the overview you will find for each web vital the score for the current page and a bar chart of what percentage of visits were good, needed improvement or were bad. Click the &lt;strong&gt;Eye icon&lt;/strong&gt; in front of a web vital, when available, will show which elements contributed to that score. &lt;a href=&quot;https://polypane.app/docs/web-vitals/&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Manipulate global objects on page load, before other scripts run</title>
     <link href="https://devtoolstips.org/tips/en/manipulate-global-objects-on-page-load/"/>
     <updated>2023-01-06T00:00:00.000Z</updated>
@@ -27,6 +58,17 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/manipulate-global-objects-on-page-load.png&quot; alt=&quot;The Sources tab in Safari&#39;s WebInspector, showing the Add resource button and the Bootstrap script type&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;To learn more, see &lt;a href=&quot;https://webkit.org/web-inspector/inspector-bootstrap-script/&quot;&gt;Inspector Bootstrap Script&lt;/a&gt; on the webkit blog.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Autofill forms for testing</title>
+    <link href="https://devtoolstips.org/tips/en/form-testing/"/>
+    <updated>2023-01-06T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/form-testing/</id>
+    <content type="html">&lt;p&gt;In Polypane you can right-click any form on the page and select &lt;strong&gt;Autofill form&lt;/strong&gt; to add dummy values to all input elements. This prevents you from having to go field-by-field to fill in all required fields while developing or testing forms. It also supports clearing a form at once by selecting &lt;strong&gt;Clear form&lt;/strong&gt; from the same context menu.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/form-testing.gif&quot; alt=&quot;Animation of a form being filled after selecting &amp;quot;autofill&amp;quot; in the context menu, followed by the form being emptied after choosing &amp;quot;Clear form&amp;quot; in the context menu.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://polypane.app/docs/form-autofill/&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
@@ -318,7 +360,7 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;In Polypane:&lt;/p&gt;
-&lt;p&gt;This is the default mode in Polypane. Unique to Polypane is that it allows you to see multiple different sizes side-by-side.&lt;/p&gt;
+&lt;p&gt;This is the default mode in Polypane. Unique to Polypane is that it allows you to see &lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-multiple-devices/&quot;&gt;multiple different sizes side-by-side&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/simulate-devices-polypane.png&quot; alt=&quot;Polypane showing three different devices side-by-side.&quot; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
