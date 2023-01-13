@@ -5,11 +5,58 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-01-06T00:00:00.000Z</updated>
+  <updated>2023-01-13T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Emulate color schemes</title>
+    <link href="https://devtoolstips.org/tips/en/emulate-color-schemes/"/>
+    <updated>2023-01-13T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/emulate-color-schemes/</id>
+    <content type="html">&lt;p&gt;In CSS, you can use the &lt;code&gt;prefers-color-scheme&lt;/code&gt; media feature (&lt;a href=&quot;https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme&quot;&gt;docs&lt;/a&gt;) to detect if the user prefers using a light or a dark theme in their operating system. This is useful to style your website in a way that better blends with the rest of the operating system and respects the user&#39;s preference.&lt;/p&gt;
+&lt;p&gt;However, it can be a pain to test since you have to go in the operating system&#39;s settings and change the theme there. This can be slow and you might not actually want to change your entire theme just to test a website.&lt;/p&gt;
+&lt;p&gt;DevTools to the rescue! With DevTools, you can emulate a different color scheme just for the inspected page. All browsers support it, but it&#39;s slightly different in each one of them.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In Firefox:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Inspector&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;In the toolbar of the &lt;strong&gt;Rules&lt;/strong&gt; sidebar tab, use the light and dark color scheme buttons.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/emulate-color-schemes-firefox.png&quot; alt=&quot;Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Edge or Chrome:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;In the toolbar of the &lt;strong&gt;Styles&lt;/strong&gt; pane, open the &lt;strong&gt;Toggle common rendering emulations&lt;/strong&gt; menu (it looks like a paint brush).&lt;/li&gt;
+&lt;li&gt;Choose one of the &lt;code&gt;prefers-color-scheme&lt;/code&gt; options.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/emulate-color-schemes-edge.png&quot; alt=&quot;Edge, with DevTools open, showing the Elements tool, with the emulation button and color-scheme dropdown menu&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Safari:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;In the toolbar of the tool, click the emulation button and choose a color scheme.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/emulate-color-schemes-safari.png&quot; alt=&quot;Safari, with WebInspector open, showing the Elements tool, with the emulation button and dropdown menu&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Polypane:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Next to the pane you want to change, click the emulation icon in the pane header.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Media&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;Choose a scheme in the &lt;strong&gt;prefers-color-scheme&lt;/strong&gt; toggle.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/emulate-color-schemes-polypane.png&quot; alt=&quot;Polypane&#39;s emulation pane, with the Media tab, showing the prefers-color-scheme toggle&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Simulate multiple devices that are kept in sync</title>
