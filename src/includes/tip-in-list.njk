@@ -2,7 +2,6 @@
 <li class="hover-box tip {{ "unique-browser-feature" if nbSupportedBrowsers == 1 }}">
   <a href="{{ post.url }}" class="tip-title">{{ post.data.title }}</a>
   <a href="{{ post.url }}" class="tip-image">{% mainImage post %}</a>
-  {# {% mainImage post %} #}
   <div class="tip-excerpt">
     {% excerpt post %}
     <a href="{{ post.url }}">Read more</a>
