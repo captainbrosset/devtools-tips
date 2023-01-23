@@ -384,9 +384,12 @@ main h2.tip-title {
     margin: 0 1rem;
   }
 
-  .tip img {
+  .tip .tip-image {
     grid-column: 1;
     grid-row: 4;
+  }
+    
+  .tip .tip-image img {
     border: none;
     border-top: 2px solid var(--alternate-background-color);
     max-height: 150px;
