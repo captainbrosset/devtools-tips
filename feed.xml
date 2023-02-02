@@ -5,11 +5,32 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-01-13T00:00:00.000Z</updated>
+  <updated>2023-02-02T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Disable abusive debugger statements that prevent inspecting websites.</title>
+    <link href="https://devtoolstips.org/tips/en/disable-abusive-debugger-statement/"/>
+    <updated>2023-02-02T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/disable-abusive-debugger-statement/</id>
+    <content type="html">&lt;p&gt;Some websites make it impossible to use DevTools by adding &lt;code&gt;debugger&lt;/code&gt; statements in their code.&lt;/p&gt;
+&lt;p&gt;The statements don&#39;t do anything for normal users, but as soon as DevTools is opened, the JavaScript execution pauses, and this makes it impossible to debug or inspect the site as normal.&lt;/p&gt;
+&lt;p&gt;To disable the abusive &lt;code&gt;debugger&lt;/code&gt; statement:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Sources&lt;/strong&gt; tool (or &lt;strong&gt;Debugger&lt;/strong&gt; tool in Firefox).&lt;/li&gt;
+&lt;li&gt;Right-click in the line number gutter, right next to the &lt;code&gt;debugger&lt;/code&gt; statement.&lt;/li&gt;
+&lt;li&gt;Create a new &lt;strong&gt;Conditional breakpoint&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter &lt;code&gt;false&lt;/code&gt; as the condition for this breakpoint.&lt;/li&gt;
+&lt;li&gt;Refresh the page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, everytime this line of code is executed, the breakpoint will be ignored because the condition always returns &lt;code&gt;false&lt;/code&gt;. And the page will run normally!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/disable-abusive-debugger-statement.gif&quot; alt=&quot;The Sources tool in Firefox, showing how to add a conditional breakpoint.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Thank you &lt;a href=&quot;https://twitter.com/quicksave2k/status/1610250172210073607&quot;&gt;François for the tweet&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Emulate color schemes</title>
