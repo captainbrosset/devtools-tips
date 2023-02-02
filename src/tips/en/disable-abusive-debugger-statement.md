@@ -1,7 +1,7 @@
 ---
 date: 2023-02-02
 authors: Patrick Brosset
-title: Disable abusive debugger statements that prevent inspecting websites.
+title: Disable abusive debugger statements that prevent inspecting websites
 tags: ["javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
 ---
 Some websites make it impossible to use DevTools by adding `debugger` statements in their code.
