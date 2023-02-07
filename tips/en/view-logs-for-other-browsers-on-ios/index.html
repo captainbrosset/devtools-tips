@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View console logs from non-Safari browsers on an iPhone</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/view-logs-for-other-browsers-on-ios/">
+    
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/view-logs-for-other-browsers-on-ios.png">
+    <meta property="og:description" content="View console logs from non-Safari browsers on an iPhone">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4P6B6NT4Y8');
+    </script>
+    
+  </head>
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+      <h1><a href="/">DevTools Tips</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h2 class="tip-title">View console logs from non-Safari browsers on an iPhone</h2>
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/debug/">debug</a></li><li class="tag"><a href="/tag/console/">console</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+</div>
+<div class="tip-content">
+    <p>Using the <code>about:inspect</code> special page you can see your website's logs in Chrome or Edge running on iPhone!</p>
+<p>This is important because debugging a webpage that's running in Safari on an iPhone isn't hard, but debugging the same webpage when it's running in Chrome or Edge on an iPhone is impossible, and sometimes there are pages that may work in Safari, but not in Chrome or Edge.</p>
+<p>The former requires connecting your iPhone to a Mac via USB, enabling the WebInspector tools on the Mac, and connecting from Safari desktop to Safari mobile (learn more at <a href="https://webkit.org/web-inspector/enabling-web-inspector/">Enabling Web Inspector</a>).</p>
+<p>The latter, however, is not possible. Even if Chrome and Edge use the webkit webview on iPhone, Apple just doesn't let you connect to these webviews from your Mac. Because the webview-version of webkit is subtly different from the version of webkit that powers Safari, it's possible for your webpage to work in Safari but not in Chrome or Edge, even on the same iPhone.</p>
+<p>Thankfully, here is a way to at least see your console logs from these browsers, which is better than nothing:</p>
+<ol>
+<li>In Chrome or Edge on iPhone, open a new tab and go to <code>about:inspect</code>.</li>
+<li>Click <strong>Start Logging</strong>.</li>
+<li>Keep this tab open and open a new one.</li>
+<li>In the new tab, go to the site that you need to test and run the user scenario that will trigger a the console logs you need to see.</li>
+<li>Return to the previous tab. Your logs are now displayed on the <code>about:inspect</code> page.</li>
+</ol>
+<p><img src="/assets/img/view-logs-for-other-browsers-on-ios.png" alt="Edge on iOS, showing the about:inspect page, filled with logs"></p>
+
+</div>
+<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+        <p class="last-edit">Last edit: <time datetime="2023-02-07T00:00:00.000Z">2/7/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/view-logs-for-other-browsers-on-ios.md">Edit page</a></p></div>
+<script async src="/assets/share.js"></script>
+<script async src="/assets/dialog-lightbox.js"></script>
+
+    </main>
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
+    </footer>
+    
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+    
+  </body>
+</html>
