@@ -388,7 +388,7 @@ main h2.tip-title {
     grid-column: 1;
     grid-row: 4;
   }
-    
+
   .tip .tip-image img {
     border: none;
     border-top: 2px solid var(--alternate-background-color);
@@ -630,6 +630,7 @@ footer a {
 }
 .lightbox-button > img {
   max-width: 100%;
+  contain: layout;
 }
 .lightbox-button::after {
   content: "";
@@ -670,6 +671,29 @@ footer a {
       opacity: 1;
     }
   }
+
+  ::view-transition-group(backdrop) {
+    animation-name: show;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    z-index: 1;
+  }
+
+  ::view-transition-group(image) {
+    animation-duration: 0.55s;
+    animation-iteration-count: 1;
+    z-index: 3;
+  }
+
+  ::view-transition-group(button) {
+    animation-delay: 0.55s;
+    animation-name: show;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    z-index: 4;
+  }
 }
 
 :root:has(.lightbox[open]) {
@@ -678,6 +702,8 @@ footer a {
 
 .lightbox::backdrop {
   background: var(--lightbox-backdrop);
+  view-transition-name: backdrop;
+  contain: layout;
 }
 
 .lightbox form {
@@ -689,6 +715,8 @@ footer a {
 }
 
 .lightbox img {
+  view-transition-name: image;
+  contain: layout;
   width: auto;
   max-width: 100%;
 
@@ -696,6 +724,7 @@ footer a {
 	background: none;
 	border-radius: 0;
 }
+
 .lightbox form > span {
   background: var(--alternate-background-color);
   position: sticky;
@@ -722,6 +751,9 @@ footer a {
   background-color: var(--accent-color-lighter);
   color: var(--accent-color-darker);
   transition: 0.25s ease-in-out background;
+  z-index: 1;
+  view-transition-name: button;
+  contain: layout;
 }
 .lightbox button:hover {
   background-color: var(--accent-color);

@@ -33,9 +33,19 @@ function createDialogs(selector) {
     button.append(img);
     button.after(dialog);
 
-    button.addEventListener("click", () => {
+    const showDialog = () => {
+      img.style.viewTransitionName = "";
       dialog.style.setProperty("width", img.naturalWidth + "px");
       dialog.showModal();
+    };
+
+    button.addEventListener("click", () => {
+      if (!document.startViewTransition) {
+        showDialog();
+        return;
+      }
+      img.style.viewTransitionName = "image";
+      document.startViewTransition(() => showDialog());
     });
 
     dialog.addEventListener(
