@@ -656,16 +656,12 @@ footer a {
   border: none;
   background: none;
   padding: 0;
-  max-width: 98vw;
-  max-height: 98vh;
+  max-width: calc(100vw - 1rem);
+  max-height: calc(100vh - 1rem);
   color: inherit;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .lightbox[open] {
-    animation: show 0.25s ease-in-out normal;
-  }
-
   @keyframes show {
     from {
       opacity: 0;
