@@ -11,13 +11,16 @@ The statements don't do anything for normal users, but as soon as DevTools is op
 To disable the abusive `debugger` statement:
 
 * Open the **Sources** tool (or **Debugger** tool in Firefox).
-* Right-click in the line number gutter, right next to the `debugger` statement.
-* Create a new **Conditional breakpoint**.
-* Enter `false` as the condition for this breakpoint.
+* Right-click the line number gutter, right next to the `debugger` statement.
+* On Chromium-based browsers (Chrome or Edge):
+   * Click **Never pause here**.
+* On other browsers:
+   * Create a new **Conditional breakpoint**.
+   * Enter `false` as the condition for this breakpoint.
 * Refresh the page.
 
-Now, everytime this line of code is executed, the breakpoint will be ignored because the condition always returns `false`. And the page will run normally!
+Now, everytime this line of code is executed, the nasty `debugger` statement will be ignored and the page will run normally!
 
 ![The Sources tool in Firefox, showing how to add a conditional breakpoint.](/assets/img/disable-abusive-debugger-statement.gif)
 
-Thank you [François for the tweet](https://twitter.com/quicksave2k/status/1610250172210073607).
+Thank you [François for the tweet](https://twitter.com/quicksave2k/status/1610250172210073607) and [Pankaj Parashar for the tip about using the **Never pause here** option](https://github.com/captainbrosset/devtools-tips/issues/66).
