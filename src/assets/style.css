@@ -663,12 +663,21 @@ footer a {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  .lightbox {
+    animation: show 0.25s ease-in-out normal;
+  }
   @keyframes show {
     from {
       opacity: 0;
     }
     to {
       opacity: 1;
+    }
+  }
+
+  @supports selector(::view-transition) {
+    .lightbox {
+      animation-duration:0s;
     }
   }
 
