@@ -684,11 +684,8 @@ footer a {
   ::view-transition-group(backdrop) {
     animation-name: show;
     animation-duration: 0.25s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
     z-index: 1;
   }
-
   ::view-transition-group(image) {
     animation-duration: 0.55s;
     animation-iteration-count: 1;
@@ -699,8 +696,6 @@ footer a {
     animation-delay: 0.55s;
     animation-name: show;
     animation-duration: 0.25s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
     z-index: 4;
   }
 }
