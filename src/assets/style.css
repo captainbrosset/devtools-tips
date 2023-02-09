@@ -677,26 +677,28 @@ footer a {
 
   @supports selector(::view-transition) {
     .lightbox {
-      animation-duration:0s;
+      animation-duration: 0s;
     }
   }
 
   ::view-transition-group(backdrop) {
-    animation-name: show;
     animation-duration: 0.25s;
     z-index: 1;
   }
   ::view-transition-group(image) {
-    animation-duration: 0.55s;
-    animation-iteration-count: 1;
+    animation-duration: 0.5s;
     z-index: 3;
   }
 
   ::view-transition-group(button) {
-    animation-delay: 0.55s;
-    animation-name: show;
+    animation-delay: 0.5s;
     animation-duration: 0.25s;
     z-index: 4;
+  }
+
+  ::view-transition-group(dialog) {
+    animation-duration: 0.5s;
+    z-index: 2;
   }
 }
 
@@ -716,6 +718,8 @@ footer a {
   border-radius: 5px;
   padding: 1rem 1rem 0;
   grid-template-rows: 0 1fr min-content;
+  view-transition-name: dialog;
+  contain: layout;
 }
 
 .lightbox img {

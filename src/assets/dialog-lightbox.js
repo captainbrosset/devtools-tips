@@ -34,9 +34,13 @@ function createDialogs(selector) {
     button.after(dialog);
 
     const showDialog = () => {
-      img.style.viewTransitionName = "";
-      dialog.style.setProperty("width", img.naturalWidth + "px");
-      dialog.showModal();
+      if (dialog.open) {
+        dialog.close();
+      } else {
+        img.style.viewTransitionName = "";
+        dialog.style.setProperty("width", img.naturalWidth + "px");
+        dialog.showModal();
+      }
     };
 
     button.addEventListener("click", () => {
@@ -48,10 +52,15 @@ function createDialogs(selector) {
       document.startViewTransition(() => showDialog());
     });
 
-    dialog.addEventListener(
-      "click",
-      event => event.target === dialog && dialog.close()
-    );
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) {
+        if (!document.startViewTransition) {
+          showDialog();
+          return;
+        }
+        document.startViewTransition(() => showDialog());
+      }
+    });
   }
 
   [...document.querySelectorAll(selector)].forEach(createDialog);
