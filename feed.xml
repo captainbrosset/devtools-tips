@@ -42,14 +42,23 @@
 &lt;p&gt;To disable the abusive &lt;code&gt;debugger&lt;/code&gt; statement:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Open the &lt;strong&gt;Sources&lt;/strong&gt; tool (or &lt;strong&gt;Debugger&lt;/strong&gt; tool in Firefox).&lt;/li&gt;
-&lt;li&gt;Right-click in the line number gutter, right next to the &lt;code&gt;debugger&lt;/code&gt; statement.&lt;/li&gt;
+&lt;li&gt;Right-click the line number gutter, right next to the &lt;code&gt;debugger&lt;/code&gt; statement.&lt;/li&gt;
+&lt;li&gt;On Chromium-based browsers (Chrome or Edge):
+&lt;ul&gt;
+&lt;li&gt;Click &lt;strong&gt;Never pause here&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;On other browsers:
+&lt;ul&gt;
 &lt;li&gt;Create a new &lt;strong&gt;Conditional breakpoint&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;Enter &lt;code&gt;false&lt;/code&gt; as the condition for this breakpoint.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Refresh the page.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Now, everytime this line of code is executed, the breakpoint will be ignored because the condition always returns &lt;code&gt;false&lt;/code&gt;. And the page will run normally!&lt;/p&gt;
+&lt;p&gt;Now, everytime this line of code is executed, the nasty &lt;code&gt;debugger&lt;/code&gt; statement will be ignored and the page will run normally!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/disable-abusive-debugger-statement.gif&quot; alt=&quot;The Sources tool in Firefox, showing how to add a conditional breakpoint.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Thank you &lt;a href=&quot;https://twitter.com/quicksave2k/status/1610250172210073607&quot;&gt;François for the tweet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thank you &lt;a href=&quot;https://twitter.com/quicksave2k/status/1610250172210073607&quot;&gt;François for the tweet&lt;/a&gt; and &lt;a href=&quot;https://github.com/captainbrosset/devtools-tips/issues/66&quot;&gt;Pankaj Parashar for the tip about using the &lt;strong&gt;Never pause here&lt;/strong&gt; option&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   

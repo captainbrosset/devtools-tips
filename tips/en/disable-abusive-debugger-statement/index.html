@@ -61,14 +61,23 @@
 <p>To disable the abusive <code>debugger</code> statement:</p>
 <ul>
 <li>Open the <strong>Sources</strong> tool (or <strong>Debugger</strong> tool in Firefox).</li>
-<li>Right-click in the line number gutter, right next to the <code>debugger</code> statement.</li>
+<li>Right-click the line number gutter, right next to the <code>debugger</code> statement.</li>
+<li>On Chromium-based browsers (Chrome or Edge):
+<ul>
+<li>Click <strong>Never pause here</strong>.</li>
+</ul>
+</li>
+<li>On other browsers:
+<ul>
 <li>Create a new <strong>Conditional breakpoint</strong>.</li>
 <li>Enter <code>false</code> as the condition for this breakpoint.</li>
+</ul>
+</li>
 <li>Refresh the page.</li>
 </ul>
-<p>Now, everytime this line of code is executed, the breakpoint will be ignored because the condition always returns <code>false</code>. And the page will run normally!</p>
+<p>Now, everytime this line of code is executed, the nasty <code>debugger</code> statement will be ignored and the page will run normally!</p>
 <p><img src="/assets/img/disable-abusive-debugger-statement.gif" alt="The Sources tool in Firefox, showing how to add a conditional breakpoint."></p>
-<p>Thank you <a href="https://twitter.com/quicksave2k/status/1610250172210073607">François for the tweet</a>.</p>
+<p>Thank you <a href="https://twitter.com/quicksave2k/status/1610250172210073607">François for the tweet</a> and <a href="https://github.com/captainbrosset/devtools-tips/issues/66">Pankaj Parashar for the tip about using the <strong>Never pause here</strong> option</a>.</p>
 
 </div>
 <div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
