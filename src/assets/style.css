@@ -647,8 +647,11 @@ footer a {
     center/80%;
   z-index: 1;
   transition: 0.25s ease-in-out background;
-  view-transition-name: zoombutton;
   contain: layout;
+}
+
+.lightbox--transition.lightbox-button::after {
+  view-transition-name: zoombutton;
 }
 
 .lightbox-button:hover::after {
@@ -688,32 +691,35 @@ footer a {
     z-index: 10;
   }
   ::view-transition-group(image) {
-    animation-duration: 0.5s;
+    animation-duration: 0.25s;
     z-index: 30;
   }
 
   ::view-transition-group(button) {
-    animation-delay: 0.5s;
+    animation-delay: 0.25s;
     animation-duration: 0.25s;
     z-index: 40;
   }
 
   ::view-transition-group(zoombutton) {
-    animation-delay: 0.5s;
+    animation-delay: 0.25s;
     animation-duration: 0.25s;
     z-index: 40;
     animation-name: show;
 
   ::view-transition-group(dialog) {
-    animation-delay: 0.5s;
+    animation-delay: 0.25s;
     z-index: 20;
   }
 }
 
 .lightbox::backdrop {
   background: var(--lightbox-backdrop);
-  view-transition-name: backdrop;
   contain: layout;
+}
+
+.lightbox--transition.lightbox::backdrop {
+  view-transition-name: backdrop;
 }
 
 .lightbox form {
@@ -722,8 +728,10 @@ footer a {
   border-radius: 5px;
   padding: 1rem 1rem 0;
   grid-template-rows: 0 1fr min-content;
-  view-transition-name: dialog;
   contain: layout;
+}
+.lightbox--transition.lightbox form {
+  view-transition-name: dialog;
 }
 
 .lightbox img {
@@ -763,8 +771,10 @@ footer a {
   color: var(--accent-color-darker);
   transition: 0.25s ease-in-out background;
   z-index: 1;
-  view-transition-name: button;
   contain: layout;
+}
+.lightbox--transition.lightbox button {
+  view-transition-name: button;
 }
 .lightbox button:hover {
   background-color: var(--accent-color);

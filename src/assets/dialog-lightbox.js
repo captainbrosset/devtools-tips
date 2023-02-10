@@ -8,9 +8,10 @@ function createDialogs(selector) {
   const buttonTemplate = document.createElement("button");
   buttonTemplate.classList.add("lightbox-button");
   buttonTemplate.setAttribute("aria-haspopup", "dialog");
-
   const dialogTemplate = document.createElement("dialog");
+
   dialogTemplate.classList.add("lightbox");
+
   dialogTemplate.innerHTML = `
     <form method="dialog">
       <button type="submit">
@@ -32,7 +33,11 @@ function createDialogs(selector) {
     button.append(img);
     button.after(dialog);
 
-
+    // @todo these should be dynamically added/removed on click but that results in artifacts
+    // we need to dynamically add these to support animating multiple images on one page.
+    // we probably also need to remove this from all other images.
+    dialog.classList.add("lightbox--transition");
+    button.classList.add("lightbox--transition");
     img.style.viewTransitionName = "image";
 
     const toggleDialog = () => {
@@ -46,32 +51,34 @@ function createDialogs(selector) {
       }
     };
 
-    button.addEventListener("click", (e) => {
-      if (!document.startViewTransition) {
-        toggleDialog();
-        return;
-      }
+    const callToggleDialog = () => {
+      const motionAllowed = window.matchMedia(
+        "(prefers-reduced-motion: no-preference)"
+      ).matches;
 
-      document.startViewTransition(() => toggleDialog());
-    });
-
-    dialog.addEventListener("click", (event) => {
-      if (event.target === dialog) {
-        if (!document.startViewTransition) {
-          toggleDialog();
-          return;
-        }
+      if (document.startViewTransition && motionAllowed) {
         document.startViewTransition(() => toggleDialog());
-      }
-    });
-
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      if (!document.startViewTransition) {
-        toggleDialog();
         return;
       }
-      document.startViewTransition(() => toggleDialog());
+
+      toggleDialog();
+    };
+
+    [
+      { el: button, ev: "click" },
+      { el: dialog, ev: "cancel" },
+      { el: form, ev: "submit" },
+    ].forEach((handler) => {
+      handler.el.addEventListener(handler.ev, (e) => {
+        e.preventDefault();
+        callToggleDialog();
+      });
+    });
+
+    dialog.addEventListener("click", (e) => {
+      if (e.target === dialog) {
+        callToggleDialog();
+      }
     });
   }
 
