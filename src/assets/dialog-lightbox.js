@@ -8,10 +8,9 @@ function createDialogs(selector) {
   const buttonTemplate = document.createElement("button");
   buttonTemplate.classList.add("lightbox-button");
   buttonTemplate.setAttribute("aria-haspopup", "dialog");
+
   const dialogTemplate = document.createElement("dialog");
-
   dialogTemplate.classList.add("lightbox");
-
   dialogTemplate.innerHTML = `
     <form method="dialog">
       <button type="submit">
@@ -67,18 +66,15 @@ function createDialogs(selector) {
     [
       { el: button, ev: "click" },
       { el: dialog, ev: "cancel" },
+      { el: dialog, ev: "click", condition: (e) => e.target === dialog },
       { el: form, ev: "submit" },
-    ].forEach((handler) => {
-      handler.el.addEventListener(handler.ev, (e) => {
-        e.preventDefault();
-        callToggleDialog();
+    ].forEach(({ el, ev, condition = () => true }) => {
+      el.addEventListener(ev, (e) => {
+        if (condition(e)) {
+          e.preventDefault();
+          callToggleDialog();
+        }
       });
-    });
-
-    dialog.addEventListener("click", (e) => {
-      if (e.target === dialog) {
-        callToggleDialog();
-      }
     });
   }
 
