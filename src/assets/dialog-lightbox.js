@@ -27,39 +27,51 @@ function createDialogs(selector) {
     const form = dialog.querySelector("form");
     const span = dialog.querySelector("form > span");
 
-    span.before(img.cloneNode());
     span.textContent = img.getAttribute("alt");
     img.before(button);
     button.append(img);
     button.after(dialog);
 
-    const showDialog = () => {
+
+    img.style.viewTransitionName = "image";
+
+    const toggleDialog = () => {
       if (dialog.open) {
+        button.append(img);
         dialog.close();
       } else {
-        img.style.viewTransitionName = "";
-        dialog.style.setProperty("width", img.naturalWidth + "px");
+        span.before(img);
+        span.style.setProperty("max-width", img.naturalWidth + "px");
         dialog.showModal();
       }
     };
 
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (e) => {
       if (!document.startViewTransition) {
-        showDialog();
+        toggleDialog();
         return;
       }
-      img.style.viewTransitionName = "image";
-      document.startViewTransition(() => showDialog());
+
+      document.startViewTransition(() => toggleDialog());
     });
 
     dialog.addEventListener("click", (event) => {
       if (event.target === dialog) {
         if (!document.startViewTransition) {
-          showDialog();
+          toggleDialog();
           return;
         }
-        document.startViewTransition(() => showDialog());
+        document.startViewTransition(() => toggleDialog());
       }
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!document.startViewTransition) {
+        toggleDialog();
+        return;
+      }
+      document.startViewTransition(() => toggleDialog());
     });
   }
 
