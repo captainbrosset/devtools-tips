@@ -53,7 +53,7 @@
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/javascript/">javascript</a></li><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
 </div>
 <div class="tip-content">
     <p>Some websites make it impossible to use DevTools by adding <code>debugger</code> statements in their code.</p>
@@ -62,17 +62,8 @@
 <ul>
 <li>Open the <strong>Sources</strong> tool (or <strong>Debugger</strong> tool in Firefox).</li>
 <li>Right-click the line number gutter, right next to the <code>debugger</code> statement.</li>
-<li>On Chromium-based browsers (Chrome or Edge):
-<ul>
-<li>Click <strong>Never pause here</strong>.</li>
-</ul>
-</li>
-<li>On other browsers:
-<ul>
-<li>Create a new <strong>Conditional breakpoint</strong>.</li>
-<li>Enter <code>false</code> as the condition for this breakpoint.</li>
-</ul>
-</li>
+<li>Either click <strong>Never pause here</strong>.</li>
+<li>Or create a new <strong>Conditional breakpoint</strong>, and enter <code>false</code> as the condition for this breakpoint.</li>
 <li>Refresh the page.</li>
 </ul>
 <p>Now, everytime this line of code is executed, the nasty <code>debugger</code> statement will be ignored and the page will run normally!</p>
