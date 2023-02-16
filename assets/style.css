@@ -505,7 +505,6 @@ pre {
 .tip-footer .authors span,
 .tip-footer .last-edit time {
   color: var(--text-color);
-  margin-left: 0.25rem;
 }
 
 .tip-footer .last-edit::before {
