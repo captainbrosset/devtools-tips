@@ -1,6 +1,11 @@
 // Generate a list of see-also tips for each tip in the /src/tips/en/ folder.
+//
 // This is done by using retext and the retext-keywords plugin to extract keywords and keyphrases from each tip.
 // The resulting data is stored in /src/data/SEEALSO.json so that the 11ty build can use it.
+//
+// This script is only executed when env=prod so as not to slow down the dev build and cause infinite reload loops
+// when using "npm run watch". This means it only runs when the github workflow runs.
+// Run this script manually with "npm run generate-see-also.js" to test the see-also sections locally.
 
 const fs = require('fs').promises;
 const path = require('path');
@@ -18,22 +23,26 @@ const MAX_TIPS = 4;
 // The higher the number, the fewer tips will be shown in the "See also" section, and in some cases, no tips will be shown.
 // Err on the side of showing too many tips, rather than too few. Even if some are not strictly relevant, it's better than showing none
 // because these are just tips, and people may be interested in learning more even if it's not strictly relevant.
-const MIN_COMMON_KEYS = 3;
+const MIN_COMMON_KEYS = 2;
 
-function convertTipToPlainText(tipContent) {
-  const text = markdownToTxt(tipContent).toLocaleLowerCase();
+function prepareTipData(tipFile, tipContent) {
+  const text = markdownToTxt(tipContent);
   const lines = text.split('\n');
 
-  const title = lines.find(line => line.startsWith('title: ')).substring(7).toLocaleLowerCase();
+  const title = lines.find(line => line.startsWith('title: ')).substring(7);
   const content = lines.filter(line => {
     return !line.startsWith('authors: ') &&
       !line.startsWith('date: ') &&
       !line.startsWith('tags: ') &&
       !line.startsWith('title: ') &&
       !line.startsWith('istweet: ');
-  }).join('\n');
+  }).join('\n').toLocaleLowerCase();
 
-  return `${title}\n${content}`;
+  return {
+    title,
+    indexableContent: `${title.toLocaleLowerCase()}\n${content}`,
+    link: `/tips/en/${tipFile.substring(0, tipFile.length - 3)}`
+  };
 }
 
 async function getKeywords(text) {
@@ -59,29 +68,32 @@ async function getData() {
   const tipsDir = path.join(__dirname, 'src', 'tips', 'en');
   const tipFiles = await fs.readdir(tipsDir);
 
-  const data = [];
+  const tipsWithKeys = [];
 
   for (const tipFile of tipFiles) {
     const tipContent = await fs.readFile(path.join(tipsDir, tipFile), 'utf8');
-    const text = convertTipToPlainText(tipContent);
-    const keywords = await getKeywords(text);
+    const {title, indexableContent, link} = prepareTipData(tipFile, tipContent);
+    const keywords = await getKeywords(indexableContent);
 
     // console.log("--------------------", tipFile);
     // console.log("words: ", keywords.words.join(', '));
     // console.log("phrases: ", keywords.phrases.join(', '));
 
-    data.push({
+    tipsWithKeys.push({
+      title,
+      link,
       file: tipFile,
-      keys: [...keywords.words, ...keywords.phrases],
-      seeAlso: []
+      keys: [...keywords.words, ...keywords.phrases]
     });
   }
 
-  // Now, for each tip, we need to find the 3 other tips that have the most words and/or phrases in common.
-  for (const tip of data) {
+  const data = {};
+
+  // Now, for each tip, we need to find the other tips that have the most words and/or phrases in common.
+  for (const tip of tipsWithKeys) {
     const seeAlso = [];
 
-    for (const otherTip of data) {
+    for (const otherTip of tipsWithKeys) {
       if (otherTip.file === tip.file) {
         continue;
       }
@@ -90,7 +102,7 @@ async function getData() {
 
       if (keysInCommon.length > MIN_COMMON_KEYS) {
         seeAlso.push({
-          file: otherTip.file,
+          tip: otherTip,
           keysInCommon
         });
       }
@@ -102,7 +114,12 @@ async function getData() {
     // console.log(tip.file);
     // console.log(seeAlso);
 
-    tip.seeAlso = seeAlso.slice(0, MAX_TIPS).map(d => d.file);
+    data[tip.file] = seeAlso.slice(0, MAX_TIPS).map(s => {
+      return {
+        title: s.tip.title,
+        link: s.tip.link
+      };
+    });
   }
 
   return data

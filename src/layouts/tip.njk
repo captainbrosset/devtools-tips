@@ -21,6 +21,16 @@ templateEngineOverride: njk
 <div class="tip-content" data-pagefind-body>
     {{ content | safe }}
 </div>
+{%- if SEEALSO and SEEALSO[page.inputPath.split("/").pop()].length -%}
+<div class="see-also">
+    <h3>See also</h3>
+    <ul>
+      {%- for otherTip in SEEALSO[page.inputPath.split("/").pop()] -%}
+        <li><a href="{{ otherTip.link }}">{{ otherTip.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+</div>
+{%- endif -%}
 <div class="tip-footer">
     {%- if not isTweet -%}
         <div class="authors">Authors: <span>{% formatAuthors authors %}</span></div>
