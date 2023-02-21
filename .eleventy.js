@@ -3,6 +3,8 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 const embedTwitter = require("eleventy-plugin-embed-twitter");
 const striptags = require("striptags");
+const execSync = require('child_process').execSync;
+require("dotenv").config();
 
 const AUTHORS = require("./src/data/AUTHORS.json");
 
@@ -92,6 +94,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(embedYouTube);
   eleventyConfig.addPlugin(embedTwitter);
+
+  // Index the site with PageFind after the build.
+  // Only do this for prod builds.
+  if (process.env.BUILD_ENV !== "dev") {
+    eleventyConfig.on("afterBuild", () => {
+      execSync(`npx pagefind --source dist --glob \"**/*.html\"`, { encoding: 'utf-8' })
+    });
+  }
 
   return {
     dir: {
