@@ -19,8 +19,13 @@
         "dotenv": "^16.0.3",
         "eleventy-plugin-embed-twitter": "1.3.3",
         "eleventy-plugin-youtube-embed": "^1.4.5",
+        "markdown-to-txt": "^2.0.1",
+        "nlcst-to-string": "^3.1.1",
         "node-fetch": "^2.6.1",
-        "pagefind": "^0.11.0"
+        "pagefind": "^0.11.0",
+        "retext": "^8.1.0",
+        "retext-keywords": "^7.2.0",
+        "retext-pos": "^4.1.0"
     },
     "dependencies": {
         "striptags": "^3.2.0"
