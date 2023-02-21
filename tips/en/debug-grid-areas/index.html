@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Debug CSS grid areas</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>A really useful way to position elements on a CSS grid is using the <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas"><code>grid-template-areas</code></a> property. With it, you can give names to various areas of your grid (potentially spanning multiple cells), and then simply position your elements by referring to those names.</p>
 <p>The syntax for the <code>grid-template-areas</code> property is a bit special though. It consists in a series of strings where each corresponds to one row in the grid. For example:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">grid-template-areas</span><span class="token punctuation">:</span> <span class="token string">"header  header"</span><br>                       <span class="token string">"sidebar main  "</span><br>                       <span class="token string">"sidebar footer"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
@@ -68,8 +68,7 @@
 </ul>
 <p><img src="/assets/img/debug-grid-areas.png" alt="Firefox showing a highlighted grid in the page showing the area names, and devtools below it with the &quot;display area names&quot; option checked."></p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2022-03-16T00:00:00.000Z">3/16/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-grid-areas.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>

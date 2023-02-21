@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Pause script execution when the DOM changes</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>If you want to know what JavaScript code removes, adds, or modifies a DOM element in the page, you can use DOM breakpoints in DevTools. You can choose to break on:</p>
 <ul>
 <li>Subtree modification: this pauses execution when any element in the subtree of the selected element is modified (added, removed, or changed attribute).</li>
@@ -73,8 +73,7 @@
 <p><img src="/assets/img/break-on-dom-changes.png" alt="The Elements panel in Edge showing the &quot;Break on&quot; contextual menu on the selected node."></p>
 <p>Once the requested DOM modification occurs, the JavaScript execution will pause and DevTools will navigate to the Sources/Debugger panel, showing the right line of code where execution is paused.</p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2021-09-22T00:00:00.000Z">9/22/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/break-on-dom-changes.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>

@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Event listeners are suppressed when paused</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript.</p>
 <p>If you use breakpoints in the Sources (or Debugger) tab in DevTools to debug JavaScript, you should know that all event listeners are suppressed while paused at one of them.</p>
 <p>For example, if you have a button with an <code>onclick</code> handler, and you're paused at a breakpoint, then clicking that button won't execute the handler. It also won't execute it later when you resume execution.
@@ -64,8 +64,7 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 <p>The reason for this is that (ignoring workers) JavaScript on your page only runs in one thread. So while that thread is paused at one specific location, it's not supposed to be able to execute code from other locations.</p>
 <p><img src="/assets/img/suppressed-event-listeners-when-paused.png" alt="A page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page."></p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2021-06-30T00:00:00.000Z">6/30/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/suppressed-event-listeners-when-paused.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>

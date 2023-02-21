@@ -491,9 +491,24 @@ pre {
   white-space: normal;
 }
 
+.see-also {
+	margin: 2rem 0 0 0;
+}
+
+.see-also ul,
+.see-also li {
+  list-style: square;
+  margin-left: 1rem;
+}
+
+.see-also ul {
+  margin-block-start: 1rem;
+}
+
 .tip-footer {
   margin: 2rem 0 0 0;
   font-size: smaller;
+  text-align: end;
 }
 
 .tip-footer * {

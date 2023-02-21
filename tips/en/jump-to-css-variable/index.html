@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Jump from a CSS variable usage to where it is defined</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>CSS <strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">custom properties</a></strong> (also called <strong>variables</strong>) are very useful to avoid repeating values in CSS, like colors for example.</p>
 <p>You can define and use a custom property as shown below:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">rule-1</span> <span class="token punctuation">{</span><br>  <span class="token property">--my-main-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">rule-2</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--my-main-color<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
@@ -69,8 +69,7 @@
 </ul>
 <p><img src="/assets/img/jump-to-css-variable.gif" alt="Animation of clicking on a custom property link in the Styles panel in Edge."></p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2021-09-27T00:00:00.000Z">9/27/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/jump-to-css-variable.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>

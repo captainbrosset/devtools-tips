@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Prototype content changes with designMode</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>When creating or modifying a design prototype for the web, you may want to quickly edit content in the browser without having to find the relevant code.</p>
 <p>When you turn on <code>designMode</code> for the document or a given element, all associated text becomes editable directly in the browser. Images and other page content can be deleted, too. This is a quick way to prototype design changes such as seeing how a page responds to very long or very short headline copy.</p>
 <p><code>designMode</code> is not a DevTools-specific feature, as it is defined as part of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/designMode">Web API</a>. However, toggling <code>designMode</code> via the DevTools Console is a convenient way to temporarily make the page editable.</p>
@@ -68,8 +68,7 @@
 <p>Changes are not persisted and will revert on page close or refresh.</p>
 <p><img src="/assets/img/prototype-content-changes-with-designmode.gif" alt="Animation of editable web page with designMode on."></p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://www.nobadmemories.com/">Rachel Simone Weil</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://www.nobadmemories.com/">Rachel Simone Weil</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2021-08-02T00:00:00.000Z">8/2/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/prototype-content-changes-with-designmode.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>

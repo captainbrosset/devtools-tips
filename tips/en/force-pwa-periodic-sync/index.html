@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Force PWA periodic background syncs</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Periodic_Background_Synchronization_API">periodic background sync API</a>, available to PWAs is a great way to fetch new content while the user isn't on the site, and while they have access to the network, to make sure they have the latest content when they come back to the app.</p>
 <p>It can be hard to debug though, as the sync only happen after the minimum interval has passed, and the browser thinks that now is a good time to trigger the sync.</p>
 <p>Thankfully, there is a way in Chrome and Edge to force the sync, so you don't have to wait for the browser to do it.</p>
@@ -67,8 +67,7 @@
 </ul>
 <p><img src="/assets/img/force-pwa-periodic-sync.png" alt="The Application panel in Edge showing the periodic sync input and buttons."></p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2021-09-10T00:00:00.000Z">9/10/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/force-pwa-periodic-sync.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>

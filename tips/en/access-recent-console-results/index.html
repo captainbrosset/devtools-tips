@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Access results from recent Console evaluations</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>Imagine you evaluate a long expression like <code>$$('*').map(el =&gt; Object.values(el.attributes).map(attr =&gt; {return {name: attr.name, value: attr.value}}))</code> which extracts the attributes from all of the DOM elements on the page.</p>
 <p>Now imagine you want to access one element in particular from the giant returned array. You could just type the same expression again and add <code>[14]</code> at the end of it to access the 15th item.</p>
 <p>Or, you can use this great Console trick to reference the previous result without having to type it again:</p>
@@ -64,8 +64,7 @@
 <p><strong>Safari goes even further</strong> and provides shortcuts from <code>$1</code> all the way to <code>$99</code> to access previous results too. So if you had evaluated many expressions in the Console before, you can refer to their results by using one of the <code>$n</code> shortcuts where <code>$1</code> is the first evaluated expression, <code>$2</code> is the second one, and so on (<a href="https://webkit.org/web-inspector/console-command-line-api/#$1">more information here</a>).</p>
 <p><img src="/assets/img/access-recent-console-results-safari.png" alt="The Console in Safari Web Inspector showing how using $1, $2, $3, ... refer to previous Console results"></p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2022-09-29T00:00:00.000Z">9/29/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/access-recent-console-results.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>

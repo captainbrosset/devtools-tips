@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Find all images without alternative text</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>With HTML, you can add alternative text to images using the <code>alt</code> attribute. It can be used to add a text description to images, which is extremely useful for accessibility as some people may not be able to see the images. With <code>alt</code>, screen readers can announce the alternative text to the user.</p>
 <p>Using DevTools, you can quickly check which images on a page do not have an <code>alt</code> text, here is how:</p>
 <p>Execute this in the Console panel: <code>console.table($$('img').filter(i =&gt; !i.alt), ['src'])</code> and that's it! You'll have the list of image URLs that don't have an alternative text.</p>
@@ -75,8 +75,7 @@
 </ol>
 <p><img src="/assets/img/find-all-images-without-alt-text-polypane.png" alt="The outline panel in Polypane showing a 'missing' warning for an image."></p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2021-06-28T00:00:00.000Z">6/28/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-all-images-without-alt-text.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>

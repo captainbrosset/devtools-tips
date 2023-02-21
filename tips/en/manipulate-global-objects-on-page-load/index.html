@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Manipulate global objects on page load, before other scripts run</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>When a page loads, and all of its global objects are ready, but before the JavaScript code of the page actually kicks-in, is a great time to inject debugging code. For example, it might be useful to replace global functions with ones that contain altered code.</p>
 <p>Safari lets you do this by creating an <strong>Inspector Bootstrap Script</strong>. This script is guaranteed to run after JavaScript global objects have been created, as long as DevTools is opened.</p>
 <p>To create a bootstrap script:</p>
@@ -68,8 +68,7 @@
 <p><img src="/assets/img/manipulate-global-objects-on-page-load.png" alt="The Sources tab in Safari's WebInspector, showing the Add resource button and the Bootstrap script type"></p>
 <p>To learn more, see <a href="https://webkit.org/web-inspector/inspector-bootstrap-script/">Inspector Bootstrap Script</a> on the webkit blog.</p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2023-01-06T00:00:00.000Z">1/6/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/manipulate-global-objects-on-page-load.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>

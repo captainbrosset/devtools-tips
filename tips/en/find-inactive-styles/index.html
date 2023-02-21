@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Find inactive CSS styles</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>Sometimes we write CSS code that's entirely valid but has absolutely no effect at all, and this can be frustrating.</p>
 <p>Indeed, there are many cases where a CSS declaration has no effect on an element. One common example is using <code>width</code> on an inline element. While this example may be known to most, there are so many different CSS properties and possible ways to combine them that it's impossible to know all of the cases where CSS won't have any effect.</p>
 <p>Firefox innovated with very cool feature that helps find these &quot;inactive&quot; CSS properties, and Chromium-based browsers now also have something!</p>
@@ -84,8 +84,7 @@
 <p><img src="/assets/img/find-inactive-styles-chromium.png" alt="Part of the Styles panel in Chrome, showing a greyed out align-content property, with a tooltip saying that the property is inactive because the selected flex container is not set to wrap."></p>
 <p><strong>Note</strong>: this is not an audit tool! It won't help you remove useless CSS rules throughout your codebase. Its value is when inspecting specific elements only, to easily detect when a given CSS property isn't doing anything on it.</p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2022-09-02T00:00:00.000Z">9/2/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-inactive-styles.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>

@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Format console messages</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>You can use special formatters in the <code>console.log</code> function to format logs just the way you want.</p>
 <ul>
 <li>Use <code>%s</code> to format a variable as a string.</li>
@@ -68,8 +68,7 @@
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> el <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'%c There are %d elements in %O'</span><span class="token punctuation">,</span> <span class="token string">'color:lime;background:black;'</span><span class="token punctuation">,</span> el<span class="token punctuation">.</span>childElementCount<span class="token punctuation">,</span> el<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p><img src="/assets/img/format-console-messages.png" alt="A formatted console message in Edge."></p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2021-11-10T00:00:00.000Z">11/10/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/format-console-messages.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>

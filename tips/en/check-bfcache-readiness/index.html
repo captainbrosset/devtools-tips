@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">DevTools Tips</a></h1>
+      <h1><a href="/">Check if your site can be instantly reloaded from bfcache</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -55,7 +55,7 @@
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
-<div class="tip-content">
+<div class="tip-content" data-pagefind-body>
     <p>Most browsers are now able to instantly go back to previously visited pages without having to wait for them to load. This ability is powered by the back/forward cache (or bfcache). Firefox, Safari, and Chromium-based browsers support it, and it's massive performance boost when hitting the back button.</p>
 <p>The way the bfcache works is by storing a snapshot of the page in memory, in a way that no work needs to be done when going back to it, other than displaying the pixels on the screen.</p>
 <p>Not all web pages can be cached in bfcache though. Chrome and Edge have a new tool that lets you detect potential issues with a page that might prevent it from being bfcache'd.</p>
@@ -68,8 +68,7 @@
 <p>A report will be displayed, telling you whether your page can be cached, and if not, why.</p>
 <p><img src="/assets/img/check-bfcache-readiness.png" alt="Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached."></p>
 
-</div>
-<div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2022-03-15T00:00:00.000Z">3/15/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/check-bfcache-readiness.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>
