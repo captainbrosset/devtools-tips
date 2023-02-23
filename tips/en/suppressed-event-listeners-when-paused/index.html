@@ -48,13 +48,13 @@
     <div class="header-shadow-block"></div>
     <main id="maincontent">
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h2 class="tip-title">Event listeners are suppressed when paused</h2>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
+<h2 class="tip-title">Event listeners are suppressed when paused</h2>
 <div class="tip-content" data-pagefind-body>
     <p>This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript.</p>
 <p>If you use breakpoints in the Sources (or Debugger) tab in DevTools to debug JavaScript, you should know that all event listeners are suppressed while paused at one of them.</p>
@@ -64,6 +64,19 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 <p>The reason for this is that (ignoring workers) JavaScript on your page only runs in one thread. So while that thread is paused at one specific location, it's not supposed to be able to execute code from other locations.</p>
 <p><img src="/assets/img/suppressed-event-listeners-when-paused.png" alt="A page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page."></p>
 
+</div><div class="see-also">
+    <h3>See also</h3>
+    <ul><li>
+            <a href="/tips/en/disable-event-listeners">Remove or disable event listeners</a>
+            <a href="/tips/en/disable-event-listeners" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/disable-event-listeners-firefox.png" alt="The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.">
+            </a>
+        </li><li>
+            <a href="/tips/en/monitor-element-events">Monitor all events dispatched on an element</a>
+            <a href="/tips/en/monitor-element-events" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/monitor-element-events.gif" alt="Animation showing how events get automatically logged when using the monitorEvents function.">
+            </a>
+        </li></ul>
 </div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2021-06-30T00:00:00.000Z">6/30/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/suppressed-event-listeners-when-paused.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>

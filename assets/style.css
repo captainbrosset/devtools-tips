@@ -279,8 +279,7 @@ main {
 }
 
 main h2.tip-title {
-  padding-right: 7rem;
-  margin-bottom: 1rem;
+	margin: 1rem 0;
 }
 
 /* List of tips */
@@ -415,9 +414,12 @@ main h2.tip-title {
 /* Tip page */
 
 .tip-content img {
-  max-width: min(80%, 800px);
-  width: auto;
-  display: block;
+	max-width: min(80%, 800px);
+	width: auto;
+	display: block;
+	padding: 1rem;
+	background: var(--background-color);
+	border-radius: .5rem;
 }
 
 .tip-content ul,
@@ -495,20 +497,36 @@ pre {
 	margin: 2rem 0 0 0;
 }
 
-.see-also ul,
-.see-also li {
-  list-style: square;
-  margin-left: 1rem;
+.see-also ul {
+	margin-block-start: 1rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
 
-.see-also ul {
-  margin-block-start: 1rem;
+.see-also li {
+	display: flex;
+	gap: 1rem;
+	background: var(--background-color);
+	padding: .5rem;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: .5rem;
+}
+
+.see-also .other-tip-image {
+  flex: 10rem 0 0;
+}
+
+.see-also .other-tip-image img {
+  width: 100%;
+  display: block;
 }
 
 .tip-footer {
   margin: 2rem 0 0 0;
   font-size: smaller;
-  text-align: end;
+  text-align: center;
 }
 
 .tip-footer * {
@@ -598,9 +616,10 @@ footer a {
   background: none;
   border: 0;
   padding: 0;
-  display: inline-block;
+  display: block;
   max-width: min(80%, 800px);
   width: auto;
+  margin: 0 auto;
 }
 .lightbox-button > img {
   max-width: 100%;
@@ -669,6 +688,10 @@ footer a {
 .lightbox img {
   width: auto;
   max-width: 100%;
+
+	padding: 0;
+	background: none;
+	border-radius: 0;
 }
 .lightbox form > span {
   background: var(--alternate-background-color);

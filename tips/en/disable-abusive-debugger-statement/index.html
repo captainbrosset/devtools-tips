@@ -48,13 +48,13 @@
     <div class="header-shadow-block"></div>
     <main id="maincontent">
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h2 class="tip-title">Disable abusive debugger statements that prevent inspecting websites</h2>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/javascript/">javascript</a></li><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
 </div>
+<h2 class="tip-title">Disable abusive debugger statements that prevent inspecting websites</h2>
 <div class="tip-content" data-pagefind-body>
     <p>Some websites make it impossible to use DevTools by adding <code>debugger</code> statements in their code.</p>
 <p>The statements don't do anything for normal users, but as soon as DevTools is opened, the JavaScript execution pauses, and this makes it impossible to debug or inspect the site as normal.</p>
@@ -70,6 +70,29 @@
 <p><img src="/assets/img/disable-abusive-debugger-statement.gif" alt="The Sources tool in Firefox, showing how to add a conditional breakpoint."></p>
 <p>Thank you <a href="https://twitter.com/quicksave2k/status/1610250172210073607">François for the tweet</a> and <a href="https://github.com/captainbrosset/devtools-tips/issues/66">Pankaj Parashar for the tip about using the <strong>Never pause here</strong> option</a>.</p>
 
+</div><div class="see-also">
+    <h3>See also</h3>
+    <ul><li>
+            <a href="/tips/en/debugger-statement">Use the debugger statement to pause script execution</a>
+            <a href="/tips/en/debugger-statement" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement.">
+            </a>
+        </li><li>
+            <a href="/tips/en/debug-js-hover-2">Debug popups that appear on hover using the debugger statement</a>
+            <a href="/tips/en/debug-js-hover-2" class="other-tip-image">
+                <img loading="lazy" src="" alt="">
+            </a>
+        </li><li>
+            <a href="/tips/en/debug-js-hover">Debug popups that appear on hover using JS</a>
+            <a href="/tips/en/debug-js-hover" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/debug-js-hover.gif" alt="Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.">
+            </a>
+        </li><li>
+            <a href="/tips/en/find-custom-elements-code">Find your web component&#39;s custom element code</a>
+            <a href="/tips/en/find-custom-elements-code" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-custom-elements-code.gif" alt="Animation showing the custom button in Firefox&#39;s inspector and that clicking on it goes to the debugger.">
+            </a>
+        </li></ul>
 </div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2023-02-02T00:00:00.000Z">2/2/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/disable-abusive-debugger-statement.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>

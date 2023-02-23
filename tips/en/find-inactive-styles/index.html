@@ -48,13 +48,13 @@
     <div class="header-shadow-block"></div>
     <main id="maincontent">
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h2 class="tip-title">Find inactive CSS styles</h2>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
+<h2 class="tip-title">Find inactive CSS styles</h2>
 <div class="tip-content" data-pagefind-body>
     <p>Sometimes we write CSS code that's entirely valid but has absolutely no effect at all, and this can be frustrating.</p>
 <p>Indeed, there are many cases where a CSS declaration has no effect on an element. One common example is using <code>width</code> on an inline element. While this example may be known to most, there are so many different CSS properties and possible ways to combine them that it's impossible to know all of the cases where CSS won't have any effect.</p>
@@ -84,6 +84,29 @@
 <p><img src="/assets/img/find-inactive-styles-chromium.png" alt="Part of the Styles panel in Chrome, showing a greyed out align-content property, with a tooltip saying that the property is inactive because the selected flex container is not set to wrap."></p>
 <p><strong>Note</strong>: this is not an audit tool! It won't help you remove useless CSS rules throughout your codebase. Its value is when inspecting specific elements only, to easily detect when a given CSS property isn't doing anything on it.</p>
 
+</div><div class="see-also">
+    <h3>See also</h3>
+    <ul><li>
+            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
+            <a href="/tips/en/copy-element-styles" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
+            </a>
+        </li><li>
+            <a href="/tips/en/highlight-css-properties-on-hover">Highlight the effect of individual CSS properties on hover</a>
+            <a href="/tips/en/highlight-css-properties-on-hover" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/highlight-css-properties-on-hover.gif" alt="Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.">
+            </a>
+        </li><li>
+            <a href="/tips/en/jump-to-css-variable">Jump from a CSS variable usage to where it is defined</a>
+            <a href="/tips/en/jump-to-css-variable" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/jump-to-css-variable.gif" alt="Animation of clicking on a custom property link in the Styles panel in Edge.">
+            </a>
+        </li><li>
+            <a href="/tips/en/convert-color-formats">Convert color formats</a>
+            <a href="/tips/en/convert-color-formats" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/convert-color-formats.gif" alt="Animation of the rules panel in Firefox, showing the color conversion.">
+            </a>
+        </li></ul>
 </div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2022-09-02T00:00:00.000Z">9/2/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-inactive-styles.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>

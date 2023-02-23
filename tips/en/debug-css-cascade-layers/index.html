@@ -48,13 +48,13 @@
     <div class="header-shadow-block"></div>
     <main id="maincontent">
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h2 class="tip-title">Visualize and debug CSS cascade layers</h2>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
+<h2 class="tip-title">Visualize and debug CSS cascade layers</h2>
 <div class="tip-content" data-pagefind-body>
     <p>CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which they apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using <code>!important</code> or artificially making selectors have higher specificity.</p>
 <p>If you want to learn more about cascade layers, check out <a href="https://css-tricks.com/css-cascade-layers/">Miriam Suzanne's complete guide on CSS Tricks</a>, but here let's see how we can visualize and debug layers in DevTools.</p>
@@ -76,6 +76,29 @@
 </ol>
 <p><img src="/assets/img/debug-css-cascade-layers-edge.png" alt="Edge showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules and the layers view."></p>
 
+</div><div class="see-also">
+    <h3>See also</h3>
+    <ul><li>
+            <a href="/tips/en/find-inactive-styles">Find inactive CSS styles</a>
+            <a href="/tips/en/find-inactive-styles" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-inactive-styles.png" alt="Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.">
+            </a>
+        </li><li>
+            <a href="/tips/en/convert-color-formats">Convert color formats</a>
+            <a href="/tips/en/convert-color-formats" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/convert-color-formats.gif" alt="Animation of the rules panel in Firefox, showing the color conversion.">
+            </a>
+        </li><li>
+            <a href="/tips/en/find-css-changes">Find and export CSS changes</a>
+            <a href="/tips/en/find-css-changes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-css-changes.png" alt="The Changes panel in Firefox showing a diff-like view of all the CSS changes.">
+            </a>
+        </li><li>
+            <a href="/tips/en/past-several-css-declarations">Paste multiple CSS declarations at once</a>
+            <a href="/tips/en/past-several-css-declarations" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/paste-several-css-declarations.gif" alt="Animation showing how pasting several declarations in a CSS rule in DevTools creates them all.">
+            </a>
+        </li></ul>
 </div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2022-04-20T00:00:00.000Z">4/20/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-css-cascade-layers.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>

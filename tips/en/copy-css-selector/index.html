@@ -48,13 +48,13 @@
     <div class="header-shadow-block"></div>
     <main id="maincontent">
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h2 class="tip-title">Copy CSS selector of an element</h2>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
+<h2 class="tip-title">Copy CSS selector of an element</h2>
 <div class="tip-content" data-pagefind-body>
     <p>Sometimes we need to uniquely identify an element that lacks an identifier, so that it can be referenced in JavaScript and other places. All the major browsers have an option to build a unique CSS selector for an element and then copy it to the clipboard.</p>
 <p>In the Element tree, right click on the element and select,</p>
@@ -67,6 +67,29 @@
 <pre class="language-javascript"><code class="language-javascript"><span class="token operator">></span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"#maincontent > div > h2"</span><span class="token punctuation">)</span><br>  <span class="token operator">&lt;</span>h2<span class="token operator">></span><span class="token number">104</span> DevTools Tips<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span></code></pre>
 <p><img src="/assets/img/copy-css-selector.png" alt="Edge DevTools, showing how to access the Copy CSS selector option."></p>
 
+</div><div class="see-also">
+    <h3>See also</h3>
+    <ul><li>
+            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
+            <a href="/tips/en/copy-element-styles" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
+            </a>
+        </li><li>
+            <a href="/tips/en/convert-color-formats">Convert color formats</a>
+            <a href="/tips/en/convert-color-formats" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/convert-color-formats.gif" alt="Animation of the rules panel in Firefox, showing the color conversion.">
+            </a>
+        </li><li>
+            <a href="/tips/en/convert-font-units">Convert font property units</a>
+            <a href="/tips/en/convert-font-units" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/convert-font-units-1.png" alt="The fonts panel in Firefox, showing the unit conversion drop-down.">
+            </a>
+        </li><li>
+            <a href="/tips/en/copy-rule-as-css-in-js">Copy a CSS rule as CSS-in-JS format</a>
+            <a href="/tips/en/copy-rule-as-css-in-js" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-rule-as-css-in-js.gif" alt="Aimation showing the Styles pane in Edge, with the &quot;Copy all declarations as JS&quot; option being used, and then pasting the result in the Console to show that it is formatted.">
+            </a>
+        </li></ul>
 </div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://twitter.com/pankajparashar">Pankaj Parashar</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2022-07-26T00:00:00.000Z">7/26/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/copy-css-selector.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
