@@ -95,19 +95,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(embedYouTube);
   eleventyConfig.addPlugin(embedTwitter);
 
-  if (process.env.BUILD_ENV !== "dev") {
-    // Generate see also content before the build starts.
-    eleventyConfig.on("beforeBuild", () => {
-      console.log("Generating see-also data...");
-      execSync(`node generate-see-also.js`, { encoding: 'utf-8' })
-    });
-
-    // Index the site with PageFind after the build.
-    eleventyConfig.on("afterBuild", () => {
-      console.log("Indexing site with PageFind...");
-      execSync(`npx pagefind --source dist --glob \"**/*.html\"`, { encoding: 'utf-8' })
-    });
-  }
+  // TODO: find a way to run this after dist has been created.
+  // PageFind indexes HTML content, so this needs to run after the build.
+  // But before the files are deployed to the server.
+  // if (process.env.BUILD_ENV !== "dev") {
+  //   // Index the site with PageFind after the build.
+  //   eleventyConfig.on("afterBuild", () => {
+  //     console.log("Indexing site with PageFind...");
+  //     execSync(`npx pagefind --source dist --glob \"**/*.html\"`, { encoding: 'utf-8' })
+  //   });
+  // }
 
   return {
     dir: {

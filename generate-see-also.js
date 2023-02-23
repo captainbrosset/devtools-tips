@@ -25,6 +25,16 @@ const MAX_TIPS = 4;
 // because these are just tips, and people may be interested in learning more even if it's not strictly relevant.
 const MIN_COMMON_KEYS = 2;
 
+function extractFirstImage(tipContent) {
+  // Extract the first image from the markdown content.
+  const imageRegex = /!\[(.*)\]\((.*)\)/;
+  const match = tipContent.match(imageRegex);
+  if (match) {
+    return {alt: match[1], src: match[2]}
+  }
+  return null;
+}
+
 function prepareTipData(tipFile, tipContent) {
   const text = markdownToTxt(tipContent);
   const lines = text.split('\n');
@@ -41,7 +51,8 @@ function prepareTipData(tipFile, tipContent) {
   return {
     title,
     indexableContent: `${title.toLocaleLowerCase()}\n${content}`,
-    link: `/tips/en/${tipFile.substring(0, tipFile.length - 3)}`
+    link: `/tips/en/${tipFile.substring(0, tipFile.length - 3)}`,
+    image: extractFirstImage(tipContent)
   };
 }
 
@@ -72,7 +83,7 @@ async function getData() {
 
   for (const tipFile of tipFiles) {
     const tipContent = await fs.readFile(path.join(tipsDir, tipFile), 'utf8');
-    const {title, indexableContent, link} = prepareTipData(tipFile, tipContent);
+    const {title, indexableContent, link, image} = prepareTipData(tipFile, tipContent);
     const keywords = await getKeywords(indexableContent);
 
     // console.log("--------------------", tipFile);
@@ -81,6 +92,7 @@ async function getData() {
 
     tipsWithKeys.push({
       title,
+      image,
       link,
       file: tipFile,
       keys: [...keywords.words, ...keywords.phrases]
@@ -117,6 +129,7 @@ async function getData() {
     data[tip.file] = seeAlso.slice(0, MAX_TIPS).map(s => {
       return {
         title: s.tip.title,
+        image: s.tip.image,
         link: s.tip.link
       };
     });
