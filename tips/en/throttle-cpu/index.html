@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test your PWA protocol handlers</title>
+    <title>Throttle your CPU</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/test-pwa-protocol-handlers/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/throttle-cpu/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/img/test-pwa-protocol-handlers.png">
-    <meta property="og:description" content="Test your PWA protocol handlers">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/throttle-cpu.png">
+    <meta property="og:description" content="Throttle your CPU">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Test your PWA protocol handlers</a></h1>
+      <h1><a href="/">Throttle your CPU</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -50,39 +50,23 @@
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/">testing</a></li><li class="tag"><a href="/tag/pwa/">pwa</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
-<h2 class="tip-title">Test your PWA protocol handlers</h2>
+<h2 class="tip-title">Throttle your CPU</h2>
 <div class="tip-content" data-pagefind-body>
-    <p><a href="https://developer.mozilla.org/docs/Web/Progressive_web_apps">Progressive Web Apps (PWA)</a> can register themselves to handle URIs with pre-defined or custom protocols (such as <code>mailto</code>, <code>geo</code>, or <code>web+foo</code>). This is a great capability that makes it possible for installed PWAs to feel more like real apps.</p>
-<p>To learn more about how to register a PWA as a protocol handler, see <a href="https://learn.microsoft.com/microsoft-edge/progressive-web-apps-chromium/how-to/handle-protocols">Handle protocols in Progressive Web Apps</a> or  <a href="https://developer.chrome.com/articles/url-protocol-handler/">URL protocol handler registration for PWAs</a>.</p>
-<p>However, testing your protocol handlers can be difficult. Thankfully, DevTools in both Chrome and Edge, provide a nice little tool that makes it all a lot easier.</p>
-<p>To test your handler:</p>
-<ul>
-<li>
-<p>Make sure your PWA is installed first.</p>
-</li>
-<li>
-<p>Open your PWA in a browser tab, and open DevTools.</p>
-</li>
-<li>
-<p>Open the <strong>Application</strong> tool and then click <strong>Manifest</strong>.</p>
-</li>
-<li>
-<p>Scroll down to the <strong>Protocol Handlers</strong> section.</p>
-<p>If you see a green checkmark, that means your protocol handlers were detected correctly.</p>
-</li>
-<li>
-<p>Use the dropdown to select the protocol you want to test, and the textfield to type the rest of the URI.</p>
-</li>
-<li>
-<p>Click <strong>Test protocol</strong>.</p>
-<p>Your installed PWA should now be launched automatically, and you can test your protocol handling code.</p>
-</li>
-</ul>
-<p><img src="/assets/img/test-pwa-protocol-handlers.png" alt="Microsoft Edge, with the Application tool opened on the side, showing the Protocol Handlers section."></p>
+    <p>Your development machine is very likely much more powerful than the devices your users have (which are probably low-end mobile devices).</p>
+<p>Before you ship your new app or site, thinking that it will run as smoothly as it does on your computer, test it on other devices. Build empathy for your users and what they have to go through while using your app or site.</p>
+<p>The best way to do this is to test on the real devices your users actually have! A proxy to this is to simulate a slower CPU from DevTools.</p>
+<p>To throttle your CPU in Chrome or Edge DevTools:</p>
+<ol>
+<li>In DevTools, open the <strong>Performance</strong> tool.</li>
+<li>Click <strong>Capture settings</strong>. It's the gear icon in the top right corner of the <strong>Performance</strong> tool.</li>
+<li>Using the <strong>CPU</strong> dropdown, simulate a 4x or 6x slowdown.</li>
+</ol>
+<p>Even though the setting is in the <strong>Performance</strong> tool, you don't need to record a performance trace for the slowdown to take effect. As soon as a slowdown value is set, it takes effect immediately.</p>
+<p><img src="/assets/img/throttle-cpu.png" alt="The Performance tool in Chrome showing the CPU throttling drop-down."></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
@@ -92,13 +76,23 @@
                 <img loading="lazy" src="/assets/img/check-bfcache-readiness.png" alt="Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can&#39;t be cached.">
             </a>
         </li><li>
-            <a href="/tips/en/throttle-cpu">Throttle your CPU</a>
-            <a href="/tips/en/throttle-cpu" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/throttle-cpu.png" alt="The Performance tool in Chrome showing the CPU throttling drop-down.">
+            <a href="/tips/en/find-expensive-selectors">Find the most expensive CSS selectors</a>
+            <a href="/tips/en/find-expensive-selectors" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-expensive-selectors.png" alt="The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.">
+            </a>
+        </li><li>
+            <a href="/tips/en/list-console-functions">List all supported console functions</a>
+            <a href="/tips/en/list-console-functions" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
+            </a>
+        </li><li>
+            <a href="/tips/en/simulate-geolocation">Simulate a different latitude/longitude geolocation</a>
+            <a href="/tips/en/simulate-geolocation" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/simulate-geolocation.png" alt="Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.">
             </a>
         </li></ul>
 </div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-        <p class="last-edit">Last edit: <time datetime="2023-01-04T00:00:00.000Z">1/4/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/test-pwa-protocol-handlers.md">Edit page</a></p></div>
+        <p class="last-edit">Last edit: <time datetime="2023-01-03T00:00:00.000Z">1/3/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/throttle-cpu.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>
 

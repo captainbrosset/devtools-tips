@@ -309,6 +309,25 @@
   </entry>
   
   <entry>
+    <title>Throttle your CPU</title>
+    <link href="https://devtoolstips.org/tips/en/throttle-cpu/"/>
+    <updated>2023-01-03T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/throttle-cpu/</id>
+    <content type="html">&lt;p&gt;Your development machine is very likely much more powerful than the devices your users have (which are probably low-end mobile devices).&lt;/p&gt;
+&lt;p&gt;Before you ship your new app or site, thinking that it will run as smoothly as it does on your computer, test it on other devices. Build empathy for your users and what they have to go through while using your app or site.&lt;/p&gt;
+&lt;p&gt;The best way to do this is to test on the real devices your users actually have! A proxy to this is to simulate a slower CPU from DevTools.&lt;/p&gt;
+&lt;p&gt;To throttle your CPU in Chrome or Edge DevTools:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In DevTools, open the &lt;strong&gt;Performance&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Capture settings&lt;/strong&gt;. It&#39;s the gear icon in the top right corner of the &lt;strong&gt;Performance&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Using the &lt;strong&gt;CPU&lt;/strong&gt; dropdown, simulate a 4x or 6x slowdown.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Even though the setting is in the &lt;strong&gt;Performance&lt;/strong&gt; tool, you don&#39;t need to record a performance trace for the slowdown to take effect. As soon as a slowdown value is set, it takes effect immediately.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/throttle-cpu.png&quot; alt=&quot;The Performance tool in Chrome showing the CPU throttling drop-down.&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Find the most expensive CSS selectors</title>
     <link href="https://devtoolstips.org/tips/en/find-expensive-selectors/"/>
     <updated>2022-12-14T00:00:00.000Z</updated>
