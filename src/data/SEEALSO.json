@@ -124,6 +124,14 @@
         "src": "/assets/img/zoom-devtools-content.gif"
       },
       "link": "/tips/en/zoom-devtools-content"
+    },
+    {
+      "title": "Throttle your CPU",
+      "image": {
+        "alt": "The Performance tool in Chrome showing the CPU throttling drop-down.",
+        "src": "/assets/img/throttle-cpu.png"
+      },
+      "link": "/tips/en/throttle-cpu"
     }
   ],
   "console-table-group-assert.md": [
@@ -3053,6 +3061,48 @@
         "src": "/assets/img/check-bfcache-readiness.png"
       },
       "link": "/tips/en/check-bfcache-readiness"
+    },
+    {
+      "title": "Throttle your CPU",
+      "image": {
+        "alt": "The Performance tool in Chrome showing the CPU throttling drop-down.",
+        "src": "/assets/img/throttle-cpu.png"
+      },
+      "link": "/tips/en/throttle-cpu"
+    }
+  ],
+  "throttle-cpu.md": [
+    {
+      "title": "Check if your site can be instantly reloaded from bfcache",
+      "image": {
+        "alt": "Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached.",
+        "src": "/assets/img/check-bfcache-readiness.png"
+      },
+      "link": "/tips/en/check-bfcache-readiness"
+    },
+    {
+      "title": "Find the most expensive CSS selectors",
+      "image": {
+        "alt": "The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.",
+        "src": "/assets/img/find-expensive-selectors.png"
+      },
+      "link": "/tips/en/find-expensive-selectors"
+    },
+    {
+      "title": "List all supported console functions",
+      "image": {
+        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
+        "src": "/assets/img/list-console-functions.png"
+      },
+      "link": "/tips/en/list-console-functions"
+    },
+    {
+      "title": "Simulate a different latitude/longitude geolocation",
+      "image": {
+        "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
+        "src": "/assets/img/simulate-geolocation.png"
+      },
+      "link": "/tips/en/simulate-geolocation"
     }
   ],
   "throttle-network-speed.md": [
