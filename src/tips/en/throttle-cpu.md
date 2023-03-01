@@ -1,5 +1,5 @@
 ---
-date: 2023-01-03
+date: 2023-03-01
 authors: Patrick Brosset
 title: Throttle your CPU
 tags: ["perf", "browser:edge", "browser:chrome"]
