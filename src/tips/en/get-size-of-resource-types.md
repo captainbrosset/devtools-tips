@@ -1,6 +1,6 @@
 ---
 date: 2023-02-16
-authors: Patrick Brosset
+authors: Patrick Brosset, Pankaj Parashar
 title: See the size of the transferred data for images, scripts, or other resources
 tags: ["network", "perf", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
