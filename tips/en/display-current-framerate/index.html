@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Take a screenshot of part of a webpage from the command menu</title>
+    <title>Display the current framerate of your webpage</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/screenshot-part-of-page-command-menu/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/display-current-framerate/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Take a screenshot of part of a webpage from the command menu">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/display-current-framerate.png">
+    <meta property="og:description" content="Display the current framerate of your webpage">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Take a screenshot of part of a webpage from the command menu</a></h1>
+      <h1><a href="/">Display the current framerate of your webpage</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -50,39 +50,33 @@
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/export/">export</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
-<h2 class="tip-title">Take a screenshot of part of a webpage from the command menu</h2>
+<h2 class="tip-title">Display the current framerate of your webpage</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>The <a href="../execute-commands">Command menu</a> in Edge and Chrome is great. Here is one more thing it can do:</p>
-<div class="eleventy-plugin-embed-twitter"><blockquote id="tweet-1506904947631304708" class="twitter-tweet"><a href="https://twitter.com/csaba_kissi/status/1506904947631304708"></a></blockquote></div><script src="https://platform.twitter.com/widgets.js" charset="utf-8" async></script>
+    <p>For a super smooth user experience on your website or app, it's better if the browser manages to render your page at a high framerate. Ideally, this rate should be 60 frames per second (FPS). This gives the browser 16ms to paint each frame. When the webpage doesn't do anything and the user is just reading the content, that's not hard to achieve. But if you have complicated JavaScript running and updating the page, then the browser has to squeeze a lot more work in these 16 ms frames.</p>
+<p>A lower than 60 FPS framerate may lead to a degraded user experience where animations and page updates are noticeably janky and interactions feel slow. When debugging low framerate performance issues, it may help to display the current framerate on the screen.</p>
+<p>In Chromium-based browsers, such as Edge or Chrome, it is possible to display an FPS meter on the screen:</p>
+<ol>
+<li>Open the <a href="/tips/en/execute-commands/">Command Menu</a>: type <kbd>Ctrl+Shift+P</kbd> (or <kbd>cmd+Shift+P</kbd> on mac).</li>
+<li>Type <strong>FPS</strong> to display the <strong>Show Frames Per Seconds (FPS) Meter</strong> command.</li>
+<li>Press <kbd>Enter</kbd>.</li>
+</ol>
+<p>The FPS meter appears in the upper left corner of the webpage, and displays the live framerate as you use the page. Use the Command Menu again to hide the FPS meter.</p>
+<p><img src="/assets/img/display-current-framerate.png" alt="Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu"></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/use-designmode-to-spell-check">Use document.designMode to spell check your webpage</a>
-            <a href="/tips/en/use-designmode-to-spell-check" class="other-tip-image">
+            <a href="/tips/en/screenshot-part-of-page-command-menu">Take a screenshot of part of a webpage from the command menu</a>
+            <a href="/tips/en/screenshot-part-of-page-command-menu" class="other-tip-image">
                 <img loading="lazy" src="" alt="">
-            </a>
-        </li><li>
-            <a href="/tips/en/console-table-group-assert">console.log() is great, but do you know console.table()? console.group()? console.assert()?</a>
-            <a href="/tips/en/console-table-group-assert" class="other-tip-image">
-                <img loading="lazy" src="" alt="">
-            </a>
-        </li><li>
-            <a href="/tips/en/debug-js-hover-2">Debug popups that appear on hover using the debugger statement</a>
-            <a href="/tips/en/debug-js-hover-2" class="other-tip-image">
-                <img loading="lazy" src="" alt="">
-            </a>
-        </li><li>
-            <a href="/tips/en/display-current-framerate">Display the current framerate of your webpage</a>
-            <a href="/tips/en/display-current-framerate" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/display-current-framerate.png" alt="Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu">
             </a>
         </li></ul>
-</div><div class="tip-footer"></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+        <p class="last-edit">Last edit: <time datetime="2023-03-03T00:00:00.000Z">3/3/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/display-current-framerate.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>
 

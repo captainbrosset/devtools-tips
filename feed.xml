@@ -12,6 +12,24 @@
   </author>
   
   <entry>
+    <title>Display the current framerate of your webpage</title>
+    <link href="https://devtoolstips.org/tips/en/display-current-framerate/"/>
+    <updated>2023-03-03T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/display-current-framerate/</id>
+    <content type="html">&lt;p&gt;For a super smooth user experience on your website or app, it&#39;s better if the browser manages to render your page at a high framerate. Ideally, this rate should be 60 frames per second (FPS). This gives the browser 16ms to paint each frame. When the webpage doesn&#39;t do anything and the user is just reading the content, that&#39;s not hard to achieve. But if you have complicated JavaScript running and updating the page, then the browser has to squeeze a lot more work in these 16 ms frames.&lt;/p&gt;
+&lt;p&gt;A lower than 60 FPS framerate may lead to a degraded user experience where animations and page updates are noticeably janky and interactions feel slow. When debugging low framerate performance issues, it may help to display the current framerate on the screen.&lt;/p&gt;
+&lt;p&gt;In Chromium-based browsers, such as Edge or Chrome, it is possible to display an FPS meter on the screen:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands/&quot;&gt;Command Menu&lt;/a&gt;: type &lt;kbd&gt;Ctrl+Shift+P&lt;/kbd&gt; (or &lt;kbd&gt;cmd+Shift+P&lt;/kbd&gt; on mac).&lt;/li&gt;
+&lt;li&gt;Type &lt;strong&gt;FPS&lt;/strong&gt; to display the &lt;strong&gt;Show Frames Per Seconds (FPS) Meter&lt;/strong&gt; command.&lt;/li&gt;
+&lt;li&gt;Press &lt;kbd&gt;Enter&lt;/kbd&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The FPS meter appears in the upper left corner of the webpage, and displays the live framerate as you use the page. Use the Command Menu again to hide the FPS meter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/display-current-framerate.png&quot; alt=&quot;Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Detect unused CSS and JavaScript code</title>
     <link href="https://devtoolstips.org/tips/en/detect-unused-code/"/>
     <updated>2023-03-03T00:00:00.000Z</updated>
