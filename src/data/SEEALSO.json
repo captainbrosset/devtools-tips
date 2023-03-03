@@ -683,6 +683,40 @@
       "link": "/tips/en/simulate-color-vision-deficiencies"
     }
   ],
+  "detect-unused-code.md": [
+    {
+      "title": "Ignore JavaScript code to ease debugging",
+      "image": {
+        "alt": "Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code.",
+        "src": "/assets/img/ignore-scripts.png"
+      },
+      "link": "/tips/en/ignore-scripts"
+    },
+    {
+      "title": "Find the most expensive CSS selectors",
+      "image": {
+        "alt": "The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.",
+        "src": "/assets/img/find-expensive-selectors.png"
+      },
+      "link": "/tips/en/find-expensive-selectors"
+    },
+    {
+      "title": "Inspect CSS animations",
+      "image": {
+        "alt": "Animation of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector.",
+        "src": "/assets/img/inspect-css-animation.gif"
+      },
+      "link": "/tips/en/inspect-css-animations"
+    },
+    {
+      "title": "List all supported console functions",
+      "image": {
+        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
+        "src": "/assets/img/list-console-functions.png"
+      },
+      "link": "/tips/en/list-console-functions"
+    }
+  ],
   "disable-abusive-debugger-statement.md": [
     {
       "title": "Use the debugger statement to pause script execution",
@@ -1420,6 +1454,14 @@
       "link": "/tips/en/debug-css-cascade-layers"
     },
     {
+      "title": "Detect unused CSS and JavaScript code",
+      "image": {
+        "alt": "Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used",
+        "src": "/assets/img/detect-unused-code.png"
+      },
+      "link": "/tips/en/detect-unused-code"
+    },
+    {
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
@@ -1434,14 +1476,6 @@
         "src": "/assets/img/inspect-css-animation.gif"
       },
       "link": "/tips/en/inspect-css-animations"
-    },
-    {
-      "title": "Jump from a CSS variable usage to where it is defined",
-      "image": {
-        "alt": "Animation of clicking on a custom property link in the Styles panel in Edge.",
-        "src": "/assets/img/jump-to-css-variable.gif"
-      },
-      "link": "/tips/en/jump-to-css-variable"
     }
   ],
   "find-html-parsing-errors.md": [],
@@ -1948,6 +1982,14 @@
         "src": "/assets/img/sample-colors-from-the-page-1.gif"
       },
       "link": "/tips/en/sample-colors-from-the-page"
+    },
+    {
+      "title": "Detect unused CSS and JavaScript code",
+      "image": {
+        "alt": "Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used",
+        "src": "/assets/img/detect-unused-code.png"
+      },
+      "link": "/tips/en/detect-unused-code"
     }
   ],
   "increment-css-number-values.md": [
