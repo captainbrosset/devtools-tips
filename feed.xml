@@ -5,11 +5,39 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-03-01T00:00:00.000Z</updated>
+  <updated>2023-03-03T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Detect unused CSS and JavaScript code</title>
+    <link href="https://devtoolstips.org/tips/en/detect-unused-code/"/>
+    <updated>2023-03-03T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/detect-unused-code/</id>
+    <content type="html">&lt;p&gt;To make sure your webpage loads and appears faster for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it&#39;s really needed.&lt;/p&gt;
+&lt;p&gt;Chrome and Edge have a useful &lt;strong&gt;Coverage&lt;/strong&gt; tool that can help identify which parts of code are unused. To detect unused code on page load:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;strong&gt;Coverage&lt;/strong&gt; tool by using the &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands/&quot;&gt;Command Menu&lt;/a&gt;: type &lt;kbd&gt;Ctrl+Shift+P&lt;/kbd&gt; (or &lt;kbd&gt;cmd+Shift+P&lt;/kbd&gt; on mac), then type &lt;strong&gt;Coverage&lt;/strong&gt; and press &lt;kbd&gt;Enter&lt;/kbd&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In &lt;strong&gt;Coverage&lt;/strong&gt;, click the &lt;strong&gt;Start instrumenting coverage and refresh the page&lt;/strong&gt; button (i.e., the refresh button).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wait for the webpage to reload and for the coverage report to appear.&lt;/p&gt;
+&lt;p&gt;The report shows a list of CSS and JS files with a percentage of unused bytes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click on any of the files to open it in the &lt;strong&gt;Sources&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;p&gt;The file appears in the tool, and the line number gutter on the left indicates which lines were used, in blue, and which were unused, in red.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can now decide whether some parts of your code can be loaded later, when needed only.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/detect-unused-code.png&quot; alt=&quot;Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Throttle your CPU</title>

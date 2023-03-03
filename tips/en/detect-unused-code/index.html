@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ignore JavaScript code to ease debugging</title>
+    <title>Detect unused CSS and JavaScript code</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/ignore-scripts/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/detect-unused-code/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/img/ignore-scripts.png">
-    <meta property="og:description" content="Ignore JavaScript code to ease debugging">
+    <meta property="og:image" content="http://devtoolstips.org/assets/img/detect-unused-code.png">
+    <meta property="og:description" content="Detect unused CSS and JavaScript code">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Ignore JavaScript code to ease debugging</a></h1>
+      <h1><a href="/">Detect unused CSS and JavaScript code</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -50,53 +50,58 @@
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
-<h2 class="tip-title">Ignore JavaScript code to ease debugging</h2>
+<h2 class="tip-title">Detect unused CSS and JavaScript code</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>Debugging JavaScript can quickly get out of hand when you have a lot of code and many functions that call each other.</p>
-<p>What's even worse is when a lot of this code isn't even yours. This can happen when you use frameworks or libraries. You don't really want to debug the library code, but sometimes it gets in the way when trying to step through your own code while using breakpoints.</p>
-<p>To help with this, you can ignore third-party scripts (like library source files) in DevTools. When ignored, those files don't appear in your callstacks when debugging, and you don't step through them anymore.</p>
-<ul>
-<li>To ignore a script in Chrome: right-click anywhere in the file and click <strong>Add script to ignore list</strong> (<a href="https://developer.chrome.com/docs/devtools/javascript/reference/#ignore-list">learn more</a>).</li>
-<li>To ignore a script in Edge: right-click anywhere in the file and click <strong>Mark as Library code</strong> (<a href="https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/reference#ignore-a-script-or-pattern-of-scripts">learn more</a>).</li>
-<li>And, in Firefox: right-click in the file and click <strong>Ignore source</strong>. Or click the <strong>Ignore source</strong> button in the bottom left corner of the file (<a href="https://firefox-source-docs.mozilla.org/devtools-user/debugger/how_to/ignore_a_source/index.html">learn more</a>).</li>
-</ul>
-<p>In Firefox, you can go even further than this and ignore parts of a script only. Maybe you have a utility function in your file that gets called over and over again but isn't related to what you're trying to debug.</p>
-<p>To ignore part of script only in Firefox:</p>
-<ul>
-<li>Select the code you want to ignore.</li>
-<li>Right-click the select and click <strong>Ignore lines</strong>.</li>
-</ul>
-<p><img src="/assets/img/ignore-scripts.png" alt="Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code."></p>
+    <p>To make sure your webpage loads and appears faster for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it's really needed.</p>
+<p>Chrome and Edge have a useful <strong>Coverage</strong> tool that can help identify which parts of code are unused. To detect unused code on page load:</p>
+<ol>
+<li>
+<p>Open the <strong>Coverage</strong> tool by using the <a href="/tips/en/execute-commands/">Command Menu</a>: type <kbd>Ctrl+Shift+P</kbd> (or <kbd>cmd+Shift+P</kbd> on mac), then type <strong>Coverage</strong> and press <kbd>Enter</kbd>.</p>
+</li>
+<li>
+<p>In <strong>Coverage</strong>, click the <strong>Start instrumenting coverage and refresh the page</strong> button (i.e., the refresh button).</p>
+</li>
+<li>
+<p>Wait for the webpage to reload and for the coverage report to appear.</p>
+<p>The report shows a list of CSS and JS files with a percentage of unused bytes.</p>
+</li>
+<li>
+<p>Click on any of the files to open it in the <strong>Sources</strong> tool.</p>
+<p>The file appears in the tool, and the line number gutter on the left indicates which lines were used, in blue, and which were unused, in red.</p>
+</li>
+</ol>
+<p>You can now decide whether some parts of your code can be loaded later, when needed only.</p>
+<p><img src="/assets/img/detect-unused-code.png" alt="Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used"></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/find-custom-elements-code">Find your web component&#39;s custom element code</a>
-            <a href="/tips/en/find-custom-elements-code" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-custom-elements-code.gif" alt="Animation showing the custom button in Firefox&#39;s inspector and that clicking on it goes to the debugger.">
+            <a href="/tips/en/ignore-scripts">Ignore JavaScript code to ease debugging</a>
+            <a href="/tips/en/ignore-scripts" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/ignore-scripts.png" alt="Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code.">
             </a>
         </li><li>
-            <a href="/tips/en/disable-event-listeners">Remove or disable event listeners</a>
-            <a href="/tips/en/disable-event-listeners" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/disable-event-listeners-firefox.png" alt="The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.">
+            <a href="/tips/en/find-expensive-selectors">Find the most expensive CSS selectors</a>
+            <a href="/tips/en/find-expensive-selectors" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-expensive-selectors.png" alt="The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.">
             </a>
         </li><li>
-            <a href="/tips/en/sample-colors-from-the-page">Sample colors from the page</a>
-            <a href="/tips/en/sample-colors-from-the-page" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/sample-colors-from-the-page-1.gif" alt="Animation of the eyedropper tool being started from the Firefox main menu.">
+            <a href="/tips/en/inspect-css-animations">Inspect CSS animations</a>
+            <a href="/tips/en/inspect-css-animations" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/inspect-css-animation.gif" alt="Animation of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector.">
             </a>
         </li><li>
-            <a href="/tips/en/detect-unused-code">Detect unused CSS and JavaScript code</a>
-            <a href="/tips/en/detect-unused-code" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/detect-unused-code.png" alt="Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used">
+            <a href="/tips/en/list-console-functions">List all supported console functions</a>
+            <a href="/tips/en/list-console-functions" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
             </a>
         </li></ul>
 </div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-        <p class="last-edit">Last edit: <time datetime="2022-10-17T00:00:00.000Z">10/17/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/ignore-scripts.md">Edit page</a></p></div>
+        <p class="last-edit">Last edit: <time datetime="2023-03-03T00:00:00.000Z">3/3/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/detect-unused-code.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>
 
