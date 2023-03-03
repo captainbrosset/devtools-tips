@@ -3,6 +3,7 @@ date: 2021-07-20
 authors: Patrick Brosset
 title: Throttle the network speed to test your website on slower connections
 tags: ["network", "perf", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
+see-also: ["throttle-cpu.md"]
 ---
 While you may develop your website on a fast network connection at home or at work, your users may not be able to use it with an equally fast connection. Perhaps they're in a moving car, or on the subway, or they don't have access to high-speed internet at their place. Whatever it is, they may experience your site very differently than you do because of this.
 

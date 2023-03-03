@@ -2975,6 +2975,22 @@
   ],
   "store-node-as-variable.md": [
     {
+      "title": "Get the selected element in the console",
+      "image": {
+        "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
+        "src": "/assets/img/get-current-element-in-console.jpg"
+      },
+      "link": "/tips/en/get-current-element-in-console"
+    },
+    {
+      "title": "Get the recently selected DOM nodes in the console",
+      "image": {
+        "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
+        "src": "/assets/img/get-recently-selected-dom-nodes-in-console.gif"
+      },
+      "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
+    },
+    {
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
@@ -2989,22 +3005,6 @@
         "src": "/assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
-    },
-    {
-      "title": "Find your web component's custom element code",
-      "image": {
-        "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
-      },
-      "link": "/tips/en/find-custom-elements-code"
-    },
-    {
-      "title": "Monitor all events dispatched on an element",
-      "image": {
-        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "/assets/img/monitor-element-events.gif"
-      },
-      "link": "/tips/en/monitor-element-events"
     }
   ],
   "style-console-messages.md": [
@@ -3073,6 +3073,14 @@
   ],
   "throttle-cpu.md": [
     {
+      "title": "Throttle the network speed to test your website on slower connections",
+      "image": {
+        "alt": "The Network panel in Edge showing the network throttling drop-down.",
+        "src": "/assets/img/throttle-network-speed.png"
+      },
+      "link": "/tips/en/throttle-network-speed"
+    },
+    {
       "title": "Check if your site can be instantly reloaded from bfcache",
       "image": {
         "alt": "Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached.",
@@ -3095,17 +3103,17 @@
         "src": "/assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
-    },
-    {
-      "title": "Simulate a different latitude/longitude geolocation",
-      "image": {
-        "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
-        "src": "/assets/img/simulate-geolocation.png"
-      },
-      "link": "/tips/en/simulate-geolocation"
     }
   ],
   "throttle-network-speed.md": [
+    {
+      "title": "Throttle your CPU",
+      "image": {
+        "alt": "The Performance tool in Chrome showing the CPU throttling drop-down.",
+        "src": "/assets/img/throttle-cpu.png"
+      },
+      "link": "/tips/en/throttle-cpu"
+    },
     {
       "title": "Edit and resend faulty network requests to debug them",
       "image": {

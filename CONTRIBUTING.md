@@ -46,6 +46,7 @@ Choose a unique ID for your new tip:
     * At the end of the list, insert the browsers that this tip works on, by adding a tag that starts with `browser:` followed by either `edge`, `firefox`, `chrome`, `safari`, or `polypane`. Please do not add new browsers unless discussed with project leads.
   * `date`: Today's date in `YYYY-MM-DD` format. This will appear as the tip creation date on the site.
   * `authors`: Your preferred name. This will appear at the bottom of the tip for people to know who contributed the tip. Some tips have multiple authors (for example if you're updating a tip someone created earlier), in which case this should be an array of string.
+  * `see-also`: Optional. This should be an array of other related tips. Related tips are already generated at build time by looking at similarities between tips, but the `see-also` array can be used to manually defined related tips. This is useful when the automated detection fails to find related tips that should really be linked. Items in the array must be strings formatted as `<the-other-tip-id>.md`.
 
   ```markdown
   ---
@@ -53,6 +54,7 @@ Choose a unique ID for your new tip:
   authors: Patrick Brosset
   title: Store a node as a variable to use it in the console
   tags: ["html", "console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
+  see-also: ["get-recently-selected-dom-nodes-in-console.md"]
   ---
   ```
 

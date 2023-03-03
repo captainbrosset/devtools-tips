@@ -35,24 +35,37 @@ function extractFirstImage(tipContent) {
   return null;
 }
 
+function getManualSeeAlso(tipContentLines) {
+  const line = tipContentLines.find(line => line.startsWith('see-also: '));
+  if (!line) {
+    return [];
+  }
+
+  const links = eval(line.substring(10));
+  return links;
+}
+
 function prepareTipData(tipFile, tipContent) {
   const text = markdownToTxt(tipContent);
   const lines = text.split('\n');
 
   const title = lines.find(line => line.startsWith('title: ')).substring(7);
+  const manualSeeAlso = getManualSeeAlso(lines);
   const content = lines.filter(line => {
     return !line.startsWith('authors: ') &&
       !line.startsWith('date: ') &&
       !line.startsWith('tags: ') &&
       !line.startsWith('title: ') &&
-      !line.startsWith('istweet: ');
+      !line.startsWith('istweet: ') &&
+      !line.startsWith('see-also: ');
   }).join('\n').toLocaleLowerCase();
 
   return {
     title,
     indexableContent: `${title.toLocaleLowerCase()}\n${content}`,
     link: `/tips/en/${tipFile.substring(0, tipFile.length - 3)}`,
-    image: extractFirstImage(tipContent)
+    image: extractFirstImage(tipContent),
+    manualSeeAlso
   };
 }
 
@@ -81,9 +94,10 @@ async function getData() {
 
   const tipsWithKeys = [];
 
+  // Go over all tips and extract information about them such as title, image, link, etc.
   for (const tipFile of tipFiles) {
     const tipContent = await fs.readFile(path.join(tipsDir, tipFile), 'utf8');
-    const {title, indexableContent, link, image} = prepareTipData(tipFile, tipContent);
+    const {title, indexableContent, link, image, manualSeeAlso} = prepareTipData(tipFile, tipContent);
     const keywords = await getKeywords(indexableContent);
 
     // console.log("--------------------", tipFile);
@@ -95,6 +109,7 @@ async function getData() {
       image,
       link,
       file: tipFile,
+      manualSeeAlso,
       keys: [...keywords.words, ...keywords.phrases]
     });
   }
@@ -108,6 +123,15 @@ async function getData() {
     for (const otherTip of tipsWithKeys) {
       if (otherTip.file === tip.file) {
         continue;
+      }
+
+      // If this other tip is actually in the manual-see-also list, add it now.
+      if (tip.manualSeeAlso.includes(otherTip.file)) {
+        seeAlso.push({
+          tip: otherTip,
+          // This is a hack to make sure that this tip is always shown first.
+          keysInCommon: new Array(1000)
+        });
       }
 
       const keysInCommon = tip.keys.filter(word => otherTip.keys.includes(word));
