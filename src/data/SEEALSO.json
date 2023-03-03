@@ -816,6 +816,13 @@
       "link": "/tips/en/scroll-into-view"
     }
   ],
+  "display-current-framerate.md": [
+    {
+      "title": "Take a screenshot of part of a webpage from the command menu",
+      "image": null,
+      "link": "/tips/en/screenshot-part-of-page-command-menu"
+    }
+  ],
   "download-all-images.md": [
     {
       "title": "Find all images without alternative text",
@@ -2682,9 +2689,12 @@
       "link": "/tips/en/debug-js-hover-2"
     },
     {
-      "title": "Quickly reference nodes, expressions, and react components in the console",
-      "image": null,
-      "link": "/tips/en/quickly-reference-things-from-console"
+      "title": "Display the current framerate of your webpage",
+      "image": {
+        "alt": "Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu",
+        "src": "/assets/img/display-current-framerate.png"
+      },
+      "link": "/tips/en/display-current-framerate"
     }
   ],
   "scroll-into-view.md": [
