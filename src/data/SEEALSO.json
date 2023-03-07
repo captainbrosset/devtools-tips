@@ -693,20 +693,12 @@
       "link": "/tips/en/ignore-scripts"
     },
     {
-      "title": "Find the most expensive CSS selectors",
+      "title": "Copy an object from the console",
       "image": {
-        "alt": "The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.",
-        "src": "/assets/img/find-expensive-selectors.png"
+        "alt": "Chrome devtools' console with a line of code using the copy() function.",
+        "src": "/assets/img/copy-from-console.png"
       },
-      "link": "/tips/en/find-expensive-selectors"
-    },
-    {
-      "title": "Inspect CSS animations",
-      "image": {
-        "alt": "Animation of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector.",
-        "src": "/assets/img/inspect-css-animation.gif"
-      },
-      "link": "/tips/en/inspect-css-animations"
+      "link": "/tips/en/copy-from-console"
     },
     {
       "title": "List all supported console functions",
@@ -715,6 +707,14 @@
         "src": "/assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
+    },
+    {
+      "title": "Write code on multiple lines in the Console",
+      "image": {
+        "alt": "Tthe button to switch the Firefox console to the multi-line mode.",
+        "src": "/assets/img/multi-line-console-firefox.png"
+      },
+      "link": "/tips/en/multi-line-console"
     }
   ],
   "disable-abusive-debugger-statement.md": [
@@ -1461,14 +1461,6 @@
       "link": "/tips/en/debug-css-cascade-layers"
     },
     {
-      "title": "Detect unused CSS and JavaScript code",
-      "image": {
-        "alt": "Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used",
-        "src": "/assets/img/detect-unused-code.png"
-      },
-      "link": "/tips/en/detect-unused-code"
-    },
-    {
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
@@ -1483,6 +1475,14 @@
         "src": "/assets/img/inspect-css-animation.gif"
       },
       "link": "/tips/en/inspect-css-animations"
+    },
+    {
+      "title": "Jump from a CSS variable usage to where it is defined",
+      "image": {
+        "alt": "Animation of clicking on a custom property link in the Styles panel in Edge.",
+        "src": "/assets/img/jump-to-css-variable.gif"
+      },
+      "link": "/tips/en/jump-to-css-variable"
     }
   ],
   "find-html-parsing-errors.md": [],
@@ -2202,20 +2202,20 @@
       "link": "/tips/en/debugger-statement"
     },
     {
+      "title": "Detect unused CSS and JavaScript code",
+      "image": {
+        "alt": "Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used",
+        "src": "/assets/img/detect-unused-code.png"
+      },
+      "link": "/tips/en/detect-unused-code"
+    },
+    {
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
         "src": "/assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
-    },
-    {
-      "title": "Find your web component's custom element code",
-      "image": {
-        "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
-      },
-      "link": "/tips/en/find-custom-elements-code"
     }
   ],
   "node-screenshot.md": [
@@ -2364,6 +2364,14 @@
       "link": "/tips/en/copy-from-console"
     },
     {
+      "title": "Detect unused CSS and JavaScript code",
+      "image": {
+        "alt": "Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used",
+        "src": "/assets/img/detect-unused-code.png"
+      },
+      "link": "/tips/en/detect-unused-code"
+    },
+    {
       "title": "Edit JavaScript functions while debugging to test a quick fix",
       "image": {
         "alt": "Animation showing that it is possible to write code in the Sources panel, while debugging, to test fixes.",
@@ -2378,14 +2386,6 @@
         "src": "/assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
-    },
-    {
-      "title": "Unminify JavaScript code to easily read and debug it",
-      "image": {
-        "alt": "The Sources panel in Chrome, showing the pretty-print button.",
-        "src": "/assets/img/unminify-javascript-code.gif"
-      },
-      "link": "/tips/en/unminify-javascript-code"
     }
   ],
   "prototype-content-changes-with-designmode.md": [
