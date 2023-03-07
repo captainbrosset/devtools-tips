@@ -34,7 +34,8 @@
     <link href="https://devtoolstips.org/tips/en/detect-unused-code/"/>
     <updated>2023-03-03T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/detect-unused-code/</id>
-    <content type="html">&lt;p&gt;To make sure your webpage loads and appears faster for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it&#39;s really needed.&lt;/p&gt;
+    <content type="html">&lt;p&gt;To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it&#39;s really needed.&lt;/p&gt;
+&lt;h4&gt;In Chromium-based browsers&lt;/h4&gt;
 &lt;p&gt;Chrome and Edge have a useful &lt;strong&gt;Coverage&lt;/strong&gt; tool that can help identify which parts of code are unused. To detect unused code on page load:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -54,6 +55,23 @@
 &lt;/ol&gt;
 &lt;p&gt;You can now decide whether some parts of your code can be loaded later, when needed only.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/detect-unused-code.png&quot; alt=&quot;Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used&quot; /&gt;&lt;/p&gt;
+&lt;h4&gt;In Safari&lt;/h4&gt;
+&lt;p&gt;In Safari, you can detect unused JS code, with the following steps,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;In the &lt;strong&gt;Sources&lt;/strong&gt; panel, open the JS file from the left sidebar.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the coverage icon &lt;code&gt;C&lt;/code&gt; in the toolbar (top-right) to start detecting unexecuted code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Refresh the page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lines of code that are not executed on page load are greyed out. Executed lines are displayed as normal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/assets/img/detect-unused-code-safari.png&quot; alt=&quot;Safari Web Inspector with Sources panel open, showing unexecuted code in a light gray color for a JS file&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   

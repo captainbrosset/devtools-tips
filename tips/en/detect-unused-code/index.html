@@ -52,11 +52,12 @@
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
 <h2 class="tip-title">Detect unused CSS and JavaScript code</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>To make sure your webpage loads and appears faster for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it's really needed.</p>
+    <p>To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it's really needed.</p>
+<h4>In Chromium-based browsers</h4>
 <p>Chrome and Edge have a useful <strong>Coverage</strong> tool that can help identify which parts of code are unused. To detect unused code on page load:</p>
 <ol>
 <li>
@@ -76,6 +77,23 @@
 </ol>
 <p>You can now decide whether some parts of your code can be loaded later, when needed only.</p>
 <p><img src="/assets/img/detect-unused-code.png" alt="Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used"></p>
+<h4>In Safari</h4>
+<p>In Safari, you can detect unused JS code, with the following steps,</p>
+<ol>
+<li>
+<p>In the <strong>Sources</strong> panel, open the JS file from the left sidebar.</p>
+</li>
+<li>
+<p>Click the coverage icon <code>C</code> in the toolbar (top-right) to start detecting unexecuted code.</p>
+</li>
+<li>
+<p>Refresh the page.</p>
+</li>
+<li>
+<p>Lines of code that are not executed on page load are greyed out. Executed lines are displayed as normal.</p>
+</li>
+</ol>
+<p><img src="/assets/img/detect-unused-code-safari.png" alt="Safari Web Inspector with Sources panel open, showing unexecuted code in a light gray color for a JS file"></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
@@ -85,22 +103,22 @@
                 <img loading="lazy" src="/assets/img/ignore-scripts.png" alt="Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code.">
             </a>
         </li><li>
-            <a href="/tips/en/find-expensive-selectors">Find the most expensive CSS selectors</a>
-            <a href="/tips/en/find-expensive-selectors" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-expensive-selectors.png" alt="The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.">
-            </a>
-        </li><li>
-            <a href="/tips/en/inspect-css-animations">Inspect CSS animations</a>
-            <a href="/tips/en/inspect-css-animations" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/inspect-css-animation.gif" alt="Animation of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector.">
+            <a href="/tips/en/copy-from-console">Copy an object from the console</a>
+            <a href="/tips/en/copy-from-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-from-console.png" alt="Chrome devtools&#39; console with a line of code using the copy() function.">
             </a>
         </li><li>
             <a href="/tips/en/list-console-functions">List all supported console functions</a>
             <a href="/tips/en/list-console-functions" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
             </a>
+        </li><li>
+            <a href="/tips/en/multi-line-console">Write code on multiple lines in the Console</a>
+            <a href="/tips/en/multi-line-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/multi-line-console-firefox.png" alt="Tthe button to switch the Firefox console to the multi-line mode.">
+            </a>
         </li></ul>
-</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://twitter.com/pankajparashar">Pankaj Parashar</a>, <a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
         <p class="last-edit">Last edit: <time datetime="2023-03-03T00:00:00.000Z">3/3/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/detect-unused-code.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>
