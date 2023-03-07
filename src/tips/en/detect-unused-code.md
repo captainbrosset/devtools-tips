@@ -2,7 +2,7 @@
 date: 2023-03-03
 authors: Patrick Brosset
 title: Detect unused CSS and JavaScript code
-tags: ["perf", "css", "javascript", "browser:edge", "browser:chrome"]
+tags: ["perf", "css", "javascript", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 
 To make sure your webpage loads and appears faster for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it's really needed.
@@ -24,3 +24,12 @@ Chrome and Edge have a useful **Coverage** tool that can help identify which par
 You can now decide whether some parts of your code can be loaded later, when needed only.
 
 ![Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used](/assets/img/detect-unused-code.png)
+
+In Safari, you can detect unused JS code, with the following steps,
+
+1. In the **Sources** panel, open the JS file from the left sidebar. 
+2. Click the coverage icon `C` in the toolbar (top-right) to fade unexecuted code in the next page reload. 
+3. Reload the page.
+4. Lines that were not executed will be greyed out as opposed to the ones that were executed during the reload.
+
+![Safari Web Inspector with Sources panel open, showing unexecuted code in a light gray color for a JS file](/assets/img/detect-unused-code-safari.png)
