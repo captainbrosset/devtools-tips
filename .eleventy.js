@@ -3,7 +3,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 const embedTwitter = require("eleventy-plugin-embed-twitter");
 const striptags = require("striptags");
-const execSync = require('child_process').execSync;
 require("dotenv").config();
 
 const AUTHORS = require("./src/data/AUTHORS.json");
