@@ -14,6 +14,6 @@ But what's even better, is that you can create your own simulated devices. This 
 * From this screen, you can check or uncheck devices to customize the device drop-down, and you can click **Add Custom Device...** to add your own devices.
 * Choose a device name, dimensions, dpr, and user agent string, and submit. Your new device should now be available in the device drop-down!
 
-![Animation of the device mode in Firefox, showing how to customize the list of devices, including adding custom devices.](/assets/img/add-new-devices.gif)
+![Animation of the device mode in Firefox, showing how to customize the list of devices, including adding custom devices.](../../assets/img/add-new-devices.gif)
 
 In Polypane these steps are not needed. Double-click anywhere to add a new device and configure its settings from the **Emulation options**.

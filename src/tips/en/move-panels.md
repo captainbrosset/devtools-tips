@@ -15,7 +15,7 @@ There are 2 ways that you can re-arrange panels in DevTools today: dragging them
 
 This only works in Edge at the moment is makes it super easy to see any 2 tools at once (more information about [Edge personalization features](https://blogs.windows.com/msedgedev/2021/09/14/edge-devtools-93-personalization/)).
 
-![Animation in Edge DevTools showing the move to top/bottom menus.](/assets/img/move-panels-1.gif)
+![Animation in Edge DevTools showing the move to top/bottom menus.](../../assets/img/move-panels-1.gif)
 
 ### To re-order panels by dragging (Chrome, Edge, Firefox, Safari)
 
@@ -25,4 +25,4 @@ This only works in Edge at the moment is makes it super easy to see any 2 tools 
 
 If you use some tools more than others, this can be used to group them at the start of the toolbar for example.
 
-![Animation in Firefox DevTools showing how to move panels in the toolbar.](/assets/img/move-panels-2.gif)
+![Animation in Firefox DevTools showing how to move panels in the toolbar.](../../assets/img/move-panels-2.gif)

@@ -28,7 +28,7 @@ Turns out a quick way to do this is to start it directly in the browser, instead
    * To export the HTML code, I usually do this: right-click on the `<body>` element and choose **Copy inner HTML**.
    * To export the CSS code: in Firefox, I open the **Changes** sidebar panel and click **Copy All Changes** ([learn more](../find-css-changes)), and Chrome/Edge I go to **Sources**, find the **inspector-stylesheet** source and copy the content from it.
 
-![Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.](/assets/img/prototype-in-the-browser.png)
+![Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.](../../assets/img/prototype-in-the-browser.png)
 
 Here is a quick demo I did 4 years ago showing roughly this workflow. Things have changed a bit, but most of it still applies:
 

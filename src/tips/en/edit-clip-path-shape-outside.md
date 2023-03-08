@@ -18,4 +18,4 @@ In Firefox, you can freely edit the polygon, circle or ellipse types of shapes w
 
 [Learn more about this tool here](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Edit_CSS_shapes)
 
-![Animation of the shape editor in firefox, clicking on the Rules panel icon, and then moving points around in the page.](/assets/img/edit-clip-path-shape-outside.gif)
+![Animation of the shape editor in firefox, clicking on the Rules panel icon, and then moving points around in the page.](../../assets/img/edit-clip-path-shape-outside.gif)

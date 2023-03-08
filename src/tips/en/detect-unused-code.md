@@ -11,7 +11,7 @@ To make sure your webpage loads and appears fast for your users, load only the C
 
 Chrome and Edge have a useful **Coverage** tool that can help identify which parts of code are unused. To detect unused code on page load:
 
-1. Open the **Coverage** tool by using the [Command Menu](/tips/en/execute-commands/): type <kbd>Ctrl+Shift+P</kbd> (or <kbd>cmd+Shift+P</kbd> on mac), then type **Coverage** and press <kbd>Enter</kbd>.
+1. Open the **Coverage** tool by using the [Command Menu](./execute-commands.md): type <kbd>Ctrl+Shift+P</kbd> (or <kbd>cmd+Shift+P</kbd> on mac), then type **Coverage** and press <kbd>Enter</kbd>.
 
 1. In **Coverage**, click the **Start instrumenting coverage and refresh the page** button (i.e., the refresh button).
 
@@ -25,7 +25,7 @@ Chrome and Edge have a useful **Coverage** tool that can help identify which par
 
 You can now decide whether some parts of your code can be loaded later, when needed only.
 
-![Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used](/assets/img/detect-unused-code.png)
+![Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used](../../assets/img/detect-unused-code.png)
 
 #### In Safari
 
@@ -39,4 +39,4 @@ In Safari, you can detect unused JS code, with the following steps,
 
 1. Lines of code that are not executed on page load are greyed out. Executed lines are displayed as normal.
 
-![Safari Web Inspector with Sources panel open, showing unexecuted code in a light gray color for a JS file](/assets/img/detect-unused-code-safari.png)
+![Safari Web Inspector with Sources panel open, showing unexecuted code in a light gray color for a JS file](../../assets/img/detect-unused-code-safari.png)

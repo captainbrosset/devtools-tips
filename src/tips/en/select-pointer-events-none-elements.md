@@ -10,7 +10,7 @@ Indeed, if an element does not react to pointer events because the `pointer-even
 
 In Chrome, Edge, Polypane and Firefox, you can hold the <kbd>Shift</kbd> key on your keyboard while hovering elements in the page! When you do this, even elements with `pointer-events:none` can be selected!
 
-![Animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed.](/assets/img/select-pointer-events-none-elements.gif)
+![Animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed.](../../assets/img/select-pointer-events-none-elements.gif)
 
 [Šime Vidas](https://twitter.com/simevidas/status/1464501900586463236) also proposed this alternative solution in Firefox:
 

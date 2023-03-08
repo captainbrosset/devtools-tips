@@ -10,7 +10,7 @@ You don't even need to open DevTools for it to work! Just enter the URL to a JSO
 
 You can try it out with [this sample JSON response](https://jsonplaceholder.typicode.com/posts/1/comments), or [these JSON test files](https://codepo8.github.io/json-dummy-data/).
 
-![The JSON viewer in Microsoft Edge.](/assets/img/see-json-responses.png)
+![The JSON viewer in Microsoft Edge.](../../assets/img/see-json-responses.png)
 
 Note that in Firefox and Polypane, the JSON viewer has a few more options not yet available in Edge:
 

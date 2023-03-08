@@ -12,10 +12,10 @@ To list them all, open the **Console** tool and type:
 console.log(console);
 ```
 
-![Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.](/assets/img/list-console-functions.png)
+![Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.](../../assets/img/list-console-functions.png)
 
 Related:
 
-* [console.log() is great, but do you know console.table()? console.group()? console.assert()?](/tips/en/console-table-group-assert)
+* [console.log() is great, but do you know console.table()? console.group()? console.assert()?](./console-table-group-assert.md)
 * [The console documentation on MDN](https://developer.mozilla.org/docs/Web/API/console).
 * [The Console API specification](https://console.spec.whatwg.org/).

@@ -14,7 +14,7 @@ Thanks to [Adam Argyle](https://twitter.com/argyleink) for [sharing this on Twit
 1. Position your mouse over the element which you are changing the color for. Don't click anywhere, we want to keep the color value field focused, just hover over the element so the element tooltip appears.
 1. Now change the color value with the keyboard and check the contrast ratio in the tooltip as you do so.
 
-![Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast.](/assets/img/fix-color-contrast-issues-with-element-tooltip.gif)
+![Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast.](../../assets/img/fix-color-contrast-issues-with-element-tooltip.gif)
 
 Related tips:
 

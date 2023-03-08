@@ -14,11 +14,11 @@ If you are not using this high-contrast mode yourself though, you won't know how
 
 In Edge or Chrome:
 
-- Open the [Command Menu](/tips/en/execute-commands/): <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> on mac).
+- Open the [Command Menu](./execute-commands.md): <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> on mac).
 - Type **Rendering** and press <kbd>Enter</kbd>.
 - In the **Rendering** panel, scroll down to the **Emulate CSS media feature forced-colors** and activate it from the drop-down.
 
-![Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools.](/assets/img/emulate-forced-colors.png)
+![Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools.](../../assets/img/emulate-forced-colors.png)
 
 In Polypane:
 
@@ -26,4 +26,4 @@ In Polypane:
 - Toggle **Forced colors**.
 - (Optionally) Toggle the `prefers-color-scheme` to test both a light and dark forced color mode.
 
-![Polypane showing a webpage in forced-colors mode, with the Emulation options opened above it, the "forced colors" option is active and highlighted.](/assets/img/emulate-forced-colors-polypane.png)
+![Polypane showing a webpage in forced-colors mode, with the Emulation options opened above it, the "forced colors" option is active and highlighted.](../../assets/img/emulate-forced-colors-polypane.png)

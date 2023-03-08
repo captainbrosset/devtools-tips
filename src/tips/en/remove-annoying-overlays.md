@@ -13,6 +13,6 @@ To get rid of an annoying overlay, or any other element for that matter:
 1. On the webpage, select the element which you want to remove. As you hover elements, they will get highlighted. Use this highlight to make sure you're selecting the right element.
 1. Now, with the element selected in the **Inspector**/**Elements** panel, just press <kbd>Delete</kbd> on your keyboard to remove the element.
 
-![Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.](/assets/img/remove-annoying-overlays.gif)
+![Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.](../../assets/img/remove-annoying-overlays.gif)
 
 Credits go to [Chris Heilmann](https://christianheilmann.com/) for this tip and other cool DevTools tips for non-developers, which you can find here: [web cheatcodes](https://codepo8.github.io/web-cheatcodes/).

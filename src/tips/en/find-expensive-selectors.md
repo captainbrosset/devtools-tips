@@ -24,4 +24,4 @@ Microsoft Edge has a very useful new feature starting with Edge version 110 call
 
 You now have access to the list of CSS selectors that got matched against the DOM tree of the web page during this style recalculation task. You can sort the table by elapsed time or match count to get an understanding of which selectors needed the most time to run.
 
-![The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.](/assets/img/find-expensive-selectors.png)
+![The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.](../../assets/img/find-expensive-selectors.png)

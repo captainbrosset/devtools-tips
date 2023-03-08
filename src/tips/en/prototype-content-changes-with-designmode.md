@@ -21,4 +21,4 @@ In Polypane these steps are not neede and it's enough to open the **Debug tools*
 Changes are not persisted and will revert on page close or refresh.
 
 
-![Animation of editable web page with designMode on.](/assets/img/prototype-content-changes-with-designmode.gif)
+![Animation of editable web page with designMode on.](../../assets/img/prototype-content-changes-with-designmode.gif)

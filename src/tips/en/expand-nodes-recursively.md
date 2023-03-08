@@ -12,4 +12,4 @@ You can expand all descendants under a given DOM node in one go, to avoid having
   * Right-click on the node you want to expand and select "Expand All". You can also `alt+click` or `option+click` on the arrow next to the node.
 
 
-![Animation showing right-clicking on a node in Chrome's Elements panel and choosing "expand recursively".](/assets/img/expand-nodes-recursively.gif)
+![Animation showing right-clicking on a node in Chrome's Elements panel and choosing "expand recursively".](../../assets/img/expand-nodes-recursively.gif)

@@ -16,6 +16,6 @@ You can replace `$0` with a reference to any other element. `$0` is just a short
 
 You can also change `key` to other event types like `mouse`.
 
-![Animation showing how events get automatically logged when using the monitorEvents function.](/assets/img/monitor-element-events.gif)
+![Animation showing how events get automatically logged when using the monitorEvents function.](../../assets/img/monitor-element-events.gif)
 
 Thank you to [Minko Gechev](https://github.com/mgechev) for [tweeting](https://twitter.com/mgechev/status/1447419251120279558) about this tip.

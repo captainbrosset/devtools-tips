@@ -11,6 +11,6 @@ You can easily copy an element's [XPath](https://developer.mozilla.org/en-US/doc
 * Go into the Copy sub-menu
 * Choose the Xpath option
 
-Note that you can then use this xpath expression to [find elements again in DevTools](/tips/en/evaluate-xpath/).
+Note that you can then use this xpath expression to [find elements again in DevTools](./evaluate-xpath.md).
 
-![The Elements panel in Edge showing the copy xpath option in the contextual menu.](/assets/img/copy-element-xpath.png)
+![The Elements panel in Edge showing the copy xpath option in the contextual menu.](../../assets/img/copy-element-xpath.png)

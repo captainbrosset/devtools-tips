@@ -10,7 +10,7 @@ To see issues with the current page in Edge:
 
 1. Open DevTools (<kbd>F12</kbd>).
 
-1. Click **More tools** (`+`) and click **Issues** (you can also open the panel by using the [Command menu](/tips/en/execute-commands)).
+1. Click **More tools** (`+`) and click **Issues** (you can also open the panel by using the [Command menu](./execute-commands.md)).
 
 1. Issues are listed in the panel, organized by category, and severity.
 
@@ -20,4 +20,4 @@ To see issues with the current page in Edge:
 
 [Learn more about this tool](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/issues/).
 
-![The issues panel in Edge, showing many different issues about the page.](/assets/img/get-website-issues.png)
+![The issues panel in Edge, showing many different issues about the page.](../../assets/img/get-website-issues.png)

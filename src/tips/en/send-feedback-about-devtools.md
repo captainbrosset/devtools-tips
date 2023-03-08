@@ -3,8 +3,9 @@ date: 2022-03-10
 authors: Patrick Brosset
 title: Send feedback, ask for features and report bugs
 tags: ["help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox", "browser:polypane"]
+see-also: ["get-contextual-help.md", "find-devtools-documentation.md"]
 ---
-<img src="/assets/img/send-feedback-about-devtools.png" alt="A feedback illustration showing a stick figure with a speech bubble" style="width:50px;">
+![A feedback illustration showing a stick figure with a speech bubble](../../assets/img/send-feedback-about-devtools.png)
 
 Browser vendors depend on your feedback to build the right tools for you. Without hearing from you all about what problems you have, or what features you lack, they can't take the right decisions about what to build.
 

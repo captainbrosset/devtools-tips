@@ -13,7 +13,7 @@ Firefox, Chrome and Edge allow you to convert values between these units easily.
   * Select the Fonts sidebar tab
   * Use the unit drop-downs next to `Size`, `Line Height` or `Spacing` to convert the current value to another unit
 
-![The fonts panel in Firefox, showing the unit conversion drop-down.](/assets/img/convert-font-units-1.png)
+![The fonts panel in Firefox, showing the unit conversion drop-down.](../../assets/img/convert-font-units-1.png)
 
 * In Chrome or Edge
   * You first need to enable the Fonts editor experiment
@@ -25,4 +25,4 @@ Firefox, Chrome and Edge allow you to convert values between these units easily.
   * Click on the `Aa` icon in the Styles sidebar, in the CSS rule that contains the property you want to convert
   * Use the unit drop-downs next to `Font Size`, `Line Height`, `Font Weight` or `Spacing` to convert the current value to another unit
 
-![The fonts panel in Edge, showing the unit conversion drop-down.](/assets/img/convert-font-units-2.png)
+![The fonts panel in Edge, showing the unit conversion drop-down.](../../assets/img/convert-font-units-2.png)

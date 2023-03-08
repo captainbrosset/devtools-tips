@@ -11,4 +11,4 @@ Chrome and Edge both have a visual editor useful for tweaking flexbox and grid a
 * In the Styles sidebar pane, find the `display: grid` or `display:flex` declaration
 * Click the little icon next to this declaration
 
-![The grid editor in the Styles pane of Microsoft Edge.](/assets/img/tweak-grid-flex-alignment.png)
+![The grid editor in the Styles pane of Microsoft Edge.](../../assets/img/tweak-grid-flex-alignment.png)

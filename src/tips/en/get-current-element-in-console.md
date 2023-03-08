@@ -10,6 +10,6 @@ This shortcut will return the DOM node instance, which you can then use to do th
 
 Example: `getComputedStyles($0).display`.
 
-![Safari's console showing how the $0 shortcut returns the selected element.](/assets/img/get-current-element-in-console.jpg)
+![Safari's console showing how the $0 shortcut returns the selected element.](../../assets/img/get-current-element-in-console.jpg)
 
-In Chrome, Polypane and Edge, the last 4 previously selected elements are additionally available as `$1`, `$2`, `$3` and `$4`. [Learn more here](/tips/en/get-current-element-in-console/).
+In Chrome, Polypane and Edge, the last 4 previously selected elements are additionally available as `$1`, `$2`, `$3` and `$4`. [Learn more here](./get-current-element-in-console.md).

@@ -8,4 +8,4 @@ When logging `performance.timing` events to the console, they appear in alphabet
 
 In order to view them in order, you can use `console.table(performance.timing)` and click on the column heading to sort them by time.
 
-![The console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties.](/assets/img/view-perf-markers-in-order.png)
+![The console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties.](../../assets/img/view-perf-markers-in-order.png)

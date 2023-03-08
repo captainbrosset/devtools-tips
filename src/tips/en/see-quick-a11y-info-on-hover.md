@@ -9,4 +9,4 @@ In Edge, Polypane and Chrome, whenever you use the element selector and hover ov
 * To start the element selector, click on the mouse cursor icon in the top-left corner of the DevTools window.
 * Then simply hover over elements in the page
 
-![Animation of the a11y tooltip in chrome.](/assets/img/see-quick-a11y-info-on-hover.gif)
+![Animation of the a11y tooltip in chrome.](../../assets/img/see-quick-a11y-info-on-hover.gif)

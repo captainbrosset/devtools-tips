@@ -13,4 +13,4 @@ Firefox features a position editor that lets you move elements in the page by dr
 
 [Learn more about this tool here](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Reposition_elements_in_the_page)
 
-![Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.](/assets/img/edit-position.gif)
+![Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.](../../assets/img/edit-position.gif)

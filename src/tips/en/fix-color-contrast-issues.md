@@ -12,4 +12,4 @@ https://twitter.com/domizajac/status/1507310081624444929
 
 In Polypane, these suggestions are made inline on the page itself when enabling the **Contrast checker debug tool**.
 
-![A Polypane Pane with the Contrast checker debug tool active.](/assets/img/detect-low-color-contrast-inline.png)
+![A Polypane Pane with the Contrast checker debug tool active.](../../assets/img/detect-low-color-contrast-inline.png)

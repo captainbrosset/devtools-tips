@@ -15,6 +15,6 @@ To create a bootstrap script:
 1. Choose the **Inspector Bootstrap Script** type.
 1. Write the code you need.
 
-![The Sources tab in Safari's WebInspector, showing the Add resource button and the Bootstrap script type](/assets/img/manipulate-global-objects-on-page-load.png)
+![The Sources tab in Safari's WebInspector, showing the Add resource button and the Bootstrap script type](../../assets/img/manipulate-global-objects-on-page-load.png)
 
 To learn more, see [Inspector Bootstrap Script](https://webkit.org/web-inspector/inspector-bootstrap-script/) on the webkit blog.

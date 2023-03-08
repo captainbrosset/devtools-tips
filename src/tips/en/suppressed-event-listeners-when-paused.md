@@ -15,4 +15,4 @@ This also happens if you manually try to dispatch new events from the console us
 
 The reason for this is that (ignoring workers) JavaScript on your page only runs in one thread. So while that thread is paused at one specific location, it's not supposed to be able to execute code from other locations.
 
-![A page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page.](/assets/img/suppressed-event-listeners-when-paused.png)
+![A page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page.](../../assets/img/suppressed-event-listeners-when-paused.png)

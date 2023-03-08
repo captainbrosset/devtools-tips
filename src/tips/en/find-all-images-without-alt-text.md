@@ -10,11 +10,11 @@ Using DevTools, you can quickly check which images on a page do not have an `alt
 
 Execute this in the Console panel: `console.table($$('img').filter(i => !i.alt), ['src'])` and that's it! You'll have the list of image URLs that don't have an alternative text.
 
-![The output of the console.table command from above shown in the Firefox DevTools console.](/assets/img/find-all-images-without-alt-text.png)
+![The output of the console.table command from above shown in the Firefox DevTools console.](../../assets/img/find-all-images-without-alt-text.png)
 
 Here's what this command does:
 
-* `$$()` find all elements that match a given CSS selector ([learn more here](/tips/en/query-dom-from-console)). Here it is used to find all images.
+* `$$()` find all elements that match a given CSS selector ([learn more here](./query-dom-from-console.md)). Here it is used to find all images.
 * `filter()` is used to only keep the images that do not have an `alt` attribute.
 * Finally, `console.table()` takes the array returned by `filter` and outputs a pretty table in the console based on it. Notice the second (optional) paramter that is used here to retrict the number of columns to just the `src` attribute from each image.
 
@@ -24,4 +24,4 @@ Here's what this command does:
 3. See which images in the list have an "Alt: missing!" warning.
 4. (Optionally) click **Show overlay** to highlight the missing images on the page.
 
-![The outline panel in Polypane showing a 'missing' warning for an image.](/assets/img/find-all-images-without-alt-text-polypane.png)
+![The outline panel in Polypane showing a 'missing' warning for an image.](../../assets/img/find-all-images-without-alt-text-polypane.png)

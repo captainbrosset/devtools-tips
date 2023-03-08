@@ -6,7 +6,7 @@ tags: ["debug", "javascript", "browser:safari"]
 ---
 Sometimes pausing execution when a line of JavaScript is executed is too much, sometimes you only want to know that the line was executed at all, not pause there.
 
-To do this you can add `console.log()` statements in your code, or [use logpoints](/tips/en/use-logpoints/).
+To do this you can add `console.log()` statements in your code, or [use logpoints](./use-logpoints.md).
 
 In Safari, you can play an audio beep instead! This way you can hear that the line got executed, and your console doesn't get cluttered with more messages.
 
@@ -21,4 +21,4 @@ And that's it! Now every time this line is executed, an audio beep will be playe
 
 You can remove the breakpoint by right-clicking on it and selecting **Delete Breakpoint**.
 
-![Animation showing how to add the audio breakpoint in Safari Web Inspector.](/assets/img/play-sound-on-js-execution.gif)
+![Animation showing how to add the audio breakpoint in Safari Web Inspector.](../../assets/img/play-sound-on-js-execution.gif)

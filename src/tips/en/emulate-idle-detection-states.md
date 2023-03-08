@@ -13,10 +13,10 @@ The problem is testing the code that uses this API can be tricky, or even imposs
 
 Thankfully, Chrome has a nice little feature in its DevTools to emulate various idle detection states. Here's how:
 
-* Using the **[Command Menu](/tips/en/execute-commands)**, open the **Sensors** tool.
+* Using the **[Command Menu](./execute-commands.md)**, open the **Sensors** tool.
 * Scroll down and look for the **Emulate Idle Detector state** section.
 * Choose one of the states to test if your code does what it's supposed to.
 
-![Chrome DevTools' Sensors panel, showing a drop-down list with the different states that can be emulated.](/assets/img/emulate-idle-detection-states.png)
+![Chrome DevTools' Sensors panel, showing a drop-down list with the different states that can be emulated.](../../assets/img/emulate-idle-detection-states.png)
 
 [Learn more about the Idle Detection API and the corresponding DevTools support](https://developer.chrome.com/articles/idle-detection/#devtools-support).

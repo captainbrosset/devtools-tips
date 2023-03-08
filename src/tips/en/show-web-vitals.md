@@ -15,6 +15,6 @@ To turn them on:
 * Each pane now shows a small icon that will change from a circle to a square to a rectangle depending on your web vitals score.
 * Hover the icon to show an overview:
 
-![The web vitals tooltip in Polypane showing a good CLS, LCP and FCP score and a FID score that needs improvement.](/assets/img/show-web-vitals.png)
+![The web vitals tooltip in Polypane showing a good CLS, LCP and FCP score and a FID score that needs improvement.](../../assets/img/show-web-vitals.png)
 
 In the overview you will find for each web vital the score for the current page and a bar chart of what percentage of visits were good, needed improvement or were bad. Click the **Eye icon** in front of a web vital, when available, will show which elements contributed to that score. [Learn more here](https://polypane.app/docs/web-vitals/).

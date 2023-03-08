@@ -11,10 +11,10 @@ A lower than 60 FPS framerate may lead to a degraded user experience where anima
 
 In Chromium-based browsers, such as Edge or Chrome, it is possible to display an FPS meter on the screen:
 
-1. Open the [Command Menu](/tips/en/execute-commands/): type <kbd>Ctrl+Shift+P</kbd> (or <kbd>cmd+Shift+P</kbd> on mac).
+1. Open the [Command Menu](./execute-commands.md): type <kbd>Ctrl+Shift+P</kbd> (or <kbd>cmd+Shift+P</kbd> on mac).
 1. Type **FPS** to display the **Show Frames Per Seconds (FPS) Meter** command.
 1. Press <kbd>Enter</kbd>.
 
 The FPS meter appears in the upper left corner of the webpage, and displays the live framerate as you use the page. Use the Command Menu again to hide the FPS meter.
 
-![Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu](/assets/img/display-current-framerate.png)
+![Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu](../../assets/img/display-current-framerate.png)

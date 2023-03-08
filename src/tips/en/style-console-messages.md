@@ -10,4 +10,4 @@ The `console.log` output can be styled in DevTools using CSS.
 console.log('%c Hello World', 'color: orange; font-size: 2em;');
 ```
 
-![A styled console message in Edge.](/assets/img/style-console-messages.png)
+![A styled console message in Edge.](../../assets/img/style-console-messages.png)

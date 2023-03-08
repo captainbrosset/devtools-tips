@@ -119,4 +119,4 @@ So here is a list of all the panels available in DevTools, per browser! Want to 
   * **Workspaces**: Save and restore different sets of devices to test on.
 
 
-![The list of most tools in Edge DevTools, just to illustrate how many there are](/assets/img/discover-all-tools.png)
+![The list of most tools in Edge DevTools, just to illustrate how many there are](../../assets/img/discover-all-tools.png)

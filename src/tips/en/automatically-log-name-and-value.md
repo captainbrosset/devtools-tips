@@ -32,6 +32,6 @@ document.body.addEventListener('click', e => {
 })
 ```
 
-![Animation showing the different ways the variables are logged with and without curly braces.](/assets/img/automatically-log-name-and-value.gif)
+![Animation showing the different ways the variables are logged with and without curly braces.](../../assets/img/automatically-log-name-and-value.gif)
 
 https://www.youtube.com/watch?v=xTnqsA5vZX4

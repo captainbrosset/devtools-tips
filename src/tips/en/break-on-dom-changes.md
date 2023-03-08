@@ -19,6 +19,6 @@ To add a DOM breakpoint:
 * Open the contextual menu (right-click).
 * Open the **Break on** sub menu and choose the type of breakpoint you want to set.
 
-![The Elements panel in Edge showing the "Break on" contextual menu on the selected node.](/assets/img/break-on-dom-changes.png)
+![The Elements panel in Edge showing the "Break on" contextual menu on the selected node.](../../assets/img/break-on-dom-changes.png)
 
 Once the requested DOM modification occurs, the JavaScript execution will pause and DevTools will navigate to the Sources/Debugger panel, showing the right line of code where execution is paused.

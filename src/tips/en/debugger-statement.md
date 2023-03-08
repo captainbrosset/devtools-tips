@@ -11,4 +11,4 @@ If you prefer to use `console.log()` statements rather than the JavaScript debug
 * Trigger the action that will make your code run
 * The Sources panel (or Debugger panel in Firefox) will automatically open up, and pause script execution at that line, giving you a chance to see what are the values of local variables, the callstack, etc.
 
-![The Sources panel in Edge, paused at a debugger statement.](/assets/img/debugger-statement.png)
+![The Sources panel in Edge, paused at a debugger statement.](../../assets/img/debugger-statement.png)

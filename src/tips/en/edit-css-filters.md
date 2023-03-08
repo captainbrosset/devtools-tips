@@ -13,4 +13,4 @@ Firefox provides a visual editor to play with CSS filters. You can add or remove
 
 [Learn more on MDN](https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Edit_CSS_filters).
 
-![The filter editing UI in Firefox.](/assets/img/edit-css-filters.png)
+![The filter editing UI in Firefox.](../../assets/img/edit-css-filters.png)

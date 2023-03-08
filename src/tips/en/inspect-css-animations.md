@@ -9,7 +9,7 @@ Modern browser DevTools provide a handy tool to inspect and modify CSS animation
 
 **For Chromium browsers (Chrome/Edge)**
 
-Open the [Command Menu](/tips/en/execute-commands) (`Cmd+Shift+P` or `Ctrl+Shift+P`), type "Show Animations", and press Enter.
+Open the [Command Menu](./execute-commands.md) (`Cmd+Shift+P` or `Ctrl+Shift+P`), type "Show Animations", and press Enter.
 This will open the **Animations** tool.
 
 Next, trigger an animation in the webpage to record it in the tool. The **Animations** tool is divided into 4 sections:
@@ -27,4 +27,4 @@ Next, trigger the animation to view its timeline in the **Animations** pane.
 
 Use the draggable vertical line to scrub through the timeline or jump to a specific point. You can also change the playback speed and do much [more](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/work_with_animations/index.html).
 
-![Animation of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector.](/assets/img/inspect-css-animation.gif)
+![Animation of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector.](../../assets/img/inspect-css-animation.gif)

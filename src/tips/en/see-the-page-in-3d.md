@@ -12,7 +12,7 @@ See your page in 3 dimensions to quickly find out how deeply nested it is, fix z
   * In the new panel that opens, switch between the 3 modes: z-index, DOM, and Composited Layers to visualize the page in 3D.
 * Chrome and Safari also have a Layers panel that provides the same information as Edge's Composited Layers 3D mode.
 
-![The 3D view tool showing a page's z-index stacking tree as a 3d scene.](/assets/img/see-the-page-in-3d.png)
+![The 3D view tool showing a page's z-index stacking tree as a 3d scene.](../../assets/img/see-the-page-in-3d.png)
 
 More information on Edge's 3D tool in this video:
 

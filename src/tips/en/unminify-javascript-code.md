@@ -11,4 +11,4 @@ You can unminify code in DevTools to read it more easily, and also set breakpoin
 * Open a file in the Sources or Debugger panel
 * Click on the `{}` icon at the bottom of the source code
 
-![The Sources panel in Chrome, showing the pretty-print button.](/assets/img/unminify-javascript-code.gif)
+![The Sources panel in Chrome, showing the pretty-print button.](../../assets/img/unminify-javascript-code.gif)

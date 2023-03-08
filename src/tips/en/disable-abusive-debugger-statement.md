@@ -18,6 +18,6 @@ To disable the abusive `debugger` statement:
 
 Now, everytime this line of code is executed, the nasty `debugger` statement will be ignored and the page will run normally!
 
-![The Sources tool in Firefox, showing how to add a conditional breakpoint.](/assets/img/disable-abusive-debugger-statement.gif)
+![The Sources tool in Firefox, showing how to add a conditional breakpoint.](../../assets/img/disable-abusive-debugger-statement.gif)
 
 Thank you [François for the tweet](https://twitter.com/quicksave2k/status/1610250172210073607) and [Pankaj Parashar for the tip about using the **Never pause here** option](https://github.com/captainbrosset/devtools-tips/issues/66).

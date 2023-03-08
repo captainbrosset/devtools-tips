@@ -12,8 +12,8 @@ Or, you can use this great Console trick to reference the previous result withou
 
 To access the last result just type `$_` in the Console. In the above example, you would therefore type `$_[14]`.
 
-![The Console in Firefox DevTools showing how using $_ refers to the previous Console result](/assets/img/access-recent-console-results-firefox.png)
+![The Console in Firefox DevTools showing how using $_ refers to the previous Console result](../../assets/img/access-recent-console-results-firefox.png)
 
 **Safari goes even further** and provides shortcuts from `$1` all the way to `$99` to access previous results too. So if you had evaluated many expressions in the Console before, you can refer to their results by using one of the `$n` shortcuts where `$1` is the first evaluated expression, `$2` is the second one, and so on ([more information here](https://webkit.org/web-inspector/console-command-line-api/#$1)).
 
-![The Console in Safari Web Inspector showing how using $1, $2, $3, ... refer to previous Console results](/assets/img/access-recent-console-results-safari.png)
+![The Console in Safari Web Inspector showing how using $1, $2, $3, ... refer to previous Console results](../../assets/img/access-recent-console-results-safari.png)

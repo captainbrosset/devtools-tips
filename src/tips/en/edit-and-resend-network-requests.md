@@ -15,7 +15,7 @@ This works in Firefox, Edge, and Chrome.
 * Find the request you want to test in the **Network** panel.
 * Right-click it and select **Copy** > **Copy as cURL**.
 
-![Screenshot of Chrome's copy as cURL feature and the corresponding command in the terminal](/assets/img/edit-and-resend-network-requests-curl.png)
+![Screenshot of Chrome's copy as cURL feature and the corresponding command in the terminal](../../assets/img/edit-and-resend-network-requests-curl.png)
 
 A similar approach is to use the **Copy as Fetch** option, and then use the copied code from the **Console** panel.
 
@@ -28,7 +28,7 @@ Firefox has a built-in **Edit and Resend** feature that's very convenient becaus
 * In the new panel that appears, you can edit the request's method, url, query string, headers, and body.
 * Press **Send** when you're happy with the values.
 
-![The Firefox's edit and resend feature.](/assets/img/edit-and-resend-network-requests-firefox.png)
+![The Firefox's edit and resend feature.](../../assets/img/edit-and-resend-network-requests-firefox.png)
 
 ### Using Edge's Network Console experiment
 
@@ -43,4 +43,4 @@ The feature is called **Network Console** and is an experiment for the time bein
 * Press **Send** when you're happy with the values.
 * You can also save this request for later. You can find all saved requests in the **Network Console** panel.
 
-![The Edge's Network Console feature.](/assets/img/edit-and-resend-network-requests-edge.png)
+![The Edge's Network Console feature.](../../assets/img/edit-and-resend-network-requests-edge.png)

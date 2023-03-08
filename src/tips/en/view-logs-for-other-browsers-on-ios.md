@@ -20,4 +20,4 @@ Thankfully, here is a way to at least see your console logs from these browsers,
 1. In the new tab, go to the site that you need to test and run the user scenario that will trigger a the console logs you need to see.
 1. Return to the previous tab. Your logs are now displayed on the `about:inspect` page.
 
-![Edge on iOS, showing the about:inspect page, filled with logs](/assets/img/view-logs-for-other-browsers-on-ios.png)
+![Edge on iOS, showing the about:inspect page, filled with logs](../../assets/img/view-logs-for-other-browsers-on-ios.png)

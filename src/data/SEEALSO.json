@@ -4,7 +4,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     },
@@ -12,7 +12,7 @@
       "title": "Monitor all events dispatched on an element",
       "image": {
         "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "/assets/img/monitor-element-events.gif"
+        "src": "../../assets/img/monitor-element-events.gif"
       },
       "link": "/tips/en/monitor-element-events"
     },
@@ -20,7 +20,7 @@
       "title": "Get the recently selected DOM nodes in the console",
       "image": {
         "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
-        "src": "/assets/img/get-recently-selected-dom-nodes-in-console.gif"
+        "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
       },
       "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
     }
@@ -30,7 +30,7 @@
       "title": "Simulate different devices and screen sizes",
       "image": {
         "alt": "Animation showing how the tool makes it easy to resize the screen size by dragging the mouse.",
-        "src": "/assets/img/simulate-devices.gif"
+        "src": "../../assets/img/simulate-devices.gif"
       },
       "link": "/tips/en/simulate-devices"
     }
@@ -40,7 +40,7 @@
       "title": "Check if your site can be instantly reloaded from bfcache",
       "image": {
         "alt": "Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached.",
-        "src": "/assets/img/check-bfcache-readiness.png"
+        "src": "../../assets/img/check-bfcache-readiness.png"
       },
       "link": "/tips/en/check-bfcache-readiness"
     },
@@ -48,7 +48,7 @@
       "title": "Evaluate XPath to find elements in the page",
       "image": {
         "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
-        "src": "/assets/img/evaluate-xpath-1.png"
+        "src": "../../assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
     }
@@ -59,7 +59,7 @@
       "title": "Capture node creation stack traces",
       "image": {
         "alt": "Edge DevTools' Elements panel with the Stack Trace sidebar visible, showing a stack of Vue JS function calls that created an element on the TODOMVC sample app.",
-        "src": "/assets/img/capture-node-creation-stacks.png"
+        "src": "../../assets/img/capture-node-creation-stacks.png"
       },
       "link": "/tips/en/capture-node-creation-stacks"
     },
@@ -67,7 +67,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -75,7 +75,7 @@
       "title": "Expand DOM nodes recursively",
       "image": {
         "alt": "Animation showing right-clicking on a node in Chrome's Elements panel and choosing \"expand recursively\".",
-        "src": "/assets/img/expand-nodes-recursively.gif"
+        "src": "../../assets/img/expand-nodes-recursively.gif"
       },
       "link": "/tips/en/expand-nodes-recursively"
     },
@@ -83,7 +83,7 @@
       "title": "Get the selected element in the console",
       "image": {
         "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
-        "src": "/assets/img/get-current-element-in-console.jpg"
+        "src": "../../assets/img/get-current-element-in-console.jpg"
       },
       "link": "/tips/en/get-current-element-in-console"
     }
@@ -93,7 +93,7 @@
       "title": "Pause script execution when the DOM changes",
       "image": {
         "alt": "The Elements panel in Edge showing the \"Break on\" contextual menu on the selected node.",
-        "src": "/assets/img/break-on-dom-changes.png"
+        "src": "../../assets/img/break-on-dom-changes.png"
       },
       "link": "/tips/en/break-on-dom-changes"
     }
@@ -103,7 +103,7 @@
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "/assets/img/emulate-color-schemes-firefox.png"
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
     },
@@ -111,7 +111,7 @@
       "title": "Use DevTools in another language",
       "image": {
         "alt": "The settings panel in Edge showing a checkbox to match devtools with the browser language.",
-        "src": "/assets/img/use-another-language.png"
+        "src": "../../assets/img/use-another-language.png"
       },
       "link": "/tips/en/use-another-language"
     }
@@ -121,7 +121,7 @@
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
-        "src": "/assets/img/zoom-devtools-content.gif"
+        "src": "../../assets/img/zoom-devtools-content.gif"
       },
       "link": "/tips/en/zoom-devtools-content"
     },
@@ -129,7 +129,7 @@
       "title": "Throttle your CPU",
       "image": {
         "alt": "The Performance tool in Chrome showing the CPU throttling drop-down.",
-        "src": "/assets/img/throttle-cpu.png"
+        "src": "../../assets/img/throttle-cpu.png"
       },
       "link": "/tips/en/throttle-cpu"
     }
@@ -161,7 +161,7 @@
       "title": "Find and export CSS changes",
       "image": {
         "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
-        "src": "/assets/img/find-css-changes.png"
+        "src": "../../assets/img/find-css-changes.png"
       },
       "link": "/tips/en/find-css-changes"
     },
@@ -169,7 +169,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -177,7 +177,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -185,7 +185,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     }
@@ -195,7 +195,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     },
@@ -203,7 +203,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -211,7 +211,7 @@
       "title": "Visualize the effect of CSS transforms",
       "image": {
         "alt": "Animation showing how the CSS transform highlighter appears on the page when hovering over a transform CSS property in the Rules panel.",
-        "src": "/assets/img/visualize-css-transforms.gif"
+        "src": "../../assets/img/visualize-css-transforms.gif"
       },
       "link": "/tips/en/visualize-css-transforms"
     }
@@ -221,7 +221,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -229,7 +229,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     },
@@ -237,7 +237,7 @@
       "title": "Convert font property units",
       "image": {
         "alt": "The fonts panel in Firefox, showing the unit conversion drop-down.",
-        "src": "/assets/img/convert-font-units-1.png"
+        "src": "../../assets/img/convert-font-units-1.png"
       },
       "link": "/tips/en/convert-font-units"
     },
@@ -245,7 +245,7 @@
       "title": "Copy a CSS rule as CSS-in-JS format",
       "image": {
         "alt": "Aimation showing the Styles pane in Edge, with the \"Copy all declarations as JS\" option being used, and then pasting the result in the Console to show that it is formatted.",
-        "src": "/assets/img/copy-rule-as-css-in-js.gif"
+        "src": "../../assets/img/copy-rule-as-css-in-js.gif"
       },
       "link": "/tips/en/copy-rule-as-css-in-js"
     }
@@ -255,7 +255,7 @@
       "title": "Copy an element's XPath expression",
       "image": {
         "alt": "The Elements panel in Edge showing the copy xpath option in the contextual menu.",
-        "src": "/assets/img/copy-element-xpath.png"
+        "src": "../../assets/img/copy-element-xpath.png"
       },
       "link": "/tips/en/copy-element-xpath"
     },
@@ -263,7 +263,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -271,7 +271,7 @@
       "title": "Drag and drop nodes in the DOM tree",
       "image": {
         "alt": "Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge.",
-        "src": "/assets/img/drag-drop-dom-nodes.gif"
+        "src": "../../assets/img/drag-drop-dom-nodes.gif"
       },
       "link": "/tips/en/drag-drop-dom-nodes"
     },
@@ -279,7 +279,7 @@
       "title": "Take a screenshot of a single node",
       "image": {
         "alt": "Animation showing taking a node screenshot in Firefox.",
-        "src": "/assets/img/node-screenshot.gif"
+        "src": "../../assets/img/node-screenshot.gif"
       },
       "link": "/tips/en/node-screenshot"
     }
@@ -289,7 +289,7 @@
       "title": "Simulate pseudo CSS classes",
       "image": {
         "alt": "The :hov panel to simulate various pseudo-classes.",
-        "src": "/assets/img/simulate-pseudo-classes.png"
+        "src": "../../assets/img/simulate-pseudo-classes.png"
       },
       "link": "/tips/en/simulate-pseudo-classes"
     },
@@ -297,7 +297,7 @@
       "title": "Copy an element's XPath expression",
       "image": {
         "alt": "The Elements panel in Edge showing the copy xpath option in the contextual menu.",
-        "src": "/assets/img/copy-element-xpath.png"
+        "src": "../../assets/img/copy-element-xpath.png"
       },
       "link": "/tips/en/copy-element-xpath"
     },
@@ -305,7 +305,7 @@
       "title": "Copy a CSS rule as CSS-in-JS format",
       "image": {
         "alt": "Aimation showing the Styles pane in Edge, with the \"Copy all declarations as JS\" option being used, and then pasting the result in the Console to show that it is formatted.",
-        "src": "/assets/img/copy-rule-as-css-in-js.gif"
+        "src": "../../assets/img/copy-rule-as-css-in-js.gif"
       },
       "link": "/tips/en/copy-rule-as-css-in-js"
     },
@@ -313,7 +313,7 @@
       "title": "Find inactive CSS styles",
       "image": {
         "alt": "Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.",
-        "src": "/assets/img/find-inactive-styles.png"
+        "src": "../../assets/img/find-inactive-styles.png"
       },
       "link": "/tips/en/find-inactive-styles"
     }
@@ -323,7 +323,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -331,7 +331,7 @@
       "title": "Copy an element's JavaScript path",
       "image": {
         "alt": "The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.",
-        "src": "/assets/img/copy-element-js-path.png"
+        "src": "../../assets/img/copy-element-js-path.png"
       },
       "link": "/tips/en/copy-element-js-path"
     },
@@ -339,7 +339,7 @@
       "title": "Evaluate XPath to find elements in the page",
       "image": {
         "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
-        "src": "/assets/img/evaluate-xpath-1.png"
+        "src": "../../assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
     },
@@ -347,7 +347,7 @@
       "title": "Find DOM elements from the console",
       "image": {
         "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
-        "src": "/assets/img/query-dom-from-console.png"
+        "src": "../../assets/img/query-dom-from-console.png"
       },
       "link": "/tips/en/query-dom-from-console"
     }
@@ -357,7 +357,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     },
@@ -365,7 +365,7 @@
       "title": "Evaluate XPath to find elements in the page",
       "image": {
         "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
-        "src": "/assets/img/evaluate-xpath-1.png"
+        "src": "../../assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
     },
@@ -373,7 +373,7 @@
       "title": "Monitor all events dispatched on an element",
       "image": {
         "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "/assets/img/monitor-element-events.gif"
+        "src": "../../assets/img/monitor-element-events.gif"
       },
       "link": "/tips/en/monitor-element-events"
     },
@@ -381,7 +381,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     }
@@ -391,7 +391,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -399,7 +399,7 @@
       "title": "Copy CSS selector of an element",
       "image": {
         "alt": "Edge DevTools, showing how to access the Copy CSS selector option.",
-        "src": "/assets/img/copy-css-selector.png"
+        "src": "../../assets/img/copy-css-selector.png"
       },
       "link": "/tips/en/copy-css-selector"
     },
@@ -407,7 +407,7 @@
       "title": "Find and export CSS changes",
       "image": {
         "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
-        "src": "/assets/img/find-css-changes.png"
+        "src": "../../assets/img/find-css-changes.png"
       },
       "link": "/tips/en/find-css-changes"
     },
@@ -415,7 +415,7 @@
       "title": "Paste multiple CSS declarations at once",
       "image": {
         "alt": "Animation showing how pasting several declarations in a CSS rule in DevTools creates them all.",
-        "src": "/assets/img/paste-several-css-declarations.gif"
+        "src": "../../assets/img/paste-several-css-declarations.gif"
       },
       "link": "/tips/en/past-several-css-declarations"
     }
@@ -425,7 +425,7 @@
       "title": "Install or create extensions to customize DevTools",
       "image": {
         "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
-        "src": "/assets/img/extend-devtools.png"
+        "src": "../../assets/img/extend-devtools.png"
       },
       "link": "/tips/en/extend-devtools"
     },
@@ -433,7 +433,7 @@
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
-        "src": "/assets/img/zoom-devtools-content.gif"
+        "src": "../../assets/img/zoom-devtools-content.gif"
       },
       "link": "/tips/en/zoom-devtools-content"
     },
@@ -441,7 +441,7 @@
       "title": "Change the color theme of DevTools",
       "image": {
         "alt": "the settings panel in Edge showing the Theme drop-down.",
-        "src": "/assets/img/change-color-theme.png"
+        "src": "../../assets/img/change-color-theme.png"
       },
       "link": "/tips/en/change-color-theme"
     },
@@ -449,7 +449,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     }
@@ -459,7 +459,7 @@
       "title": "Find inactive CSS styles",
       "image": {
         "alt": "Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.",
-        "src": "/assets/img/find-inactive-styles.png"
+        "src": "../../assets/img/find-inactive-styles.png"
       },
       "link": "/tips/en/find-inactive-styles"
     },
@@ -467,7 +467,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     },
@@ -475,7 +475,7 @@
       "title": "Find and export CSS changes",
       "image": {
         "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
-        "src": "/assets/img/find-css-changes.png"
+        "src": "../../assets/img/find-css-changes.png"
       },
       "link": "/tips/en/find-css-changes"
     },
@@ -483,7 +483,7 @@
       "title": "Paste multiple CSS declarations at once",
       "image": {
         "alt": "Animation showing how pasting several declarations in a CSS rule in DevTools creates them all.",
-        "src": "/assets/img/paste-several-css-declarations.gif"
+        "src": "../../assets/img/paste-several-css-declarations.gif"
       },
       "link": "/tips/en/past-several-css-declarations"
     }
@@ -493,7 +493,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -501,7 +501,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -509,7 +509,7 @@
       "title": "Take a screenshot of a single node",
       "image": {
         "alt": "Animation showing taking a node screenshot in Firefox.",
-        "src": "/assets/img/node-screenshot.gif"
+        "src": "../../assets/img/node-screenshot.gif"
       },
       "link": "/tips/en/node-screenshot"
     },
@@ -517,7 +517,7 @@
       "title": "Select elements with pointer-events:none by holding Shift",
       "image": {
         "alt": "Animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed.",
-        "src": "/assets/img/select-pointer-events-none-elements.gif"
+        "src": "../../assets/img/select-pointer-events-none-elements.gif"
       },
       "link": "/tips/en/select-pointer-events-none-elements"
     }
@@ -527,7 +527,7 @@
       "title": "Debug popups that appear on hover using JS",
       "image": {
         "alt": "Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.",
-        "src": "/assets/img/debug-js-hover.gif"
+        "src": "../../assets/img/debug-js-hover.gif"
       },
       "link": "/tips/en/debug-js-hover"
     },
@@ -535,7 +535,7 @@
       "title": "Use the debugger statement to pause script execution",
       "image": {
         "alt": "The Sources panel in Edge, paused at a debugger statement.",
-        "src": "/assets/img/debugger-statement.png"
+        "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
     },
@@ -548,7 +548,7 @@
       "title": "Disable abusive debugger statements that prevent inspecting websites",
       "image": {
         "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "/assets/img/disable-abusive-debugger-statement.gif"
+        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
       },
       "link": "/tips/en/disable-abusive-debugger-statement"
     }
@@ -563,7 +563,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     },
@@ -571,7 +571,7 @@
       "title": "Use the debugger statement to pause script execution",
       "image": {
         "alt": "The Sources panel in Edge, paused at a debugger statement.",
-        "src": "/assets/img/debugger-statement.png"
+        "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
     },
@@ -579,7 +579,7 @@
       "title": "Disable abusive debugger statements that prevent inspecting websites",
       "image": {
         "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "/assets/img/disable-abusive-debugger-statement.gif"
+        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
       },
       "link": "/tips/en/disable-abusive-debugger-statement"
     }
@@ -589,7 +589,7 @@
       "title": "Visualize the tabbing order on the page",
       "image": {
         "alt": "The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.",
-        "src": "/assets/img/visualize-tabbing-order.png"
+        "src": "../../assets/img/visualize-tabbing-order.png"
       },
       "link": "/tips/en/visualize-tabbing-order"
     },
@@ -597,7 +597,7 @@
       "title": "Evaluate XPath to find elements in the page",
       "image": {
         "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
-        "src": "/assets/img/evaluate-xpath-1.png"
+        "src": "../../assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
     },
@@ -605,7 +605,7 @@
       "title": "Take a screenshot of a single node",
       "image": {
         "alt": "Animation showing taking a node screenshot in Firefox.",
-        "src": "/assets/img/node-screenshot.gif"
+        "src": "../../assets/img/node-screenshot.gif"
       },
       "link": "/tips/en/node-screenshot"
     },
@@ -613,7 +613,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     }
@@ -628,7 +628,7 @@
       "title": "Disable abusive debugger statements that prevent inspecting websites",
       "image": {
         "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "/assets/img/disable-abusive-debugger-statement.gif"
+        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
       },
       "link": "/tips/en/disable-abusive-debugger-statement"
     },
@@ -636,7 +636,7 @@
       "title": "Write code on multiple lines in the Console",
       "image": {
         "alt": "Tthe button to switch the Firefox console to the multi-line mode.",
-        "src": "/assets/img/multi-line-console-firefox.png"
+        "src": "../../assets/img/multi-line-console-firefox.png"
       },
       "link": "/tips/en/multi-line-console"
     },
@@ -644,7 +644,7 @@
       "title": "Unminify JavaScript code to easily read and debug it",
       "image": {
         "alt": "The Sources panel in Chrome, showing the pretty-print button.",
-        "src": "/assets/img/unminify-javascript-code.gif"
+        "src": "../../assets/img/unminify-javascript-code.gif"
       },
       "link": "/tips/en/unminify-javascript-code"
     }
@@ -654,7 +654,7 @@
       "title": "Fix low color contrast issues",
       "image": {
         "alt": "A Polypane Pane with the Contrast checker debug tool active.",
-        "src": "/assets/img/detect-low-color-contrast-inline.png"
+        "src": "../../assets/img/detect-low-color-contrast-inline.png"
       },
       "link": "/tips/en/fix-color-contrast-issues"
     },
@@ -662,7 +662,7 @@
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "/assets/img/emulate-color-schemes-firefox.png"
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
     },
@@ -670,7 +670,7 @@
       "title": "Fix color contrast issues using the element tooltip",
       "image": {
         "alt": "Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast.",
-        "src": "/assets/img/fix-color-contrast-issues-with-element-tooltip.gif"
+        "src": "../../assets/img/fix-color-contrast-issues-with-element-tooltip.gif"
       },
       "link": "/tips/en/fix-color-contrast-issues-with-element-tooltip"
     },
@@ -678,7 +678,7 @@
       "title": "Simulate color vision deficiencies",
       "image": {
         "alt": "The color vision simulation drop-down in Firefox.",
-        "src": "/assets/img/simulate-color-vision-deficiencies-1.png"
+        "src": "../../assets/img/simulate-color-vision-deficiencies-1.png"
       },
       "link": "/tips/en/simulate-color-vision-deficiencies"
     }
@@ -688,7 +688,7 @@
       "title": "Ignore JavaScript code to ease debugging",
       "image": {
         "alt": "Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code.",
-        "src": "/assets/img/ignore-scripts.png"
+        "src": "../../assets/img/ignore-scripts.png"
       },
       "link": "/tips/en/ignore-scripts"
     },
@@ -696,7 +696,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     },
@@ -704,7 +704,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     },
@@ -712,7 +712,7 @@
       "title": "Write code on multiple lines in the Console",
       "image": {
         "alt": "Tthe button to switch the Firefox console to the multi-line mode.",
-        "src": "/assets/img/multi-line-console-firefox.png"
+        "src": "../../assets/img/multi-line-console-firefox.png"
       },
       "link": "/tips/en/multi-line-console"
     }
@@ -722,7 +722,7 @@
       "title": "Use the debugger statement to pause script execution",
       "image": {
         "alt": "The Sources panel in Edge, paused at a debugger statement.",
-        "src": "/assets/img/debugger-statement.png"
+        "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
     },
@@ -735,7 +735,7 @@
       "title": "Debug popups that appear on hover using JS",
       "image": {
         "alt": "Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.",
-        "src": "/assets/img/debug-js-hover.gif"
+        "src": "../../assets/img/debug-js-hover.gif"
       },
       "link": "/tips/en/debug-js-hover"
     },
@@ -743,7 +743,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     }
@@ -753,7 +753,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     },
@@ -761,7 +761,7 @@
       "title": "Monitor all events dispatched on an element",
       "image": {
         "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "/assets/img/monitor-element-events.gif"
+        "src": "../../assets/img/monitor-element-events.gif"
       },
       "link": "/tips/en/monitor-element-events"
     },
@@ -769,7 +769,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     },
@@ -777,7 +777,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     }
@@ -787,7 +787,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -795,7 +795,7 @@
       "title": "Highlight the effect of individual CSS properties on hover",
       "image": {
         "alt": "Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.",
-        "src": "/assets/img/highlight-css-properties-on-hover.gif"
+        "src": "../../assets/img/highlight-css-properties-on-hover.gif"
       },
       "link": "/tips/en/highlight-css-properties-on-hover"
     },
@@ -803,7 +803,7 @@
       "title": "Reload a page when there's changes on disk",
       "image": {
         "alt": "Polypane with the live reload panel and reload context menu visible.",
-        "src": "/assets/img/reload-page-after-change.png"
+        "src": "../../assets/img/reload-page-after-change.png"
       },
       "link": "/tips/en/reload-page-after-change"
     },
@@ -811,7 +811,7 @@
       "title": "Scroll an element into view",
       "image": {
         "alt": "Animation showing how the page is scrolled to reveal the selected element.",
-        "src": "/assets/img/scroll-into-view.gif"
+        "src": "../../assets/img/scroll-into-view.gif"
       },
       "link": "/tips/en/scroll-into-view"
     }
@@ -828,7 +828,7 @@
       "title": "Find all images without alternative text",
       "image": {
         "alt": "The output of the console.table command from above shown in the Firefox DevTools console.",
-        "src": "/assets/img/find-all-images-without-alt-text.png"
+        "src": "../../assets/img/find-all-images-without-alt-text.png"
       },
       "link": "/tips/en/find-all-images-without-alt-text"
     }
@@ -838,7 +838,7 @@
       "title": "Copy an element's JavaScript path",
       "image": {
         "alt": "The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.",
-        "src": "/assets/img/copy-element-js-path.png"
+        "src": "../../assets/img/copy-element-js-path.png"
       },
       "link": "/tips/en/copy-element-js-path"
     },
@@ -846,7 +846,7 @@
       "title": "Quickly spot out-of-viewport elements",
       "image": {
         "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
-        "src": "/assets/img/spot-out-of-viewport-elements.png"
+        "src": "../../assets/img/spot-out-of-viewport-elements.png"
       },
       "link": "/tips/en/spot-out-of-viewport-elements"
     },
@@ -854,7 +854,7 @@
       "title": "Expand DOM nodes recursively",
       "image": {
         "alt": "Animation showing right-clicking on a node in Chrome's Elements panel and choosing \"expand recursively\".",
-        "src": "/assets/img/expand-nodes-recursively.gif"
+        "src": "../../assets/img/expand-nodes-recursively.gif"
       },
       "link": "/tips/en/expand-nodes-recursively"
     },
@@ -862,7 +862,7 @@
       "title": "Get detached DOM elements to investigate memory leaks",
       "image": {
         "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
-        "src": "/assets/img/get-detached-elements.png"
+        "src": "../../assets/img/get-detached-elements.png"
       },
       "link": "/tips/en/get-detached-elements"
     }
@@ -872,7 +872,7 @@
       "title": "Filter requests in the Network panel by status code, mime type and more",
       "image": {
         "alt": "The Network panel in Edge showing the filter input field.",
-        "src": "/assets/img/filter-network-requests.png"
+        "src": "../../assets/img/filter-network-requests.png"
       },
       "link": "/tips/en/filter-network-requests"
     },
@@ -880,7 +880,7 @@
       "title": "See the size of the transferred data for images, scripts, or other resources",
       "image": {
         "alt": "The Network tool in Chrome, with the transferred size highlighted",
-        "src": "/assets/img/get-size-of-resource-types.png"
+        "src": "../../assets/img/get-size-of-resource-types.png"
       },
       "link": "/tips/en/get-size-of-resource-types"
     },
@@ -888,7 +888,7 @@
       "title": "Hide resources loaded by extensions in the Network panel",
       "image": {
         "alt": "The Network panel in Chrome DevTools showing the pattern used in the filter input box.",
-        "src": "/assets/img/hide-extension-resources.jpg"
+        "src": "../../assets/img/hide-extension-resources.jpg"
       },
       "link": "/tips/en/hide-extension-resources"
     },
@@ -896,7 +896,7 @@
       "title": "Block resources to test your site without CSS or JavaScript",
       "image": {
         "alt": "The Network panel in Edge showing the contextual menu with the \"block request url\" item.",
-        "src": "/assets/img/block-resources-1.png"
+        "src": "../../assets/img/block-resources-1.png"
       },
       "link": "/tips/en/block-resources"
     }
@@ -906,7 +906,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -914,7 +914,7 @@
       "title": "Find inactive CSS styles",
       "image": {
         "alt": "Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.",
-        "src": "/assets/img/find-inactive-styles.png"
+        "src": "../../assets/img/find-inactive-styles.png"
       },
       "link": "/tips/en/find-inactive-styles"
     },
@@ -922,7 +922,7 @@
       "title": "Jump from a CSS variable usage to where it is defined",
       "image": {
         "alt": "Animation of clicking on a custom property link in the Styles panel in Edge.",
-        "src": "/assets/img/jump-to-css-variable.gif"
+        "src": "../../assets/img/jump-to-css-variable.gif"
       },
       "link": "/tips/en/jump-to-css-variable"
     }
@@ -933,7 +933,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     },
@@ -941,7 +941,7 @@
       "title": "Convert font property units",
       "image": {
         "alt": "The fonts panel in Firefox, showing the unit conversion drop-down.",
-        "src": "/assets/img/convert-font-units-1.png"
+        "src": "../../assets/img/convert-font-units-1.png"
       },
       "link": "/tips/en/convert-font-units"
     },
@@ -949,7 +949,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -957,7 +957,7 @@
       "title": "Edit CSS shadow visually",
       "image": {
         "alt": "Animation showing the shadow editor in Edge's Styles pane.",
-        "src": "/assets/img/edit-shadow.gif"
+        "src": "../../assets/img/edit-shadow.gif"
       },
       "link": "/tips/en/edit-shadow"
     }
@@ -967,7 +967,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     },
@@ -975,7 +975,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -983,7 +983,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     },
@@ -991,7 +991,7 @@
       "title": "Scroll an element into view",
       "image": {
         "alt": "Animation showing how the page is scrolled to reveal the selected element.",
-        "src": "/assets/img/scroll-into-view.gif"
+        "src": "../../assets/img/scroll-into-view.gif"
       },
       "link": "/tips/en/scroll-into-view"
     }
@@ -1001,7 +1001,7 @@
       "title": "Change the color theme of DevTools",
       "image": {
         "alt": "the settings panel in Edge showing the Theme drop-down.",
-        "src": "/assets/img/change-color-theme.png"
+        "src": "../../assets/img/change-color-theme.png"
       },
       "link": "/tips/en/change-color-theme"
     },
@@ -1009,7 +1009,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     },
@@ -1017,7 +1017,7 @@
       "title": "Use the debugger statement to pause script execution",
       "image": {
         "alt": "The Sources panel in Edge, paused at a debugger statement.",
-        "src": "/assets/img/debugger-statement.png"
+        "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
     },
@@ -1025,7 +1025,7 @@
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "/assets/img/emulate-color-schemes-firefox.png"
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
     }
@@ -1035,7 +1035,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -1043,7 +1043,7 @@
       "title": "Visualize the tabbing order on the page",
       "image": {
         "alt": "The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.",
-        "src": "/assets/img/visualize-tabbing-order.png"
+        "src": "../../assets/img/visualize-tabbing-order.png"
       },
       "link": "/tips/en/visualize-tabbing-order"
     },
@@ -1051,7 +1051,7 @@
       "title": "Highlight the effect of individual CSS properties on hover",
       "image": {
         "alt": "Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.",
-        "src": "/assets/img/highlight-css-properties-on-hover.gif"
+        "src": "../../assets/img/highlight-css-properties-on-hover.gif"
       },
       "link": "/tips/en/highlight-css-properties-on-hover"
     },
@@ -1059,7 +1059,7 @@
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "/assets/img/highlight-matching-elements.gif"
+        "src": "../../assets/img/highlight-matching-elements.gif"
       },
       "link": "/tips/en/highlight-matching-elements"
     }
@@ -1069,7 +1069,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     }
@@ -1079,7 +1079,7 @@
       "title": "Automatically get issues your site has with performance, accessibility, security, compatibility, and others.",
       "image": {
         "alt": "The issues panel in Edge, showing many different issues about the page.",
-        "src": "/assets/img/get-website-issues.png"
+        "src": "../../assets/img/get-website-issues.png"
       },
       "link": "/tips/en/get-website-issues"
     },
@@ -1087,7 +1087,7 @@
       "title": "Force PWA periodic background syncs",
       "image": {
         "alt": "The Application panel in Edge showing the periodic sync input and buttons.",
-        "src": "/assets/img/force-pwa-periodic-sync.png"
+        "src": "../../assets/img/force-pwa-periodic-sync.png"
       },
       "link": "/tips/en/force-pwa-periodic-sync"
     },
@@ -1095,7 +1095,7 @@
       "title": "Autofill forms for testing",
       "image": {
         "alt": "Animation of a form being filled after selecting \"autofill\" in the context menu, followed by the form being emptied after choosing \"Clear form\" in the context menu.",
-        "src": "/assets/img/form-testing.gif"
+        "src": "../../assets/img/form-testing.gif"
       },
       "link": "/tips/en/form-testing"
     },
@@ -1103,7 +1103,7 @@
       "title": "Get contextual DevTools help",
       "image": {
         "alt": "Animation of the devtools tooltips in Edge.",
-        "src": "/assets/img/get-contextual-help.gif"
+        "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
     }
@@ -1113,7 +1113,7 @@
       "title": "Quickly spot out-of-viewport elements",
       "image": {
         "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
-        "src": "/assets/img/spot-out-of-viewport-elements.png"
+        "src": "../../assets/img/spot-out-of-viewport-elements.png"
       },
       "link": "/tips/en/spot-out-of-viewport-elements"
     },
@@ -1121,7 +1121,7 @@
       "title": "Remove annoying page overlays and other elements",
       "image": {
         "alt": "Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.",
-        "src": "/assets/img/remove-annoying-overlays.gif"
+        "src": "../../assets/img/remove-annoying-overlays.gif"
       },
       "link": "/tips/en/remove-annoying-overlays"
     },
@@ -1129,7 +1129,7 @@
       "title": "Detect low color contrast issues",
       "image": {
         "alt": "The CSS Overview panel in Chrome, showing the color contrast issues section.",
-        "src": "/assets/img/detect-low-color-contrast-css-overview.png"
+        "src": "../../assets/img/detect-low-color-contrast-css-overview.png"
       },
       "link": "/tips/en/detect-low-color-contrast"
     },
@@ -1137,7 +1137,7 @@
       "title": "Disable abusive debugger statements that prevent inspecting websites",
       "image": {
         "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "/assets/img/disable-abusive-debugger-statement.gif"
+        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
       },
       "link": "/tips/en/disable-abusive-debugger-statement"
     }
@@ -1148,7 +1148,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     },
@@ -1156,7 +1156,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     },
@@ -1164,7 +1164,7 @@
       "title": "Change the color theme of DevTools",
       "image": {
         "alt": "the settings panel in Edge showing the Theme drop-down.",
-        "src": "/assets/img/change-color-theme.png"
+        "src": "../../assets/img/change-color-theme.png"
       },
       "link": "/tips/en/change-color-theme"
     },
@@ -1172,7 +1172,7 @@
       "title": "Customize keyboard shortcuts",
       "image": {
         "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
-        "src": "/assets/img/customize-keyboard-shortcuts.png"
+        "src": "../../assets/img/customize-keyboard-shortcuts.png"
       },
       "link": "/tips/en/customize-keyboard-shortcuts"
     }
@@ -1182,7 +1182,7 @@
       "title": "Copy an element's XPath expression",
       "image": {
         "alt": "The Elements panel in Edge showing the copy xpath option in the contextual menu.",
-        "src": "/assets/img/copy-element-xpath.png"
+        "src": "../../assets/img/copy-element-xpath.png"
       },
       "link": "/tips/en/copy-element-xpath"
     },
@@ -1190,7 +1190,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     },
@@ -1198,7 +1198,7 @@
       "title": "Debug unwanted scrollbars",
       "image": {
         "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
-        "src": "/assets/img/debug-unwanted-scrollbars-1.png"
+        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
       },
       "link": "/tips/en/debug-unwanted-scrollbars"
     },
@@ -1206,7 +1206,7 @@
       "title": "Find DOM elements from the console",
       "image": {
         "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
-        "src": "/assets/img/query-dom-from-console.png"
+        "src": "../../assets/img/query-dom-from-console.png"
       },
       "link": "/tips/en/query-dom-from-console"
     }
@@ -1216,7 +1216,7 @@
       "title": "Get contextual DevTools help",
       "image": {
         "alt": "Animation of the devtools tooltips in Edge.",
-        "src": "/assets/img/get-contextual-help.gif"
+        "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
     },
@@ -1224,7 +1224,7 @@
       "title": "Find and export CSS changes",
       "image": {
         "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
-        "src": "/assets/img/find-css-changes.png"
+        "src": "../../assets/img/find-css-changes.png"
       },
       "link": "/tips/en/find-css-changes"
     },
@@ -1232,7 +1232,7 @@
       "title": "See the page in 3D",
       "image": {
         "alt": "The 3D view tool showing a page's z-index stacking tree as a 3d scene.",
-        "src": "/assets/img/see-the-page-in-3d.png"
+        "src": "../../assets/img/see-the-page-in-3d.png"
       },
       "link": "/tips/en/see-the-page-in-3d"
     },
@@ -1240,7 +1240,7 @@
       "title": "Simulate a different latitude/longitude geolocation",
       "image": {
         "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
-        "src": "/assets/img/simulate-geolocation.png"
+        "src": "../../assets/img/simulate-geolocation.png"
       },
       "link": "/tips/en/simulate-geolocation"
     }
@@ -1250,7 +1250,7 @@
       "title": "Get the recently selected DOM nodes in the console",
       "image": {
         "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
-        "src": "/assets/img/get-recently-selected-dom-nodes-in-console.gif"
+        "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
       },
       "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
     },
@@ -1258,7 +1258,7 @@
       "title": "Get detached DOM elements to investigate memory leaks",
       "image": {
         "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
-        "src": "/assets/img/get-detached-elements.png"
+        "src": "../../assets/img/get-detached-elements.png"
       },
       "link": "/tips/en/get-detached-elements"
     }
@@ -1268,7 +1268,7 @@
       "title": "Customize keyboard shortcuts",
       "image": {
         "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
-        "src": "/assets/img/customize-keyboard-shortcuts.png"
+        "src": "../../assets/img/customize-keyboard-shortcuts.png"
       },
       "link": "/tips/en/customize-keyboard-shortcuts"
     },
@@ -1276,7 +1276,7 @@
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
-        "src": "/assets/img/zoom-devtools-content.gif"
+        "src": "../../assets/img/zoom-devtools-content.gif"
       },
       "link": "/tips/en/zoom-devtools-content"
     },
@@ -1284,7 +1284,7 @@
       "title": "Sample colors from the page",
       "image": {
         "alt": "Animation of the eyedropper tool being started from the Firefox main menu.",
-        "src": "/assets/img/sample-colors-from-the-page-1.gif"
+        "src": "../../assets/img/sample-colors-from-the-page-1.gif"
       },
       "link": "/tips/en/sample-colors-from-the-page"
     },
@@ -1292,7 +1292,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     }
@@ -1302,7 +1302,7 @@
       "title": "Hide resources loaded by extensions in the Network panel",
       "image": {
         "alt": "The Network panel in Chrome DevTools showing the pattern used in the filter input box.",
-        "src": "/assets/img/hide-extension-resources.jpg"
+        "src": "../../assets/img/hide-extension-resources.jpg"
       },
       "link": "/tips/en/hide-extension-resources"
     },
@@ -1310,7 +1310,7 @@
       "title": "Edit and resend faulty network requests to debug them",
       "image": {
         "alt": "Screenshot of Chrome's copy as cURL feature and the corresponding command in the terminal",
-        "src": "/assets/img/edit-and-resend-network-requests-curl.png"
+        "src": "../../assets/img/edit-and-resend-network-requests-curl.png"
       },
       "link": "/tips/en/edit-and-resend-network-requests"
     },
@@ -1318,7 +1318,7 @@
       "title": "See the size of the transferred data for images, scripts, or other resources",
       "image": {
         "alt": "The Network tool in Chrome, with the transferred size highlighted",
-        "src": "/assets/img/get-size-of-resource-types.png"
+        "src": "../../assets/img/get-size-of-resource-types.png"
       },
       "link": "/tips/en/get-size-of-resource-types"
     },
@@ -1326,7 +1326,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     }
@@ -1336,7 +1336,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     },
@@ -1344,7 +1344,7 @@
       "title": "See the size of the transferred data for images, scripts, or other resources",
       "image": {
         "alt": "The Network tool in Chrome, with the transferred size highlighted",
-        "src": "/assets/img/get-size-of-resource-types.png"
+        "src": "../../assets/img/get-size-of-resource-types.png"
       },
       "link": "/tips/en/get-size-of-resource-types"
     },
@@ -1352,7 +1352,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -1360,7 +1360,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     }
@@ -1370,7 +1370,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     },
@@ -1378,7 +1378,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -1386,7 +1386,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -1394,7 +1394,7 @@
       "title": "Reload a page when there's changes on disk",
       "image": {
         "alt": "Polypane with the live reload panel and reload context menu visible.",
-        "src": "/assets/img/reload-page-after-change.png"
+        "src": "../../assets/img/reload-page-after-change.png"
       },
       "link": "/tips/en/reload-page-after-change"
     }
@@ -1404,7 +1404,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -1412,7 +1412,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     },
@@ -1420,7 +1420,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -1428,17 +1428,33 @@
       "title": "Debug popups that appear on hover using JS",
       "image": {
         "alt": "Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.",
-        "src": "/assets/img/debug-js-hover.gif"
+        "src": "../../assets/img/debug-js-hover.gif"
       },
       "link": "/tips/en/debug-js-hover"
     }
   ],
   "find-devtools-documentation.md": [
     {
+      "title": "Get contextual DevTools help",
+      "image": {
+        "alt": "Animation of the devtools tooltips in Edge.",
+        "src": "../../assets/img/get-contextual-help.gif"
+      },
+      "link": "/tips/en/get-contextual-help"
+    },
+    {
+      "title": "Send feedback, ask for features and report bugs",
+      "image": {
+        "alt": "A feedback illustration showing a stick figure with a speech bubble",
+        "src": "../../assets/img/send-feedback-about-devtools.png"
+      },
+      "link": "/tips/en/send-feedback-about-devtools"
+    },
+    {
       "title": "Install or create extensions to customize DevTools",
       "image": {
         "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
-        "src": "/assets/img/extend-devtools.png"
+        "src": "../../assets/img/extend-devtools.png"
       },
       "link": "/tips/en/extend-devtools"
     },
@@ -1446,7 +1462,7 @@
       "title": "Use full browser window for device emulation",
       "image": {
         "alt": "Animation showing device emulation and how to undock the Developer Tools into an own window.",
-        "src": "/assets/img/use-full-browser-for-device-emulation.gif"
+        "src": "../../assets/img/use-full-browser-for-device-emulation.gif"
       },
       "link": "/tips/en/use-full-browser-for-device-emulation"
     }
@@ -1456,7 +1472,7 @@
       "title": "Visualize and debug CSS cascade layers",
       "image": {
         "alt": "Firefox showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules.",
-        "src": "/assets/img/debug-css-cascade-layers-firefox.png"
+        "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
       },
       "link": "/tips/en/debug-css-cascade-layers"
     },
@@ -1464,7 +1480,7 @@
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "/assets/img/highlight-matching-elements.gif"
+        "src": "../../assets/img/highlight-matching-elements.gif"
       },
       "link": "/tips/en/highlight-matching-elements"
     },
@@ -1472,7 +1488,7 @@
       "title": "Inspect CSS animations",
       "image": {
         "alt": "Animation of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector.",
-        "src": "/assets/img/inspect-css-animation.gif"
+        "src": "../../assets/img/inspect-css-animation.gif"
       },
       "link": "/tips/en/inspect-css-animations"
     },
@@ -1480,7 +1496,7 @@
       "title": "Jump from a CSS variable usage to where it is defined",
       "image": {
         "alt": "Animation of clicking on a custom property link in the Styles panel in Edge.",
-        "src": "/assets/img/jump-to-css-variable.gif"
+        "src": "../../assets/img/jump-to-css-variable.gif"
       },
       "link": "/tips/en/jump-to-css-variable"
     }
@@ -1491,7 +1507,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -1499,7 +1515,7 @@
       "title": "Highlight the effect of individual CSS properties on hover",
       "image": {
         "alt": "Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.",
-        "src": "/assets/img/highlight-css-properties-on-hover.gif"
+        "src": "../../assets/img/highlight-css-properties-on-hover.gif"
       },
       "link": "/tips/en/highlight-css-properties-on-hover"
     },
@@ -1507,7 +1523,7 @@
       "title": "Jump from a CSS variable usage to where it is defined",
       "image": {
         "alt": "Animation of clicking on a custom property link in the Styles panel in Edge.",
-        "src": "/assets/img/jump-to-css-variable.gif"
+        "src": "../../assets/img/jump-to-css-variable.gif"
       },
       "link": "/tips/en/jump-to-css-variable"
     },
@@ -1515,7 +1531,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     }
@@ -1525,7 +1541,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     },
@@ -1533,7 +1549,7 @@
       "title": "Monitor all events dispatched on an element",
       "image": {
         "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "/assets/img/monitor-element-events.gif"
+        "src": "../../assets/img/monitor-element-events.gif"
       },
       "link": "/tips/en/monitor-element-events"
     },
@@ -1541,7 +1557,7 @@
       "title": "Debug popups that appear on hover using JS",
       "image": {
         "alt": "Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.",
-        "src": "/assets/img/debug-js-hover.gif"
+        "src": "../../assets/img/debug-js-hover.gif"
       },
       "link": "/tips/en/debug-js-hover"
     },
@@ -1549,7 +1565,7 @@
       "title": "Detect low color contrast issues",
       "image": {
         "alt": "The CSS Overview panel in Chrome, showing the color contrast issues section.",
-        "src": "/assets/img/detect-low-color-contrast-css-overview.png"
+        "src": "../../assets/img/detect-low-color-contrast-css-overview.png"
       },
       "link": "/tips/en/detect-low-color-contrast"
     }
@@ -1559,7 +1575,7 @@
       "title": "Detect low color contrast issues",
       "image": {
         "alt": "The CSS Overview panel in Chrome, showing the color contrast issues section.",
-        "src": "/assets/img/detect-low-color-contrast-css-overview.png"
+        "src": "../../assets/img/detect-low-color-contrast-css-overview.png"
       },
       "link": "/tips/en/detect-low-color-contrast"
     },
@@ -1567,7 +1583,7 @@
       "title": "Find all images without alternative text",
       "image": {
         "alt": "The output of the console.table command from above shown in the Firefox DevTools console.",
-        "src": "/assets/img/find-all-images-without-alt-text.png"
+        "src": "../../assets/img/find-all-images-without-alt-text.png"
       },
       "link": "/tips/en/find-all-images-without-alt-text"
     },
@@ -1575,7 +1591,7 @@
       "title": "Fix color contrast issues using the element tooltip",
       "image": {
         "alt": "Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast.",
-        "src": "/assets/img/fix-color-contrast-issues-with-element-tooltip.gif"
+        "src": "../../assets/img/fix-color-contrast-issues-with-element-tooltip.gif"
       },
       "link": "/tips/en/fix-color-contrast-issues-with-element-tooltip"
     }
@@ -1585,7 +1601,7 @@
       "title": "Empty the cache and hard refresh",
       "image": {
         "alt": "The Microsoft Edge browser toolbar, showing the contextual menu of the refresh button, with the empty cache and hard refresh menu item.",
-        "src": "/assets/img/empty-cache-refresh.png"
+        "src": "../../assets/img/empty-cache-refresh.png"
       },
       "link": "/tips/en/empty-cache-refresh"
     },
@@ -1593,7 +1609,7 @@
       "title": "Automatically get issues your site has with performance, accessibility, security, compatibility, and others.",
       "image": {
         "alt": "The issues panel in Edge, showing many different issues about the page.",
-        "src": "/assets/img/get-website-issues.png"
+        "src": "../../assets/img/get-website-issues.png"
       },
       "link": "/tips/en/get-website-issues"
     },
@@ -1601,7 +1617,7 @@
       "title": "Use DevTools in another language",
       "image": {
         "alt": "The settings panel in Edge showing a checkbox to match devtools with the browser language.",
-        "src": "/assets/img/use-another-language.png"
+        "src": "../../assets/img/use-another-language.png"
       },
       "link": "/tips/en/use-another-language"
     },
@@ -1609,7 +1625,7 @@
       "title": "Check if your site can be instantly reloaded from bfcache",
       "image": {
         "alt": "Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached.",
-        "src": "/assets/img/check-bfcache-readiness.png"
+        "src": "../../assets/img/check-bfcache-readiness.png"
       },
       "link": "/tips/en/check-bfcache-readiness"
     }
@@ -1620,7 +1636,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -1628,7 +1644,7 @@
       "title": "Monitor all events dispatched on an element",
       "image": {
         "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "/assets/img/monitor-element-events.gif"
+        "src": "../../assets/img/monitor-element-events.gif"
       },
       "link": "/tips/en/monitor-element-events"
     },
@@ -1636,17 +1652,33 @@
       "title": "Apply CSS styles to console messages",
       "image": {
         "alt": "A styled console message in Edge.",
-        "src": "/assets/img/style-console-messages.png"
+        "src": "../../assets/img/style-console-messages.png"
       },
       "link": "/tips/en/style-console-messages"
     }
   ],
   "get-contextual-help.md": [
     {
+      "title": "Find DevTools reference documentation",
+      "image": {
+        "alt": "The 4 documentation websites listed above.",
+        "src": "../../assets/img/find-devtools-documentation.png"
+      },
+      "link": "/tips/en/find-devtools-documentation"
+    },
+    {
+      "title": "Send feedback, ask for features and report bugs",
+      "image": {
+        "alt": "A feedback illustration showing a stick figure with a speech bubble",
+        "src": "../../assets/img/send-feedback-about-devtools.png"
+      },
+      "link": "/tips/en/send-feedback-about-devtools"
+    },
+    {
       "title": "Use commands to do things faster",
       "image": {
         "alt": "Edge's command menu.",
-        "src": "/assets/img/execute-commands.png"
+        "src": "../../assets/img/execute-commands.png"
       },
       "link": "/tips/en/execute-commands"
     },
@@ -1654,25 +1686,9 @@
       "title": "Simulate a different latitude/longitude geolocation",
       "image": {
         "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
-        "src": "/assets/img/simulate-geolocation.png"
+        "src": "../../assets/img/simulate-geolocation.png"
       },
       "link": "/tips/en/simulate-geolocation"
-    },
-    {
-      "title": "Find and export CSS changes",
-      "image": {
-        "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
-        "src": "/assets/img/find-css-changes.png"
-      },
-      "link": "/tips/en/find-css-changes"
-    },
-    {
-      "title": "See the page in 3D",
-      "image": {
-        "alt": "The 3D view tool showing a page's z-index stacking tree as a 3d scene.",
-        "src": "/assets/img/see-the-page-in-3d.png"
-      },
-      "link": "/tips/en/see-the-page-in-3d"
     }
   ],
   "get-current-element-in-console.md": [
@@ -1680,7 +1696,7 @@
       "title": "Get the recently selected DOM nodes in the console",
       "image": {
         "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
-        "src": "/assets/img/get-recently-selected-dom-nodes-in-console.gif"
+        "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
       },
       "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
     },
@@ -1688,7 +1704,7 @@
       "title": "Monitor all events dispatched on an element",
       "image": {
         "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "/assets/img/monitor-element-events.gif"
+        "src": "../../assets/img/monitor-element-events.gif"
       },
       "link": "/tips/en/monitor-element-events"
     },
@@ -1696,7 +1712,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     },
@@ -1704,7 +1720,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     }
@@ -1714,7 +1730,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -1722,7 +1738,7 @@
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "/assets/img/emulate-color-schemes-firefox.png"
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
     },
@@ -1730,7 +1746,7 @@
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "/assets/img/highlight-matching-elements.gif"
+        "src": "../../assets/img/highlight-matching-elements.gif"
       },
       "link": "/tips/en/highlight-matching-elements"
     },
@@ -1738,7 +1754,7 @@
       "title": "Find DOM elements from the console",
       "image": {
         "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
-        "src": "/assets/img/query-dom-from-console.png"
+        "src": "../../assets/img/query-dom-from-console.png"
       },
       "link": "/tips/en/query-dom-from-console"
     }
@@ -1748,7 +1764,7 @@
       "title": "Find DOM elements from the console",
       "image": {
         "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
-        "src": "/assets/img/query-dom-from-console.png"
+        "src": "../../assets/img/query-dom-from-console.png"
       },
       "link": "/tips/en/query-dom-from-console"
     },
@@ -1756,7 +1772,7 @@
       "title": "Get the selected element in the console",
       "image": {
         "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
-        "src": "/assets/img/get-current-element-in-console.jpg"
+        "src": "../../assets/img/get-current-element-in-console.jpg"
       },
       "link": "/tips/en/get-current-element-in-console"
     },
@@ -1764,7 +1780,7 @@
       "title": "Expand DOM nodes recursively",
       "image": {
         "alt": "Animation showing right-clicking on a node in Chrome's Elements panel and choosing \"expand recursively\".",
-        "src": "/assets/img/expand-nodes-recursively.gif"
+        "src": "../../assets/img/expand-nodes-recursively.gif"
       },
       "link": "/tips/en/expand-nodes-recursively"
     },
@@ -1772,7 +1788,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     }
@@ -1782,7 +1798,7 @@
       "title": "Find all images without alternative text",
       "image": {
         "alt": "The output of the console.table command from above shown in the Firefox DevTools console.",
-        "src": "/assets/img/find-all-images-without-alt-text.png"
+        "src": "../../assets/img/find-all-images-without-alt-text.png"
       },
       "link": "/tips/en/find-all-images-without-alt-text"
     },
@@ -1790,7 +1806,7 @@
       "title": "Filter requests in the Network panel by status code, mime type and more",
       "image": {
         "alt": "The Network panel in Edge showing the filter input field.",
-        "src": "/assets/img/filter-network-requests.png"
+        "src": "../../assets/img/filter-network-requests.png"
       },
       "link": "/tips/en/filter-network-requests"
     },
@@ -1798,7 +1814,7 @@
       "title": "Hide resources loaded by extensions in the Network panel",
       "image": {
         "alt": "The Network panel in Chrome DevTools showing the pattern used in the filter input box.",
-        "src": "/assets/img/hide-extension-resources.jpg"
+        "src": "../../assets/img/hide-extension-resources.jpg"
       },
       "link": "/tips/en/hide-extension-resources"
     }
@@ -1808,7 +1824,7 @@
       "title": "Empty the cache and hard refresh",
       "image": {
         "alt": "The Microsoft Edge browser toolbar, showing the contextual menu of the refresh button, with the empty cache and hard refresh menu item.",
-        "src": "/assets/img/empty-cache-refresh.png"
+        "src": "../../assets/img/empty-cache-refresh.png"
       },
       "link": "/tips/en/empty-cache-refresh"
     },
@@ -1816,7 +1832,7 @@
       "title": "Reload a page when there's changes on disk",
       "image": {
         "alt": "Polypane with the live reload panel and reload context menu visible.",
-        "src": "/assets/img/reload-page-after-change.png"
+        "src": "../../assets/img/reload-page-after-change.png"
       },
       "link": "/tips/en/reload-page-after-change"
     },
@@ -1824,7 +1840,7 @@
       "title": "Detect low color contrast issues",
       "image": {
         "alt": "The CSS Overview panel in Chrome, showing the color contrast issues section.",
-        "src": "/assets/img/detect-low-color-contrast-css-overview.png"
+        "src": "../../assets/img/detect-low-color-contrast-css-overview.png"
       },
       "link": "/tips/en/detect-low-color-contrast"
     },
@@ -1832,7 +1848,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     }
@@ -1842,7 +1858,7 @@
       "title": "Filter requests in the Network panel by status code, mime type and more",
       "image": {
         "alt": "The Network panel in Edge showing the filter input field.",
-        "src": "/assets/img/filter-network-requests.png"
+        "src": "../../assets/img/filter-network-requests.png"
       },
       "link": "/tips/en/filter-network-requests"
     },
@@ -1850,7 +1866,7 @@
       "title": "See the size of the transferred data for images, scripts, or other resources",
       "image": {
         "alt": "The Network tool in Chrome, with the transferred size highlighted",
-        "src": "/assets/img/get-size-of-resource-types.png"
+        "src": "../../assets/img/get-size-of-resource-types.png"
       },
       "link": "/tips/en/get-size-of-resource-types"
     },
@@ -1858,7 +1874,7 @@
       "title": "Edit and resend faulty network requests to debug them",
       "image": {
         "alt": "Screenshot of Chrome's copy as cURL feature and the corresponding command in the terminal",
-        "src": "/assets/img/edit-and-resend-network-requests-curl.png"
+        "src": "../../assets/img/edit-and-resend-network-requests-curl.png"
       },
       "link": "/tips/en/edit-and-resend-network-requests"
     }
@@ -1868,7 +1884,7 @@
       "title": "Remove annoying page overlays and other elements",
       "image": {
         "alt": "Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.",
-        "src": "/assets/img/remove-annoying-overlays.gif"
+        "src": "../../assets/img/remove-annoying-overlays.gif"
       },
       "link": "/tips/en/remove-annoying-overlays"
     },
@@ -1876,7 +1892,7 @@
       "title": "See quick accessibility information on hover",
       "image": {
         "alt": "Animation of the a11y tooltip in chrome.",
-        "src": "/assets/img/see-quick-a11y-info-on-hover.gif"
+        "src": "../../assets/img/see-quick-a11y-info-on-hover.gif"
       },
       "link": "/tips/en/see-quick-a11y-info-on-hover"
     },
@@ -1884,7 +1900,7 @@
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "/assets/img/emulate-color-schemes-firefox.png"
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
     },
@@ -1892,7 +1908,7 @@
       "title": "Start your HTML and CSS prototypes in the browser directly",
       "image": {
         "alt": "Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.",
-        "src": "/assets/img/prototype-in-the-browser.png"
+        "src": "../../assets/img/prototype-in-the-browser.png"
       },
       "link": "/tips/en/prototype-in-the-browser"
     }
@@ -1902,7 +1918,7 @@
       "title": "Find inactive CSS styles",
       "image": {
         "alt": "Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.",
-        "src": "/assets/img/find-inactive-styles.png"
+        "src": "../../assets/img/find-inactive-styles.png"
       },
       "link": "/tips/en/find-inactive-styles"
     },
@@ -1910,7 +1926,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -1918,7 +1934,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -1926,7 +1942,7 @@
       "title": "Jump from a CSS variable usage to where it is defined",
       "image": {
         "alt": "Animation of clicking on a custom property link in the Styles panel in Edge.",
-        "src": "/assets/img/jump-to-css-variable.gif"
+        "src": "../../assets/img/jump-to-css-variable.gif"
       },
       "link": "/tips/en/jump-to-css-variable"
     }
@@ -1936,7 +1952,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -1944,7 +1960,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -1952,7 +1968,7 @@
       "title": "Draw a box around all elements to debug your CSS and page structure",
       "image": {
         "alt": "Animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page.",
-        "src": "/assets/img/outline-everything.gif"
+        "src": "../../assets/img/outline-everything.gif"
       },
       "link": "/tips/en/outline-everything"
     },
@@ -1960,7 +1976,7 @@
       "title": "See quick accessibility information on hover",
       "image": {
         "alt": "Animation of the a11y tooltip in chrome.",
-        "src": "/assets/img/see-quick-a11y-info-on-hover.gif"
+        "src": "../../assets/img/see-quick-a11y-info-on-hover.gif"
       },
       "link": "/tips/en/see-quick-a11y-info-on-hover"
     }
@@ -1970,7 +1986,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     },
@@ -1978,7 +1994,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -1986,7 +2002,7 @@
       "title": "Sample colors from the page",
       "image": {
         "alt": "Animation of the eyedropper tool being started from the Firefox main menu.",
-        "src": "/assets/img/sample-colors-from-the-page-1.gif"
+        "src": "../../assets/img/sample-colors-from-the-page-1.gif"
       },
       "link": "/tips/en/sample-colors-from-the-page"
     },
@@ -1994,7 +2010,7 @@
       "title": "Detect unused CSS and JavaScript code",
       "image": {
         "alt": "Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used",
-        "src": "/assets/img/detect-unused-code.png"
+        "src": "../../assets/img/detect-unused-code.png"
       },
       "link": "/tips/en/detect-unused-code"
     }
@@ -2004,7 +2020,7 @@
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
-        "src": "/assets/img/zoom-devtools-content.gif"
+        "src": "../../assets/img/zoom-devtools-content.gif"
       },
       "link": "/tips/en/zoom-devtools-content"
     }
@@ -2015,7 +2031,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -2023,7 +2039,7 @@
       "title": "Find inactive CSS styles",
       "image": {
         "alt": "Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.",
-        "src": "/assets/img/find-inactive-styles.png"
+        "src": "../../assets/img/find-inactive-styles.png"
       },
       "link": "/tips/en/find-inactive-styles"
     },
@@ -2031,7 +2047,7 @@
       "title": "Visualize and debug CSS cascade layers",
       "image": {
         "alt": "Firefox showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules.",
-        "src": "/assets/img/debug-css-cascade-layers-firefox.png"
+        "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
       },
       "link": "/tips/en/debug-css-cascade-layers"
     },
@@ -2039,7 +2055,7 @@
       "title": "Find the most expensive CSS selectors",
       "image": {
         "alt": "The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.",
-        "src": "/assets/img/find-expensive-selectors.png"
+        "src": "../../assets/img/find-expensive-selectors.png"
       },
       "link": "/tips/en/find-expensive-selectors"
     }
@@ -2050,7 +2066,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     },
@@ -2058,7 +2074,7 @@
       "title": "Find all images without alternative text",
       "image": {
         "alt": "The output of the console.table command from above shown in the Firefox DevTools console.",
-        "src": "/assets/img/find-all-images-without-alt-text.png"
+        "src": "../../assets/img/find-all-images-without-alt-text.png"
       },
       "link": "/tips/en/find-all-images-without-alt-text"
     },
@@ -2066,7 +2082,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -2074,7 +2090,7 @@
       "title": "Emulate idle detection states",
       "image": {
         "alt": "Chrome DevTools' Sensors panel, showing a drop-down list with the different states that can be emulated.",
-        "src": "/assets/img/emulate-idle-detection-states.png"
+        "src": "../../assets/img/emulate-idle-detection-states.png"
       },
       "link": "/tips/en/emulate-idle-detection-states"
     }
@@ -2084,7 +2100,7 @@
       "title": "Evaluate XPath to find elements in the page",
       "image": {
         "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
-        "src": "/assets/img/evaluate-xpath-1.png"
+        "src": "../../assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
     },
@@ -2092,7 +2108,7 @@
       "title": "Hide or pin the information tooltip while inspecting page elements",
       "image": {
         "alt": "Chrome, with a webpage and devtools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
-        "src": "/assets/img/hide-or-pin-inspect-info-tooltip-1.png"
+        "src": "../../assets/img/hide-or-pin-inspect-info-tooltip-1.png"
       },
       "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
     }
@@ -2102,7 +2118,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     },
@@ -2110,7 +2126,7 @@
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
-        "src": "/assets/img/zoom-devtools-content.gif"
+        "src": "../../assets/img/zoom-devtools-content.gif"
       },
       "link": "/tips/en/zoom-devtools-content"
     }
@@ -2121,7 +2137,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -2129,7 +2145,7 @@
       "title": "Get the selected element in the console",
       "image": {
         "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
-        "src": "/assets/img/get-current-element-in-console.jpg"
+        "src": "../../assets/img/get-current-element-in-console.jpg"
       },
       "link": "/tips/en/get-current-element-in-console"
     },
@@ -2137,7 +2153,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -2145,7 +2161,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     }
@@ -2155,7 +2171,7 @@
       "title": "Customize keyboard shortcuts",
       "image": {
         "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
-        "src": "/assets/img/customize-keyboard-shortcuts.png"
+        "src": "../../assets/img/customize-keyboard-shortcuts.png"
       },
       "link": "/tips/en/customize-keyboard-shortcuts"
     },
@@ -2163,7 +2179,7 @@
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "/assets/img/emulate-color-schemes-firefox.png"
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
     },
@@ -2171,7 +2187,7 @@
       "title": "Install or create extensions to customize DevTools",
       "image": {
         "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
-        "src": "/assets/img/extend-devtools.png"
+        "src": "../../assets/img/extend-devtools.png"
       },
       "link": "/tips/en/extend-devtools"
     },
@@ -2179,7 +2195,7 @@
       "title": "Get contextual DevTools help",
       "image": {
         "alt": "Animation of the devtools tooltips in Edge.",
-        "src": "/assets/img/get-contextual-help.gif"
+        "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
     }
@@ -2189,7 +2205,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     },
@@ -2197,7 +2213,7 @@
       "title": "Use the debugger statement to pause script execution",
       "image": {
         "alt": "The Sources panel in Edge, paused at a debugger statement.",
-        "src": "/assets/img/debugger-statement.png"
+        "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
     },
@@ -2205,7 +2221,7 @@
       "title": "Detect unused CSS and JavaScript code",
       "image": {
         "alt": "Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used",
-        "src": "/assets/img/detect-unused-code.png"
+        "src": "../../assets/img/detect-unused-code.png"
       },
       "link": "/tips/en/detect-unused-code"
     },
@@ -2213,7 +2229,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     }
@@ -2223,7 +2239,7 @@
       "title": "Visualize the tabbing order on the page",
       "image": {
         "alt": "The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.",
-        "src": "/assets/img/visualize-tabbing-order.png"
+        "src": "../../assets/img/visualize-tabbing-order.png"
       },
       "link": "/tips/en/visualize-tabbing-order"
     },
@@ -2231,7 +2247,7 @@
       "title": "See formatted JSON responses",
       "image": {
         "alt": "The JSON viewer in Microsoft Edge.",
-        "src": "/assets/img/see-json-responses.png"
+        "src": "../../assets/img/see-json-responses.png"
       },
       "link": "/tips/en/see-json-responses"
     },
@@ -2239,7 +2255,7 @@
       "title": "Store a node as a variable to use it in the console",
       "image": {
         "alt": "Firefox's \"use in console\" context menu option in the Inspector, and also showing the Console with a couple of tempN variables.",
-        "src": "/assets/img/store-node-as-variable.png"
+        "src": "../../assets/img/store-node-as-variable.png"
       },
       "link": "/tips/en/store-node-as-variable"
     },
@@ -2247,7 +2263,7 @@
       "title": "Copy an element's JavaScript path",
       "image": {
         "alt": "The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.",
-        "src": "/assets/img/copy-element-js-path.png"
+        "src": "../../assets/img/copy-element-js-path.png"
       },
       "link": "/tips/en/copy-element-js-path"
     }
@@ -2257,7 +2273,7 @@
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "/assets/img/highlight-matching-elements.gif"
+        "src": "../../assets/img/highlight-matching-elements.gif"
       },
       "link": "/tips/en/highlight-matching-elements"
     },
@@ -2265,7 +2281,7 @@
       "title": "See quick accessibility information on hover",
       "image": {
         "alt": "Animation of the a11y tooltip in chrome.",
-        "src": "/assets/img/see-quick-a11y-info-on-hover.gif"
+        "src": "../../assets/img/see-quick-a11y-info-on-hover.gif"
       },
       "link": "/tips/en/see-quick-a11y-info-on-hover"
     },
@@ -2273,7 +2289,7 @@
       "title": "Find and export CSS changes",
       "image": {
         "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
-        "src": "/assets/img/find-css-changes.png"
+        "src": "../../assets/img/find-css-changes.png"
       },
       "link": "/tips/en/find-css-changes"
     },
@@ -2281,7 +2297,7 @@
       "title": "Debug unwanted scrollbars",
       "image": {
         "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
-        "src": "/assets/img/debug-unwanted-scrollbars-1.png"
+        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
       },
       "link": "/tips/en/debug-unwanted-scrollbars"
     }
@@ -2291,7 +2307,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     },
@@ -2299,7 +2315,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -2307,7 +2323,7 @@
       "title": "Copy a CSS rule as CSS-in-JS format",
       "image": {
         "alt": "Aimation showing the Styles pane in Edge, with the \"Copy all declarations as JS\" option being used, and then pasting the result in the Console to show that it is formatted.",
-        "src": "/assets/img/copy-rule-as-css-in-js.gif"
+        "src": "../../assets/img/copy-rule-as-css-in-js.gif"
       },
       "link": "/tips/en/copy-rule-as-css-in-js"
     },
@@ -2315,7 +2331,7 @@
       "title": "Apply CSS styles to console messages",
       "image": {
         "alt": "A styled console message in Edge.",
-        "src": "/assets/img/style-console-messages.png"
+        "src": "../../assets/img/style-console-messages.png"
       },
       "link": "/tips/en/style-console-messages"
     }
@@ -2325,7 +2341,7 @@
       "title": "Visualize the tabbing order on the page",
       "image": {
         "alt": "The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.",
-        "src": "/assets/img/visualize-tabbing-order.png"
+        "src": "../../assets/img/visualize-tabbing-order.png"
       },
       "link": "/tips/en/visualize-tabbing-order"
     },
@@ -2333,7 +2349,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     },
@@ -2341,7 +2357,7 @@
       "title": "Evaluate XPath to find elements in the page",
       "image": {
         "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
-        "src": "/assets/img/evaluate-xpath-1.png"
+        "src": "../../assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
     },
@@ -2349,7 +2365,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     }
@@ -2359,7 +2375,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     },
@@ -2367,7 +2383,7 @@
       "title": "Detect unused CSS and JavaScript code",
       "image": {
         "alt": "Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used",
-        "src": "/assets/img/detect-unused-code.png"
+        "src": "../../assets/img/detect-unused-code.png"
       },
       "link": "/tips/en/detect-unused-code"
     },
@@ -2375,7 +2391,7 @@
       "title": "Edit JavaScript functions while debugging to test a quick fix",
       "image": {
         "alt": "Animation showing that it is possible to write code in the Sources panel, while debugging, to test fixes.",
-        "src": "/assets/img/edit-javascript-while-debugging.gif"
+        "src": "../../assets/img/edit-javascript-while-debugging.gif"
       },
       "link": "/tips/en/edit-javascript-while-debugging"
     },
@@ -2383,7 +2399,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     }
@@ -2393,7 +2409,7 @@
       "title": "Show web vitals",
       "image": {
         "alt": "The web vitals tooltip in Polypane showing a good CLS, LCP and FCP score and a FID score that needs improvement.",
-        "src": "/assets/img/show-web-vitals.png"
+        "src": "../../assets/img/show-web-vitals.png"
       },
       "link": "/tips/en/show-web-vitals"
     },
@@ -2401,7 +2417,7 @@
       "title": "Emulate forced-color mode",
       "image": {
         "alt": "Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools.",
-        "src": "/assets/img/emulate-forced-colors.png"
+        "src": "../../assets/img/emulate-forced-colors.png"
       },
       "link": "/tips/en/emulate-forced-colors"
     },
@@ -2409,7 +2425,7 @@
       "title": "Reload a page when there's changes on disk",
       "image": {
         "alt": "Polypane with the live reload panel and reload context menu visible.",
-        "src": "/assets/img/reload-page-after-change.png"
+        "src": "../../assets/img/reload-page-after-change.png"
       },
       "link": "/tips/en/reload-page-after-change"
     }
@@ -2419,7 +2435,7 @@
       "title": "Reload a page when there's changes on disk",
       "image": {
         "alt": "Polypane with the live reload panel and reload context menu visible.",
-        "src": "/assets/img/reload-page-after-change.png"
+        "src": "../../assets/img/reload-page-after-change.png"
       },
       "link": "/tips/en/reload-page-after-change"
     },
@@ -2427,7 +2443,7 @@
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
-        "src": "/assets/img/zoom-devtools-content.gif"
+        "src": "../../assets/img/zoom-devtools-content.gif"
       },
       "link": "/tips/en/zoom-devtools-content"
     },
@@ -2435,7 +2451,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -2443,7 +2459,7 @@
       "title": "Copy an element's XPath expression",
       "image": {
         "alt": "The Elements panel in Edge showing the copy xpath option in the contextual menu.",
-        "src": "/assets/img/copy-element-xpath.png"
+        "src": "../../assets/img/copy-element-xpath.png"
       },
       "link": "/tips/en/copy-element-xpath"
     }
@@ -2453,7 +2469,7 @@
       "title": "Evaluate XPath to find elements in the page",
       "image": {
         "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
-        "src": "/assets/img/evaluate-xpath-1.png"
+        "src": "../../assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
     },
@@ -2461,7 +2477,7 @@
       "title": "Get the recently selected DOM nodes in the console",
       "image": {
         "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
-        "src": "/assets/img/get-recently-selected-dom-nodes-in-console.gif"
+        "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
       },
       "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
     },
@@ -2469,7 +2485,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     },
@@ -2477,7 +2493,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     }
@@ -2487,7 +2503,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     },
@@ -2495,7 +2511,7 @@
       "title": "Find DOM elements from the console",
       "image": {
         "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
-        "src": "/assets/img/query-dom-from-console.png"
+        "src": "../../assets/img/query-dom-from-console.png"
       },
       "link": "/tips/en/query-dom-from-console"
     },
@@ -2503,7 +2519,7 @@
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "/assets/img/copy-from-console.png"
+        "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
     }
@@ -2513,7 +2529,7 @@
       "title": "Get the recently selected DOM nodes in the console",
       "image": {
         "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
-        "src": "/assets/img/get-recently-selected-dom-nodes-in-console.gif"
+        "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
       },
       "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
     },
@@ -2521,7 +2537,7 @@
       "title": "Monitor all events dispatched on an element",
       "image": {
         "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "/assets/img/monitor-element-events.gif"
+        "src": "../../assets/img/monitor-element-events.gif"
       },
       "link": "/tips/en/monitor-element-events"
     },
@@ -2541,7 +2557,7 @@
       "title": "Detect the element with focus at any time",
       "image": {
         "alt": "Animation showing a web page with focus going through different element, and the Edge Console panel with the live expression showing a preview of the focused element.",
-        "src": "/assets/img/track-focused-element.gif"
+        "src": "../../assets/img/track-focused-element.gif"
       },
       "link": "/tips/en/track-focused-element"
     },
@@ -2549,7 +2565,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -2557,7 +2573,7 @@
       "title": "Detect low color contrast issues",
       "image": {
         "alt": "The CSS Overview panel in Chrome, showing the color contrast issues section.",
-        "src": "/assets/img/detect-low-color-contrast-css-overview.png"
+        "src": "../../assets/img/detect-low-color-contrast-css-overview.png"
       },
       "link": "/tips/en/detect-low-color-contrast"
     },
@@ -2565,7 +2581,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     }
@@ -2575,7 +2591,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -2583,7 +2599,7 @@
       "title": "Automatically get issues your site has with performance, accessibility, security, compatibility, and others.",
       "image": {
         "alt": "The issues panel in Edge, showing many different issues about the page.",
-        "src": "/assets/img/get-website-issues.png"
+        "src": "../../assets/img/get-website-issues.png"
       },
       "link": "/tips/en/get-website-issues"
     },
@@ -2591,7 +2607,7 @@
       "title": "Detect the element with focus at any time",
       "image": {
         "alt": "Animation showing a web page with focus going through different element, and the Edge Console panel with the live expression showing a preview of the focused element.",
-        "src": "/assets/img/track-focused-element.gif"
+        "src": "../../assets/img/track-focused-element.gif"
       },
       "link": "/tips/en/track-focused-element"
     },
@@ -2599,7 +2615,7 @@
       "title": "Visualize the tabbing order on the page",
       "image": {
         "alt": "The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.",
-        "src": "/assets/img/visualize-tabbing-order.png"
+        "src": "../../assets/img/visualize-tabbing-order.png"
       },
       "link": "/tips/en/visualize-tabbing-order"
     }
@@ -2609,7 +2625,7 @@
       "title": "Hide or pin the information tooltip while inspecting page elements",
       "image": {
         "alt": "Chrome, with a webpage and devtools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
-        "src": "/assets/img/hide-or-pin-inspect-info-tooltip-1.png"
+        "src": "../../assets/img/hide-or-pin-inspect-info-tooltip-1.png"
       },
       "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
     },
@@ -2617,7 +2633,7 @@
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "/assets/img/emulate-color-schemes-firefox.png"
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
     },
@@ -2625,7 +2641,7 @@
       "title": "Quickly spot out-of-viewport elements",
       "image": {
         "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
-        "src": "/assets/img/spot-out-of-viewport-elements.png"
+        "src": "../../assets/img/spot-out-of-viewport-elements.png"
       },
       "link": "/tips/en/spot-out-of-viewport-elements"
     },
@@ -2633,7 +2649,7 @@
       "title": "Start your HTML and CSS prototypes in the browser directly",
       "image": {
         "alt": "Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.",
-        "src": "/assets/img/prototype-in-the-browser.png"
+        "src": "../../assets/img/prototype-in-the-browser.png"
       },
       "link": "/tips/en/prototype-in-the-browser"
     }
@@ -2643,7 +2659,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -2651,7 +2667,7 @@
       "title": "Install or create extensions to customize DevTools",
       "image": {
         "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
-        "src": "/assets/img/extend-devtools.png"
+        "src": "../../assets/img/extend-devtools.png"
       },
       "link": "/tips/en/extend-devtools"
     },
@@ -2659,7 +2675,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     },
@@ -2667,7 +2683,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     }
@@ -2692,7 +2708,7 @@
       "title": "Display the current framerate of your webpage",
       "image": {
         "alt": "Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu",
-        "src": "/assets/img/display-current-framerate.png"
+        "src": "../../assets/img/display-current-framerate.png"
       },
       "link": "/tips/en/display-current-framerate"
     }
@@ -2702,7 +2718,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     },
@@ -2710,7 +2726,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -2718,7 +2734,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -2726,7 +2742,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     }
@@ -2736,7 +2752,7 @@
       "title": "Install or create extensions to customize DevTools",
       "image": {
         "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
-        "src": "/assets/img/extend-devtools.png"
+        "src": "../../assets/img/extend-devtools.png"
       },
       "link": "/tips/en/extend-devtools"
     },
@@ -2744,7 +2760,7 @@
       "title": "Get the selected element in the console",
       "image": {
         "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
-        "src": "/assets/img/get-current-element-in-console.jpg"
+        "src": "../../assets/img/get-current-element-in-console.jpg"
       },
       "link": "/tips/en/get-current-element-in-console"
     },
@@ -2752,7 +2768,7 @@
       "title": "Take a screenshot of a single node",
       "image": {
         "alt": "Animation showing taking a node screenshot in Firefox.",
-        "src": "/assets/img/node-screenshot.gif"
+        "src": "../../assets/img/node-screenshot.gif"
       },
       "link": "/tips/en/node-screenshot"
     },
@@ -2760,7 +2776,7 @@
       "title": "Throttle the network speed to test your website on slower connections",
       "image": {
         "alt": "The Network panel in Edge showing the network throttling drop-down.",
-        "src": "/assets/img/throttle-network-speed.png"
+        "src": "../../assets/img/throttle-network-speed.png"
       },
       "link": "/tips/en/throttle-network-speed"
     }
@@ -2770,7 +2786,7 @@
       "title": "Draw a box around all elements to debug your CSS and page structure",
       "image": {
         "alt": "Animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page.",
-        "src": "/assets/img/outline-everything.gif"
+        "src": "../../assets/img/outline-everything.gif"
       },
       "link": "/tips/en/outline-everything"
     },
@@ -2778,7 +2794,7 @@
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "/assets/img/highlight-matching-elements.gif"
+        "src": "../../assets/img/highlight-matching-elements.gif"
       },
       "link": "/tips/en/highlight-matching-elements"
     },
@@ -2786,7 +2802,7 @@
       "title": "Sample colors from the page",
       "image": {
         "alt": "Animation of the eyedropper tool being started from the Firefox main menu.",
-        "src": "/assets/img/sample-colors-from-the-page-1.gif"
+        "src": "../../assets/img/sample-colors-from-the-page-1.gif"
       },
       "link": "/tips/en/sample-colors-from-the-page"
     },
@@ -2794,7 +2810,7 @@
       "title": "Select elements with pointer-events:none by holding Shift",
       "image": {
         "alt": "Animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed.",
-        "src": "/assets/img/select-pointer-events-none-elements.gif"
+        "src": "../../assets/img/select-pointer-events-none-elements.gif"
       },
       "link": "/tips/en/select-pointer-events-none-elements"
     }
@@ -2804,7 +2820,7 @@
       "title": "Find and export CSS changes",
       "image": {
         "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
-        "src": "/assets/img/find-css-changes.png"
+        "src": "../../assets/img/find-css-changes.png"
       },
       "link": "/tips/en/find-css-changes"
     },
@@ -2812,7 +2828,7 @@
       "title": "Simulate a different latitude/longitude geolocation",
       "image": {
         "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
-        "src": "/assets/img/simulate-geolocation.png"
+        "src": "../../assets/img/simulate-geolocation.png"
       },
       "link": "/tips/en/simulate-geolocation"
     },
@@ -2820,7 +2836,7 @@
       "title": "Use commands to do things faster",
       "image": {
         "alt": "Edge's command menu.",
-        "src": "/assets/img/execute-commands.png"
+        "src": "../../assets/img/execute-commands.png"
       },
       "link": "/tips/en/execute-commands"
     },
@@ -2828,7 +2844,7 @@
       "title": "Get contextual DevTools help",
       "image": {
         "alt": "Animation of the devtools tooltips in Edge.",
-        "src": "/assets/img/get-contextual-help.gif"
+        "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
     }
@@ -2838,7 +2854,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -2846,7 +2862,7 @@
       "title": "See quick accessibility information on hover",
       "image": {
         "alt": "Animation of the a11y tooltip in chrome.",
-        "src": "/assets/img/see-quick-a11y-info-on-hover.gif"
+        "src": "../../assets/img/see-quick-a11y-info-on-hover.gif"
       },
       "link": "/tips/en/see-quick-a11y-info-on-hover"
     },
@@ -2854,7 +2870,7 @@
       "title": "Visualize the tabbing order on the page",
       "image": {
         "alt": "The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.",
-        "src": "/assets/img/visualize-tabbing-order.png"
+        "src": "../../assets/img/visualize-tabbing-order.png"
       },
       "link": "/tips/en/visualize-tabbing-order"
     },
@@ -2862,18 +2878,35 @@
       "title": "Debug CSS grid areas",
       "image": {
         "alt": "Firefox showing a highlighted grid in the page showing the area names, and devtools below it with the \"display area names\" option checked.",
-        "src": "/assets/img/debug-grid-areas.png"
+        "src": "../../assets/img/debug-grid-areas.png"
       },
       "link": "/tips/en/debug-grid-areas"
     }
   ],
-  "send-feedback-about-devtools.md": [],
+  "send-feedback-about-devtools.md": [
+    {
+      "title": "Find DevTools reference documentation",
+      "image": {
+        "alt": "The 4 documentation websites listed above.",
+        "src": "../../assets/img/find-devtools-documentation.png"
+      },
+      "link": "/tips/en/find-devtools-documentation"
+    },
+    {
+      "title": "Get contextual DevTools help",
+      "image": {
+        "alt": "Animation of the devtools tooltips in Edge.",
+        "src": "../../assets/img/get-contextual-help.gif"
+      },
+      "link": "/tips/en/get-contextual-help"
+    }
+  ],
   "show-web-vitals.md": [
     {
       "title": "Prototype content changes with designMode",
       "image": {
         "alt": "Animation of editable web page with designMode on.",
-        "src": "/assets/img/prototype-content-changes-with-designmode.gif"
+        "src": "../../assets/img/prototype-content-changes-with-designmode.gif"
       },
       "link": "/tips/en/prototype-content-changes-with-designmode"
     },
@@ -2881,7 +2914,7 @@
       "title": "Reload a page when there's changes on disk",
       "image": {
         "alt": "Polypane with the live reload panel and reload context menu visible.",
-        "src": "/assets/img/reload-page-after-change.png"
+        "src": "../../assets/img/reload-page-after-change.png"
       },
       "link": "/tips/en/reload-page-after-change"
     }
@@ -2891,7 +2924,7 @@
       "title": "Detect low color contrast issues",
       "image": {
         "alt": "The CSS Overview panel in Chrome, showing the color contrast issues section.",
-        "src": "/assets/img/detect-low-color-contrast-css-overview.png"
+        "src": "../../assets/img/detect-low-color-contrast-css-overview.png"
       },
       "link": "/tips/en/detect-low-color-contrast"
     }
@@ -2901,7 +2934,7 @@
       "title": "Create your own simulated devices",
       "image": {
         "alt": "Animation of the device mode in Firefox, showing how to customize the list of devices, including adding custom devices.",
-        "src": "/assets/img/add-new-devices.gif"
+        "src": "../../assets/img/add-new-devices.gif"
       },
       "link": "/tips/en/add-new-devices"
     },
@@ -2909,7 +2942,7 @@
       "title": "Get contextual DevTools help",
       "image": {
         "alt": "Animation of the devtools tooltips in Edge.",
-        "src": "/assets/img/get-contextual-help.gif"
+        "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
     },
@@ -2917,7 +2950,7 @@
       "title": "Simulate a different latitude/longitude geolocation",
       "image": {
         "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
-        "src": "/assets/img/simulate-geolocation.png"
+        "src": "../../assets/img/simulate-geolocation.png"
       },
       "link": "/tips/en/simulate-geolocation"
     }
@@ -2927,7 +2960,7 @@
       "title": "Find and export CSS changes",
       "image": {
         "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
-        "src": "/assets/img/find-css-changes.png"
+        "src": "../../assets/img/find-css-changes.png"
       },
       "link": "/tips/en/find-css-changes"
     },
@@ -2935,7 +2968,7 @@
       "title": "Get contextual DevTools help",
       "image": {
         "alt": "Animation of the devtools tooltips in Edge.",
-        "src": "/assets/img/get-contextual-help.gif"
+        "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
     },
@@ -2943,7 +2976,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     },
@@ -2951,7 +2984,7 @@
       "title": "See the page in 3D",
       "image": {
         "alt": "The 3D view tool showing a page's z-index stacking tree as a 3d scene.",
-        "src": "/assets/img/see-the-page-in-3d.png"
+        "src": "../../assets/img/see-the-page-in-3d.png"
       },
       "link": "/tips/en/see-the-page-in-3d"
     }
@@ -2962,7 +2995,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -2970,7 +3003,7 @@
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
-        "src": "/assets/img/zoom-devtools-content.gif"
+        "src": "../../assets/img/zoom-devtools-content.gif"
       },
       "link": "/tips/en/zoom-devtools-content"
     },
@@ -2978,7 +3011,7 @@
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "/assets/img/highlight-matching-elements.gif"
+        "src": "../../assets/img/highlight-matching-elements.gif"
       },
       "link": "/tips/en/highlight-matching-elements"
     },
@@ -2986,7 +3019,7 @@
       "title": "Use DevTools in another language",
       "image": {
         "alt": "The settings panel in Edge showing a checkbox to match devtools with the browser language.",
-        "src": "/assets/img/use-another-language.png"
+        "src": "../../assets/img/use-another-language.png"
       },
       "link": "/tips/en/use-another-language"
     }
@@ -2996,7 +3029,7 @@
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "/assets/img/emulate-color-schemes-firefox.png"
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
     },
@@ -3004,7 +3037,7 @@
       "title": "Drag and drop nodes in the DOM tree",
       "image": {
         "alt": "Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge.",
-        "src": "/assets/img/drag-drop-dom-nodes.gif"
+        "src": "../../assets/img/drag-drop-dom-nodes.gif"
       },
       "link": "/tips/en/drag-drop-dom-nodes"
     },
@@ -3012,7 +3045,7 @@
       "title": "Remove annoying page overlays and other elements",
       "image": {
         "alt": "Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.",
-        "src": "/assets/img/remove-annoying-overlays.gif"
+        "src": "../../assets/img/remove-annoying-overlays.gif"
       },
       "link": "/tips/en/remove-annoying-overlays"
     },
@@ -3020,7 +3053,7 @@
       "title": "Get detached DOM elements to investigate memory leaks",
       "image": {
         "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
-        "src": "/assets/img/get-detached-elements.png"
+        "src": "../../assets/img/get-detached-elements.png"
       },
       "link": "/tips/en/get-detached-elements"
     }
@@ -3030,7 +3063,7 @@
       "title": "Get the selected element in the console",
       "image": {
         "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
-        "src": "/assets/img/get-current-element-in-console.jpg"
+        "src": "../../assets/img/get-current-element-in-console.jpg"
       },
       "link": "/tips/en/get-current-element-in-console"
     },
@@ -3038,7 +3071,7 @@
       "title": "Get the recently selected DOM nodes in the console",
       "image": {
         "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
-        "src": "/assets/img/get-recently-selected-dom-nodes-in-console.gif"
+        "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
       },
       "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
     },
@@ -3046,7 +3079,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -3054,7 +3087,7 @@
       "title": "Evaluate XPath to find elements in the page",
       "image": {
         "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
-        "src": "/assets/img/evaluate-xpath-1.png"
+        "src": "../../assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
     }
@@ -3064,7 +3097,7 @@
       "title": "Visualize and debug CSS cascade layers",
       "image": {
         "alt": "Firefox showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules.",
-        "src": "/assets/img/debug-css-cascade-layers-firefox.png"
+        "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
       },
       "link": "/tips/en/debug-css-cascade-layers"
     },
@@ -3072,7 +3105,7 @@
       "title": "Format console messages",
       "image": {
         "alt": "A formatted console message in Edge.",
-        "src": "/assets/img/format-console-messages.png"
+        "src": "../../assets/img/format-console-messages.png"
       },
       "link": "/tips/en/format-console-messages"
     }
@@ -3082,7 +3115,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -3090,7 +3123,7 @@
       "title": "Monitor all events dispatched on an element",
       "image": {
         "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "/assets/img/monitor-element-events.gif"
+        "src": "../../assets/img/monitor-element-events.gif"
       },
       "link": "/tips/en/monitor-element-events"
     }
@@ -3100,7 +3133,7 @@
       "title": "Use full browser window for device emulation",
       "image": {
         "alt": "Animation showing device emulation and how to undock the Developer Tools into an own window.",
-        "src": "/assets/img/use-full-browser-for-device-emulation.gif"
+        "src": "../../assets/img/use-full-browser-for-device-emulation.gif"
       },
       "link": "/tips/en/use-full-browser-for-device-emulation"
     }
@@ -3110,7 +3143,7 @@
       "title": "Check if your site can be instantly reloaded from bfcache",
       "image": {
         "alt": "Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached.",
-        "src": "/assets/img/check-bfcache-readiness.png"
+        "src": "../../assets/img/check-bfcache-readiness.png"
       },
       "link": "/tips/en/check-bfcache-readiness"
     },
@@ -3118,7 +3151,7 @@
       "title": "Throttle your CPU",
       "image": {
         "alt": "The Performance tool in Chrome showing the CPU throttling drop-down.",
-        "src": "/assets/img/throttle-cpu.png"
+        "src": "../../assets/img/throttle-cpu.png"
       },
       "link": "/tips/en/throttle-cpu"
     }
@@ -3128,7 +3161,7 @@
       "title": "Throttle the network speed to test your website on slower connections",
       "image": {
         "alt": "The Network panel in Edge showing the network throttling drop-down.",
-        "src": "/assets/img/throttle-network-speed.png"
+        "src": "../../assets/img/throttle-network-speed.png"
       },
       "link": "/tips/en/throttle-network-speed"
     },
@@ -3136,7 +3169,7 @@
       "title": "Check if your site can be instantly reloaded from bfcache",
       "image": {
         "alt": "Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached.",
-        "src": "/assets/img/check-bfcache-readiness.png"
+        "src": "../../assets/img/check-bfcache-readiness.png"
       },
       "link": "/tips/en/check-bfcache-readiness"
     },
@@ -3144,7 +3177,7 @@
       "title": "Find the most expensive CSS selectors",
       "image": {
         "alt": "The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.",
-        "src": "/assets/img/find-expensive-selectors.png"
+        "src": "../../assets/img/find-expensive-selectors.png"
       },
       "link": "/tips/en/find-expensive-selectors"
     },
@@ -3152,7 +3185,7 @@
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "/assets/img/list-console-functions.png"
+        "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
     }
@@ -3162,7 +3195,7 @@
       "title": "Throttle your CPU",
       "image": {
         "alt": "The Performance tool in Chrome showing the CPU throttling drop-down.",
-        "src": "/assets/img/throttle-cpu.png"
+        "src": "../../assets/img/throttle-cpu.png"
       },
       "link": "/tips/en/throttle-cpu"
     },
@@ -3170,7 +3203,7 @@
       "title": "Edit and resend faulty network requests to debug them",
       "image": {
         "alt": "Screenshot of Chrome's copy as cURL feature and the corresponding command in the terminal",
-        "src": "/assets/img/edit-and-resend-network-requests-curl.png"
+        "src": "../../assets/img/edit-and-resend-network-requests-curl.png"
       },
       "link": "/tips/en/edit-and-resend-network-requests"
     },
@@ -3178,7 +3211,7 @@
       "title": "Filter requests in the Network panel by status code, mime type and more",
       "image": {
         "alt": "The Network panel in Edge showing the filter input field.",
-        "src": "/assets/img/filter-network-requests.png"
+        "src": "../../assets/img/filter-network-requests.png"
       },
       "link": "/tips/en/filter-network-requests"
     },
@@ -3186,7 +3219,7 @@
       "title": "Hide resources loaded by extensions in the Network panel",
       "image": {
         "alt": "The Network panel in Chrome DevTools showing the pattern used in the filter input box.",
-        "src": "/assets/img/hide-extension-resources.jpg"
+        "src": "../../assets/img/hide-extension-resources.jpg"
       },
       "link": "/tips/en/hide-extension-resources"
     }
@@ -3196,7 +3229,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -3204,7 +3237,7 @@
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "/assets/img/disable-event-listeners-firefox.png"
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
       "link": "/tips/en/disable-event-listeners"
     },
@@ -3212,7 +3245,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     },
@@ -3220,7 +3253,7 @@
       "title": "Monitor all events dispatched on an element",
       "image": {
         "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "/assets/img/monitor-element-events.gif"
+        "src": "../../assets/img/monitor-element-events.gif"
       },
       "link": "/tips/en/monitor-element-events"
     }
@@ -3230,7 +3263,7 @@
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "/assets/img/copy-element-styles.png"
+        "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
     },
@@ -3238,7 +3271,7 @@
       "title": "Debug CSS grid areas",
       "image": {
         "alt": "Firefox showing a highlighted grid in the page showing the area names, and devtools below it with the \"display area names\" option checked.",
-        "src": "/assets/img/debug-grid-areas.png"
+        "src": "../../assets/img/debug-grid-areas.png"
       },
       "link": "/tips/en/debug-grid-areas"
     }
@@ -3248,7 +3281,7 @@
       "title": "Tweak css grid and flexbox alignment properties",
       "image": {
         "alt": "The grid editor in the Styles pane of Microsoft Edge.",
-        "src": "/assets/img/tweak-grid-flex-alignment.png"
+        "src": "../../assets/img/tweak-grid-flex-alignment.png"
       },
       "link": "/tips/en/tweak-grid-flex-alignment"
     }
@@ -3258,7 +3291,7 @@
       "title": "Use the debugger statement to pause script execution",
       "image": {
         "alt": "The Sources panel in Edge, paused at a debugger statement.",
-        "src": "/assets/img/debugger-statement.png"
+        "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
     },
@@ -3266,7 +3299,7 @@
       "title": "Find your web component's custom element code",
       "image": {
         "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
-        "src": "/assets/img/find-custom-elements-code.gif"
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
     }
@@ -3276,7 +3309,7 @@
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
-        "src": "/assets/img/zoom-devtools-content.gif"
+        "src": "../../assets/img/zoom-devtools-content.gif"
       },
       "link": "/tips/en/zoom-devtools-content"
     },
@@ -3284,7 +3317,7 @@
       "title": "Start your HTML and CSS prototypes in the browser directly",
       "image": {
         "alt": "Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.",
-        "src": "/assets/img/prototype-in-the-browser.png"
+        "src": "../../assets/img/prototype-in-the-browser.png"
       },
       "link": "/tips/en/prototype-in-the-browser"
     },
@@ -3292,7 +3325,7 @@
       "title": "Customize keyboard shortcuts",
       "image": {
         "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
-        "src": "/assets/img/customize-keyboard-shortcuts.png"
+        "src": "../../assets/img/customize-keyboard-shortcuts.png"
       },
       "link": "/tips/en/customize-keyboard-shortcuts"
     },
@@ -3300,7 +3333,7 @@
       "title": "Use the debugger statement to pause script execution",
       "image": {
         "alt": "The Sources panel in Edge, paused at a debugger statement.",
-        "src": "/assets/img/debugger-statement.png"
+        "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
     }
@@ -3332,7 +3365,7 @@
       "title": "Find DevTools reference documentation",
       "image": {
         "alt": "The 4 documentation websites listed above.",
-        "src": "/assets/img/find-devtools-documentation.png"
+        "src": "../../assets/img/find-devtools-documentation.png"
       },
       "link": "/tips/en/find-devtools-documentation"
     },
@@ -3340,7 +3373,7 @@
       "title": "Take screenshots of your site in a device frame",
       "image": {
         "alt": "Screenshot of the devtoolstips.org website in an iPhone frame",
-        "src": "/assets/img/take-in-device-screenshots.png"
+        "src": "../../assets/img/take-in-device-screenshots.png"
       },
       "link": "/tips/en/take-in-device-screenshots"
     }
@@ -3350,7 +3383,7 @@
       "title": "Disable abusive debugger statements that prevent inspecting websites",
       "image": {
         "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "/assets/img/disable-abusive-debugger-statement.gif"
+        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
       },
       "link": "/tips/en/disable-abusive-debugger-statement"
     }
@@ -3360,7 +3393,7 @@
       "title": "Write code on multiple lines in the Console",
       "image": {
         "alt": "Tthe button to switch the Firefox console to the multi-line mode.",
-        "src": "/assets/img/multi-line-console-firefox.png"
+        "src": "../../assets/img/multi-line-console-firefox.png"
       },
       "link": "/tips/en/multi-line-console"
     }
@@ -3370,7 +3403,7 @@
       "title": "Change the color theme of DevTools",
       "image": {
         "alt": "the settings panel in Edge showing the Theme drop-down.",
-        "src": "/assets/img/change-color-theme.png"
+        "src": "../../assets/img/change-color-theme.png"
       },
       "link": "/tips/en/change-color-theme"
     },
@@ -3378,7 +3411,7 @@
       "title": "Customize keyboard shortcuts",
       "image": {
         "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
-        "src": "/assets/img/customize-keyboard-shortcuts.png"
+        "src": "../../assets/img/customize-keyboard-shortcuts.png"
       },
       "link": "/tips/en/customize-keyboard-shortcuts"
     },
@@ -3386,7 +3419,7 @@
       "title": "Install or create extensions to customize DevTools",
       "image": {
         "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
-        "src": "/assets/img/extend-devtools.png"
+        "src": "../../assets/img/extend-devtools.png"
       },
       "link": "/tips/en/extend-devtools"
     },
@@ -3394,7 +3427,7 @@
       "title": "Get the selected element in the console",
       "image": {
         "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
-        "src": "/assets/img/get-current-element-in-console.jpg"
+        "src": "../../assets/img/get-current-element-in-console.jpg"
       },
       "link": "/tips/en/get-current-element-in-console"
     }
@@ -3405,7 +3438,7 @@
       "title": "Convert font property units",
       "image": {
         "alt": "The fonts panel in Firefox, showing the unit conversion drop-down.",
-        "src": "/assets/img/convert-font-units-1.png"
+        "src": "../../assets/img/convert-font-units-1.png"
       },
       "link": "/tips/en/convert-font-units"
     },
@@ -3413,7 +3446,7 @@
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "/assets/img/convert-color-formats.gif"
+        "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
     },
@@ -3421,7 +3454,7 @@
       "title": "Find inactive CSS styles",
       "image": {
         "alt": "Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.",
-        "src": "/assets/img/find-inactive-styles.png"
+        "src": "../../assets/img/find-inactive-styles.png"
       },
       "link": "/tips/en/find-inactive-styles"
     },
@@ -3429,7 +3462,7 @@
       "title": "Copy CSS selector of an element",
       "image": {
         "alt": "Edge DevTools, showing how to access the Copy CSS selector option.",
-        "src": "/assets/img/copy-css-selector.png"
+        "src": "../../assets/img/copy-css-selector.png"
       },
       "link": "/tips/en/copy-css-selector"
     }
@@ -3439,7 +3472,7 @@
       "title": "Visualize the tabbing order on the page",
       "image": {
         "alt": "The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.",
-        "src": "/assets/img/visualize-tabbing-order.png"
+        "src": "../../assets/img/visualize-tabbing-order.png"
       },
       "link": "/tips/en/visualize-tabbing-order"
     },
@@ -3447,7 +3480,7 @@
       "title": "Debug unwanted scrollbars",
       "image": {
         "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
-        "src": "/assets/img/debug-unwanted-scrollbars-1.png"
+        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
       },
       "link": "/tips/en/debug-unwanted-scrollbars"
     },
@@ -3455,7 +3488,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -3463,7 +3496,7 @@
       "title": "Draw a box around all elements to debug your CSS and page structure",
       "image": {
         "alt": "Animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page.",
-        "src": "/assets/img/outline-everything.gif"
+        "src": "../../assets/img/outline-everything.gif"
       },
       "link": "/tips/en/outline-everything"
     }
@@ -3473,7 +3506,7 @@
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "/assets/img/edit-position.gif"
+        "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
     },
@@ -3481,7 +3514,7 @@
       "title": "Debug unwanted scrollbars",
       "image": {
         "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
-        "src": "/assets/img/debug-unwanted-scrollbars-1.png"
+        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
       },
       "link": "/tips/en/debug-unwanted-scrollbars"
     },
@@ -3489,7 +3522,7 @@
       "title": "Take a screenshot of a single node",
       "image": {
         "alt": "Animation showing taking a node screenshot in Firefox.",
-        "src": "/assets/img/node-screenshot.gif"
+        "src": "../../assets/img/node-screenshot.gif"
       },
       "link": "/tips/en/node-screenshot"
     },
@@ -3497,7 +3530,7 @@
       "title": "Select elements with pointer-events:none by holding Shift",
       "image": {
         "alt": "Animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed.",
-        "src": "/assets/img/select-pointer-events-none-elements.gif"
+        "src": "../../assets/img/select-pointer-events-none-elements.gif"
       },
       "link": "/tips/en/select-pointer-events-none-elements"
     }
@@ -3507,7 +3540,7 @@
       "title": "Install or create extensions to customize DevTools",
       "image": {
         "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
-        "src": "/assets/img/extend-devtools.png"
+        "src": "../../assets/img/extend-devtools.png"
       },
       "link": "/tips/en/extend-devtools"
     },
@@ -3515,7 +3548,7 @@
       "title": "Customize keyboard shortcuts",
       "image": {
         "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
-        "src": "/assets/img/customize-keyboard-shortcuts.png"
+        "src": "../../assets/img/customize-keyboard-shortcuts.png"
       },
       "link": "/tips/en/customize-keyboard-shortcuts"
     },
@@ -3523,7 +3556,7 @@
       "title": "Get contextual DevTools help",
       "image": {
         "alt": "Animation of the devtools tooltips in Edge.",
-        "src": "/assets/img/get-contextual-help.gif"
+        "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
     },
@@ -3531,7 +3564,7 @@
       "title": "Use DevTools in another language",
       "image": {
         "alt": "The settings panel in Edge showing a checkbox to match devtools with the browser language.",
-        "src": "/assets/img/use-another-language.png"
+        "src": "../../assets/img/use-another-language.png"
       },
       "link": "/tips/en/use-another-language"
     }

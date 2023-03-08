@@ -94,6 +94,20 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(embedYouTube);
   eleventyConfig.addPlugin(embedTwitter);
 
+  eleventyConfig.addTransform("fix-urls", async function(content) {
+    if (this.inputPath.includes('/src/tips/en/')) {
+      // Replace all relative links to other tips with their absolute links.
+      // This is needed because we want relative file links in dev, in order
+      // to benefit from markdown preview. But we want absolute links in prod.
+      content = content.replace(/href="\.\/([^.]+)\.md"/g, 'href="/tips/en/$1"');
+
+      // Also replace all relative image links with their absolute versions.
+      content = content.replace(/src="\.\.\/\.\.\/assets\/img\//g, 'src="/assets/img/');
+    }
+
+    return content; // no change done.
+  });
+
   // TODO: find a way to run this after dist has been created.
   // PageFind indexes HTML content, so this needs to run after the build.
   // But before the files are deployed to the server.

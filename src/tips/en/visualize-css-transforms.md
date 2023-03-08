@@ -15,6 +15,6 @@ Being able to compare the 2 states at the same time makes it easier to debug you
 * Hover over the property value.
 * The on-page highlighter appears.
 
-![Animation showing how the CSS transform highlighter appears on the page when hovering over a transform CSS property in the Rules panel.](/assets/img/visualize-css-transforms.gif)
+![Animation showing how the CSS transform highlighter appears on the page when hovering over a transform CSS property in the Rules panel.](../../assets/img/visualize-css-transforms.gif)
 
 [Learn more about it here](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Visualize_transforms).

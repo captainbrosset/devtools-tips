@@ -19,4 +19,4 @@ To throttle your CPU in Chrome or Edge DevTools:
 
 Even though the setting is in the **Performance** tool, you don't need to record a performance trace for the slowdown to take effect. As soon as a slowdown value is set, it takes effect immediately.
 
-![The Performance tool in Chrome showing the CPU throttling drop-down.](/assets/img/throttle-cpu.png)
+![The Performance tool in Chrome showing the CPU throttling drop-down.](../../assets/img/throttle-cpu.png)

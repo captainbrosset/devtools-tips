@@ -17,7 +17,7 @@ DevTools to the rescue! With DevTools, you can emulate a different color scheme 
     1. Open the **Inspector** tool.
     1. In the toolbar of the **Rules** sidebar tab, use the light and dark color scheme buttons.
 
-    ![Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons](/assets/img/emulate-color-schemes-firefox.png)
+    ![Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons](../../assets/img/emulate-color-schemes-firefox.png)
 
 * In Edge or Chrome:
 
@@ -25,14 +25,14 @@ DevTools to the rescue! With DevTools, you can emulate a different color scheme 
     1. In the toolbar of the **Styles** pane, open the **Toggle common rendering emulations** menu (it looks like a paint brush).
     1. Choose one of the `prefers-color-scheme` options.
 
-    ![Edge, with DevTools open, showing the Elements tool, with the emulation button and color-scheme dropdown menu](/assets/img/emulate-color-schemes-edge.png)
+    ![Edge, with DevTools open, showing the Elements tool, with the emulation button and color-scheme dropdown menu](../../assets/img/emulate-color-schemes-edge.png)
 
 * In Safari:
 
     1. Open the **Elements** tool.
     1. In the toolbar of the tool, click the emulation button and choose a color scheme.
 
-    ![Safari, with WebInspector open, showing the Elements tool, with the emulation button and dropdown menu](/assets/img/emulate-color-schemes-safari.png)
+    ![Safari, with WebInspector open, showing the Elements tool, with the emulation button and dropdown menu](../../assets/img/emulate-color-schemes-safari.png)
 
 * In Polypane:
 
@@ -40,4 +40,4 @@ DevTools to the rescue! With DevTools, you can emulate a different color scheme 
     1. Click the **Media** tab.
     1. Choose a scheme in the **prefers-color-scheme** toggle.
 
-    ![Polypane's emulation pane, with the Media tab, showing the prefers-color-scheme toggle](/assets/img/emulate-color-schemes-polypane.png)
+    ![Polypane's emulation pane, with the Media tab, showing the prefers-color-scheme toggle](../../assets/img/emulate-color-schemes-polypane.png)

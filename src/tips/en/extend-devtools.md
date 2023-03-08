@@ -4,7 +4,7 @@ authors: Patrick Brosset
 title: Install or create extensions to customize DevTools
 tags: ["personalization", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
-There's [a lot of tools](/tips/en/discover-all-tools) in DevTools already, probably more than you use. But in some cases, you may need very specific tools that aren't available by default.
+There's [a lot of tools](./discover-all-tools.md) in DevTools already, probably more than you use. But in some cases, you may need very specific tools that aren't available by default.
 
 Thankfully, DevTools can be extended with custom tools! You can either download extensions others have created to customize the DevTools UI, or even **create your own**.
 
@@ -19,4 +19,4 @@ To go further, you can create your own extensions. Here are a few links to learn
 * [Extending the developer tools](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools) on MDN.
 * [Adding a web development tool to Safari Web Inspector](https://developer.apple.com/documentation/safariservices/safari_web_extensions/adding_a_web_development_tool_to_safari_web_inspector) on developer.apple.com.
 
-![Microsoft Edge, with DevTools opened, showing a custom panel.](/assets/img/extend-devtools.png)
+![Microsoft Edge, with DevTools opened, showing a custom panel.](../../assets/img/extend-devtools.png)

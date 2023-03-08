@@ -12,4 +12,4 @@ To automatically get the right JavaScript expression to use for any node:
 1. Right-click the node and select **Copy** > **Copy JS path**.
 1. The right `document.querySelector()` expression is now in your clipboard. You can paste it anywhere you need it.
 
-![The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.](/assets/img/copy-element-js-path.png)
+![The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.](../../assets/img/copy-element-js-path.png)

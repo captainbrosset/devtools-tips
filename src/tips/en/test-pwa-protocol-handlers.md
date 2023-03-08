@@ -25,4 +25,4 @@ To test your handler:
 
    Your installed PWA should now be launched automatically, and you can test your protocol handling code.
 
-![Microsoft Edge, with the Application tool opened on the side, showing the Protocol Handlers section.](/assets/img/test-pwa-protocol-handlers.png)
+![Microsoft Edge, with the Application tool opened on the side, showing the Protocol Handlers section.](../../assets/img/test-pwa-protocol-handlers.png)

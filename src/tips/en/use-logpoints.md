@@ -6,7 +6,7 @@ tags: ["debug", "javascript", "browser:edge", "browser:chrome", "browser:firefox
 ---
 Using the [console](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/) to log some information is a very common way to debug your JavaScript. But you can also log information in any web site using **Logpoints** in the [sources](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/sources/) panel.
 
-![Setting a logpoint in the sources tool.](/assets/img/use-logpoints.png)
+![Setting a logpoint in the sources tool.](../../assets/img/use-logpoints.png)
 
 Here's how to do it:
 

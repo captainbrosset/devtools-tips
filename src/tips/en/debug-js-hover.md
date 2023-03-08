@@ -13,7 +13,7 @@ Have you ever been frustrated because you couldn't style a popup or tooltip that
 
 That's it! The JS engine will pause and freeze the state of the page. You can now switch back to **Elements**/**Inspector** and style the popup content!
 
-![Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.](/assets/img/debug-js-hover.gif)
+![Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.](../../assets/img/debug-js-hover.gif)
 
 Thank you to [Sam Selikoff](https://twitter.com/samselikoff) for [tweeting](https://twitter.com/samselikoff/status/1441142046492807176) about this tip and making a youtube video about it too:
 

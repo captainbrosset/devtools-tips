@@ -8,7 +8,7 @@ If you use `:hover`, `:active`, and other such pseudo-classes in CSS, you can ac
 
 Open the Styles panel (in Chrome, Edge or Safari) or the Rules panel (in Firefox), and click the `:hov` button. This will expand a section that allows you to lock one or multiple of these pseudo-classes on the selected element.
 
-![The :hov panel to simulate various pseudo-classes.](/assets/img/simulate-pseudo-classes.png)
+![The :hov panel to simulate various pseudo-classes.](../../assets/img/simulate-pseudo-classes.png)
 
 This is great when you write your styles, as you can define see the changes to - for example - a hover state of an element without having to use your mouse to see it in action.
 

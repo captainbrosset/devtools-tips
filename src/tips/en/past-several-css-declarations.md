@@ -19,4 +19,4 @@ Now open DevTools, and the **Elements** (or **Inspector**) panel, find a CSS rul
 
 And now paste the code in. Instead of everything getting pasted in just this one text field, see how DevTools noticed that your clipboard contained multiple declarations, and created them all for you!
 
-![Animation showing how pasting several declarations in a CSS rule in DevTools creates them all.](/assets/img/paste-several-css-declarations.gif)
+![Animation showing how pasting several declarations in a CSS rule in DevTools creates them all.](../../assets/img/paste-several-css-declarations.gif)

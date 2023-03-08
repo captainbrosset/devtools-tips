@@ -14,6 +14,6 @@ This tool adds a layer on the page that shows the order in which elements would 
 * Go to the Accessibility panel
 * In the toolbar, check the "Show source order" box
 
-![The source order viewer in Microsoft Edge, showing numbered boxes around elements.](/assets/img/visualize-screenreader-order.png)
+![The source order viewer in Microsoft Edge, showing numbered boxes around elements.](../../assets/img/visualize-screenreader-order.png)
 
 [Learn more about it here](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer#analyzing-the-order-of-keyboard-access-through-sections-of-the-page).

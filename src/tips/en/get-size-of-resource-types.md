@@ -13,11 +13,11 @@ To know how much data your website transfers between the server and the client t
 1. Filter the list of requests to only what you're interested in:
 
     * For example, to see only images, click the **Img** tag in the toolbar (or **Images** in Firefox).
-    * Or, to see only JPEG image files, enter `.jpg` in the **Filter** text box (to learn more about filtering, see [Filter requests in the Network panel by status code, mime type and more](/tips/en/filter-network-requests)).
+    * Or, to see only JPEG image files, enter `.jpg` in the **Filter** text box (to learn more about filtering, see [Filter requests in the Network panel by status code, mime type and more](./filter-network-requests.md)).
     * To see only JavaSript files, click the **JS** tag in the toolbar.
 
 1. Look at the transferred size in the status bar at the bottom of the **Network** tool. The first number is the amount of data transferred for the filtered resources displayed in the tool.
 
 In the screenshot below, the **CSS** and **JS** tags have been checked in the toolbar, filtering the list of resources down to just stylesheets and JavaScript files, and the status bar shows that these resources amount to 73.8kB total.
 
-![The Network tool in Chrome, with the transferred size highlighted](/assets/img/get-size-of-resource-types.png)
+![The Network tool in Chrome, with the transferred size highlighted](../../assets/img/get-size-of-resource-types.png)

@@ -11,4 +11,4 @@ The Network panel lets you filter requests by status code, or mime type, and mor
 * Other possible filters include `mime-type`, `domain`, `larger-than`, `method`, and more.
 * You can also negate the search by putting a `-` in front (e.g. `-status-code:404`).
 
-![The Network panel in Edge showing the filter input field.](/assets/img/filter-network-requests.png)
+![The Network panel in Edge showing the filter input field.](../../assets/img/filter-network-requests.png)

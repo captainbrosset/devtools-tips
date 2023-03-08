@@ -10,4 +10,4 @@ Press <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>shif
 
 You can use this to, for example, switch to a different panel by typing its name, change the color theme, change settings, disable javascript, etc.
 
-![Edge's command menu.](/assets/img/execute-commands.png)
+![Edge's command menu.](../../assets/img/execute-commands.png)
