@@ -5,11 +5,34 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-03-03T00:00:00.000Z</updated>
+  <updated>2023-03-09T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>See network request paths instead of names in the Network tool</title>
+    <link href="https://devtoolstips.org/tips/en/see-request-path-instead-of-name/"/>
+    <updated>2023-03-09T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/see-request-path-instead-of-name/</id>
+    <content type="html">&lt;p&gt;By default, the &lt;strong&gt;Network&lt;/strong&gt; tool displays the name of each requested resource. For example, if a webpage requests an image from &lt;code&gt;https://mysite.com/assets/img/image.png&lt;/code&gt; then the tool only displays &lt;code&gt;image.png&lt;/code&gt; by default instead of the full file path.&lt;/p&gt;
+&lt;h3&gt;Chrome and Edge&lt;/h3&gt;
+&lt;p&gt;In Chrome and Edge DevTools, you can see the full path instead, which can be useful to more easily identify resources in the request list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the &lt;strong&gt;Network&lt;/strong&gt; tool, right-click one of the table headers.&lt;/li&gt;
+&lt;li&gt;In the list of columns, select &lt;strong&gt;Path&lt;/strong&gt;, and deselect &lt;strong&gt;Name&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-request-path-instead-of-name.png&quot; alt=&quot;The Network tool in Edge, showing the contextual menu that&#39;s used to customize the network list columns&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Firefox&lt;/h3&gt;
+&lt;p&gt;Firefox doesn&#39;t have a &lt;strong&gt;Path&lt;/strong&gt; option, but you can display URLs instead:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the &lt;strong&gt;Network&lt;/strong&gt; tool, right-click one of the table headers.&lt;/li&gt;
+&lt;li&gt;In the list of columns, select &lt;strong&gt;URL&lt;/strong&gt;, and deselect &lt;strong&gt;File&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you &lt;a href=&quot;https://twitter.com/ryanstaniforth/&quot;&gt;Ryan Staniforth&lt;/a&gt; for &lt;a href=&quot;https://twitter.com/ryanstaniforth/status/1633620774744469506&quot;&gt;sharing this tip on Twitter&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Display the current framerate of your webpage</title>

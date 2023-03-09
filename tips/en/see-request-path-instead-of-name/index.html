@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>See the size of the transferred data for images, scripts, or other resources</title>
+    <title>See network request paths instead of names in the Network tool</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/get-size-of-resource-types/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/see-request-path-instead-of-name/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/get-size-of-resource-types.png">
-    <meta property="og:description" content="See the size of the transferred data for images, scripts, or other resources">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/see-request-path-instead-of-name.png">
+    <meta property="og:description" content="See network request paths instead of names in the Network tool">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">See the size of the transferred data for images, scripts, or other resources</a></h1>
+      <h1><a href="/">See network request paths instead of names in the Network tool</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -50,60 +50,48 @@
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/network/">network</a></li><li class="tag"><a href="/tag/perf/">perf</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/network/">network</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
 </div>
-<h2 class="tip-title">See the size of the transferred data for images, scripts, or other resources</h2>
+<h2 class="tip-title">See network request paths instead of names in the Network tool</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>To know how much data your website transfers between the server and the client to display images, or scripts, or anything else:</p>
-<ol>
-<li>
-<p>Open the <strong>Network</strong> tool.</p>
-</li>
-<li>
-<p>Refresh the page to make sure the list of requests appears in the tool.</p>
-</li>
-<li>
-<p>Filter the list of requests to only what you're interested in:</p>
+    <p>By default, the <strong>Network</strong> tool displays the name of each requested resource. For example, if a webpage requests an image from <code>https://mysite.com/assets/img/image.png</code> then the tool only displays <code>image.png</code> by default instead of the full file path.</p>
+<h3>Chrome and Edge</h3>
+<p>In Chrome and Edge DevTools, you can see the full path instead, which can be useful to more easily identify resources in the request list:</p>
 <ul>
-<li>For example, to see only images, click the <strong>Img</strong> tag in the toolbar (or <strong>Images</strong> in Firefox).</li>
-<li>Or, to see only JPEG image files, enter <code>.jpg</code> in the <strong>Filter</strong> text box (to learn more about filtering, see <a href="/tips/en/filter-network-requests">Filter requests in the Network panel by status code, mime type and more</a>).</li>
-<li>To see only JavaSript files, click the <strong>JS</strong> tag in the toolbar.</li>
+<li>In the <strong>Network</strong> tool, right-click one of the table headers.</li>
+<li>In the list of columns, select <strong>Path</strong>, and deselect <strong>Name</strong>.</li>
 </ul>
-</li>
-<li>
-<p>Look at the transferred size in the status bar at the bottom of the <strong>Network</strong> tool. The first number is the amount of data transferred for the filtered resources displayed in the tool.</p>
-</li>
-</ol>
-<p>In the screenshot below, the <strong>CSS</strong> and <strong>JS</strong> tags have been checked in the toolbar, filtering the list of resources down to just stylesheets and JavaScript files, and the status bar shows that these resources amount to 73.8kB total.</p>
-<p><img src="/assets/img/get-size-of-resource-types.png" alt="The Network tool in Chrome, with the transferred size highlighted"></p>
+<p><img src="/assets/img/see-request-path-instead-of-name.png" alt="The Network tool in Edge, showing the contextual menu that's used to customize the network list columns"></p>
+<h3>Firefox</h3>
+<p>Firefox doesn't have a <strong>Path</strong> option, but you can display URLs instead:</p>
+<ul>
+<li>In the <strong>Network</strong> tool, right-click one of the table headers.</li>
+<li>In the list of columns, select <strong>URL</strong>, and deselect <strong>File</strong>.</li>
+</ul>
+<p>Thank you <a href="https://twitter.com/ryanstaniforth/">Ryan Staniforth</a> for <a href="https://twitter.com/ryanstaniforth/status/1633620774744469506">sharing this tip on Twitter</a>.</p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/find-all-images-without-alt-text">Find all images without alternative text</a>
-            <a href="/tips/en/find-all-images-without-alt-text" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console.">
-            </a>
-        </li><li>
             <a href="/tips/en/filter-network-requests">Filter requests in the Network panel by status code, mime type and more</a>
             <a href="/tips/en/filter-network-requests" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/filter-network-requests.png" alt="The Network panel in Edge showing the filter input field.">
             </a>
         </li><li>
-            <a href="/tips/en/hide-extension-resources">Hide resources loaded by extensions in the Network panel</a>
-            <a href="/tips/en/hide-extension-resources" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/hide-extension-resources.jpg" alt="The Network panel in Chrome DevTools showing the pattern used in the filter input box.">
+            <a href="/tips/en/get-size-of-resource-types">See the size of the transferred data for images, scripts, or other resources</a>
+            <a href="/tips/en/get-size-of-resource-types" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-size-of-resource-types.png" alt="The Network tool in Chrome, with the transferred size highlighted">
             </a>
         </li><li>
-            <a href="/tips/en/see-request-path-instead-of-name">See network request paths instead of names in the Network tool</a>
-            <a href="/tips/en/see-request-path-instead-of-name" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/see-request-path-instead-of-name.png" alt="The Network tool in Edge, showing the contextual menu that&#39;s used to customize the network list columns">
+            <a href="/tips/en/list-console-functions">List all supported console functions</a>
+            <a href="/tips/en/list-console-functions" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
             </a>
         </li></ul>
-</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://twitter.com/pankajparashar">Pankaj Parashar</a></span></div>
-        <p class="last-edit">Last edit: <time datetime="2023-02-16T00:00:00.000Z">2/16/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/get-size-of-resource-types.md">Edit page</a></p></div>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+        <p class="last-edit">Last edit: <time datetime="2023-03-09T00:00:00.000Z">3/9/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/see-request-path-instead-of-name.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>
 
