@@ -66,7 +66,10 @@ Add the content of the tip in the file, as markdown.
 
 * Markdown formatting: feel free to format your content with italic, bold, bullet points, line breaks, etc.
 
-* Images: please add an image as this helps users a lot. Please include only 1 image if possible, and please add alt text. Place the image in `src/assets/img` and give it the same name as the tip md file: `<the-new-id>.png`.
+* Images: please add an image as this helps users a lot. Please include only 1 image if possible, and please add alt text. Place the image in `src/assets/img` and give it the same name as the tip md file: `<the-new-id>.png`. To include your image to the tip file, use a relative link like `![the alt text](../../assets/img/<the-new-id>.png)`.
+
+* Links: to add links from your new tip to other tips, use relative links to markdown files. These links will then be processed at build-time to create the correct absolute links. For example, to link to the `filter-network-requests.md` tip, use: `[Filter requests in the Network panel by status code, mime type and more](./filter-network-requests.md)`.
+
 * Build the site locally to test that things work fine locally.
 
 #### Getting your tip adding to the site
