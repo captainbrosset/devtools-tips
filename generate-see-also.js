@@ -3,9 +3,9 @@
 // This is done by using retext and the retext-keywords plugin to extract keywords and keyphrases from each tip.
 // The resulting data is stored in /src/data/SEEALSO.json so that the 11ty build can use it.
 //
-// This script is only executed when env=prod so as not to slow down the dev build and cause infinite reload loops
-// when using "npm run watch". This means it only runs when the github workflow runs.
-// Run this script manually with "npm run generate-see-also.js" to test the see-also sections locally.
+// This script is not executed during the 11ty build (to avoid infinite reload loops when using npm run watch).
+// This script only runs when the github workflow runs.
+// You can also run it manually with "node generate-see-also.js" to test the see-also sections locally.
 
 const fs = require('fs').promises;
 const path = require('path');
