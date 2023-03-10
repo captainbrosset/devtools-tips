@@ -6,6 +6,9 @@
 // This script is not executed during the 11ty build (to avoid infinite reload loops when using npm run watch).
 // This script only runs when the github workflow runs.
 // You can also run it manually with "node generate-see-also.js" to test the see-also sections locally.
+//
+// Note that some tips also have a "see-also" field in their frontmatter. These "manual" see-also entries
+// are added first and automated see-also are added next.
 
 const fs = require('fs').promises;
 const path = require('path');
