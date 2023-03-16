@@ -2112,6 +2112,40 @@
       "link": "/tips/en/emulate-idle-detection-states"
     }
   ],
+  "list-used-fonts.md": [
+    {
+      "title": "Copy an elements styles",
+      "image": {
+        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
+        "src": "../../assets/img/copy-element-styles.png"
+      },
+      "link": "/tips/en/copy-element-styles"
+    },
+    {
+      "title": "Find all images without alternative text",
+      "image": {
+        "alt": "The output of the console.table command from above shown in the Firefox DevTools console.",
+        "src": "../../assets/img/find-all-images-without-alt-text.png"
+      },
+      "link": "/tips/en/find-all-images-without-alt-text"
+    },
+    {
+      "title": "Capture node creation stack traces",
+      "image": {
+        "alt": "Edge DevTools' Elements panel with the Stack Trace sidebar visible, showing a stack of Vue JS function calls that created an element on the TODOMVC sample app.",
+        "src": "../../assets/img/capture-node-creation-stacks.png"
+      },
+      "link": "/tips/en/capture-node-creation-stacks"
+    },
+    {
+      "title": "List all supported console functions",
+      "image": {
+        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
+        "src": "../../assets/img/list-console-functions.png"
+      },
+      "link": "/tips/en/list-console-functions"
+    }
+  ],
   "live-expressions.md": [
     {
       "title": "Evaluate XPath to find elements in the page",
@@ -3357,6 +3391,14 @@
       "link": "/tips/en/zoom-devtools-content"
     },
     {
+      "title": "List the fonts used on a page, or an element",
+      "image": {
+        "alt": "Firefox, with DevTools on the side, showing the Fonts panel that contains the list of fonts. One of the fonts is hovered",
+        "src": "../../assets/img/list-used-fonts-firefox.png"
+      },
+      "link": "/tips/en/list-used-fonts"
+    },
+    {
       "title": "Start your HTML and CSS prototypes in the browser directly",
       "image": {
         "alt": "Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.",
@@ -3371,14 +3413,6 @@
         "src": "../../assets/img/customize-keyboard-shortcuts.png"
       },
       "link": "/tips/en/customize-keyboard-shortcuts"
-    },
-    {
-      "title": "Use the debugger statement to pause script execution",
-      "image": {
-        "alt": "The Sources panel in Edge, paused at a debugger statement.",
-        "src": "../../assets/img/debugger-statement.png"
-      },
-      "link": "/tips/en/debugger-statement"
     }
   ],
   "use-designmode-to-spell-check.md": [
