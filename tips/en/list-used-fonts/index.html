@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List the fonts used on a page, or an element</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/list-used-fonts/">
+    
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/list-used-fonts-firefox.png">
+    <meta property="og:description" content="List the fonts used on a page, or an element">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4P6B6NT4Y8');
+    </script>
+    
+  </head>
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+      <h1><a href="/">List the fonts used on a page, or an element</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <main id="maincontent">
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+</div>
+<h2 class="tip-title">List the fonts used on a page, or an element</h2>
+<div class="tip-content" data-pagefind-body>
+    <p><em>&quot;What font is that?&quot;</em> or <em>&quot;Why is this font used?&quot;</em> are probably questions you've asked yourself while working on a website design.</p>
+<p>However, it's not always easy to know which fonts are actually used on a webpage and looking at the CSS the page uses might not always give you the answer.</p>
+<p>Webpages often define multiple different fonts, for example: <code>font-family: Baskerville, &quot;Baskerville Old Face&quot;, &quot;Hoefler Text&quot;, Garamond, &quot;Times New Roman&quot;, serif;</code></p>
+<p>When the browser renders a page, if the first font in the list is not available on the device, the browser falls back to the next font. If the next one isn't available either, it falls back to the next one and so on. Also some fonts are defined with generic names such as <code>serif</code>, or <code>monospace</code>, which tells you nothing about which exact font the browser chose to use.</p>
+<p>DevTools can help you determine which fonts are used on a webpage, or on a specific element on a page.</p>
+<h3>In Firefox</h3>
+<p>Firefox has the best tool to inspect fonts. To know which fonts are used on a webpage:</p>
+<ol>
+<li>
+<p>Open DevTools, and open the <strong>Inspector</strong> tool.</p>
+</li>
+<li>
+<p>Select the <code>&lt;body&gt;</code> element.</p>
+</li>
+<li>
+<p>In the sidebar, select the <strong>Fonts</strong> tab.</p>
+<p>The list of fonts used on the page is displayed.</p>
+</li>
+<li>
+<p>You can even hover over a font name to see where it's used on the page.</p>
+</li>
+</ol>
+<p><img src="/assets/img/list-used-fonts-firefox.png" alt="Firefox, with DevTools on the side, showing the Fonts panel that contains the list of fonts. One of the fonts is hovered"></p>
+<p>To know which fonts are used on a single element:</p>
+<ol>
+<li>Select the element in the <strong>Inspector</strong> tool.</li>
+<li>The <strong>Fonts</strong> tab updates and gives the list of fonts used in that single element.</li>
+</ol>
+<p>Note that an element may require multiple fonts to render correctly, even if this element only contains a single text node. This can happen when the font used to render the element doesn't have all the glyphs required to render the text, in which case the browser falls back to another font to render the missing glyphs.</p>
+<h3>In Chrome or Edge</h3>
+<p>In Chrome or Edge (or other Chromium-based browsers), you can see which font(s) was/were used to render a given text-containing element:</p>
+<ol>
+<li>
+<p>Open DevTools and open the <strong>Elements tool</strong>.</p>
+</li>
+<li>
+<p>Select an element that has at least one text node. Elements that only contain other elements, and not directly text won't work.</p>
+</li>
+<li>
+<p>In the sidebar, select the <strong>Computed</strong> tab, and scroll down the very bottom of the panel.</p>
+<p>The list of fonts that were used to render the text in the element appears.</p>
+</li>
+</ol>
+<p><img src="/assets/img/list-used-fonts-chrome.png" alt="Chrome, with Devtools on the side, showing the Computed panel that contains the list of fonts"></p>
+
+</div><div class="see-also">
+    <h3>See also</h3>
+    <ul><li>
+            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
+            <a href="/tips/en/copy-element-styles" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
+            </a>
+        </li><li>
+            <a href="/tips/en/find-all-images-without-alt-text">Find all images without alternative text</a>
+            <a href="/tips/en/find-all-images-without-alt-text" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console.">
+            </a>
+        </li><li>
+            <a href="/tips/en/capture-node-creation-stacks">Capture node creation stack traces</a>
+            <a href="/tips/en/capture-node-creation-stacks" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/capture-node-creation-stacks.png" alt="Edge DevTools&#39; Elements panel with the Stack Trace sidebar visible, showing a stack of Vue JS function calls that created an element on the TODOMVC sample app.">
+            </a>
+        </li><li>
+            <a href="/tips/en/list-console-functions">List all supported console functions</a>
+            <a href="/tips/en/list-console-functions" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
+            </a>
+        </li></ul>
+</div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+        <p class="last-edit">Last edit: <time datetime="2023-03-16T00:00:00.000Z">3/16/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/list-used-fonts.md">Edit page</a></p></div>
+<script async src="/assets/share.js"></script>
+<script async src="/assets/dialog-lightbox.js"></script>
+
+    </main>
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
+    </footer>
+    
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+    
+  </body>
+</html>
