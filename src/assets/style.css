@@ -82,6 +82,7 @@
 }
 
 ul,
+ol,
 li {
   list-style: none;
   margin: 0;
@@ -272,7 +273,7 @@ header nav {
 
 main {
   padding: 2rem;
-  line-height: 1.5;
+  line-height: 1.6;
   background: var(--alternate-background-color);
   position: relative;
   top: -1rem;
@@ -423,8 +424,14 @@ main h2.tip-title {
 }
 
 .tip-content ul,
-.tip-content li {
+.tip-content ul li {
   list-style: square;
+  margin-left: 1rem;
+}
+
+.tip-content ol,
+.tip-content ol li {
+  list-style: decimal;
   margin-left: 1rem;
 }
 
