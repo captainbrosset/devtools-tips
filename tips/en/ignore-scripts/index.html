@@ -60,9 +60,8 @@
 <p>What's even worse is when a lot of this code isn't even yours. This can happen when you use frameworks or libraries. You don't really want to debug the library code, but sometimes it gets in the way when trying to step through your own code while using breakpoints.</p>
 <p>To help with this, you can ignore third-party scripts (like library source files) in DevTools. When ignored, those files don't appear in your callstacks when debugging, and you don't step through them anymore.</p>
 <ul>
-<li>To ignore a script in Chrome: right-click anywhere in the file and click <strong>Add script to ignore list</strong> (<a href="https://developer.chrome.com/docs/devtools/javascript/reference/#ignore-list">learn more</a>).</li>
-<li>To ignore a script in Edge: right-click anywhere in the file and click <strong>Mark as Library code</strong> (<a href="https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/reference#ignore-a-script-or-pattern-of-scripts">learn more</a>).</li>
-<li>And, in Firefox: right-click in the file and click <strong>Ignore source</strong>. Or click the <strong>Ignore source</strong> button in the bottom left corner of the file (<a href="https://firefox-source-docs.mozilla.org/devtools-user/debugger/how_to/ignore_a_source/index.html">learn more</a>).</li>
+<li>To ignore a script in Chrome or Edge: right-click anywhere in the file and click <strong>Add script to ignore list</strong>. Learn more on the <a href="https://developer.chrome.com/docs/devtools/javascript/reference/#ignore-list">Chrome docs</a> or the <a href="https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/reference#ignore-a-script-or-pattern-of-scripts">Edge docs</a>.</li>
+<li>In Firefox: right-click in the file and click <strong>Ignore source</strong>. Or click the <strong>Ignore source</strong> button in the bottom left corner of the file (<a href="https://firefox-source-docs.mozilla.org/devtools-user/debugger/how_to/ignore_a_source/index.html">learn more</a>).</li>
 </ul>
 <p>In Firefox, you can go even further than this and ignore parts of a script only. Maybe you have a utility function in your file that gets called over and over again but isn't related to what you're trying to debug.</p>
 <p>To ignore part of script only in Firefox:</p>
