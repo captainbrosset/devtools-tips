@@ -56,7 +56,7 @@ In Chrome or Edge (or other Chromium-based browsers), you can see which font(s) 
 
 In Polypane, you can see which font was used to render a given text-containing element:
 
-1. Hold `Alt`/`Option` and hover over the text you want to find the font for.
+1. Hold <kbd>Alt</kbd>/<kbd>Option</kbd> and hover over the text you want to find the font for.
 
 1. The rendered font is shown in the tooltip.
 
