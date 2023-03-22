@@ -2,7 +2,7 @@
 date: 2023-03-16
 authors: Patrick Brosset
 title: List the fonts used on a page, or an element
-tags: ["css", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["css", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
 see-also: ["convert-font-units.md"]
 ---
 _"What font is that?"_ or _"Why is this font used?"_ are probably questions you've asked yourself while working on a website design.
@@ -51,3 +51,15 @@ In Chrome or Edge (or other Chromium-based browsers), you can see which font(s) 
     The list of fonts that were used to render the text in the element appears.
 
 ![Chrome, with Devtools on the side, showing the Computed panel that contains the list of fonts](../../assets/img/list-used-fonts-chrome.png)
+
+### In Polypane
+
+In Polypane, you can see which font was used to render a given text-containing element:
+
+1. Hold `Alt`/`Option` and hover over the text you want to find the font for.
+
+1. The rendered font is shown in the tooltip.
+
+1. On inspection, the font is also shown in the **Element Overview**
+
+![Polypane, with Devtools on the side, showing the Element Overview panel that contains the list of fonts and a node tooltip.](../../assets/img/list-used-fonts-polypane.png)
