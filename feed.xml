@@ -5,11 +5,23 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-03-16T00:00:00.000Z</updated>
+  <updated>2023-03-22T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Find broken links</title>
+    <link href="https://devtoolstips.org/tips/en/find-broken-links/"/>
+    <updated>2023-03-22T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/find-broken-links/</id>
+    <content type="html">&lt;p&gt;&lt;em&gt;The link to X on page Y doesn&#39;t work&lt;/em&gt; is probably a bug report you&#39;ve received at some point. But how do you find these broken links before someone else does?&lt;/p&gt;
+&lt;p&gt;In Polypane, the &lt;strong&gt;Outline Panel&lt;/strong&gt; will show you all the links on the page, and check if they return a 200 status code, or if they return an error code (like 404, or 500).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/find-broken-links-polypane.png&quot; alt=&quot;Polypane, with the outline panel open. Two of the links show a 404 error code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Along with broken URLs, Polypane also finds unfinished/placeholder URLs like &lt;code&gt;mailto:&lt;/code&gt; and &lt;code&gt;https://&lt;/code&gt; without anything else after that text.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>List the fonts used on a page, or an element</title>
@@ -60,6 +72,20 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/list-used-fonts-chrome.png&quot; alt=&quot;Chrome, with Devtools on the side, showing the Computed panel that contains the list of fonts&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;In Polypane&lt;/h3&gt;
+&lt;p&gt;In Polypane, you can see which font was used to render a given text-containing element:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Hold &lt;kbd&gt;Alt&lt;/kbd&gt;/&lt;kbd&gt;Option&lt;/kbd&gt; and hover over the text you want to find the font for.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The rendered font is shown in the tooltip.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On inspection, the font is also shown in the &lt;strong&gt;Element Overview&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/list-used-fonts-polypane.png&quot; alt=&quot;Polypane, with Devtools on the side, showing the Element Overview panel that contains the list of fonts and a node tooltip.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   

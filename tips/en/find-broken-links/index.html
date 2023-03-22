@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show web vitals</title>
+    <title>Find broken links</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/show-web-vitals/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/find-broken-links/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/show-web-vitals.png">
-    <meta property="og:description" content="Show web vitals">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/find-broken-links-polypane.png">
+    <meta property="og:description" content="Find broken links">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Show web vitals</a></h1>
+      <h1><a href="/">Find broken links</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -50,44 +50,42 @@
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li><li class="tag"><a href="/tag/testing/">testing</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/testing/">testing</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
-<h2 class="tip-title">Show web vitals</h2>
+<h2 class="tip-title">Find broken links</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>Web vitals are a set of metrics that help you determine how well-built your page is. You can <a href="https://web.dev/vitals/">learn more about them here</a>. These scores can be obtained with various online checks like <a href="https://web.dev/measure/">PageSpeed Insights</a>.</p>
-<p>In Polypane you can show the current web vitals score of a page and compare it to global averages (CrUX data), as well as find out which parts of the page contribute to your scores.</p>
-<p>To turn them on:</p>
-<ul>
-<li>Open the <strong>Settings menu</strong></li>
-<li>Toggle <strong>Web Vitals Status</strong></li>
-<li>Each pane now shows a small icon that will change from a circle to a square to a rectangle depending on your web vitals score.</li>
-<li>Hover the icon to show an overview:</li>
-</ul>
-<p><img src="/assets/img/show-web-vitals.png" alt="The web vitals tooltip in Polypane showing a good CLS, LCP and FCP score and a FID score that needs improvement."></p>
-<p>In the overview you will find for each web vital the score for the current page and a bar chart of what percentage of visits were good, needed improvement or were bad. Click the <strong>Eye icon</strong> in front of a web vital, when available, will show which elements contributed to that score. <a href="https://polypane.app/docs/web-vitals/">Learn more here</a>.</p>
+    <p><em>The link to X on page Y doesn't work</em> is probably a bug report you've received at some point. But how do you find these broken links before someone else does?</p>
+<p>In Polypane, the <strong>Outline Panel</strong> will show you all the links on the page, and check if they return a 200 status code, or if they return an error code (like 404, or 500).</p>
+<p><img src="/assets/img/find-broken-links-polypane.png" alt="Polypane, with the outline panel open. Two of the links show a 404 error code"></p>
+<p>Along with broken URLs, Polypane also finds unfinished/placeholder URLs like <code>mailto:</code> and <code>https://</code> without anything else after that text.</p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/find-broken-links">Find broken links</a>
-            <a href="/tips/en/find-broken-links" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-broken-links-polypane.png" alt="Polypane, with the outline panel open. Two of the links show a 404 error code">
-            </a>
-        </li><li>
-            <a href="/tips/en/prototype-content-changes-with-designmode">Prototype content changes with designMode</a>
-            <a href="/tips/en/prototype-content-changes-with-designmode" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/prototype-content-changes-with-designmode.gif" alt="Animation of editable web page with designMode on.">
-            </a>
-        </li><li>
             <a href="/tips/en/reload-page-after-change">Reload a page when there&#39;s changes on disk</a>
             <a href="/tips/en/reload-page-after-change" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/reload-page-after-change.png" alt="Polypane with the live reload panel and reload context menu visible.">
             </a>
+        </li><li>
+            <a href="/tips/en/copy-from-console">Copy an object from the console</a>
+            <a href="/tips/en/copy-from-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-from-console.png" alt="Chrome devtools&#39; console with a line of code using the copy() function.">
+            </a>
+        </li><li>
+            <a href="/tips/en/find-all-images-without-alt-text">Find all images without alternative text</a>
+            <a href="/tips/en/find-all-images-without-alt-text" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console.">
+            </a>
+        </li><li>
+            <a href="/tips/en/get-current-element-in-console">Get the selected element in the console</a>
+            <a href="/tips/en/get-current-element-in-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-current-element-in-console.jpg" alt="Safari&#39;s console showing how the $0 shortcut returns the selected element.">
+            </a>
         </li></ul>
 </div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
-        <p class="last-edit">Last edit: <time datetime="2023-01-06T00:00:00.000Z">1/6/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/show-web-vitals.md">Edit page</a></p></div>
+        <p class="last-edit">Last edit: <time datetime="2023-03-22T00:00:00.000Z">3/22/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-broken-links.md">Edit page</a></p></div>
 <script async src="/assets/share.js"></script>
 <script async src="/assets/dialog-lightbox.js"></script>
 
