@@ -441,38 +441,6 @@ main h2.tip-title {
   line-height: 2;
 }
 
-.share-button {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  border-radius: 3px;
-  border: 0;
-  font-size: 1rem;
-  text-decoration: underline;
-  cursor: pointer;
-  background: var(--background-color);
-  color: var(--text-color);
-  padding: 0.5rem;
-}
-
-.share-button::after {
-  content: "";
-  margin-left: 0.25rem;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtbmFtZT0iTGF5ZXIgMSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHg9IjBweCIgeT0iMHB4Ij48dGl0bGU+QXJ0Ym9hcmQgNDwvdGl0bGU+PGc+PHBhdGggZD0iTTM0LDc4SDY2QTEyLDEyLDAsMCwwLDc4LDY2VjU0SDcwVjY2YTQsNCwwLDAsMS00LDRIMzRhNCw0LDAsMCwxLTQtNFYzNGE0LDQsMCwwLDEsNC00SDQ2VjIySDM0QTEyLDEyLDAsMCwwLDIyLDM0VjY2QTEyLDEyLDAsMCwwLDM0LDc4WiI+PC9wYXRoPjxwYXRoIGQ9Ik00Mi4zNCw1Miw0OCw1Ny42NmwyMi0yMlY0Nmg4VjI2YTQsNCwwLDAsMC00LTRINTR2OEg2NC4zNFoiPjwvcGF0aD48L2c+PC9zdmc+");
-  display: inline-block;
-  width: 17px;
-  aspect-ratio: 1 / 1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: bottom;
-}
-
-@media (prefers-color-scheme: dark) {
-  .share-button::after {
-    filter: invert(100);
-  }
-}
-
 code {
   font-size: 1rem;
   background: var(--code-background-color);
@@ -729,4 +697,17 @@ footer a {
 }
 .lightbox button:hover {
   background-color: var(--accent-color);
+}
+
+.announcement {
+	background: var(--background-color);
+	padding: .5rem;
+	max-width: max-content;
+	margin: 0 auto 2rem auto;
+}
+
+.announcement p {
+	margin: 0;
+	text-align: center;
+	font-size: .9rem;
 }
