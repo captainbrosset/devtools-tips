@@ -55,6 +55,14 @@
   ],
   "block-resources.md": [
     {
+      "title": "Find broken links",
+      "image": {
+        "alt": "Polypane, with the outline panel open. Two of the links show a 404 error code",
+        "src": "../../assets/img/find-broken-links-polypane.png"
+      },
+      "link": "/tips/en/find-broken-links"
+    },
+    {
       "title": "See network request paths instead of names in the Network tool",
       "image": {
         "alt": "The Network tool in Edge, showing the contextual menu that's used to customize the network list columns",
@@ -1374,6 +1382,40 @@
       "link": "/tips/en/copy-from-console"
     }
   ],
+  "find-broken-links.md": [
+    {
+      "title": "Reload a page when there's changes on disk",
+      "image": {
+        "alt": "Polypane with the live reload panel and reload context menu visible.",
+        "src": "../../assets/img/reload-page-after-change.png"
+      },
+      "link": "/tips/en/reload-page-after-change"
+    },
+    {
+      "title": "Copy an object from the console",
+      "image": {
+        "alt": "Chrome devtools' console with a line of code using the copy() function.",
+        "src": "../../assets/img/copy-from-console.png"
+      },
+      "link": "/tips/en/copy-from-console"
+    },
+    {
+      "title": "Find all images without alternative text",
+      "image": {
+        "alt": "The output of the console.table command from above shown in the Firefox DevTools console.",
+        "src": "../../assets/img/find-all-images-without-alt-text.png"
+      },
+      "link": "/tips/en/find-all-images-without-alt-text"
+    },
+    {
+      "title": "Get the selected element in the console",
+      "image": {
+        "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
+        "src": "../../assets/img/get-current-element-in-console.jpg"
+      },
+      "link": "/tips/en/get-current-element-in-console"
+    }
+  ],
   "find-css-changes.md": [
     {
       "title": "Convert color formats",
@@ -2114,6 +2156,14 @@
   ],
   "list-used-fonts.md": [
     {
+      "title": "Convert font property units",
+      "image": {
+        "alt": "The fonts panel in Firefox, showing the unit conversion drop-down.",
+        "src": "../../assets/img/convert-font-units-1.png"
+      },
+      "link": "/tips/en/convert-font-units"
+    },
+    {
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
@@ -2136,14 +2186,6 @@
         "src": "../../assets/img/capture-node-creation-stacks.png"
       },
       "link": "/tips/en/capture-node-creation-stacks"
-    },
-    {
-      "title": "List all supported console functions",
-      "image": {
-        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "../../assets/img/list-console-functions.png"
-      },
-      "link": "/tips/en/list-console-functions"
     }
   ],
   "live-expressions.md": [
@@ -2639,6 +2681,14 @@
   ],
   "reload-page-after-change.md": [
     {
+      "title": "Find broken links",
+      "image": {
+        "alt": "Polypane, with the outline panel open. Two of the links show a 404 error code",
+        "src": "../../assets/img/find-broken-links-polypane.png"
+      },
+      "link": "/tips/en/find-broken-links"
+    },
+    {
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
@@ -2661,14 +2711,6 @@
         "src": "../../assets/img/track-focused-element.gif"
       },
       "link": "/tips/en/track-focused-element"
-    },
-    {
-      "title": "Visualize the tabbing order on the page",
-      "image": {
-        "alt": "The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.",
-        "src": "../../assets/img/visualize-tabbing-order.png"
-      },
-      "link": "/tips/en/visualize-tabbing-order"
     }
   ],
   "remove-annoying-overlays.md": [
@@ -2979,6 +3021,14 @@
     }
   ],
   "show-web-vitals.md": [
+    {
+      "title": "Find broken links",
+      "image": {
+        "alt": "Polypane, with the outline panel open. Two of the links show a 404 error code",
+        "src": "../../assets/img/find-broken-links-polypane.png"
+      },
+      "link": "/tips/en/find-broken-links"
+    },
     {
       "title": "Prototype content changes with designMode",
       "image": {
