@@ -5,11 +5,28 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-03-22T00:00:00.000Z</updated>
+  <updated>2023-03-28T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Replay a XHR request</title>
+    <link href="https://devtoolstips.org/tips/en/replay-xhr/"/>
+    <updated>2023-03-28T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/replay-xhr/</id>
+    <content type="html">&lt;p&gt;When you&#39;re debugging an XHR request to a backend service that doesn&#39;t respond with the right things it can be useful to send the request over and over again. Reloading the entire page to do so is tedious.&lt;/p&gt;
+&lt;p&gt;In Chrome DevTools, you can simply replay the same XHR request:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Network&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Find the XHR request in the list that you want to resend.&lt;/li&gt;
+&lt;li&gt;Right-click the request and click &lt;strong&gt;Replay XHR&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: you can also edit the request before resending it! To learn more, see &lt;a href=&quot;https://devtoolstips.org/tips/en/replay-xhr/edit-and-resend-network-requests.md&quot;&gt;Edit and resend faulty network requests to debug them&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/replay-xhr.png&quot; alt=&quot;Chrome&#39;s Network tool, with the Replay XHR contextual menu item&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Find broken links</title>
