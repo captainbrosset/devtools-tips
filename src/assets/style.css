@@ -711,3 +711,18 @@ footer a {
 	text-align: center;
 	font-size: .9rem;
 }
+
+.pagination {
+  margin-top: 2rem;
+}
+
+.pagination ul {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+}
+
+.pagination [aria-current] {
+  color: var(--text-color);
+  text-decoration: none;
+}
