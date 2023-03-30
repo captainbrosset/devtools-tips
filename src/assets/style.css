@@ -175,12 +175,6 @@ header nav {
   height: 100%;
 }
 
-@media only screen and (max-width: 400px) {
-  .header-menu {
-    flex-direction: column;
-  }
-}
-
 .header-menu li {
   white-space: nowrap;
 }
@@ -201,6 +195,19 @@ header nav {
   position: relative;
 }
 
+@media only screen and (max-width: 400px) {
+  .header-menu > li {
+    padding: 0.25rem;
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header-menu {
+    flex-direction: column;
+  }
+}
+
 .header-menu > li:hover,
 .header-menu > li:focus-within {
   background: var(--accent-color);
@@ -212,13 +219,14 @@ header nav {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   top: calc(100% - 0.25rem);
-  left: -4rem;
+  right: 0;
   min-width: calc(100% + 2rem);
   text-align: center;
   background: var(--accent-color);
   padding: 1rem;
   z-index: 1;
   border-radius: 5px;
+  border-start-end-radius: 0;
 }
 
 @media only screen and (max-width: 400px) {
@@ -720,6 +728,7 @@ footer a {
   display: flex;
   gap: .5rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .pagination [aria-current] {
