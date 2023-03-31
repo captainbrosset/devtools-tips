@@ -33,9 +33,13 @@ jobs:
           git commit -m "Regenerate see-also data" --allow-empty
           git push origin main
 
-      # Build with 11ty
+      # Build with 11ty.
       - name: Run the build script
         run: npm run build
+
+      # Regenerate the pagefind data.
+      - name: Generate pagefind data
+        run: npm run generate-pagefind
       
       # Publish to github pages
       - name: Deploy
