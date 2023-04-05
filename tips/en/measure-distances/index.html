@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event listeners are suppressed when paused</title>
+    <title>Measure arbitrary distances in the page</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/suppressed-event-listeners-when-paused/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/measure-distances/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/suppressed-event-listeners-when-paused.png">
-    <meta property="og:description" content="Event listeners are suppressed when paused">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/measure-distances.png">
+    <meta property="og:description" content="Measure arbitrary distances in the page">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -31,7 +31,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Event listeners are suppressed when paused</a></h1>
+      <h1><a href="/">Measure arbitrary distances in the page</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -53,45 +53,56 @@
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/productivity/">productivity</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
 </div>
-<h2 class="tip-title">Event listeners are suppressed when paused</h2>
+<h2 class="tip-title">Measure arbitrary distances in the page</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript.</p>
-<p>If you use breakpoints in the Sources (or Debugger) tab in DevTools to debug JavaScript, you should know that all event listeners are suppressed while paused at one of them.</p>
-<p>For example, if you have a button with an <code>onclick</code> handler, and you're paused at a breakpoint, then clicking that button won't execute the handler. It also won't execute it later when you resume execution.
-In fact, most DevTools display an overlay on top of the entire page that prevents you from accessing it at all.</p>
-<p>This also happens if you manually try to dispatch new events from the console using <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent"><code>dispatchEvent</code></a>. If there are handlers for these events, they also won't get called while execution is paused.</p>
-<p>The reason for this is that (ignoring workers) JavaScript on your page only runs in one thread. So while that thread is paused at one specific location, it's not supposed to be able to execute code from other locations.</p>
-<p><img src="/assets/img/suppressed-event-listeners-when-paused.png" alt="A page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page."></p>
+    <p>Do you need to find out the dimensions of any element or area in the page? Or perhaps the distance between two things?</p>
+<p>If you do, Firefox DevTools may be the right tool for the job.</p>
+<p>First, enable the tool, <strong>you only need to do this once</strong>:</p>
+<ol>
+<li>Open DevTools.</li>
+<li>Open the <strong>Settings</strong> panel by pressing <kbd>F1</kbd>.</li>
+<li>Scroll down to the <strong>Measure a portion of the page</strong>.</li>
+<li>The ruler icon now appears in the DevTools toolbar.</li>
+</ol>
+<p>Whenever you need to measure something in the page:</p>
+<ol>
+<li>Click the ruler icon in the toolbar.</li>
+<li>Click and drag in the page to start measuring an arbitrary area.</li>
+<li>You can also resize the measured area by dragging the handles after releasing the mouse button.</li>
+<li>To measure something else, just start click and dragging somewhere else.</li>
+<li>Click the ruler icon in the toolbar again to stop the tool.</li>
+</ol>
+<p><img src="/assets/img/measure-distances.png" alt="Firefox with DevTools docked on the side. The measure tool icon is in the DevTools toolbar and has been clicked. An arbitrary area has been defined on the page and its dimensions are displayed in a tooltip"></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/disable-event-listeners">Remove or disable event listeners</a>
-            <a href="/tips/en/disable-event-listeners" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/disable-event-listeners-firefox.png" alt="The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.">
-            </a>
-        </li><li>
-            <a href="/tips/en/measure-distances">Measure arbitrary distances in the page</a>
-            <a href="/tips/en/measure-distances" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/measure-distances.png" alt="Firefox with DevTools docked on the side. The measure tool icon is in the DevTools toolbar and has been clicked. An arbitrary area has been defined on the page and its dimensions are displayed in a tooltip">
-            </a>
-        </li><li>
-            <a href="/tips/en/monitor-element-events">Monitor all events dispatched on an element</a>
-            <a href="/tips/en/monitor-element-events" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/monitor-element-events.gif" alt="Animation showing how events get automatically logged when using the monitorEvents function.">
-            </a>
-        </li><li>
             <a href="/tips/en/replay-xhr">Replay a XHR request</a>
             <a href="/tips/en/replay-xhr" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/replay-xhr.png" alt="Chrome&#39;s Network tool, with the Replay XHR contextual menu item">
             </a>
+        </li><li>
+            <a href="/tips/en/sample-colors-from-the-page">Sample colors from the page</a>
+            <a href="/tips/en/sample-colors-from-the-page" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/sample-colors-from-the-page-1.gif" alt="Animation of the eyedropper tool being started from the Firefox main menu.">
+            </a>
+        </li><li>
+            <a href="/tips/en/track-focused-element">Detect the element with focus at any time</a>
+            <a href="/tips/en/track-focused-element" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/track-focused-element.gif" alt="Animation showing a web page with focus going through different element, and the Edge Console panel with the live expression showing a preview of the focused element.">
+            </a>
+        </li><li>
+            <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
+            <a href="/tips/en/emulate-color-schemes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
+            </a>
         </li></ul>
 </div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-        <p class="last-edit">Last edit: <time datetime="2021-06-30T00:00:00.000Z">6/30/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/suppressed-event-listeners-when-paused.md">Edit page</a></p></div>
+        <p class="last-edit">Last edit: <time datetime="2023-04-05T00:00:00.000Z">4/5/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/measure-distances.md">Edit page</a></p></div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
     </main>

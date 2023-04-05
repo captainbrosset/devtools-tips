@@ -5,11 +5,37 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-03-28T00:00:00.000Z</updated>
+  <updated>2023-04-05T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Measure arbitrary distances in the page</title>
+    <link href="https://devtoolstips.org/tips/en/measure-distances/"/>
+    <updated>2023-04-05T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/measure-distances/</id>
+    <content type="html">&lt;p&gt;Do you need to find out the dimensions of any element or area in the page? Or perhaps the distance between two things?&lt;/p&gt;
+&lt;p&gt;If you do, Firefox DevTools may be the right tool for the job.&lt;/p&gt;
+&lt;p&gt;First, enable the tool, &lt;strong&gt;you only need to do this once&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open DevTools.&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Settings&lt;/strong&gt; panel by pressing &lt;kbd&gt;F1&lt;/kbd&gt;.&lt;/li&gt;
+&lt;li&gt;Scroll down to the &lt;strong&gt;Measure a portion of the page&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The ruler icon now appears in the DevTools toolbar.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Whenever you need to measure something in the page:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click the ruler icon in the toolbar.&lt;/li&gt;
+&lt;li&gt;Click and drag in the page to start measuring an arbitrary area.&lt;/li&gt;
+&lt;li&gt;You can also resize the measured area by dragging the handles after releasing the mouse button.&lt;/li&gt;
+&lt;li&gt;To measure something else, just start click and dragging somewhere else.&lt;/li&gt;
+&lt;li&gt;Click the ruler icon in the toolbar again to stop the tool.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/measure-distances.png&quot; alt=&quot;Firefox with DevTools docked on the side. The measure tool icon is in the DevTools toolbar and has been clicked. An arbitrary area has been defined on the page and its dimensions are displayed in a tooltip&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Replay a XHR request</title>
