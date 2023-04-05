@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools Tips</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/4/">
+    
+    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
+    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P6B6NT4Y8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4P6B6NT4Y8');
+    </script>
+    
+  </head>
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+      <h1><a href="/">DevTools Tips</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <main id="maincontent">
+      <div class="announcement">
+        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
+      </div>
+      <div class="page-toolbar">
+  <h2>137 DevTools Tips</h2>
+  <div id="search" class="search"></div>
+<script src="/_pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+
+</div>
+<ul class="tips">
+<li class="hover-box tip ">
+  <a href="/tips/en/convert-color-formats/" class="tip-title">Convert color formats</a>
+  <a href="/tips/en/convert-color-formats/" class="tip-image"><img src="../../assets/img/convert-color-formats.gif" alt="Animation of the rules panel in Firefox, showing the color conversion." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Colors in CSS can be expressed in a number of different formats: keyword (e.g. blue), RGB, HSL, hexa...
+    <a href="/tips/en/convert-color-formats/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/change-color-theme/" class="tip-title">Change the color theme of DevTools</a>
+  <a href="/tips/en/change-color-theme/" class="tip-image"><img src="../../assets/img/change-color-theme.png" alt="the settings panel in Edge showing the Theme drop-down." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Chrome, Firefox and Safari all have a light and dark theme for their DevTools. Edge not only has tho...
+    <a href="/tips/en/change-color-theme/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/personalization/" title="See all tips about personalization">personalization</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/force-pwa-periodic-sync/" class="tip-title">Force PWA periodic background syncs</a>
+  <a href="/tips/en/force-pwa-periodic-sync/" class="tip-image"><img src="../../assets/img/force-pwa-periodic-sync.png" alt="The Application panel in Edge showing the periodic sync input and buttons." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    The periodic background sync API, available to PWAs is a great way to fetch new content while the us...
+    <a href="/tips/en/force-pwa-periodic-sync/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/network/" title="See all tips about network">network</a></li><li class="tag"><a href="/tag/pwa/" title="See all tips about pwa">pwa</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip unique-browser-feature">
+  <a href="/tips/en/play-sound-on-js-execution/" class="tip-title">Play a sound when a line of JavaScript is executed</a>
+  <a href="/tips/en/play-sound-on-js-execution/" class="tip-image"><img src="../../assets/img/play-sound-on-js-execution.gif" alt="Animation showing how to add the audio breakpoint in Safari Web Inspector." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Sometimes pausing execution when a line of JavaScript is executed is too much, sometimes you only wa...
+    <a href="/tips/en/play-sound-on-js-execution/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/visualize-screenreader-order/" class="tip-title">Visualize the screen reader order for elements within the page</a>
+  <a href="/tips/en/visualize-screenreader-order/" class="tip-image"><img src="../../assets/img/visualize-screenreader-order.png" alt="The source order viewer in Microsoft Edge, showing numbered boxes around elements." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Edge has an accessibility tab within the elements panel that, among other things, lets you visualize...
+    <a href="/tips/en/visualize-screenreader-order/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/block-resources/" class="tip-title">Block resources to test your site without CSS or JavaScript</a>
+  <a href="/tips/en/block-resources/" class="tip-image"><img src="../../assets/img/block-resources-1.png" alt="The Network panel in Edge showing the contextual menu with the &quot;block request url&quot; item." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    The various resources loaded by your site aren't always guaranteed to reach your users when they vis...
+    <a href="/tips/en/block-resources/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/network/" title="See all tips about network">network</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/prototype-content-changes-with-designmode/" class="tip-title">Prototype content changes with designMode</a>
+  <a href="/tips/en/prototype-content-changes-with-designmode/" class="tip-image"><img src="../../assets/img/prototype-content-changes-with-designmode.gif" alt="Animation of editable web page with designMode on." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    When creating or modifying a design prototype for the web, you may want to quickly edit content in t...
+    <a href="/tips/en/prototype-content-changes-with-designmode/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/capture-node-creation-stacks/" class="tip-title">Capture node creation stack traces</a>
+  <a href="/tips/en/capture-node-creation-stacks/" class="tip-image"><img src="../../assets/img/capture-node-creation-stacks.png" alt="Edge DevTools' Elements panel with the Stack Trace sidebar visible, showing a stack of Vue JS function calls that created an element on the TODOMVC sample app." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Have you ever wanted to know what caused a specific DOM node or element to be created in the page?
+W...
+    <a href="/tips/en/capture-node-creation-stacks/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/throttle-network-speed/" class="tip-title">Throttle the network speed to test your website on slower connections</a>
+  <a href="/tips/en/throttle-network-speed/" class="tip-image"><img src="../../assets/img/throttle-network-speed.png" alt="The Network panel in Edge showing the network throttling drop-down." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    While you may develop your website on a fast network connection at home or at work, your users may n...
+    <a href="/tips/en/throttle-network-speed/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/network/" title="See all tips about network">network</a></li><li class="tag"><a href="/tag/perf/" title="See all tips about perf">perf</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip unique-browser-feature">
+  <a href="/tips/en/edit-position/" class="tip-title">Edit CSS absolute and relative positions by dragging points in the page</a>
+  <a href="/tips/en/edit-position/" class="tip-image"><img src="../../assets/img/edit-position.gif" alt="Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Firefox features a position editor that lets you move elements in the page by drag and drop. This wo...
+    <a href="/tips/en/edit-position/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/copy-element-xpath/" class="tip-title">Copy an element&#39;s XPath expression</a>
+  <a href="/tips/en/copy-element-xpath/" class="tip-image"><img src="../../assets/img/copy-element-xpath.png" alt="The Elements panel in Edge showing the copy xpath option in the contextual menu." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    You can easily copy an element's XPath expression from DevTools. This is useful if you need this exp...
+    <a href="/tips/en/copy-element-xpath/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/convert-font-units/" class="tip-title">Convert font property units</a>
+  <a href="/tips/en/convert-font-units/" class="tip-image"><img src="../../assets/img/convert-font-units-1.png" alt="The fonts panel in Firefox, showing the unit conversion drop-down." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Font CSS properties such as font-size, line-height or letter-spacing can be expressed in multiple di...
+    <a href="/tips/en/convert-font-units/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/find-devtools-documentation/" class="tip-title">Find DevTools reference documentation</a>
+  <a href="/tips/en/find-devtools-documentation/" class="tip-image"><img src="../../assets/img/find-devtools-documentation.png" alt="The 4 documentation websites listed above." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    If you want to learn more about what other tools exist in a browser, or what features a given tool p...
+    <a href="/tips/en/find-devtools-documentation/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/help/" title="See all tips about help">help</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/drag-drop-dom-nodes/" class="tip-title">Drag and drop nodes in the DOM tree</a>
+  <a href="/tips/en/drag-drop-dom-nodes/" class="tip-image"><img src="../../assets/img/drag-drop-dom-nodes.gif" alt="Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    If you need to move nodes or elements around in the DOM tree, to re-order things in the page, you ca...
+    <a href="/tips/en/drag-drop-dom-nodes/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/suppressed-event-listeners-when-paused/" class="tip-title">Event listeners are suppressed when paused</a>
+  <a href="/tips/en/suppressed-event-listeners-when-paused/" class="tip-image"><img src="../../assets/img/suppressed-event-listeners-when-paused.png" alt="A page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript....
+    <a href="/tips/en/suppressed-event-listeners-when-paused/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/sample-colors-from-the-page/" class="tip-title">Sample colors from the page</a>
+  <a href="/tips/en/sample-colors-from-the-page/" class="tip-image"><img src="../../assets/img/sample-colors-from-the-page-1.gif" alt="Animation of the eyedropper tool being started from the Firefox main menu." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Being able to sample colors from the page is super useful. Firefox, Edge and Chrome all allow you to...
+    <a href="/tips/en/sample-colors-from-the-page/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/visualize-tabbing-order/" class="tip-title">Visualize the tabbing order on the page</a>
+  <a href="/tips/en/visualize-tabbing-order/" class="tip-image"><img src="../../assets/img/visualize-tabbing-order.png" alt="The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Users who do not or can't use a mouse or trackpad can use the tab key to navigate through focusable...
+    <a href="/tips/en/visualize-tabbing-order/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/style-console-messages/" class="tip-title">Apply CSS styles to console messages</a>
+  <a href="/tips/en/style-console-messages/" class="tip-image"><img src="../../assets/img/style-console-messages.png" alt="A styled console message in Edge." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    The console.log output can be styled in DevTools using CSS.
+console.log('%c Hello World', 'color: or...
+    <a href="/tips/en/style-console-messages/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/find-all-images-without-alt-text/" class="tip-title">Find all images without alternative text</a>
+  <a href="/tips/en/find-all-images-without-alt-text/" class="tip-image"><img src="../../assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    With HTML, you can add alternative text to images using the alt attribute. It can be used to add a t...
+    <a href="/tips/en/find-all-images-without-alt-text/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/outline-everything/" class="tip-title">Draw a box around all elements to debug your CSS and page structure</a>
+  <a href="/tips/en/outline-everything/" class="tip-image"><img src="../../assets/img/outline-everything.gif" alt="Animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Simple, yet powerful, * { outline: 1px solid red; } is a useful debugging trick that helps understan...
+    <a href="/tips/en/outline-everything/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/query-dom-from-console/" class="tip-title">Find DOM elements from the console</a>
+  <a href="/tips/en/query-dom-from-console/" class="tip-image"><img src="../../assets/img/query-dom-from-console.png" alt="Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    $ and $$ are 2 functions you can use in the console to find elements in the page.
+They are essential...
+    <a href="/tips/en/query-dom-from-console/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/persist-logs-across-pages/" class="tip-title">Persist console messages across page navigations and reloads</a>
+  <a href="/tips/en/persist-logs-across-pages/" class="tip-image"><img src="../../assets/img/persist-logs-across-pages.png" alt="Edge devtools' console showing the settings panel at the top, with the &quot;perserve log&quot; box checked." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    By default, the messages displayed in the console get removed as soon as you refresh the page (or na...
+    <a href="/tips/en/persist-logs-across-pages/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/simulate-color-vision-deficiencies/" class="tip-title">Simulate color vision deficiencies</a>
+  <a href="/tips/en/simulate-color-vision-deficiencies/" class="tip-image"><img src="../../assets/img/simulate-color-vision-deficiencies-1.png" alt="The color vision simulation drop-down in Firefox." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    People who visit your web pages may have different types of color vision deficiencies that, if you i...
+    <a href="/tips/en/simulate-color-vision-deficiencies/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/accessibility/" title="See all tips about accessibility">accessibility</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip ">
+  <a href="/tips/en/edit-css-angles/" class="tip-title">Edit CSS angles</a>
+  <a href="/tips/en/edit-css-angles/" class="tip-image"><img src="../../assets/img/edit-css-angles.gif" alt="Animation of the angle editor in Chrome, where a click is made on the angle swatch, and then the mouse is used to change the angle." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    In CSS, several different properties use angle unit values, such as the rotate() function of a trans...
+    <a href="/tips/en/edit-css-angles/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip unique-browser-feature">
+  <a href="/tips/en/edit-clip-path-shape-outside/" class="tip-title">Edit clip-path and shape-outside CSS properties by dragging points in the page</a>
+  <a href="/tips/en/edit-clip-path-shape-outside/" class="tip-image"><img src="../../assets/img/edit-clip-path-shape-outside.gif" alt="Animation of the shape editor in firefox, clicking on the Rules panel icon, and then moving points around in the page." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    The clip-path property is a great way to change the final shape of an element and give it the shape...
+    <a href="/tips/en/edit-clip-path-shape-outside/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/highlighter/" title="See all tips about highlighter">highlighter</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li>
+</ul>
+<nav class="pagination" aria-label="Pagination navigation">
+  <ul>
+    
+      <li>
+        <a href="/" >
+          Home
+        </a>
+      </li>
+    
+      <li>
+        <a href="/1/" >
+          Page 1
+        </a>
+      </li>
+    
+      <li>
+        <a href="/2/" >
+          Page 2
+        </a>
+      </li>
+    
+      <li>
+        <a href="/3/" >
+          Page 3
+        </a>
+      </li>
+    
+      <li>
+        <a href="/4/" aria-current="page">
+          Page 4
+        </a>
+      </li>
+    
+      <li>
+        <a href="/5/" >
+          Page 5
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+    </main>
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
+    </footer>
+    
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+    
+  </body>
+</html>

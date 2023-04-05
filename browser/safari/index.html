@@ -52,11 +52,9 @@
       </div>
       <div class="page-toolbar">
   <h2>57 <span class="browser-name">Safari</span> DevTools Tips </h2>
-  <label class="search">
-    <span>Filter list</span>
-    <input type="text">
-</label>
-<script async src="/assets/filter-tip-list.js"></script>
+  <div id="search" class="search"></div>
+<script src="/_pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+
 </div>
 <label class="unique-browser">
     <span>Show tips that only work in Safari</span>
