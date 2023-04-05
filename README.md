@@ -9,6 +9,7 @@ A collection of nice and simple cross-browser tips and tricks to get you more co
 ## Contributing
 
 You can help us in many different ways:
+
 * let your friends know about the site
 * file new issues if you notice a problem and have an idea for a new feature
 * fix bugs on the site

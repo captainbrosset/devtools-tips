@@ -108,17 +108,6 @@ module.exports = function (eleventyConfig) {
     return content; // no change done.
   });
 
-  // TODO: find a way to run this after dist has been created.
-  // PageFind indexes HTML content, so this needs to run after the build.
-  // But before the files are deployed to the server.
-  // if (process.env.BUILD_ENV !== "dev") {
-  //   // Index the site with PageFind after the build.
-  //   eleventyConfig.on("afterBuild", () => {
-  //     console.log("Indexing site with PageFind...");
-  //     execSync(`npx pagefind --source dist --glob \"**/*.html\"`, { encoding: 'utf-8' })
-  //   });
-  // }
-
   return {
     dir: {
       input: "src",
