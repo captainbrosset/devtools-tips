@@ -291,6 +291,10 @@ header nav {
   display: none;
 }
 
+.search .pagefind-ui__search-clear.pagefind-ui__suppressed {
+  display: none;
+}
+
 .search .pagefind-ui__search-clear {
   position: absolute;
   right: 1rem;
