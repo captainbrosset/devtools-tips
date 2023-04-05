@@ -37,6 +37,10 @@ jobs:
       - name: Run the build script
         run: npm run build
       
+      # Regenerate the pagefind data.
+      - name: Generate pagefind data
+        run: npm run generate-pagefind
+
       # Publish to github pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

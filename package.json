@@ -7,6 +7,7 @@
     "description": "A collection of useful, cross-browser, tips and tricks to get more comfortable with using DevTools.",
     "scripts": {
         "generate-see-also": "node generate-see-also.js",
+        "generate-pagefind": "npx pagefind --source dist --glob \"**/*.html\"",
         "build": "npx @11ty/eleventy",
         "watch": "npx @11ty/eleventy --serve"
     },
