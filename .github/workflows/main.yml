@@ -10,22 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Check-out the repo under $GITHUB_WORKSPACE
-      - name: Checkout repo
+      - name: Check-out the repository
         uses: actions/checkout@v2
 
-      # Install deps
-      - name: Install deps
+      - name: Install the npm dependencies
         uses: bahmutov/npm-install@v1
       
-      # Set the environment vars
-      - name: Set environment
+      - name: Set environment variables
         run: echo "AUTHOR_API_TOKEN"=${{ secrets.AUTHOR_API_TOKEN }} >> $GITHUB_ENV
 
-      # Regenerate and commit the see-also data and check-in.
-      - name: Generate see-also data
+      - name: Re-generate the SEE-ALSO data
         run: npm run generate-see-also
-      - name: Commit see-also data
+
+      - name: Commit the new SEE-ALSO data
         run: |
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           git config --local user.name "${{ github.actor }}"
@@ -33,20 +30,13 @@ jobs:
           git commit -m "Regenerate see-also data" --allow-empty
           git push origin main
 
-      # Build with 11ty.
-      - name: Run the build script
+      - name: Run the eleventy build script
         run: npm run build
 
-      # Regenerate the pagefind data.
-      - name: Generate pagefind data
+      - name: Re-generate the PAGEFIND data
         run: npm run generate-pagefind
       
-      # Regenerate the pagefind data.
-      - name: Generate pagefind data
-        run: npm run generate-pagefind
-
-      # Publish to github pages
-      - name: Deploy
+      - name: Deploy the site to the gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./dist
