@@ -95,8 +95,11 @@
     </footer>
 
     {% if env.BUILD_ENV !== "dev" %}
-      {# Pixel analytics #}
-      <img src="https://patrickbrosset.com/pixel.php" style="display: none;" />
+    {# Pixel analytics #}
+    <script>
+      const pixel = new Image();
+      pixel.src = 'https://patrickbrosset.com/pixel.php?cachebust=' + Date.now();
+    </script>
     {% endif %}
 
     {% if env.BUILD_ENV !== "dev" %}
