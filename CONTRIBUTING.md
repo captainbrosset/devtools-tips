@@ -15,7 +15,7 @@ The page should auto-reload as you make changes to source code.
 The site is build by default in `production` mode, but you can also choose to build in `dev` mode. Building in `dev` mode does the following things:
 
 * The service worker code is removed from the build site, making it easier to reload your changes.
-* The Google Analytics code is also removed.
+* The analytics code is also removed.
 
 To build in `dev` mode:
 

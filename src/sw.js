@@ -55,7 +55,7 @@ self.addEventListener('fetch', event => {
 
     try {
       const fetchResponse = await fetch(event.request);
-      if (!event.request.url.includes('google-analytics') && !event.request.url.includes('browser-sync')) {
+      if (!event.request.url.includes('pixel.php') && !event.request.url.includes('browser-sync')) {
         // Save the new resource in the cache (responses are streams, so we need to clone in order to use it here).
         cache.put(event.request, fetchResponse.clone());
       }
