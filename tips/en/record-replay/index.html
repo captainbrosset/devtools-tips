@@ -111,8 +111,11 @@ Sometimes you just have to click the same buttons and do the same actions every 
     </footer>
 
     
-      
-      <img src="https://patrickbrosset.com/pixel.php" style="display: none;" />
+    
+    <script>
+      const pixel = new Image();
+      pixel.src = 'https://patrickbrosset.com/pixel.php?cachebust=' + Date.now();
+    </script>
     
 
     

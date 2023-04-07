@@ -101,8 +101,11 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
     </footer>
 
     
-      
-      <img src="https://patrickbrosset.com/pixel.php" style="display: none;" />
+    
+    <script>
+      const pixel = new Image();
+      pixel.src = 'https://patrickbrosset.com/pixel.php?cachebust=' + Date.now();
+    </script>
     
 
     

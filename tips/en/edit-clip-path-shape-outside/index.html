@@ -101,8 +101,11 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
     </footer>
 
     
-      
-      <img src="https://patrickbrosset.com/pixel.php" style="display: none;" />
+    
+    <script>
+      const pixel = new Image();
+      pixel.src = 'https://patrickbrosset.com/pixel.php?cachebust=' + Date.now();
+    </script>
     
 
     
