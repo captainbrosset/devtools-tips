@@ -104,7 +104,10 @@ You can use this property to make an element be a circle, an ellipse, a polygon 
     
     <script>
       const pixel = new Image();
-      pixel.src = 'https://patrickbrosset.com/pixel.php?cachebust=' + Date.now();
+      let url = 'https://patrickbrosset.com/pixel.php';
+      url += '?t=' + Date.now();
+      url += '&url=' + encodeURIComponent(window.location.href);
+      pixel.src = url;
     </script>
     
 
