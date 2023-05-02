@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find the most expensive CSS selectors</title>
+    <title>Debug your print CSS styles by simulating print media</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/find-expensive-selectors/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/debug-print-css-styles/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/find-expensive-selectors.png">
-    <meta property="og:description" content="Find the most expensive CSS selectors">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/debug-print-css-styles-firefox.png">
+    <meta property="og:description" content="Debug your print CSS styles by simulating print media">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -21,7 +21,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Find the most expensive CSS selectors</a></h1>
+      <h1><a href="/">Debug your print CSS styles by simulating print media</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -43,54 +43,59 @@
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/perf/">perf</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/testing/">testing</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
 </div>
-<h2 class="tip-title">Find the most expensive CSS selectors</h2>
+<h2 class="tip-title">Debug your print CSS styles by simulating print media</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>When it comes to performance, we often spend time improving our JavaScript code. But CSS has a role to play too.
-CSS selectors, in particular, can sometimes be slow to match to the DOM of the page.</p>
-<p>Before rewriting all of your CSS selectors based on some &quot;guidelines&quot; you might have found on the web, it's really important to measure the performance of your webpage first. Don't make your selectors unnecessarily complicated because someone somewhere said that a particular selector was slow. Instead, measure the performance of your page, make sure that CSS is having a negative impact, improve your code, and then measure again!</p>
-<p>So, now, how do you know if CSS is having a negative impact, and how to tell which CSS selectors may be at cause?</p>
-<p>Microsoft Edge has a very useful new feature starting with Edge version 110 called <strong>Selector Stats</strong> that can help with this. Here's how to use it:</p>
+    <p>If you work on a webpage that's supposed to be printed, you probably want to test your print CSS styles. You can use your browser's print preview of course, but what if you need to debug the CSS?</p>
+<p>DevTools has a way to simulate the print media right in the browser tab where DevTools is opened. This way you don't need to open the browser's print preview (or worse, actually print the webpage on a sheet of paper). You can stay in the same tab, and use the same DevTools to debug your print-specific styles!</p>
+<ul>
+<li>
+<p>In Firefox:</p>
 <ol>
-<li>Open the <strong>Performance</strong> tool in Edge.</li>
-<li>Open the <strong>Settings</strong> of the tool by using the little cog icon in the top-right corner of the tool.</li>
-<li>Check the <strong>Enable advanced rendering instrumentation (slow)</strong> box.</li>
-<li>Start the perf recording, run through your scenario, and then stop the recording.</li>
-<li>When the profile has loaded, identify the long <strong>Recalculate Style</strong> blocks (they are purple).</li>
-<li>Click on one of them.</li>
-<li>In the details section below, the <strong>Selector Stats</strong> tab appears, click on it.</li>
+<li>Open the <strong>Inspector</strong> tool.</li>
+<li>In the toolbar of the <strong>Rules</strong> sidebar tab, use the <strong>Toggle print media simulation for the page</strong> button.</li>
 </ol>
-<p>You now have access to the list of CSS selectors that got matched against the DOM tree of the web page during this style recalculation task. You can sort the table by elapsed time or match count to get an understanding of which selectors needed the most time to run.</p>
-<p><img src="/assets/img/find-expensive-selectors.png" alt="The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it."></p>
+<p><img src="/assets/img/debug-print-css-styles-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the print media button"></p>
+</li>
+<li>
+<p>In Edge or Chrome:</p>
+<ol>
+<li>Open the <strong>Rendering</strong> tool (you can access it easily by using the <a href="/tips/en/execute-commands"><strong>Command menu</strong></a> and typing &quot;Rendering&quot;).</li>
+<li>Scroll down to the <strong>Emulate CSS media type</strong> drop-down.</li>
+<li>Choose the <strong>Print</strong> option.</li>
+</ol>
+<p><img src="/assets/img/debug-print-css-styles-chrome.png" alt="Chrome, with DevTools open, showing the Rendering tool in the drawer, with the media emulation drop-down showing the Print option"></p>
+</li>
+</ul>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/debug-css-cascade-layers">Visualize and debug CSS cascade layers</a>
-            <a href="/tips/en/debug-css-cascade-layers" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/debug-css-cascade-layers-firefox.png" alt="Firefox showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules.">
+            <a href="/tips/en/list-console-functions">List all supported console functions</a>
+            <a href="/tips/en/list-console-functions" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
             </a>
         </li><li>
-            <a href="/tips/en/debug-print-css-styles">Debug your print CSS styles by simulating print media</a>
-            <a href="/tips/en/debug-print-css-styles" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/debug-print-css-styles-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the print media button">
+            <a href="/tips/en/replay-xhr">Replay a XHR request</a>
+            <a href="/tips/en/replay-xhr" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/replay-xhr.png" alt="Chrome&#39;s Network tool, with the Replay XHR contextual menu item">
             </a>
         </li><li>
-            <a href="/tips/en/highlight-matching-elements">Highlight all the elements that a CSS rule matches</a>
-            <a href="/tips/en/highlight-matching-elements" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page.">
+            <a href="/tips/en/zoom-devtools-content">Zoom the DevTools UI to your liking</a>
+            <a href="/tips/en/zoom-devtools-content" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/zoom-devtools-content.gif" alt="Animation showing the UI of Chrome DevTools being zoomed in and out.">
             </a>
         </li><li>
-            <a href="/tips/en/inspect-css-animations">Inspect CSS animations</a>
-            <a href="/tips/en/inspect-css-animations" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/inspect-css-animation.gif" alt="Animation of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector.">
+            <a href="/tips/en/debugger-statement">Use the debugger statement to pause script execution</a>
+            <a href="/tips/en/debugger-statement" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement.">
             </a>
         </li></ul>
 </div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-        <p class="last-edit">Last edit: <time datetime="2022-12-14T00:00:00.000Z">12/14/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-expensive-selectors.md">Edit page</a></p></div>
+        <p class="last-edit">Last edit: <time datetime="2023-05-02T00:00:00.000Z">5/2/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-print-css-styles.md">Edit page</a></p></div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
     </main>

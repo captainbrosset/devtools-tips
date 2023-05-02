@@ -5,11 +5,40 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-04-05T00:00:00.000Z</updated>
+  <updated>2023-05-02T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Debug your print CSS styles by simulating print media</title>
+    <link href="https://devtoolstips.org/tips/en/debug-print-css-styles/"/>
+    <updated>2023-05-02T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/debug-print-css-styles/</id>
+    <content type="html">&lt;p&gt;If you work on a webpage that&#39;s supposed to be printed, you probably want to test your print CSS styles. You can use your browser&#39;s print preview of course, but what if you need to debug the CSS?&lt;/p&gt;
+&lt;p&gt;DevTools has a way to simulate the print media right in the browser tab where DevTools is opened. This way you don&#39;t need to open the browser&#39;s print preview (or worse, actually print the webpage on a sheet of paper). You can stay in the same tab, and use the same DevTools to debug your print-specific styles!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In Firefox:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Inspector&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;In the toolbar of the &lt;strong&gt;Rules&lt;/strong&gt; sidebar tab, use the &lt;strong&gt;Toggle print media simulation for the page&lt;/strong&gt; button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-print-css-styles-firefox.png&quot; alt=&quot;Firefox, with DevTools open, showing the Inspector tool, with the print media button&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Edge or Chrome:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Rendering&lt;/strong&gt; tool (you can access it easily by using the &lt;a href=&quot;https://devtoolstips.org/tips/en/debug-print-css-styles/execute-commands.md&quot;&gt;&lt;strong&gt;Command menu&lt;/strong&gt;&lt;/a&gt; and typing &amp;quot;Rendering&amp;quot;).&lt;/li&gt;
+&lt;li&gt;Scroll down to the &lt;strong&gt;Emulate CSS media type&lt;/strong&gt; drop-down.&lt;/li&gt;
+&lt;li&gt;Choose the &lt;strong&gt;Print&lt;/strong&gt; option.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-print-css-styles-chrome.png&quot; alt=&quot;Chrome, with DevTools open, showing the Rendering tool in the drawer, with the media emulation drop-down showing the Print option&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Measure arbitrary distances in the page</title>
