@@ -1,6 +1,6 @@
 ---
 date: 2023-05-02
-authors: Patrick Brosset
+authors: Patrick Brosset, Kilian Valkhof
 title: Debug your print CSS styles by simulating print media
 tags:
   ["css", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
@@ -27,7 +27,7 @@ DevTools has a way to simulate the print media right in the browser tab where De
 
 * In Polypane:
 
-    1. Open the **Emulation options**
+    1. Open the **Emulation options**.
     2. Toggle **Media type** to "print".
 
     _Tip: open two panes side-by-side and set one to print media to compare the print and screen versions of your page._
