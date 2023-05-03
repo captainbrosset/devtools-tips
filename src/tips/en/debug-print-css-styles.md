@@ -3,7 +3,7 @@ date: 2023-05-02
 authors: Patrick Brosset
 title: Debug your print CSS styles by simulating print media
 tags:
-  ["css", "testing", "browser:edge", "browser:chrome", "browser:firefox"]
+  ["css", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
 ---
 
 If you work on a webpage that's supposed to be printed, you probably want to test your print CSS styles. You can use your browser's print preview of course, but what if you need to debug the CSS?
@@ -24,3 +24,12 @@ DevTools has a way to simulate the print media right in the browser tab where De
     1. Choose the **Print** option.
 
     ![Chrome, with DevTools open, showing the Rendering tool in the drawer, with the media emulation drop-down showing the Print option](../../assets/img/debug-print-css-styles-chrome.png)
+
+* In Polypane:
+
+    1. Open the **Emulation options**
+    2. Toggle **Media type** to "print".
+
+    _Tip: open two panes side-by-side and set one to print media to compare the print and screen versions of your page._
+
+    ![Polypane with the Emulation options open, showing the media type option set to "print"](../../assets/img/debug-print-css-styles-polypane.png) 
