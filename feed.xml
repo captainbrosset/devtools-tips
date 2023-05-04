@@ -36,6 +36,15 @@
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-print-css-styles-chrome.png&quot; alt=&quot;Chrome, with DevTools open, showing the Rendering tool in the drawer, with the media emulation drop-down showing the Print option&quot; /&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Polypane:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Emulation options&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Toggle &lt;strong&gt;Media type&lt;/strong&gt; to &amp;quot;print&amp;quot;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Tip: open two panes side-by-side and set one to print media to compare the print and screen versions of your page.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-print-css-styles-polypane.png&quot; alt=&quot;Polypane with the Emulation options open, showing the media type option set to &amp;quot;print&amp;quot;&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>
