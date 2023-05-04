@@ -627,12 +627,20 @@
       "link": "/tips/en/list-console-functions"
     },
     {
-      "title": "Replay a XHR request",
+      "title": "Paste multiple CSS declarations at once",
       "image": {
-        "alt": "Chrome's Network tool, with the Replay XHR contextual menu item",
-        "src": "../../assets/img/replay-xhr.png"
+        "alt": "Animation showing how pasting several declarations in a CSS rule in DevTools creates them all.",
+        "src": "../../assets/img/paste-several-css-declarations.gif"
       },
-      "link": "/tips/en/replay-xhr"
+      "link": "/tips/en/past-several-css-declarations"
+    },
+    {
+      "title": "Apply CSS styles to console messages",
+      "image": {
+        "alt": "A styled console message in Edge.",
+        "src": "../../assets/img/style-console-messages.png"
+      },
+      "link": "/tips/en/style-console-messages"
     },
     {
       "title": "Zoom the DevTools UI to your liking",
@@ -641,14 +649,6 @@
         "src": "../../assets/img/zoom-devtools-content.gif"
       },
       "link": "/tips/en/zoom-devtools-content"
-    },
-    {
-      "title": "Use the debugger statement to pause script execution",
-      "image": {
-        "alt": "The Sources panel in Edge, paused at a debugger statement.",
-        "src": "../../assets/img/debugger-statement.png"
-      },
-      "link": "/tips/en/debugger-statement"
     }
   ],
   "debug-unwanted-scrollbars.md": [
@@ -1201,12 +1201,12 @@
       "link": "/tips/en/replay-xhr"
     },
     {
-      "title": "Debug your print CSS styles by simulating print media",
+      "title": "Detect low color contrast issues",
       "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the print media button",
-        "src": "../../assets/img/debug-print-css-styles-firefox.png"
+        "alt": "The CSS Overview panel in Chrome, showing the color contrast issues section.",
+        "src": "../../assets/img/detect-low-color-contrast-css-overview.png"
       },
-      "link": "/tips/en/debug-print-css-styles"
+      "link": "/tips/en/detect-low-color-contrast"
     }
   ],
   "emulate-forced-colors.md": [],
@@ -1578,14 +1578,6 @@
       "link": "/tips/en/debug-css-cascade-layers"
     },
     {
-      "title": "Debug your print CSS styles by simulating print media",
-      "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the print media button",
-        "src": "../../assets/img/debug-print-css-styles-firefox.png"
-      },
-      "link": "/tips/en/debug-print-css-styles"
-    },
-    {
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
@@ -1600,6 +1592,14 @@
         "src": "../../assets/img/inspect-css-animation.gif"
       },
       "link": "/tips/en/inspect-css-animations"
+    },
+    {
+      "title": "Jump from a CSS variable usage to where it is defined",
+      "image": {
+        "alt": "Animation of clicking on a custom property link in the Styles panel in Edge.",
+        "src": "../../assets/img/jump-to-css-variable.gif"
+      },
+      "link": "/tips/en/jump-to-css-variable"
     }
   ],
   "find-html-parsing-errors.md": [],
@@ -1742,14 +1742,6 @@
     }
   ],
   "format-console-messages.md": [
-    {
-      "title": "Debug your print CSS styles by simulating print media",
-      "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the print media button",
-        "src": "../../assets/img/debug-print-css-styles-firefox.png"
-      },
-      "link": "/tips/en/debug-print-css-styles"
-    },
     {
       "title": "Copy an elements styles",
       "image": {
@@ -3682,14 +3674,6 @@
         "src": "../../assets/img/multi-line-console-firefox.png"
       },
       "link": "/tips/en/multi-line-console"
-    },
-    {
-      "title": "Debug your print CSS styles by simulating print media",
-      "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the print media button",
-        "src": "../../assets/img/debug-print-css-styles-firefox.png"
-      },
-      "link": "/tips/en/debug-print-css-styles"
     }
   ],
   "view-logs-for-other-browsers-on-ios.md": [
