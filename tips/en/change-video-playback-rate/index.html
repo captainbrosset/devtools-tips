@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualize the effect of CSS transforms</title>
+    <title>Speed up or slow down a video</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/visualize-css-transforms/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/change-video-playback-rate/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/visualize-css-transforms.gif">
-    <meta property="og:description" content="Visualize the effect of CSS transforms">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/change-video-playback-rate.png">
+    <meta property="og:description" content="Speed up or slow down a video">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -21,7 +21,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Visualize the effect of CSS transforms</a></h1>
+      <h1><a href="/">Speed up or slow down a video</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -43,23 +43,23 @@
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/highlighter/">highlighter</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/personalization/">personalization</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
-<h2 class="tip-title">Visualize the effect of CSS transforms</h2>
+<h2 class="tip-title">Speed up or slow down a video</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>CSS transforms can sometimes be hard to wrap your head around, especially when chaining multiple transformations.</p>
-<p>Firefox helps with a cool visualization tool that allows you to see how and where the element was before being transformed, <strong>and</strong> how it is now.</p>
-<p>Being able to compare the 2 states at the same time makes it easier to debug your <code>transform</code> CSS properties.</p>
-<ul>
-<li>Select the transformed element in the <strong>Inspector</strong>.</li>
-<li>Find the <code>transform</code> property in the <strong>Rules</strong> sidebar panel.</li>
-<li>Hover over the property value.</li>
-<li>The on-page highlighter appears.</li>
-</ul>
-<p><img src="/assets/img/visualize-css-transforms.gif" alt="Animation showing how the CSS transform highlighter appears on the page when hovering over a transform CSS property in the Rules panel."></p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Visualize_transforms">Learn more about it here</a>.</p>
+    <p>You can speed up or slow down a video on a website by using the <a href="https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/playbackRate"><code>playbackRate</code></a> property of the video element.</p>
+<p>This can be very useful for when the website makes it tricky to do this in the UI!</p>
+<ol>
+<li>Open DevTools.</li>
+<li>Select the <code>&lt;video&gt;</code> element by either right-clicking on it and choosing <strong>Inspect Element</strong> or by using the <strong>Elements</strong> or <strong>Inspector</strong> tool.</li>
+<li>Go to the <strong>Console</strong> tool.</li>
+<li>Type <code>$0.playbackRate = 2</code> and press <strong>Enter</strong>.</li>
+</ol>
+<p>This number you choose is the multiplier for the playback speed. So <code>2</code> will make the video play twice as fast, <code>0.5</code> will make it play at half the speed, etc.</p>
+<p>Thank you <a href="https://twitter.com/umaar/status/1654079892240171010">Umar Hansa</a> for this tip!</p>
+<p><img src="/assets/img/change-video-playback-rate.png" alt="Screenshot of the Console tool showing the playbackRate property"></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
@@ -69,23 +69,23 @@
                 <img loading="lazy" src="/assets/img/convert-font-units-1.png" alt="The fonts panel in Firefox, showing the unit conversion drop-down.">
             </a>
         </li><li>
-            <a href="/tips/en/convert-color-formats">Convert color formats</a>
-            <a href="/tips/en/convert-color-formats" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/convert-color-formats.gif" alt="Animation of the rules panel in Firefox, showing the color conversion.">
+            <a href="/tips/en/get-current-element-in-console">Get the selected element in the console</a>
+            <a href="/tips/en/get-current-element-in-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-current-element-in-console.jpg" alt="Safari&#39;s console showing how the $0 shortcut returns the selected element.">
             </a>
         </li><li>
-            <a href="/tips/en/find-inactive-styles">Find inactive CSS styles</a>
-            <a href="/tips/en/find-inactive-styles" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-inactive-styles.png" alt="Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.">
+            <a href="/tips/en/get-recently-selected-dom-nodes-in-console">Get the recently selected DOM nodes in the console</a>
+            <a href="/tips/en/get-recently-selected-dom-nodes-in-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-recently-selected-dom-nodes-in-console.gif" alt="Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.">
             </a>
         </li><li>
-            <a href="/tips/en/change-video-playback-rate">Speed up or slow down a video</a>
-            <a href="/tips/en/change-video-playback-rate" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/change-video-playback-rate.png" alt="Screenshot of the Console tool showing the playbackRate property">
+            <a href="/tips/en/monitor-element-events">Monitor all events dispatched on an element</a>
+            <a href="/tips/en/monitor-element-events" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/monitor-element-events.gif" alt="Animation showing how events get automatically logged when using the monitorEvents function.">
             </a>
         </li></ul>
 </div><div class="tip-footer"><div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-        <p class="last-edit">Last edit: <time datetime="2021-12-06T00:00:00.000Z">12/6/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/visualize-css-transforms.md">Edit page</a></p></div>
+        <p class="last-edit">Last edit: <time datetime="2023-05-05T00:00:00.000Z">5/5/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/change-video-playback-rate.md">Edit page</a></p></div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
     </main>
