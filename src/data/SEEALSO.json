@@ -141,6 +141,40 @@
       "link": "/tips/en/use-another-language"
     }
   ],
+  "change-video-playback-rate.md": [
+    {
+      "title": "Convert font property units",
+      "image": {
+        "alt": "The fonts panel in Firefox, showing the unit conversion drop-down.",
+        "src": "../../assets/img/convert-font-units-1.png"
+      },
+      "link": "/tips/en/convert-font-units"
+    },
+    {
+      "title": "Get the selected element in the console",
+      "image": {
+        "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
+        "src": "../../assets/img/get-current-element-in-console.jpg"
+      },
+      "link": "/tips/en/get-current-element-in-console"
+    },
+    {
+      "title": "Get the recently selected DOM nodes in the console",
+      "image": {
+        "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
+        "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
+      },
+      "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
+    },
+    {
+      "title": "Monitor all events dispatched on an element",
+      "image": {
+        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
+        "src": "../../assets/img/monitor-element-events.gif"
+      },
+      "link": "/tips/en/monitor-element-events"
+    }
+  ],
   "check-bfcache-readiness.md": [
     {
       "title": "Zoom the DevTools UI to your liking",
@@ -2728,14 +2762,17 @@
       "link": "/tips/en/monitor-element-events"
     },
     {
+      "title": "Speed up or slow down a video",
+      "image": {
+        "alt": "Screenshot of the Console tool showing the playbackRate property",
+        "src": "../../assets/img/change-video-playback-rate.png"
+      },
+      "link": "/tips/en/change-video-playback-rate"
+    },
+    {
       "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
       "image": null,
       "link": "/tips/en/console-table-group-assert"
-    },
-    {
-      "title": "Debug popups that appear on hover using the debugger statement",
-      "image": null,
-      "link": "/tips/en/debug-js-hover-2"
     }
   ],
   "record-replay.md": [
@@ -3737,12 +3774,12 @@
       "link": "/tips/en/find-inactive-styles"
     },
     {
-      "title": "Copy CSS selector of an element",
+      "title": "Speed up or slow down a video",
       "image": {
-        "alt": "Edge DevTools, showing how to access the Copy CSS selector option.",
-        "src": "../../assets/img/copy-css-selector.png"
+        "alt": "Screenshot of the Console tool showing the playbackRate property",
+        "src": "../../assets/img/change-video-playback-rate.png"
       },
-      "link": "/tips/en/copy-css-selector"
+      "link": "/tips/en/change-video-playback-rate"
     }
   ],
   "visualize-screenreader-order.md": [
