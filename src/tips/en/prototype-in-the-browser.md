@@ -26,7 +26,7 @@ Turns out a quick way to do this is to start it directly in the browser, instead
 1. When I'm done coding in the browser and feel like I have what I wanted, it's time to export my changes so they don't disappear when close the browser window.
 
    * To export the HTML code, I usually do this: right-click on the `<body>` element and choose **Copy inner HTML**.
-   * To export the CSS code: in Firefox, I open the **Changes** sidebar panel and click **Copy All Changes** ([learn more](../find-css-changes)), and Chrome/Edge I go to **Sources**, find the **inspector-stylesheet** source and copy the content from it.
+   * To export the CSS code: in Firefox, I open the **Changes** sidebar panel and click **Copy All Changes** ([learn more](./find-css-changes.md)), and Chrome/Edge I go to **Sources**, find the **inspector-stylesheet** source and copy the content from it.
 
 ![Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.](../../assets/img/prototype-in-the-browser.png)
 

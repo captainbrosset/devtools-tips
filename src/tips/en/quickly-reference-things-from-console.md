@@ -8,4 +8,4 @@ isTweet: true
 
 https://twitter.com/ChatterboxDev/status/1506299424712142864
 
-Also learn more about [getting the selected element in the console](../get-current-element-in-console)
+Also learn more about [getting the selected element in the console](./get-current-element-in-console.md)

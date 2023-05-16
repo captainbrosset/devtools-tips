@@ -6,7 +6,7 @@ tags: ["accessibility", "browser:edge", "browser:chrome", "browser:polypane"]
 isTweet: true
 ---
 
-With DevTools you can [detect low color contrast issues](../detect-low-color-contrast) which is great. But DevTools in Chrome, Polypane and Edge go one step further and help you fix these issues too! [Domi](https://twitter.com/domizajac) tells us all about it.
+With DevTools you can [detect low color contrast issues](./detect-low-color-contrast.md) which is great. But DevTools in Chrome, Polypane and Edge go one step further and help you fix these issues too! [Domi](https://twitter.com/domizajac) tells us all about it.
 
 https://twitter.com/domizajac/status/1507310081624444929
 

@@ -18,5 +18,5 @@ Thanks to [Adam Argyle](https://twitter.com/argyleink) for [sharing this on Twit
 
 Related tips:
 
-* [Detect low color contrast issues](../detect-low-color-contrast).
-* [Fix low color contrast issues](../fix-color-contrast-issues).
+* [Detect low color contrast issues](./detect-low-color-contrast.md).
+* [Fix low color contrast issues](./fix-color-contrast-issues.md).

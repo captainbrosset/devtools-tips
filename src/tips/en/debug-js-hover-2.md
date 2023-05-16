@@ -6,7 +6,7 @@ tags: ["debug", "browser:edge", "browser:chrome", "browser:safari", "browser:fir
 isTweet: true
 ---
 
-In [Debug popups that appear on hover using JS](../debug-js-hover) we described how to pause the debugger to inspect popups that appear on hover and disappear as soon as the cursor moves away.
+In [Debug popups that appear on hover using JS](./debug-js-hover.md) we described how to pause the debugger to inspect popups that appear on hover and disappear as soon as the cursor moves away.
 
 Here's another way to do this by [Zain Zafar](https://twitter.com/mzainzafar90) which involves using the `debugger` statement in the **Console**. Pretty neat!
 
