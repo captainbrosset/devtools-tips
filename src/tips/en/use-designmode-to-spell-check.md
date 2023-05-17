@@ -1,5 +1,6 @@
 ---
 date: 2022-05-02
+authors: Patrick Brosset
 title: Use document.designMode to spell check your webpage
 tags: ["console", "productivity", "testing", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
