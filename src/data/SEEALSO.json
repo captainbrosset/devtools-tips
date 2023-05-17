@@ -17,6 +17,14 @@
       "link": "/tips/en/monitor-element-events"
     },
     {
+      "title": "Use document.designMode to spell check your webpage",
+      "image": {
+        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
+        "src": "../../assets/img/use-designmode-to-spell-check.png"
+      },
+      "link": "/tips/en/use-designmode-to-spell-check"
+    },
+    {
       "title": "Get the recently selected DOM nodes in the console",
       "image": {
         "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
@@ -51,6 +59,14 @@
         "src": "../../assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
+    },
+    {
+      "title": "Use document.designMode to spell check your webpage",
+      "image": {
+        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
+        "src": "../../assets/img/use-designmode-to-spell-check.png"
+      },
+      "link": "/tips/en/use-designmode-to-spell-check"
     }
   ],
   "block-resources.md": [
@@ -203,24 +219,36 @@
   ],
   "console-table-group-assert.md": [
     {
-      "title": "Debug popups that appear on hover using the debugger statement",
-      "image": null,
-      "link": "/tips/en/debug-js-hover-2"
+      "title": "Customize the columns shown in console.table",
+      "image": {
+        "alt": "Example of a console.table output in Chrome DevTools showing a lot of columns, making it hard to read each column header",
+        "src": "../../assets/img/customize-console-table-columns.png"
+      },
+      "link": "/tips/en/customize-console-table-columns"
     },
     {
-      "title": "Quickly reference nodes, expressions, and react components in the console",
-      "image": null,
-      "link": "/tips/en/quickly-reference-things-from-console"
+      "title": "List all supported console functions",
+      "image": {
+        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
+        "src": "../../assets/img/list-console-functions.png"
+      },
+      "link": "/tips/en/list-console-functions"
     },
     {
-      "title": "Take a screenshot of part of a webpage from the command menu",
-      "image": null,
-      "link": "/tips/en/screenshot-part-of-page-command-menu"
+      "title": "Copy an object from the console",
+      "image": {
+        "alt": "Chrome devtools' console with a line of code using the copy() function.",
+        "src": "../../assets/img/copy-from-console.png"
+      },
+      "link": "/tips/en/copy-from-console"
     },
     {
-      "title": "Use document.designMode to spell check your webpage",
-      "image": null,
-      "link": "/tips/en/use-designmode-to-spell-check"
+      "title": "List all supported console functions",
+      "image": {
+        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
+        "src": "../../assets/img/list-console-functions.png"
+      },
+      "link": "/tips/en/list-console-functions"
     }
   ],
   "convert-color-formats.md": [
@@ -445,12 +473,12 @@
       "link": "/tips/en/monitor-element-events"
     },
     {
-      "title": "Copy an elements styles",
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
       "image": {
-        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "../../assets/img/copy-element-styles.png"
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
       },
-      "link": "/tips/en/copy-element-styles"
+      "link": "/tips/en/console-table-group-assert"
     }
   ],
   "copy-rule-as-css-in-js.md": [
@@ -487,6 +515,40 @@
       "link": "/tips/en/past-several-css-declarations"
     }
   ],
+  "customize-console-table-columns.md": [
+    {
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
+      "image": {
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
+      },
+      "link": "/tips/en/console-table-group-assert"
+    },
+    {
+      "title": "Find all images without alternative text",
+      "image": {
+        "alt": "The output of the console.table command from above shown in the Firefox DevTools console.",
+        "src": "../../assets/img/find-all-images-without-alt-text.png"
+      },
+      "link": "/tips/en/find-all-images-without-alt-text"
+    },
+    {
+      "title": "Copy an elements styles",
+      "image": {
+        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
+        "src": "../../assets/img/copy-element-styles.png"
+      },
+      "link": "/tips/en/copy-element-styles"
+    },
+    {
+      "title": "Find DOM elements from the console",
+      "image": {
+        "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
+        "src": "../../assets/img/query-dom-from-console.png"
+      },
+      "link": "/tips/en/query-dom-from-console"
+    }
+  ],
   "customize-keyboard-shortcuts.md": [
     {
       "title": "Install or create extensions to customize DevTools",
@@ -513,12 +575,12 @@
       "link": "/tips/en/change-color-theme"
     },
     {
-      "title": "Copy an object from the console",
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
       "image": {
-        "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "../../assets/img/copy-from-console.png"
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
       },
-      "link": "/tips/en/copy-from-console"
+      "link": "/tips/en/console-table-group-assert"
     }
   ],
   "debug-css-cascade-layers.md": [
@@ -605,11 +667,6 @@
         "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
-    },
-    {
-      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
-      "image": null,
-      "link": "/tips/en/console-table-group-assert"
     },
     {
       "title": "Disable abusive debugger statements that prevent inspecting websites",
@@ -754,8 +811,8 @@
     {
       "title": "Fix low color contrast issues",
       "image": {
-        "alt": "A Polypane Pane with the Contrast checker debug tool active.",
-        "src": "../../assets/img/detect-low-color-contrast-inline.png"
+        "alt": "The chrome color picker, showing the contrast lines and new color suggestions",
+        "src": "../../assets/img/fix-color-contrast-issues-chromium.png"
       },
       "link": "/tips/en/fix-color-contrast-issues"
     },
@@ -794,6 +851,14 @@
       "link": "/tips/en/ignore-scripts"
     },
     {
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
+      "image": {
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
+      },
+      "link": "/tips/en/console-table-group-assert"
+    },
+    {
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
@@ -808,14 +873,6 @@
         "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
-    },
-    {
-      "title": "Write code on multiple lines in the Console",
-      "image": {
-        "alt": "Tthe button to switch the Firefox console to the multi-line mode.",
-        "src": "../../assets/img/multi-line-console-firefox.png"
-      },
-      "link": "/tips/en/multi-line-console"
     }
   ],
   "disable-abusive-debugger-statement.md": [
@@ -919,9 +976,12 @@
   ],
   "display-current-framerate.md": [
     {
-      "title": "Take a screenshot of part of a webpage from the command menu",
-      "image": null,
-      "link": "/tips/en/screenshot-part-of-page-command-menu"
+      "title": "Use document.designMode to spell check your webpage",
+      "image": {
+        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
+        "src": "../../assets/img/use-designmode-to-spell-check.png"
+      },
+      "link": "/tips/en/use-designmode-to-spell-check"
     }
   ],
   "download-all-images.md": [
@@ -1107,6 +1167,14 @@
       "link": "/tips/en/change-color-theme"
     },
     {
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
+      "image": {
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
+      },
+      "link": "/tips/en/console-table-group-assert"
+    },
+    {
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
@@ -1121,14 +1189,6 @@
         "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
-    },
-    {
-      "title": "Emulate color schemes",
-      "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "../../assets/img/emulate-color-schemes-firefox.png"
-      },
-      "link": "/tips/en/emulate-color-schemes"
     }
   ],
   "edit-position.md": [
@@ -1235,12 +1295,12 @@
       "link": "/tips/en/replay-xhr"
     },
     {
-      "title": "Detect low color contrast issues",
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
       "image": {
-        "alt": "The CSS Overview panel in Chrome, showing the color contrast issues section.",
-        "src": "../../assets/img/detect-low-color-contrast-css-overview.png"
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
       },
-      "link": "/tips/en/detect-low-color-contrast"
+      "link": "/tips/en/console-table-group-assert"
     }
   ],
   "emulate-forced-colors.md": [],
@@ -1252,6 +1312,14 @@
         "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
+    },
+    {
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
+      "image": {
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
+      },
+      "link": "/tips/en/console-table-group-assert"
     },
     {
       "title": "Copy an object from the console",
@@ -1268,14 +1336,6 @@
         "src": "../../assets/img/change-color-theme.png"
       },
       "link": "/tips/en/change-color-theme"
-    },
-    {
-      "title": "Customize keyboard shortcuts",
-      "image": {
-        "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
-        "src": "../../assets/img/customize-keyboard-shortcuts.png"
-      },
-      "link": "/tips/en/customize-keyboard-shortcuts"
     }
   ],
   "evaluate-xpath.md": [
@@ -1314,6 +1374,14 @@
   ],
   "execute-commands.md": [
     {
+      "title": "Take a screenshot of part of a webpage from the Command Menu",
+      "image": {
+        "alt": "Edge, with DevTools opened, and the Command menu showing the list of screenshot commands",
+        "src": "../../assets/img/screenshot-part-of-page-command-menu.png"
+      },
+      "link": "/tips/en/screenshot-part-of-page-command-menu"
+    },
+    {
       "title": "Get contextual DevTools help",
       "image": {
         "alt": "Animation of the devtools tooltips in Edge.",
@@ -1336,14 +1404,6 @@
         "src": "../../assets/img/see-the-page-in-3d.png"
       },
       "link": "/tips/en/see-the-page-in-3d"
-    },
-    {
-      "title": "Simulate a different latitude/longitude geolocation",
-      "image": {
-        "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
-        "src": "../../assets/img/simulate-geolocation.png"
-      },
-      "link": "/tips/en/simulate-geolocation"
     }
   ],
   "expand-nodes-recursively.md": [
@@ -1390,12 +1450,12 @@
       "link": "/tips/en/sample-colors-from-the-page"
     },
     {
-      "title": "Copy an object from the console",
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
       "image": {
-        "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "../../assets/img/copy-from-console.png"
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
       },
-      "link": "/tips/en/copy-from-console"
+      "link": "/tips/en/console-table-group-assert"
     }
   ],
   "filter-network-requests.md": [
@@ -1673,6 +1733,14 @@
   ],
   "fix-color-contrast-issues-with-element-tooltip.md": [
     {
+      "title": "Fix low color contrast issues",
+      "image": {
+        "alt": "The chrome color picker, showing the contrast lines and new color suggestions",
+        "src": "../../assets/img/fix-color-contrast-issues-chromium.png"
+      },
+      "link": "/tips/en/fix-color-contrast-issues"
+    },
+    {
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
@@ -1695,14 +1763,6 @@
         "src": "../../assets/img/debug-js-hover.gif"
       },
       "link": "/tips/en/debug-js-hover"
-    },
-    {
-      "title": "Detect low color contrast issues",
-      "image": {
-        "alt": "The CSS Overview panel in Chrome, showing the color contrast issues section.",
-        "src": "../../assets/img/detect-low-color-contrast-css-overview.png"
-      },
-      "link": "/tips/en/detect-low-color-contrast"
     }
   ],
   "fix-color-contrast-issues.md": [
@@ -1715,23 +1775,39 @@
       "link": "/tips/en/detect-low-color-contrast"
     },
     {
-      "title": "Find all images without alternative text",
-      "image": {
-        "alt": "The output of the console.table command from above shown in the Firefox DevTools console.",
-        "src": "../../assets/img/find-all-images-without-alt-text.png"
-      },
-      "link": "/tips/en/find-all-images-without-alt-text"
-    },
-    {
       "title": "Fix color contrast issues using the element tooltip",
       "image": {
         "alt": "Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast.",
         "src": "../../assets/img/fix-color-contrast-issues-with-element-tooltip.gif"
       },
       "link": "/tips/en/fix-color-contrast-issues-with-element-tooltip"
+    },
+    {
+      "title": "Get the selected element in the console",
+      "image": {
+        "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
+        "src": "../../assets/img/get-current-element-in-console.jpg"
+      },
+      "link": "/tips/en/get-current-element-in-console"
+    },
+    {
+      "title": "Convert color formats",
+      "image": {
+        "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
+        "src": "../../assets/img/convert-color-formats.gif"
+      },
+      "link": "/tips/en/convert-color-formats"
     }
   ],
   "force-pwa-periodic-sync.md": [
+    {
+      "title": "Use document.designMode to spell check your webpage",
+      "image": {
+        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
+        "src": "../../assets/img/use-designmode-to-spell-check.png"
+      },
+      "link": "/tips/en/use-designmode-to-spell-check"
+    },
     {
       "title": "Empty the cache and hard refresh",
       "image": {
@@ -1755,14 +1831,6 @@
         "src": "../../assets/img/use-another-language.png"
       },
       "link": "/tips/en/use-another-language"
-    },
-    {
-      "title": "Check if your site can be instantly reloaded from bfcache",
-      "image": {
-        "alt": "Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached.",
-        "src": "../../assets/img/check-bfcache-readiness.png"
-      },
-      "link": "/tips/en/check-bfcache-readiness"
     }
   ],
   "form-testing.md": [
@@ -1819,20 +1887,20 @@
       "link": "/tips/en/send-feedback-about-devtools"
     },
     {
+      "title": "Take a screenshot of part of a webpage from the Command Menu",
+      "image": {
+        "alt": "Edge, with DevTools opened, and the Command menu showing the list of screenshot commands",
+        "src": "../../assets/img/screenshot-part-of-page-command-menu.png"
+      },
+      "link": "/tips/en/screenshot-part-of-page-command-menu"
+    },
+    {
       "title": "Use commands to do things faster",
       "image": {
         "alt": "Edge's command menu.",
         "src": "../../assets/img/execute-commands.png"
       },
       "link": "/tips/en/execute-commands"
-    },
-    {
-      "title": "Simulate a different latitude/longitude geolocation",
-      "image": {
-        "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
-        "src": "../../assets/img/simulate-geolocation.png"
-      },
-      "link": "/tips/en/simulate-geolocation"
     }
   ],
   "get-current-element-in-console.md": [
@@ -1843,6 +1911,14 @@
         "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
       },
       "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
+    },
+    {
+      "title": "Fix low color contrast issues",
+      "image": {
+        "alt": "The chrome color picker, showing the contrast lines and new color suggestions",
+        "src": "../../assets/img/fix-color-contrast-issues-chromium.png"
+      },
+      "link": "/tips/en/fix-color-contrast-issues"
     },
     {
       "title": "Monitor all events dispatched on an element",
@@ -1859,14 +1935,6 @@
         "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
-    },
-    {
-      "title": "Remove or disable event listeners",
-      "image": {
-        "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "../../assets/img/disable-event-listeners-firefox.png"
-      },
-      "link": "/tips/en/disable-event-listeners"
     }
   ],
   "get-detached-elements.md": [
@@ -2239,12 +2307,12 @@
       "link": "/tips/en/replay-xhr"
     },
     {
-      "title": "Copy an elements styles",
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
       "image": {
-        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "../../assets/img/copy-element-styles.png"
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
       },
-      "link": "/tips/en/copy-element-styles"
+      "link": "/tips/en/console-table-group-assert"
     }
   ],
   "list-used-fonts.md": [
@@ -2422,6 +2490,14 @@
   ],
   "multi-line-console.md": [
     {
+      "title": "Use document.designMode to spell check your webpage",
+      "image": {
+        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
+        "src": "../../assets/img/use-designmode-to-spell-check.png"
+      },
+      "link": "/tips/en/use-designmode-to-spell-check"
+    },
+    {
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
@@ -2444,14 +2520,6 @@
         "src": "../../assets/img/detect-unused-code.png"
       },
       "link": "/tips/en/detect-unused-code"
-    },
-    {
-      "title": "List all supported console functions",
-      "image": {
-        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "../../assets/img/list-console-functions.png"
-      },
-      "link": "/tips/en/list-console-functions"
     }
   ],
   "node-screenshot.md": [
@@ -2648,6 +2716,14 @@
         "src": "../../assets/img/reload-page-after-change.png"
       },
       "link": "/tips/en/reload-page-after-change"
+    },
+    {
+      "title": "Use document.designMode to spell check your webpage",
+      "image": {
+        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
+        "src": "../../assets/img/use-designmode-to-spell-check.png"
+      },
+      "link": "/tips/en/use-designmode-to-spell-check"
     }
   ],
   "prototype-in-the-browser.md": [
@@ -2744,35 +2820,38 @@
       "link": "/tips/en/copy-from-console"
     }
   ],
-  "quickly-reference-things-from-console.md": [
+  "quickly-reference-react-console.md": [
     {
-      "title": "Get the recently selected DOM nodes in the console",
+      "title": "Get the selected element in the console",
       "image": {
-        "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
-        "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
+        "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
+        "src": "../../assets/img/get-current-element-in-console.jpg"
       },
-      "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
+      "link": "/tips/en/get-current-element-in-console"
     },
     {
-      "title": "Monitor all events dispatched on an element",
+      "title": "List all supported console functions",
       "image": {
-        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "../../assets/img/monitor-element-events.gif"
+        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
+        "src": "../../assets/img/list-console-functions.png"
       },
-      "link": "/tips/en/monitor-element-events"
+      "link": "/tips/en/list-console-functions"
     },
     {
-      "title": "Speed up or slow down a video",
+      "title": "Copy an object from the console",
       "image": {
-        "alt": "Screenshot of the Console tool showing the playbackRate property",
-        "src": "../../assets/img/change-video-playback-rate.png"
+        "alt": "Chrome devtools' console with a line of code using the copy() function.",
+        "src": "../../assets/img/copy-from-console.png"
       },
-      "link": "/tips/en/change-video-playback-rate"
+      "link": "/tips/en/copy-from-console"
     },
     {
-      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
-      "image": null,
-      "link": "/tips/en/console-table-group-assert"
+      "title": "Install or create extensions to customize DevTools",
+      "image": {
+        "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
+        "src": "../../assets/img/extend-devtools.png"
+      },
+      "link": "/tips/en/extend-devtools"
     }
   ],
   "record-replay.md": [
@@ -2853,6 +2932,14 @@
       "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
     },
     {
+      "title": "Use document.designMode to spell check your webpage",
+      "image": {
+        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
+        "src": "../../assets/img/use-designmode-to-spell-check.png"
+      },
+      "link": "/tips/en/use-designmode-to-spell-check"
+    },
+    {
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
@@ -2867,14 +2954,6 @@
         "src": "../../assets/img/spot-out-of-viewport-elements.png"
       },
       "link": "/tips/en/spot-out-of-viewport-elements"
-    },
-    {
-      "title": "Start your HTML and CSS prototypes in the browser directly",
-      "image": {
-        "alt": "Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.",
-        "src": "../../assets/img/prototype-in-the-browser.png"
-      },
-      "link": "/tips/en/prototype-in-the-browser"
     }
   ],
   "replay-xhr.md": [
@@ -2947,27 +3026,36 @@
   ],
   "screenshot-part-of-page-command-menu.md": [
     {
-      "title": "Use document.designMode to spell check your webpage",
-      "image": null,
-      "link": "/tips/en/use-designmode-to-spell-check"
-    },
-    {
-      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
-      "image": null,
-      "link": "/tips/en/console-table-group-assert"
-    },
-    {
-      "title": "Debug popups that appear on hover using the debugger statement",
-      "image": null,
-      "link": "/tips/en/debug-js-hover-2"
-    },
-    {
-      "title": "Display the current framerate of your webpage",
+      "title": "Use commands to do things faster",
       "image": {
-        "alt": "Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu",
-        "src": "../../assets/img/display-current-framerate.png"
+        "alt": "Edge's command menu.",
+        "src": "../../assets/img/execute-commands.png"
       },
-      "link": "/tips/en/display-current-framerate"
+      "link": "/tips/en/execute-commands"
+    },
+    {
+      "title": "Take a screenshot of a single node",
+      "image": {
+        "alt": "Animation showing taking a node screenshot in Firefox.",
+        "src": "../../assets/img/node-screenshot.gif"
+      },
+      "link": "/tips/en/node-screenshot"
+    },
+    {
+      "title": "Get contextual DevTools help",
+      "image": {
+        "alt": "Animation of the devtools tooltips in Edge.",
+        "src": "../../assets/img/get-contextual-help.gif"
+      },
+      "link": "/tips/en/get-contextual-help"
+    },
+    {
+      "title": "Simulate a different latitude/longitude geolocation",
+      "image": {
+        "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
+        "src": "../../assets/img/simulate-geolocation.png"
+      },
+      "link": "/tips/en/simulate-geolocation"
     }
   ],
   "scroll-into-view.md": [
@@ -3256,6 +3344,14 @@
   ],
   "simulate-geolocation.md": [
     {
+      "title": "Take a screenshot of part of a webpage from the Command Menu",
+      "image": {
+        "alt": "Edge, with DevTools opened, and the Command menu showing the list of screenshot commands",
+        "src": "../../assets/img/screenshot-part-of-page-command-menu.png"
+      },
+      "link": "/tips/en/screenshot-part-of-page-command-menu"
+    },
+    {
       "title": "Find and export CSS changes",
       "image": {
         "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
@@ -3278,14 +3374,6 @@
         "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
-    },
-    {
-      "title": "Replay a XHR request",
-      "image": {
-        "alt": "Chrome's Network tool, with the Replay XHR contextual menu item",
-        "src": "../../assets/img/replay-xhr.png"
-      },
-      "link": "/tips/en/replay-xhr"
     }
   ],
   "simulate-multiple-devices.md": [],
@@ -3489,20 +3577,20 @@
       "link": "/tips/en/check-bfcache-readiness"
     },
     {
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
+      "image": {
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
+      },
+      "link": "/tips/en/console-table-group-assert"
+    },
+    {
       "title": "Find the most expensive CSS selectors",
       "image": {
         "alt": "The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.",
         "src": "../../assets/img/find-expensive-selectors.png"
       },
       "link": "/tips/en/find-expensive-selectors"
-    },
-    {
-      "title": "List all supported console functions",
-      "image": {
-        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "../../assets/img/list-console-functions.png"
-      },
-      "link": "/tips/en/list-console-functions"
     }
   ],
   "throttle-network-speed.md": [
@@ -3621,6 +3709,14 @@
   ],
   "use-another-language.md": [
     {
+      "title": "Use document.designMode to spell check your webpage",
+      "image": {
+        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
+        "src": "../../assets/img/use-designmode-to-spell-check.png"
+      },
+      "link": "/tips/en/use-designmode-to-spell-check"
+    },
+    {
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
@@ -3643,36 +3739,40 @@
         "src": "../../assets/img/prototype-in-the-browser.png"
       },
       "link": "/tips/en/prototype-in-the-browser"
-    },
-    {
-      "title": "Customize keyboard shortcuts",
-      "image": {
-        "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
-        "src": "../../assets/img/customize-keyboard-shortcuts.png"
-      },
-      "link": "/tips/en/customize-keyboard-shortcuts"
     }
   ],
   "use-designmode-to-spell-check.md": [
     {
-      "title": "Take a screenshot of part of a webpage from the command menu",
-      "image": null,
-      "link": "/tips/en/screenshot-part-of-page-command-menu"
+      "title": "Use DevTools in another language",
+      "image": {
+        "alt": "The settings panel in Edge showing a checkbox to match devtools with the browser language.",
+        "src": "../../assets/img/use-another-language.png"
+      },
+      "link": "/tips/en/use-another-language"
     },
     {
-      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
-      "image": null,
-      "link": "/tips/en/console-table-group-assert"
+      "title": "List all supported console functions",
+      "image": {
+        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
+        "src": "../../assets/img/list-console-functions.png"
+      },
+      "link": "/tips/en/list-console-functions"
     },
     {
-      "title": "Debug popups that appear on hover using the debugger statement",
-      "image": null,
-      "link": "/tips/en/debug-js-hover-2"
+      "title": "Monitor all events dispatched on an element",
+      "image": {
+        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
+        "src": "../../assets/img/monitor-element-events.gif"
+      },
+      "link": "/tips/en/monitor-element-events"
     },
     {
-      "title": "Quickly reference nodes, expressions, and react components in the console",
-      "image": null,
-      "link": "/tips/en/quickly-reference-things-from-console"
+      "title": "Remove annoying page overlays and other elements",
+      "image": {
+        "alt": "Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.",
+        "src": "../../assets/img/remove-annoying-overlays.gif"
+      },
+      "link": "/tips/en/remove-annoying-overlays"
     }
   ],
   "use-full-browser-for-device-emulation.md": [
