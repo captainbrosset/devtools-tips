@@ -2,7 +2,7 @@
 date: 2022-10-14
 authors: Patrick Brosset
 title: Install or create extensions to customize DevTools
-tags: ["personalization", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
+tags: ["personalization", "frameworks", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 There's [a lot of tools](./discover-all-tools.md) in DevTools already, probably more than you use. But in some cases, you may need very specific tools that aren't available by default.
 

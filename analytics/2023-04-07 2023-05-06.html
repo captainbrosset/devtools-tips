@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Analytics 2023-04-07 - 2023-05-06</title>
+</head>
+
+<body>
+  <h1>Analytics 2023-04-07 - 2023-05-06</h1>
+  <h2>Views</h2>
+  <canvas id="count-per-day"></canvas>
+  <h2>Pages</h2>
+  <div id="referers"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+
+  <script>
+    const minDate = "2023-04-07";
+    const maxDate = "2023-05-06";
+    const totalViews = 16614;
+    const totalDays = 30;
+    const countPerDay = [{
+      "date": "2023-04-07",
+      "count": "114"
+    }, {
+      "date": "2023-04-08",
+      "count": "233"
+    }, {
+      "date": "2023-04-09",
+      "count": "286"
+    }, {
+      "date": "2023-04-10",
+      "count": "427"
+    }, {
+      "date": "2023-04-11",
+      "count": "582"
+    }, {
+      "date": "2023-04-12",
+      "count": "619"
+    }, {
+      "date": "2023-04-13",
+      "count": "622"
+    }, {
+      "date": "2023-04-14",
+      "count": "1077"
+    }, {
+      "date": "2023-04-15",
+      "count": "410"
+    }, {
+      "date": "2023-04-16",
+      "count": "391"
+    }, {
+      "date": "2023-04-17",
+      "count": "729"
+    }, {
+      "date": "2023-04-18",
+      "count": "789"
+    }, {
+      "date": "2023-04-19",
+      "count": "771"
+    }, {
+      "date": "2023-04-20",
+      "count": "659"
+    }, {
+      "date": "2023-04-21",
+      "count": "605"
+    }, {
+      "date": "2023-04-22",
+      "count": "245"
+    }, {
+      "date": "2023-04-23",
+      "count": "331"
+    }, {
+      "date": "2023-04-24",
+      "count": "565"
+    }, {
+      "date": "2023-04-25",
+      "count": "680"
+    }, {
+      "date": "2023-04-26",
+      "count": "689"
+    }, {
+      "date": "2023-04-27",
+      "count": "652"
+    }, {
+      "date": "2023-04-28",
+      "count": "580"
+    }, {
+      "date": "2023-04-29",
+      "count": "318"
+    }, {
+      "date": "2023-04-30",
+      "count": "299"
+    }, {
+      "date": "2023-05-01",
+      "count": "455"
+    }, {
+      "date": "2023-05-02",
+      "count": "790"
+    }, {
+      "date": "2023-05-03",
+      "count": "808"
+    }, {
+      "date": "2023-05-04",
+      "count": "804"
+    }, {
+      "date": "2023-05-05",
+      "count": "724"
+    }, {
+      "date": "2023-05-06",
+      "count": "360"
+    }];
+    const referers = [{
+      "referer": "https:\/\/devtoolstips.org\/",
+      "count": "2034"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/simulate-devices\/",
+      "count": "1757"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/edit-and-resend-network-requests\/",
+      "count": "1133"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/see-the-page-in-3d\/",
+      "count": "766"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/download-all-images\/",
+      "count": "716"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/disable-abusive-debugger-statement\/",
+      "count": "681"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/copy-element-styles\/",
+      "count": "549"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/disable-event-listeners\/",
+      "count": "468"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/view-logs-for-other-browsers-on-ios\/",
+      "count": "413"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/use-another-language\/",
+      "count": "363"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/remove-annoying-overlays\/",
+      "count": "327"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/track-focused-element\/",
+      "count": "247"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/replay-xhr\/",
+      "count": "230"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/get-current-element-in-console\/",
+      "count": "215"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/zoom-devtools-content\/",
+      "count": "210"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/take-in-device-screenshots\/",
+      "count": "209"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/evaluate-xpath\/",
+      "count": "193"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/find-all-images-without-alt-text\/",
+      "count": "190"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/outline-everything\/",
+      "count": "183"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/node-screenshot\/",
+      "count": "181"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/unminify-javascript-code\/",
+      "count": "175"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/multi-line-console\/",
+      "count": "172"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/measure-distances\/",
+      "count": "169"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/get-detached-elements\/",
+      "count": "144"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/emulate-forced-colors\/",
+      "count": "137"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/copy-element-js-path\/",
+      "count": "125"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/browser\/chrome\/",
+      "count": "121"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/hide-or-pin-inspect-info-tooltip\/",
+      "count": "121"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/find-css-changes\/",
+      "count": "120"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/visualize-tabbing-order\/",
+      "count": "117"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/add-new-devices\/",
+      "count": "104"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/browser\/safari\/",
+      "count": "98"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/copy-css-selector\/",
+      "count": "95"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/debug-unwanted-scrollbars\/",
+      "count": "93"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/detect-unused-code\/",
+      "count": "92"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/break-on-dom-changes\/",
+      "count": "87"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/use-scripts-as-snippets\/",
+      "count": "82"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/monitor-element-events\/",
+      "count": "81"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/list-used-fonts\/",
+      "count": "80"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/manipulate-complex-json\/",
+      "count": "74"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/find-expensive-selectors\/",
+      "count": "71"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/edit-position\/",
+      "count": "71"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/form-testing\/",
+      "count": "70"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/customize-keyboard-shortcuts\/",
+      "count": "69"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/empty-cache-refresh\/",
+      "count": "67"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/find-broken-links\/",
+      "count": "66"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/check-bfcache-readiness\/",
+      "count": "65"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/test-pwa-protocol-handlers\/",
+      "count": "65"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/simulate-multiple-devices\/",
+      "count": "65"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/reload-page-after-change\/",
+      "count": "65"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/prototype-in-the-browser\/",
+      "count": "64"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/debug-css-cascade-layers\/",
+      "count": "61"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/get-size-of-resource-types\/",
+      "count": "61"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/see-json-responses\/",
+      "count": "59"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/expand-nodes-recursively\/",
+      "count": "55"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/1\/",
+      "count": "55"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/copy-from-console\/",
+      "count": "54"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/debug-print-css-styles\/",
+      "count": "53"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/2\/",
+      "count": "53"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/browser\/edge\/",
+      "count": "52"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/throttle-network-speed\/",
+      "count": "52"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/list-console-functions\/",
+      "count": "50"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/copy-element-xpath\/",
+      "count": "50"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/hide-extension-resources\/",
+      "count": "49"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/block-resources\/",
+      "count": "48"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/see-request-path-instead-of-name\/",
+      "count": "48"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/find-inactive-styles\/",
+      "count": "45"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/simulate-pseudo-classes\/",
+      "count": "44"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/select-pointer-events-none-elements\/",
+      "count": "44"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/visualize-screenreader-order\/",
+      "count": "42"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/browser\/polypane\/",
+      "count": "42"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/edit-clip-path-shape-outside\/",
+      "count": "42"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/scroll-into-view\/",
+      "count": "42"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/debug-js-hover\/",
+      "count": "41"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/ignore-scripts\/",
+      "count": "41"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/discover-all-tools\/",
+      "count": "36"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/live-expressions\/",
+      "count": "34"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/display-current-framerate\/",
+      "count": "33"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/visualize-css-transforms\/",
+      "count": "31"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/3\/",
+      "count": "29"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/execute-commands\/",
+      "count": "29"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/use-logpoints\/",
+      "count": "29"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/inspect-css-animations\/",
+      "count": "28"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/testing\/",
+      "count": "28"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/use-full-browser-for-device-emulation\/",
+      "count": "27"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/emulate-idle-detection-states\/",
+      "count": "26"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/browser\/firefox\/",
+      "count": "25"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/play-sound-on-js-execution\/",
+      "count": "25"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/store-node-as-variable\/",
+      "count": "24"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/edit-shadow\/",
+      "count": "23"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/change-color-theme\/",
+      "count": "23"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/simulate-geolocation\/",
+      "count": "23"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/manipulate-global-objects-on-page-load\/",
+      "count": "23"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/throttle-cpu\/",
+      "count": "22"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/console\/",
+      "count": "22"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/highlight-matching-elements\/",
+      "count": "22"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/copy-rule-as-css-in-js\/",
+      "count": "20"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/spot-out-of-viewport-elements\/",
+      "count": "19"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/jump-to-css-variable\/",
+      "count": "18"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/css\/",
+      "count": "18"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/debugger-statement\/",
+      "count": "18"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/5\/",
+      "count": "18"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/accessibility\/",
+      "count": "17"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/understand-flexbox-item-sizing\/",
+      "count": "17"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/show-web-vitals\/",
+      "count": "17"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/convert-font-units\/",
+      "count": "16"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/query-dom-from-console\/",
+      "count": "16"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/emulate-color-schemes\/",
+      "count": "16"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/detect-low-color-contrast\/",
+      "count": "15"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/change-video-playback-rate\/",
+      "count": "15"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/filter-network-requests\/",
+      "count": "14"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/drag-drop-dom-nodes\/",
+      "count": "14"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/find-custom-elements-code\/",
+      "count": "14"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/4\/",
+      "count": "14"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/get-recently-selected-dom-nodes-in-console\/",
+      "count": "14"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/record-replay\/",
+      "count": "14"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/automatically-log-name-and-value\/",
+      "count": "14"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/javascript\/",
+      "count": "13"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/find-html-parsing-errors\/",
+      "count": "13"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/edit-javascript-while-debugging\/",
+      "count": "13"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/sample-colors-from-the-page\/",
+      "count": "13"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/prototype-content-changes-with-designmode\/",
+      "count": "13"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/convert-color-formats\/",
+      "count": "12"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/productivity\/",
+      "count": "12"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/see-quick-a11y-info-on-hover\/",
+      "count": "12"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/persist-logs-across-pages\/",
+      "count": "11"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/debug-grid-areas\/",
+      "count": "11"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/fix-color-contrast-issues\/",
+      "count": "11"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/console-table-group-assert\/",
+      "count": "11"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/move-panels\/",
+      "count": "10"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/format-console-messages\/",
+      "count": "10"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/increment-css-number-values\/",
+      "count": "10"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/get-contextual-help\/",
+      "count": "10"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/network\/",
+      "count": "10"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/access-recent-console-results\/",
+      "count": "10"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/debug-js-hover-2\/",
+      "count": "10"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/debug\/",
+      "count": "10"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/force-pwa-periodic-sync\/",
+      "count": "9"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/extend-devtools\/",
+      "count": "9"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/pwa\/",
+      "count": "9"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/capture-node-creation-stacks\/",
+      "count": "8"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/export\/",
+      "count": "8"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/screenshot-part-of-page-command-menu\/",
+      "count": "8"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/personalization\/",
+      "count": "8"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/view-logs-for-other-browsers-on-ios\/#",
+      "count": "8"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/fix-color-contrast-issues-with-element-tooltip\/",
+      "count": "8"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/past-several-css-declarations\/",
+      "count": "7"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/query-instances-holders\/",
+      "count": "7"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/use-designmode-to-spell-check\/",
+      "count": "7"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/simulate-color-vision-deficiencies\/",
+      "count": "6"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/suppressed-event-listeners-when-paused\/",
+      "count": "6"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/edit-elements-with-the-keyboard\/",
+      "count": "6"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/perf\/",
+      "count": "6"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/use-scripts-as-snippets\/#:~:text=In%20Safari%2C%20these%20scripts%20are,choosing%20Console%20Snippet....",
+      "count": "6"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/edit-and-resend-network-requests\/#",
+      "count": "6"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/webcomponents\/",
+      "count": "6"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/help\/",
+      "count": "5"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/send-feedback-about-devtools\/",
+      "count": "5"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/view-perf-markers-in-order\/",
+      "count": "5"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/html\/",
+      "count": "5"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/find-devtools-documentation\/",
+      "count": "4"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/get-website-issues\/",
+      "count": "4"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/tweak-grid-flex-alignment\/",
+      "count": "4"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/evaluate-xpath\/#",
+      "count": "4"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/quickly-reference-things-from-console\/",
+      "count": "4"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tag\/highlighter\/",
+      "count": "4"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/?utm_source=stefanjudis",
+      "count": "3"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/highlight-css-properties-on-hover\/",
+      "count": "3"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/simulate-devices\/#",
+      "count": "3"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/use-scripts-as-snippets\/#:~:text=You%20can%20run%20snippets%20by,the%20bottom%20of%20the%20editor.&text=The%20snippets%20editor%20in%20the,P%20on%20mac)%20and%20type%20!",
+      "count": "3"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/?utm_source=reactivisima.com",
+      "count": "2"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/view-logs-for-other-browsers-on-ios\/#:~:text=In%20Chrome%20or%20Edge%20on%20iPhone%2C%20open%20a%20new%20tab,logs%20you%20need%20to%20see.",
+      "count": "2"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/jump-to-referenced-elements\/",
+      "count": "2"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/?ref=upstract.com",
+      "count": "2"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/use-scripts-as-snippets\/#",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/emulate-forced-colors\/#",
+      "count": "1"
+    }, {
+      "referer": "",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/edit-css-filters\/",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/?utm_source=pocket_saves",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/see-the-page-in-3d\/#:~:text=Open%20the%20command%20menu%20(%20ctrl,visualize%20the%20page%20in%203D.",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/?fbclid=IwAR1CsfbwpnUDgWRvKRNtRLS7x-O7hf5qSX_rQRh7SLNEGyMq6lnpLTQ0YCI",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/disable-abusive-debugger-statement\/#",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/edit-css-angles\/",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/style-console-messages\/",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/see-the-page-in-3d\/#",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/?ref=usepanda.com",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/disable-abusive-debugger-statement\/#:~:text=Right%2Dclick%20the%20line%20number,Either%20click%20Never%20pause%20here.",
+      "count": "1"
+    }, {
+      "referer": "https:\/\/devtoolstips.org\/tips\/en\/measure-distances\/?",
+      "count": "1"
+    }];
+    document.querySelector('h1').innerHTML = `Analytics from ${minDate} to ${maxDate}`;
+    document.querySelector('h2').innerHTML = `${totalViews} views in ${totalDays} days (${(totalViews / totalDays).toFixed(0)} per day)`;
+
+    // Use the chart lib to plot the daily requests.
+    const ctx = document.getElementById('count-per-day').getContext('2d');
+
+    // Go over the countPerDay, and for each day, get the sum of all counts from the previous 28 days.
+    const mav = countPerDay.map((row, index) => {
+      const count = countPerDay.slice(Math.max(0, index - 28), index + 1).reduce((acc, row) => acc + Number(row.count), 0);
+      return {
+        date: row.date,
+        count
+      };
+    });
+
+    // Generate a chart for the countPerDay.
+    const dailyViewsChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: countPerDay.map(row => row.date),
+        datasets: [{
+          label: 'Daily',
+          data: countPerDay.map(row => Number(row.count)),
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          borderColor: 'rgba(255,99,132,1)',
+          borderWidth: 1
+        }]
+      }
+    });
+
+    // Generate an HTML table in the #refer element, 
+    // first column is the referer, second is the url.
+    const referersTable = document.getElementById('referers');
+    const table = document.createElement('table');
+
+    // Add a thead for column headers.
+    const row = table.insertRow();
+    const th1 = document.createElement('th');
+    const th2 = document.createElement('th');
+    th1.innerHTML = 'URL';
+    th2.innerHTML = 'Views';
+    row.appendChild(th1);
+    row.appendChild(th2);
+
+    for (const {
+        referer,
+        count
+      }
+      of referers) {
+      const row = table.insertRow();
+      const cell1 = row.insertCell();
+      const cell2 = row.insertCell();
+      const shortReferer = referer.length > 100 ? referer.substring(0, 100) + '...' : referer;
+      cell1.innerHTML = `<a href="${referer}">${shortReferer}</a>`;
+      cell2.innerHTML = count;
+    }
+
+    referersTable.appendChild(table);
+  </script>
+</body>
+
+</html>

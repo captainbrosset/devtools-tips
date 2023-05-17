@@ -1,7 +1,6 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const embedYouTube = require("eleventy-plugin-youtube-embed");
-const embedTwitter = require("eleventy-plugin-embed-twitter");
 const striptags = require("striptags");
 require("dotenv").config();
 
@@ -92,7 +91,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(embedYouTube);
-  eleventyConfig.addPlugin(embedTwitter);
 
   eleventyConfig.addTransform("fix-urls", async function(content) {
     if (this.inputPath.includes('/src/tips/en/')) {

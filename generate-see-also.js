@@ -59,7 +59,6 @@ function prepareTipData(tipFile, tipContent) {
       !line.startsWith('date: ') &&
       !line.startsWith('tags: ') &&
       !line.startsWith('title: ') &&
-      !line.startsWith('istweet: ') &&
       !line.startsWith('see-also: ');
   }).join('\n').toLocaleLowerCase();
 
