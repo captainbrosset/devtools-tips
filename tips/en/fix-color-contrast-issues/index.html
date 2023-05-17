@@ -11,7 +11,7 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/fix-color-contrast-issues/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/detect-low-color-contrast-inline.png">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/fix-color-contrast-issues-chromium.png">
     <meta property="og:description" content="Fix low color contrast issues">
     
     <meta name="twitter:site" content="@_devtoolstips">
@@ -26,7 +26,7 @@
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
@@ -49,10 +49,21 @@
 </div>
 <h2 class="tip-title">Fix low color contrast issues</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>With DevTools you can <a href="../detect-low-color-contrast">detect low color contrast issues</a> which is great. But DevTools in Chrome, Polypane and Edge go one step further and help you fix these issues too! <a href="https://twitter.com/domizajac">Domi</a> tells us all about it.</p>
-<div class="eleventy-plugin-embed-twitter"><blockquote id="tweet-1507310081624444929" class="twitter-tweet"><a href="https://twitter.com/domizajac/status/1507310081624444929"></a></blockquote></div><script src="https://platform.twitter.com/widgets.js" charset="utf-8" async></script>
+    <p>With DevTools you can <a href="/tips/en/detect-low-color-contrast">detect low color contrast issues</a> which is great. But Chrome DevTools, Edge DevTools, and Polypane, you can go one step further and fix these issues directly!</p>
+<h3>In Chrome and Edge</h3>
+<p>Here is a tip shared on <a href="https://dev.to/domizajac/how-to-use-chrome-devtools-to-find-a-color-fixing-insufficient-color-contrast-ratio-on-your-html-element-546k">dev.to</a> by <a href="https://twitter.com/domizajac">Domi</a>:</p>
+<ol>
+<li>Find an element which text color doesn't have enough contrast with its background color.</li>
+<li>Select this element in the <strong>Elements</strong> tool.</li>
+<li>Click on the little color swatch next to the color value in the <strong>Styles</strong> pane.</li>
+<li>A color picker will appear. Expand the <strong>Contrast ratio</strong> section.</li>
+<li>A couple of useful lines appear in the color gradient. These lines represent the minimum contrast ratio required for the text to be readable.</li>
+<li>You can also click on the little reload icons next to the AA and AAA labels in the <strong>Contrast ratio</strong> section to let DevTools suggest a color that would pass the AA or AAA requirements.</li>
+</ol>
+<p><img src="/assets/img/fix-color-contrast-issues-chromium.png" alt="The chrome color picker, showing the contrast lines and new color suggestions"></p>
+<h3>In Polypane</h3>
 <p>In Polypane, these suggestions are made inline on the page itself when enabling the <strong>Contrast checker debug tool</strong>.</p>
-<p><img src="/assets/img/detect-low-color-contrast-inline.png" alt="A Polypane Pane with the Contrast checker debug tool active."></p>
+<p><img src="/assets/img/fix-color-contrast-issues-polypane.png" alt="A Polypane Pane with the Contrast checker debug tool active."></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
@@ -62,17 +73,25 @@
                 <img loading="lazy" src="/assets/img/detect-low-color-contrast-css-overview.png" alt="The CSS Overview panel in Chrome, showing the color contrast issues section.">
             </a>
         </li><li>
-            <a href="/tips/en/find-all-images-without-alt-text">Find all images without alternative text</a>
-            <a href="/tips/en/find-all-images-without-alt-text" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console.">
-            </a>
-        </li><li>
             <a href="/tips/en/fix-color-contrast-issues-with-element-tooltip">Fix color contrast issues using the element tooltip</a>
             <a href="/tips/en/fix-color-contrast-issues-with-element-tooltip" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/fix-color-contrast-issues-with-element-tooltip.gif" alt="Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast.">
             </a>
+        </li><li>
+            <a href="/tips/en/get-current-element-in-console">Get the selected element in the console</a>
+            <a href="/tips/en/get-current-element-in-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-current-element-in-console.jpg" alt="Safari&#39;s console showing how the $0 shortcut returns the selected element.">
+            </a>
+        </li><li>
+            <a href="/tips/en/convert-color-formats">Convert color formats</a>
+            <a href="/tips/en/convert-color-formats" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/convert-color-formats.gif" alt="Animation of the rules panel in Firefox, showing the color conversion.">
+            </a>
         </li></ul>
-</div><div class="tip-footer"></div>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2022-03-25T00:00:00.000Z">3/25/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/fix-color-contrast-issues.md">Edit page</a></p>
+</div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
     </main>

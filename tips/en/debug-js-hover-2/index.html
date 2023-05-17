@@ -26,7 +26,7 @@
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
@@ -49,9 +49,15 @@
 </div>
 <h2 class="tip-title">Debug popups that appear on hover using the debugger statement</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>In <a href="../debug-js-hover">Debug popups that appear on hover using JS</a> we described how to pause the debugger to inspect popups that appear on hover and disappear as soon as the cursor moves away.</p>
-<p>Here's another way to do this by <a href="https://twitter.com/mzainzafar90">Zain Zafar</a> which involves using the <code>debugger</code> statement in the <strong>Console</strong>. Pretty neat!</p>
-<div class="eleventy-plugin-embed-twitter"><blockquote id="tweet-1485510393409773571" class="twitter-tweet"><a href="https://twitter.com/mzainzafar90/status/1485510393409773571"></a></blockquote></div><script src="https://platform.twitter.com/widgets.js" charset="utf-8" async></script>
+    <p>In <a href="/tips/en/debug-js-hover">Debug popups that appear on hover using JS</a> we described how to pause the debugger to inspect popups that appear on hover and disappear as soon as the cursor moves away.</p>
+<p>Here's another way to do this by <a href="https://twitter.com/mzainzafar90">Zain Zafar</a> which involves using the <code>debugger</code> statement in the <strong>Console</strong>:</p>
+<ol>
+<li>Open the <strong>Console</strong> tool.</li>
+<li>Enter <code>setTimeout(() =&gt; {debugger}, 3000)</code> and press <kbd>Enter</kbd>. You can change the 3 seconds delay to anything that matches your needs.</li>
+<li>Quickly hover over the popup and wait for the debugger to pause the script execution.</li>
+</ol>
+<p>Now the popup is visible and you can easily inspect it without having to worry about it disappearing.</p>
+<p>Zain shared this awesome tip on <a href="https://twitter.com/mzainzafar90/status/1485510393409773571">Twitter</a> and <a href="https://www.youtube.com/watch?v=jh8hUH_Zp0o">YouTube</a>.</p>
 
 </div><div class="see-also">
     <h3>See also</h3>
@@ -66,17 +72,15 @@
                 <img loading="lazy" src="/assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement.">
             </a>
         </li><li>
-            <a href="/tips/en/console-table-group-assert">console.log() is great, but do you know console.table()? console.group()? console.assert()?</a>
-            <a href="/tips/en/console-table-group-assert" class="other-tip-image">
-                <img loading="lazy" src="" alt="">
-            </a>
-        </li><li>
             <a href="/tips/en/disable-abusive-debugger-statement">Disable abusive debugger statements that prevent inspecting websites</a>
             <a href="/tips/en/disable-abusive-debugger-statement" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/disable-abusive-debugger-statement.gif" alt="The Sources tool in Firefox, showing how to add a conditional breakpoint.">
             </a>
         </li></ul>
-</div><div class="tip-footer"></div>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2022-03-25T00:00:00.000Z">3/25/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-js-hover-2.md">Edit page</a></p>
+</div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
     </main>

@@ -11,7 +11,7 @@
     <meta property="og:title" content="DevTools Tips">
     <meta property="og:url" content="https://devtoolstips.org/tips/en/console-table-group-assert/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/console-table-group-assert-1.jpg">
     <meta property="og:description" content="console.log() is great, but do you know console.table()? console.group()? console.assert()?">
     
     <meta name="twitter:site" content="@_devtoolstips">
@@ -26,7 +26,7 @@
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
           <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li tabindex="0">Browsers
             <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
@@ -49,32 +49,61 @@
 </div>
 <h2 class="tip-title">console.log() is great, but do you know console.table()? console.group()? console.assert()?</h2>
 <div class="tip-content" data-pagefind-body>
-    <div class="eleventy-plugin-embed-twitter"><blockquote id="tweet-1505892172700299268" class="twitter-tweet"><a href="https://twitter.com/nghuuphuoc/status/1505892172700299268"></a></blockquote></div><script src="https://platform.twitter.com/widgets.js" charset="utf-8" async></script>
+    <p>You probably know about <code>console.log()</code> already, it's a great way to print variables and objects to the console while the code is running, to debug it. But there are other console methods that can help you debug your code even more easily (you can <a href="/tips/en/list-console-functions">list them all</a> by the way).</p>
+<h3>console.table</h3>
+<p><code>console.table()</code> is great to print arrays and objects in a tabular format.</p>
+<p>Say you have the following data:</p>
+<pre class="language-json"><code class="language-json">const products = <span class="token punctuation">[</span><span class="token punctuation">{</span><br>  id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span><br>  name<span class="token operator">:</span> 'Instant Pot'<span class="token punctuation">,</span><br>  price<span class="token operator">:</span> <span class="token number">79.99</span><span class="token punctuation">,</span><br>  inStock<span class="token operator">:</span> <span class="token boolean">true</span><br><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><br>  id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span><br>  name<span class="token operator">:</span> 'Aeropress Coffee Maker'<span class="token punctuation">,</span><br>  price<span class="token operator">:</span> <span class="token number">29.99</span><span class="token punctuation">,</span><br>  inStock<span class="token operator">:</span> <span class="token boolean">false</span><br><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><br>  id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span><br>  name<span class="token operator">:</span> 'George Foreman Grill'<span class="token punctuation">,</span><br>  price<span class="token operator">:</span> <span class="token number">25.99</span><span class="token punctuation">,</span><br>  inStock<span class="token operator">:</span> <span class="token boolean">true</span><br><span class="token punctuation">}</span><span class="token punctuation">]</span>;</code></pre>
+<p>You can log it to the console a much more readable way with <code>console.table()</code> by using the following code: <code>console.table(products);</code></p>
+<p><img src="/assets/img/console-table-group-assert-1.jpg" alt="The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column"></p>
+<p>You can even <a href="/tips/en/customize-console-table-columns">customize the table columns that are shown</a>.</p>
+<h3>console.group</h3>
+<p>When your code generates a lot of logs, it can quickly become difficult to read those logs in the console.</p>
+<p><code>console.group()</code> allows you to group console logs together and indent them in a nice collapsible section, making them easier to read.</p>
+<p>Take the following code example that generate a lot of logs:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> product <span class="token keyword">of</span> products<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>product<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>product<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>product<span class="token punctuation">.</span>price<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>product<span class="token punctuation">.</span>inStock<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p><img src="/assets/img/console-table-group-assert-2.png" alt="The Chrome DevTools Console tool showing multiple log lines that are hard to quickly scan"></p>
+<p>Now let's use <code>console.group()</code> to group those logs together:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> product <span class="token keyword">of</span> products<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  console<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span>product<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'ID:'</span><span class="token punctuation">,</span> product<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Price:'</span><span class="token punctuation">,</span> product<span class="token punctuation">.</span>price<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'In stock:'</span><span class="token punctuation">,</span> product<span class="token punctuation">.</span>inStock<span class="token punctuation">)</span><br>  console<span class="token punctuation">.</span><span class="token function">groupEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p><img src="/assets/img/console-table-group-assert-3.png" alt="The Chrome DevTools Console tool showing the same logs, but grouped by product"></p>
+<h3>console.assert</h3>
+<p>Finally, the <code>console.assert</code> method allows you to log an error to the console only if some predefined condition is not met.</p>
+<p>Let's say you want to make sure that all products in the <code>products</code> array are in stock and log an error if not.</p>
+<p>You could use an <code>if</code> statement and <code>console.error</code>, like this:</p>
+<pre class="language-js"><code class="language-js">products<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">product</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>product<span class="token punctuation">.</span>inStock<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>product<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> is not in stock</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Using <code>console.assert</code> requires less code:</p>
+<pre class="language-js"><code class="language-js">products<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">product</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>  console<span class="token punctuation">.</span><span class="token function">assert</span><span class="token punctuation">(</span>product<span class="token punctuation">.</span>inStock<span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>product<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> is not in stock</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><img src="/assets/img/console-table-group-assert-4.png" alt="The Chrome DevTools Console tool showing an error message for one of the products"></p>
+<p>That's it!</p>
+<p>Credits go to <a href="https://suze.dev/blog/debugging-javascript-beyond-console-log/">Suze Shardlow</a> for sharing this on her site.</p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/debug-js-hover-2">Debug popups that appear on hover using the debugger statement</a>
-            <a href="/tips/en/debug-js-hover-2" class="other-tip-image">
-                <img loading="lazy" src="" alt="">
+            <a href="/tips/en/customize-console-table-columns">Customize the columns shown in console.table</a>
+            <a href="/tips/en/customize-console-table-columns" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/customize-console-table-columns.png" alt="Example of a console.table output in Chrome DevTools showing a lot of columns, making it hard to read each column header">
             </a>
         </li><li>
-            <a href="/tips/en/quickly-reference-things-from-console">Quickly reference nodes, expressions, and react components in the console</a>
-            <a href="/tips/en/quickly-reference-things-from-console" class="other-tip-image">
-                <img loading="lazy" src="" alt="">
+            <a href="/tips/en/list-console-functions">List all supported console functions</a>
+            <a href="/tips/en/list-console-functions" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
             </a>
         </li><li>
-            <a href="/tips/en/screenshot-part-of-page-command-menu">Take a screenshot of part of a webpage from the command menu</a>
-            <a href="/tips/en/screenshot-part-of-page-command-menu" class="other-tip-image">
-                <img loading="lazy" src="" alt="">
+            <a href="/tips/en/copy-from-console">Copy an object from the console</a>
+            <a href="/tips/en/copy-from-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-from-console.png" alt="Chrome devtools&#39; console with a line of code using the copy() function.">
             </a>
         </li><li>
-            <a href="/tips/en/use-designmode-to-spell-check">Use document.designMode to spell check your webpage</a>
-            <a href="/tips/en/use-designmode-to-spell-check" class="other-tip-image">
-                <img loading="lazy" src="" alt="">
+            <a href="/tips/en/list-console-functions">List all supported console functions</a>
+            <a href="/tips/en/list-console-functions" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
             </a>
         </li></ul>
-</div><div class="tip-footer"></div>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2022-03-25T00:00:00.000Z">3/25/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/console-table-group-assert.md">Edit page</a></p>
+</div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
     </main>

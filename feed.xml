@@ -5,11 +5,25 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-05-05T00:00:00.000Z</updated>
+  <updated>2023-05-16T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Customize the columns shown in console.table</title>
+    <link href="https://devtoolstips.org/tips/en/customize-console-table-columns/"/>
+    <updated>2023-05-16T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/customize-console-table-columns/</id>
+    <content type="html">&lt;p&gt;The &lt;a href=&quot;https://devtoolstips.org/tips/en/customize-console-table-columns/console-table-group-assert.md&quot;&gt;&lt;code&gt;console.table&lt;/code&gt;&lt;/a&gt; method is great for displaying tabular data in the console, but what if the objects your&#39;re logging contain a lot of properties, causing a lot of columns to appear in the console?&lt;/p&gt;
+&lt;p&gt;For example, let&#39;s log all DOM elements on a page with &lt;code&gt;console.table($$(&amp;quot;*&amp;quot;))&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/customize-console-table-columns.png&quot; alt=&quot;Example of a console.table output in Chrome DevTools showing a lot of columns, making it hard to read each column header&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can actually customize the columns that are shown in the table by passing an array of strings as a second argument to &lt;code&gt;console.table()&lt;/code&gt;. This array should contain the names of the properties you want to display.&lt;/p&gt;
+&lt;p&gt;Let&#39;s log all DOM elements on the page as before, but this time, let&#39;s pass an array containing just the few properties we want to display for each element: &lt;code&gt;console.table($$(&amp;quot;*&amp;quot;), [&amp;quot;tagName&amp;quot;, &amp;quot;id&amp;quot;, &amp;quot;className&amp;quot;]);&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/customize-console-table-columns-2.png&quot; alt=&quot;Example of a console.table output in Chrome DevTools showing just a few specific columns&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Speed up or slow down a video</title>
@@ -1073,8 +1087,8 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/fix-color-contrast-issues-with-element-tooltip.gif&quot; alt=&quot;Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Related tips:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/detect-low-color-contrast&quot;&gt;Detect low color contrast issues&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/fix-color-contrast-issues&quot;&gt;Fix low color contrast issues&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/fix-color-contrast-issues-with-element-tooltip/detect-low-color-contrast.md&quot;&gt;Detect low color contrast issues&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/fix-color-contrast-issues-with-element-tooltip/fix-color-contrast-issues.md&quot;&gt;Fix low color contrast issues&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>
@@ -1314,7 +1328,14 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
     <link href="https://devtoolstips.org/tips/en/use-designmode-to-spell-check/"/>
     <updated>2022-05-02T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/use-designmode-to-spell-check/</id>
-    <content type="html">&lt;p&gt;https://twitter.com/AmeliasBrain/status/1521146127327801345&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://twitter.com/AmeliasBrain&quot;&gt;Amelia Bellamy-Royds&lt;/a&gt; shared a &lt;a href=&quot;https://twitter.com/AmeliasBrain/status/1521146127327801345&quot;&gt;really cool tip&lt;/a&gt; to spell-check a webpage&#39;s content from DevTools:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open DevTools, and go to the &lt;strong&gt;Console&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;document.designMode = &amp;quot;on&amp;quot;&lt;/code&gt; and press &lt;kbd&gt;Enter&lt;/kbd&gt;.&lt;/li&gt;
+&lt;li&gt;Click somewhere on the webpage.&lt;/li&gt;
+&lt;li&gt;The browser now highlights the misspelled words in red!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/use-designmode-to-spell-check.png&quot; alt=&quot;Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -1375,22 +1396,29 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
   </entry>
   
   <entry>
-    <title>Take a screenshot of part of a webpage from the command menu</title>
+    <title>Take a screenshot of part of a webpage from the Command Menu</title>
     <link href="https://devtoolstips.org/tips/en/screenshot-part-of-page-command-menu/"/>
     <updated>2022-03-25T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/screenshot-part-of-page-command-menu/</id>
-    <content type="html">&lt;p&gt;The &lt;a href=&quot;https://devtoolstips.org/tips/en/execute-commands&quot;&gt;Command menu&lt;/a&gt; in Edge and Chrome is great. Here is one more thing it can do:&lt;/p&gt;
-&lt;p&gt;https://twitter.com/csaba_kissi/status/1506904947631304708&lt;/p&gt;
+    <content type="html">&lt;p&gt;The &lt;a href=&quot;https://devtoolstips.org/tips/en/screenshot-part-of-page-command-menu/execute-commands.md&quot;&gt;Command menu&lt;/a&gt; in Edge and Chrome is a great way to do many of the things you can do in DevTools without having to navigate the UI.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/csaba_kissi&quot;&gt;Csaba Kissi&lt;/a&gt; shared a great tip on &lt;a href=&quot;https://twitter.com/csaba_kissi/status/1506904947631304708&quot;&gt;Twitter&lt;/a&gt; about the Command menu:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Press &lt;kbd&gt;Ctrl+Shift+P&lt;/kbd&gt; on Windows or Linux (or &lt;kbd&gt;Cmd+Shift+P&lt;/kbd&gt; on mac) to open the Command menu in DevTools.&lt;/li&gt;
+&lt;li&gt;Type &amp;quot;screenshot&amp;quot; to filter the list of commands.&lt;/li&gt;
+&lt;li&gt;Select the screenshot command you want to use, such as &lt;strong&gt;Capture area screenshot&lt;/strong&gt; to grab a screenshot of a part of the page.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/screenshot-part-of-page-command-menu.png&quot; alt=&quot;Edge, with DevTools opened, and the Command menu showing the list of screenshot commands&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
   <entry>
-    <title>Quickly reference nodes, expressions, and react components in the console</title>
-    <link href="https://devtoolstips.org/tips/en/quickly-reference-things-from-console/"/>
+    <title>Quickly reference React components in the console</title>
+    <link href="https://devtoolstips.org/tips/en/quickly-reference-react-console/"/>
     <updated>2022-03-25T00:00:00.000Z</updated>
-    <id>https://devtoolstips.org/tips/en/quickly-reference-things-from-console/</id>
-    <content type="html">&lt;p&gt;https://twitter.com/ChatterboxDev/status/1506299424712142864&lt;/p&gt;
-&lt;p&gt;Also learn more about &lt;a href=&quot;https://devtoolstips.org/tips/en/get-current-element-in-console&quot;&gt;getting the selected element in the console&lt;/a&gt;&lt;/p&gt;
+    <id>https://devtoolstips.org/tips/en/quickly-reference-react-console/</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://twitter.com/ChatterboxDev&quot;&gt;Zee&lt;/a&gt; shared a great tip on &lt;a href=&quot;https://twitter.com/ChatterboxDev/status/1506299424712142864&quot;&gt;Twitter&lt;/a&gt; if you are working with React and have the React DevTools extension installed.&lt;/p&gt;
+&lt;p&gt;You can use &lt;code&gt;$r&lt;/code&gt; in the &lt;strong&gt;Console&lt;/strong&gt; tool to reference the currently selected element in the React DevTools. This is a great way to quickly inspect the props and state of a component.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/quickly-reference-react-console.png&quot; alt=&quot;The React DevTools components panel in DevTools, and Console below it, showing the result of $r&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -1420,7 +1448,7 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
 &lt;p&gt;When I&#39;m done coding in the browser and feel like I have what I wanted, it&#39;s time to export my changes so they don&#39;t disappear when close the browser window.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;To export the HTML code, I usually do this: right-click on the &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; element and choose &lt;strong&gt;Copy inner HTML&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;To export the CSS code: in Firefox, I open the &lt;strong&gt;Changes&lt;/strong&gt; sidebar panel and click &lt;strong&gt;Copy All Changes&lt;/strong&gt; (&lt;a href=&quot;https://devtoolstips.org/tips/en/find-css-changes&quot;&gt;learn more&lt;/a&gt;), and Chrome/Edge I go to &lt;strong&gt;Sources&lt;/strong&gt;, find the &lt;strong&gt;inspector-stylesheet&lt;/strong&gt; source and copy the content from it.&lt;/li&gt;
+&lt;li&gt;To export the CSS code: in Firefox, I open the &lt;strong&gt;Changes&lt;/strong&gt; sidebar panel and click &lt;strong&gt;Copy All Changes&lt;/strong&gt; (&lt;a href=&quot;https://devtoolstips.org/tips/en/prototype-in-the-browser/find-css-changes.md&quot;&gt;learn more&lt;/a&gt;), and Chrome/Edge I go to &lt;strong&gt;Sources&lt;/strong&gt;, find the &lt;strong&gt;inspector-stylesheet&lt;/strong&gt; source and copy the content from it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -1435,10 +1463,21 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <link href="https://devtoolstips.org/tips/en/fix-color-contrast-issues/"/>
     <updated>2022-03-25T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/fix-color-contrast-issues/</id>
-    <content type="html">&lt;p&gt;With DevTools you can &lt;a href=&quot;https://devtoolstips.org/tips/en/detect-low-color-contrast&quot;&gt;detect low color contrast issues&lt;/a&gt; which is great. But DevTools in Chrome, Polypane and Edge go one step further and help you fix these issues too! &lt;a href=&quot;https://twitter.com/domizajac&quot;&gt;Domi&lt;/a&gt; tells us all about it.&lt;/p&gt;
-&lt;p&gt;https://twitter.com/domizajac/status/1507310081624444929&lt;/p&gt;
+    <content type="html">&lt;p&gt;With DevTools you can &lt;a href=&quot;https://devtoolstips.org/tips/en/fix-color-contrast-issues/detect-low-color-contrast.md&quot;&gt;detect low color contrast issues&lt;/a&gt; which is great. But Chrome DevTools, Edge DevTools, and Polypane, you can go one step further and fix these issues directly!&lt;/p&gt;
+&lt;h3&gt;In Chrome and Edge&lt;/h3&gt;
+&lt;p&gt;Here is a tip shared on &lt;a href=&quot;https://dev.to/domizajac/how-to-use-chrome-devtools-to-find-a-color-fixing-insufficient-color-contrast-ratio-on-your-html-element-546k&quot;&gt;dev.to&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/domizajac&quot;&gt;Domi&lt;/a&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Find an element which text color doesn&#39;t have enough contrast with its background color.&lt;/li&gt;
+&lt;li&gt;Select this element in the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Click on the little color swatch next to the color value in the &lt;strong&gt;Styles&lt;/strong&gt; pane.&lt;/li&gt;
+&lt;li&gt;A color picker will appear. Expand the &lt;strong&gt;Contrast ratio&lt;/strong&gt; section.&lt;/li&gt;
+&lt;li&gt;A couple of useful lines appear in the color gradient. These lines represent the minimum contrast ratio required for the text to be readable.&lt;/li&gt;
+&lt;li&gt;You can also click on the little reload icons next to the AA and AAA labels in the &lt;strong&gt;Contrast ratio&lt;/strong&gt; section to let DevTools suggest a color that would pass the AA or AAA requirements.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/fix-color-contrast-issues-chromium.png&quot; alt=&quot;The chrome color picker, showing the contrast lines and new color suggestions&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;In Polypane&lt;/h3&gt;
 &lt;p&gt;In Polypane, these suggestions are made inline on the page itself when enabling the &lt;strong&gt;Contrast checker debug tool&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/detect-low-color-contrast-inline.png&quot; alt=&quot;A Polypane Pane with the Contrast checker debug tool active.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/fix-color-contrast-issues-polypane.png&quot; alt=&quot;A Polypane Pane with the Contrast checker debug tool active.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -1447,9 +1486,15 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <link href="https://devtoolstips.org/tips/en/debug-js-hover-2/"/>
     <updated>2022-03-25T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/debug-js-hover-2/</id>
-    <content type="html">&lt;p&gt;In &lt;a href=&quot;https://devtoolstips.org/tips/en/debug-js-hover&quot;&gt;Debug popups that appear on hover using JS&lt;/a&gt; we described how to pause the debugger to inspect popups that appear on hover and disappear as soon as the cursor moves away.&lt;/p&gt;
-&lt;p&gt;Here&#39;s another way to do this by &lt;a href=&quot;https://twitter.com/mzainzafar90&quot;&gt;Zain Zafar&lt;/a&gt; which involves using the &lt;code&gt;debugger&lt;/code&gt; statement in the &lt;strong&gt;Console&lt;/strong&gt;. Pretty neat!&lt;/p&gt;
-&lt;p&gt;https://twitter.com/mzainzafar90/status/1485510393409773571&lt;/p&gt;
+    <content type="html">&lt;p&gt;In &lt;a href=&quot;https://devtoolstips.org/tips/en/debug-js-hover-2/debug-js-hover.md&quot;&gt;Debug popups that appear on hover using JS&lt;/a&gt; we described how to pause the debugger to inspect popups that appear on hover and disappear as soon as the cursor moves away.&lt;/p&gt;
+&lt;p&gt;Here&#39;s another way to do this by &lt;a href=&quot;https://twitter.com/mzainzafar90&quot;&gt;Zain Zafar&lt;/a&gt; which involves using the &lt;code&gt;debugger&lt;/code&gt; statement in the &lt;strong&gt;Console&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Console&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Enter &lt;code&gt;setTimeout(() =&amp;gt; {debugger}, 3000)&lt;/code&gt; and press &lt;kbd&gt;Enter&lt;/kbd&gt;. You can change the 3 seconds delay to anything that matches your needs.&lt;/li&gt;
+&lt;li&gt;Quickly hover over the popup and wait for the debugger to pause the script execution.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now the popup is visible and you can easily inspect it without having to worry about it disappearing.&lt;/p&gt;
+&lt;p&gt;Zain shared this awesome tip on &lt;a href=&quot;https://twitter.com/mzainzafar90/status/1485510393409773571&quot;&gt;Twitter&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=jh8hUH_Zp0o&quot;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
@@ -1458,7 +1503,33 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <link href="https://devtoolstips.org/tips/en/console-table-group-assert/"/>
     <updated>2022-03-25T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/console-table-group-assert/</id>
-    <content type="html">&lt;p&gt;https://twitter.com/nghuuphuoc/status/1505892172700299268&lt;/p&gt;
+    <content type="html">&lt;p&gt;You probably know about &lt;code&gt;console.log()&lt;/code&gt; already, it&#39;s a great way to print variables and objects to the console while the code is running, to debug it. But there are other console methods that can help you debug your code even more easily (you can &lt;a href=&quot;https://devtoolstips.org/tips/en/console-table-group-assert/list-console-functions.md&quot;&gt;list them all&lt;/a&gt; by the way).&lt;/p&gt;
+&lt;h3&gt;console.table&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;console.table()&lt;/code&gt; is great to print arrays and objects in a tabular format.&lt;/p&gt;
+&lt;p&gt;Say you have the following data:&lt;/p&gt;
+&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;const products = &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  id&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &#39;Instant Pot&#39;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  price&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;79.99&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  inStock&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  id&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &#39;Aeropress Coffee Maker&#39;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  price&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;29.99&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  inStock&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  id&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &#39;George Foreman Grill&#39;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  price&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;25.99&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  inStock&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can log it to the console a much more readable way with &lt;code&gt;console.table()&lt;/code&gt; by using the following code: &lt;code&gt;console.table(products);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/console-table-group-assert-1.jpg&quot; alt=&quot;The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can even &lt;a href=&quot;https://devtoolstips.org/tips/en/console-table-group-assert/customize-console-table-columns.md&quot;&gt;customize the table columns that are shown&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;console.group&lt;/h3&gt;
+&lt;p&gt;When your code generates a lot of logs, it can quickly become difficult to read those logs in the console.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;console.group()&lt;/code&gt; allows you to group console logs together and indent them in a nice collapsible section, making them easier to read.&lt;/p&gt;
+&lt;p&gt;Take the following code example that generate a lot of logs:&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; product &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; products&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;price&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;inStock&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/console-table-group-assert-2.png&quot; alt=&quot;The Chrome DevTools Console tool showing multiple log lines that are hard to quickly scan&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Now let&#39;s use &lt;code&gt;console.group()&lt;/code&gt; to group those logs together:&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; product &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; products&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;ID:&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Price:&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;price&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;In stock:&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;inStock&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;groupEnd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/console-table-group-assert-3.png&quot; alt=&quot;The Chrome DevTools Console tool showing the same logs, but grouped by product&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;console.assert&lt;/h3&gt;
+&lt;p&gt;Finally, the &lt;code&gt;console.assert&lt;/code&gt; method allows you to log an error to the console only if some predefined condition is not met.&lt;/p&gt;
+&lt;p&gt;Let&#39;s say you want to make sure that all products in the &lt;code&gt;products&lt;/code&gt; array are in stock and log an error if not.&lt;/p&gt;
+&lt;p&gt;You could use an &lt;code&gt;if&lt;/code&gt; statement and &lt;code&gt;console.error&lt;/code&gt;, like this:&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;products&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;product&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;inStock&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; is not in stock&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using &lt;code&gt;console.assert&lt;/code&gt; requires less code:&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;products&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;product&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;assert&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;inStock&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; is not in stock&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/console-table-group-assert-4.png&quot; alt=&quot;The Chrome DevTools Console tool showing an error message for one of the products&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;That&#39;s it!&lt;/p&gt;
+&lt;p&gt;Credits go to &lt;a href=&quot;https://suze.dev/blog/debugging-javascript-beyond-console-log/&quot;&gt;Suze Shardlow&lt;/a&gt; for sharing this on her site.&lt;/p&gt;
 </content>
   </entry>
   
@@ -2194,7 +2265,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
     <updated>2021-10-29T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/execute-commands/</id>
     <content type="html">&lt;p&gt;There is a command menu in Edge and Chrome that allows you to quickly access many different features of DevTools without having to navigate the UI.&lt;/p&gt;
-&lt;p&gt;Press &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; (or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; on mac) to open the command menu, and just start typing.&lt;/p&gt;
+&lt;p&gt;Press &lt;kbd&gt;Ctrl+Shift+P&lt;/kbd&gt; on Windows or Linux (or &lt;kbd&gt;Cmd+Shift+P&lt;/kbd&gt; on macOS) to open the command menu, and just start typing.&lt;/p&gt;
 &lt;p&gt;You can use this to, for example, switch to a different panel by typing its name, change the color theme, change settings, disable javascript, etc.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/execute-commands.png&quot; alt=&quot;Edge&#39;s command menu.&quot; /&gt;&lt;/p&gt;
 </content>
