@@ -151,7 +151,7 @@
     {
       "title": "Use DevTools in another language",
       "image": {
-        "alt": "The settings panel in Edge showing a checkbox to match devtools with the browser language.",
+        "alt": "The settings panel in Edge showing a checkbox to match DevTools with the browser language.",
         "src": "../../assets/img/use-another-language.png"
       },
       "link": "/tips/en/use-another-language"
@@ -207,6 +207,14 @@
         "src": "../../assets/img/replay-xhr.png"
       },
       "link": "/tips/en/replay-xhr"
+    },
+    {
+      "title": "Take high-resolution screenshots of web pages",
+      "image": {
+        "alt": "Firefox, with DevTools opened, and the Console tool visible, showing that :screenshot command",
+        "src": "../../assets/img/take-high-res-screenshots-firefox.png"
+      },
+      "link": "/tips/en/take-high-res-screenshots"
     },
     {
       "title": "Throttle your CPU",
@@ -1263,7 +1271,7 @@
     {
       "title": "Get contextual DevTools help",
       "image": {
-        "alt": "Animation of the devtools tooltips in Edge.",
+        "alt": "Animation of the DevTools tooltips in Edge.",
         "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
@@ -1384,7 +1392,7 @@
     {
       "title": "Get contextual DevTools help",
       "image": {
-        "alt": "Animation of the devtools tooltips in Edge.",
+        "alt": "Animation of the DevTools tooltips in Edge.",
         "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
@@ -1632,7 +1640,7 @@
     {
       "title": "Get contextual DevTools help",
       "image": {
-        "alt": "Animation of the devtools tooltips in Edge.",
+        "alt": "Animation of the DevTools tooltips in Edge.",
         "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
@@ -1666,7 +1674,7 @@
     {
       "title": "Visualize and debug CSS cascade layers",
       "image": {
-        "alt": "Firefox showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules.",
+        "alt": "Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.",
         "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
       },
       "link": "/tips/en/debug-css-cascade-layers"
@@ -1682,7 +1690,7 @@
     {
       "title": "Inspect CSS animations",
       "image": {
-        "alt": "Animation of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector.",
+        "alt": "Animation of Chrome DevTools showing how to inspect and modify CSS animations using the Animation inspector.",
         "src": "../../assets/img/inspect-css-animation.gif"
       },
       "link": "/tips/en/inspect-css-animations"
@@ -1827,7 +1835,7 @@
     {
       "title": "Use DevTools in another language",
       "image": {
-        "alt": "The settings panel in Edge showing a checkbox to match devtools with the browser language.",
+        "alt": "The settings panel in Edge showing a checkbox to match DevTools with the browser language.",
         "src": "../../assets/img/use-another-language.png"
       },
       "link": "/tips/en/use-another-language"
@@ -2187,7 +2195,7 @@
     {
       "title": "Draw a box around all elements to debug your CSS and page structure",
       "image": {
-        "alt": "Animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page.",
+        "alt": "Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page.",
         "src": "../../assets/img/outline-everything.gif"
       },
       "link": "/tips/en/outline-everything"
@@ -2266,7 +2274,7 @@
     {
       "title": "Visualize and debug CSS cascade layers",
       "image": {
-        "alt": "Firefox showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules.",
+        "alt": "Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.",
         "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
       },
       "link": "/tips/en/debug-css-cascade-layers"
@@ -2361,7 +2369,7 @@
     {
       "title": "Hide or pin the information tooltip while inspecting page elements",
       "image": {
-        "alt": "Chrome, with a webpage and devtools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
+        "alt": "Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
         "src": "../../assets/img/hide-or-pin-inspect-info-tooltip-1.png"
       },
       "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
@@ -2482,7 +2490,7 @@
     {
       "title": "Get contextual DevTools help",
       "image": {
-        "alt": "Animation of the devtools tooltips in Edge.",
+        "alt": "Animation of the DevTools tooltips in Edge.",
         "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
@@ -2926,7 +2934,7 @@
     {
       "title": "Hide or pin the information tooltip while inspecting page elements",
       "image": {
-        "alt": "Chrome, with a webpage and devtools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
+        "alt": "Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
         "src": "../../assets/img/hide-or-pin-inspect-info-tooltip-1.png"
       },
       "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
@@ -3044,7 +3052,7 @@
     {
       "title": "Get contextual DevTools help",
       "image": {
-        "alt": "Animation of the devtools tooltips in Edge.",
+        "alt": "Animation of the DevTools tooltips in Edge.",
         "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
@@ -3130,7 +3138,7 @@
     {
       "title": "Draw a box around all elements to debug your CSS and page structure",
       "image": {
-        "alt": "Animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page.",
+        "alt": "Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page.",
         "src": "../../assets/img/outline-everything.gif"
       },
       "link": "/tips/en/outline-everything"
@@ -3222,7 +3230,7 @@
     {
       "title": "Get contextual DevTools help",
       "image": {
-        "alt": "Animation of the devtools tooltips in Edge.",
+        "alt": "Animation of the DevTools tooltips in Edge.",
         "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
@@ -3256,7 +3264,7 @@
     {
       "title": "Debug CSS grid areas",
       "image": {
-        "alt": "Firefox showing a highlighted grid in the page showing the area names, and devtools below it with the \"display area names\" option checked.",
+        "alt": "Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the \"display area names\" option checked.",
         "src": "../../assets/img/debug-grid-areas.png"
       },
       "link": "/tips/en/debug-grid-areas"
@@ -3274,7 +3282,7 @@
     {
       "title": "Get contextual DevTools help",
       "image": {
-        "alt": "Animation of the devtools tooltips in Edge.",
+        "alt": "Animation of the DevTools tooltips in Edge.",
         "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
@@ -3328,7 +3336,7 @@
     {
       "title": "Get contextual DevTools help",
       "image": {
-        "alt": "Animation of the devtools tooltips in Edge.",
+        "alt": "Animation of the DevTools tooltips in Edge.",
         "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
@@ -3362,7 +3370,7 @@
     {
       "title": "Get contextual DevTools help",
       "image": {
-        "alt": "Animation of the devtools tooltips in Edge.",
+        "alt": "Animation of the DevTools tooltips in Edge.",
         "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
@@ -3405,7 +3413,7 @@
     {
       "title": "Use DevTools in another language",
       "image": {
-        "alt": "The settings panel in Edge showing a checkbox to match devtools with the browser language.",
+        "alt": "The settings panel in Edge showing a checkbox to match DevTools with the browser language.",
         "src": "../../assets/img/use-another-language.png"
       },
       "link": "/tips/en/use-another-language"
@@ -3483,7 +3491,7 @@
     {
       "title": "Visualize and debug CSS cascade layers",
       "image": {
-        "alt": "Firefox showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules.",
+        "alt": "Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.",
         "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
       },
       "link": "/tips/en/debug-css-cascade-layers"
@@ -3531,7 +3539,49 @@
       "link": "/tips/en/replay-xhr"
     }
   ],
+  "take-high-res-screenshots.md": [
+    {
+      "title": "Take a screenshot of a single node",
+      "image": {
+        "alt": "Animation showing taking a node screenshot in Firefox.",
+        "src": "../../assets/img/node-screenshot.gif"
+      },
+      "link": "/tips/en/node-screenshot"
+    },
+    {
+      "title": "Take a screenshot of part of a webpage from the Command Menu",
+      "image": {
+        "alt": "Edge, with DevTools opened, and the Command menu showing the list of screenshot commands",
+        "src": "../../assets/img/screenshot-part-of-page-command-menu.png"
+      },
+      "link": "/tips/en/screenshot-part-of-page-command-menu"
+    },
+    {
+      "title": "Take screenshots of your site in a device frame",
+      "image": {
+        "alt": "Screenshot of the devtoolstips.org website in an iPhone frame",
+        "src": "../../assets/img/take-in-device-screenshots.png"
+      },
+      "link": "/tips/en/take-in-device-screenshots"
+    },
+    {
+      "title": "Disable abusive debugger statements that prevent inspecting websites",
+      "image": {
+        "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
+        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
+      },
+      "link": "/tips/en/disable-abusive-debugger-statement"
+    }
+  ],
   "take-in-device-screenshots.md": [
+    {
+      "title": "Take high-resolution screenshots of web pages",
+      "image": {
+        "alt": "Firefox, with DevTools opened, and the Console tool visible, showing that :screenshot command",
+        "src": "../../assets/img/take-high-res-screenshots-firefox.png"
+      },
+      "link": "/tips/en/take-high-res-screenshots"
+    },
     {
       "title": "Use full browser window for device emulation",
       "image": {
@@ -3673,7 +3723,7 @@
     {
       "title": "Debug CSS grid areas",
       "image": {
-        "alt": "Firefox showing a highlighted grid in the page showing the area names, and devtools below it with the \"display area names\" option checked.",
+        "alt": "Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the \"display area names\" option checked.",
         "src": "../../assets/img/debug-grid-areas.png"
       },
       "link": "/tips/en/debug-grid-areas"
@@ -3745,7 +3795,7 @@
     {
       "title": "Use DevTools in another language",
       "image": {
-        "alt": "The settings panel in Edge showing a checkbox to match devtools with the browser language.",
+        "alt": "The settings panel in Edge showing a checkbox to match DevTools with the browser language.",
         "src": "../../assets/img/use-another-language.png"
       },
       "link": "/tips/en/use-another-language"
@@ -3910,7 +3960,7 @@
     {
       "title": "Draw a box around all elements to debug your CSS and page structure",
       "image": {
-        "alt": "Animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page.",
+        "alt": "Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page.",
         "src": "../../assets/img/outline-everything.gif"
       },
       "link": "/tips/en/outline-everything"
@@ -3970,7 +4020,7 @@
     {
       "title": "Get contextual DevTools help",
       "image": {
-        "alt": "Animation of the devtools tooltips in Edge.",
+        "alt": "Animation of the DevTools tooltips in Edge.",
         "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
@@ -3978,7 +4028,7 @@
     {
       "title": "Use DevTools in another language",
       "image": {
-        "alt": "The settings panel in Edge showing a checkbox to match devtools with the browser language.",
+        "alt": "The settings panel in Edge showing a checkbox to match DevTools with the browser language.",
         "src": "../../assets/img/use-another-language.png"
       },
       "link": "/tips/en/use-another-language"
