@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>See quick accessibility information on hover</title>
+    <title>Take high-resolution screenshots of web pages</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/see-quick-a11y-info-on-hover/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/take-high-res-screenshots/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/see-quick-a11y-info-on-hover.gif">
-    <meta property="og:description" content="See quick accessibility information on hover">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/take-high-res-screenshots-firefox.png">
+    <meta property="og:description" content="Take high-resolution screenshots of web pages">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -21,7 +21,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">See quick accessibility information on hover</a></h1>
+      <h1><a href="/">Take high-resolution screenshots of web pages</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -43,45 +43,55 @@
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/accessibility/">accessibility</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/export/">export</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
 </div>
-<h2 class="tip-title">See quick accessibility information on hover</h2>
+<h2 class="tip-title">Take high-resolution screenshots of web pages</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>In Edge, Polypane and Chrome, whenever you use the element selector and hover over elements in the page, a tooltip appears with, among other things, some accessibility information about the hovered element.</p>
-<ul>
-<li>To start the element selector, click on the mouse cursor icon in the top-left corner of the DevTools window.</li>
-<li>Then simply hover over elements in the page</li>
-</ul>
-<p><img src="/assets/img/see-quick-a11y-info-on-hover.gif" alt="Animation of the a11y tooltip in chrome."></p>
+    <p>Taking screenshots of all or parts of web pages is super useful (scroll down to the <em>See Also</em> part at the bottom of this page for more tips on that). But sometimes, the resulting screenshots aren't high-resolution enough for your needs.</p>
+<p>It turns you can make DevTools take high-resolution screenshots of your web pages too!</p>
+<h3>From the Console in Firefox</h3>
+<p>Firefox has a super handy <code>:screenshot</code> command you can use in the <strong>Console</strong> tool to take screenshots. It takes a few options, including <code>--dpr</code> to specify the device pixel ratio. The default value is <code>1</code>, but you can set it to <code>2</code>, <code>3</code>, or any other number to take screenshots at higher resolutions.</p>
+<p>For example: <code>:screenshot --dpr 3 --fullpage</code> will take a screenshot of the full page at three times the resolution.</p>
+<p><img src="/assets/img/take-high-res-screenshots-firefox.png" alt="Firefox, with DevTools opened, and the Console tool visible, showing that :screenshot command"></p>
+<p>Find out more about the <code>:screenshot</code> command and its other options in the <a href="https://firefox-source-docs.mozilla.org/devtools-user/web_console/helpers/index.html">Firefox DevTools documentation</a>.</p>
+<h3>From Device Mode in Chromium-based browsers</h3>
+<p>Here's a nice trick to do a similar thing in Chromium-based browsers (Chrome, Edge, Brave, etc.):</p>
+<ol>
+<li>Open DevTools and go to the <strong>Device Mode</strong> tool.</li>
+<li>Click the <strong>Dimensions</strong> dropdown menu and select <strong>Responsive</strong>.</li>
+<li>Enter the desired width and height for your screenshot. For example <code>1500</code> and <code>5000</code>.</li>
+<li>Click <strong>More options</strong> (the three dots icon) and then click <strong>Capture full size screenshot</strong>.</li>
+</ol>
+<p><img src="/assets/img/take-high-res-screenshots-chrome.png" alt="Chrome, with DevTools and device mode opened, showing that large width/height dimensions have been set. MS Paint next to it, with the resulting screenshot"></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/outline-everything">Draw a box around all elements to debug your CSS and page structure</a>
-            <a href="/tips/en/outline-everything" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/outline-everything.gif" alt="Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page.">
+            <a href="/tips/en/node-screenshot">Take a screenshot of a single node</a>
+            <a href="/tips/en/node-screenshot" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/node-screenshot.gif" alt="Animation showing taking a node screenshot in Firefox.">
             </a>
         </li><li>
-            <a href="/tips/en/highlight-matching-elements">Highlight all the elements that a CSS rule matches</a>
-            <a href="/tips/en/highlight-matching-elements" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page.">
+            <a href="/tips/en/screenshot-part-of-page-command-menu">Take a screenshot of part of a webpage from the Command Menu</a>
+            <a href="/tips/en/screenshot-part-of-page-command-menu" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/screenshot-part-of-page-command-menu.png" alt="Edge, with DevTools opened, and the Command menu showing the list of screenshot commands">
             </a>
         </li><li>
-            <a href="/tips/en/replay-xhr">Replay a XHR request</a>
-            <a href="/tips/en/replay-xhr" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/replay-xhr.png" alt="Chrome&#39;s Network tool, with the Replay XHR contextual menu item">
+            <a href="/tips/en/take-in-device-screenshots">Take screenshots of your site in a device frame</a>
+            <a href="/tips/en/take-in-device-screenshots" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/take-in-device-screenshots.png" alt="Screenshot of the devtoolstips.org website in an iPhone frame">
             </a>
         </li><li>
-            <a href="/tips/en/sample-colors-from-the-page">Sample colors from the page</a>
-            <a href="/tips/en/sample-colors-from-the-page" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/sample-colors-from-the-page-1.gif" alt="Animation of the eyedropper tool being started from the Firefox main menu.">
+            <a href="/tips/en/disable-abusive-debugger-statement">Disable abusive debugger statements that prevent inspecting websites</a>
+            <a href="/tips/en/disable-abusive-debugger-statement" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/disable-abusive-debugger-statement.gif" alt="The Sources tool in Firefox, showing how to add a conditional breakpoint.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2021-06-15T00:00:00.000Z">6/15/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/see-quick-a11y-info-on-hover.md">Edit page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2023-05-19T00:00:00.000Z">5/19/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/take-high-res-screenshots.md">Edit page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 

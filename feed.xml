@@ -5,11 +5,35 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-05-16T00:00:00.000Z</updated>
+  <updated>2023-05-19T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Take high-resolution screenshots of web pages</title>
+    <link href="https://devtoolstips.org/tips/en/take-high-res-screenshots/"/>
+    <updated>2023-05-19T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/take-high-res-screenshots/</id>
+    <content type="html">&lt;p&gt;Taking screenshots of all or parts of web pages is super useful (scroll down to the &lt;em&gt;See Also&lt;/em&gt; part at the bottom of this page for more tips on that). But sometimes, the resulting screenshots aren&#39;t high-resolution enough for your needs.&lt;/p&gt;
+&lt;p&gt;It turns you can make DevTools take high-resolution screenshots of your web pages too!&lt;/p&gt;
+&lt;h3&gt;From the Console in Firefox&lt;/h3&gt;
+&lt;p&gt;Firefox has a super handy &lt;code&gt;:screenshot&lt;/code&gt; command you can use in the &lt;strong&gt;Console&lt;/strong&gt; tool to take screenshots. It takes a few options, including &lt;code&gt;--dpr&lt;/code&gt; to specify the device pixel ratio. The default value is &lt;code&gt;1&lt;/code&gt;, but you can set it to &lt;code&gt;2&lt;/code&gt;, &lt;code&gt;3&lt;/code&gt;, or any other number to take screenshots at higher resolutions.&lt;/p&gt;
+&lt;p&gt;For example: &lt;code&gt;:screenshot --dpr 3 --fullpage&lt;/code&gt; will take a screenshot of the full page at three times the resolution.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/take-high-res-screenshots-firefox.png&quot; alt=&quot;Firefox, with DevTools opened, and the Console tool visible, showing that :screenshot command&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Find out more about the &lt;code&gt;:screenshot&lt;/code&gt; command and its other options in the &lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/web_console/helpers/index.html&quot;&gt;Firefox DevTools documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;From Device Mode in Chromium-based browsers&lt;/h3&gt;
+&lt;p&gt;Here&#39;s a nice trick to do a similar thing in Chromium-based browsers (Chrome, Edge, Brave, etc.):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open DevTools and go to the &lt;strong&gt;Device Mode&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Dimensions&lt;/strong&gt; dropdown menu and select &lt;strong&gt;Responsive&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter the desired width and height for your screenshot. For example &lt;code&gt;1500&lt;/code&gt; and &lt;code&gt;5000&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;More options&lt;/strong&gt; (the three dots icon) and then click &lt;strong&gt;Capture full size screenshot&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/take-high-res-screenshots-chrome.png&quot; alt=&quot;Chrome, with DevTools and device mode opened, showing that large width/height dimensions have been set. MS Paint next to it, with the resulting screenshot&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Customize the columns shown in console.table</title>
@@ -661,14 +685,14 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
 &lt;li&gt;Start hovering over elements in the webpage, elements get highlighted and the information tooltip appears.&lt;/li&gt;
 &lt;li&gt;Hold the &lt;kbd&gt;Ctrl&lt;/kbd&gt; key on your keyboard, the information tooltip disappears.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/hide-or-pin-inspect-info-tooltip-1.png&quot; alt=&quot;Chrome, with a webpage and devtools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/hide-or-pin-inspect-info-tooltip-1.png&quot; alt=&quot;Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.&quot; /&gt;&lt;/p&gt;
 &lt;h3&gt;To pin the highlight and information tooltip on the current element&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Start the &lt;strong&gt;inspect&lt;/strong&gt; tool by clicking &lt;strong&gt;Select an element in the page to inspect it&lt;/strong&gt; (the little cursor icon in the top left corner of DevTools).&lt;/li&gt;
 &lt;li&gt;Start hovering over elements in the webpage, elements get highlighted and the information tooltip appears.&lt;/li&gt;
 &lt;li&gt;Hold the &lt;kbd&gt;Ctrl&lt;/kbd&gt; and &lt;kbd&gt;Alt&lt;/kbd&gt; keys on your keyboard, the highlight and information tooltip are pinned on the current element, and you can move your mouse around without losing this information.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/hide-or-pin-inspect-info-tooltip-2.png&quot; alt=&quot;Chrome, with a webpage and devtools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, but another one is highlighted and has the info tooltip.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/hide-or-pin-inspect-info-tooltip-2.png&quot; alt=&quot;Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, but another one is highlighted and has the info tooltip.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -886,7 +910,7 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
 &lt;/ul&gt;
 &lt;p&gt;For Safari, you can set the app level language in MacOS by using &lt;strong&gt;System preferences&lt;/strong&gt; &amp;gt; &lt;strong&gt;Language &amp;amp; Region&lt;/strong&gt; &amp;gt; &lt;strong&gt;Apps&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Add the Safari app and choose the language. Restart Safari.  and then the browser &amp;amp; the DevTools will use the selected language.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/use-another-language.png&quot; alt=&quot;The settings panel in Edge showing a checkbox to match devtools with the browser language.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/use-another-language.png&quot; alt=&quot;The settings panel in Edge showing a checkbox to match DevTools with the browser language.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -995,7 +1019,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;p&gt;Inspect an element that uses an animation in the &lt;strong&gt;Inspector&lt;/strong&gt; tool (or a parent of that element) and open the &lt;strong&gt;Animations&lt;/strong&gt; pane from the right sidebar.&lt;/p&gt;
 &lt;p&gt;Next, trigger the animation to view its timeline in the &lt;strong&gt;Animations&lt;/strong&gt; pane.&lt;/p&gt;
 &lt;p&gt;Use the draggable vertical line to scrub through the timeline or jump to a specific point. You can also change the playback speed and do much &lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/work_with_animations/index.html&quot;&gt;more&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/inspect-css-animation.gif&quot; alt=&quot;Animation of Chrome devtools showing how to inspect and modify CSS animations using the Animation inspector.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/inspect-css-animation.gif&quot; alt=&quot;Animation of Chrome DevTools showing how to inspect and modify CSS animations using the Animation inspector.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -1354,7 +1378,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;li&gt;In the sidebar where CSS rules are displayed, rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.&lt;/li&gt;
 &lt;li&gt;Rules that are part of a cascade layer have a &lt;code&gt;@layer &amp;lt;layername&amp;gt;&lt;/code&gt; label above them.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-css-cascade-layers-firefox.png&quot; alt=&quot;Firefox showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-css-cascade-layers-firefox.png&quot; alt=&quot;Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.&quot; /&gt;&lt;/p&gt;
 &lt;h3&gt;Only Edge and Chrome&lt;/h3&gt;
 &lt;p&gt;On top of the above, Edge and Chrome have a layers view:&lt;/p&gt;
 &lt;ol&gt;
@@ -1362,7 +1386,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;li&gt;Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.&lt;/li&gt;
 &lt;li&gt;Click &lt;strong&gt;Toggle CSS layers view&lt;/strong&gt; in the &lt;strong&gt;Styles&lt;/strong&gt; panel toolbar (next to the search field) to reveal the list of layers.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-css-cascade-layers-edge.png&quot; alt=&quot;Edge showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules and the layers view.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-css-cascade-layers-edge.png&quot; alt=&quot;Edge showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules and the layers view.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -1548,7 +1572,7 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
 &lt;li&gt;Go to the &lt;strong&gt;Layout&lt;/strong&gt; sidebar pane.&lt;/li&gt;
 &lt;li&gt;Under the &lt;strong&gt;Grid&lt;/strong&gt; section, check the &lt;strong&gt;Show area names&lt;/strong&gt; box.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-grid-areas.png&quot; alt=&quot;Firefox showing a highlighted grid in the page showing the area names, and devtools below it with the &amp;quot;display area names&amp;quot; option checked.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-grid-areas.png&quot; alt=&quot;Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the &amp;quot;display area names&amp;quot; option checked.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -1603,8 +1627,8 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <id>https://devtoolstips.org/tips/en/send-feedback-about-devtools/</id>
     <content type="html">&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/send-feedback-about-devtools.png&quot; alt=&quot;A feedback illustration showing a stick figure with a speech bubble&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Browser vendors depend on your feedback to build the right tools for you. Without hearing from you all about what problems you have, or what features you lack, they can&#39;t take the right decisions about what to build.&lt;/p&gt;
-&lt;p&gt;If you report bugs to the devtools team when you see them, you won&#39;t just be helping you when the fix comes, but you may be helping many others who have the same bug but haven&#39;t reported it.&lt;/p&gt;
-&lt;p&gt;It&#39;s worth knowing that the various devtools teams at Microsoft, Mozilla, Apple and Google are usually fairly small and receive a lot of feedback, so reporting an issue does not mean it will be fixed quickly (or at all, if it&#39;s lower priority than others), but it does help, and those teams &lt;strong&gt;are listening&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If you report bugs to the DevTools team when you see them, you won&#39;t just be helping you when the fix comes, but you may be helping many others who have the same bug but haven&#39;t reported it.&lt;/p&gt;
+&lt;p&gt;It&#39;s worth knowing that the various DevTools teams at Microsoft, Mozilla, Apple and Google are usually fairly small and receive a lot of feedback, so reporting an issue does not mean it will be fixed quickly (or at all, if it&#39;s lower priority than others), but it does help, and those teams &lt;strong&gt;are listening&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Here are a few ways you can report bugs, ask questions or request features:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Firefox DevTools&lt;/strong&gt;:
@@ -2233,7 +2257,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;li&gt;or using the command menu (&lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt;) and typing &amp;quot;tooltips&amp;quot;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When tooltips are enabled, you can hover over them to get documentation about the tools.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/get-contextual-help.gif&quot; alt=&quot;Animation of the devtools tooltips in Edge.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/get-contextual-help.gif&quot; alt=&quot;Animation of the DevTools tooltips in Edge.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -2895,7 +2919,7 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
 &lt;li&gt;Press &lt;code&gt;ctrl/cmd + d&lt;/code&gt; to automatically add outlines around all elements.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And voila! All elements are outlined and you can understand what&#39;s going on.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/outline-everything.gif&quot; alt=&quot;Animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/outline-everything.gif&quot; alt=&quot;Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
