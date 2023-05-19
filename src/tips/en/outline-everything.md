@@ -18,4 +18,4 @@ In Polypane:
 
 And voila! All elements are outlined and you can understand what's going on.
 
-![Animation showing how adding the rule in the styles pane if chrome devtools outlines all elements in the page.](../../assets/img/outline-everything.gif)
+![Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page.](../../assets/img/outline-everything.gif)

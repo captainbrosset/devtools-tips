@@ -9,9 +9,9 @@ see-also: ["get-contextual-help.md", "find-devtools-documentation.md"]
 
 Browser vendors depend on your feedback to build the right tools for you. Without hearing from you all about what problems you have, or what features you lack, they can't take the right decisions about what to build.
 
-If you report bugs to the devtools team when you see them, you won't just be helping you when the fix comes, but you may be helping many others who have the same bug but haven't reported it.
+If you report bugs to the DevTools team when you see them, you won't just be helping you when the fix comes, but you may be helping many others who have the same bug but haven't reported it.
 
-It's worth knowing that the various devtools teams at Microsoft, Mozilla, Apple and Google are usually fairly small and receive a lot of feedback, so reporting an issue does not mean it will be fixed quickly (or at all, if it's lower priority than others), but it does help, and those teams **are listening**.
+It's worth knowing that the various DevTools teams at Microsoft, Mozilla, Apple and Google are usually fairly small and receive a lot of feedback, so reporting an issue does not mean it will be fixed quickly (or at all, if it's lower priority than others), but it does help, and those teams **are listening**.
 
 Here are a few ways you can report bugs, ask questions or request features:
 

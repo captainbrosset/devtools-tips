@@ -18,7 +18,7 @@ Safari, Firefox, Chrome, Polypane and Edge all have support for layers in their 
 1. In the sidebar where CSS rules are displayed, rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.
 1. Rules that are part of a cascade layer have a `@layer <layername>` label above them.
 
-![Firefox showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules.](../../assets/img/debug-css-cascade-layers-firefox.png)
+![Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.](../../assets/img/debug-css-cascade-layers-firefox.png)
 
 ### Only Edge and Chrome
 
@@ -28,4 +28,4 @@ On top of the above, Edge and Chrome have a layers view:
 1. Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.
 1. Click **Toggle CSS layers view** in the **Styles** panel toolbar (next to the search field) to reveal the list of layers.
 
-![Edge showing a demo page that uses layers and devtools opened, showing the Rules panel with 2 @layer rules and the layers view.](../../assets/img/debug-css-cascade-layers-edge.png)
+![Edge showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules and the layers view.](../../assets/img/debug-css-cascade-layers-edge.png)
