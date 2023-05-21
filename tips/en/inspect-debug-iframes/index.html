@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ignore JavaScript code to ease debugging</title>
+    <title>Inspect and debug iframes</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/ignore-scripts/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/inspect-debug-iframes/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/ignore-scripts.png">
-    <meta property="og:description" content="Ignore JavaScript code to ease debugging">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/inspect-debug-iframes-firefox.png">
+    <meta property="og:description" content="Inspect and debug iframes">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -21,7 +21,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Ignore JavaScript code to ease debugging</a></h1>
+      <h1><a href="/">Inspect and debug iframes</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -43,26 +43,30 @@
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/javascript/">javascript</a></li><li class="tag"><a href="/tag/frameworks/">frameworks</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
 </div>
-<h2 class="tip-title">Ignore JavaScript code to ease debugging</h2>
+<h2 class="tip-title">Inspect and debug iframes</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>Debugging JavaScript can quickly get out of hand when you have a lot of code and many functions that call each other.</p>
-<p>What's even worse is when a lot of this code isn't even yours. This can happen when you use frameworks or libraries. You don't really want to debug the library code, but sometimes it gets in the way when trying to step through your own code while using breakpoints.</p>
-<p>To help with this, you can ignore third-party scripts (like library source files) in DevTools. When ignored, those files don't appear in your callstacks when debugging, and you don't step through them anymore.</p>
-<ul>
-<li>To ignore a script in Chrome or Edge: right-click anywhere in the file and click <strong>Add script to ignore list</strong>. Learn more on the <a href="https://developer.chrome.com/docs/devtools/javascript/reference/#ignore-list">Chrome docs</a> or the <a href="https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/reference#ignore-a-script-or-pattern-of-scripts">Edge docs</a>.</li>
-<li>In Firefox: right-click in the file and click <strong>Ignore source</strong>. Or click the <strong>Ignore source</strong> button in the bottom left corner of the file (<a href="https://firefox-source-docs.mozilla.org/devtools-user/debugger/how_to/ignore_a_source/index.html">learn more</a>).</li>
-</ul>
-<p>In Firefox, you can go even further than this and ignore parts of a script only. Maybe you have a utility function in your file that gets called over and over again but isn't related to what you're trying to debug.</p>
-<p>To ignore part of script only in Firefox:</p>
-<ul>
-<li>Select the code you want to ignore.</li>
-<li>Right-click the select and click <strong>Ignore lines</strong>.</li>
-</ul>
-<p><img src="/assets/img/ignore-scripts.png" alt="Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code."></p>
+    <p>If the page you are working on contains an iframe which you want to inspect and debug, you can actually use DevTools to do so. This can be very useful when working with coding playground sites like <a href="https://codepen.io/">CodePen</a>, <a href="https://jsfiddle.net/">JSFiddle</a>, or <a href="https://glitch.com/">Glitch</a>.</p>
+<h3>Firefox</h3>
+<p>Firefox has an iframe selector button in its toolbar that lets you select the iframe you want to inspect. Once selected, the <strong>Inspector</strong> and <strong>Console</strong> tools will be scoped to the iframe you selected. This means that you will only see the DOM tree and the console messages for the iframe you selected. This also means that any JavaScript expression you execute in the <strong>Console</strong> tool will be executed in the context of the iframe.</p>
+<ol>
+<li>Open Firefox DevTools.</li>
+<li>In the main toolbar, click <strong>Select an iframe as the currently targeted document</strong>.</li>
+<li>Select the iframe you want to inspect.</li>
+</ol>
+<p><img src="/assets/img/inspect-debug-iframes-firefox.png" alt="Firefox, with DevTools opened on the side, showing the iframe selector button in the toolbar"></p>
+<h3>Chrome and Edge</h3>
+<p>Chromium-based browsers have a <strong>JavaScript context</strong> selector button located in the <strong>Console</strong> tool which allows you to select the iframe you want to execute JavaScript expressions in. This button does not change what's visible in the <strong>Elements</strong> tool, it only changes the JavaScript context in which the <strong>Console</strong> tool works.</p>
+<ol>
+<li>Open DevTools.</li>
+<li>Open the <strong>Console</strong> tool.</li>
+<li>In the <strong>Console</strong> toolbar, click <strong>JavaScript context</strong>.</li>
+<li>Select the context you want to execute JavaScript expressions in.</li>
+</ol>
+<p><img src="/assets/img/inspect-debug-iframes-chrome.png" alt="Chrome, with the Console in DevTools, opened on the side, showing the JS context selector button"></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
@@ -71,25 +75,10 @@
             <a href="/tips/en/find-custom-elements-code" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/find-custom-elements-code.gif" alt="Animation showing the custom button in Firefox&#39;s inspector and that clicking on it goes to the debugger.">
             </a>
-        </li><li>
-            <a href="/tips/en/disable-event-listeners">Remove or disable event listeners</a>
-            <a href="/tips/en/disable-event-listeners" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/disable-event-listeners-firefox.png" alt="The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.">
-            </a>
-        </li><li>
-            <a href="/tips/en/sample-colors-from-the-page">Sample colors from the page</a>
-            <a href="/tips/en/sample-colors-from-the-page" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/sample-colors-from-the-page-1.gif" alt="Animation of the eyedropper tool being started from the Firefox main menu.">
-            </a>
-        </li><li>
-            <a href="/tips/en/detect-unused-code">Detect unused CSS and JavaScript code</a>
-            <a href="/tips/en/detect-unused-code" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/detect-unused-code.png" alt="Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used">
-            </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2022-10-17T00:00:00.000Z">10/17/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/ignore-scripts.md">Edit page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-09-05T00:00:00.000Z">9/5/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/inspect-debug-iframes.md">Edit page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
