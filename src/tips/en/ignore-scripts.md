@@ -2,7 +2,7 @@
 date: 2022-10-17
 authors: Patrick Brosset
 title: Ignore JavaScript code to ease debugging
-tags: ["javascript", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["javascript", "frameworks", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
 Debugging JavaScript can quickly get out of hand when you have a lot of code and many functions that call each other.
 
