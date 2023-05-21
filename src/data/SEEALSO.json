@@ -2254,6 +2254,16 @@
     }
   ],
   "inspect-css-animations.md": [],
+  "inspect-debug-iframes.md": [
+    {
+      "title": "Find your web component's custom element code",
+      "image": {
+        "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
+        "src": "../../assets/img/find-custom-elements-code.gif"
+      },
+      "link": "/tips/en/find-custom-elements-code"
+    }
+  ],
   "jump-to-css-variable.md": [
     {
       "title": "Copy an elements styles",
