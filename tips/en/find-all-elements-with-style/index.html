@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find all elements with a specific style</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/find-all-elements-with-style/">
+    
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/find-all-elements-with-style.png">
+    <meta property="og:description" content="Find all elements with a specific style">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+  </head>
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+      <h1><a href="/">Find all elements with a specific style</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <main id="maincontent">
+      <div class="announcement">
+        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
+      </div>
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/testing/">testing</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
+</div>
+<h2 class="tip-title">Find all elements with a specific style</h2>
+<div class="tip-content" data-pagefind-body>
+    <p>Let's say you want to list all of the elements on a page that are absolutely positioned. Or maybe you want to find all of the elements that use CSS grid. How would you do that?</p>
+<p>One way is to run a few lines of JavaScript code in the <strong>Console</strong> tool to iterate over all of the elements and check their computed styles. Here's how:</p>
+<ol>
+<li>
+<p>Open the <strong>Console</strong> tool.</p>
+</li>
+<li>
+<p>Copy the below code snippet and paste it in the <strong>Console</strong>. Change the <code>whatToFind</code> object to match your needs.</p>
+</li>
+</ol>
+<pre class="language-js"><code class="language-js"><span class="token keyword">var</span> whatToFind <span class="token operator">=</span> <span class="token punctuation">{</span><br>  property<span class="token operator">:</span> <span class="token string">"position"</span><span class="token punctuation">,</span><br>  values<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"absolute"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span><br><br><span class="token keyword">var</span> walker <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createTreeWalker</span><span class="token punctuation">(</span><br>  document<span class="token punctuation">.</span>documentElement<span class="token punctuation">,</span><br>  NodeFilter<span class="token punctuation">.</span><span class="token constant">SHOW_ELEMENT</span><span class="token punctuation">,</span><br>  <span class="token parameter">el</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>    <span class="token keyword">const</span> style <span class="token operator">=</span> <span class="token function">getComputedStyle</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span><span class="token punctuation">[</span>whatToFind<span class="token punctuation">.</span>property<span class="token punctuation">]</span><span class="token punctuation">;</span><br>    <span class="token keyword">return</span> whatToFind<span class="token punctuation">.</span>values<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>style<span class="token punctuation">)</span><br>      <span class="token operator">?</span> NodeFilter<span class="token punctuation">.</span><span class="token constant">FILTER_ACCEPT</span><br>      <span class="token operator">:</span> NodeFilter<span class="token punctuation">.</span><span class="token constant">FILTER_SKIP</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token keyword">while</span> <span class="token punctuation">(</span>walker<span class="token punctuation">.</span><span class="token function">nextNode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>walker<span class="token punctuation">.</span>currentNode<span class="token punctuation">)</span><span class="token punctuation">;</span> <br><span class="token punctuation">}</span></code></pre>
+<ol start="3">
+<li>Press <kbd>Enter</kbd> and voila! In the screenshot below, all of the absolutely positioned elements on the page are listed.</li>
+</ol>
+<p><img src="/assets/img/find-all-elements-with-style.png" alt="The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right"></p>
+<ol start="4">
+<li>If you wanted to find all of the elements that use CSS grid, you would change the <code>whatToFind</code> object to this:</li>
+</ol>
+<pre class="language-js"><code class="language-js"><span class="token keyword">var</span> whatToFind <span class="token operator">=</span> <span class="token punctuation">{</span><br>  property<span class="token operator">:</span> <span class="token string">"display"</span><span class="token punctuation">,</span><br>  values<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"grid"</span><span class="token punctuation">,</span> <span class="token string">"inline-grid"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<p>To avoid having to copy or type this code every time, you can also use the <strong>Snippet</strong> tool in Chromium-based browsers as explained in <a href="/tips/en/use-scripts-as-snippets">Re-use scripts as snippets</a>.</p>
+
+</div><div class="see-also">
+    <h3>See also</h3>
+    <ul><li>
+            <a href="/tips/en/download-all-images">Download all images from the page</a>
+            <a href="/tips/en/download-all-images" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/download-all-images.png" alt="The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded">
+            </a>
+        </li><li>
+            <a href="/tips/en/find-all-images-without-alt-text">Find all images without alternative text</a>
+            <a href="/tips/en/find-all-images-without-alt-text" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console.">
+            </a>
+        </li><li>
+            <a href="/tips/en/find-broken-links">Find broken links</a>
+            <a href="/tips/en/find-broken-links" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-broken-links-polypane.png" alt="Polypane, with the outline panel open. Two of the links show a 404 error code">
+            </a>
+        </li><li>
+            <a href="/tips/en/highlight-matching-elements">Highlight all the elements that a CSS rule matches</a>
+            <a href="/tips/en/highlight-matching-elements" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page.">
+            </a>
+        </li></ul>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2023-05-31T00:00:00.000Z">5/31/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-all-elements-with-style.md">Edit page</a></p>
+</div>
+<script async src="/assets/dialog-lightbox.js"></script>
+
+    </main>
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
+    </footer>
+
+    
+    
+    <script>
+      const pixel = new Image();
+      let url = 'https://patrickbrosset.com/pixel.php';
+      url += '?t=' + Date.now();
+      url += '&url=' + encodeURIComponent(window.location.href);
+      pixel.src = url;
+    </script>
+    
+
+    
+    
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+    
+  </body>
+</html>
