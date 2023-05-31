@@ -1,5 +1,5 @@
 ---
-date: 2023-21-05
+date: 2023-05-21
 authors: Patrick Brosset
 title: Inspect and debug iframes
 tags: ["debug", "browser:edge", "browser:chrome", "browser:firefox"]
