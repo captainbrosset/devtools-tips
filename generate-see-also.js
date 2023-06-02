@@ -151,7 +151,7 @@ async function getData() {
 
     // Remove the duplicated tips in seeAlso.
     const seen = new Set();
-    seeAlso = seeAlso.filter(s => {
+    const filteredSeeAlso = seeAlso.filter(s => {
       if (seen.has(s.tip.file)) {
         return false;
       }
@@ -159,7 +159,7 @@ async function getData() {
       return true;
     });
 
-    data[tip.file] = seeAlso.slice(0, MAX_TIPS).map(s => {
+    data[tip.file] = filteredSeeAlso.slice(0, MAX_TIPS).map(s => {
       return {
         title: s.tip.title,
         image: s.tip.image,
