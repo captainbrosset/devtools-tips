@@ -875,12 +875,12 @@
       "link": "/tips/en/copy-from-console"
     },
     {
-      "title": "List all supported console functions",
+      "title": "Find all elements with a specific style",
       "image": {
-        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "../../assets/img/list-console-functions.png"
+        "alt": "The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right",
+        "src": "../../assets/img/find-all-elements-with-style.png"
       },
-      "link": "/tips/en/list-console-functions"
+      "link": "/tips/en/find-all-elements-with-style"
     }
   ],
   "disable-abusive-debugger-statement.md": [
@@ -1498,6 +1498,40 @@
         "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
+    }
+  ],
+  "find-all-elements-with-style.md": [
+    {
+      "title": "Download all images from the page",
+      "image": {
+        "alt": "The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded",
+        "src": "../../assets/img/download-all-images.png"
+      },
+      "link": "/tips/en/download-all-images"
+    },
+    {
+      "title": "Find all images without alternative text",
+      "image": {
+        "alt": "The output of the console.table command from above shown in the Firefox DevTools console.",
+        "src": "../../assets/img/find-all-images-without-alt-text.png"
+      },
+      "link": "/tips/en/find-all-images-without-alt-text"
+    },
+    {
+      "title": "Find broken links",
+      "image": {
+        "alt": "Polypane, with the outline panel open. Two of the links show a 404 error code",
+        "src": "../../assets/img/find-broken-links-polypane.png"
+      },
+      "link": "/tips/en/find-broken-links"
+    },
+    {
+      "title": "Highlight all the elements that a CSS rule matches",
+      "image": {
+        "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
+        "src": "../../assets/img/highlight-matching-elements.gif"
+      },
+      "link": "/tips/en/highlight-matching-elements"
     }
   ],
   "find-all-images-without-alt-text.md": [
@@ -2592,20 +2626,20 @@
       "link": "/tips/en/see-quick-a11y-info-on-hover"
     },
     {
+      "title": "Find all elements with a specific style",
+      "image": {
+        "alt": "The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right",
+        "src": "../../assets/img/find-all-elements-with-style.png"
+      },
+      "link": "/tips/en/find-all-elements-with-style"
+    },
+    {
       "title": "Find and export CSS changes",
       "image": {
         "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
         "src": "../../assets/img/find-css-changes.png"
       },
       "link": "/tips/en/find-css-changes"
-    },
-    {
-      "title": "Debug unwanted scrollbars",
-      "image": {
-        "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
-        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
-      },
-      "link": "/tips/en/debug-unwanted-scrollbars"
     }
   ],
   "past-several-css-declarations.md": [
@@ -3455,12 +3489,12 @@
       "link": "/tips/en/remove-annoying-overlays"
     },
     {
-      "title": "Get detached DOM elements to investigate memory leaks",
+      "title": "Find all elements with a specific style",
       "image": {
-        "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
-        "src": "../../assets/img/get-detached-elements.png"
+        "alt": "The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right",
+        "src": "../../assets/img/find-all-elements-with-style.png"
       },
-      "link": "/tips/en/get-detached-elements"
+      "link": "/tips/en/find-all-elements-with-style"
     }
   ],
   "store-node-as-variable.md": [
@@ -3871,6 +3905,14 @@
         "src": "../../assets/img/multi-line-console-firefox.png"
       },
       "link": "/tips/en/multi-line-console"
+    },
+    {
+      "title": "Find all elements with a specific style",
+      "image": {
+        "alt": "The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right",
+        "src": "../../assets/img/find-all-elements-with-style.png"
+      },
+      "link": "/tips/en/find-all-elements-with-style"
     }
   ],
   "view-logs-for-other-browsers-on-ios.md": [
