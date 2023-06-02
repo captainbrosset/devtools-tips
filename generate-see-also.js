@@ -149,8 +149,15 @@ async function getData() {
     // Sort by the number of keysInCommon, from most to least.
     seeAlso.sort((a, b) => b.keysInCommon.length - a.keysInCommon.length);
 
-    // console.log(tip.file);
-    // console.log(seeAlso);
+    // Remove the duplicated tips in seeAlso.
+    const seen = new Set();
+    seeAlso = seeAlso.filter(s => {
+      if (seen.has(s.tip.file)) {
+        return false;
+      }
+      seen.add(s.tip.file);
+      return true;
+    });
 
     data[tip.file] = seeAlso.slice(0, MAX_TIPS).map(s => {
       return {
