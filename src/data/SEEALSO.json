@@ -3280,6 +3280,32 @@
       "link": "/tips/en/get-contextual-help"
     }
   ],
+  "see-which-font-was-used-in-font-family.md": [
+    {
+      "title": "List the fonts used on a page, or an element",
+      "image": {
+        "alt": "Firefox, with DevTools on the side, showing the Fonts panel that contains the list of fonts. One of the fonts is hovered",
+        "src": "../../assets/img/list-used-fonts-firefox.png"
+      },
+      "link": "/tips/en/list-used-fonts"
+    },
+    {
+      "title": "Convert font property units",
+      "image": {
+        "alt": "The fonts panel in Firefox, showing the unit conversion drop-down.",
+        "src": "../../assets/img/convert-font-units-1.png"
+      },
+      "link": "/tips/en/convert-font-units"
+    },
+    {
+      "title": "List the fonts used on a page, or an element",
+      "image": {
+        "alt": "Firefox, with DevTools on the side, showing the Fonts panel that contains the list of fonts. One of the fonts is hovered",
+        "src": "../../assets/img/list-used-fonts-firefox.png"
+      },
+      "link": "/tips/en/list-used-fonts"
+    }
+  ],
   "select-pointer-events-none-elements.md": [
     {
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
