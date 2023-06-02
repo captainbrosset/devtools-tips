@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know which of the font in a font-family was actually used</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/see-which-font-was-used-in-font-family/">
+    
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/see-which-font-was-used-in-font-family.png">
+    <meta property="og:description" content="Know which of the font in a font-family was actually used">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+  </head>
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+      <h1><a href="/">Know which of the font in a font-family was actually used</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/pwa/">pwa</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <main id="maincontent">
+      <div class="announcement">
+        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
+      </div>
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+</div>
+<h2 class="tip-title">Know which of the font in a font-family was actually used</h2>
+<div class="tip-content" data-pagefind-body>
+    <p>The CSS <a href="https://developer.mozilla.org/docs/Web/CSS/font-family"><code>font-family</code></a> property let's you define a comma-separated list of fonts that the browser engine should choose from (in priority order) to render text. For example, with <code>font-family: &quot;Gill Sans&quot;, sans-serif;</code> the browser will first try to use the <code>Gill Sans</code> font, and if it's not available on the current device, it will fall back to whatever is the default <code>sans-serif</code> font on this device.</p>
+<p>As a web developer, it's often useful to know which font was actually used in a long list of fallback fonts.</p>
+<p>On Firefox:</p>
+<ol>
+<li>Open DevTools, and open the <strong>Inspector</strong> tool.</li>
+<li>Select the element you want to inspect.</li>
+<li>In the <strong>Rules</strong> sidebar, find the <code>font-family</code> property that applies to this element.</li>
+<li>Check which font name in the property value is underlined. This is the font the browser selected.</li>
+</ol>
+<p><img src="/assets/img/see-which-font-was-used-in-font-family.png" alt="Firefox, DevTools is opened on the side, showing the Inspector tool and the Rules sidebar tab. The font-family property shows a long list of fonts, with one of them being underlined"></p>
+<p><strong>Important note</strong>: this is different from knowing which font was used to actually render text. To make this clearer, there are two levels to keep in mind:</p>
+<ol>
+<li>The CSS defined font in the <code>font-family</code> property, which is the font(s) that you, the web author, want to use. This may contain actual font names or generic font names such as <code>serif</code> or <code>system-ui</code>.</li>
+<li>The actual font face the browser used to render some text. This is the font file that the browser finally chose to render the text. This font file contains the actual glyphs displayed on the rendered web page.</li>
+</ol>
+<p>The defined and rendered fonts may be different for a number of reasons:</p>
+<ul>
+<li>The defined font is not available on the system.</li>
+<li>The defined font is available, but doesn't contain all the glyphs required to render the text. In this case, the browser will fall back to another font that contains the missing glyphs.</li>
+<li>The defined font is a generic font name, such as <code>serif</code> or <code>system-ui</code>, which the browser will map to a specific font on the system.</li>
+<li>The defined font is something like <code>Arial</code>, and is available, but the text contains both normal, bold, and italic text, in which case the browser may use different font files to render the different styles.</li>
+</ul>
+<p>If you want to know which final font was used to <strong>render</strong> a piece of text, see: <a href="/tips/en/list-used-fonts">List the fonts used on a page, or an element</a>.</p>
+
+</div><div class="see-also">
+    <h3>See also</h3>
+    <ul><li>
+            <a href="/tips/en/list-used-fonts">List the fonts used on a page, or an element</a>
+            <a href="/tips/en/list-used-fonts" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/list-used-fonts-firefox.png" alt="Firefox, with DevTools on the side, showing the Fonts panel that contains the list of fonts. One of the fonts is hovered">
+            </a>
+        </li><li>
+            <a href="/tips/en/convert-font-units">Convert font property units</a>
+            <a href="/tips/en/convert-font-units" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/convert-font-units-1.png" alt="The fonts panel in Firefox, showing the unit conversion drop-down.">
+            </a>
+        </li><li>
+            <a href="/tips/en/list-used-fonts">List the fonts used on a page, or an element</a>
+            <a href="/tips/en/list-used-fonts" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/list-used-fonts-firefox.png" alt="Firefox, with DevTools on the side, showing the Fonts panel that contains the list of fonts. One of the fonts is hovered">
+            </a>
+        </li></ul>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2023-06-02T00:00:00.000Z">6/2/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/see-which-font-was-used-in-font-family.md">Edit page</a></p>
+</div>
+<script async src="/assets/dialog-lightbox.js"></script>
+
+    </main>
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
+    </footer>
+
+    
+    
+    <script>
+      const pixel = new Image();
+      let url = 'https://patrickbrosset.com/pixel.php';
+      url += '?t=' + Date.now();
+      url += '&url=' + encodeURIComponent(window.location.href);
+      pixel.src = url;
+    </script>
+    
+
+    
+    
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+    
+  </body>
+</html>

@@ -5,11 +5,42 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-05-31T00:00:00.000Z</updated>
+  <updated>2023-06-02T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Know which of the font in a font-family was actually used</title>
+    <link href="https://devtoolstips.org/tips/en/see-which-font-was-used-in-font-family/"/>
+    <updated>2023-06-02T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/see-which-font-was-used-in-font-family/</id>
+    <content type="html">&lt;p&gt;The CSS &lt;a href=&quot;https://developer.mozilla.org/docs/Web/CSS/font-family&quot;&gt;&lt;code&gt;font-family&lt;/code&gt;&lt;/a&gt; property let&#39;s you define a comma-separated list of fonts that the browser engine should choose from (in priority order) to render text. For example, with &lt;code&gt;font-family: &amp;quot;Gill Sans&amp;quot;, sans-serif;&lt;/code&gt; the browser will first try to use the &lt;code&gt;Gill Sans&lt;/code&gt; font, and if it&#39;s not available on the current device, it will fall back to whatever is the default &lt;code&gt;sans-serif&lt;/code&gt; font on this device.&lt;/p&gt;
+&lt;p&gt;As a web developer, it&#39;s often useful to know which font was actually used in a long list of fallback fonts.&lt;/p&gt;
+&lt;p&gt;On Firefox:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open DevTools, and open the &lt;strong&gt;Inspector&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Select the element you want to inspect.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Rules&lt;/strong&gt; sidebar, find the &lt;code&gt;font-family&lt;/code&gt; property that applies to this element.&lt;/li&gt;
+&lt;li&gt;Check which font name in the property value is underlined. This is the font the browser selected.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-which-font-was-used-in-font-family.png&quot; alt=&quot;Firefox, DevTools is opened on the side, showing the Inspector tool and the Rules sidebar tab. The font-family property shows a long list of fonts, with one of them being underlined&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important note&lt;/strong&gt;: this is different from knowing which font was used to actually render text. To make this clearer, there are two levels to keep in mind:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The CSS defined font in the &lt;code&gt;font-family&lt;/code&gt; property, which is the font(s) that you, the web author, want to use. This may contain actual font names or generic font names such as &lt;code&gt;serif&lt;/code&gt; or &lt;code&gt;system-ui&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The actual font face the browser used to render some text. This is the font file that the browser finally chose to render the text. This font file contains the actual glyphs displayed on the rendered web page.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The defined and rendered fonts may be different for a number of reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The defined font is not available on the system.&lt;/li&gt;
+&lt;li&gt;The defined font is available, but doesn&#39;t contain all the glyphs required to render the text. In this case, the browser will fall back to another font that contains the missing glyphs.&lt;/li&gt;
+&lt;li&gt;The defined font is a generic font name, such as &lt;code&gt;serif&lt;/code&gt; or &lt;code&gt;system-ui&lt;/code&gt;, which the browser will map to a specific font on the system.&lt;/li&gt;
+&lt;li&gt;The defined font is something like &lt;code&gt;Arial&lt;/code&gt;, and is available, but the text contains both normal, bold, and italic text, in which case the browser may use different font files to render the different styles.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to know which final font was used to &lt;strong&gt;render&lt;/strong&gt; a piece of text, see: &lt;a href=&quot;https://devtoolstips.org/tips/en/see-which-font-was-used-in-font-family/list-used-fonts.md&quot;&gt;List the fonts used on a page, or an element&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Find all elements with a specific style</title>
