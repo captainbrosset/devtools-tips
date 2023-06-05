@@ -45,7 +45,7 @@
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/testing/">testing</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
 <h2 class="tip-title">Debug your print CSS styles by simulating print media</h2>
 <div class="tip-content" data-pagefind-body>
@@ -78,33 +78,40 @@
 <p><em>Tip: open two panes side-by-side and set one to print media to compare the print and screen versions of your page.</em></p>
 <p><img src="/assets/img/debug-print-css-styles-polypane.png" alt="Polypane with the Emulation options open, showing the media type option set to &quot;print&quot;"></p>
 </li>
+<li>
+<p>In Safari:</p>
+<ol>
+<li>In the <strong>Elements</strong> panel, click the printer icon in the toolbar at the top to force the page to use the print media styles.</li>
+</ol>
+<p><img src="/assets/img/debug-print-styles-safari.png" alt="Safari showing print media styles for CSS Tricks with the printer icon highlighted to toggle the option"></p>
+</li>
 </ul>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/list-console-functions">List all supported console functions</a>
-            <a href="/tips/en/list-console-functions" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
-            </a>
-        </li><li>
-            <a href="/tips/en/past-several-css-declarations">Paste multiple CSS declarations at once</a>
-            <a href="/tips/en/past-several-css-declarations" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/paste-several-css-declarations.gif" alt="Animation showing how pasting several declarations in a CSS rule in DevTools creates them all.">
-            </a>
-        </li><li>
-            <a href="/tips/en/style-console-messages">Apply CSS styles to console messages</a>
-            <a href="/tips/en/style-console-messages" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/style-console-messages.png" alt="A styled console message in Edge.">
-            </a>
-        </li><li>
             <a href="/tips/en/zoom-devtools-content">Zoom the DevTools UI to your liking</a>
             <a href="/tips/en/zoom-devtools-content" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/zoom-devtools-content.gif" alt="Animation showing the UI of Chrome DevTools being zoomed in and out.">
             </a>
+        </li><li>
+            <a href="/tips/en/debugger-statement">Use the debugger statement to pause script execution</a>
+            <a href="/tips/en/debugger-statement" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement.">
+            </a>
+        </li><li>
+            <a href="/tips/en/format-console-messages">Format console messages</a>
+            <a href="/tips/en/format-console-messages" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/format-console-messages.png" alt="A formatted console message in Edge.">
+            </a>
+        </li><li>
+            <a href="/tips/en/list-console-functions">List all supported console functions</a>
+            <a href="/tips/en/list-console-functions" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
+            </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a>, <a href="https://twitter.com/pankajparashar">Pankaj Parashar</a></span></div>
     <p class="last-edit">Last edit: <time datetime="2023-05-02T00:00:00.000Z">5/2/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-print-css-styles.md">Edit page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
