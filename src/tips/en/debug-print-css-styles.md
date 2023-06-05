@@ -1,6 +1,6 @@
 ---
 date: 2023-05-02
-authors: Patrick Brosset, Kilian Valkhof
+authors: Patrick Brosset, Kilian Valkhof, Pankaj Parashar
 title: Debug your print CSS styles by simulating print media
 tags:
   ["css", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane", "browser:safari"]
