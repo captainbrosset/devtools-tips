@@ -1406,12 +1406,12 @@
       "link": "/tips/en/find-css-changes"
     },
     {
-      "title": "See the page in 3D",
+      "title": "Simulate a different latitude/longitude geolocation",
       "image": {
-        "alt": "The 3D view tool showing a page's z-index stacking tree as a 3d scene.",
-        "src": "../../assets/img/see-the-page-in-3d.png"
+        "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
+        "src": "../../assets/img/simulate-geolocation.png"
       },
-      "link": "/tips/en/see-the-page-in-3d"
+      "link": "/tips/en/simulate-geolocation"
     }
   ],
   "expand-nodes-recursively.md": [
@@ -3256,36 +3256,36 @@
   ],
   "see-the-page-in-3d.md": [
     {
-      "title": "Find and export CSS changes",
+      "title": "Discover all the tools",
       "image": {
-        "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
-        "src": "../../assets/img/find-css-changes.png"
+        "alt": "The list of most tools in Edge DevTools, just to illustrate how many there are",
+        "src": "../../assets/img/discover-all-tools.png"
       },
-      "link": "/tips/en/find-css-changes"
+      "link": "/tips/en/discover-all-tools"
     },
     {
-      "title": "Simulate a different latitude/longitude geolocation",
+      "title": "Replay a XHR request",
       "image": {
-        "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
-        "src": "../../assets/img/simulate-geolocation.png"
+        "alt": "Chrome's Network tool, with the Replay XHR contextual menu item",
+        "src": "../../assets/img/replay-xhr.png"
       },
-      "link": "/tips/en/simulate-geolocation"
+      "link": "/tips/en/replay-xhr"
     },
     {
-      "title": "Use commands to do things faster",
+      "title": "Scroll an element into view",
       "image": {
-        "alt": "Edge's command menu.",
-        "src": "../../assets/img/execute-commands.png"
+        "alt": "Animation showing how the page is scrolled to reveal the selected element.",
+        "src": "../../assets/img/scroll-into-view.gif"
       },
-      "link": "/tips/en/execute-commands"
+      "link": "/tips/en/scroll-into-view"
     },
     {
-      "title": "Get contextual DevTools help",
+      "title": "Quickly spot out-of-viewport elements",
       "image": {
-        "alt": "Animation of the DevTools tooltips in Edge.",
-        "src": "../../assets/img/get-contextual-help.gif"
+        "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
+        "src": "../../assets/img/spot-out-of-viewport-elements.png"
       },
-      "link": "/tips/en/get-contextual-help"
+      "link": "/tips/en/spot-out-of-viewport-elements"
     }
   ],
   "see-which-font-was-used-in-font-family.md": [
