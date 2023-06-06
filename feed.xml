@@ -5,11 +5,42 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-06-02T00:00:00.000Z</updated>
+  <updated>2023-06-06T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Understand when the Console opens in the main panel and in the drawer</title>
+    <link href="https://devtoolstips.org/tips/en/understand-console-tab-drawer/"/>
+    <updated>2023-06-06T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/understand-console-tab-drawer/</id>
+    <content type="html">&lt;p&gt;Have you noticed how the &lt;strong&gt;Console&lt;/strong&gt; tool is sometimes displayed in a top-level tab (just like all other tools), and sometimes in a split pane at the bottom, below the main tool?&lt;/p&gt;
+&lt;p&gt;If you&#39;ve been confused by this in the past, this tip should hopefully help you understand the logic behind it.&lt;/p&gt;
+&lt;h3&gt;The main panel vs. the drawer&lt;/h3&gt;
+&lt;p&gt;All browser DevTools have a main area, let&#39;s call it the main panel, and typically display their tools as tabs in this main panel.&lt;/p&gt;
+&lt;p&gt;But they also also have a bottom area called the &lt;strong&gt;drawer&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This area is not always displayed and can be toggled by pressing the &lt;kbd&gt;Escape&lt;/kbd&gt; on your keyboard. If you don&#39;t see the drawer, press &lt;kbd&gt;Escape&lt;/kbd&gt; and it should appear, therefore splitting the DevTools window into 2 parts:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The main area at the top, that contains all of your tools.&lt;/li&gt;
+&lt;li&gt;The drawer area at the bottom, where other tools can be used too.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here is what DevTools looks like, when the drawer isn&#39;t displayed:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/understand-console-tab-drawer-1.png&quot; alt=&quot;DevTools, with just one tool displayed, the Elements tool&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;After pressing &lt;kbd&gt;Escape&lt;/kbd&gt;, here is what DevTools looks like, with the drawer at the bottom:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/understand-console-tab-drawer-2.png&quot; alt=&quot;DevTools, with one tool displayed at the top, the Elements tool, and the drawer at the bottom, showing the Console&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;What&#39;s in the drawer?&lt;/h3&gt;
+&lt;p&gt;In Firefox, the drawer only contains the &lt;strong&gt;Console&lt;/strong&gt; tool. So, whenever you feel the need to see your logs, or execute a bit of JavaScript code while working with another tool, just press &lt;kbd&gt;Escape&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;In Chrome or Edge, the drawer has its own tabbar, just like the main panel, which can contain the &lt;strong&gt;Console&lt;/strong&gt;, but can also be used to open other tools too.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/understand-console-tab-drawer-3.png&quot; alt=&quot;The tabbar in the drawer, containing multiple tools to choose from&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;What if you open the Console in the main panel?&lt;/h3&gt;
+&lt;p&gt;This is where things may be confusing: what if you open the drawer to display the &lt;strong&gt;Console&lt;/strong&gt; and then you also open the &lt;strong&gt;Console&lt;/strong&gt; in the main panel?&lt;/p&gt;
+&lt;p&gt;When you do this, the drawer hides itself automatically. This happens because there is only one instance of the &lt;strong&gt;Console&lt;/strong&gt; tool in DevTools. Whether it&#39;s displayed in the main panel or in the drawer makes no difference, it&#39;s the same tool that&#39;s used.&lt;/p&gt;
+&lt;p&gt;So, remember, if you select the &lt;strong&gt;Console&lt;/strong&gt; in the main panel when it&#39;s already displayed in the drawer, the drawer hides away, only to return once you switch over to a different tool.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/understand-console-tab-drawer-4.gif&quot; alt=&quot;DevTools with the Console in the drawer, hiding and appearing again when the user selects the Console in the main panel and then goes back to the Elements tool&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Know which of the font in a font-family was actually used</title>
