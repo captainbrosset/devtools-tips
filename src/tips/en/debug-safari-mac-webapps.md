@@ -4,9 +4,9 @@ authors: Patrick Brosset
 title: Debug your Safari Web Apps on macOS
 tags: ["apps", "browser:safari"]
 ---
-Starting with [Safari 17 (announced at WWDC 2023)](https://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safari-17-beta/) any website you use in Safari can be installed as a Web App on macOS. Once installed, the Web App shows up like any other app on macOS, in all of the same places, like the Doc. It also has its own standalone window.
+Starting with [Safari 17 (announced at WWDC 2023)](https://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safari-17-beta/) any website you use in Safari can be installed as a Web App on macOS. Once installed, the Web App shows up like any other app on macOS, in all of the same places, like in the Dock. It also has its own standalone window.
 
-Once installed, you can still debug your Web Apps using the Web Inspector in Safari, here is how:
+Once installed, you can debug your Web Apps using the Web Inspector in Safari, here is how:
 
 1. If you haven't done this already, enable the developer features in Safari. This only needs to be done once:
 

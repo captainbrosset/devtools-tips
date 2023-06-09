@@ -750,6 +750,16 @@
       "link": "/tips/en/list-console-functions"
     }
   ],
+  "debug-safari-mac-webapps.md": [
+    {
+      "title": "Install or create extensions to customize DevTools",
+      "image": {
+        "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
+        "src": "../../assets/img/extend-devtools.png"
+      },
+      "link": "/tips/en/extend-devtools"
+    }
+  ],
   "debug-unwanted-scrollbars.md": [
     {
       "title": "Visualize the tabbing order on the page",
