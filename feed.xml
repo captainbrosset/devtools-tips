@@ -34,12 +34,13 @@
 &lt;p&gt;In Safari, go to the &lt;strong&gt;Develop&lt;/strong&gt; menu.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Select the device your Web App is running on. This will be your mac&#39;s machine name.&lt;/p&gt;
+&lt;p&gt;Select the device your Web App is running on. This will be your Mac&#39;s machine name.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;In the submenu, select the Web App you want to debug.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;To learn more, see &lt;a href=&quot;https://developer.apple.com/documentation/safari-developer-tools/develop-menu&quot;&gt;Safari&#39;s Develop menu documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-safari-mac-webapps.png&quot; alt=&quot;The Develop menu in the Safari menu bar, showing different devices and debugging targets&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
