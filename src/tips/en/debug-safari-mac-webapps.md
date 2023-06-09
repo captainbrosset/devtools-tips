@@ -16,7 +16,9 @@ Once installed, you can debug your Web Apps using the Web Inspector in Safari, h
 
 1. Open your Web App.
 1. In Safari, go to the **Develop** menu.
-1. Select the device your Web App is running on. This will be your mac's machine name.
+1. Select the device your Web App is running on. This will be your Mac's machine name.
 1. In the submenu, select the Web App you want to debug.
+
+To learn more, see [Safari's Develop menu documentation](https://developer.apple.com/documentation/safari-developer-tools/develop-menu).
 
 ![The Develop menu in the Safari menu bar, showing different devices and debugging targets](../../assets/img/debug-safari-mac-webapps.png)
