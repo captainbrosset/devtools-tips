@@ -16,8 +16,8 @@
     <link href="https://devtoolstips.org/tips/en/debug-safari-mac-webapps/"/>
     <updated>2023-06-09T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/debug-safari-mac-webapps/</id>
-    <content type="html">&lt;p&gt;Starting with &lt;a href=&quot;https://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safari-17-beta/&quot;&gt;Safari 17 (announced at WWDC 2023)&lt;/a&gt; any website you use in Safari can be installed as a Web App on macOS. Once installed, the Web App shows up like any other app on macOS, in all of the same places, like the Doc. It also has its own standalone window.&lt;/p&gt;
-&lt;p&gt;Once installed, you can still debug your Web Apps using the Web Inspector in Safari, here is how:&lt;/p&gt;
+    <content type="html">&lt;p&gt;Starting with &lt;a href=&quot;https://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safari-17-beta/&quot;&gt;Safari 17 (announced at WWDC 2023)&lt;/a&gt; any website you use in Safari can be installed as a Web App on macOS. Once installed, the Web App shows up like any other app on macOS, in all of the same places, like in the Dock. It also has its own standalone window.&lt;/p&gt;
+&lt;p&gt;Once installed, you can debug your Web Apps using the Web Inspector in Safari, here is how:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;If you haven&#39;t done this already, enable the developer features in Safari. This only needs to be done once:&lt;/p&gt;
