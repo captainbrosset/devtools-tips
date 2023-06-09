@@ -5,11 +5,44 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-06-06T00:00:00.000Z</updated>
+  <updated>2023-06-09T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Debug your Safari Web Apps on macOS</title>
+    <link href="https://devtoolstips.org/tips/en/debug-safari-mac-webapps/"/>
+    <updated>2023-06-09T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/debug-safari-mac-webapps/</id>
+    <content type="html">&lt;p&gt;Starting with &lt;a href=&quot;https://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safari-17-beta/&quot;&gt;Safari 17 (announced at WWDC 2023)&lt;/a&gt; any website you use in Safari can be installed as a Web App on macOS. Once installed, the Web App shows up like any other app on macOS, in all of the same places, like the Doc. It also has its own standalone window.&lt;/p&gt;
+&lt;p&gt;Once installed, you can still debug your Web Apps using the Web Inspector in Safari, here is how:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;If you haven&#39;t done this already, enable the developer features in Safari. This only needs to be done once:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In Safari, go to &lt;strong&gt;Safari&lt;/strong&gt; &amp;gt; &lt;strong&gt;Settings&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Select the &lt;strong&gt;Advanced&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Show features for web developers&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open your Web App.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Safari, go to the &lt;strong&gt;Develop&lt;/strong&gt; menu.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select the device your Web App is running on. This will be your mac&#39;s machine name.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the submenu, select the Web App you want to debug.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-safari-mac-webapps.png&quot; alt=&quot;The Develop menu in the Safari menu bar, showing different devices and debugging targets&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Understand when the Console opens in the main panel and in the drawer</title>
