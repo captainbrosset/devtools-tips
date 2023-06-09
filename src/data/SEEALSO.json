@@ -1303,12 +1303,12 @@
       "link": "/tips/en/replay-xhr"
     },
     {
-      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
+      "title": "Understand when the Console opens in the main panel and in the drawer",
       "image": {
-        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
-        "src": "../../assets/img/console-table-group-assert-1.jpg"
+        "alt": "DevTools, with just one tool displayed, the Elements tool",
+        "src": "../../assets/img/understand-console-tab-drawer-1.png"
       },
-      "link": "/tips/en/console-table-group-assert"
+      "link": "/tips/en/understand-console-tab-drawer"
     }
   ],
   "emulate-forced-colors.md": [],
@@ -1458,12 +1458,12 @@
       "link": "/tips/en/sample-colors-from-the-page"
     },
     {
-      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
+      "title": "Understand when the Console opens in the main panel and in the drawer",
       "image": {
-        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
-        "src": "../../assets/img/console-table-group-assert-1.jpg"
+        "alt": "DevTools, with just one tool displayed, the Elements tool",
+        "src": "../../assets/img/understand-console-tab-drawer-1.png"
       },
-      "link": "/tips/en/console-table-group-assert"
+      "link": "/tips/en/understand-console-tab-drawer"
     }
   ],
   "filter-network-requests.md": [
@@ -3797,6 +3797,40 @@
         "src": "../../assets/img/debug-grid-areas.png"
       },
       "link": "/tips/en/debug-grid-areas"
+    }
+  ],
+  "understand-console-tab-drawer.md": [
+    {
+      "title": "List all supported console functions",
+      "image": {
+        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
+        "src": "../../assets/img/list-console-functions.png"
+      },
+      "link": "/tips/en/list-console-functions"
+    },
+    {
+      "title": "Copy an object from the console",
+      "image": {
+        "alt": "Chrome devtools' console with a line of code using the copy() function.",
+        "src": "../../assets/img/copy-from-console.png"
+      },
+      "link": "/tips/en/copy-from-console"
+    },
+    {
+      "title": "Find all images without alternative text",
+      "image": {
+        "alt": "The output of the console.table command from above shown in the Firefox DevTools console.",
+        "src": "../../assets/img/find-all-images-without-alt-text.png"
+      },
+      "link": "/tips/en/find-all-images-without-alt-text"
+    },
+    {
+      "title": "Evaluate XPath to find elements in the page",
+      "image": {
+        "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
+        "src": "../../assets/img/evaluate-xpath-1.png"
+      },
+      "link": "/tips/en/evaluate-xpath"
     }
   ],
   "understand-flexbox-item-sizing.md": [
