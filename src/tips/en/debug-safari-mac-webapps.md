@@ -2,7 +2,7 @@
 date: 2023-06-09
 authors: Patrick Brosset
 title: Debug your Safari Web Apps on macOS
-tags: ["apps", "browser:firefox", "browser:edge", "browser:chrome"]
+tags: ["apps", "browser:safari"]
 ---
 Starting with [Safari 17 (announced at WWDC 2023)](https://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safari-17-beta/) any website you use in Safari can be installed as a Web App on macOS. Once installed, the Web App shows up like any other app on macOS, in all of the same places, like the Doc. It also has its own standalone window.
 
