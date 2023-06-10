@@ -1,5 +1,5 @@
 {% set nbSupportedBrowsers %}{{ post.data.tags | onlyBrowsers | length }}{% endset %}
-<li class="hover-box tip {{ "unique-browser-feature" if nbSupportedBrowsers == 1 }}">
+<li class="hover-box tip {{ "unique-browser-feature" if nbSupportedBrowsers == 1 }}" style="view-transition-name:post-{{ post.fileSlug }};">
   <a href="{{ post.url }}" class="tip-title">{{ post.data.title }}</a>
   <a href="{{ post.url }}" class="tip-image">{% mainImage post %}</a>
   <div class="tip-excerpt">
