@@ -167,6 +167,14 @@
       "link": "/tips/en/convert-font-units"
     },
     {
+      "title": "Find the CSS rule that causes a specific style to apply",
+      "image": {
+        "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
+        "src": "../../assets/img/find-rule-that-causes-style-1.png"
+      },
+      "link": "/tips/en/find-rule-that-causes-style"
+    },
+    {
       "title": "Get the selected element in the console",
       "image": {
         "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
@@ -181,14 +189,6 @@
         "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
       },
       "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
-    },
-    {
-      "title": "Monitor all events dispatched on an element",
-      "image": {
-        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "../../assets/img/monitor-element-events.gif"
-      },
-      "link": "/tips/en/monitor-element-events"
     }
   ],
   "check-bfcache-readiness.md": [
@@ -309,6 +309,14 @@
         "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
+    },
+    {
+      "title": "Find the CSS rule that causes a specific style to apply",
+      "image": {
+        "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
+        "src": "../../assets/img/find-rule-that-causes-style-1.png"
+      },
+      "link": "/tips/en/find-rule-that-causes-style"
     },
     {
       "title": "Visualize the effect of CSS transforms",
@@ -1724,6 +1732,14 @@
       "link": "/tips/en/debug-css-cascade-layers"
     },
     {
+      "title": "Find the CSS rule that causes a specific style to apply",
+      "image": {
+        "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
+        "src": "../../assets/img/find-rule-that-causes-style-1.png"
+      },
+      "link": "/tips/en/find-rule-that-causes-style"
+    },
+    {
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
@@ -1738,14 +1754,6 @@
         "src": "../../assets/img/inspect-css-animation.gif"
       },
       "link": "/tips/en/inspect-css-animations"
-    },
-    {
-      "title": "Jump from a CSS variable usage to where it is defined",
-      "image": {
-        "alt": "Animation of clicking on a custom property link in the Styles panel in Edge.",
-        "src": "../../assets/img/jump-to-css-variable.gif"
-      },
-      "link": "/tips/en/jump-to-css-variable"
     }
   ],
   "find-html-parsing-errors.md": [],
@@ -1781,6 +1789,40 @@
         "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
+    }
+  ],
+  "find-rule-that-causes-style.md": [
+    {
+      "title": "Highlight all the elements that a CSS rule matches",
+      "image": {
+        "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
+        "src": "../../assets/img/highlight-matching-elements.gif"
+      },
+      "link": "/tips/en/highlight-matching-elements"
+    },
+    {
+      "title": "Convert font property units",
+      "image": {
+        "alt": "The fonts panel in Firefox, showing the unit conversion drop-down.",
+        "src": "../../assets/img/convert-font-units-1.png"
+      },
+      "link": "/tips/en/convert-font-units"
+    },
+    {
+      "title": "Debug popups that appear on hover using JS",
+      "image": {
+        "alt": "Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.",
+        "src": "../../assets/img/debug-js-hover.gif"
+      },
+      "link": "/tips/en/debug-js-hover"
+    },
+    {
+      "title": "Find the most expensive CSS selectors",
+      "image": {
+        "alt": "The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.",
+        "src": "../../assets/img/find-expensive-selectors.png"
+      },
+      "link": "/tips/en/find-expensive-selectors"
     }
   ],
   "fix-color-contrast-issues-with-element-tooltip.md": [
@@ -2245,20 +2287,20 @@
       "link": "/tips/en/edit-position"
     },
     {
+      "title": "Find the CSS rule that causes a specific style to apply",
+      "image": {
+        "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
+        "src": "../../assets/img/find-rule-that-causes-style-1.png"
+      },
+      "link": "/tips/en/find-rule-that-causes-style"
+    },
+    {
       "title": "Draw a box around all elements to debug your CSS and page structure",
       "image": {
         "alt": "Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page.",
         "src": "../../assets/img/outline-everything.gif"
       },
       "link": "/tips/en/outline-everything"
-    },
-    {
-      "title": "See quick accessibility information on hover",
-      "image": {
-        "alt": "Animation of the a11y tooltip in chrome.",
-        "src": "../../assets/img/see-quick-a11y-info-on-hover.gif"
-      },
-      "link": "/tips/en/see-quick-a11y-info-on-hover"
     }
   ],
   "ignore-scripts.md": [
@@ -4030,6 +4072,14 @@
       "link": "/tips/en/convert-font-units"
     },
     {
+      "title": "Find the CSS rule that causes a specific style to apply",
+      "image": {
+        "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
+        "src": "../../assets/img/find-rule-that-causes-style-1.png"
+      },
+      "link": "/tips/en/find-rule-that-causes-style"
+    },
+    {
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
@@ -4044,14 +4094,6 @@
         "src": "../../assets/img/find-inactive-styles.png"
       },
       "link": "/tips/en/find-inactive-styles"
-    },
-    {
-      "title": "Speed up or slow down a video",
-      "image": {
-        "alt": "Screenshot of the Console tool showing the playbackRate property",
-        "src": "../../assets/img/change-video-playback-rate.png"
-      },
-      "link": "/tips/en/change-video-playback-rate"
     }
   ],
   "visualize-screenreader-order.md": [
