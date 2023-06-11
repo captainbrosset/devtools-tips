@@ -17,6 +17,7 @@
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
+    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -36,7 +37,7 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent">
+    <main id="maincontent" >
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
@@ -47,7 +48,7 @@
 
 </div>
 <ul class="tips">
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-hide-or-pin-inspect-info-tooltip;">
   <a href="/tips/en/hide-or-pin-inspect-info-tooltip/" class="tip-title">Hide or pin the information tooltip while inspecting page elements</a>
   <a href="/tips/en/hide-or-pin-inspect-info-tooltip/" class="tip-image"><img src="../../assets/img/hide-or-pin-inspect-info-tooltip-1.png" alt="Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -62,7 +63,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-get-recently-selected-dom-nodes-in-console;">
   <a href="/tips/en/get-recently-selected-dom-nodes-in-console/" class="tip-title">Get the recently selected DOM nodes in the console</a>
   <a href="/tips/en/get-recently-selected-dom-nodes-in-console/" class="tip-image"><img src="../../assets/img/get-recently-selected-dom-nodes-in-console.gif" alt="Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -77,7 +78,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-remove-annoying-overlays;">
   <a href="/tips/en/remove-annoying-overlays/" class="tip-title">Remove annoying page overlays and other elements</a>
   <a href="/tips/en/remove-annoying-overlays/" class="tip-image"><img src="../../assets/img/remove-annoying-overlays.gif" alt="Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -92,7 +93,7 @@
   </div>
 </li>
 
-<li class="hover-box tip unique-browser-feature">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-jump-to-referenced-elements;">
   <a href="/tips/en/jump-to-referenced-elements/" class="tip-title">Jump from a label `for` attribute to the linked input (and more)</a>
   <a href="/tips/en/jump-to-referenced-elements/" class="tip-image"><img src="../../assets/img/jump-to-referenced-elements.gif" alt="Animation showing the Firefox DevTools Inspector panel, the mouse clicks the for attribute of a label element and the selection jumps to the related input element." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -107,7 +108,7 @@
   </div>
 </li>
 
-<li class="hover-box tip unique-browser-feature">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-spot-out-of-viewport-elements;">
   <a href="/tips/en/spot-out-of-viewport-elements/" class="tip-title">Quickly spot out-of-viewport elements</a>
   <a href="/tips/en/spot-out-of-viewport-elements/" class="tip-image"><img src="../../assets/img/spot-out-of-viewport-elements.png" alt="Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -122,7 +123,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-edit-elements-with-the-keyboard;">
   <a href="/tips/en/edit-elements-with-the-keyboard/" class="tip-title">Edit an element&#39;s attributes and tag name with the keyboard</a>
   <a href="/tips/en/edit-elements-with-the-keyboard/" class="tip-image"><img src="../../assets/img/edit-elements-with-the-keyboard.gif" alt="Animation of a part of the Inspector panel in Firefox, showing how pressing Enter on a focused element goes into edit mode and how Tab allows to navigate from field to field." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -137,7 +138,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-prototype-in-the-browser;">
   <a href="/tips/en/prototype-in-the-browser/" class="tip-title">Start your HTML and CSS prototypes in the browser directly</a>
   <a href="/tips/en/prototype-in-the-browser/" class="tip-image"><img src="../../assets/img/prototype-in-the-browser.png" alt="Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -152,7 +153,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-find-html-parsing-errors;">
   <a href="/tips/en/find-html-parsing-errors/" class="tip-title">Find HTML parsing errors</a>
   <a href="/tips/en/find-html-parsing-errors/" class="tip-image"><img src="../../assets/img/find-html-parsing-errors.png" alt="The View-Source page in Firefox, with a stray em closing tag highlighted in red, with a tooltip." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -167,7 +168,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-select-pointer-events-none-elements;">
   <a href="/tips/en/select-pointer-events-none-elements/" class="tip-title">Select elements with pointer-events:none by holding Shift</a>
   <a href="/tips/en/select-pointer-events-none-elements/" class="tip-image"><img src="../../assets/img/select-pointer-events-none-elements.gif" alt="Animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -182,7 +183,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-scroll-into-view;">
   <a href="/tips/en/scroll-into-view/" class="tip-title">Scroll an element into view</a>
   <a href="/tips/en/scroll-into-view/" class="tip-image"><img src="../../assets/img/scroll-into-view.gif" alt="Animation showing how the page is scrolled to reveal the selected element." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -197,7 +198,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-node-screenshot;">
   <a href="/tips/en/node-screenshot/" class="tip-title">Take a screenshot of a single node</a>
   <a href="/tips/en/node-screenshot/" class="tip-image"><img src="../../assets/img/node-screenshot.gif" alt="Animation showing taking a node screenshot in Firefox." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -213,7 +214,7 @@ Go...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-simulate-pseudo-classes;">
   <a href="/tips/en/simulate-pseudo-classes/" class="tip-title">Simulate pseudo CSS classes</a>
   <a href="/tips/en/simulate-pseudo-classes/" class="tip-image"><img src="../../assets/img/simulate-pseudo-classes.png" alt="The :hov panel to simulate various pseudo-classes." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -228,7 +229,7 @@ Go...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-see-the-page-in-3d;">
   <a href="/tips/en/see-the-page-in-3d/" class="tip-title">See the page in 3D</a>
   <a href="/tips/en/see-the-page-in-3d/" class="tip-image"><img src="../../assets/img/see-the-page-in-3d.png" alt="The 3D view tool showing a page's z-index stacking tree as a 3d scene." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -243,7 +244,7 @@ Go...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-evaluate-xpath;">
   <a href="/tips/en/evaluate-xpath/" class="tip-title">Evaluate XPath to find elements in the page</a>
   <a href="/tips/en/evaluate-xpath/" class="tip-image"><img src="../../assets/img/evaluate-xpath-1.png" alt="The Inspector panel in Firefox showing the search field with an XPath expression." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -258,7 +259,7 @@ Go...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-store-node-as-variable;">
   <a href="/tips/en/store-node-as-variable/" class="tip-title">Store a node as a variable to use it in the console</a>
   <a href="/tips/en/store-node-as-variable/" class="tip-image"><img src="../../assets/img/store-node-as-variable.png" alt="Firefox's &quot;use in console&quot; context menu option in the Inspector, and also showing the Console with a couple of tempN variables." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -274,7 +275,7 @@ Right-click the node in the Elements (o...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-prototype-content-changes-with-designmode;">
   <a href="/tips/en/prototype-content-changes-with-designmode/" class="tip-title">Prototype content changes with designMode</a>
   <a href="/tips/en/prototype-content-changes-with-designmode/" class="tip-image"><img src="../../assets/img/prototype-content-changes-with-designmode.gif" alt="Animation of editable web page with designMode on." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -289,7 +290,7 @@ Right-click the node in the Elements (o...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-copy-element-xpath;">
   <a href="/tips/en/copy-element-xpath/" class="tip-title">Copy an element&#39;s XPath expression</a>
   <a href="/tips/en/copy-element-xpath/" class="tip-image"><img src="../../assets/img/copy-element-xpath.png" alt="The Elements panel in Edge showing the copy xpath option in the contextual menu." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -304,7 +305,7 @@ Right-click the node in the Elements (o...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-drag-drop-dom-nodes;">
   <a href="/tips/en/drag-drop-dom-nodes/" class="tip-title">Drag and drop nodes in the DOM tree</a>
   <a href="/tips/en/drag-drop-dom-nodes/" class="tip-image"><img src="../../assets/img/drag-drop-dom-nodes.gif" alt="Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -319,7 +320,7 @@ Right-click the node in the Elements (o...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-find-all-images-without-alt-text;">
   <a href="/tips/en/find-all-images-without-alt-text/" class="tip-title">Find all images without alternative text</a>
   <a href="/tips/en/find-all-images-without-alt-text/" class="tip-image"><img src="../../assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -334,7 +335,7 @@ Right-click the node in the Elements (o...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-outline-everything;">
   <a href="/tips/en/outline-everything/" class="tip-title">Draw a box around all elements to debug your CSS and page structure</a>
   <a href="/tips/en/outline-everything/" class="tip-image"><img src="../../assets/img/outline-everything.gif" alt="Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -349,7 +350,7 @@ Right-click the node in the Elements (o...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-query-dom-from-console;">
   <a href="/tips/en/query-dom-from-console/" class="tip-title">Find DOM elements from the console</a>
   <a href="/tips/en/query-dom-from-console/" class="tip-image"><img src="../../assets/img/query-dom-from-console.png" alt="Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -365,7 +366,7 @@ They are essential...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-get-current-element-in-console;">
   <a href="/tips/en/get-current-element-in-console/" class="tip-title">Get the selected element in the console</a>
   <a href="/tips/en/get-current-element-in-console/" class="tip-image"><img src="../../assets/img/get-current-element-in-console.jpg" alt="Safari's console showing how the $0 shortcut returns the selected element." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -380,7 +381,7 @@ They are essential...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-highlight-matching-elements;">
   <a href="/tips/en/highlight-matching-elements/" class="tip-title">Highlight all the elements that a CSS rule matches</a>
   <a href="/tips/en/highlight-matching-elements/" class="tip-image"><img src="../../assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -395,7 +396,7 @@ They are essential...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-expand-nodes-recursively;">
   <a href="/tips/en/expand-nodes-recursively/" class="tip-title">Expand DOM nodes recursively</a>
   <a href="/tips/en/expand-nodes-recursively/" class="tip-image"><img src="../../assets/img/expand-nodes-recursively.gif" alt="Animation showing right-clicking on a node in Chrome's Elements panel and choosing &quot;expand recursively&quot;." loading="lazy"></img></a>
   <div class="tip-excerpt">

@@ -17,6 +17,7 @@
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
+    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -36,18 +37,33 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent">
+    <main id="maincontent" >
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
       <div class="page-toolbar">
-  <h2>147 DevTools Tips</h2>
+  <h2>148 DevTools Tips</h2>
   <div id="search" class="search"></div>
 <script src="/_pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
 
 </div>
 <ul class="tips">
-<li class="hover-box tip unique-browser-feature">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-form-testing;">
+  <a href="/tips/en/form-testing/" class="tip-title">Autofill forms for testing</a>
+  <a href="/tips/en/form-testing/" class="tip-image"><img src="../../assets/img/form-testing.gif" alt="Animation of a form being filled after selecting &quot;autofill&quot; in the context menu, followed by the form being emptied after choosing &quot;Clear form&quot; in the context menu." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    In Polypane you can right-click any form on the page and select Autofill form to add dummy values to...
+    <a href="/tips/en/form-testing/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-reload-page-after-change;">
   <a href="/tips/en/reload-page-after-change/" class="tip-title">Reload a page when there&#39;s changes on disk</a>
   <a href="/tips/en/reload-page-after-change/" class="tip-image"><img src="../../assets/img/reload-page-after-change.png" alt="Polypane with the live reload panel and reload context menu visible." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -62,7 +78,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-test-pwa-protocol-handlers;">
   <a href="/tips/en/test-pwa-protocol-handlers/" class="tip-title">Test your PWA protocol handlers</a>
   <a href="/tips/en/test-pwa-protocol-handlers/" class="tip-image"><img src="../../assets/img/test-pwa-protocol-handlers.png" alt="Microsoft Edge, with the Application tool opened on the side, showing the Protocol Handlers section." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -77,7 +93,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-see-json-responses;">
   <a href="/tips/en/see-json-responses/" class="tip-title">See formatted JSON responses</a>
   <a href="/tips/en/see-json-responses/" class="tip-image"><img src="../../assets/img/see-json-responses.png" alt="The JSON viewer in Microsoft Edge." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -92,7 +108,7 @@
   </div>
 </li>
 
-<li class="hover-box tip unique-browser-feature">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-emulate-idle-detection-states;">
   <a href="/tips/en/emulate-idle-detection-states/" class="tip-title">Emulate idle detection states</a>
   <a href="/tips/en/emulate-idle-detection-states/" class="tip-image"><img src="../../assets/img/emulate-idle-detection-states.png" alt="Chrome DevTools' Sensors panel, showing a drop-down list with the different states that can be emulated." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -107,7 +123,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-debug-unwanted-scrollbars;">
   <a href="/tips/en/debug-unwanted-scrollbars/" class="tip-title">Debug unwanted scrollbars</a>
   <a href="/tips/en/debug-unwanted-scrollbars/" class="tip-image"><img src="../../assets/img/debug-unwanted-scrollbars-1.png" alt="Firefox DevTools, with the Inspector panel showing the Scroll badge on an element." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -122,7 +138,7 @@
   </div>
 </li>
 
-<li class="hover-box tip unique-browser-feature">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-find-expensive-selectors;">
   <a href="/tips/en/find-expensive-selectors/" class="tip-title">Find the most expensive CSS selectors</a>
   <a href="/tips/en/find-expensive-selectors/" class="tip-image"><img src="../../assets/img/find-expensive-selectors.png" alt="The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -137,7 +153,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-list-console-functions;">
   <a href="/tips/en/list-console-functions/" class="tip-title">List all supported console functions</a>
   <a href="/tips/en/list-console-functions/" class="tip-image"><img src="../../assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the  command result, which is an object containing a list of functions such as assert, clear, debug." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -152,7 +168,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-hide-or-pin-inspect-info-tooltip;">
   <a href="/tips/en/hide-or-pin-inspect-info-tooltip/" class="tip-title">Hide or pin the information tooltip while inspecting page elements</a>
   <a href="/tips/en/hide-or-pin-inspect-info-tooltip/" class="tip-image"><img src="../../assets/img/hide-or-pin-inspect-info-tooltip-1.png" alt="Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -167,7 +183,7 @@
   </div>
 </li>
 
-<li class="hover-box tip unique-browser-feature">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-understand-flexbox-item-sizing;">
   <a href="/tips/en/understand-flexbox-item-sizing/" class="tip-title">Understand flexbox item sizing</a>
   <a href="/tips/en/understand-flexbox-item-sizing/" class="tip-image"><img src="../../assets/img/understand-flexbox-item-sizing.png" alt="Firefox, with the DevTools Inspector tool opened, showing the Layout sidebar that contains the flex item diagram." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -182,7 +198,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-customize-keyboard-shortcuts;">
   <a href="/tips/en/customize-keyboard-shortcuts/" class="tip-title">Customize keyboard shortcuts</a>
   <a href="/tips/en/customize-keyboard-shortcuts/" class="tip-image"><img src="../../assets/img/customize-keyboard-shortcuts.png" alt="The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -197,7 +213,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-use-scripts-as-snippets;">
   <a href="/tips/en/use-scripts-as-snippets/" class="tip-title">Re-use scripts as snippets</a>
   <a href="/tips/en/use-scripts-as-snippets/" class="tip-image"><img src="../../assets/img/use-scripts-as-snippets-1.png" alt="The snippets editor in the Sources tool with a snippet open in the editor." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -212,7 +228,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-simulate-devices;">
   <a href="/tips/en/simulate-devices/" class="tip-title">Simulate different devices and screen sizes</a>
   <a href="/tips/en/simulate-devices/" class="tip-image"><img src="../../assets/img/simulate-devices.gif" alt="Animation showing how the tool makes it easy to resize the screen size by dragging the mouse." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -227,7 +243,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-ignore-scripts;">
   <a href="/tips/en/ignore-scripts/" class="tip-title">Ignore JavaScript code to ease debugging</a>
   <a href="/tips/en/ignore-scripts/" class="tip-image"><img src="../../assets/img/ignore-scripts.png" alt="Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -242,7 +258,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-edit-javascript-while-debugging;">
   <a href="/tips/en/edit-javascript-while-debugging/" class="tip-title">Edit JavaScript functions while debugging to test a quick fix</a>
   <a href="/tips/en/edit-javascript-while-debugging/" class="tip-image"><img src="../../assets/img/edit-javascript-while-debugging.gif" alt="Animation showing that it is possible to write code in the Sources panel, while debugging, to test fixes." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -257,7 +273,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-extend-devtools;">
   <a href="/tips/en/extend-devtools/" class="tip-title">Install or create extensions to customize DevTools</a>
   <a href="/tips/en/extend-devtools/" class="tip-image"><img src="../../assets/img/extend-devtools.png" alt="Microsoft Edge, with DevTools opened, showing a custom panel." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -272,7 +288,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-use-another-language;">
   <a href="/tips/en/use-another-language/" class="tip-title">Use DevTools in another language</a>
   <a href="/tips/en/use-another-language/" class="tip-image"><img src="../../assets/img/use-another-language.png" alt="The settings panel in Edge showing a checkbox to match DevTools with the browser language." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -287,7 +303,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-access-recent-console-results;">
   <a href="/tips/en/access-recent-console-results/" class="tip-title">Access results from recent Console evaluations</a>
   <a href="/tips/en/access-recent-console-results/" class="tip-image"><img src="../../assets/img/access-recent-console-results-firefox.png" alt="The Console in Firefox DevTools showing how using $_ refers to the previous Console result" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -302,7 +318,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-simulate-geolocation;">
   <a href="/tips/en/simulate-geolocation/" class="tip-title">Simulate a different latitude/longitude geolocation</a>
   <a href="/tips/en/simulate-geolocation/" class="tip-image"><img src="../../assets/img/simulate-geolocation.png" alt="Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -317,7 +333,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-find-inactive-styles;">
   <a href="/tips/en/find-inactive-styles/" class="tip-title">Find inactive CSS styles</a>
   <a href="/tips/en/find-inactive-styles/" class="tip-image"><img src="../../assets/img/find-inactive-styles.png" alt="Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -332,7 +348,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-get-recently-selected-dom-nodes-in-console;">
   <a href="/tips/en/get-recently-selected-dom-nodes-in-console/" class="tip-title">Get the recently selected DOM nodes in the console</a>
   <a href="/tips/en/get-recently-selected-dom-nodes-in-console/" class="tip-image"><img src="../../assets/img/get-recently-selected-dom-nodes-in-console.gif" alt="Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -347,7 +363,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-inspect-css-animations;">
   <a href="/tips/en/inspect-css-animations/" class="tip-title">Inspect CSS animations</a>
   <a href="/tips/en/inspect-css-animations/" class="tip-image"><img src="../../assets/img/inspect-css-animation.gif" alt="Animation of Chrome DevTools showing how to inspect and modify CSS animations using the Animation inspector." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -362,7 +378,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-remove-annoying-overlays;">
   <a href="/tips/en/remove-annoying-overlays/" class="tip-title">Remove annoying page overlays and other elements</a>
   <a href="/tips/en/remove-annoying-overlays/" class="tip-image"><img src="../../assets/img/remove-annoying-overlays.gif" alt="Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -377,7 +393,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-copy-css-selector;">
   <a href="/tips/en/copy-css-selector/" class="tip-title">Copy CSS selector of an element</a>
   <a href="/tips/en/copy-css-selector/" class="tip-image"><img src="../../assets/img/copy-css-selector.png" alt="Edge DevTools, showing how to access the Copy CSS selector option." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -392,7 +408,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-copy-element-js-path;">
   <a href="/tips/en/copy-element-js-path/" class="tip-title">Copy an element&#39;s JavaScript path</a>
   <a href="/tips/en/copy-element-js-path/" class="tip-image"><img src="../../assets/img/copy-element-js-path.png" alt="The Elements tool in Edge showing the context menu on an element, with the Copy JS path option." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -404,21 +420,6 @@
     <ul class="tags"><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip unique-browser-feature">
-  <a href="/tips/en/jump-to-referenced-elements/" class="tip-title">Jump from a label `for` attribute to the linked input (and more)</a>
-  <a href="/tips/en/jump-to-referenced-elements/" class="tip-image"><img src="../../assets/img/jump-to-referenced-elements.gif" alt="Animation showing the Firefox DevTools Inspector panel, the mouse clicks the for attribute of a label element and the selection jumps to the related input element." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    In Firefox, you can jump from an element that references the ID attribute of an other element, to th...
-    <a href="/tips/en/jump-to-referenced-elements/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
   </div>
 </li>
 </ul>

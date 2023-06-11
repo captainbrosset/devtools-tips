@@ -17,6 +17,7 @@
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
+    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -36,18 +37,33 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent">
+    <main id="maincontent" >
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
       <div class="page-toolbar">
-  <h2>147 DevTools Tips</h2>
+  <h2>148 DevTools Tips</h2>
   <div id="search" class="search"></div>
 <script src="/_pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
 
 </div>
 <ul class="tips">
-<li class="hover-box tip ">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-jump-to-referenced-elements;">
+  <a href="/tips/en/jump-to-referenced-elements/" class="tip-title">Jump from a label `for` attribute to the linked input (and more)</a>
+  <a href="/tips/en/jump-to-referenced-elements/" class="tip-image"><img src="../../assets/img/jump-to-referenced-elements.gif" alt="Animation showing the Firefox DevTools Inspector panel, the mouse clicks the for attribute of a label element and the selection jumps to the related input element." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    In Firefox, you can jump from an element that references the ID attribute of an other element, to th...
+    <a href="/tips/en/jump-to-referenced-elements/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/html/" title="See all tips about html">html</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip " style="view-transition-name:post-fix-color-contrast-issues-with-element-tooltip;">
   <a href="/tips/en/fix-color-contrast-issues-with-element-tooltip/" class="tip-title">Fix color contrast issues using the element tooltip</a>
   <a href="/tips/en/fix-color-contrast-issues-with-element-tooltip/" class="tip-image"><img src="../../assets/img/fix-color-contrast-issues-with-element-tooltip.gif" alt="Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -62,7 +78,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-empty-cache-refresh;">
   <a href="/tips/en/empty-cache-refresh/" class="tip-title">Empty the cache and hard refresh</a>
   <a href="/tips/en/empty-cache-refresh/" class="tip-image"><img src="../../assets/img/empty-cache-refresh.png" alt="The Microsoft Edge browser toolbar, showing the contextual menu of the refresh button, with the empty cache and hard refresh menu item." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -77,7 +93,7 @@
   </div>
 </li>
 
-<li class="hover-box tip unique-browser-feature">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-spot-out-of-viewport-elements;">
   <a href="/tips/en/spot-out-of-viewport-elements/" class="tip-title">Quickly spot out-of-viewport elements</a>
   <a href="/tips/en/spot-out-of-viewport-elements/" class="tip-image"><img src="../../assets/img/spot-out-of-viewport-elements.png" alt="Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -92,7 +108,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-edit-elements-with-the-keyboard;">
   <a href="/tips/en/edit-elements-with-the-keyboard/" class="tip-title">Edit an element&#39;s attributes and tag name with the keyboard</a>
   <a href="/tips/en/edit-elements-with-the-keyboard/" class="tip-image"><img src="../../assets/img/edit-elements-with-the-keyboard.gif" alt="Animation of a part of the Inspector panel in Firefox, showing how pressing Enter on a focused element goes into edit mode and how Tab allows to navigate from field to field." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -107,7 +123,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-add-new-devices;">
   <a href="/tips/en/add-new-devices/" class="tip-title">Create your own simulated devices</a>
   <a href="/tips/en/add-new-devices/" class="tip-image"><img src="../../assets/img/add-new-devices.gif" alt="Animation of the device mode in Firefox, showing how to customize the list of devices, including adding custom devices." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -122,7 +138,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-discover-all-tools;">
   <a href="/tips/en/discover-all-tools/" class="tip-title">Discover all the tools</a>
   <a href="/tips/en/discover-all-tools/" class="tip-image"><img src="../../assets/img/discover-all-tools.png" alt="The list of most tools in Edge DevTools, just to illustrate how many there are" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -137,7 +153,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-copy-element-styles;">
   <a href="/tips/en/copy-element-styles/" class="tip-title">Copy an elements styles</a>
   <a href="/tips/en/copy-element-styles/" class="tip-image"><img src="../../assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -153,7 +169,7 @@ No need to...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-use-designmode-to-spell-check;">
   <a href="/tips/en/use-designmode-to-spell-check/" class="tip-title">Use document.designMode to spell check your webpage</a>
   <a href="/tips/en/use-designmode-to-spell-check/" class="tip-image"><img src="../../assets/img/use-designmode-to-spell-check.png" alt="Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -169,7 +185,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-debug-css-cascade-layers;">
   <a href="/tips/en/debug-css-cascade-layers/" class="tip-title">Visualize and debug CSS cascade layers</a>
   <a href="/tips/en/debug-css-cascade-layers/" class="tip-image"><img src="../../assets/img/debug-css-cascade-layers-firefox.png" alt="Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -184,7 +200,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip unique-browser-feature">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-get-website-issues;">
   <a href="/tips/en/get-website-issues/" class="tip-title">Automatically get issues your site has with performance, accessibility, security, compatibility, and others.</a>
   <a href="/tips/en/get-website-issues/" class="tip-image"><img src="../../assets/img/get-website-issues.png" alt="The issues panel in Edge, showing many different issues about the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -199,7 +215,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-screenshot-part-of-page-command-menu;">
   <a href="/tips/en/screenshot-part-of-page-command-menu/" class="tip-title">Take a screenshot of part of a webpage from the Command Menu</a>
   <a href="/tips/en/screenshot-part-of-page-command-menu/" class="tip-image"><img src="../../assets/img/screenshot-part-of-page-command-menu.png" alt="Edge, with DevTools opened, and the Command menu showing the list of screenshot commands" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -214,7 +230,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-quickly-reference-react-console;">
   <a href="/tips/en/quickly-reference-react-console/" class="tip-title">Quickly reference React components in the console</a>
   <a href="/tips/en/quickly-reference-react-console/" class="tip-image"><img src="../../assets/img/quickly-reference-react-console.png" alt="The React DevTools components panel in DevTools, and Console below it, showing the result of $r" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -229,7 +245,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-prototype-in-the-browser;">
   <a href="/tips/en/prototype-in-the-browser/" class="tip-title">Start your HTML and CSS prototypes in the browser directly</a>
   <a href="/tips/en/prototype-in-the-browser/" class="tip-image"><img src="../../assets/img/prototype-in-the-browser.png" alt="Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -244,7 +260,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-fix-color-contrast-issues;">
   <a href="/tips/en/fix-color-contrast-issues/" class="tip-title">Fix low color contrast issues</a>
   <a href="/tips/en/fix-color-contrast-issues/" class="tip-image"><img src="../../assets/img/fix-color-contrast-issues-chromium.png" alt="The chrome color picker, showing the contrast lines and new color suggestions" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -259,7 +275,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-debug-js-hover-2;">
   <a href="/tips/en/debug-js-hover-2/" class="tip-title">Debug popups that appear on hover using the debugger statement</a>
   <a href="/tips/en/debug-js-hover-2/" class="tip-image"></a>
   <div class="tip-excerpt">
@@ -274,7 +290,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-console-table-group-assert;">
   <a href="/tips/en/console-table-group-assert/" class="tip-title">console.log() is great, but do you know console.table()? console.group()? console.assert()?</a>
   <a href="/tips/en/console-table-group-assert/" class="tip-image"><img src="../../assets/img/console-table-group-assert-1.jpg" alt="The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -289,7 +305,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-debug-grid-areas;">
   <a href="/tips/en/debug-grid-areas/" class="tip-title">Debug CSS grid areas</a>
   <a href="/tips/en/debug-grid-areas/" class="tip-image"><img src="../../assets/img/debug-grid-areas.png" alt="Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the &quot;display area names&quot; option checked." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -304,7 +320,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-emulate-forced-colors;">
   <a href="/tips/en/emulate-forced-colors/" class="tip-title">Emulate forced-color mode</a>
   <a href="/tips/en/emulate-forced-colors/" class="tip-image"><img src="../../assets/img/emulate-forced-colors.png" alt="Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -319,7 +335,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-check-bfcache-readiness;">
   <a href="/tips/en/check-bfcache-readiness/" class="tip-title">Check if your site can be instantly reloaded from bfcache</a>
   <a href="/tips/en/check-bfcache-readiness/" class="tip-image"><img src="../../assets/img/check-bfcache-readiness.png" alt="Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -334,7 +350,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-send-feedback-about-devtools;">
   <a href="/tips/en/send-feedback-about-devtools/" class="tip-title">Send feedback, ask for features and report bugs</a>
   <a href="/tips/en/send-feedback-about-devtools/" class="tip-image"><img src="../../assets/img/send-feedback-about-devtools.png" alt="A feedback illustration showing a stick figure with a speech bubble" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -349,7 +365,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-manipulate-complex-json;">
   <a href="/tips/en/manipulate-complex-json/" class="tip-title">Manipulate complex JSON files using DevTools</a>
   <a href="/tips/en/manipulate-complex-json/" class="tip-image"><img src="../../assets/img/manipulate-complex-json.png" alt="VSCode with some JSON data and DevTools next to it with the snippets panel containing JS code to manipulate the JSON." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -364,7 +380,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-detect-low-color-contrast;">
   <a href="/tips/en/detect-low-color-contrast/" class="tip-title">Detect low color contrast issues</a>
   <a href="/tips/en/detect-low-color-contrast/" class="tip-image"><img src="../../assets/img/detect-low-color-contrast-css-overview.png" alt="The CSS Overview panel in Chrome, showing the color contrast issues section." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -379,7 +395,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-past-several-css-declarations;">
   <a href="/tips/en/past-several-css-declarations/" class="tip-title">Paste multiple CSS declarations at once</a>
   <a href="/tips/en/past-several-css-declarations/" class="tip-image"><img src="../../assets/img/paste-several-css-declarations.gif" alt="Animation showing how pasting several declarations in a CSS rule in DevTools creates them all." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -394,7 +410,7 @@ Ope...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-track-focused-element;">
   <a href="/tips/en/track-focused-element/" class="tip-title">Detect the element with focus at any time</a>
   <a href="/tips/en/track-focused-element/" class="tip-image"><img src="../../assets/img/track-focused-element.gif" alt="Animation showing a web page with focus going through different element, and the Edge Console panel with the live expression showing a preview of the focused element." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -406,21 +422,6 @@ Ope...
     <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip ">
-  <a href="/tips/en/use-full-browser-for-device-emulation/" class="tip-title">Use full browser window for device emulation</a>
-  <a href="/tips/en/use-full-browser-for-device-emulation/" class="tip-image"><img src="../../assets/img/use-full-browser-for-device-emulation.gif" alt="Animation showing device emulation and how to undock the Developer Tools into an own window." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    Emulating different devices in the browser is incredibly useful. It gets tricky when you are on a de...
-    <a href="/tips/en/use-full-browser-for-device-emulation/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
   </div>
 </li>
 </ul>

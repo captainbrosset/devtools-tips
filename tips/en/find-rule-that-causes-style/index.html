@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the CSS rule that causes a specific style to apply</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/find-rule-that-causes-style/">
+    
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/find-rule-that-causes-style-1.png">
+    <meta property="og:description" content="Find the CSS rule that causes a specific style to apply">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    <meta name="view-transition" content="same-origin" />
+  </head>
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+      <h1><a href="/">Find the CSS rule that causes a specific style to apply</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <main id="maincontent" style="view-transition-name:post-find-rule-that-causes-style">
+      <div class="announcement">
+        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
+      </div>
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+</div>
+<h2 class="tip-title">Find the CSS rule that causes a specific style to apply</h2>
+<div class="tip-content" data-pagefind-body>
+    <p>Here is the scenario: you know there's a specific style that applies to an HTML element in your web page, say some padding, but you can't seem to find where, in the CSS code, that style is coming from.</p>
+<p>This can easily happen when working on a large codebase where a lot of CSS rules apply to the element you're looking at.</p>
+<p>One neat way to help with this is to use the <strong>Computed</strong> panel:</p>
+<ol>
+<li>Open DevTools, and select the element you're interested in.</li>
+<li>In the <strong>Elements</strong> (or <strong>Inspector</strong>) tool, open the <strong>Computed</strong> sidebar panel.</li>
+<li>In the list, search for the CSS property you are interested in, say <code>padding-bottom</code>.</li>
+<li>Expand the little arrow next to the property name to see the CSS rule (or rules) that caused this style to be applied.</li>
+<li>Click the first link in the list to jump to the actual location, in your code, where the rule is defined. In Firefox, you will end up in the <strong>Style Editor</strong> tool, and in Chromium-based browser the link will take you to the <strong>Sources</strong> tool.</li>
+</ol>
+<p><img src="/assets/img/find-rule-that-causes-style-1.png" alt="The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from"></p>
+<p>Quick note: in Chrome and Edge only, you can also jump from the <strong>Computed</strong> panel to the right place in the <strong>Styles</strong> panel by clicking to the right of the property name:</p>
+<p><img src="/assets/img/find-rule-that-causes-style-2.png" alt="The Elements tool in Chrome, showing the Computed tab. The hovered property has an arrow icon next to it that can be clicked to go to the corresponding place in the Styles panel."></p>
+
+</div><div class="see-also">
+    <h3>See also</h3>
+    <ul><li>
+            <a href="/tips/en/highlight-matching-elements">Highlight all the elements that a CSS rule matches</a>
+            <a href="/tips/en/highlight-matching-elements" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page.">
+            </a>
+        </li><li>
+            <a href="/tips/en/convert-font-units">Convert font property units</a>
+            <a href="/tips/en/convert-font-units" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/convert-font-units-1.png" alt="The fonts panel in Firefox, showing the unit conversion drop-down.">
+            </a>
+        </li><li>
+            <a href="/tips/en/debug-js-hover">Debug popups that appear on hover using JS</a>
+            <a href="/tips/en/debug-js-hover" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/debug-js-hover.gif" alt="Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.">
+            </a>
+        </li><li>
+            <a href="/tips/en/find-expensive-selectors">Find the most expensive CSS selectors</a>
+            <a href="/tips/en/find-expensive-selectors" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-expensive-selectors.png" alt="The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.">
+            </a>
+        </li></ul>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2023-06-10T00:00:00.000Z">6/10/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-rule-that-causes-style.md">Edit page</a></p>
+</div>
+<script async src="/assets/dialog-lightbox.js"></script>
+
+    </main>
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
+    </footer>
+
+    
+    
+    <script>
+      const pixel = new Image();
+      let url = 'https://patrickbrosset.com/pixel.php';
+      url += '?t=' + Date.now();
+      url += '&url=' + encodeURIComponent(window.location.href);
+      pixel.src = url;
+    </script>
+    
+
+    
+    
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+    
+  </body>
+</html>

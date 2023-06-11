@@ -17,6 +17,7 @@
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
+    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -36,7 +37,7 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent">
+    <main id="maincontent" style="view-transition-name:post-convert-font-units">
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
@@ -91,6 +92,11 @@
             <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
             <a href="/tips/en/copy-element-styles" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
+            </a>
+        </li><li>
+            <a href="/tips/en/find-rule-that-causes-style">Find the CSS rule that causes a specific style to apply</a>
+            <a href="/tips/en/find-rule-that-causes-style" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-rule-that-causes-style-1.png" alt="The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from">
             </a>
         </li><li>
             <a href="/tips/en/visualize-css-transforms">Visualize the effect of CSS transforms</a>

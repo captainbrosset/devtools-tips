@@ -17,6 +17,7 @@
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
+    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -36,18 +37,33 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent">
+    <main id="maincontent" >
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
       <div class="page-toolbar">
-  <h2>15 debug DevTools Tips</h2>
+  <h2>16 debug DevTools Tips</h2>
   <div id="search" class="search"></div>
 <script src="/_pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
 
 </div>
 <ul class="tips">
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-find-rule-that-causes-style;">
+  <a href="/tips/en/find-rule-that-causes-style/" class="tip-title">Find the CSS rule that causes a specific style to apply</a>
+  <a href="/tips/en/find-rule-that-causes-style/" class="tip-image"><img src="../../assets/img/find-rule-that-causes-style-1.png" alt="The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from" loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Here is the scenario: you know there's a specific style that applies to an HTML element in your web...
+    <a href="/tips/en/find-rule-that-causes-style/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip " style="view-transition-name:post-inspect-debug-iframes;">
   <a href="/tips/en/inspect-debug-iframes/" class="tip-title">Inspect and debug iframes</a>
   <a href="/tips/en/inspect-debug-iframes/" class="tip-image"><img src="../../assets/img/inspect-debug-iframes-firefox.png" alt="Firefox, with DevTools opened on the side, showing the iframe selector button in the toolbar" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -62,7 +78,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-view-logs-for-other-browsers-on-ios;">
   <a href="/tips/en/view-logs-for-other-browsers-on-ios/" class="tip-title">View console logs from non-Safari browsers on an iPhone</a>
   <a href="/tips/en/view-logs-for-other-browsers-on-ios/" class="tip-image"><img src="../../assets/img/view-logs-for-other-browsers-on-ios.png" alt="Edge on iOS, showing the about:inspect page, filled with logs" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -77,7 +93,7 @@
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-disable-abusive-debugger-statement;">
   <a href="/tips/en/disable-abusive-debugger-statement/" class="tip-title">Disable abusive debugger statements that prevent inspecting websites</a>
   <a href="/tips/en/disable-abusive-debugger-statement/" class="tip-image"><img src="../../assets/img/disable-abusive-debugger-statement.gif" alt="The Sources tool in Firefox, showing how to add a conditional breakpoint." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -93,7 +109,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip unique-browser-feature">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-manipulate-global-objects-on-page-load;">
   <a href="/tips/en/manipulate-global-objects-on-page-load/" class="tip-title">Manipulate global objects on page load, before other scripts run</a>
   <a href="/tips/en/manipulate-global-objects-on-page-load/" class="tip-image"><img src="../../assets/img/manipulate-global-objects-on-page-load.png" alt="The Sources tab in Safari's WebInspector, showing the Add resource button and the Bootstrap script type" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -108,7 +124,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-find-inactive-styles;">
   <a href="/tips/en/find-inactive-styles/" class="tip-title">Find inactive CSS styles</a>
   <a href="/tips/en/find-inactive-styles/" class="tip-image"><img src="../../assets/img/find-inactive-styles.png" alt="Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -123,7 +139,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-debug-js-hover-2;">
   <a href="/tips/en/debug-js-hover-2/" class="tip-title">Debug popups that appear on hover using the debugger statement</a>
   <a href="/tips/en/debug-js-hover-2/" class="tip-image"></a>
   <div class="tip-excerpt">
@@ -138,7 +154,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-simulate-pseudo-classes;">
   <a href="/tips/en/simulate-pseudo-classes/" class="tip-title">Simulate pseudo CSS classes</a>
   <a href="/tips/en/simulate-pseudo-classes/" class="tip-image"><img src="../../assets/img/simulate-pseudo-classes.png" alt="The :hov panel to simulate various pseudo-classes." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -153,7 +169,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-live-expressions;">
   <a href="/tips/en/live-expressions/" class="tip-title">Cut down on console noise using live expressions</a>
   <a href="/tips/en/live-expressions/" class="tip-image"><img src="../../assets/img/live-expressions-eye-icon.png" alt="The eye button in DevTools" loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -168,7 +184,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-use-logpoints;">
   <a href="/tips/en/use-logpoints/" class="tip-title">Console.log() for the web with logpoints</a>
   <a href="/tips/en/use-logpoints/" class="tip-image"><img src="../../assets/img/use-logpoints.png" alt="Setting a logpoint in the sources tool." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -183,7 +199,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-debug-js-hover;">
   <a href="/tips/en/debug-js-hover/" class="tip-title">Debug popups that appear on hover using JS</a>
   <a href="/tips/en/debug-js-hover/" class="tip-image"><img src="../../assets/img/debug-js-hover.gif" alt="Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -198,7 +214,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-monitor-element-events;">
   <a href="/tips/en/monitor-element-events/" class="tip-title">Monitor all events dispatched on an element</a>
   <a href="/tips/en/monitor-element-events/" class="tip-image"><img src="../../assets/img/monitor-element-events.gif" alt="Animation showing how events get automatically logged when using the monitorEvents function." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -213,7 +229,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-break-on-dom-changes;">
   <a href="/tips/en/break-on-dom-changes/" class="tip-title">Pause script execution when the DOM changes</a>
   <a href="/tips/en/break-on-dom-changes/" class="tip-image"><img src="../../assets/img/break-on-dom-changes.png" alt="The Elements panel in Edge showing the &quot;Break on&quot; contextual menu on the selected node." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -228,7 +244,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip unique-browser-feature">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-play-sound-on-js-execution;">
   <a href="/tips/en/play-sound-on-js-execution/" class="tip-title">Play a sound when a line of JavaScript is executed</a>
   <a href="/tips/en/play-sound-on-js-execution/" class="tip-image"><img src="../../assets/img/play-sound-on-js-execution.gif" alt="Animation showing how to add the audio breakpoint in Safari Web Inspector." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -243,7 +259,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-unminify-javascript-code;">
   <a href="/tips/en/unminify-javascript-code/" class="tip-title">Unminify JavaScript code to easily read and debug it</a>
   <a href="/tips/en/unminify-javascript-code/" class="tip-image"><img src="../../assets/img/unminify-javascript-code.gif" alt="The Sources panel in Chrome, showing the pretty-print button." loading="lazy"></img></a>
   <div class="tip-excerpt">
@@ -258,7 +274,7 @@ The st...
   </div>
 </li>
 
-<li class="hover-box tip ">
+<li class="hover-box tip " style="view-transition-name:post-debugger-statement;">
   <a href="/tips/en/debugger-statement/" class="tip-title">Use the debugger statement to pause script execution</a>
   <a href="/tips/en/debugger-statement/" class="tip-image"><img src="../../assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement." loading="lazy"></img></a>
   <div class="tip-excerpt">
