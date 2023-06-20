@@ -316,10 +316,10 @@
     <updated>2023-03-28T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/replay-xhr/</id>
     <content type="html">&lt;p&gt;When you&#39;re debugging an XHR request to a backend service that doesn&#39;t respond with the right things it can be useful to send the request over and over again. Reloading the entire page to do so is tedious.&lt;/p&gt;
-&lt;p&gt;In Chrome DevTools, you can simply replay the same XHR request:&lt;/p&gt;
+&lt;p&gt;In Chrome or Edge DevTools, you can simply replay the same XHR request:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open the &lt;strong&gt;Network&lt;/strong&gt; tool.&lt;/li&gt;
-&lt;li&gt;Find the XHR request in the list that you want to resend.&lt;/li&gt;
+&lt;li&gt;Find the XHR request in the list that you want to resend. Note that this only works with XHR requests, and not Fetch requests.&lt;/li&gt;
 &lt;li&gt;Right-click the request and click &lt;strong&gt;Replay XHR&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: you can also edit the request before resending it! To learn more, see &lt;a href=&quot;https://devtoolstips.org/tips/en/replay-xhr/edit-and-resend-network-requests.md&quot;&gt;Edit and resend faulty network requests to debug them&lt;/a&gt;.&lt;/p&gt;

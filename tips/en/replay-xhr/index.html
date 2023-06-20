@@ -46,15 +46,15 @@
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/network/">network</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
 </div>
 <h2 class="tip-title">Replay a XHR request</h2>
 <div class="tip-content" data-pagefind-body>
     <p>When you're debugging an XHR request to a backend service that doesn't respond with the right things it can be useful to send the request over and over again. Reloading the entire page to do so is tedious.</p>
-<p>In Chrome DevTools, you can simply replay the same XHR request:</p>
+<p>In Chrome or Edge DevTools, you can simply replay the same XHR request:</p>
 <ol>
 <li>Open the <strong>Network</strong> tool.</li>
-<li>Find the XHR request in the list that you want to resend.</li>
+<li>Find the XHR request in the list that you want to resend. Note that this only works with XHR requests, and not Fetch requests.</li>
 <li>Right-click the request and click <strong>Replay XHR</strong>.</li>
 </ol>
 <p><strong>Note</strong>: you can also edit the request before resending it! To learn more, see <a href="/tips/en/edit-and-resend-network-requests">Edit and resend faulty network requests to debug them</a>.</p>
@@ -68,19 +68,14 @@
                 <img loading="lazy" src="/assets/img/edit-and-resend-network-requests-curl.png" alt="Screenshot of Chrome&#39;s copy as cURL feature and the corresponding command in the terminal">
             </a>
         </li><li>
-            <a href="/tips/en/see-request-path-instead-of-name">See network request paths instead of names in the Network tool</a>
-            <a href="/tips/en/see-request-path-instead-of-name" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/see-request-path-instead-of-name.png" alt="The Network tool in Edge, showing the contextual menu that&#39;s used to customize the network list columns">
-            </a>
-        </li><li>
-            <a href="/tips/en/list-console-functions">List all supported console functions</a>
-            <a href="/tips/en/list-console-functions" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
-            </a>
-        </li><li>
             <a href="/tips/en/block-resources">Block resources to test your site without CSS or JavaScript</a>
             <a href="/tips/en/block-resources" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/block-resources-1.png" alt="The Network panel in Edge showing the contextual menu with the &quot;block request url&quot; item.">
+            </a>
+        </li><li>
+            <a href="/tips/en/see-request-path-instead-of-name">See network request paths instead of names in the Network tool</a>
+            <a href="/tips/en/see-request-path-instead-of-name" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/see-request-path-instead-of-name.png" alt="The Network tool in Edge, showing the contextual menu that&#39;s used to customize the network list columns">
             </a>
         </li></ul>
 </div><div class="tip-footer">
