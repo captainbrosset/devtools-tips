@@ -15,7 +15,6 @@ The page should auto-reload as you make changes to source code.
 The site is build by default in `production` mode, but you can also choose to build in `dev` mode. Building in `dev` mode does the following things:
 
 * The service worker code is removed from the build site, making it easier to reload your changes.
-* The analytics code is also removed.
 
 To build in `dev` mode:
 
@@ -34,7 +33,6 @@ Choose a unique ID for your new tip:
 * There shouldn't already be a file in `src/tips/en` with the name `<the-new-id>.md`.
 * Make the ID human-readable, so it's easy to know what the tip is about without opening the md file.
 * Use only lowercase characters and replace spaces with `-`.
-* Since the ID is used for the name of the file, it's important that once it's chosen, it doesn't change. Otherwise we might lose commit history on tips and we use it to attribute authorship on tops pages.
 
 #### Markdown file
 
