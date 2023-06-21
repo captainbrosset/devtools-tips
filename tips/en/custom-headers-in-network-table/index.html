@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit and resend faulty network requests to debug them</title>
+    <title>Add custom headers to the network table</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/edit-and-resend-network-requests/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/custom-headers-in-network-table/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/edit-and-resend-network-requests-curl.png">
-    <meta property="og:description" content="Edit and resend faulty network requests to debug them">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/custom-headers-in-network-table.png">
+    <meta property="og:description" content="Add custom headers to the network table">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Edit and resend faulty network requests to debug them</a></h1>
+      <h1><a href="/">Add custom headers to the network table</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -37,7 +37,7 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent" style="view-transition-name:post-edit-and-resend-network-requests">
+    <main id="maincontent" style="view-transition-name:post-custom-headers-in-network-table">
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
@@ -46,58 +46,37 @@
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/network/">network</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
-<h2 class="tip-title">Edit and resend faulty network requests to debug them</h2>
+<h2 class="tip-title">Add custom headers to the network table</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>When you're investigating a bug where the backend you connect to doesn't respond with the right things it's useful to tweak the requests and try again quickly. You can do this by changing your frontend code, and reloading the page, but DevTools can help you be faster by editing and resending those requests without making any frontend code changes. Here's how!</p>
-<h3>Using cURL</h3>
-<p>You can copy any request from the <strong>Network</strong> panel as a cURL command, then paste it in your terminal, edit it to your liking, and execute it!</p>
-<p>This works in Firefox, Edge, and Chrome.</p>
-<ul>
-<li>Find the request you want to test in the <strong>Network</strong> panel.</li>
-<li>Right-click it and select <strong>Copy</strong> &gt; <strong>Copy as cURL</strong>.</li>
-</ul>
-<p><img src="/assets/img/edit-and-resend-network-requests-curl.png" alt="Screenshot of Chrome's copy as cURL feature and the corresponding command in the terminal"></p>
-<p>A similar approach is to use the <strong>Copy as Fetch</strong> option, and then use the copied code from the <strong>Console</strong> panel.</p>
-<h3>Using Firefox's Edit and Resend feature</h3>
-<p>Firefox has a built-in <strong>Edit and Resend</strong> feature that's very convenient because it doesn't require to switch to the terminal.</p>
-<ul>
-<li>Find the request you want to test in the <strong>Network</strong> panel.</li>
-<li>Right-click it and select <strong>Edit and Resend</strong>.</li>
-<li>In the new panel that appears, you can edit the request's method, url, query string, headers, and body.</li>
-<li>Press <strong>Send</strong> when you're happy with the values.</li>
-</ul>
-<p><img src="/assets/img/edit-and-resend-network-requests-firefox.png" alt="The Firefox's edit and resend feature."></p>
-<h3>Using Edge's Network Console experiment</h3>
-<p>Edge has a built-in feature very similar to Firefox's <strong>Edit and Resend</strong>, but that goes further in that it allows you to create any number of requests to test over time, like <a href="https://www.postman.com/">Postman</a>.</p>
-<p>The feature is called <strong>Network Console</strong> and is an experiment for the time being, so use with caution.</p>
-<ul>
-<li>Go to the <strong>Settings</strong> (<kbd>F1</kbd>), then <strong>Experiments</strong>, and check the <strong>Enable Network Console</strong> option (make sure to restart DevTools after that).</li>
-<li>You can then access the <strong>Network Console</strong> like any other panel, but the easiest way to get started is by going to the <strong>Network</strong> panel and finding the request you want to test.</li>
-<li>Right-click it and select <strong>Edit and Resend</strong>.</li>
-<li>In the new panel that appears, you can edit the method, url, query string, headers, body, etc.</li>
-<li>Press <strong>Send</strong> when you're happy with the values.</li>
-<li>You can also save this request for later. You can find all saved requests in the <strong>Network Console</strong> panel.</li>
-</ul>
-<p><img src="/assets/img/edit-and-resend-network-requests-edge.png" alt="The Edge's Network Console feature."></p>
+    <p>On the web, when a client (a browser) and a server communicate using HTTP, the requests and responses they send to each other contain headers. These headers are key/value pairs that contain metadata about the request and the response. Common examples of headers include the <code>Content-Type</code> header, which tells the browser what type of content the server is sending back, or the <code>User-Agent</code> header, which tells the server what browser the client is using.</p>
+<p>It's also possible to add custom headers to requests and responses. This is often used by proprietary software and for debugging purposes. For example, the IIS web server adds a <code>X-Powered-By</code> header to responses.</p>
+<p>In Chrome and Edge, you can configure the <strong>Network</strong> tool to display any custom header you want in the request table directly, alongside the columns that are already displayed:</p>
+<ol>
+<li>Open DevTools and go to the <strong>Network</strong> tool.</li>
+<li>Right-click on any of the columns in the request table, and then click <strong>Response Headers</strong> &gt; <strong>Manage Header Columns</strong>.</li>
+<li>In the <strong>Manage Header Columns</strong> popup window, click <strong>Add Custom Header</strong>.</li>
+<li>Type your custom header name and press <kbd>Add</kbd>.</li>
+</ol>
+<p><img src="/assets/img/custom-headers-in-network-table.png" alt="Edge DevTools Network tool, showing a list of requests in the table, and the x-powered-by custom header as a column"></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/replay-xhr">Replay a XHR request</a>
-            <a href="/tips/en/replay-xhr" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/replay-xhr.png" alt="Chrome&#39;s Network tool, with the Replay XHR contextual menu item">
+            <a href="/tips/en/see-request-path-instead-of-name">See network request paths instead of names in the Network tool</a>
+            <a href="/tips/en/see-request-path-instead-of-name" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/see-request-path-instead-of-name.png" alt="The Network tool in Edge, showing the contextual menu that&#39;s used to customize the network list columns">
+            </a>
+        </li><li>
+            <a href="/tips/en/edit-and-resend-network-requests">Edit and resend faulty network requests to debug them</a>
+            <a href="/tips/en/edit-and-resend-network-requests" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/edit-and-resend-network-requests-curl.png" alt="Screenshot of Chrome&#39;s copy as cURL feature and the corresponding command in the terminal">
             </a>
         </li><li>
             <a href="/tips/en/filter-network-requests">Filter requests in the Network panel by status code, mime type and more</a>
             <a href="/tips/en/filter-network-requests" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/filter-network-requests.png" alt="The Network panel in Edge showing the filter input field.">
-            </a>
-        </li><li>
-            <a href="/tips/en/custom-headers-in-network-table">Add custom headers to the network table</a>
-            <a href="/tips/en/custom-headers-in-network-table" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/custom-headers-in-network-table.png" alt="Edge DevTools Network tool, showing a list of requests in the table, and the x-powered-by custom header as a column">
             </a>
         </li><li>
             <a href="/tips/en/get-size-of-resource-types">See the size of the transferred data for images, scripts, or other resources</a>
@@ -107,7 +86,7 @@
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2021-12-15T00:00:00.000Z">12/15/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/edit-and-resend-network-requests.md">Edit page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2023-06-21T00:00:00.000Z">6/21/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/custom-headers-in-network-table.md">Edit page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
