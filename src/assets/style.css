@@ -285,6 +285,7 @@ header nav {
   top: 4rem;
   border: 2px solid var(--accent-color-darker);
   border-radius: 4px;
+  z-index: 1;
 }
 
 .search .pagefind-ui__hidden {
