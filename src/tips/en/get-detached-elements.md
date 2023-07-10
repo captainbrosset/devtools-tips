@@ -3,6 +3,7 @@ date: 2022-01-10
 authors: Patrick Brosset
 title: Get detached DOM elements to investigate memory leaks
 tags: ["perf", "browser:edge"]
+see-also: ["find-memory-leaks.md"]
 ---
 
 Memory leaks can quickly become a big problem for long-running applications, and a common source of memory leaks is detached DOM elements (elements that are no longer attached to the DOM tree).

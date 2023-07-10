@@ -3,6 +3,7 @@ date: 2023-07-10
 authors: Patrick Brosset
 title: Find memory leaks by comparing heap snapshots
 tags: ["perf", "browser:edge", "browser:chrome"]
+see-also: ["get-detached-elements.md"]
 ---
 
 _**Note**: If you think your memory leak comes from DOM nodes, you can also use the  **Detached Elements** tool in Edge, see [Get detached DOM elements to investigate memory leaks](./get-detached-elements.md)._
