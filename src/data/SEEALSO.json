@@ -1817,6 +1817,16 @@
       "link": "/tips/en/convert-color-formats"
     }
   ],
+  "find-memory-leaks.md": [
+    {
+      "title": "Get detached DOM elements to investigate memory leaks",
+      "image": {
+        "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
+        "src": "../../assets/img/get-detached-elements.png"
+      },
+      "link": "/tips/en/get-detached-elements"
+    }
+  ],
   "find-rule-that-causes-style.md": [
     {
       "title": "Highlight all the elements that a CSS rule matches",
@@ -2058,6 +2068,14 @@
   ],
   "get-detached-elements.md": [
     {
+      "title": "Find memory leaks by comparing heap snapshots",
+      "image": {
+        "alt": "Microsoft Edge, with a demo webpage, and DevTools on the side with the Memory tool showing 2 snapshots have been recorded",
+        "src": "../../assets/img/find-memory-leaks-1.png"
+      },
+      "link": "/tips/en/find-memory-leaks"
+    },
+    {
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
@@ -2080,14 +2098,6 @@
         "src": "../../assets/img/highlight-matching-elements.gif"
       },
       "link": "/tips/en/highlight-matching-elements"
-    },
-    {
-      "title": "Find DOM elements from the console",
-      "image": {
-        "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
-        "src": "../../assets/img/query-dom-from-console.png"
-      },
-      "link": "/tips/en/query-dom-from-console"
     }
   ],
   "get-recently-selected-dom-nodes-in-console.md": [
