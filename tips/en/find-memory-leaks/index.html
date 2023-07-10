@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get detached DOM elements to investigate memory leaks</title>
+    <title>Find memory leaks by comparing heap snapshots</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/get-detached-elements/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/find-memory-leaks/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/get-detached-elements.png">
-    <meta property="og:description" content="Get detached DOM elements to investigate memory leaks">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/find-memory-leaks-1.png">
+    <meta property="og:description" content="Find memory leaks by comparing heap snapshots">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Get detached DOM elements to investigate memory leaks</a></h1>
+      <h1><a href="/">Find memory leaks by comparing heap snapshots</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -37,7 +37,7 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent" style="view-transition-name:post-get-detached-elements">
+    <main id="maincontent" style="view-transition-name:post-find-memory-leaks">
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
@@ -46,48 +46,55 @@
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
-<h2 class="tip-title">Get detached DOM elements to investigate memory leaks</h2>
+<h2 class="tip-title">Find memory leaks by comparing heap snapshots</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>Memory leaks can quickly become a big problem for long-running applications, and a common source of memory leaks is detached DOM elements (elements that are no longer attached to the DOM tree).
-It's usually very hard to investigate these memory leaks, because it's hard to know if elements are detached, and which ones, let alone find which part of your JavaScript code is causing them to be detached.</p>
-<p>Edge has a tool just for this: the <strong>Detached Elements</strong> panel. To use it:</p>
-<ul>
-<li>Open the <strong>command menu</strong> and type &quot;detached&quot; to find and open the <strong>Detached Elements</strong> tool.</li>
-<li>Click the <strong>Get detached elements</strong> button to list all of the currently detached elements.</li>
-<li>Click the <strong>Analyze</strong> button to take a memory heap snapshot. Once done, you can then double-click any of the detached elements' <strong>Id</strong>s to find the link between these elements and your JavaScript code in the <strong>Memory</strong> panel.</li>
-<li>Don't forget to click the <strong>Collect garbage</strong> button every once in a while to force garbage collection. Then get the detached elements again. Indeed, some elements may remain in memory simply because the browser hasn't yet cleaned them up. Forcing GC makes sure the list only contains the elements that are detached and cannot be cleaned up.</li>
-</ul>
-<p>You can find out much more about this tool in this <a href="https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/">blog post</a> and over at Microsoft's <a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks">documentation</a> site.</p>
-<p><img src="/assets/img/get-detached-elements.png" alt="The Detached Elements panel in Edge, with the Memory panel next to it."></p>
+    <p><em><strong>Note</strong>: If you think your memory leak comes from DOM nodes, you can also use the  <strong>Detached Elements</strong> tool in Edge, see <a href="/tips/en/get-detached-elements">Get detached DOM elements to investigate memory leaks</a>.</em></p>
+<p>Memory leaks are hard to find, and the <strong>Memory</strong> tool in DevTools can look pretty intimidating. But if you can reproduce the leak consistently, it helps to know about the tool's <em>Compare</em> feature, which allows you to focus on just the differences between two heap snapshots and forget the rest.</p>
+<p>To compare two heap snapshots:</p>
+<ol>
+<li>
+<p>In Chrome or Edge DevTools, open the <strong>Memory</strong> tool.</p>
+</li>
+<li>
+<p>Before doing anything else, record a first heap snapshot. This will be your baseline against which you'll compare all other snapshots.</p>
+<p>To do this, make sure the <strong>Heap snapshot</strong> option is selected and click <strong>Take snapshot</strong> at the bottom.</p>
+</li>
+<li>
+<p>Now, in the webpage, run the user scenario that creates the memory leak.</p>
+</li>
+<li>
+<p>Back in the tool, record another heap snapshot by clicking the <strong>Record heap snapshot</strong> button in the top left corner.</p>
+</li>
+<li>
+<p>With the new snapshot displayed, click the drop-down (which is currently set to <strong>Summary</strong>) and change its value to <strong>Comparison</strong>.</p>
+</li>
+<li>
+<p>Verify that the second drop-down, to the right, has the first snapshot selected. If you record more snapshots, make sure you're comparing to the right baseline.</p>
+<p><img src="/assets/img/find-memory-leaks-1.png" alt="Microsoft Edge, with a demo webpage, and DevTools on the side with the Memory tool showing 2 snapshots have been recorded"></p>
+</li>
+<li>
+<p>In this comparison view, sort by different columns to see how memory changed during the user scenario.</p>
+<p>Sort by the <strong>Size Delta</strong> column to see how much memory each object type has increased (or decreased) since the baseline snapshot. You can also sort by <strong>New</strong> and <strong>Deleted</strong> to see which objects have been created or deleted since the baseline.</p>
+</li>
+<li>
+<p>Expand object types and click on individual objects to see more details in the <strong>Retainers</strong> panel at the bottom. You should be able to find references to your own code where objects were added, eventually leading to finding the root cause of the leak!</p>
+<p><img src="/assets/img/find-memory-leaks-2.png" alt="The Memory tool in comparison mode, with one object selected, showing a list of retainers at the bottom, with links to source code"></p>
+</li>
+</ol>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/find-memory-leaks">Find memory leaks by comparing heap snapshots</a>
-            <a href="/tips/en/find-memory-leaks" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-memory-leaks-1.png" alt="Microsoft Edge, with a demo webpage, and DevTools on the side with the Memory tool showing 2 snapshots have been recorded">
-            </a>
-        </li><li>
-            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
-            <a href="/tips/en/copy-element-styles" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
-            </a>
-        </li><li>
-            <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
-            <a href="/tips/en/emulate-color-schemes" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
-            </a>
-        </li><li>
-            <a href="/tips/en/highlight-matching-elements">Highlight all the elements that a CSS rule matches</a>
-            <a href="/tips/en/highlight-matching-elements" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page.">
+            <a href="/tips/en/get-detached-elements">Get detached DOM elements to investigate memory leaks</a>
+            <a href="/tips/en/get-detached-elements" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-detached-elements.png" alt="The Detached Elements panel in Edge, with the Memory panel next to it.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2022-01-10T00:00:00.000Z">1/10/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/get-detached-elements.md">Edit page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2023-07-10T00:00:00.000Z">7/10/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-memory-leaks.md">Edit page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 

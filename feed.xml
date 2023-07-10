@@ -5,11 +5,52 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-06-21T00:00:00.000Z</updated>
+  <updated>2023-07-10T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Find memory leaks by comparing heap snapshots</title>
+    <link href="https://devtoolstips.org/tips/en/find-memory-leaks/"/>
+    <updated>2023-07-10T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/find-memory-leaks/</id>
+    <content type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: If you think your memory leak comes from DOM nodes, you can also use the  &lt;strong&gt;Detached Elements&lt;/strong&gt; tool in Edge, see &lt;a href=&quot;https://devtoolstips.org/tips/en/find-memory-leaks/get-detached-elements.md&quot;&gt;Get detached DOM elements to investigate memory leaks&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Memory leaks are hard to find, and the &lt;strong&gt;Memory&lt;/strong&gt; tool in DevTools can look pretty intimidating. But if you can reproduce the leak consistently, it helps to know about the tool&#39;s &lt;em&gt;Compare&lt;/em&gt; feature, which allows you to focus on just the differences between two heap snapshots and forget the rest.&lt;/p&gt;
+&lt;p&gt;To compare two heap snapshots:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;In Chrome or Edge DevTools, open the &lt;strong&gt;Memory&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Before doing anything else, record a first heap snapshot. This will be your baseline against which you&#39;ll compare all other snapshots.&lt;/p&gt;
+&lt;p&gt;To do this, make sure the &lt;strong&gt;Heap snapshot&lt;/strong&gt; option is selected and click &lt;strong&gt;Take snapshot&lt;/strong&gt; at the bottom.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now, in the webpage, run the user scenario that creates the memory leak.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Back in the tool, record another heap snapshot by clicking the &lt;strong&gt;Record heap snapshot&lt;/strong&gt; button in the top left corner.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;With the new snapshot displayed, click the drop-down (which is currently set to &lt;strong&gt;Summary&lt;/strong&gt;) and change its value to &lt;strong&gt;Comparison&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Verify that the second drop-down, to the right, has the first snapshot selected. If you record more snapshots, make sure you&#39;re comparing to the right baseline.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/find-memory-leaks-1.png&quot; alt=&quot;Microsoft Edge, with a demo webpage, and DevTools on the side with the Memory tool showing 2 snapshots have been recorded&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In this comparison view, sort by different columns to see how memory changed during the user scenario.&lt;/p&gt;
+&lt;p&gt;Sort by the &lt;strong&gt;Size Delta&lt;/strong&gt; column to see how much memory each object type has increased (or decreased) since the baseline snapshot. You can also sort by &lt;strong&gt;New&lt;/strong&gt; and &lt;strong&gt;Deleted&lt;/strong&gt; to see which objects have been created or deleted since the baseline.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Expand object types and click on individual objects to see more details in the &lt;strong&gt;Retainers&lt;/strong&gt; panel at the bottom. You should be able to find references to your own code where objects were added, eventually leading to finding the root cause of the leak!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/find-memory-leaks-2.png&quot; alt=&quot;The Memory tool in comparison mode, with one object selected, showing a list of retainers at the bottom, with links to source code&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Add custom headers to the network table</title>
