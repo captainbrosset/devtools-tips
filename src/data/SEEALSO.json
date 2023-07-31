@@ -141,20 +141,12 @@
   ],
   "change-color-theme.md": [
     {
-      "title": "Emulate color schemes",
+      "title": "Create your own DevTools theme",
       "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "../../assets/img/emulate-color-schemes-firefox.png"
+        "alt": "Chrome DevTools showing a custom theme where attribute names in the Elements tool are bolded",
+        "src": "../../assets/img/create-your-own-devtools-theme.png"
       },
-      "link": "/tips/en/emulate-color-schemes"
-    },
-    {
-      "title": "Use DevTools in another language",
-      "image": {
-        "alt": "The settings panel in Edge showing a checkbox to match DevTools with the browser language.",
-        "src": "../../assets/img/use-another-language.png"
-      },
-      "link": "/tips/en/use-another-language"
+      "link": "/tips/en/create-your-own-devtools-theme"
     }
   ],
   "change-video-playback-rate.md": [
@@ -523,6 +515,40 @@
       "link": "/tips/en/past-several-css-declarations"
     }
   ],
+  "create-your-own-devtools-theme.md": [
+    {
+      "title": "Change the color theme of DevTools",
+      "image": {
+        "alt": "the settings panel in Edge showing the Theme drop-down.",
+        "src": "../../assets/img/change-color-theme.png"
+      },
+      "link": "/tips/en/change-color-theme"
+    },
+    {
+      "title": "Install or create extensions to customize DevTools",
+      "image": {
+        "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
+        "src": "../../assets/img/extend-devtools.png"
+      },
+      "link": "/tips/en/extend-devtools"
+    },
+    {
+      "title": "Inspect DevTools with DevTools",
+      "image": {
+        "alt": "Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one",
+        "src": "../../assets/img/inspect-devtools-with-devtools-chrome.png"
+      },
+      "link": "/tips/en/inspect-devtools-with-devtools"
+    },
+    {
+      "title": "Emulate color schemes",
+      "image": {
+        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
+      },
+      "link": "/tips/en/emulate-color-schemes"
+    }
+  ],
   "custom-headers-in-network-table.md": [
     {
       "title": "See network request paths instead of names in the Network tool",
@@ -609,20 +635,20 @@
       "link": "/tips/en/zoom-devtools-content"
     },
     {
-      "title": "Change the color theme of DevTools",
-      "image": {
-        "alt": "the settings panel in Edge showing the Theme drop-down.",
-        "src": "../../assets/img/change-color-theme.png"
-      },
-      "link": "/tips/en/change-color-theme"
-    },
-    {
       "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
       "image": {
         "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
         "src": "../../assets/img/console-table-group-assert-1.jpg"
       },
       "link": "/tips/en/console-table-group-assert"
+    },
+    {
+      "title": "Copy an object from the console",
+      "image": {
+        "alt": "Chrome devtools' console with a line of code using the copy() function.",
+        "src": "../../assets/img/copy-from-console.png"
+      },
+      "link": "/tips/en/copy-from-console"
     }
   ],
   "debug-css-cascade-layers.md": [
@@ -677,20 +703,20 @@
       "link": "/tips/en/edit-position"
     },
     {
+      "title": "Inspect DevTools with DevTools",
+      "image": {
+        "alt": "Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one",
+        "src": "../../assets/img/inspect-devtools-with-devtools-chrome.png"
+      },
+      "link": "/tips/en/inspect-devtools-with-devtools"
+    },
+    {
       "title": "Take a screenshot of a single node",
       "image": {
         "alt": "Animation showing taking a node screenshot in Firefox.",
         "src": "../../assets/img/node-screenshot.gif"
       },
       "link": "/tips/en/node-screenshot"
-    },
-    {
-      "title": "Select elements with pointer-events:none by holding Shift",
-      "image": {
-        "alt": "Animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed.",
-        "src": "../../assets/img/select-pointer-events-none-elements.gif"
-      },
-      "link": "/tips/en/select-pointer-events-none-elements"
     }
   ],
   "debug-js-hover-2.md": [
@@ -1211,14 +1237,6 @@
   ],
   "edit-javascript-while-debugging.md": [
     {
-      "title": "Change the color theme of DevTools",
-      "image": {
-        "alt": "the settings panel in Edge showing the Theme drop-down.",
-        "src": "../../assets/img/change-color-theme.png"
-      },
-      "link": "/tips/en/change-color-theme"
-    },
-    {
       "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
       "image": {
         "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
@@ -1241,6 +1259,14 @@
         "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
+    },
+    {
+      "title": "Emulate color schemes",
+      "image": {
+        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
+      },
+      "link": "/tips/en/emulate-color-schemes"
     }
   ],
   "edit-position.md": [
@@ -1382,12 +1408,12 @@
       "link": "/tips/en/copy-from-console"
     },
     {
-      "title": "Change the color theme of DevTools",
+      "title": "Customize keyboard shortcuts",
       "image": {
-        "alt": "the settings panel in Edge showing the Theme drop-down.",
-        "src": "../../assets/img/change-color-theme.png"
+        "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
+        "src": "../../assets/img/customize-keyboard-shortcuts.png"
       },
-      "link": "/tips/en/change-color-theme"
+      "link": "/tips/en/customize-keyboard-shortcuts"
     }
   ],
   "evaluate-xpath.md": [
@@ -1478,6 +1504,14 @@
   ],
   "extend-devtools.md": [
     {
+      "title": "Create your own DevTools theme",
+      "image": {
+        "alt": "Chrome DevTools showing a custom theme where attribute names in the Elements tool are bolded",
+        "src": "../../assets/img/create-your-own-devtools-theme.png"
+      },
+      "link": "/tips/en/create-your-own-devtools-theme"
+    },
+    {
       "title": "Customize keyboard shortcuts",
       "image": {
         "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
@@ -1500,14 +1534,6 @@
         "src": "../../assets/img/sample-colors-from-the-page-1.gif"
       },
       "link": "/tips/en/sample-colors-from-the-page"
-    },
-    {
-      "title": "Understand when the Console opens in the main panel and in the drawer",
-      "image": {
-        "alt": "DevTools, with just one tool displayed, the Elements tool",
-        "src": "../../assets/img/understand-console-tab-drawer-1.png"
-      },
-      "link": "/tips/en/understand-console-tab-drawer"
     }
   ],
   "filter-network-requests.md": [
@@ -2254,12 +2280,12 @@
       "link": "/tips/en/emulate-color-schemes"
     },
     {
-      "title": "Start your HTML and CSS prototypes in the browser directly",
+      "title": "Inspect DevTools with DevTools",
       "image": {
-        "alt": "Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.",
-        "src": "../../assets/img/prototype-in-the-browser.png"
+        "alt": "Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one",
+        "src": "../../assets/img/inspect-devtools-with-devtools-chrome.png"
       },
-      "link": "/tips/en/prototype-in-the-browser"
+      "link": "/tips/en/inspect-devtools-with-devtools"
     }
   ],
   "highlight-css-properties-on-hover.md": [
@@ -2383,6 +2409,40 @@
         "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
+    }
+  ],
+  "inspect-devtools-with-devtools.md": [
+    {
+      "title": "Disable abusive debugger statements that prevent inspecting websites",
+      "image": {
+        "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
+        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
+      },
+      "link": "/tips/en/disable-abusive-debugger-statement"
+    },
+    {
+      "title": "Install or create extensions to customize DevTools",
+      "image": {
+        "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
+        "src": "../../assets/img/extend-devtools.png"
+      },
+      "link": "/tips/en/extend-devtools"
+    },
+    {
+      "title": "Take high-resolution screenshots of web pages",
+      "image": {
+        "alt": "Firefox, with DevTools opened, and the Console tool visible, showing that :screenshot command",
+        "src": "../../assets/img/take-high-res-screenshots-firefox.png"
+      },
+      "link": "/tips/en/take-high-res-screenshots"
+    },
+    {
+      "title": "Debug CSS grid areas",
+      "image": {
+        "alt": "Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the \"display area names\" option checked.",
+        "src": "../../assets/img/debug-grid-areas.png"
+      },
+      "link": "/tips/en/debug-grid-areas"
     }
   ],
   "jump-to-css-variable.md": [
@@ -3648,6 +3708,14 @@
       "link": "/tips/en/disable-event-listeners"
     },
     {
+      "title": "Inspect DevTools with DevTools",
+      "image": {
+        "alt": "Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one",
+        "src": "../../assets/img/inspect-devtools-with-devtools-chrome.png"
+      },
+      "link": "/tips/en/inspect-devtools-with-devtools"
+    },
+    {
       "title": "Measure arbitrary distances in the page",
       "image": {
         "alt": "Firefox with DevTools docked on the side. The measure tool icon is in the DevTools toolbar and has been clicked. An arbitrary area has been defined on the page and its dimensions are displayed in a tooltip",
@@ -4031,14 +4099,6 @@
     }
   ],
   "view-logs-for-other-browsers-on-ios.md": [
-    {
-      "title": "Change the color theme of DevTools",
-      "image": {
-        "alt": "the settings panel in Edge showing the Theme drop-down.",
-        "src": "../../assets/img/change-color-theme.png"
-      },
-      "link": "/tips/en/change-color-theme"
-    },
     {
       "title": "Customize keyboard shortcuts",
       "image": {
