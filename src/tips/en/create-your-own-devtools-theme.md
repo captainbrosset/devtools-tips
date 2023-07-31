@@ -18,7 +18,7 @@ First, you need to create a browser extension that will load your custom styles 
 1. In your extension directory, create a `devtools.html` file which is only used to load a JavaScript file:
 
     ```html
-    <script src="devtools.js"></script>`.
+    <script src="devtools.js"></script>
     ```
 
 1. Also create the `devtools.js` file. This is where you'll load the custom styles:
