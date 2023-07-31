@@ -60,7 +60,7 @@
 </li>
 <li>
 <p>In your extension directory, create a <code>devtools.html</code> file which is only used to load a JavaScript file:</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>devtools.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>`.</code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>devtools.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
 </li>
 <li>
 <p>Also create the <code>devtools.js</code> file. This is where you'll load the custom styles:</p>
@@ -68,11 +68,9 @@
 </li>
 <li>
 <p>Now, create the <code>devtools.css</code> file. This is where you'll write your custom styles. For example:</p>
-</li>
-</ol>
 <pre class="language-css"><code class="language-css"><span class="token selector">.webkit-html-attribute-name</span> <span class="token punctuation">{</span><br>  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <p>To help you get started with which styles you can override in your custom stylesheet, see <a href="/tips/en/inspect-devtools-with-devtools">Inspect DevTools with DevTools</a>.</p>
-<ol>
+</li>
 <li>
 <p>Finally, create a <code>manifest.json</code> file to load the DevTools page:</p>
 <pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"My DevTools theme"</span><span class="token punctuation">,</span><br>  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0"</span><span class="token punctuation">,</span><br>  <span class="token property">"manifest_version"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span><br>  <span class="token property">"devtools_page"</span><span class="token operator">:</span> <span class="token string">"devtools.html"</span><br><span class="token punctuation">}</span></code></pre>
