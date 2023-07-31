@@ -5,11 +5,112 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-07-10T00:00:00.000Z</updated>
+  <updated>2023-07-31T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Inspect DevTools with DevTools</title>
+    <link href="https://devtoolstips.org/tips/en/inspect-devtools-with-devtools/"/>
+    <updated>2023-07-31T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/inspect-devtools-with-devtools/</id>
+    <content type="html">&lt;p&gt;The user interface of DevTools is built with HTML, CSS, and JavaScript. This means you can inspect and debug DevTools with DevTools.&lt;/p&gt;
+&lt;h3&gt;Chromium&lt;/h3&gt;
+&lt;p&gt;To debug DevTools in Chromium-based browsers, such as Chrome or Edge:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open DevTools on any browser tab.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Undock DevTools into a separate window.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press &lt;kbd&gt;Ctrl+Shift+I&lt;/kbd&gt; (&lt;kbd&gt;Cmd+Opt+I&lt;/kbd&gt; on macOS) to open a second DevTools window.&lt;/p&gt;
+&lt;p&gt;This second DevTools window now targets the first one. Anything you see in the &lt;strong&gt;Elements&lt;/strong&gt; tool represents elements of the first DevTools window&#39;s user interface.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/inspect-devtools-with-devtools-chrome.png&quot; alt=&quot;Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Firefox&lt;/h3&gt;
+&lt;p&gt;To debug DevTools in Firefox:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open DevTools on any browser tab.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;strong&gt;Settings&lt;/strong&gt; page by pressing &lt;kbd&gt;F1&lt;/kbd&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Under &lt;strong&gt;Advanced settings&lt;/strong&gt;, check the &lt;strong&gt;Enable browser chrome and add-on debugging toolboxes&lt;/strong&gt; and &lt;strong&gt;Enable remote debugging&lt;/strong&gt; checkboxes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now in the main Firefox toolbar, click &lt;strong&gt;Open application menu&lt;/strong&gt; (the hamburger menu).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;More tools&lt;/strong&gt; &amp;gt; &lt;strong&gt;Browser Toolbox&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A new DevTools window appears. This one inspects the entire Firefox browser window. The elements you see in the &lt;strong&gt;Inspector&lt;/strong&gt; tool represent elements of the Firefox user interface, including its DevTools.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/inspect-devtools-with-devtools-firefox.png&quot; alt=&quot;Firefox with DevTools opened, and another DevTools window next to it which debugs the Firefox window&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Create your own DevTools theme</title>
+    <link href="https://devtoolstips.org/tips/en/create-your-own-devtools-theme/"/>
+    <updated>2023-07-31T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/create-your-own-devtools-theme/</id>
+    <content type="html">&lt;p&gt;You can change the color theme of DevTools to match your preference (see &lt;a href=&quot;https://devtoolstips.org/tips/en/create-your-own-devtools-theme/change-color-theme.md&quot;&gt;Change the color theme of DevTools&lt;/a&gt; to learn more), but you can also create your own theme from scratch by creating a browser extension.&lt;/p&gt;
+&lt;p&gt;The process is a little bit complicated, and you will need to keep up with any DevTools changes that may break your custom styles, but it&#39;s a great way to make DevTools your own. And by creating it as an extension, it also means you can share it with others.&lt;/p&gt;
+&lt;h3&gt;Create an extension&lt;/h3&gt;
+&lt;p&gt;First, you need to create a browser extension that will load your custom styles in DevTools. This extension is different from traditional browser extensions in that it doesn&#39;t create any new UI element in the browser.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a directory for your extension.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In your extension directory, create a &lt;code&gt;devtools.html&lt;/code&gt; file which is only used to load a JavaScript file:&lt;/p&gt;
+&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;devtools.js&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;`.&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Also create the &lt;code&gt;devtools.js&lt;/code&gt; file. This is where you&#39;ll load the custom styles:&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token function&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;chrome&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;runtime&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getURL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;devtools.css&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  response&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;    chrome&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;devtools&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;panels&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;applyStyleSheet&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;text&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now, create the &lt;code&gt;devtools.css&lt;/code&gt; file. This is where you&#39;ll write your custom styles. For example:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.webkit-html-attribute-name&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; bold&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; white&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; black&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To help you get started with which styles you can override in your custom stylesheet, see &lt;a href=&quot;https://devtoolstips.org/tips/en/create-your-own-devtools-theme/inspect-devtools-with-devtools.md&quot;&gt;Inspect DevTools with DevTools&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, create a &lt;code&gt;manifest.json&lt;/code&gt; file to load the DevTools page:&lt;/p&gt;
+&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;My DevTools theme&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;1.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;manifest_version&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;devtools_page&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;devtools.html&quot;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Enable custom DevTools themes&lt;/h3&gt;
+&lt;p&gt;By default, DevTools doesn&#39;t load custom themes created by browser extensions. To enable this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open DevTools.&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Settings&lt;/strong&gt; page by pressing &lt;kbd&gt;F1&lt;/kbd&gt;.&lt;/li&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Experiments&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enable &lt;strong&gt;Allow extensions to load custom stylesheets&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Close the &lt;strong&gt;Settings&lt;/strong&gt; page and reload DevTools.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Load your extension&lt;/h3&gt;
+&lt;p&gt;To test locally, you can load your extension as an unpacked extension:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;code&gt;about:extensions&lt;/code&gt; page in Chrome or Edge.&lt;/li&gt;
+&lt;li&gt;Enable the &lt;strong&gt;Developer mode&lt;/strong&gt; toggle.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Load unpacked&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Browse to your extension&#39;s directory and select this folder.&lt;/li&gt;
+&lt;li&gt;Open a new tab on any website and open DevTools.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here is what the example code above looks like in Chrome DevTools:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/create-your-own-devtools-theme.png&quot; alt=&quot;Chrome DevTools showing a custom theme where attribute names in the Elements tool are bolded&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Find memory leaks by comparing heap snapshots</title>
@@ -2725,22 +2826,31 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
     <link href="https://devtoolstips.org/tips/en/change-color-theme/"/>
     <updated>2021-09-20T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/change-color-theme/</id>
-    <content type="html">&lt;p&gt;Chrome, Firefox and Safari all have a light and dark theme for their DevTools. Edge not only has those 2 themes, but also about 10 VS Code themes (like Monokai, Solarized Dark, etc.).&lt;/p&gt;
-&lt;p&gt;You can change the theme based on your preference.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Chrome, Firefox and Safari all have a light and dark theme for their DevTools. On top of these two themes, Edge also has about 10 VS Code themes such as Monokai and Solarized Dark.&lt;/p&gt;
+&lt;p&gt;To change the theme based on your preference:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In Firefox
+&lt;li&gt;In Firefox:
 &lt;ul&gt;
-&lt;li&gt;Go to the settings (press F1) and select &amp;quot;dark&amp;quot; or light&amp;quot;&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Settings&lt;/strong&gt; page (press &lt;kbd&gt;F1&lt;/kbd&gt;).&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Themes&lt;/strong&gt; setting, choose between &lt;strong&gt;Light&lt;/strong&gt;, &lt;strong&gt;Dark&lt;/strong&gt;, or &lt;strong&gt;Auto&lt;/strong&gt; to match the theme of your operating system.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;In Chrome or Edge
+&lt;li&gt;In Chrome:
 &lt;ul&gt;
-&lt;li&gt;Also go to settings (press F1) and select &amp;quot;light&amp;quot; or &amp;quot;dark&amp;quot; in the Themes drop-down, or any of the VS Code themes in Edge&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Settings&lt;/strong&gt; page (press &lt;kbd&gt;F1&lt;/kbd&gt;).&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Preferences&lt;/strong&gt; section, under &lt;strong&gt;Appearance&lt;/strong&gt;, use the &lt;strong&gt;Theme&lt;/strong&gt; dropdown to choose between &lt;strong&gt;Light&lt;/strong&gt;, &lt;strong&gt;Dark&lt;/strong&gt;, or &lt;strong&gt;System preference&lt;/strong&gt; to match the theme of your operating system.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;In Safari
+&lt;li&gt;In Edge:
 &lt;ul&gt;
-&lt;li&gt;Go to the settings and select &amp;quot;Appearance&amp;quot; between &amp;quot;System&amp;quot;, &amp;quot;Light&amp;quot; or &amp;quot;Dark&amp;quot;&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Settings&lt;/strong&gt; page (press &lt;kbd&gt;F1&lt;/kbd&gt;).&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Preferences&lt;/strong&gt; section, under &lt;strong&gt;Appearance&lt;/strong&gt;, use the &lt;strong&gt;Theme&lt;/strong&gt; dropdown to choose one of the available &lt;strong&gt;Light&lt;/strong&gt; or &lt;strong&gt;Dark&lt;/strong&gt; themes, or &lt;strong&gt;System preference&lt;/strong&gt; to match the theme of your operating system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;In Safari:
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Settings&lt;/strong&gt; page (press &lt;kbd&gt;F1&lt;/kbd&gt;).&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Appearance&lt;/strong&gt; section choose between &lt;strong&gt;Light&lt;/strong&gt;, &lt;strong&gt;Dark&lt;/strong&gt;, or &lt;strong&gt;System&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
