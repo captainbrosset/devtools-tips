@@ -32,14 +32,14 @@ First, you need to create a browser extension that will load your custom styles 
     ```
 
 1. Now, create the `devtools.css` file. This is where you'll write your custom styles. For example:
-
-  ```css
-  .webkit-html-attribute-name {
-    font-weight: bold;
-    color: white;
-    background: black;
-  }
-  ```
+  
+    ```css
+    .webkit-html-attribute-name {
+      font-weight: bold;
+      color: white;
+      background: black;
+    }
+    ```
 
   To help you get started with which styles you can override in your custom stylesheet, see [Inspect DevTools with DevTools](./inspect-devtools-with-devtools.md).
 
