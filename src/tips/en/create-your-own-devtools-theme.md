@@ -41,7 +41,7 @@ First, you need to create a browser extension that will load your custom styles 
     }
     ```
 
-  To help you get started with which styles you can override in your custom stylesheet, see [Inspect DevTools with DevTools](./inspect-devtools-with-devtools.md).
+    To help you get started with which styles you can override in your custom stylesheet, see [Inspect DevTools with DevTools](./inspect-devtools-with-devtools.md).
 
 1. Finally, create a `manifest.json` file to load the DevTools page:
 
