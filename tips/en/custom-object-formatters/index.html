@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize the way objects look in DevTools</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/custom-object-formatters/">
+    
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/custom-object-formatters.png">
+    <meta property="og:description" content="Customize the way objects look in DevTools">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    <meta name="view-transition" content="same-origin" />
+  </head>
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+      <h1><a href="/">Customize the way objects look in DevTools</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <main id="maincontent" style="view-transition-name:post-custom-object-formatters">
+      <div class="announcement">
+        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
+      </div>
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/personalization/">personalization</a></li><li class="tag"><a href="/tag/frameworks/">frameworks</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
+</div>
+<h2 class="tip-title">Customize the way objects look in DevTools</h2>
+<div class="tip-content" data-pagefind-body>
+    <p>Objects appear in many places in DevTools. Most commonly in the <strong>Console</strong> tool, but also in various parts of the <strong>Sources</strong> (or <strong>Debugger</strong>) tool when you debug JavaScript code.</p>
+<p>DevTools is the one that decides how these objects appear in the UI. For example, string and numbers have different colors, arrays have a little preview of the items, and an icon that lets you expand them to see the full list of items, etc.</p>
+<p>But DevTools also lets you customize the way objects are displayed by using <em>Custom Object Formatters</em>. This can be very useful when you're working with a framework that stores objects in a particular way, and you want to make it easier to inspect these objects, or just to make certain types of objects stand out more.</p>
+<p>Custom Object Formatters isn't something you configure in DevTools. Instead, you define them in the code that runs on the webpage, and DevTools picks them up automatically.</p>
+<p>To create a new formatter:</p>
+<ol>
+<li>
+<p>Create a new object with three properties: <code>header</code>, <code>hasBody</code>, and <code>body</code>. All three properties should be functions that receive an <code>object</code> parameter, the object that DevTools wants to display. The <code>header</code> function should return the preview of the object, in <a href="http://www.jsonml.org/">JsonML format</a>. <code>hasBody</code> should return a boolean that tells DevTools whether the object can be expanded to display more information. And <code>body</code> should return the preview of the object when it's expanded, also in JsonML format. For example:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> myCoolFormatter <span class="token operator">=</span> <span class="token punctuation">{</span><br> <span class="token function-variable function">header</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">object</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>   <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>object <span class="token keyword">instanceof</span> <span class="token class-name">ColorCombo</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>     <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span><br>   <span class="token punctuation">}</span><br><br>   <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token string">"div"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>style<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">background-color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>object<span class="token punctuation">.</span>color1<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">; color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>object<span class="token punctuation">.</span>color2<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">; font-weight: bold; padding: .25rem;</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">"ColorCombo"</span><span class="token punctuation">]</span><br> <span class="token punctuation">}</span><span class="token punctuation">,</span><br> <span class="token function-variable function">hasBody</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">object</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>   <span class="token keyword">return</span> object <span class="token keyword">instanceof</span> <span class="token class-name">ColorCombo</span><span class="token punctuation">;</span><br> <span class="token punctuation">}</span><span class="token punctuation">,</span><br> <span class="token function-variable function">body</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">object</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>   <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>object <span class="token keyword">instanceof</span> <span class="token class-name">ColorCombo</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>     <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span><br>   <span class="token punctuation">}</span><br><br>   <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token string">"ol"</span><span class="token punctuation">,</span> <br>            <span class="token punctuation">[</span><span class="token string">"li"</span><span class="token punctuation">,</span> <br>              <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Color 1 (</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>object<span class="token punctuation">.</span>color1<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">): </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span><br>              <span class="token punctuation">[</span><span class="token string">"span"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>style<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">display: inline-block; width: 1rem; height: 1rem; border-radius: 50%; background-color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>object<span class="token punctuation">.</span>color1<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span><span class="token punctuation">]</span><br>            <span class="token punctuation">]</span><span class="token punctuation">,</span><br>            <span class="token punctuation">[</span><span class="token string">"li"</span><span class="token punctuation">,</span> <br>              <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Color 2 (</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>object<span class="token punctuation">.</span>color2<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">): </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span><br>              <span class="token punctuation">[</span><span class="token string">"span"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>style<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">display: inline-block; width: 1rem; height: 1rem; border-radius: 50%; background-color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>object<span class="token punctuation">.</span>color2<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span><span class="token punctuation">]</span><br>            <span class="token punctuation">]</span><br>          <span class="token punctuation">]</span><br> <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>The above code snippet defines a custom formatter that will be used for objects that are instances of the <code>ColorCombo</code> class. Let's imagine this class is used on your webpage and is defined as follows:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">ColorCombo</span> <span class="token punctuation">{</span><br>  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">color1<span class="token punctuation">,</span> color2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">this</span><span class="token punctuation">.</span>color1 <span class="token operator">=</span> color1<span class="token punctuation">;</span><br>    <span class="token keyword">this</span><span class="token punctuation">.</span>color2 <span class="token operator">=</span> color2<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+</li>
+<li>
+<p>Append your formatter object to the global <code>window.devtoolsFormatters</code> array:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// You can create a new array.</span><br>window<span class="token punctuation">.</span>devtoolsFormatters <span class="token operator">=</span> <span class="token punctuation">[</span>myCoolFormatter<span class="token punctuation">]</span><span class="token punctuation">;</span><br><span class="token comment">// Or append to the list of existing formatters.</span><br>window<span class="token punctuation">.</span>devtoolsFormatters<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>myCoolFormatter<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ol>
+<p>That's it, you don't need to do anything more. Now, whenever <code>ColorCombo</code> objects are displayed in DevTools (for example when using <code>console.log(object)</code>), they will be displayed using the custom formatter you defined.</p>
+<p><img src="/assets/img/custom-object-formatters.png" alt="Example of how a ColorCombo object looks in the Console tool of Chrome DevTools"></p>
+<p>Learn more:</p>
+<ul>
+<li><a href="https://fxdx.dev/firefox-devtools-custom-object-formatters/">Firefox DevTools Custom Object Formatters</a>.</li>
+<li><a href="http://bit.ly/object-formatters">Custom Object Formatters in Chrome DevTools</a>.</li>
+<li><a href="https://github.com/disjukr/vector-devtools">Vector-devtools</a>, a cool formatter for 2D vector objects.</li>
+</ul>
+
+</div><div class="see-also">
+    <h3>See also</h3>
+    <ul><li>
+            <a href="/tips/en/console-table-group-assert">console.log() is great, but do you know console.table()? console.group()? console.assert()?</a>
+            <a href="/tips/en/console-table-group-assert" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/console-table-group-assert-1.jpg" alt="The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column">
+            </a>
+        </li><li>
+            <a href="/tips/en/customize-keyboard-shortcuts">Customize keyboard shortcuts</a>
+            <a href="/tips/en/customize-keyboard-shortcuts" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/customize-keyboard-shortcuts.png" alt="The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.">
+            </a>
+        </li><li>
+            <a href="/tips/en/extend-devtools">Install or create extensions to customize DevTools</a>
+            <a href="/tips/en/extend-devtools" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/extend-devtools.png" alt="Microsoft Edge, with DevTools opened, showing a custom panel.">
+            </a>
+        </li></ul>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2023-08-23T00:00:00.000Z">8/23/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/custom-object-formatters.md">Edit page</a></p>
+</div>
+<script async src="/assets/dialog-lightbox.js"></script>
+
+    </main>
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
+    </footer>
+
+    
+    
+    <script>
+      const pixel = new Image();
+      let url = 'https://patrickbrosset.com/pixel.php';
+      url += '?t=' + Date.now();
+      url += '&url=' + encodeURIComponent(window.location.href);
+      pixel.src = url;
+    </script>
+    
+
+    
+    
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+    
+  </body>
+</html>
