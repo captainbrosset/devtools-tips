@@ -820,20 +820,20 @@
       "link": "/tips/en/debugger-statement"
     },
     {
-      "title": "Check if a website uses third-party cookies",
-      "image": {
-        "alt": "Chrome DevTools' Application tool, showing the cookies section containing a bunch of third-party websites",
-        "src": "../../assets/img/detect-3p-cookies.png"
-      },
-      "link": "/tips/en/detect-3p-cookies"
-    },
-    {
       "title": "Format console messages",
       "image": {
         "alt": "A formatted console message in Edge.",
         "src": "../../assets/img/format-console-messages.png"
       },
       "link": "/tips/en/format-console-messages"
+    },
+    {
+      "title": "List all supported console functions",
+      "image": {
+        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
+        "src": "../../assets/img/list-console-functions.png"
+      },
+      "link": "/tips/en/list-console-functions"
     }
   ],
   "debug-safari-mac-webapps.md": [
@@ -913,12 +913,28 @@
   ],
   "detect-3p-cookies.md": [
     {
+      "title": "Copy an elements styles",
+      "image": {
+        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
+        "src": "../../assets/img/copy-element-styles.png"
+      },
+      "link": "/tips/en/copy-element-styles"
+    },
+    {
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
         "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
+    },
+    {
+      "title": "See network request paths instead of names in the Network tool",
+      "image": {
+        "alt": "The Network tool in Edge, showing the contextual menu that's used to customize the network list columns",
+        "src": "../../assets/img/see-request-path-instead-of-name.png"
+      },
+      "link": "/tips/en/see-request-path-instead-of-name"
     },
     {
       "title": "Throttle the network speed to test your website on slower connections",
@@ -3744,14 +3760,6 @@
   ],
   "suppressed-event-listeners-when-paused.md": [
     {
-      "title": "Check if a website uses third-party cookies",
-      "image": {
-        "alt": "Chrome DevTools' Application tool, showing the cookies section containing a bunch of third-party websites",
-        "src": "../../assets/img/detect-3p-cookies.png"
-      },
-      "link": "/tips/en/detect-3p-cookies"
-    },
-    {
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
@@ -3774,6 +3782,14 @@
         "src": "../../assets/img/measure-distances.png"
       },
       "link": "/tips/en/measure-distances"
+    },
+    {
+      "title": "Monitor all events dispatched on an element",
+      "image": {
+        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
+        "src": "../../assets/img/monitor-element-events.gif"
+      },
+      "link": "/tips/en/monitor-element-events"
     }
   ],
   "take-high-res-screenshots.md": [
