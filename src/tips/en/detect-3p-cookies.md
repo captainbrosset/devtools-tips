@@ -19,7 +19,8 @@ With DevTools, you can detect if a website uses third-party cookies:
 1. Open DevTools.
 1. Open the **Application** tool in Chromium-based browsers, or the **Storage** tool in Firefox.
 1. In the sidebar, expand the **Cookies** section.
-   A list appears.
+   
+A list appears in the **Cookies** section. Check the list to see if the website uses third-party cookies:
 
 * If the website doesn't use cookies, the list will be empty.
 * If the website uses its own (first-party) cookies, you will see one item which matches the website's URL.
