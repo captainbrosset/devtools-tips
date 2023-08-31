@@ -25,9 +25,9 @@
 &lt;li&gt;Go to the website you want to test in a new window or tab.&lt;/li&gt;
 &lt;li&gt;Open DevTools.&lt;/li&gt;
 &lt;li&gt;Open the &lt;strong&gt;Application&lt;/strong&gt; tool in Chromium-based browsers, or the &lt;strong&gt;Storage&lt;/strong&gt; tool in Firefox.&lt;/li&gt;
-&lt;li&gt;In the sidebar, expand the &lt;strong&gt;Cookies&lt;/strong&gt; section.
-A list appears.&lt;/li&gt;
+&lt;li&gt;In the sidebar, expand the &lt;strong&gt;Cookies&lt;/strong&gt; section.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;A list appears in the &lt;strong&gt;Cookies&lt;/strong&gt; section. Check the list to see if the website uses third-party cookies:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;If the website doesn&#39;t use cookies, the list will be empty.&lt;/li&gt;
 &lt;li&gt;If the website uses its own (first-party) cookies, you will see one item which matches the website&#39;s URL.&lt;/li&gt;
