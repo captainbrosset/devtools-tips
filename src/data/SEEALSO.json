@@ -583,6 +583,32 @@
       "link": "/tips/en/get-size-of-resource-types"
     }
   ],
+  "custom-object-formatters.md": [
+    {
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
+      "image": {
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
+      },
+      "link": "/tips/en/console-table-group-assert"
+    },
+    {
+      "title": "Customize keyboard shortcuts",
+      "image": {
+        "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
+        "src": "../../assets/img/customize-keyboard-shortcuts.png"
+      },
+      "link": "/tips/en/customize-keyboard-shortcuts"
+    },
+    {
+      "title": "Install or create extensions to customize DevTools",
+      "image": {
+        "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
+        "src": "../../assets/img/extend-devtools.png"
+      },
+      "link": "/tips/en/extend-devtools"
+    }
+  ],
   "customize-console-table-columns.md": [
     {
       "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
@@ -1528,12 +1554,12 @@
       "link": "/tips/en/zoom-devtools-content"
     },
     {
-      "title": "Sample colors from the page",
+      "title": "Customize the way objects look in DevTools",
       "image": {
-        "alt": "Animation of the eyedropper tool being started from the Firefox main menu.",
-        "src": "../../assets/img/sample-colors-from-the-page-1.gif"
+        "alt": "Example of how a ColorCombo object looks in the Console tool of Chrome DevTools",
+        "src": "../../assets/img/custom-object-formatters.png"
       },
-      "link": "/tips/en/sample-colors-from-the-page"
+      "link": "/tips/en/custom-object-formatters"
     }
   ],
   "filter-network-requests.md": [
