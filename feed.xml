@@ -5,11 +5,44 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-08-23T00:00:00.000Z</updated>
+  <updated>2023-08-31T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Check if a website uses third-party cookies</title>
+    <link href="https://devtoolstips.org/tips/en/detect-3p-cookies/"/>
+    <updated>2023-08-31T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/detect-3p-cookies/</id>
+    <content type="html">&lt;p&gt;Cookies are small files that websites save on your computer when you visit them. Websites often use cookies to remember things about your last visit. For example, a weather website can use cookies to store your preferred location, so you don’t have to enter it every time.&lt;/p&gt;
+&lt;p&gt;Third-party cookies are just cookies too, but they are created by websites other than the one you are visiting, for example when the website you are visiting embeds an advertisement iframe.&lt;/p&gt;
+&lt;p&gt;Third-party cookies are often used by advertisers to keep track of the websites a user visits, collect information about their browsing activity, with the hope of offering targeted ads and getting them to return to a website to buy products.&lt;/p&gt;
+&lt;p&gt;There are very legitimate uses for third-party cookies and personalized content, but they also pose significant privacy and security concerns.&lt;/p&gt;
+&lt;p&gt;With DevTools, you can detect if a website uses third-party cookies:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the website you want to test in a new window or tab.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open DevTools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;strong&gt;Application&lt;/strong&gt; tool in Chromium-based browsers, or the &lt;strong&gt;Storage&lt;/strong&gt; tool in Firefox.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the sidebar, expand the &lt;strong&gt;Cookies&lt;/strong&gt; section.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the website doesn&#39;t use cookies, the list will be empty.&lt;/li&gt;
+&lt;li&gt;If the website uses its own (first-party) cookies, you will see one item which matches the website&#39;s URL.&lt;/li&gt;
+&lt;li&gt;If the website uses third-party cookies, you will see more items in the list, some being from third-party websites that may just be tracking you.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/detect-3p-cookies.png&quot; alt=&quot;Chrome DevTools&#39; Application tool, showing the cookies section containing a bunch of third-party websites&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Customize the way objects look in DevTools</title>
