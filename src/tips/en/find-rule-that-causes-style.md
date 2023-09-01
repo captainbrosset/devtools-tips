@@ -2,7 +2,7 @@
 date: 2023-06-10
 authors: Patrick Brosset
 title: Find the CSS rule that causes a specific style to apply
-tags: ["css", "debug", "browser:firefox", "browser:edge", "browser:chrome"]
+tags: ["css", "debug", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 Here is the scenario: you know there's a specific style that applies to an HTML element in your web page, say some padding, but you can't seem to find where, in the CSS code, that style is coming from.
 
@@ -18,6 +18,6 @@ One neat way to help with this is to use the **Computed** panel:
 
 ![The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from](../../assets/img/find-rule-that-causes-style-1.png)
 
-Quick note: in Chrome and Edge only, you can also jump from the **Computed** panel to the right place in the **Styles** panel by clicking to the right of the property name:
+Quick note: in Chrome, Edge, and Safari only, you can also jump from the **Computed** panel to the right place in the **Styles** panel by clicking to the right of the property name:
 
 ![The Elements tool in Chrome, showing the Computed tab. The hovered property has an arrow icon next to it that can be clicked to go to the corresponding place in the Styles panel.](../../assets/img/find-rule-that-causes-style-2.png)

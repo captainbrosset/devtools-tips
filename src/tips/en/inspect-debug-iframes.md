@@ -2,7 +2,7 @@
 date: 2023-05-21
 authors: Patrick Brosset
 title: Inspect and debug iframes
-tags: ["debug", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["debug", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 If the page you are working on contains an iframe which you want to inspect and debug, you can actually use DevTools to do so. This can be very useful when working with coding playground sites like [CodePen](https://codepen.io/), [JSFiddle](https://jsfiddle.net/), or [Glitch](https://glitch.com/).
 
@@ -16,9 +16,9 @@ Firefox has an iframe selector button in its toolbar that lets you select the if
 
 ![Firefox, with DevTools opened on the side, showing the iframe selector button in the toolbar](../../assets/img/inspect-debug-iframes-firefox.png)
 
-### Chrome and Edge
+### Chrome, Edge, Safari
 
-Chromium-based browsers have a **JavaScript context** selector button located in the **Console** tool which allows you to select the iframe you want to execute JavaScript expressions in. This button does not change what's visible in the **Elements** tool, it only changes the JavaScript context in which the **Console** tool works.
+Chromium-based browsers and Safari have a **JavaScript context** selector button located in the **Console** tool which allows you to select the iframe you want to execute JavaScript expressions in. This button does not change what's visible in the **Elements** tool, it only changes the JavaScript context in which the **Console** tool works.
 
 1. Open DevTools.
 1. Open the **Console** tool.

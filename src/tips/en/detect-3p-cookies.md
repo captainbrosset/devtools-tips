@@ -2,7 +2,7 @@
 date: 2023-08-31
 authors: Patrick Brosset
 title: Check if a website uses third-party cookies
-tags: ["testing", "network", "browser:chrome", "browser:edge", "browser:firefox"]
+tags: ["testing", "network", "browser:chrome", "browser:edge", "browser:firefox", "browser-safari"]
 ---
 
 Cookies are small files that websites save on your computer when you visit them. Websites often use cookies to remember things about your last visit. For example, a weather website can use cookies to store your preferred location, so you don’t have to enter it every time. 
@@ -17,7 +17,7 @@ With DevTools, you can detect if a website uses third-party cookies:
 
 1. Go to the website you want to test in a new window or tab.
 1. Open DevTools.
-1. Open the **Application** tool in Chromium-based browsers, or the **Storage** tool in Firefox.
+1. Open the **Application** tool in Chromium-based browsers, or the **Storage** tool in Firefox or Safari.
 1. In the sidebar, expand the **Cookies** section.
    
    * If the website doesn't use cookies, the list will be empty.
