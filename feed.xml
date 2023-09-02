@@ -24,7 +24,7 @@
 &lt;ol&gt;
 &lt;li&gt;Go to the website you want to test in a new window or tab.&lt;/li&gt;
 &lt;li&gt;Open DevTools.&lt;/li&gt;
-&lt;li&gt;Open the &lt;strong&gt;Application&lt;/strong&gt; tool in Chromium-based browsers, or the &lt;strong&gt;Storage&lt;/strong&gt; tool in Firefox.&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Application&lt;/strong&gt; tool in Chromium-based browsers, or the &lt;strong&gt;Storage&lt;/strong&gt; tool in Firefox or Safari.&lt;/li&gt;
 &lt;li&gt;In the sidebar, expand the &lt;strong&gt;Cookies&lt;/strong&gt; section.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;A list appears in the &lt;strong&gt;Cookies&lt;/strong&gt; section. Check the list to see if the website uses third-party cookies:&lt;/p&gt;
@@ -244,7 +244,7 @@
 &lt;li&gt;Click the first link in the list to jump to the actual location, in your code, where the rule is defined. In Firefox, you will end up in the &lt;strong&gt;Style Editor&lt;/strong&gt; tool, and in Chromium-based browser the link will take you to the &lt;strong&gt;Sources&lt;/strong&gt; tool.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/find-rule-that-causes-style-1.png&quot; alt=&quot;The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Quick note: in Chrome and Edge only, you can also jump from the &lt;strong&gt;Computed&lt;/strong&gt; panel to the right place in the &lt;strong&gt;Styles&lt;/strong&gt; panel by clicking to the right of the property name:&lt;/p&gt;
+&lt;p&gt;Quick note: in Chrome, Edge, and Safari only, you can also jump from the &lt;strong&gt;Computed&lt;/strong&gt; panel to the right place in the &lt;strong&gt;Styles&lt;/strong&gt; panel by clicking to the right of the property name:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/find-rule-that-causes-style-2.png&quot; alt=&quot;The Elements tool in Chrome, showing the Computed tab. The hovered property has an arrow icon next to it that can be clicked to go to the corresponding place in the Styles panel.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
@@ -387,8 +387,8 @@
 &lt;li&gt;Select the iframe you want to inspect.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/inspect-debug-iframes-firefox.png&quot; alt=&quot;Firefox, with DevTools opened on the side, showing the iframe selector button in the toolbar&quot; /&gt;&lt;/p&gt;
-&lt;h3&gt;Chrome and Edge&lt;/h3&gt;
-&lt;p&gt;Chromium-based browsers have a &lt;strong&gt;JavaScript context&lt;/strong&gt; selector button located in the &lt;strong&gt;Console&lt;/strong&gt; tool which allows you to select the iframe you want to execute JavaScript expressions in. This button does not change what&#39;s visible in the &lt;strong&gt;Elements&lt;/strong&gt; tool, it only changes the JavaScript context in which the &lt;strong&gt;Console&lt;/strong&gt; tool works.&lt;/p&gt;
+&lt;h3&gt;Chrome, Edge, Safari&lt;/h3&gt;
+&lt;p&gt;Chromium-based browsers and Safari have a &lt;strong&gt;JavaScript context&lt;/strong&gt; selector button located in the &lt;strong&gt;Console&lt;/strong&gt; tool which allows you to select the iframe you want to execute JavaScript expressions in. This button does not change what&#39;s visible in the &lt;strong&gt;Elements&lt;/strong&gt; tool, it only changes the JavaScript context in which the &lt;strong&gt;Console&lt;/strong&gt; tool works.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open DevTools.&lt;/li&gt;
 &lt;li&gt;Open the &lt;strong&gt;Console&lt;/strong&gt; tool.&lt;/li&gt;
