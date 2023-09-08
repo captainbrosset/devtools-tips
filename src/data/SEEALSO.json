@@ -687,6 +687,14 @@
       "link": "/tips/en/find-inactive-styles"
     },
     {
+      "title": "Highlight all elements on the page that match a given CSS selector",
+      "image": {
+        "alt": "Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane",
+        "src": "../../assets/img/highlight-elements-from-selector-firefox.png"
+      },
+      "link": "/tips/en/highlight-elements-from-selector"
+    },
+    {
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
@@ -701,14 +709,6 @@
         "src": "../../assets/img/find-css-changes.png"
       },
       "link": "/tips/en/find-css-changes"
-    },
-    {
-      "title": "Paste multiple CSS declarations at once",
-      "image": {
-        "alt": "Animation showing how pasting several declarations in a CSS rule in DevTools creates them all.",
-        "src": "../../assets/img/paste-several-css-declarations.gif"
-      },
-      "link": "/tips/en/past-several-css-declarations"
     }
   ],
   "debug-grid-areas.md": [
@@ -2350,6 +2350,14 @@
   ],
   "highlight-css-properties-on-hover.md": [
     {
+      "title": "Highlight all elements on the page that match a given CSS selector",
+      "image": {
+        "alt": "Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane",
+        "src": "../../assets/img/highlight-elements-from-selector-firefox.png"
+      },
+      "link": "/tips/en/highlight-elements-from-selector"
+    },
+    {
       "title": "Find inactive CSS styles",
       "image": {
         "alt": "Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.",
@@ -2372,14 +2380,40 @@
         "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
+    }
+  ],
+  "highlight-elements-from-selector.md": [
+    {
+      "title": "Highlight the effect of individual CSS properties on hover",
+      "image": {
+        "alt": "Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.",
+        "src": "../../assets/img/highlight-css-properties-on-hover.gif"
+      },
+      "link": "/tips/en/highlight-css-properties-on-hover"
     },
     {
-      "title": "Jump from a CSS variable usage to where it is defined",
+      "title": "Copy an elements styles",
       "image": {
-        "alt": "Animation of clicking on a custom property link in the Styles panel in Edge.",
-        "src": "../../assets/img/jump-to-css-variable.gif"
+        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
+        "src": "../../assets/img/copy-element-styles.png"
       },
-      "link": "/tips/en/jump-to-css-variable"
+      "link": "/tips/en/copy-element-styles"
+    },
+    {
+      "title": "Visualize and debug CSS cascade layers",
+      "image": {
+        "alt": "Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.",
+        "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
+      },
+      "link": "/tips/en/debug-css-cascade-layers"
+    },
+    {
+      "title": "Find inactive CSS styles",
+      "image": {
+        "alt": "Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.",
+        "src": "../../assets/img/find-inactive-styles.png"
+      },
+      "link": "/tips/en/find-inactive-styles"
     }
   ],
   "highlight-matching-elements.md": [
@@ -2408,12 +2442,12 @@
       "link": "/tips/en/find-rule-that-causes-style"
     },
     {
-      "title": "Draw a box around all elements to debug your CSS and page structure",
+      "title": "Highlight all elements on the page that match a given CSS selector",
       "image": {
-        "alt": "Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page.",
-        "src": "../../assets/img/outline-everything.gif"
+        "alt": "Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane",
+        "src": "../../assets/img/highlight-elements-from-selector-firefox.png"
       },
-      "link": "/tips/en/outline-everything"
+      "link": "/tips/en/highlight-elements-from-selector"
     }
   ],
   "ignore-scripts.md": [
@@ -3980,6 +4014,14 @@
         "src": "../../assets/img/debug-grid-areas.png"
       },
       "link": "/tips/en/debug-grid-areas"
+    },
+    {
+      "title": "Highlight all elements on the page that match a given CSS selector",
+      "image": {
+        "alt": "Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane",
+        "src": "../../assets/img/highlight-elements-from-selector-firefox.png"
+      },
+      "link": "/tips/en/highlight-elements-from-selector"
     }
   ],
   "understand-console-tab-drawer.md": [
