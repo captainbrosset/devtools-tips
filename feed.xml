@@ -5,11 +5,31 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-08-31T00:00:00.000Z</updated>
+  <updated>2023-09-08T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Highlight all elements on the page that match a given CSS selector</title>
+    <link href="https://devtoolstips.org/tips/en/highlight-elements-from-selector/"/>
+    <updated>2023-09-08T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/highlight-elements-from-selector/</id>
+    <content type="html">&lt;p&gt;When you select an element in DevTools (in the &lt;strong&gt;Elements&lt;/strong&gt; or &lt;strong&gt;Inspector&lt;/strong&gt; tool), you see the CSS rules that apply to it. But, these rules can also apply to other elements in the page than the currently selected one.&lt;/p&gt;
+&lt;p&gt;To see all the elements that match a given CSS rule selector, and therefore know which elements will be impacted if you change that rule:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In Firefox, select an element in the &lt;strong&gt;Inspector&lt;/strong&gt; tool, then click the &lt;strong&gt;Highlight all elements matching this selector&lt;/strong&gt; button next to a CSS rule in the &lt;strong&gt;Styles&lt;/strong&gt; pane:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/highlight-elements-from-selector-firefox.png&quot; alt=&quot;Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Chrome, Edge, or Safari, select an element in the &lt;strong&gt;Elements&lt;/strong&gt; tool, then hover over a CSS selector in the &lt;strong&gt;Styles&lt;/strong&gt; pane:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/highlight-elements-from-selector-edge.png&quot; alt=&quot;Edge, with a webpage showing 3 highlighted elements, and a CSS selector hovered in the Styles pane&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Check if a website uses third-party cookies</title>

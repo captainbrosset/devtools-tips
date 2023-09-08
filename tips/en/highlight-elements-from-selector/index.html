@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Highlight the effect of individual CSS properties on hover</title>
+    <title>Highlight all elements on the page that match a given CSS selector</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/highlight-css-properties-on-hover/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/highlight-elements-from-selector/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/highlight-css-properties-on-hover.gif">
-    <meta property="og:description" content="Highlight the effect of individual CSS properties on hover">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/highlight-elements-from-selector-firefox.png">
+    <meta property="og:description" content="Highlight all elements on the page that match a given CSS selector">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Highlight the effect of individual CSS properties on hover</a></h1>
+      <h1><a href="/">Highlight all elements on the page that match a given CSS selector</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -37,40 +37,38 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent" style="view-transition-name:post-highlight-css-properties-on-hover">
+    <main id="maincontent" style="view-transition-name:post-highlight-elements-from-selector">
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/highlighter/">highlighter</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/highlighter/">highlighter</a></li><li class="tag"><a href="/tag/css/">css</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
-<h2 class="tip-title">Highlight the effect of individual CSS properties on hover</h2>
+<h2 class="tip-title">Highlight all elements on the page that match a given CSS selector</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>How do certain CSS properties apply to the page isn't always an easy question to answer.</p>
-<p>While some properties might be considered simple, others have complex effects that depend on other factors. Properties like <code>justify-content</code> or <code>gap</code> depend on writing and layout direction for example.</p>
-<p>Edge and Chrome help with this by highlighting the effect that individual CSS properties have in the page. This doesn't work with all properties, but does work with <code>margin</code>, <code>padding</code>, <code>border</code>, <code>justify-content</code>, <code>align-items</code>, <code>gap</code>.</p>
+    <p>When you select an element in DevTools (in the <strong>Elements</strong> or <strong>Inspector</strong> tool), you see the CSS rules that apply to it. But, these rules can also apply to other elements in the page than the currently selected one.</p>
+<p>To see all the elements that match a given CSS rule selector, and therefore know which elements will be impacted if you change that rule:</p>
 <ul>
-<li>Find one of the above properties in the <strong>Styles</strong> panel.</li>
-<li>Move your mouse cursor over it.</li>
-<li>Watch as the corresponding affected region of the element gets highlighted in the page.</li>
+<li>
+<p>In Firefox, select an element in the <strong>Inspector</strong> tool, then click the <strong>Highlight all elements matching this selector</strong> button next to a CSS rule in the <strong>Styles</strong> pane:</p>
+<p><img src="/assets/img/highlight-elements-from-selector-firefox.png" alt="Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane"></p>
+</li>
+<li>
+<p>In Chrome, Edge, or Safari, select an element in the <strong>Elements</strong> tool, then hover over a CSS selector in the <strong>Styles</strong> pane:</p>
+<p><img src="/assets/img/highlight-elements-from-selector-edge.png" alt="Edge, with a webpage showing 3 highlighted elements, and a CSS selector hovered in the Styles pane"></p>
+</li>
 </ul>
-<p><img src="/assets/img/highlight-css-properties-on-hover.gif" alt="Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane."></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/highlight-elements-from-selector">Highlight all elements on the page that match a given CSS selector</a>
-            <a href="/tips/en/highlight-elements-from-selector" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/highlight-elements-from-selector-firefox.png" alt="Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane">
-            </a>
-        </li><li>
-            <a href="/tips/en/find-inactive-styles">Find inactive CSS styles</a>
-            <a href="/tips/en/find-inactive-styles" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-inactive-styles.png" alt="Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.">
+            <a href="/tips/en/highlight-css-properties-on-hover">Highlight the effect of individual CSS properties on hover</a>
+            <a href="/tips/en/highlight-css-properties-on-hover" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/highlight-css-properties-on-hover.gif" alt="Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.">
             </a>
         </li><li>
             <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
@@ -78,14 +76,19 @@
                 <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
             </a>
         </li><li>
-            <a href="/tips/en/edit-position">Edit CSS absolute and relative positions by dragging points in the page</a>
-            <a href="/tips/en/edit-position" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/edit-position.gif" alt="Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.">
+            <a href="/tips/en/debug-css-cascade-layers">Visualize and debug CSS cascade layers</a>
+            <a href="/tips/en/debug-css-cascade-layers" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/debug-css-cascade-layers-firefox.png" alt="Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.">
+            </a>
+        </li><li>
+            <a href="/tips/en/find-inactive-styles">Find inactive CSS styles</a>
+            <a href="/tips/en/find-inactive-styles" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-inactive-styles.png" alt="Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2021-12-09T00:00:00.000Z">12/9/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/highlight-css-properties-on-hover.md">Edit page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2023-09-08T00:00:00.000Z">9/8/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/highlight-elements-from-selector.md">Edit page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
