@@ -9,11 +9,13 @@ To know what an element is offset against (for example with `inset`) you need to
 
 The offset parent of an element is the closest ancestor that has a position other than `static`, or the root element if none of the ancestors have positioning. Learn more about [offset parents on MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent).
 
-In Polypane
+To find the offset parent of an element in Polypane:
 
-1. Inspect an element in the **Elements** panel
-2. Open the **Debug tab** tab, scroll to the **Context** section
-3. The **Offset parent** is listed there
+1. Inspect the element in the **Elements** panel.
 
-  ![Polypane showing an inspected element with the Debug tab open. The Offset parent entry is highlighted.](../../assets/img/find-the-offset-parent-of-an-element.png)
+1. Open the **Debug** tab, and then scroll down to the **Context** section.
+
+   The **Offset parent** sub-section is listed there:
+
+   ![Polypane showing an inspected element with the Debug tab open. The Offset parent entry is highlighted.](../../assets/img/find-the-offset-parent-of-an-element.png)
 
