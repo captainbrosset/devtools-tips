@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Highlight all elements on the page that match a given CSS selector</title>
+    <title>Find the offset parent of an element</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/highlight-elements-from-selector/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/find-the-offset-parent-of-an-element/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/highlight-elements-from-selector-firefox.png">
-    <meta property="og:description" content="Highlight all elements on the page that match a given CSS selector">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/find-the-offset-parent-of-an-element.png">
+    <meta property="og:description" content="Find the offset parent of an element">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Highlight all elements on the page that match a given CSS selector</a></h1>
+      <h1><a href="/">Find the offset parent of an element</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -37,62 +37,54 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent" style="view-transition-name:post-highlight-elements-from-selector">
+    <main id="maincontent" style="view-transition-name:post-find-the-offset-parent-of-an-element">
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/highlighter/">highlighter</a></li><li class="tag"><a href="/tag/css/">css</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
-<h2 class="tip-title">Highlight all elements on the page that match a given CSS selector</h2>
+<h2 class="tip-title">Find the offset parent of an element</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>When you select an element in DevTools (in the <strong>Elements</strong> or <strong>Inspector</strong> tool), you see the CSS rules that apply to it. But, these rules can also apply to other elements in the page than the currently selected one.</p>
-<p>To see all the elements that match a given CSS rule selector, and therefore know which elements will be impacted if you change that rule:</p>
-<ul>
+    <p>To know what an element is offset against horizontally or vertically (Which you do with <code>position:relative</code> and a <code>left</code>, <code>top</code> or <code>inset</code> value) you need to know its <strong>offset parent</strong>.</p>
+<p>The offset parent of an element is the closest ancestor that has a position other than <code>static</code>, or the root element if none of the ancestors have positioning. Learn more about <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent">offset parents on MDN</a>.</p>
+<p>To find the offset parent of an element in Polypane:</p>
+<ol>
 <li>
-<p>In Firefox, select an element in the <strong>Inspector</strong> tool, then click the <strong>Highlight all elements matching this selector</strong> button next to a CSS rule in the <strong>Styles</strong> pane:</p>
-<p><img src="/assets/img/highlight-elements-from-selector-firefox.png" alt="Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane"></p>
+<p>Inspect the element in the <strong>Elements</strong> panel.</p>
 </li>
 <li>
-<p>In Chrome, Edge, or Safari, select an element in the <strong>Elements</strong> tool, then hover over a CSS selector in the <strong>Styles</strong> pane:</p>
-<p><img src="/assets/img/highlight-elements-from-selector-edge.png" alt="Edge, with a webpage showing 3 highlighted elements, and a CSS selector hovered in the Styles pane"></p>
+<p>Open the <strong>Debug</strong> tab, and then scroll down to the <strong>Context</strong> section.</p>
+<p>The <strong>Offset parent</strong> sub-section is listed there:</p>
+<p><img src="/assets/img/find-the-offset-parent-of-an-element.png" alt="Polypane showing an inspected element with the Debug tab open. The Offset parent entry is highlighted."></p>
 </li>
-<li>
-<p>In Polypane, select an element in the <strong>Elements</strong> panel, then click the <strong>Highlight all elements matching this selector</strong> button next to a CSS rule in the <strong>Styles</strong> tab:</p>
-<p><img src="/assets/img/highlight-elements-from-selector-polypane.png" alt="Polypane, with three panes showing a website. in each pane there is a highlighted element. There is a button enabled in the Styles tab"></p>
-</li>
-</ul>
+</ol>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/highlight-css-properties-on-hover">Highlight the effect of individual CSS properties on hover</a>
-            <a href="/tips/en/highlight-css-properties-on-hover" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/highlight-css-properties-on-hover.gif" alt="Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.">
+            <a href="/tips/en/edit-elements-with-the-keyboard">Edit an element&#39;s attributes and tag name with the keyboard</a>
+            <a href="/tips/en/edit-elements-with-the-keyboard" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/edit-elements-with-the-keyboard.gif" alt="Animation of a part of the Inspector panel in Firefox, showing how pressing Enter on a focused element goes into edit mode and how Tab allows to navigate from field to field.">
             </a>
         </li><li>
-            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
-            <a href="/tips/en/copy-element-styles" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
+            <a href="/tips/en/fix-color-contrast-issues">Fix low color contrast issues</a>
+            <a href="/tips/en/fix-color-contrast-issues" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/fix-color-contrast-issues-chromium.png" alt="The chrome color picker, showing the contrast lines and new color suggestions">
             </a>
         </li><li>
-            <a href="/tips/en/highlight-matching-elements">Highlight all the elements that a CSS rule matches</a>
-            <a href="/tips/en/highlight-matching-elements" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page.">
-            </a>
-        </li><li>
-            <a href="/tips/en/tweak-grid-flex-alignment">Tweak css grid and flexbox alignment properties</a>
-            <a href="/tips/en/tweak-grid-flex-alignment" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/tweak-grid-flex-alignment.png" alt="The grid editor in the Styles pane of Microsoft Edge.">
+            <a href="/tips/en/get-current-element-in-console">Get the selected element in the console</a>
+            <a href="/tips/en/get-current-element-in-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-current-element-in-console.jpg" alt="Safari&#39;s console showing how the $0 shortcut returns the selected element.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2023-09-08T00:00:00.000Z">9/8/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/highlight-elements-from-selector.md">Edit page</a></p>
+    <div class="authors">Authors: <span><a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2023-09-13T00:00:00.000Z">9/13/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-the-offset-parent-of-an-element.md">Edit page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 

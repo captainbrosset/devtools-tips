@@ -5,11 +5,32 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-09-08T00:00:00.000Z</updated>
+  <updated>2023-09-13T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Find the offset parent of an element</title>
+    <link href="https://devtoolstips.org/tips/en/find-the-offset-parent-of-an-element/"/>
+    <updated>2023-09-13T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/find-the-offset-parent-of-an-element/</id>
+    <content type="html">&lt;p&gt;To know what an element is offset against horizontally or vertically (Which you do with &lt;code&gt;position:relative&lt;/code&gt; and a &lt;code&gt;left&lt;/code&gt;, &lt;code&gt;top&lt;/code&gt; or &lt;code&gt;inset&lt;/code&gt; value) you need to know its &lt;strong&gt;offset parent&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The offset parent of an element is the closest ancestor that has a position other than &lt;code&gt;static&lt;/code&gt;, or the root element if none of the ancestors have positioning. Learn more about &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent&quot;&gt;offset parents on MDN&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To find the offset parent of an element in Polypane:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Inspect the element in the &lt;strong&gt;Elements&lt;/strong&gt; panel.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;strong&gt;Debug&lt;/strong&gt; tab, and then scroll down to the &lt;strong&gt;Context&lt;/strong&gt; section.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Offset parent&lt;/strong&gt; sub-section is listed there:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/find-the-offset-parent-of-an-element.png&quot; alt=&quot;Polypane showing an inspected element with the Debug tab open. The Offset parent entry is highlighted.&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Highlight all elements on the page that match a given CSS selector</title>
@@ -26,6 +47,10 @@
 &lt;li&gt;
 &lt;p&gt;In Chrome, Edge, or Safari, select an element in the &lt;strong&gt;Elements&lt;/strong&gt; tool, then hover over a CSS selector in the &lt;strong&gt;Styles&lt;/strong&gt; pane:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/highlight-elements-from-selector-edge.png&quot; alt=&quot;Edge, with a webpage showing 3 highlighted elements, and a CSS selector hovered in the Styles pane&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Polypane, select an element in the &lt;strong&gt;Elements&lt;/strong&gt; panel, then click the &lt;strong&gt;Highlight all elements matching this selector&lt;/strong&gt; button next to a CSS rule in the &lt;strong&gt;Styles&lt;/strong&gt; tab:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/highlight-elements-from-selector-polypane.png&quot; alt=&quot;Polypane, with three panes showing a website. in each pane there is a highlighted element. There is a button enabled in the Styles tab&quot; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
