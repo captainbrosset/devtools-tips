@@ -1947,6 +1947,32 @@
       "link": "/tips/en/find-expensive-selectors"
     }
   ],
+  "find-the-offset-parent-of-an-element.md": [
+    {
+      "title": "Edit an element's attributes and tag name with the keyboard",
+      "image": {
+        "alt": "Animation of a part of the Inspector panel in Firefox, showing how pressing Enter on a focused element goes into edit mode and how Tab allows to navigate from field to field.",
+        "src": "../../assets/img/edit-elements-with-the-keyboard.gif"
+      },
+      "link": "/tips/en/edit-elements-with-the-keyboard"
+    },
+    {
+      "title": "Fix low color contrast issues",
+      "image": {
+        "alt": "The chrome color picker, showing the contrast lines and new color suggestions",
+        "src": "../../assets/img/fix-color-contrast-issues-chromium.png"
+      },
+      "link": "/tips/en/fix-color-contrast-issues"
+    },
+    {
+      "title": "Get the selected element in the console",
+      "image": {
+        "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
+        "src": "../../assets/img/get-current-element-in-console.jpg"
+      },
+      "link": "/tips/en/get-current-element-in-console"
+    }
+  ],
   "fix-color-contrast-issues-with-element-tooltip.md": [
     {
       "title": "Fix low color contrast issues",
@@ -2400,20 +2426,20 @@
       "link": "/tips/en/copy-element-styles"
     },
     {
-      "title": "Visualize and debug CSS cascade layers",
+      "title": "Highlight all the elements that a CSS rule matches",
       "image": {
-        "alt": "Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.",
-        "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
+        "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
+        "src": "../../assets/img/highlight-matching-elements.gif"
       },
-      "link": "/tips/en/debug-css-cascade-layers"
+      "link": "/tips/en/highlight-matching-elements"
     },
     {
-      "title": "Find inactive CSS styles",
+      "title": "Tweak css grid and flexbox alignment properties",
       "image": {
-        "alt": "Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.",
-        "src": "../../assets/img/find-inactive-styles.png"
+        "alt": "The grid editor in the Styles pane of Microsoft Edge.",
+        "src": "../../assets/img/tweak-grid-flex-alignment.png"
       },
-      "link": "/tips/en/find-inactive-styles"
+      "link": "/tips/en/tweak-grid-flex-alignment"
     }
   ],
   "highlight-matching-elements.md": [
