@@ -1476,6 +1476,40 @@
       "link": "/tips/en/customize-keyboard-shortcuts"
     }
   ],
+  "emulate-user-gesture-in-console.md": [
+    {
+      "title": "Get the recently selected DOM nodes in the console",
+      "image": {
+        "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
+        "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
+      },
+      "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
+    },
+    {
+      "title": "Inspect and debug iframes",
+      "image": {
+        "alt": "Firefox, with DevTools opened on the side, showing the iframe selector button in the toolbar",
+        "src": "../../assets/img/inspect-debug-iframes-firefox.png"
+      },
+      "link": "/tips/en/inspect-debug-iframes"
+    },
+    {
+      "title": "List all supported console functions",
+      "image": {
+        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
+        "src": "../../assets/img/list-console-functions.png"
+      },
+      "link": "/tips/en/list-console-functions"
+    },
+    {
+      "title": "Query object instances and holders from the console",
+      "image": {
+        "alt": "The console in Safari, showing the result of queryInstances(app.TodoItem).",
+        "src": "../../assets/img/query-instances-holders-1.png"
+      },
+      "link": "/tips/en/query-instances-holders"
+    }
+  ],
   "evaluate-xpath.md": [
     {
       "title": "Copy an element's XPath expression",
@@ -3121,6 +3155,14 @@
         "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
+    },
+    {
+      "title": "Use user gesture restricted APIs in the Console",
+      "image": {
+        "alt": "Safari WebInspector, showing the Console tool, and the user gesture checkbox",
+        "src": "../../assets/img/emulate-user-gesture-in-console.png"
+      },
+      "link": "/tips/en/emulate-user-gesture-in-console"
     },
     {
       "title": "Find DOM elements from the console",
