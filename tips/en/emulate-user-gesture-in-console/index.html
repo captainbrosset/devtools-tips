@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Query object instances and holders from the console</title>
+    <title>Use user gesture restricted APIs in the Console</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/query-instances-holders/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/emulate-user-gesture-in-console/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/query-instances-holders-1.png">
-    <meta property="og:description" content="Query object instances and holders from the console">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/emulate-user-gesture-in-console.png">
+    <meta property="og:description" content="Use user gesture restricted APIs in the Console">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Query object instances and holders from the console</a></h1>
+      <h1><a href="/">Use user gesture restricted APIs in the Console</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -37,57 +37,69 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent" style="view-transition-name:post-query-instances-holders">
+    <main id="maincontent" style="view-transition-name:post-emulate-user-gesture-in-console">
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/perf/">perf</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
-<h2 class="tip-title">Query object instances and holders from the console</h2>
+<h2 class="tip-title">Use user gesture restricted APIs in the Console</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>All browser DevTools have a few built-in functions in the console to do things like <a href="/tips/en/get-current-element-in-console">get the current element</a>, or <a href="/tips/en/copy-from-console">copy a string</a>. But Safari exposes 2 nice built-in functions:</p>
+    <p>Certain web APIs are <em>user gesture</em> restricted. This means that they can only be called as a result of a user action, such as in a click event handler.</p>
+<p>For example, you can't simply put yout website in fullscreen mode by using <code>document.body.requestFullscreen()</code> in your JavaScript code. You're only allowed to do this if the user initiated the action. This is for security reasons and is all well and good.</p>
+<p>However, it can be a pain when you need to test a user gesture restricted API in the <strong>Console</strong> tool of DevTools.</p>
+<p>Thankfully, Chrome, Edge, and Safari let you do it:</p>
 <ul>
-<li><code>queryInstances</code></li>
-<li><code>queryHolders</code></li>
+<li>
+<p>In Chrome or Edge, this is done by default. All JavaScript code you run in the <strong>Console</strong> is treated as a user action. You can, however disable this:</p>
+<ul>
+<li>Go to the <strong>Console</strong> tool.</li>
+<li>Click the <strong>Console Settings</strong> button in the top-right corner of the tool.</li>
+<li>Clear the <strong>Treat code evaluation as user action</strong> setting.</li>
 </ul>
-<p>These two functions are really useful when your site starts using a lot of JavaScript objects. In some situations, it may become difficult to keep track of the dependencies between these objects, and memory leaks may start to appear, too.</p>
-<p>If <code>app.TodoItem</code> is a JavaScript class in your application, then <code>queryInstances(app.TodoItem)</code> will return an array of all of its instances.</p>
-<p><img src="/assets/img/query-instances-holders-1.png" alt="The console in Safari, showing the result of queryInstances(app.TodoItem)."></p>
-<p>Or if you want to know what refers to the object you're debugging, use <code>queryHolders(this)</code>, which will return an array of all the other objects that have references to <code>this</code>.</p>
-<p><img src="/assets/img/query-instances-holders-2.png" alt="The console in Safari, showing the result of queryHolders(this)."></p>
-<p>Learn more about these, and other, built-in functions <a href="https://webkit.org/web-inspector/console-command-line-api/#functions">here</a>.</p>
+</li>
+<li>
+<p>In Safari:</p>
+<ul>
+<li>Go the <strong>Console</strong> tool.</li>
+<li>Check the <strong>Emulate User Gesture</strong> setting in the toolbar.</li>
+</ul>
+</li>
+</ul>
+<p><img src="/assets/img/emulate-user-gesture-in-console.png" alt="Safari WebInspector, showing the Console tool, and the user gesture checkbox"></p>
+<p>And that's it! You can now use and test any APIs in the <strong>Console</strong>, including those that normally require a user gesture.</p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
+            <a href="/tips/en/get-recently-selected-dom-nodes-in-console">Get the recently selected DOM nodes in the console</a>
+            <a href="/tips/en/get-recently-selected-dom-nodes-in-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-recently-selected-dom-nodes-in-console.gif" alt="Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.">
+            </a>
+        </li><li>
+            <a href="/tips/en/inspect-debug-iframes">Inspect and debug iframes</a>
+            <a href="/tips/en/inspect-debug-iframes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/inspect-debug-iframes-firefox.png" alt="Firefox, with DevTools opened on the side, showing the iframe selector button in the toolbar">
+            </a>
+        </li><li>
             <a href="/tips/en/list-console-functions">List all supported console functions</a>
             <a href="/tips/en/list-console-functions" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.">
             </a>
         </li><li>
-            <a href="/tips/en/emulate-user-gesture-in-console">Use user gesture restricted APIs in the Console</a>
-            <a href="/tips/en/emulate-user-gesture-in-console" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/emulate-user-gesture-in-console.png" alt="Safari WebInspector, showing the Console tool, and the user gesture checkbox">
-            </a>
-        </li><li>
-            <a href="/tips/en/query-dom-from-console">Find DOM elements from the console</a>
-            <a href="/tips/en/query-dom-from-console" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/query-dom-from-console.png" alt="Firefox&#39;s console panel, showing 3 different examples of using the $ and $$ built-in console functions.">
-            </a>
-        </li><li>
-            <a href="/tips/en/copy-from-console">Copy an object from the console</a>
-            <a href="/tips/en/copy-from-console" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-from-console.png" alt="Chrome devtools&#39; console with a line of code using the copy() function.">
+            <a href="/tips/en/query-instances-holders">Query object instances and holders from the console</a>
+            <a href="/tips/en/query-instances-holders" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/query-instances-holders-1.png" alt="The console in Safari, showing the result of queryInstances(app.TodoItem).">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2022-01-10T00:00:00.000Z">1/10/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/query-instances-holders.md">Edit page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2023-09-21T00:00:00.000Z">9/21/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/emulate-user-gesture-in-console.md">Edit page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
