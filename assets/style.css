@@ -374,7 +374,7 @@ main h2.tip-title {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .tip {
@@ -383,14 +383,13 @@ main h2.tip-title {
   overflow: hidden;
   display: grid;
   gap: 1rem;
-  padding-left: 1rem;
+  padding: 1rem;
   grid-template-columns: 1fr 40%;
   grid-template-rows: min-content min-content 1fr;
 }
 
 .tip .tip-title {
   color: var(--text-color);
-  margin-top: 1rem;
   font-weight: bold;
 }
 
@@ -408,14 +407,15 @@ main h2.tip-title {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-left: 2px solid var(--alternate-background-color);
+  border: 2px solid var(--alternate-background-color);
+  border-radius: 4px;
+  box-shadow: 0 0 .5rem 0 #0003;
 }
 
 .tip .tip-info {
   display: grid;
   grid-template-columns: max-content 1fr;
   place-content: start;
-  margin-bottom: 1rem;
   padding: 0;
   grid-column: 1;
 }
@@ -430,30 +430,26 @@ main h2.tip-title {
   .tip {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
-    padding: 0;
   }
 
   .tip .tip-title {
     grid-column: 1;
     grid-row: 1;
-    margin: 1rem 1rem 0 1rem;
   }
 
   .tip .tip-excerpt {
     grid-column: 1;
     grid-row: 2;
-    margin: 0 1rem;
   }
 
   .tip .tip-info {
     grid-column: 1;
-    grid-row: 3;
-    margin: 0 1rem;
+    grid-row: 4;
   }
 
   .tip .tip-image {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 3;
   }
     
   .tip .tip-image img {
