@@ -311,6 +311,40 @@
       "link": "/tips/en/visualize-css-transforms"
     }
   ],
+  "convert-image-to-data-url.md": [
+    {
+      "title": "Download all images from the page",
+      "image": {
+        "alt": "The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded",
+        "src": "../../assets/img/download-all-images.png"
+      },
+      "link": "/tips/en/download-all-images"
+    },
+    {
+      "title": "Find all images without alternative text",
+      "image": {
+        "alt": "The output of the console.table command from above shown in the Firefox DevTools console.",
+        "src": "../../assets/img/find-all-images-without-alt-text.png"
+      },
+      "link": "/tips/en/find-all-images-without-alt-text"
+    },
+    {
+      "title": "See the size of the transferred data for images, scripts, or other resources",
+      "image": {
+        "alt": "The Network tool in Chrome, with the transferred size highlighted",
+        "src": "../../assets/img/get-size-of-resource-types.png"
+      },
+      "link": "/tips/en/get-size-of-resource-types"
+    },
+    {
+      "title": "Manipulate complex JSON files using DevTools",
+      "image": {
+        "alt": "VSCode with some JSON data and DevTools next to it with the snippets panel containing JS code to manipulate the JSON.",
+        "src": "../../assets/img/manipulate-complex-json.png"
+      },
+      "link": "/tips/en/manipulate-complex-json"
+    }
+  ],
   "copy-css-selector.md": [
     {
       "title": "Copy an elements styles",
@@ -2290,6 +2324,14 @@
       "link": "/tips/en/find-all-images-without-alt-text"
     },
     {
+      "title": "Convert images to data-urls",
+      "image": {
+        "alt": "The Network tool in Edge, an image is selected, the Preview tab is open, and the right-click menu shows the copy image as data URI item",
+        "src": "../../assets/img/convert-image-to-data-url.png"
+      },
+      "link": "/tips/en/convert-image-to-data-url"
+    },
+    {
       "title": "Filter requests in the Network panel by status code, mime type and more",
       "image": {
         "alt": "The Network panel in Edge showing the filter input field.",
@@ -2304,14 +2346,6 @@
         "src": "../../assets/img/hide-extension-resources.jpg"
       },
       "link": "/tips/en/hide-extension-resources"
-    },
-    {
-      "title": "See network request paths instead of names in the Network tool",
-      "image": {
-        "alt": "The Network tool in Edge, showing the contextual menu that's used to customize the network list columns",
-        "src": "../../assets/img/see-request-path-instead-of-name.png"
-      },
-      "link": "/tips/en/see-request-path-instead-of-name"
     }
   ],
   "get-website-issues.md": [
@@ -2721,6 +2755,14 @@
     }
   ],
   "manipulate-complex-json.md": [
+    {
+      "title": "Convert images to data-urls",
+      "image": {
+        "alt": "The Network tool in Edge, an image is selected, the Preview tab is open, and the right-click menu shows the copy image as data URI item",
+        "src": "../../assets/img/convert-image-to-data-url.png"
+      },
+      "link": "/tips/en/convert-image-to-data-url"
+    },
     {
       "title": "Copy an object from the console",
       "image": {
