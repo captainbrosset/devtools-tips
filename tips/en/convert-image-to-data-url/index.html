@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>See the size of the transferred data for images, scripts, or other resources</title>
+    <title>Convert images to data-urls</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/get-size-of-resource-types/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/convert-image-to-data-url/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/get-size-of-resource-types.png">
-    <meta property="og:description" content="See the size of the transferred data for images, scripts, or other resources">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/convert-image-to-data-url.png">
+    <meta property="og:description" content="Convert images to data-urls">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">See the size of the transferred data for images, scripts, or other resources</a></h1>
+      <h1><a href="/">Convert images to data-urls</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -37,68 +37,74 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent" style="view-transition-name:post-get-size-of-resource-types">
+    <main id="maincontent" style="view-transition-name:post-convert-image-to-data-url">
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/network/">network</a></li><li class="tag"><a href="/tag/perf/">perf</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/productivity/">productivity</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
 </div>
-<h2 class="tip-title">See the size of the transferred data for images, scripts, or other resources</h2>
+<h2 class="tip-title">Convert images to data-urls</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>To know how much data your website transfers between the server and the client to display images, or scripts, or anything else:</p>
-<ol>
-<li>
-<p>Open the <strong>Network</strong> tool.</p>
-</li>
-<li>
-<p>Refresh the page to make sure the list of requests appears in the tool.</p>
-</li>
-<li>
-<p>Filter the list of requests to only what you're interested in:</p>
+    <p>A data URL is a URL that starts with the prefix <code>data:</code> instead of <code>http:</code> or <code>https</code>. This data prefix (or scheme) allows you to embed the actual content of the resource in the URL itself, rather than linking to it. For example <code>data:text/html,&lt;h1&gt;Hello world&lt;/h1&gt;</code> is a data URL that contains HTML content directly. Try it out in a browser tab!</p>
+<p>Images can also be encoded as data URLs. Here is a 2x2 pixel solid red PNG image as a data URL: <code>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEklEQVQIW2P8z8AARAwMjDAGACwBA/+8RVWvAAAAAElFTkSuQmCC</code>.</p>
+<p>It can sometimes be useful to convert images to their data URLs, for example when you want to embed the images in a standalone HTML document that doesn't make any server requests.</p>
+<p>To convert any image to a data URL:</p>
 <ul>
-<li>For example, to see only images, click the <strong>Img</strong> tag in the toolbar (or <strong>Images</strong> in Firefox).</li>
-<li>Or, to see only JPEG image files, enter <code>.jpg</code> in the <strong>Filter</strong> text box (to learn more about filtering, see <a href="/tips/en/filter-network-requests">Filter requests in the Network panel by status code, mime type and more</a>).</li>
-<li>To see only JavaSript files, click the <strong>JS</strong> tag in the toolbar.</li>
-</ul>
+<li>
+<p>In Firefox:</p>
+<ol>
+<li>Open the image you want to convert in a new tab. Or open the webpage that contains the image you want to convert in a tab.</li>
+<li>Open DevTools.</li>
+<li>Open the <strong>Elements</strong> tool.</li>
+<li>Find the image you want to convert in the DOM tree and right-click it.</li>
+<li>Select <strong>Copy</strong> &gt; <strong>Image Data-URL</strong>.</li>
+</ol>
 </li>
 <li>
-<p>Look at the transferred size in the status bar at the bottom of the <strong>Network</strong> tool. The first number is the amount of data transferred for the filtered resources displayed in the tool.</p>
-</li>
+<p>In Chrome or Edge:</p>
+<ol>
+<li>Open the image you want to convert in a new tab. Or open the webpage that contains the image you want to convert in a tab.</li>
+<li>Open DevTools.</li>
+<li>Open the <strong>Network</strong> tool.</li>
+<li>Find the image you want to convert in the list of requests and click it.</li>
+<li>Click the <strong>Preview</strong> tab in the sidebar.</li>
+<li>Right-click on the image preview and select <strong>Copy image as data URI</strong>.</li>
 </ol>
-<p>In the screenshot below, the <strong>CSS</strong> and <strong>JS</strong> tags have been checked in the toolbar, filtering the list of resources down to just stylesheets and JavaScript files, and the status bar shows that these resources amount to 73.8kB total.</p>
-<p><img src="/assets/img/get-size-of-resource-types.png" alt="The Network tool in Chrome, with the transferred size highlighted"></p>
+</li>
+</ul>
+<p><img src="/assets/img/convert-image-to-data-url.png" alt="The Network tool in Edge, an image is selected, the Preview tab is open, and the right-click menu shows the copy image as data URI item"></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
+            <a href="/tips/en/download-all-images">Download all images from the page</a>
+            <a href="/tips/en/download-all-images" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/download-all-images.png" alt="The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded">
+            </a>
+        </li><li>
             <a href="/tips/en/find-all-images-without-alt-text">Find all images without alternative text</a>
             <a href="/tips/en/find-all-images-without-alt-text" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console.">
             </a>
         </li><li>
-            <a href="/tips/en/convert-image-to-data-url">Convert images to data-urls</a>
-            <a href="/tips/en/convert-image-to-data-url" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/convert-image-to-data-url.png" alt="The Network tool in Edge, an image is selected, the Preview tab is open, and the right-click menu shows the copy image as data URI item">
+            <a href="/tips/en/get-size-of-resource-types">See the size of the transferred data for images, scripts, or other resources</a>
+            <a href="/tips/en/get-size-of-resource-types" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-size-of-resource-types.png" alt="The Network tool in Chrome, with the transferred size highlighted">
             </a>
         </li><li>
-            <a href="/tips/en/filter-network-requests">Filter requests in the Network panel by status code, mime type and more</a>
-            <a href="/tips/en/filter-network-requests" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/filter-network-requests.png" alt="The Network panel in Edge showing the filter input field.">
-            </a>
-        </li><li>
-            <a href="/tips/en/hide-extension-resources">Hide resources loaded by extensions in the Network panel</a>
-            <a href="/tips/en/hide-extension-resources" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/hide-extension-resources.jpg" alt="The Network panel in Chrome DevTools showing the pattern used in the filter input box.">
+            <a href="/tips/en/manipulate-complex-json">Manipulate complex JSON files using DevTools</a>
+            <a href="/tips/en/manipulate-complex-json" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/manipulate-complex-json.png" alt="VSCode with some JSON data and DevTools next to it with the snippets panel containing JS code to manipulate the JSON.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://twitter.com/pankajparashar">Pankaj Parashar</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2023-02-16T00:00:00.000Z">2/16/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/get-size-of-resource-types.md">Edit page</a></p>
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2023-10-02T00:00:00.000Z">10/2/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/convert-image-to-data-url.md">Edit page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
