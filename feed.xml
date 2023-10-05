@@ -5,11 +5,72 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-10-02T00:00:00.000Z</updated>
+  <updated>2023-10-05T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>See the viewport size</title>
+    <link href="https://devtoolstips.org/tips/en/see-viewport-size/"/>
+    <updated>2023-10-05T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/see-viewport-size/</id>
+    <content type="html">&lt;p&gt;The size of the viewport that&#39;s used to render a webpage in a browser can be very important at times, such as when creating or debugging &lt;a href=&quot;https://developer.mozilla.org/docs/Web/CSS/CSS_media_queries/Using_media_queries&quot;&gt;media queries&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can easily know what the current size of the viewport is in DevTools. Here are two ways to do it.&lt;/p&gt;
+&lt;h3&gt;See the viewport size in the Console&lt;/h3&gt;
+&lt;p&gt;To display the vewport size in the &lt;strong&gt;Console&lt;/strong&gt; tool:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Console&lt;/strong&gt; tool in DevTools.&lt;/li&gt;
+&lt;li&gt;Enter &lt;code&gt;${document.documentElement.clientWidth} x ${document.documentElement.clientHeight}&lt;/code&gt; in the prompt and press &lt;kbd&gt;Enter&lt;/kbd&gt;.
+The size of the viewport, at the time you executed the expression, appears in the &lt;strong&gt;Console&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can also use a &lt;em&gt;live expression&lt;/em&gt; to see the size of the viewport in real-time, as you resize the browser window. To learn more, see &lt;a href=&quot;https://devtoolstips.org/tips/en/see-viewport-size/live-expressions.md&quot;&gt;Cut down on console noise using live expressions&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;See the viewport size in the page&lt;/h3&gt;
+&lt;p&gt;You can also see the size of the viewport in the page directly:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In Chrome or Edge:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open DevTools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Focus your attention in the top-right corner of the webpage, and then resize the browser window (or the DevTools panel).
+The viewport size appears as a temporary overlay, in the top-right corner of the webpage:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-viewport-size-chrome.png&quot; alt=&quot;Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Firefox:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open DevTools and go to the &lt;strong&gt;Settings&lt;/strong&gt; panel (&lt;kbd&gt;F1&lt;/kbd&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Under &lt;strong&gt;Available Toolbox Buttons&lt;/strong&gt;, select the &lt;strong&gt;Toggle rulers for the page&lt;/strong&gt; setting.
+The &lt;strong&gt;Toggle rulers for the page&lt;/strong&gt; icon appears in the DevTools toolbar.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the ruler icon to display rulers in the webpage.
+In addition to the top and left rulers which now are visible in the webpage, the viewport size is displayed in an overlay, in the top-right corner of the webpage.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-viewport-size-firefox.png&quot; alt=&quot;Firefox, with DevTools opened, the viewport size overlay appears in the rendered webpage&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Safari:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open DevTools and go to the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Hover over any node displayed in the DOM tree of the tool.
+On hover, rulers and the viewport size appear in the page temporarily.&lt;/li&gt;
+&lt;li&gt;You can also click the &lt;strong&gt;Show rulers&lt;/strong&gt; icon in the toolbar of the &lt;strong&gt;Elements&lt;/strong&gt; tool to make the rulers and viewport size overlay permanent.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Convert images to data-urls</title>

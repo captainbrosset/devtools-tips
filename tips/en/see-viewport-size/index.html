@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See the viewport size</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/see-viewport-size/">
+    
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/see-viewport-size-chrome.png">
+    <meta property="og:description" content="See the viewport size">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    <meta name="view-transition" content="same-origin" />
+  </head>
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+      <h1><a href="/">See the viewport size</a></h1>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="/">All tips</a></li>
+          <li tabindex="0">Categories
+            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/browser-safari/">browser-safari</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li tabindex="0">Browsers
+            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="header-shadow"></div>
+    <div class="header-shadow-block"></div>
+    <main id="maincontent" style="view-transition-name:post-see-viewport-size">
+      <div class="announcement">
+        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
+      </div>
+      <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag"><a href="/tag/debug/">debug</a></li><li class="tag"><a href="/tag/testing/">testing</a></li><li class="tag"><a href="/tag/css/">css</a></li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+</div>
+<h2 class="tip-title">See the viewport size</h2>
+<div class="tip-content" data-pagefind-body>
+    <p>The size of the viewport that's used to render a webpage in a browser can be very important at times, such as when creating or debugging <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_media_queries/Using_media_queries">media queries</a>.</p>
+<p>You can easily know what the current size of the viewport is in DevTools. Here are two ways to do it.</p>
+<h3>See the viewport size in the Console</h3>
+<p>To display the vewport size in the <strong>Console</strong> tool:</p>
+<ol>
+<li>Open the <strong>Console</strong> tool in DevTools.</li>
+<li>Enter <code>${document.documentElement.clientWidth} x ${document.documentElement.clientHeight}</code> in the prompt and press <kbd>Enter</kbd>.
+The size of the viewport, at the time you executed the expression, appears in the <strong>Console</strong>.</li>
+</ol>
+<p>You can also use a <em>live expression</em> to see the size of the viewport in real-time, as you resize the browser window. To learn more, see <a href="/tips/en/live-expressions">Cut down on console noise using live expressions</a>.</p>
+<h3>See the viewport size in the page</h3>
+<p>You can also see the size of the viewport in the page directly:</p>
+<ul>
+<li>
+<p>In Chrome or Edge:</p>
+<ol>
+<li>
+<p>Open DevTools.</p>
+</li>
+<li>
+<p>Focus your attention in the top-right corner of the webpage, and then resize the browser window (or the DevTools panel).
+The viewport size appears as a temporary overlay, in the top-right corner of the webpage:</p>
+<p><img src="/assets/img/see-viewport-size-chrome.png" alt="Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage"></p>
+</li>
+</ol>
+</li>
+<li>
+<p>In Firefox:</p>
+<ol>
+<li>
+<p>Open DevTools and go to the <strong>Settings</strong> panel (<kbd>F1</kbd>).</p>
+</li>
+<li>
+<p>Under <strong>Available Toolbox Buttons</strong>, select the <strong>Toggle rulers for the page</strong> setting.
+The <strong>Toggle rulers for the page</strong> icon appears in the DevTools toolbar.</p>
+</li>
+<li>
+<p>Click the ruler icon to display rulers in the webpage.
+In addition to the top and left rulers which now are visible in the webpage, the viewport size is displayed in an overlay, in the top-right corner of the webpage.</p>
+<p><img src="/assets/img/see-viewport-size-firefox.png" alt="Firefox, with DevTools opened, the viewport size overlay appears in the rendered webpage"></p>
+</li>
+</ol>
+</li>
+<li>
+<p>In Safari:</p>
+<ol>
+<li>Open DevTools and go to the <strong>Elements</strong> tool.</li>
+<li>Hover over any node displayed in the DOM tree of the tool.
+On hover, rulers and the viewport size appear in the page temporarily.</li>
+<li>You can also click the <strong>Show rulers</strong> icon in the toolbar of the <strong>Elements</strong> tool to make the rulers and viewport size overlay permanent.</li>
+</ol>
+</li>
+</ul>
+
+</div><div class="see-also">
+    <h3>See also</h3>
+    <ul><li>
+            <a href="/tips/en/spot-out-of-viewport-elements">Quickly spot out-of-viewport elements</a>
+            <a href="/tips/en/spot-out-of-viewport-elements" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/spot-out-of-viewport-elements.png" alt="Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.">
+            </a>
+        </li><li>
+            <a href="/tips/en/hide-or-pin-inspect-info-tooltip">Hide or pin the information tooltip while inspecting page elements</a>
+            <a href="/tips/en/hide-or-pin-inspect-info-tooltip" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/hide-or-pin-inspect-info-tooltip-1.png" alt="Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.">
+            </a>
+        </li><li>
+            <a href="/tips/en/use-designmode-to-spell-check">Use document.designMode to spell check your webpage</a>
+            <a href="/tips/en/use-designmode-to-spell-check" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/use-designmode-to-spell-check.png" alt="Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines">
+            </a>
+        </li></ul>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2023-10-05T00:00:00.000Z">10/5/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/see-viewport-size.md">Edit page</a></p>
+</div>
+<script async src="/assets/dialog-lightbox.js"></script>
+
+    </main>
+    <footer role="contentinfo">
+      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
+      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
+    </footer>
+
+    
+    
+    <script>
+      const pixel = new Image();
+      let url = 'https://patrickbrosset.com/pixel.php';
+      url += '?t=' + Date.now();
+      url += '&url=' + encodeURIComponent(window.location.href);
+      pixel.src = url;
+    </script>
+    
+
+    
+    
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+    
+  </body>
+</html>
