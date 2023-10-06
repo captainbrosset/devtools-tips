@@ -3615,6 +3615,32 @@
       "link": "/tips/en/spot-out-of-viewport-elements"
     }
   ],
+  "see-viewport-size.md": [
+    {
+      "title": "Quickly spot out-of-viewport elements",
+      "image": {
+        "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
+        "src": "../../assets/img/spot-out-of-viewport-elements.png"
+      },
+      "link": "/tips/en/spot-out-of-viewport-elements"
+    },
+    {
+      "title": "Hide or pin the information tooltip while inspecting page elements",
+      "image": {
+        "alt": "Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
+        "src": "../../assets/img/hide-or-pin-inspect-info-tooltip-1.png"
+      },
+      "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
+    },
+    {
+      "title": "Use document.designMode to spell check your webpage",
+      "image": {
+        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
+        "src": "../../assets/img/use-designmode-to-spell-check.png"
+      },
+      "link": "/tips/en/use-designmode-to-spell-check"
+    }
+  ],
   "see-which-font-was-used-in-font-family.md": [
     {
       "title": "List the fonts used on a page, or an element",
