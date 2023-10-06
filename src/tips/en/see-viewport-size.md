@@ -21,7 +21,7 @@ You can also use a _live expression_ to see the size of the viewport in real-tim
 
 ### See the viewport size in the page
 
-You can also see the size of the viewport in the page directly:
+You can also see the size of the viewport⁕ in the page directly:
 
 * In Chrome or Edge:
 
@@ -47,3 +47,5 @@ You can also see the size of the viewport in the page directly:
     1. Hover over any node displayed in the DOM tree of the tool.
        On hover, rulers and the viewport size appear in the page temporarily.
     1. You can also click the **Show rulers** icon in the toolbar of the **Elements** tool to make the rulers and viewport size overlay permanent.
+
+⁕ In browsers with classic scrollbars, the number shown in the page by DevTools doesn't account for the scrollbar width, if there is one. The actual viewport width is about 15 to 17 pixels small than the number shown.
