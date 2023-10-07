@@ -27,7 +27,7 @@ The size of the viewport, at the time you executed the expression, appears in th
 &lt;/ol&gt;
 &lt;p&gt;You can also use a &lt;em&gt;live expression&lt;/em&gt; to see the size of the viewport in real-time, as you resize the browser window. To learn more, see &lt;a href=&quot;https://devtoolstips.org/tips/en/see-viewport-size/live-expressions.md&quot;&gt;Cut down on console noise using live expressions&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;See the viewport size in the page&lt;/h3&gt;
-&lt;p&gt;You can also see the size of the viewport in the page directly:&lt;/p&gt;
+&lt;p&gt;You can also see the size of the viewport⁕ in the page directly:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;In Chrome or Edge:&lt;/p&gt;
@@ -69,6 +69,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/li&gt
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;⁕ In browsers with classic scrollbars, the number shown in the page by DevTools doesn&#39;t account for the scrollbar width, if there is one. The actual viewport width is about 15 to 17 pixels small than the number shown.&lt;/p&gt;
 </content>
   </entry>
   
