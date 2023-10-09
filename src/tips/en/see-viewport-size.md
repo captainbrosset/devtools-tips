@@ -43,9 +43,11 @@ You can also see the size of the viewport⁕ in the page directly:
 
 * In Safari:
 
-    1. Open DevTools and go to the **Elements** tool.
+    1. Open Web Inspector and go to the **Elements** tool.
     1. Hover over any node displayed in the DOM tree of the tool.
        On hover, rulers and the viewport size appear in the page temporarily.
     1. You can also click the **Show rulers** icon in the toolbar of the **Elements** tool to make the rulers and viewport size overlay permanent.
+ 
+       ![Safari, with Inspector opened, the viewport size overlay appears in the rendered webpage](../../assets/img/see-viewport-size-safari.png)
 
 ⁕ In browsers with classic scrollbars, the number shown in the page by DevTools doesn't account for the scrollbar width, if there is one. The actual viewport width is about 15 to 17 pixels small than the number shown.
