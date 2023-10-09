@@ -1,6 +1,6 @@
 ---
 date: 2023-10-05
-authors: Patrick Brosset
+authors: Patrick Brosset, Pankaj Parashar
 title: See the viewport size
 tags: ["debug", "testing", "css", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 see-also: ["spot-out-of-viewport-elements.md"]
