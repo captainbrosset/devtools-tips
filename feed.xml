@@ -62,10 +62,17 @@ In addition to the top and left rulers which now are visible in the webpage, the
 &lt;li&gt;
 &lt;p&gt;In Safari:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Open DevTools and go to the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/li&gt;
-&lt;li&gt;Hover over any node displayed in the DOM tree of the tool.
-On hover, rulers and the viewport size appear in the page temporarily.&lt;/li&gt;
-&lt;li&gt;You can also click the &lt;strong&gt;Show rulers&lt;/strong&gt; icon in the toolbar of the &lt;strong&gt;Elements&lt;/strong&gt; tool to make the rulers and viewport size overlay permanent.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open Web Inspector and go to the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hover over any node displayed in the DOM tree of the tool.
+On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can also click the &lt;strong&gt;Show rulers&lt;/strong&gt; icon in the toolbar of the &lt;strong&gt;Elements&lt;/strong&gt; tool to make the rulers and viewport size overlay permanent.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-viewport-size-safari.png&quot; alt=&quot;Safari, with Inspector opened, the viewport size overlay appears in the rendered webpage&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
