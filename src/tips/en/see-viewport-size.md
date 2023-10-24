@@ -1,8 +1,8 @@
 ---
 date: 2023-10-05
-authors: Patrick Brosset, Pankaj Parashar
+authors: Patrick Brosset, Pankaj Parashar, Kilian Valkhof
 title: See the viewport size
-tags: ["debug", "testing", "css", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["debug", "testing", "css", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
 see-also: ["spot-out-of-viewport-elements.md"]
 ---
 The size of the viewport that's used to render a webpage in a browser can be very important at times, such as when creating or debugging [media queries](https://developer.mozilla.org/docs/Web/CSS/CSS_media_queries/Using_media_queries).
@@ -49,5 +49,11 @@ You can also see the size of the viewport⁕ in the page directly:
     1. You can also click the **Show rulers** icon in the toolbar of the **Elements** tool to make the rulers and viewport size overlay permanent.
  
        ![Safari, with Inspector opened, the viewport size overlay appears in the rendered webpage](../../assets/img/see-viewport-size-safari.png)
+
+* In Polypane:
+
+    1. The dimensions of each viewport are always shown above it. Edit these values to update the viewport.
+ 
+       ![Polypane, showing dimensions above each viewport](../../assets/img/see-viewport-size-polypane.png)
 
 ⁕ In browsers with classic scrollbars, the number shown in the page by DevTools doesn't account for the scrollbar width, if there is one. The actual viewport width is about 15 to 17 pixels small than the number shown.
