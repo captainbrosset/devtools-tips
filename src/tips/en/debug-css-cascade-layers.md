@@ -1,6 +1,6 @@
 ---
 date: 2022-04-20
-authors: Patrick Brosset
+authors: Patrick Brosset, Kilian Valkhof
 title: Visualize and debug CSS cascade layers
 tags: ["css", "browser:chrome", "browser:edge", "browser:firefox", "browser:safari", "browser:polypane"]
 ---
@@ -20,12 +20,22 @@ Safari, Firefox, Chrome, Polypane and Edge all have support for layers in their 
 
 ![Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.](../../assets/img/debug-css-cascade-layers-firefox.png)
 
-### Only Edge and Chrome
+### Only Edge, Chrome and Polypane
 
 On top of the above, Edge and Chrome have a layers view:
 
-1. Open a page that uses cascade layers like [this one](https://codepen.io/web-dot-dev/full/LYzqPEp).
-1. Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.
-1. Click **Toggle CSS layers view** in the **Styles** panel toolbar (next to the search field) to reveal the list of layers.
+- Edge and Chrome
 
-![Edge showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules and the layers view.](../../assets/img/debug-css-cascade-layers-edge.png)
+  1. Open a page that uses cascade layers like [this one](https://codepen.io/web-dot-dev/full/LYzqPEp).
+  1. Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.
+  1. Click **Toggle CSS layers view** in the **Styles** panel toolbar (next to the search field) to reveal the list of layers.
+
+  ![Edge showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules and the layers view.](../../assets/img/debug-css-cascade-layers-edge.png)
+
+- Polypane
+
+  1. Open a page that uses casade layers.
+  1. Inspect an element which has styles defined in one of the cascade layers.
+  1. Click "CSS Layers" in the Elements panel to reveal the list of layers. With an element selected, you can see which layers apply to that element by seeing which ones are not dimmed.
+
+  ![Polypane showing a demo page that uses layers and the Elements panel open, showing three layers. One is dimmed.](../../assets/img/debug-css-cascade-layers-polypane.png)
