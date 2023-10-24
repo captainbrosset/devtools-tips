@@ -11,7 +11,7 @@ You can easily know what the current size of the viewport is in DevTools. Here a
 
 ### See the viewport size in the Console
 
-To display the vewport size in the **Console** tool:
+To display the viewport size in the **Console** tool:
 
 1. Open the **Console** tool in DevTools.
 1. Enter `${document.documentElement.clientWidth} x ${document.documentElement.clientHeight}` in the prompt and press <kbd>Enter</kbd>.
