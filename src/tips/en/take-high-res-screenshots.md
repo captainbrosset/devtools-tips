@@ -26,7 +26,8 @@ Here's a nice trick to do a similar thing in Chromium-based browsers (Chrome, Ed
 
 1. Open DevTools and go to the **Device Mode** tool.
 1. Click the **Dimensions** dropdown menu and select **Responsive**.
-1. Click **More options** (⋮) and select **Add device pixel ratio**. This will add a new DPR dropdown to the device toolbar where you can select the DPR value.
+1. Click **More options** (`⋮`) and select **Add device pixel ratio**. This will add a new DPR dropdown to the device toolbar where you can select the DPR value.
+1. In the DPR dropdown, select the highest value to take the highest resolution screenshot.
 1. Click **More options** (the three dots icon) and then click **Capture full size screenshot**.
 
 ![Edge DevTools showing the options menu with the Add device pixel ratio option highlighted](../../assets/img/take-high-res-screenshots-edge-1.png)
