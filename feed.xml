@@ -1953,25 +1953,32 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
     <link href="https://devtoolstips.org/tips/en/debug-css-cascade-layers/"/>
     <updated>2022-04-20T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/debug-css-cascade-layers/</id>
-    <content type="html">&lt;p&gt;CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which they apply. Cascade layers are meant to bring an elegant solution to problems we&#39;ve historically been fixing by using &lt;code&gt;!important&lt;/code&gt; or artificially making selectors have higher specificity.&lt;/p&gt;
-&lt;p&gt;If you want to learn more about cascade layers, check out &lt;a href=&quot;https://css-tricks.com/css-cascade-layers/&quot;&gt;Miriam Suzanne&#39;s complete guide on CSS Tricks&lt;/a&gt;, but here let&#39;s see how we can visualize and debug layers in DevTools.&lt;/p&gt;
-&lt;p&gt;Safari, Firefox, Chrome, Polypane and Edge all have support for layers in their &lt;strong&gt;Styles&lt;/strong&gt;/&lt;strong&gt;Rules&lt;/strong&gt; panels.&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_layers&quot;&gt;Cascade layers&lt;/a&gt; is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which these layers apply. Cascade layers are meant to bring an elegant solution to problems we&#39;ve historically been fixing by using &lt;code&gt;!important&lt;/code&gt; or artificially making selectors have higher specificity. To learn more about cascade layers, check out &lt;a href=&quot;https://css-tricks.com/css-cascade-layers/&quot;&gt;Miriam Suzanne&#39;s complete guide on CSS Tricks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In this tip, let&#39;s see how to visualize and debug layers in DevTools. All browser DevTools have support for layers in their &lt;strong&gt;Styles&lt;/strong&gt;/&lt;strong&gt;Rules&lt;/strong&gt; panels, and some browsers have more advanced features.&lt;/p&gt;
 &lt;h3&gt;All browsers&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Open a page that uses cascade layers like &lt;a href=&quot;https://codepen.io/web-dot-dev/full/LYzqPEp&quot;&gt;this one&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.&lt;/li&gt;
-&lt;li&gt;In the sidebar where CSS rules are displayed, rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.&lt;/li&gt;
-&lt;li&gt;Rules that are part of a cascade layer have a &lt;code&gt;@layer &amp;lt;layername&amp;gt;&lt;/code&gt; label above them.&lt;/li&gt;
+&lt;li&gt;In the sidebar where CSS rules are displayed (called &lt;strong&gt;Styles&lt;/strong&gt; or &lt;strong&gt;Rules&lt;/strong&gt; depending on the browser), the rules are sorted by cascade layers, with the highest priority layer at the top, and lowest priority at the bottom.&lt;/li&gt;
+&lt;li&gt;Rules that are part of a cascade layer have a &lt;code&gt;@layer &amp;lt;layername&amp;gt;&lt;/code&gt; label next to them.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-css-cascade-layers-firefox.png&quot; alt=&quot;Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.&quot; /&gt;&lt;/p&gt;
-&lt;h3&gt;Only Edge and Chrome&lt;/h3&gt;
-&lt;p&gt;On top of the above, Edge and Chrome have a layers view:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-css-cascade-layers-firefox.png&quot; alt=&quot;Firefox with a demo page that uses layers, DevTools is opened and shows the Rules panel with two @layer rules&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Chrome and Edge only&lt;/h3&gt;
+&lt;p&gt;On top of the above, Chrome and Edge have a &lt;strong&gt;Layers&lt;/strong&gt; view that shows the cascade layers in a list:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open a page that uses cascade layers like &lt;a href=&quot;https://codepen.io/web-dot-dev/full/LYzqPEp&quot;&gt;this one&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;Toggle CSS layers view&lt;/strong&gt; in the &lt;strong&gt;Styles&lt;/strong&gt; panel toolbar (next to the search field) to reveal the list of layers.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Toggle CSS layers view&lt;/strong&gt; button in the &lt;strong&gt;Styles&lt;/strong&gt; panel toolbar (next to the search field) to reveal the list of layers.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-css-cascade-layers-edge.png&quot; alt=&quot;Edge showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules and the layers view.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-css-cascade-layers-edge.png&quot; alt=&quot;Edge with a demo page that uses layers, DevTools is opened and shows the Styles panel with two @layer rules and the layers view&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Polypane only&lt;/h3&gt;
+&lt;p&gt;Polypane also has a &lt;strong&gt;CSS Layers&lt;/strong&gt; view that shows the cascade layers in a list:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a page that uses cascade layers like &lt;a href=&quot;https://codepen.io/web-dot-dev/full/LYzqPEp&quot;&gt;this one&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;CSS Layers&lt;/strong&gt; in the &lt;strong&gt;Elements&lt;/strong&gt; panel to reveal the list of layers. The layers that are not dimmed in the list apply to the currently selected element.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-css-cascade-layers-polypane.png&quot; alt=&quot;Polypane with a demo page that uses layers, the Elements panel is open and shows three layers in the CSS Layers view, one of which is dimmed.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -2743,12 +2750,30 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
     <link href="https://devtoolstips.org/tips/en/simulate-pseudo-classes/"/>
     <updated>2021-11-07T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/simulate-pseudo-classes/</id>
-    <content type="html">&lt;p&gt;If you use &lt;code&gt;:hover&lt;/code&gt;, &lt;code&gt;:active&lt;/code&gt;, and other such pseudo-classes in CSS, you can actually simulate these states in DevTools without having to hover over or click on buttons and links.&lt;/p&gt;
-&lt;p&gt;Open the Styles panel (in Chrome, Edge or Safari) or the Rules panel (in Firefox), and click the &lt;code&gt;:hov&lt;/code&gt; button. This will expand a section that allows you to lock one or multiple of these pseudo-classes on the selected element.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-pseudo-classes.png&quot; alt=&quot;The :hov panel to simulate various pseudo-classes.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;This is great when you write your styles, as you can define see the changes to - for example - a hover state of an element without having to use your mouse to see it in action.&lt;/p&gt;
-&lt;p&gt;It is even more useful when you want to test the different states of an element. In the following screencast you can see how to use the state simulation to check the hover, active, visited and focused state of a link without having to interact with the link using your keyboard or mouse. If you want to try it out yourself, &lt;a href=&quot;https://codepen.io/codepo8/pen/WNEMaPO&quot;&gt;here is the demo page&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;If you use &lt;code&gt;:hover&lt;/code&gt;, &lt;code&gt;:active&lt;/code&gt;, or other pseudo-classes in your CSS code, it can be tedious to test them. For example, having to hover over an element which is styled with the &lt;code&gt;:hover&lt;/code&gt; pseudo-class means that you can&#39;t use your mouse to inspect the element in DevTools at the same time.&lt;/p&gt;
+&lt;p&gt;Thanks to DevTools, you can actually simulate these pseudo-classes without having to use your mouse or keyboard.&lt;/p&gt;
+&lt;p&gt;To simulate a pseudo-class:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Inspect an element that has a pseudo-class defined in your CSS code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Depending on your browser, do either of the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Chrome, Edge, or Safari: in the &lt;strong&gt;Elements&lt;/strong&gt; tool, in the &lt;strong&gt;Styles&lt;/strong&gt; sidebar, click the &lt;code&gt;:hov&lt;/code&gt; button.&lt;/li&gt;
+&lt;li&gt;In Firefox: in the &lt;strong&gt;Inspector&lt;/strong&gt; tool, in the &lt;strong&gt;Rules&lt;/strong&gt; sidebar, click the &lt;code&gt;:hov&lt;/code&gt; button.&lt;/li&gt;
+&lt;li&gt;In Polypane: in the &lt;strong&gt;Elements&lt;/strong&gt; tool, click the rhombus icon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The pseudo-class section appears.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select one, or more, pseudo-classes to simulate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-pseudo-classes.png&quot; alt=&quot;The :hov button and the pseudo-class panel in Chrome DevTools&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Here is a screencast showing how to use pseudo-class simulation to check the hover, active, visited and focused state of a link without having to interact with the link using your keyboard or mouse:&lt;/p&gt;
 &lt;p&gt;https://www.youtube.com/watch?v=CgHuHYRyvXc&lt;/p&gt;
+&lt;p&gt;To try it out yourself, &lt;a href=&quot;https://codepen.io/codepo8/pen/WNEMaPO&quot;&gt;here is the demo page&lt;/a&gt; used in the video.&lt;/p&gt;
 </content>
   </entry>
   

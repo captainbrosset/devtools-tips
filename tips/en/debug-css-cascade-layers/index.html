@@ -50,25 +50,32 @@
 </div>
 <h2 class="tip-title">Visualize and debug CSS cascade layers</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which they apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using <code>!important</code> or artificially making selectors have higher specificity.</p>
-<p>If you want to learn more about cascade layers, check out <a href="https://css-tricks.com/css-cascade-layers/">Miriam Suzanne's complete guide on CSS Tricks</a>, but here let's see how we can visualize and debug layers in DevTools.</p>
-<p>Safari, Firefox, Chrome, Polypane and Edge all have support for layers in their <strong>Styles</strong>/<strong>Rules</strong> panels.</p>
+    <p><a href="https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_layers">Cascade layers</a> is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which these layers apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using <code>!important</code> or artificially making selectors have higher specificity. To learn more about cascade layers, check out <a href="https://css-tricks.com/css-cascade-layers/">Miriam Suzanne's complete guide on CSS Tricks</a>.</p>
+<p>In this tip, let's see how to visualize and debug layers in DevTools. All browser DevTools have support for layers in their <strong>Styles</strong>/<strong>Rules</strong> panels, and some browsers have more advanced features.</p>
 <h3>All browsers</h3>
 <ol>
 <li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
 <li>Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.</li>
-<li>In the sidebar where CSS rules are displayed, rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.</li>
-<li>Rules that are part of a cascade layer have a <code>@layer &lt;layername&gt;</code> label above them.</li>
+<li>In the sidebar where CSS rules are displayed (called <strong>Styles</strong> or <strong>Rules</strong> depending on the browser), the rules are sorted by cascade layers, with the highest priority layer at the top, and lowest priority at the bottom.</li>
+<li>Rules that are part of a cascade layer have a <code>@layer &lt;layername&gt;</code> label next to them.</li>
 </ol>
-<p><img src="/assets/img/debug-css-cascade-layers-firefox.png" alt="Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules."></p>
-<h3>Only Edge and Chrome</h3>
-<p>On top of the above, Edge and Chrome have a layers view:</p>
+<p><img src="/assets/img/debug-css-cascade-layers-firefox.png" alt="Firefox with a demo page that uses layers, DevTools is opened and shows the Rules panel with two @layer rules"></p>
+<h3>Chrome and Edge only</h3>
+<p>On top of the above, Chrome and Edge have a <strong>Layers</strong> view that shows the cascade layers in a list:</p>
 <ol>
 <li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
 <li>Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.</li>
-<li>Click <strong>Toggle CSS layers view</strong> in the <strong>Styles</strong> panel toolbar (next to the search field) to reveal the list of layers.</li>
+<li>Click the <strong>Toggle CSS layers view</strong> button in the <strong>Styles</strong> panel toolbar (next to the search field) to reveal the list of layers.</li>
 </ol>
-<p><img src="/assets/img/debug-css-cascade-layers-edge.png" alt="Edge showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules and the layers view."></p>
+<p><img src="/assets/img/debug-css-cascade-layers-edge.png" alt="Edge with a demo page that uses layers, DevTools is opened and shows the Styles panel with two @layer rules and the layers view"></p>
+<h3>Polypane only</h3>
+<p>Polypane also has a <strong>CSS Layers</strong> view that shows the cascade layers in a list:</p>
+<ol>
+<li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
+<li>Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.</li>
+<li>Click <strong>CSS Layers</strong> in the <strong>Elements</strong> panel to reveal the list of layers. The layers that are not dimmed in the list apply to the currently selected element.</li>
+</ol>
+<p><img src="/assets/img/debug-css-cascade-layers-polypane.png" alt="Polypane with a demo page that uses layers, the Elements panel is open and shows three layers in the CSS Layers view, one of which is dimmed."></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
@@ -83,18 +90,18 @@
                 <img loading="lazy" src="/assets/img/highlight-elements-from-selector-firefox.png" alt="Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane">
             </a>
         </li><li>
-            <a href="/tips/en/convert-color-formats">Convert color formats</a>
-            <a href="/tips/en/convert-color-formats" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/convert-color-formats.gif" alt="Animation of the rules panel in Firefox, showing the color conversion.">
+            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
+            <a href="/tips/en/copy-element-styles" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
             </a>
         </li><li>
-            <a href="/tips/en/find-css-changes">Find and export CSS changes</a>
-            <a href="/tips/en/find-css-changes" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-css-changes.png" alt="The Changes panel in Firefox showing a diff-like view of all the CSS changes.">
+            <a href="/tips/en/copy-rule-as-css-in-js">Copy a CSS rule as CSS-in-JS format</a>
+            <a href="/tips/en/copy-rule-as-css-in-js" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-rule-as-css-in-js.gif" alt="Aimation showing the Styles pane in Edge, with the &quot;Copy all declarations as JS&quot; option being used, and then pasting the result in the Console to show that it is formatted.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
     <p class="last-edit">Last edit: <time datetime="2022-04-20T00:00:00.000Z">4/20/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-css-cascade-layers.md">Edit page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
