@@ -1,6 +1,6 @@
 ---
 date: 2023-05-19
-authors: Patrick Brosset
+authors: Patrick Brosset, Pankaj Parashar
 title: Take high-resolution screenshots of web pages
 tags: ["export", "browser:firefox", "browser:chrome", "browser:edge"]
 see-also: ["screenshot-part-of-page-command-menu.md", "take-in-device-screenshots.md", "node-screenshot.md"]
