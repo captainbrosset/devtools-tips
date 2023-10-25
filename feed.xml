@@ -19,7 +19,7 @@
     <content type="html">&lt;p&gt;The size of the viewport that&#39;s used to render a webpage in a browser can be very important at times, such as when creating or debugging &lt;a href=&quot;https://developer.mozilla.org/docs/Web/CSS/CSS_media_queries/Using_media_queries&quot;&gt;media queries&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can easily know what the current size of the viewport is in DevTools. Here are two ways to do it.&lt;/p&gt;
 &lt;h3&gt;See the viewport size in the Console&lt;/h3&gt;
-&lt;p&gt;To display the vewport size in the &lt;strong&gt;Console&lt;/strong&gt; tool:&lt;/p&gt;
+&lt;p&gt;To display the viewport size in the &lt;strong&gt;Console&lt;/strong&gt; tool:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open the &lt;strong&gt;Console&lt;/strong&gt; tool in DevTools.&lt;/li&gt;
 &lt;li&gt;Enter &lt;code&gt;${document.documentElement.clientWidth} x ${document.documentElement.clientHeight}&lt;/code&gt; in the prompt and press &lt;kbd&gt;Enter&lt;/kbd&gt;.
@@ -72,6 +72,15 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;You can also click the &lt;strong&gt;Show rulers&lt;/strong&gt; icon in the toolbar of the &lt;strong&gt;Elements&lt;/strong&gt; tool to make the rulers and viewport size overlay permanent.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-viewport-size-safari.png&quot; alt=&quot;Safari, with Inspector opened, the viewport size overlay appears in the rendered webpage&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Polypane:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The dimensions of each viewport are always shown above it. Edit these values to update the viewport.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-viewport-size-polypane.png&quot; alt=&quot;Polypane, showing dimensions above each viewport&quot; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
