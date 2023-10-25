@@ -415,14 +415,6 @@
   ],
   "copy-element-styles.md": [
     {
-      "title": "Simulate pseudo CSS classes",
-      "image": {
-        "alt": "The :hov panel to simulate various pseudo-classes.",
-        "src": "../../assets/img/simulate-pseudo-classes.png"
-      },
-      "link": "/tips/en/simulate-pseudo-classes"
-    },
-    {
       "title": "Copy an element's XPath expression",
       "image": {
         "alt": "The Elements panel in Edge showing the copy xpath option in the contextual menu.",
@@ -445,6 +437,14 @@
         "src": "../../assets/img/find-inactive-styles.png"
       },
       "link": "/tips/en/find-inactive-styles"
+    },
+    {
+      "title": "Copy CSS selector of an element",
+      "image": {
+        "alt": "Edge DevTools, showing how to access the Copy CSS selector option.",
+        "src": "../../assets/img/copy-css-selector.png"
+      },
+      "link": "/tips/en/copy-css-selector"
     }
   ],
   "copy-element-xpath.md": [
@@ -729,20 +729,20 @@
       "link": "/tips/en/highlight-elements-from-selector"
     },
     {
-      "title": "Convert color formats",
+      "title": "Copy an elements styles",
       "image": {
-        "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "../../assets/img/convert-color-formats.gif"
+        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
+        "src": "../../assets/img/copy-element-styles.png"
       },
-      "link": "/tips/en/convert-color-formats"
+      "link": "/tips/en/copy-element-styles"
     },
     {
-      "title": "Find and export CSS changes",
+      "title": "Copy a CSS rule as CSS-in-JS format",
       "image": {
-        "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
-        "src": "../../assets/img/find-css-changes.png"
+        "alt": "Aimation showing the Styles pane in Edge, with the \"Copy all declarations as JS\" option being used, and then pasting the result in the Console to show that it is formatted.",
+        "src": "../../assets/img/copy-rule-as-css-in-js.gif"
       },
-      "link": "/tips/en/find-css-changes"
+      "link": "/tips/en/copy-rule-as-css-in-js"
     }
   ],
   "debug-grid-areas.md": [
@@ -838,6 +838,14 @@
   ],
   "debug-print-css-styles.md": [
     {
+      "title": "Simulate pseudo CSS classes",
+      "image": {
+        "alt": "The :hov button and the pseudo-class panel in Chrome DevTools",
+        "src": "../../assets/img/simulate-pseudo-classes.png"
+      },
+      "link": "/tips/en/simulate-pseudo-classes"
+    },
+    {
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
@@ -860,14 +868,6 @@
         "src": "../../assets/img/format-console-messages.png"
       },
       "link": "/tips/en/format-console-messages"
-    },
-    {
-      "title": "List all supported console functions",
-      "image": {
-        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "../../assets/img/list-console-functions.png"
-      },
-      "link": "/tips/en/list-console-functions"
     }
   ],
   "debug-safari-mac-webapps.md": [
@@ -1443,6 +1443,14 @@
   ],
   "emulate-color-schemes.md": [
     {
+      "title": "Simulate pseudo CSS classes",
+      "image": {
+        "alt": "The :hov button and the pseudo-class panel in Chrome DevTools",
+        "src": "../../assets/img/simulate-pseudo-classes.png"
+      },
+      "link": "/tips/en/simulate-pseudo-classes"
+    },
+    {
       "title": "Quickly spot out-of-viewport elements",
       "image": {
         "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
@@ -1465,14 +1473,6 @@
         "src": "../../assets/img/understand-console-tab-drawer-1.png"
       },
       "link": "/tips/en/understand-console-tab-drawer"
-    },
-    {
-      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
-      "image": {
-        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
-        "src": "../../assets/img/console-table-group-assert-1.jpg"
-      },
-      "link": "/tips/en/console-table-group-assert"
     }
   ],
   "emulate-forced-colors.md": [],
@@ -1904,14 +1904,6 @@
   ],
   "find-expensive-selectors.md": [
     {
-      "title": "Visualize and debug CSS cascade layers",
-      "image": {
-        "alt": "Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.",
-        "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
-      },
-      "link": "/tips/en/debug-css-cascade-layers"
-    },
-    {
       "title": "Find the CSS rule that causes a specific style to apply",
       "image": {
         "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
@@ -1934,6 +1926,14 @@
         "src": "../../assets/img/inspect-css-animation.gif"
       },
       "link": "/tips/en/inspect-css-animations"
+    },
+    {
+      "title": "Jump from a CSS variable usage to where it is defined",
+      "image": {
+        "alt": "Animation of clicking on a custom property link in the Styles panel in Edge.",
+        "src": "../../assets/img/jump-to-css-variable.gif"
+      },
+      "link": "/tips/en/jump-to-css-variable"
     }
   ],
   "find-html-parsing-errors.md": [],
@@ -2170,12 +2170,12 @@
       "link": "/tips/en/monitor-element-events"
     },
     {
-      "title": "Apply CSS styles to console messages",
+      "title": "Simulate pseudo CSS classes",
       "image": {
-        "alt": "A styled console message in Edge.",
-        "src": "../../assets/img/style-console-messages.png"
+        "alt": "The :hov button and the pseudo-class panel in Chrome DevTools",
+        "src": "../../assets/img/simulate-pseudo-classes.png"
       },
-      "link": "/tips/en/style-console-messages"
+      "link": "/tips/en/simulate-pseudo-classes"
     }
   ],
   "get-contextual-help.md": [
@@ -2651,20 +2651,20 @@
       "link": "/tips/en/find-inactive-styles"
     },
     {
-      "title": "Visualize and debug CSS cascade layers",
-      "image": {
-        "alt": "Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.",
-        "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
-      },
-      "link": "/tips/en/debug-css-cascade-layers"
-    },
-    {
       "title": "Find the most expensive CSS selectors",
       "image": {
         "alt": "The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.",
         "src": "../../assets/img/find-expensive-selectors.png"
       },
       "link": "/tips/en/find-expensive-selectors"
+    },
+    {
+      "title": "Highlight the effect of individual CSS properties on hover",
+      "image": {
+        "alt": "Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.",
+        "src": "../../assets/img/highlight-css-properties-on-hover.gif"
+      },
+      "link": "/tips/en/highlight-css-properties-on-hover"
     }
   ],
   "jump-to-referenced-elements.md": [],
@@ -3818,6 +3818,14 @@
       "link": "/tips/en/copy-element-styles"
     },
     {
+      "title": "Emulate color schemes",
+      "image": {
+        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
+      },
+      "link": "/tips/en/emulate-color-schemes"
+    },
+    {
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
@@ -3826,20 +3834,12 @@
       "link": "/tips/en/zoom-devtools-content"
     },
     {
-      "title": "Highlight all the elements that a CSS rule matches",
+      "title": "Remove or disable event listeners",
       "image": {
-        "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "../../assets/img/highlight-matching-elements.gif"
+        "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
+        "src": "../../assets/img/disable-event-listeners-firefox.png"
       },
-      "link": "/tips/en/highlight-matching-elements"
-    },
-    {
-      "title": "Use DevTools in another language",
-      "image": {
-        "alt": "The settings panel in Edge showing a checkbox to match DevTools with the browser language.",
-        "src": "../../assets/img/use-another-language.png"
-      },
-      "link": "/tips/en/use-another-language"
+      "link": "/tips/en/disable-event-listeners"
     }
   ],
   "spot-out-of-viewport-elements.md": [
@@ -3911,14 +3911,6 @@
     }
   ],
   "style-console-messages.md": [
-    {
-      "title": "Visualize and debug CSS cascade layers",
-      "image": {
-        "alt": "Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.",
-        "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
-      },
-      "link": "/tips/en/debug-css-cascade-layers"
-    },
     {
       "title": "Format console messages",
       "image": {
@@ -4342,6 +4334,14 @@
         "src": "../../assets/img/find-all-elements-with-style.png"
       },
       "link": "/tips/en/find-all-elements-with-style"
+    },
+    {
+      "title": "Simulate pseudo CSS classes",
+      "image": {
+        "alt": "The :hov button and the pseudo-class panel in Chrome DevTools",
+        "src": "../../assets/img/simulate-pseudo-classes.png"
+      },
+      "link": "/tips/en/simulate-pseudo-classes"
     }
   ],
   "view-logs-for-other-browsers-on-ios.md": [
@@ -4499,12 +4499,12 @@
       "link": "/tips/en/get-contextual-help"
     },
     {
-      "title": "Use DevTools in another language",
+      "title": "Simulate pseudo CSS classes",
       "image": {
-        "alt": "The settings panel in Edge showing a checkbox to match DevTools with the browser language.",
-        "src": "../../assets/img/use-another-language.png"
+        "alt": "The :hov button and the pseudo-class panel in Chrome DevTools",
+        "src": "../../assets/img/simulate-pseudo-classes.png"
       },
-      "link": "/tips/en/use-another-language"
+      "link": "/tips/en/simulate-pseudo-classes"
     }
   ]
 }
