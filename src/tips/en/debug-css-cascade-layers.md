@@ -5,37 +5,35 @@ title: Visualize and debug CSS cascade layers
 tags: ["css", "browser:chrome", "browser:edge", "browser:firefox", "browser:safari", "browser:polypane"]
 ---
 
-CSS cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which they apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using `!important` or artificially making selectors have higher specificity.
+[Cascade layers](https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_layers) is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which these layers apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using `!important` or artificially making selectors have higher specificity. To learn more about cascade layers, check out [Miriam Suzanne's complete guide on CSS Tricks](https://css-tricks.com/css-cascade-layers/).
 
-If you want to learn more about cascade layers, check out [Miriam Suzanne's complete guide on CSS Tricks](https://css-tricks.com/css-cascade-layers/), but here let's see how we can visualize and debug layers in DevTools.
-
-Safari, Firefox, Chrome, Polypane and Edge all have support for layers in their **Styles**/**Rules** panels.
+In this tip, let's see how to visualize and debug layers in DevTools. All browser DevTools have support for layers in their **Styles**/**Rules** panels, and some browsers have more advanced features.
 
 ### All browsers
 
 1. Open a page that uses cascade layers like [this one](https://codepen.io/web-dot-dev/full/LYzqPEp).
 1. Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.
-1. In the sidebar where CSS rules are displayed, rules are sorted by cascade layers, with the highest priority layers at the top, and lowest priority at the bottom.
-1. Rules that are part of a cascade layer have a `@layer <layername>` label above them.
+1. In the sidebar where CSS rules are displayed (called **Styles** or **Rules** depending on the browser), the rules are sorted by cascade layers, with the highest priority layer at the top, and lowest priority at the bottom.
+1. Rules that are part of a cascade layer have a `@layer <layername>` label next to them.
 
-![Firefox showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules.](../../assets/img/debug-css-cascade-layers-firefox.png)
+![Firefox with a demo page that uses layers, DevTools is opened and shows the Rules panel with two @layer rules](../../assets/img/debug-css-cascade-layers-firefox.png)
 
-### Only Edge, Chrome and Polypane
+### Chrome and Edge only
 
-On top of the above, Edge and Chrome have a layers view:
+On top of the above, Chrome and Edge have a **Layers** view that shows the cascade layers in a list:
 
-- Edge and Chrome
+1. Open a page that uses cascade layers like [this one](https://codepen.io/web-dot-dev/full/LYzqPEp).
+1. Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.
+1. Click the **Toggle CSS layers view** button in the **Styles** panel toolbar (next to the search field) to reveal the list of layers.
 
-  1. Open a page that uses cascade layers like [this one](https://codepen.io/web-dot-dev/full/LYzqPEp).
-  1. Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.
-  1. Click **Toggle CSS layers view** in the **Styles** panel toolbar (next to the search field) to reveal the list of layers.
+![Edge with a demo page that uses layers, DevTools is opened and shows the Styles panel with two @layer rules and the layers view](../../assets/img/debug-css-cascade-layers-edge.png)
 
-  ![Edge showing a demo page that uses layers and DevTools opened, showing the Rules panel with 2 @layer rules and the layers view.](../../assets/img/debug-css-cascade-layers-edge.png)
+### Polypane only
 
-- Polypane
+Polypane also has a **CSS Layers** view that shows the cascade layers in a list:
 
-  1. Open a page that uses casade layers.
-  1. Inspect an element which has styles defined in one of the cascade layers.
-  1. Click "CSS Layers" in the Elements panel to reveal the list of layers. With an element selected, you can see which layers apply to that element by seeing which ones are not dimmed.
+1. Open a page that uses cascade layers like [this one](https://codepen.io/web-dot-dev/full/LYzqPEp).
+1. Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.
+1. Click **CSS Layers** in the **Elements** panel to reveal the list of layers. The layers that are not dimmed in the list apply to the currently selected element.
 
-  ![Polypane showing a demo page that uses layers and the Elements panel open, showing three layers. One is dimmed.](../../assets/img/debug-css-cascade-layers-polypane.png)
+![Polypane with a demo page that uses layers, the Elements panel is open and shows three layers in the CSS Layers view, one of which is dimmed.](../../assets/img/debug-css-cascade-layers-polypane.png)
