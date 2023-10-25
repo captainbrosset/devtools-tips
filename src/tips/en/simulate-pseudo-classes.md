@@ -1,12 +1,12 @@
 ---
 date: 2021-11-07
-authors: Patrick Brosset, Christian Heilmann, Alex Lakatos
+authors: Patrick Brosset, Christian Heilmann, Alex Lakatos, Kilian Valkhof
 title: Simulate pseudo CSS classes
-tags: ["html", "css", "debug", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
+tags: ["html", "css", "debug", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 If you use `:hover`, `:active`, and other such pseudo-classes in CSS, you can actually simulate these states in DevTools without having to hover over or click on buttons and links.
 
-Open the Styles panel (in Chrome, Edge or Safari) or the Rules panel (in Firefox), and click the `:hov` button. This will expand a section that allows you to lock one or multiple of these pseudo-classes on the selected element.
+Open the Styles panel (in Chrome, Edge or Safari), the Rules panel (in Firefox) or the Elements panel (in Polypane), and click the `:hov` button (the rhombus icon in Polypane). This will expand a section that allows you to lock one or multiple of these pseudo-classes on the selected element.
 
 ![The :hov panel to simulate various pseudo-classes.](../../assets/img/simulate-pseudo-classes.png)
 
