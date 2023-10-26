@@ -121,12 +121,12 @@
       "link": "/tips/en/expand-nodes-recursively"
     },
     {
-      "title": "Get the selected element in the console",
+      "title": "Force execution, skipping breakpoints, when paused",
       "image": {
-        "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
-        "src": "../../assets/img/get-current-element-in-console.jpg"
+        "alt": "The Sources tool in Edge, showing the Force script execution button",
+        "src": "../../assets/img/force-execution-at-breakpoint-edge.png"
       },
-      "link": "/tips/en/get-current-element-in-console"
+      "link": "/tips/en/force-execution-at-breakpoint"
     }
   ],
   "capture-node-creation-stacks.md": [
@@ -2099,6 +2099,16 @@
         "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
+    }
+  ],
+  "force-execution-at-breakpoint.md": [
+    {
+      "title": "Pause script execution when the DOM changes",
+      "image": {
+        "alt": "The Elements panel in Edge showing the \"Break on\" contextual menu on the selected node.",
+        "src": "../../assets/img/break-on-dom-changes.png"
+      },
+      "link": "/tips/en/break-on-dom-changes"
     }
   ],
   "force-pwa-periodic-sync.md": [
