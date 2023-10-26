@@ -5,11 +5,41 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-10-05T00:00:00.000Z</updated>
+  <updated>2023-10-26T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Force execution, skipping breakpoints, when paused</title>
+    <link href="https://devtoolstips.org/tips/en/force-execution-at-breakpoint/"/>
+    <updated>2023-10-26T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/force-execution-at-breakpoint/</id>
+    <content type="html">&lt;p&gt;When using breakpoints to debug your JavaScript code, sometimes you end up setting many breakpoints in different functions. You might want to keep these breakpoints but not always pause at them.&lt;/p&gt;
+&lt;p&gt;There are two ways to do this in DevTools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Forcing execution, skipping over other breakpoints.&lt;/li&gt;
+&lt;li&gt;Or temporarily deactivating breakpoints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Force execution&lt;/h3&gt;
+&lt;p&gt;Forcing execution is only supported in Chrome and Edge:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Sources&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Set all of the breakpoints that you need.&lt;/li&gt;
+&lt;li&gt;Once paused at your first breakpoint, click and hold the &lt;strong&gt;Resume script execution&lt;/strong&gt; button and then select the &lt;strong&gt;Force script execution&lt;/strong&gt; button. The script execution resumes, and doesn&#39;t pause at any other breakpoint.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/force-execution-at-breakpoint-edge.png&quot; alt=&quot;The Sources tool in Edge, showing the Force script execution button&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Temporarily deactivate breakpoints&lt;/h3&gt;
+&lt;p&gt;In Chrome, Edge, and Firefox, you can temporarily deactivate breakpoints:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Sources&lt;/strong&gt; tool in Chrome or Edge, or the &lt;strong&gt;Debugger&lt;/strong&gt; tool in Firefox.&lt;/li&gt;
+&lt;li&gt;Set all of the breakpoints that you need.&lt;/li&gt;
+&lt;li&gt;Once paused at your first breakpoint, click the &lt;strong&gt;Deactivate breakpoints&lt;/strong&gt; button, and then click &lt;strong&gt;Resume&lt;/strong&gt;. The script execution resumes, and doesn&#39;t pause at any other breakpoint.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/force-execution-at-breakpoint-firefox.png&quot; alt=&quot;The Debugger tool in Firefox, showing the Deactive breakpoints button&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>See the viewport size</title>

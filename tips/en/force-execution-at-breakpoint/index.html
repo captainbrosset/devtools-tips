@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pause script execution when the DOM changes</title>
+    <title>Force execution, skipping breakpoints, when paused</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/break-on-dom-changes/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/force-execution-at-breakpoint/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/break-on-dom-changes.png">
-    <meta property="og:description" content="Pause script execution when the DOM changes">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/force-execution-at-breakpoint-edge.png">
+    <meta property="og:description" content="Force execution, skipping breakpoints, when paused">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Pause script execution when the DOM changes</a></h1>
+      <h1><a href="/">Force execution, skipping breakpoints, when paused</a></h1>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -37,62 +37,53 @@
     </header>
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
-    <main id="maincontent" style="view-transition-name:post-break-on-dom-changes">
+    <main id="maincontent" style="view-transition-name:post-force-execution-at-breakpoint">
       <div class="announcement">
         <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
       </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/javascript/">javascript</a></li><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/debug/">debug</a></li><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li></ul>
 </div>
-<h2 class="tip-title">Pause script execution when the DOM changes</h2>
+<h2 class="tip-title">Force execution, skipping breakpoints, when paused</h2>
 <div class="tip-content" data-pagefind-body>
-    <p>If you want to know what JavaScript code removes, adds, or modifies a DOM element in the page, you can use DOM breakpoints in DevTools. You can choose to break on:</p>
+    <p>When using breakpoints to debug your JavaScript code, sometimes you end up setting many breakpoints in different functions. You might want to keep these breakpoints but not always pause at them.</p>
+<p>There are two ways to do this in DevTools:</p>
 <ul>
-<li>Subtree modification: this pauses execution when any element in the subtree of the selected element is modified (added, removed, or changed attribute).</li>
-<li>Attribute modification: this pauses execution when an attribute of the selected element is modified.</li>
-<li>Node removal: this pauses execution when the selected node is removed from the DOM tree.</li>
+<li>Forcing execution, skipping over other breakpoints.</li>
+<li>Or temporarily deactivating breakpoints.</li>
 </ul>
-<p>This is useful if you don't know the codebase you are debugging for example.</p>
-<p>To add a DOM breakpoint:</p>
-<ul>
-<li>Navigate to the <strong>Inspector/Elements</strong> panel.</li>
-<li>Find the node which you want to add the breakpoint on.</li>
-<li>Open the contextual menu (right-click).</li>
-<li>Open the <strong>Break on</strong> sub menu and choose the type of breakpoint you want to set.</li>
-</ul>
-<p><img src="/assets/img/break-on-dom-changes.png" alt="The Elements panel in Edge showing the &quot;Break on&quot; contextual menu on the selected node."></p>
-<p>Once the requested DOM modification occurs, the JavaScript execution will pause and DevTools will navigate to the Sources/Debugger panel, showing the right line of code where execution is paused.</p>
+<h3>Force execution</h3>
+<p>Forcing execution is only supported in Chrome and Edge:</p>
+<ol>
+<li>Open the <strong>Sources</strong> tool.</li>
+<li>Set all of the breakpoints that you need.</li>
+<li>Once paused at your first breakpoint, click and hold the <strong>Resume script execution</strong> button and then select the <strong>Force script execution</strong> button. The script execution resumes, and doesn't pause at any other breakpoint.</li>
+</ol>
+<p><img src="/assets/img/force-execution-at-breakpoint-edge.png" alt="The Sources tool in Edge, showing the Force script execution button"></p>
+<h3>Temporarily deactivate breakpoints</h3>
+<p>In Chrome, Edge, and Firefox, you can temporarily deactivate breakpoints:</p>
+<ol>
+<li>Open the <strong>Sources</strong> tool in Chrome or Edge, or the <strong>Debugger</strong> tool in Firefox.</li>
+<li>Set all of the breakpoints that you need.</li>
+<li>Once paused at your first breakpoint, click the <strong>Deactivate breakpoints</strong> button, and then click <strong>Resume</strong>. The script execution resumes, and doesn't pause at any other breakpoint.</li>
+</ol>
+<p><img src="/assets/img/force-execution-at-breakpoint-firefox.png" alt="The Debugger tool in Firefox, showing the Deactive breakpoints button"></p>
 
 </div><div class="see-also">
     <h3>See also</h3>
     <ul><li>
-            <a href="/tips/en/capture-node-creation-stacks">Capture node creation stack traces</a>
-            <a href="/tips/en/capture-node-creation-stacks" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/capture-node-creation-stacks.png" alt="Edge DevTools&#39; Elements panel with the Stack Trace sidebar visible, showing a stack of Vue JS function calls that created an element on the TODOMVC sample app.">
-            </a>
-        </li><li>
-            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
-            <a href="/tips/en/copy-element-styles" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
-            </a>
-        </li><li>
-            <a href="/tips/en/expand-nodes-recursively">Expand DOM nodes recursively</a>
-            <a href="/tips/en/expand-nodes-recursively" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/expand-nodes-recursively.gif" alt="Animation showing right-clicking on a node in Chrome&#39;s Elements panel and choosing &quot;expand recursively&quot;.">
-            </a>
-        </li><li>
-            <a href="/tips/en/force-execution-at-breakpoint">Force execution, skipping breakpoints, when paused</a>
-            <a href="/tips/en/force-execution-at-breakpoint" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/force-execution-at-breakpoint-edge.png" alt="The Sources tool in Edge, showing the Force script execution button">
+            <a href="/tips/en/break-on-dom-changes">Pause script execution when the DOM changes</a>
+            <a href="/tips/en/break-on-dom-changes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/break-on-dom-changes.png" alt="The Elements panel in Edge showing the &quot;Break on&quot; contextual menu on the selected node.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2021-09-22T00:00:00.000Z">9/22/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/break-on-dom-changes.md">Edit page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2023-10-26T00:00:00.000Z">10/26/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/force-execution-at-breakpoint.md">Edit page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
