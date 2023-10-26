@@ -193,14 +193,6 @@
       "link": "/tips/en/zoom-devtools-content"
     },
     {
-      "title": "Take high-resolution screenshots of web pages",
-      "image": {
-        "alt": "Firefox, with DevTools opened, and the Console tool visible, showing that :screenshot command",
-        "src": "../../assets/img/take-high-res-screenshots-firefox.png"
-      },
-      "link": "/tips/en/take-high-res-screenshots"
-    },
-    {
       "title": "Throttle your CPU",
       "image": {
         "alt": "The Performance tool in Chrome showing the CPU throttling drop-down.",
@@ -2617,20 +2609,20 @@
       "link": "/tips/en/extend-devtools"
     },
     {
-      "title": "Take high-resolution screenshots of web pages",
-      "image": {
-        "alt": "Firefox, with DevTools opened, and the Console tool visible, showing that :screenshot command",
-        "src": "../../assets/img/take-high-res-screenshots-firefox.png"
-      },
-      "link": "/tips/en/take-high-res-screenshots"
-    },
-    {
       "title": "Debug CSS grid areas",
       "image": {
         "alt": "Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the \"display area names\" option checked.",
         "src": "../../assets/img/debug-grid-areas.png"
       },
       "link": "/tips/en/debug-grid-areas"
+    },
+    {
+      "title": "Edit CSS absolute and relative positions by dragging points in the page",
+      "image": {
+        "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
+        "src": "../../assets/img/edit-position.gif"
+      },
+      "link": "/tips/en/edit-position"
     }
   ],
   "jump-to-css-variable.md": [
@@ -3978,14 +3970,6 @@
         "src": "../../assets/img/take-in-device-screenshots.png"
       },
       "link": "/tips/en/take-in-device-screenshots"
-    },
-    {
-      "title": "Disable abusive debugger statements that prevent inspecting websites",
-      "image": {
-        "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
-      },
-      "link": "/tips/en/disable-abusive-debugger-statement"
     }
   ],
   "take-in-device-screenshots.md": [
