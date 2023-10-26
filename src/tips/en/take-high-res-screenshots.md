@@ -1,6 +1,6 @@
 ---
 date: 2023-05-19
-authors: Patrick Brosset
+authors: Patrick Brosset, Pankaj Parashar
 title: Take high-resolution screenshots of web pages
 tags: ["export", "browser:firefox", "browser:chrome", "browser:edge"]
 see-also: ["screenshot-part-of-page-command-menu.md", "take-in-device-screenshots.md", "node-screenshot.md"]
@@ -26,7 +26,9 @@ Here's a nice trick to do a similar thing in Chromium-based browsers (Chrome, Ed
 
 1. Open DevTools and go to the **Device Mode** tool.
 1. Click the **Dimensions** dropdown menu and select **Responsive**.
-1. Enter the desired width and height for your screenshot. For example `1500` and `5000`.
+1. Click **More options** (`⋮`) and select **Add device pixel ratio**. This will add a new DPR dropdown to the device toolbar where you can select the DPR value.
+1. In the DPR dropdown, select the highest value to take the highest resolution screenshot.
 1. Click **More options** (the three dots icon) and then click **Capture full size screenshot**.
 
-![Chrome, with DevTools and device mode opened, showing that large width/height dimensions have been set. MS Paint next to it, with the resulting screenshot](../../assets/img/take-high-res-screenshots-chrome.png)
+![Edge DevTools showing the options menu with the Add device pixel ratio option highlighted](../../assets/img/take-high-res-screenshots-edge-1.png)
+![Edge DevTools in Device Emulation mode, showing the DPR option to select the DPR value](../../assets/img/take-high-res-screenshots-edge-2.png)
