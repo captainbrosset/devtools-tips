@@ -1,5 +1,5 @@
 ---
-date: 2023-10-16
+date: 2023-10-27
 authors: Patrick Brosset
 title: Understand DevTools
 tags: ["guide", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
@@ -212,4 +212,19 @@ TODO
 
 ## The workflow
 
-TODO: describe the most common dev loop (code, inspect/debug, make change, refresh). Then describe in more details some chosen few workflows like runtime analysis, debugging, inspection.
+### The basic dev loop
+
+The most basic workflow when doing web development is also the one that most people use and which has been around the longest. This workflow consists of the following steps:
+
+1. Write some code in your editor.
+1. Save the file.
+1. Reload the page in the browser to see the result of the code changes you made.
+1. Open DevTools to investigate a bug.
+1. Make temporary changes in DevTools to test a fix.
+1. Go back to step 1 to make the fix permanent in your code.
+
+![The basic web dev loop](./basic-dev-loop.png)
+
+In its simplest form, web development doesn't require any compilation or packaging step, which other application development platforms often need. This means that this simple workflow can be very effective and fast. You can make changes to your code and immediately see the result in the browser. The changes you make in DevTools are also immediate.
+
+That said, web development has evolved over the years, and it's now common for web developers to use build tools to compile, minify, or bundle their code. While this can be useful when working on larger projects, with many dependencies, it tends to make it slower to go from making a code change to testing the change in a browser. Therefore, some projects now use techniques known as hot reloading and file change watching to automatically re-build and/or deploy changes to the browser.
