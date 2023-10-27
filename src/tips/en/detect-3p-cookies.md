@@ -2,7 +2,7 @@
 date: 2023-08-31
 authors: Patrick Brosset
 title: Check if a website uses third-party cookies
-tags: ["testing", "network", "browser:chrome", "browser:edge", "browser:firefox", "browser-safari"]
+tags: ["testing", "network", "browser:chrome", "browser:edge", "browser:firefox", "browser:safari"]
 ---
 
 Cookies are small files that websites save on your computer when you visit them. Websites often use cookies to remember things about your last visit. For example, a weather website can use cookies to store your preferred location, so you don’t have to enter it every time. 
