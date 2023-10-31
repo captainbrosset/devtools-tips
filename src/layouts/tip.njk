@@ -2,7 +2,11 @@
 layout: home.njk
 templateEngineOverride: njk
 ---
+<div class="page-toolbar">
+  {% include 'filter-tip-list.njk' %}
+</div>
 <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">{{ title }}</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags">
@@ -17,7 +21,6 @@ templateEngineOverride: njk
     {%- endfor -%}
     </ul>
 </div>
-<h2 class="tip-title">{{ title }}</h2>
 <div class="tip-content" data-pagefind-body>
     {{ content | safe }}
 </div>

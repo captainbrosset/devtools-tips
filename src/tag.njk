@@ -18,9 +18,9 @@
 }
 ---
 <div class="page-toolbar">
-  <h2>{{collections[tag].length }} {{ tag }} DevTools Tips</h2>
   {% include 'filter-tip-list.njk' %}
 </div>
+<h1>{{collections[tag].length }} {{ tag }} tips</h1>
 <ul class="tips">
 {%- for post in collections[tag] | reverse -%}
   {% include 'tip-in-list.njk' %}

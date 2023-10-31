@@ -98,13 +98,16 @@ h3 {
 /* Main styles */
 
 body {
-  font-size: 13pt;
-  font-family: Arial;
-  margin: 0;
-  max-width: 1000px;
-  margin: 0 auto;
-  color: var(--text-color);
-  background: var(--background-color);
+	font-size: 1rem;
+	font-family: system-ui, Arial, sans-serif;
+	color: var(--text-color);
+	background-image: linear-gradient(to right, var(--alternate-background-color) 0 50%, var(--background-color) 50% 0);
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-template-rows: min-content 1fr;
+	max-width: 1300px;
+	min-height: 100vh;
+	margin: 0 auto;
 }
 
 :focus-visible {
@@ -118,22 +121,15 @@ a {
 /* Header */
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--background-color);
+  align-self: start;
+  background: var(--alternate-background-color);
   padding: 1rem;
-  gap: 1rem;
   position: sticky;
   top: 0;
-  z-index: 3;
 }
 
-header h1 {
+header .title {
   text-align: center;
-}
-
-header h1 a {
   display: block;
   width: 5rem;
   height: 3rem;
@@ -145,38 +141,9 @@ header h1 a {
 }
 
 @media (prefers-color-scheme: dark) {
-  header h1 a {
+  header .title {
     filter: invert(100);
   }
-}
-
-header nav {
-  margin: 0 0 0 auto;
-}
-
-.header-shadow {
-  box-shadow: 0 0 5px 1px #0003;
-  height: 0;
-  position: sticky;
-  z-index: 1;
-  top: 5rem;
-}
-
-.header-shadow-block {
-  z-index: 2;
-  height: 1rem;
-  background: var(--alternate-background-color);
-  position: sticky;
-}
-
-.header-menu {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.header-menu li {
-  white-space: nowrap;
 }
 
 .header-menu a {
@@ -190,9 +157,6 @@ header nav {
 .header-menu > li {
   padding: 0.5rem;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
-  position: relative;
 }
 
 @media only screen and (max-width: 400px) {
@@ -206,38 +170,6 @@ header nav {
   .header-menu {
     flex-direction: column;
   }
-}
-
-.header-menu > li:hover,
-.header-menu > li:focus-within {
-  background: var(--accent-color);
-}
-
-.submenu-reveal {
-  display: none;
-  position: absolute;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  top: calc(100% - 0.25rem);
-  right: 0;
-  min-width: calc(100% + 2rem);
-  text-align: center;
-  background: var(--accent-color);
-  padding: 1rem;
-  z-index: 1;
-  border-radius: 5px;
-  border-start-end-radius: 0;
-}
-
-@media only screen and (max-width: 400px) {
-  .submenu-reveal {
-    grid-template-columns: 1fr;
-  }
-}
-
-.header-menu > li:hover .submenu-reveal,
-.header-menu > li:focus-within .submenu-reveal {
-  display: grid;
 }
 
 /* Search bar */
@@ -261,7 +193,7 @@ header nav {
 .search input {
   flex: 1;
   flex-basis: 3rem;
-  padding: 1rem;
+  padding: .5rem;
   border: 2px solid var(--accent-color-darker);
   border-radius: 4px;
   background: var(--accent-color-lighter);
@@ -340,11 +272,9 @@ header nav {
 /* Content area */
 
 main {
-  padding: 2rem;
+  padding: 0 1rem 1rem 1rem;
   line-height: 1.6;
-  background: var(--alternate-background-color);
-  position: relative;
-  top: -1rem;
+  background: var(--background-color);
 }
 
 main h2.tip-title {
@@ -357,6 +287,12 @@ main h2.tip-title {
   display: flex;
   align-items: center;
   gap: 1rem;
+  position: sticky;
+  top: 0;
+  padding-top: 1rem;
+  background: var(--background-color);
+  box-shadow: 0 1rem 1rem 0 var(--background-color);
+  z-index: 1;
 }
 
 @media only screen and (max-width: 600px) {
@@ -374,7 +310,6 @@ main h2.tip-title {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .tip {
@@ -386,6 +321,7 @@ main h2.tip-title {
   padding: 1rem;
   grid-template-columns: 1fr 40%;
   grid-template-rows: min-content min-content 1fr;
+  border-bottom: 2px solid var(--alternate-background-color);
 }
 
 .tip .tip-title {
@@ -614,10 +550,10 @@ pre {
 /* Footer */
 
 footer {
+  grid-column: 2;
   text-align: center;
-  /* main is relatively positioned at -1rem to account for the header shadow. So reduce the top-padding to 1rem instead of 2rem here */
-  padding: 1rem 1rem 2rem 1rem;
   background: var(--background-color);
+  border-top: 2px solid var(--alternate-background-color);
 }
 
 footer a {
@@ -760,19 +696,6 @@ footer a {
 }
 .lightbox button:hover {
   background-color: var(--accent-color);
-}
-
-.announcement {
-  background: var(--background-color);
-  padding: .5rem;
-  max-width: max-content;
-  margin: 0 auto 2rem auto;
-}
-
-.announcement p {
-  margin: 0;
-  text-align: center;
-  font-size: .9rem;
 }
 
 .pagination {

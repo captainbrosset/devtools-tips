@@ -51,10 +51,10 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">{{ title }}</a></h1>
+      <a href="/" class="title">DevTools Tips</a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/">All tips</a></li>
+          <li><a href="/all/">All tips</a></li>
           <li tabindex="0">Categories
             <ul class="submenu-reveal">
               {%- for tag in getTags(collections) -%}
@@ -72,12 +72,7 @@
         </ul>
       </nav>
     </header>
-    <div class="header-shadow"></div>
-    <div class="header-shadow-block"></div>
     <main id="maincontent" {% if page.url.includes('/tips/') %}style="view-transition-name:post-{{ page.fileSlug }}"{% endif %}>
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       {{ content | safe }}
     </main>
     <footer role="contentinfo">

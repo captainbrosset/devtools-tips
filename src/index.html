@@ -3,33 +3,24 @@
   title: "DevTools Tips",
   layout: "home.njk",
   templateEngineOverride: "njk",
-  eleventyExcludeFromCollections: true,
-  pagination: {
-    data: "collections.all",
-    size: 25,
-    before: function(data) {
-      return data.reverse();
-    }
-  }
+  eleventyExcludeFromCollections: true
 }
 ---
 <div class="page-toolbar">
-  <h2>{{collections.all.length }} DevTools Tips</h2>
   {% include 'filter-tip-list.njk' %}
 </div>
+<h1>Welcome to DevTools Tips</h1>
+<p>DevTools Tips offers quick tips and longer guides to help you learn how to use the various built-in browser DevTools.</p>
+<p>If you are a web developer, DevTools Tips helps you get comfortable with your dev browser of choice. We have {{collections.all.length }} tips available and two full-length guides.</p>
+<h2>Latest tips</h2>
 <ul class="tips">
-{%- for post in pagination.items -%}
+{% set latest_posts = collections.all | reverse %}
+{%- for post in latest_posts.slice(0, 5) -%}
   {% include 'tip-in-list.njk' %}
 {%- endfor -%}
 </ul>
-<nav class="pagination" aria-label="Pagination navigation">
-  <ul>
-    {% for pageKey in pagination.pages %}
-      <li>
-        <a href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %}aria-current="page"{% endif %}>
-          {% if loop.index === 1 %}Home{% else %}Page {{ loop.index - 1 }}{% endif %}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
+<h2>Guides</h2>
+<ul class="guides">
+  <li>Understand DevTools</li>
+  <li>Improve runtime performance</li>
+</ul>
