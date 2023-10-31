@@ -1393,44 +1393,42 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
     <link href="https://devtoolstips.org/tips/en/simulate-devices/"/>
     <updated>2022-10-19T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/simulate-devices/</id>
-    <content type="html">&lt;p&gt;There is a great mode in all major browser developer tools that makes it really easy to test your webpage under different screen sizes and even simulate other devices.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices.gif&quot; alt=&quot;Animation showing how the tool makes it easy to resize the screen size by dragging the mouse.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;To enable it:&lt;/p&gt;
+    <content type="html">&lt;p&gt;All browser DevTools have a built-in mode that you can use to test a webpage under different screen sizes and device capabilities.&lt;/p&gt;
+&lt;p&gt;As a web developer, it is very important to realize that your website won&#39;t only be used on one type of device. People browse the web with many different device types, from small phones, to large desktop monitors, and everything in between.&lt;/p&gt;
+&lt;p&gt;Not only do the devices people use have different screen sizes, but they can also have different pixel densities, support for touch input, network speeds, and more.&lt;/p&gt;
+&lt;p&gt;Browser DevTools make it easy to simulate how a webpage might render under different screen sizes and device capabilities. However, note that &lt;strong&gt;this is only a simulation&lt;/strong&gt;, and you should always test your webpage on the real device too. For example, even if the device mode in Chrome DevTools lets you simulate an iPhone screen, it doesn&#39;t actually render the webpage with the same rendering engine as the iPhone would. So, always test on the real device too.&lt;/p&gt;
+&lt;h3&gt;Available features&lt;/h3&gt;
+&lt;p&gt;This simulation mode comes with the following features (more might be available depending on the browser you&#39;re using):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;In Chrome:&lt;/p&gt;
-&lt;p&gt;In DevTools, click &lt;strong&gt;Toggle Device Toolbar&lt;/strong&gt; or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;In Edge:&lt;/p&gt;
-&lt;p&gt;In DevTools, click &lt;strong&gt;Toggle device emulation&lt;/strong&gt; or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;In Firefox:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You can do it even without opening DevTools: go to &lt;strong&gt;Application menu&lt;/strong&gt; &amp;gt; &lt;strong&gt;More tools&lt;/strong&gt; &amp;gt; &lt;strong&gt;Responsive design mode&lt;/strong&gt;, or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/li&gt;
-&lt;li&gt;Or, if you&#39;re in DevTools, click &lt;strong&gt;Responsive Design Mode&lt;/strong&gt;, or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;In Safari:&lt;/p&gt;
-&lt;p&gt;In the &lt;strong&gt;Develop&lt;/strong&gt; menu bar item, click &lt;strong&gt;Enter Responsive Design Mode&lt;/strong&gt;, or press &lt;kbd&gt;Ctrl+Command+R&lt;/kbd&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;In Polypane:&lt;/p&gt;
-&lt;p&gt;This is the default mode in Polypane. Unique to Polypane is that it allows you to see &lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-devices/simulate-multiple-devices.md&quot;&gt;multiple different sizes side-by-side&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices-polypane.png&quot; alt=&quot;Polypane showing three different devices side-by-side.&quot; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When enabled, you can:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Resize the screen size by hand.&lt;/li&gt;
-&lt;li&gt;Choose one of the pre-defined devices to simulate. &lt;strong&gt;Note&lt;/strong&gt;: this option only simulates the screen size, user agent string, and touch events (when necessary), but doesn&#39;t render the page like the real device would. Always test your webpage with the real device too.&lt;/li&gt;
+&lt;li&gt;Resize the simulated viewport size by hand.&lt;/li&gt;
+&lt;li&gt;Choose one of the pre-defined devices to simulate.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-devices/add-new-devices.md&quot;&gt;Create your own simulated devices&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-devices/take-in-device-screenshots.md&quot;&gt;Capture screenshots&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-devices/throttle-network-speed.md&quot;&gt;Throttle the network speed to test your website on slower connections&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;And more.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3&gt;Start simulating&lt;/h3&gt;
+&lt;h4&gt;In Chrome&lt;/h4&gt;
+&lt;p&gt;To enable the device mode in Chrome DevTools, click the &lt;strong&gt;Toggle Device Toolbar&lt;/strong&gt; button or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices-chrome.png&quot; alt=&quot;Chrome, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode&quot; /&gt;&lt;/p&gt;
+&lt;h4&gt;In Edge&lt;/h4&gt;
+&lt;p&gt;To enable the device mode in Edge DevTools, click the &lt;strong&gt;Toggle device emulation&lt;/strong&gt; button or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices-edge.png&quot; alt=&quot;Edge, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode&quot; /&gt;&lt;/p&gt;
+&lt;h4&gt;In Firefox&lt;/h4&gt;
+&lt;p&gt;In Firefox, you don&#39;t need DevTools to be opened to simulate devices. Click &lt;strong&gt;Open application menu&lt;/strong&gt; &amp;gt; &lt;strong&gt;More tools&lt;/strong&gt; &amp;gt; &lt;strong&gt;Responsive design mode&lt;/strong&gt;, or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
+&lt;p&gt;Or, if you&#39;re in DevTools, click the &lt;strong&gt;Responsive Design Mode&lt;/strong&gt; button, or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices-firefox.png&quot; alt=&quot;A rendered webpage in Firefox, wrapped in the responsive design mode&quot; /&gt;&lt;/p&gt;
+&lt;h4&gt;In Safari&lt;/h4&gt;
+&lt;p&gt;In Safari, you don&#39;t need DevTools to be opened to simulate devices. Click &lt;strong&gt;Develop&lt;/strong&gt; in Safari&#39;s menu bar, and then click &lt;strong&gt;Enter Responsive Design Mode&lt;/strong&gt;, or press &lt;kbd&gt;Ctrl+Command+R&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;If you aren&#39;t seeing the &lt;strong&gt;Develop&lt;/strong&gt; menu item, enable it first (this only needs to be done once):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In Safari, in the menu bar, go to &lt;strong&gt;Safari&lt;/strong&gt; &amp;gt; &lt;strong&gt;Settings&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Select the &lt;strong&gt;Advanced&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Show features for web developers&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices-safari.png&quot; alt=&quot;A rendered webpage in Safari, wrapped in the responsive design mode&quot; /&gt;&lt;/p&gt;
+&lt;h4&gt;In Polypane&lt;/h4&gt;
+&lt;p&gt;Simulating different screen sizes is Polypane&#39;s default behavior. Polypane is the only browser DevTools that allows you to see multiple screen sizes side by side too. To learn more, see &lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-devices/simulate-multiple-devices.md&quot;&gt;Simulate multiple devices that are kept in sync&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices-polypane.png&quot; alt=&quot;Polypane showing three different devices side-by-side.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
