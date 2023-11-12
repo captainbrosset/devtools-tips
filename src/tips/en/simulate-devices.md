@@ -12,7 +12,7 @@ Not only do the devices people use have different screen sizes, but they can als
 
 Browser DevTools make it easy to simulate how a webpage might render under different screen sizes and device capabilities. However, note that **this is only a simulation**, and you should always test your webpage on the real device too. For example, even if the device mode in Chrome DevTools lets you simulate an iPhone screen, it doesn't actually render the webpage with the same rendering engine as the iPhone would. So, always test on the real device too.
 
-### Available features
+## Available features
 
 This simulation mode comes with the following features (more might be available depending on the browser you're using):
 
@@ -22,21 +22,21 @@ This simulation mode comes with the following features (more might be available 
 * [Capture screenshots](./take-in-device-screenshots.md).
 * [Throttle the network speed to test your website on slower connections](./throttle-network-speed.md).
 
-### Start simulating
+## Start simulating
 
-#### In Chrome
+### In Chrome
 
 To enable the device mode in Chrome DevTools, click the **Toggle Device Toolbar** button or press <kbd>Ctrl+Shift+M</kbd> (or <kbd>Cmd+Shift+M</kbd> on macOS).
 
 ![Chrome, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode](../../assets/img/simulate-devices-chrome.png)
 
-#### In Edge
+### In Edge
 
 To enable the device mode in Edge DevTools, click the **Toggle device emulation** button or press <kbd>Ctrl+Shift+M</kbd> (or <kbd>Cmd+Shift+M</kbd> on macOS).
 
 ![Edge, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode](../../assets/img/simulate-devices-edge.png)
 
-#### In Firefox
+### In Firefox
 
 In Firefox, you don't need DevTools to be opened to simulate devices. Click **Open application menu** > **More tools** > **Responsive design mode**, or press <kbd>Ctrl+Shift+M</kbd> (or <kbd>Cmd+Shift+M</kbd> on macOS).
 
@@ -44,7 +44,7 @@ Or, if you're in DevTools, click the **Responsive Design Mode** button, or press
 
 ![A rendered webpage in Firefox, wrapped in the responsive design mode](../../assets/img/simulate-devices-firefox.png)
 
-#### In Safari
+### In Safari
 
 In Safari, you don't need DevTools to be opened to simulate devices. Click **Develop** in Safari's menu bar, and then click **Enter Responsive Design Mode**, or press <kbd>Ctrl+Command+R</kbd>.
 
@@ -56,7 +56,7 @@ If you aren't seeing the **Develop** menu item, enable it first (this only needs
 
 ![A rendered webpage in Safari, wrapped in the responsive design mode](../../assets/img/simulate-devices-safari.png)
 
-#### In Polypane
+### In Polypane
 
 Simulating different screen sizes is Polypane's default behavior. Polypane is the only browser DevTools that allows you to see multiple screen sizes side by side too. To learn more, see [Simulate multiple devices that are kept in sync](./simulate-multiple-devices.md).
 

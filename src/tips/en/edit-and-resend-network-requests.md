@@ -7,7 +7,7 @@ see-also: ["replay-xhr.md"]
 ---
 When you're investigating a bug where the backend you connect to doesn't respond with the right things it's useful to tweak the requests and try again quickly. You can do this by changing your frontend code, and reloading the page, but DevTools can help you be faster by editing and resending those requests without making any frontend code changes. Here's how!
 
-### Using cURL
+## Using cURL
 
 You can copy any request from the **Network** panel as a cURL command, then paste it in your terminal, edit it to your liking, and execute it!
 
@@ -20,7 +20,7 @@ This works in Firefox, Edge, and Chrome.
 
 A similar approach is to use the **Copy as Fetch** option, and then use the copied code from the **Console** panel.
 
-### Using Firefox's Edit and Resend feature
+## Using Firefox's Edit and Resend feature
 
 Firefox has a built-in **Edit and Resend** feature that's very convenient because it doesn't require to switch to the terminal.
 
@@ -31,7 +31,7 @@ Firefox has a built-in **Edit and Resend** feature that's very convenient becaus
 
 ![The Firefox's edit and resend feature.](../../assets/img/edit-and-resend-network-requests-firefox.png)
 
-### Using Edge's Network Console experiment
+## Using Edge's Network Console experiment
 
 Edge has a built-in feature very similar to Firefox's **Edit and Resend**, but that goes further in that it allows you to create any number of requests to test over time, like [Postman](https://www.postman.com/).
 

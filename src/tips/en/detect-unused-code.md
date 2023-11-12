@@ -7,7 +7,7 @@ tags: ["perf", "css", "javascript", "browser:edge", "browser:chrome", "browser:s
 
 To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it's really needed.
 
-#### In Chromium-based browsers
+### In Chromium-based browsers
 
 Chrome and Edge have a useful **Coverage** tool that can help identify which parts of code are unused. To detect unused code on page load:
 
@@ -27,7 +27,7 @@ You can now decide whether some parts of your code can be loaded later, when nee
 
 ![Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used](../../assets/img/detect-unused-code.png)
 
-#### In Safari
+### In Safari
 
 In Safari, you can detect unused JS code, with the following steps,
 

@@ -8,7 +8,7 @@ When selecting elements from the page using the **inspect** tool, the hovered el
 
 You can hide, or pin this information tooltip in Chrome or Edge.
 
-### To hide the information tooltip
+## To hide the information tooltip
 
 1. Start the **inspect** tool by clicking **Select an element in the page to inspect it** (the little cursor icon in the top left corner of DevTools).
 1. Start hovering over elements in the webpage, elements get highlighted and the information tooltip appears.
@@ -16,7 +16,7 @@ You can hide, or pin this information tooltip in Chrome or Edge.
 
 ![Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.](../../assets/img/hide-or-pin-inspect-info-tooltip-1.png)
 
-### To pin the highlight and information tooltip on the current element
+## To pin the highlight and information tooltip on the current element
 
 1. Start the **inspect** tool by clicking **Select an element in the page to inspect it** (the little cursor icon in the top left corner of DevTools).
 1. Start hovering over elements in the webpage, elements get highlighted and the information tooltip appears.

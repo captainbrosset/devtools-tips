@@ -10,7 +10,7 @@ Taking screenshots of all or parts of web pages is super useful (scroll down to 
 
 It turns you can make DevTools take high-resolution screenshots of your web pages too!
 
-### From the Console in Firefox
+## From the Console in Firefox
 
 Firefox has a super handy `:screenshot` command you can use in the **Console** tool to take screenshots. It takes a few options, including `--dpr` to specify the device pixel ratio. The default value is `1`, but you can set it to `2`, `3`, or any other number to take screenshots at higher resolutions.
 
@@ -20,7 +20,7 @@ For example: `:screenshot --dpr 3 --fullpage` will take a screenshot of the full
 
 Find out more about the `:screenshot` command and its other options in the [Firefox DevTools documentation](https://firefox-source-docs.mozilla.org/devtools-user/web_console/helpers/index.html).
 
-### From Device Mode in Chromium-based browsers
+## From Device Mode in Chromium-based browsers
 
 Here's a nice trick to do a similar thing in Chromium-based browsers (Chrome, Edge, Brave, etc.):
 

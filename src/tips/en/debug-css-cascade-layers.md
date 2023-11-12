@@ -9,7 +9,7 @@ tags: ["css", "browser:chrome", "browser:edge", "browser:firefox", "browser:safa
 
 In this tip, let's see how to visualize and debug layers in DevTools. All browser DevTools have support for layers in their **Styles**/**Rules** panels, and some browsers have more advanced features.
 
-### All browsers
+## All browsers
 
 1. Open a page that uses cascade layers like [this one](https://codepen.io/web-dot-dev/full/LYzqPEp).
 1. Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.
@@ -18,7 +18,7 @@ In this tip, let's see how to visualize and debug layers in DevTools. All browse
 
 ![Firefox with a demo page that uses layers, DevTools is opened and shows the Rules panel with two @layer rules](../../assets/img/debug-css-cascade-layers-firefox.png)
 
-### Chrome and Edge only
+## Chrome and Edge only
 
 On top of the above, Chrome and Edge have a **Layers** view that shows the cascade layers in a list:
 
@@ -28,7 +28,7 @@ On top of the above, Chrome and Edge have a **Layers** view that shows the casca
 
 ![Edge with a demo page that uses layers, DevTools is opened and shows the Styles panel with two @layer rules and the layers view](../../assets/img/debug-css-cascade-layers-edge.png)
 
-### Polypane only
+## Polypane only
 
 Polypane also has a **CSS Layers** view that shows the cascade layers in a list:
 

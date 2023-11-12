@@ -7,7 +7,7 @@ tags: ["accessibility", "browser:edge", "browser:chrome", "browser:polypane"]
 
 With DevTools you can [detect low color contrast issues](./detect-low-color-contrast.md) which is great. But Chrome DevTools, Edge DevTools, and Polypane, you can go one step further and fix these issues directly!
 
-### In Chrome and Edge
+## In Chrome and Edge
 
 Here is a tip shared on [dev.to](https://dev.to/domizajac/how-to-use-chrome-devtools-to-find-a-color-fixing-insufficient-color-contrast-ratio-on-your-html-element-546k) by [Domi](https://twitter.com/domizajac):
 
@@ -20,7 +20,7 @@ Here is a tip shared on [dev.to](https://dev.to/domizajac/how-to-use-chrome-devt
 
 ![The chrome color picker, showing the contrast lines and new color suggestions](../../assets/img/fix-color-contrast-issues-chromium.png)
 
-### In Polypane
+## In Polypane
 
 In Polypane, these suggestions are made inline on the page itself when enabling the **Contrast checker debug tool**.
 

@@ -10,7 +10,7 @@ You can actually use a full editor in Edge, Chrome, and Safari to write more com
 
 Note: if you're looking for a way to do this in Firefox, there isn't currently one. However, you can [write code on multiple lines](./multi-line-console.md) which helps a lot already, and even search through previous Console expressions by pressing <kbd>F9</kbd> in the **Console** tool.
 
-### In Edge & Chrome
+## In Edge & Chrome
 
 In Chromium-based browsers, these are called [**snippets**](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/snippets) and you can access them in the **Sources** tool by clicking **Snippets** in the left hand side toolbar (you may have to use the `>>` to reach them).
 
@@ -35,7 +35,7 @@ Even better, you can use the [Command menu](./execute-commands.md) to run snippe
 
 ![Running a snippet from the Command menu.](../../assets/img/use-scripts-as-snippets-2.gif)
 
-### In Safari
+## In Safari
 
 In Safari, these scripts are called Console Snippets and can also be created from the **Sources** tool by clicking the `+` icon at the bottom of the tool, and choosing **Console Snippet...**.
 
