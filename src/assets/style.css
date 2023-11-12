@@ -133,7 +133,7 @@ header h1 {
   text-align: center;
 }
 
-header h1 a {
+.logo {
   display: block;
   width: 5rem;
   height: 3rem;
