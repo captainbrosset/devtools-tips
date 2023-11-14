@@ -11,7 +11,7 @@ There are two ways to do this in DevTools:
 * Forcing execution, skipping over other breakpoints.
 * Or temporarily deactivating breakpoints.
 
-### Force execution
+## Force execution
 
 Forcing execution is only supported in Chrome and Edge:
 
@@ -21,7 +21,7 @@ Forcing execution is only supported in Chrome and Edge:
 
 ![The Sources tool in Edge, showing the Force script execution button](../../assets/img/force-execution-at-breakpoint-edge.png)
 
-### Temporarily deactivate breakpoints
+## Temporarily deactivate breakpoints
 
 In Chrome, Edge, and Firefox, you can temporarily deactivate breakpoints:
 

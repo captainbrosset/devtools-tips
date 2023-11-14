@@ -15,7 +15,7 @@ When the browser renders a page, if the first font in the list is not available 
 
 DevTools can help you determine which fonts are used on a webpage, or on a specific element on a page.
 
-### In Firefox
+## In Firefox
 
 Firefox has the best tool to inspect fonts. To know which fonts are used on a webpage:
 
@@ -38,7 +38,7 @@ To know which fonts are used on a single element:
 
 Note that an element may require multiple fonts to render correctly, even if this element only contains a single text node. This can happen when the font used to render the element doesn't have all the glyphs required to render the text, in which case the browser falls back to another font to render the missing glyphs.
 
-### In Chrome or Edge
+## In Chrome or Edge
 
 In Chrome or Edge (or other Chromium-based browsers), you can see which font(s) was/were used to render a given text-containing element:
 
@@ -52,7 +52,7 @@ In Chrome or Edge (or other Chromium-based browsers), you can see which font(s) 
 
 ![Chrome, with Devtools on the side, showing the Computed panel that contains the list of fonts](../../assets/img/list-used-fonts-chrome.png)
 
-### In Polypane
+## In Polypane
 
 In Polypane, you can see which font was used to render a given text-containing element:
 

@@ -8,7 +8,7 @@ see-also: ["customize-console-table-columns.md", "list-console-functions.md"]
 
 You probably know about `console.log()` already, it's a great way to print variables and objects to the console while the code is running, to debug it. But there are other console methods that can help you debug your code even more easily (you can [list them all](./list-console-functions.md) by the way).
 
-### console.table
+## console.table
 
 `console.table()` is great to print arrays and objects in a tabular format.
 
@@ -39,7 +39,7 @@ You can log it to the console a much more readable way with `console.table()` by
 
 You can even [customize the table columns that are shown](./customize-console-table-columns.md).
 
-### console.group
+## console.group
 
 When your code generates a lot of logs, it can quickly become difficult to read those logs in the console.
 
@@ -72,7 +72,7 @@ for (const product of products) {
 
 ![The Chrome DevTools Console tool showing the same logs, but grouped by product](../../assets/img/console-table-group-assert-3.png)
 
-### console.assert
+## console.assert
 
 Finally, the `console.assert` method allows you to log an error to the console only if some predefined condition is not met.
 

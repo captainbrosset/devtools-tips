@@ -6,7 +6,7 @@ tags: ["personalization", "productivity", "browser:edge", "browser:chrome", "bro
 ---
 The user interface of DevTools is built with HTML, CSS, and JavaScript. This means you can inspect and debug DevTools with DevTools.
 
-### Chromium
+## Chromium
 
 To debug DevTools in Chromium-based browsers, such as Chrome or Edge:
 
@@ -20,7 +20,7 @@ To debug DevTools in Chromium-based browsers, such as Chrome or Edge:
 
     ![Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one](../../assets/img/inspect-devtools-with-devtools-chrome.png)
 
-### Firefox
+## Firefox
 
 To debug DevTools in Firefox:
 

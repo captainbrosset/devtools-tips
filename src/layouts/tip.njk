@@ -3,6 +3,7 @@ layout: home.njk
 templateEngineOverride: njk
 ---
 <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">{{ title }}</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags">
@@ -17,13 +18,12 @@ templateEngineOverride: njk
     {%- endfor -%}
     </ul>
 </div>
-<h2 class="tip-title">{{ title }}</h2>
 <div class="tip-content" data-pagefind-body>
     {{ content | safe }}
 </div>
 {%- if SEEALSO and SEEALSO[page.inputPath.split("/").pop()].length -%}
 <div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul>
       {%- for otherTip in SEEALSO[page.inputPath.split("/").pop()] -%}
         <li>
