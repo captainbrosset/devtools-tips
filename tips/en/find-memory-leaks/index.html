@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Find memory leaks by comparing heap snapshots</a></h1>
+      <a href="/" class="logo">Find memory leaks by comparing heap snapshots</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,17 +38,14 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-find-memory-leaks">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Find memory leaks by comparing heap snapshots</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
-<h2 class="tip-title">Find memory leaks by comparing heap snapshots</h2>
 <div class="tip-content" data-pagefind-body>
     <p><em><strong>Note</strong>: If you think your memory leak comes from DOM nodes, you can also use the  <strong>Detached Elements</strong> tool in Edge, see <a href="/tips/en/get-detached-elements">Get detached DOM elements to investigate memory leaks</a>.</em></p>
 <p>Memory leaks are hard to find, and the <strong>Memory</strong> tool in DevTools can look pretty intimidating. But if you can reproduce the leak consistently, it helps to know about the tool's <em>Compare</em> feature, which allows you to focus on just the differences between two heap snapshots and forget the rest.</p>
@@ -85,7 +82,7 @@
 </ol>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/get-detached-elements">Get detached DOM elements to investigate memory leaks</a>
             <a href="/tips/en/get-detached-elements" class="other-tip-image">

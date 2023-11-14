@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Detect unused CSS and JavaScript code</a></h1>
+      <a href="/" class="logo">Detect unused CSS and JavaScript code</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,20 +38,17 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-detect-unused-code">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Detect unused CSS and JavaScript code</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
-<h2 class="tip-title">Detect unused CSS and JavaScript code</h2>
 <div class="tip-content" data-pagefind-body>
     <p>To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it's really needed.</p>
-<h4>In Chromium-based browsers</h4>
+<h2>In Chromium-based browsers</h2>
 <p>Chrome and Edge have a useful <strong>Coverage</strong> tool that can help identify which parts of code are unused. To detect unused code on page load:</p>
 <ol>
 <li>
@@ -71,7 +68,7 @@
 </ol>
 <p>You can now decide whether some parts of your code can be loaded later, when needed only.</p>
 <p><img src="/assets/img/detect-unused-code.png" alt="Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used"></p>
-<h4>In Safari</h4>
+<h2>In Safari</h2>
 <p>In Safari, you can detect unused JS code, with the following steps,</p>
 <ol>
 <li>
@@ -90,7 +87,7 @@
 <p><img src="/assets/img/detect-unused-code-safari.png" alt="Safari Web Inspector with Sources panel open, showing unexecuted code in a light gray color for a JS file"></p>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/ignore-scripts">Ignore JavaScript code to ease debugging</a>
             <a href="/tips/en/ignore-scripts" class="other-tip-image">

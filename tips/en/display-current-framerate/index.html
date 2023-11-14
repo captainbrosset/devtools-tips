@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Display the current framerate of your webpage</a></h1>
+      <a href="/" class="logo">Display the current framerate of your webpage</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,17 +38,14 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-display-current-framerate">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Display the current framerate of your webpage</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/perf/">perf</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
-<h2 class="tip-title">Display the current framerate of your webpage</h2>
 <div class="tip-content" data-pagefind-body>
     <p>For a super smooth user experience on your website or app, it's better if the browser manages to render your page at a high framerate. Ideally, this rate should be 60 frames per second (FPS). This gives the browser 16ms to paint each frame. When the webpage doesn't do anything and the user is just reading the content, that's not hard to achieve. But if you have complicated JavaScript running and updating the page, then the browser has to squeeze a lot more work in these 16 ms frames.</p>
 <p>A lower than 60 FPS framerate may lead to a degraded user experience where animations and page updates are noticeably janky and interactions feel slow. When debugging low framerate performance issues, it may help to display the current framerate on the screen.</p>
@@ -62,7 +59,7 @@
 <p><img src="/assets/img/display-current-framerate.png" alt="Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu"></p>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/use-designmode-to-spell-check">Use document.designMode to spell check your webpage</a>
             <a href="/tips/en/use-designmode-to-spell-check" class="other-tip-image">

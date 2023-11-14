@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">List the fonts used on a page, or an element</a></h1>
+      <a href="/" class="logo">List the fonts used on a page, or an element</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,24 +38,21 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-list-used-fonts">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">List the fonts used on a page, or an element</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
-<h2 class="tip-title">List the fonts used on a page, or an element</h2>
 <div class="tip-content" data-pagefind-body>
     <p><em>&quot;What font is that?&quot;</em> or <em>&quot;Why is this font used?&quot;</em> are probably questions you've asked yourself while working on a website design.</p>
 <p>However, it's not always easy to know which fonts are actually used on a webpage and looking at the CSS the page uses might not always give you the answer.</p>
 <p>Webpages often define multiple different fonts, for example: <code>font-family: Baskerville, &quot;Baskerville Old Face&quot;, &quot;Hoefler Text&quot;, Garamond, &quot;Times New Roman&quot;, serif;</code></p>
 <p>When the browser renders a page, if the first font in the list is not available on the device, the browser falls back to the next font. If the next one isn't available either, it falls back to the next one and so on. Also some fonts are defined with generic names such as <code>serif</code>, or <code>monospace</code>, which tells you nothing about which exact font the browser chose to use.</p>
 <p>DevTools can help you determine which fonts are used on a webpage, or on a specific element on a page.</p>
-<h3>In Firefox</h3>
+<h2>In Firefox</h2>
 <p>Firefox has the best tool to inspect fonts. To know which fonts are used on a webpage:</p>
 <ol>
 <li>
@@ -79,7 +76,7 @@
 <li>The <strong>Fonts</strong> tab updates and gives the list of fonts used in that single element.</li>
 </ol>
 <p>Note that an element may require multiple fonts to render correctly, even if this element only contains a single text node. This can happen when the font used to render the element doesn't have all the glyphs required to render the text, in which case the browser falls back to another font to render the missing glyphs.</p>
-<h3>In Chrome or Edge</h3>
+<h2>In Chrome or Edge</h2>
 <p>In Chrome or Edge (or other Chromium-based browsers), you can see which font(s) was/were used to render a given text-containing element:</p>
 <ol>
 <li>
@@ -94,7 +91,7 @@
 </li>
 </ol>
 <p><img src="/assets/img/list-used-fonts-chrome.png" alt="Chrome, with Devtools on the side, showing the Computed panel that contains the list of fonts"></p>
-<h3>In Polypane</h3>
+<h2>In Polypane</h2>
 <p>In Polypane, you can see which font was used to render a given text-containing element:</p>
 <ol>
 <li>
@@ -110,7 +107,7 @@
 <p><img src="/assets/img/list-used-fonts-polypane.png" alt="Polypane, with Devtools on the side, showing the Element Overview panel that contains the list of fonts and a node tooltip."></p>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/convert-font-units">Convert font property units</a>
             <a href="/tips/en/convert-font-units" class="other-tip-image">

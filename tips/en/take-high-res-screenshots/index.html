@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Take high-resolution screenshots of web pages</a></h1>
+      <a href="/" class="logo">Take high-resolution screenshots of web pages</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,26 +38,23 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-take-high-res-screenshots">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Take high-resolution screenshots of web pages</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/export/">export</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
 </div>
-<h2 class="tip-title">Take high-resolution screenshots of web pages</h2>
 <div class="tip-content" data-pagefind-body>
     <p>Taking screenshots of all or parts of web pages is super useful (scroll down to the <em>See Also</em> part at the bottom of this page for more tips on that). But sometimes, the resulting screenshots aren't high-resolution enough for your needs.</p>
 <p>It turns you can make DevTools take high-resolution screenshots of your web pages too!</p>
-<h3>From the Console in Firefox</h3>
+<h2>From the Console in Firefox</h2>
 <p>Firefox has a super handy <code>:screenshot</code> command you can use in the <strong>Console</strong> tool to take screenshots. It takes a few options, including <code>--dpr</code> to specify the device pixel ratio. The default value is <code>1</code>, but you can set it to <code>2</code>, <code>3</code>, or any other number to take screenshots at higher resolutions.</p>
 <p>For example: <code>:screenshot --dpr 3 --fullpage</code> will take a screenshot of the full page at three times the resolution.</p>
 <p><img src="/assets/img/take-high-res-screenshots-firefox.png" alt="Firefox, with DevTools opened, and the Console tool visible, showing that :screenshot command"></p>
 <p>Find out more about the <code>:screenshot</code> command and its other options in the <a href="https://firefox-source-docs.mozilla.org/devtools-user/web_console/helpers/index.html">Firefox DevTools documentation</a>.</p>
-<h3>From Device Mode in Chromium-based browsers</h3>
+<h2>From Device Mode in Chromium-based browsers</h2>
 <p>Here's a nice trick to do a similar thing in Chromium-based browsers (Chrome, Edge, Brave, etc.):</p>
 <ol>
 <li>Open DevTools and go to the <strong>Device Mode</strong> tool.</li>
@@ -70,7 +67,7 @@
 <img src="/assets/img/take-high-res-screenshots-edge-2.png" alt="Edge DevTools in Device Emulation mode, showing the DPR option to select the DPR value"></p>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/node-screenshot">Take a screenshot of a single node</a>
             <a href="/tips/en/node-screenshot" class="other-tip-image">

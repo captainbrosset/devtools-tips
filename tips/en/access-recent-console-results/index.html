@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Access results from recent Console evaluations</a></h1>
+      <a href="/" class="logo">Access results from recent Console evaluations</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,17 +38,14 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-access-recent-console-results">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Access results from recent Console evaluations</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
-<h2 class="tip-title">Access results from recent Console evaluations</h2>
 <div class="tip-content" data-pagefind-body>
     <p>Imagine you evaluate a long expression like <code>$$('*').map(el =&gt; Object.values(el.attributes).map(attr =&gt; {return {name: attr.name, value: attr.value}}))</code> which extracts the attributes from all of the DOM elements on the page.</p>
 <p>Now imagine you want to access one element in particular from the giant returned array. You could just type the same expression again and add <code>[14]</code> at the end of it to access the 15th item.</p>
@@ -59,7 +56,7 @@
 <p><img src="/assets/img/access-recent-console-results-safari.png" alt="The Console in Safari Web Inspector showing how using $1, $2, $3, ... refer to previous Console results"></p>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/list-console-functions">List all supported console functions</a>
             <a href="/tips/en/list-console-functions" class="other-tip-image">

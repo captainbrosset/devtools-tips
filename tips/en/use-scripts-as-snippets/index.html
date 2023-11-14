@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Re-use scripts as snippets</a></h1>
+      <a href="/" class="logo">Re-use scripts as snippets</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,22 +38,19 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-use-scripts-as-snippets">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Re-use scripts as snippets</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
-<h2 class="tip-title">Re-use scripts as snippets</h2>
 <div class="tip-content" data-pagefind-body>
     <p>The <strong>Console</strong> is great to write short JavaScript expressions that read from the document or manipulate it. But it's also a terrible editor.</p>
 <p>You can actually use a full editor in Edge, Chrome, and Safari to write more complex scripts and run them in the context of the current page and even keep them for later re-use.</p>
 <p>Note: if you're looking for a way to do this in Firefox, there isn't currently one. However, you can <a href="/tips/en/multi-line-console">write code on multiple lines</a> which helps a lot already, and even search through previous Console expressions by pressing <kbd>F9</kbd> in the <strong>Console</strong> tool.</p>
-<h3>In Edge &amp; Chrome</h3>
+<h2>In Edge &amp; Chrome</h2>
 <p>In Chromium-based browsers, these are called <a href="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/snippets"><strong>snippets</strong></a> and you can access them in the <strong>Sources</strong> tool by clicking <strong>Snippets</strong> in the left hand side toolbar (you may have to use the <code>&gt;&gt;</code> to reach them).</p>
 <p>You can create as many named snippets as you like and remove ones you don't need any more.</p>
 <p>Snippets have full access to the window object and you can use any of the console API methods in them too. For example, this script would replace each image in the document with its alternative text:</p>
@@ -62,12 +59,12 @@
 <p><img src="/assets/img/use-scripts-as-snippets-1.png" alt="The snippets editor in the Sources tool with a snippet open in the editor."></p>
 <p>Even better, you can use the <a href="/tips/en/execute-commands">Command menu</a> to run snippets more easily. Simply press <kbd>ctrl</kbd>+<kbd>P</kbd> (or <kbd>cmd</kbd>+<kbd>P</kbd> on mac) and type <code>!</code> followed by the name of your Snippet.</p>
 <p><img src="/assets/img/use-scripts-as-snippets-2.gif" alt="Running a snippet from the Command menu."></p>
-<h3>In Safari</h3>
+<h2>In Safari</h2>
 <p>In Safari, these scripts are called Console Snippets and can also be created from the <strong>Sources</strong> tool by clicking the <code>+</code> icon at the bottom of the tool, and choosing <strong>Console Snippet...</strong>.</p>
 <p><img src="/assets/img/use-scripts-as-snippets-3.gif" alt="Creating a snippet in Safari."></p>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/multi-line-console">Write code on multiple lines in the Console</a>
             <a href="/tips/en/multi-line-console" class="other-tip-image">

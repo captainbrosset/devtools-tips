@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Visualize and debug CSS cascade layers</a></h1>
+      <a href="/" class="logo">Visualize and debug CSS cascade layers</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,21 +38,18 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-debug-css-cascade-layers">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Visualize and debug CSS cascade layers</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/css/">css</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
-<h2 class="tip-title">Visualize and debug CSS cascade layers</h2>
 <div class="tip-content" data-pagefind-body>
     <p><a href="https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_layers">Cascade layers</a> is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which these layers apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using <code>!important</code> or artificially making selectors have higher specificity. To learn more about cascade layers, check out <a href="https://css-tricks.com/css-cascade-layers/">Miriam Suzanne's complete guide on CSS Tricks</a>.</p>
 <p>In this tip, let's see how to visualize and debug layers in DevTools. All browser DevTools have support for layers in their <strong>Styles</strong>/<strong>Rules</strong> panels, and some browsers have more advanced features.</p>
-<h3>All browsers</h3>
+<h2>All browsers</h2>
 <ol>
 <li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
 <li>Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.</li>
@@ -60,7 +57,7 @@
 <li>Rules that are part of a cascade layer have a <code>@layer &lt;layername&gt;</code> label next to them.</li>
 </ol>
 <p><img src="/assets/img/debug-css-cascade-layers-firefox.png" alt="Firefox with a demo page that uses layers, DevTools is opened and shows the Rules panel with two @layer rules"></p>
-<h3>Chrome and Edge only</h3>
+<h2>Chrome and Edge only</h2>
 <p>On top of the above, Chrome and Edge have a <strong>Layers</strong> view that shows the cascade layers in a list:</p>
 <ol>
 <li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
@@ -68,7 +65,7 @@
 <li>Click the <strong>Toggle CSS layers view</strong> button in the <strong>Styles</strong> panel toolbar (next to the search field) to reveal the list of layers.</li>
 </ol>
 <p><img src="/assets/img/debug-css-cascade-layers-edge.png" alt="Edge with a demo page that uses layers, DevTools is opened and shows the Styles panel with two @layer rules and the layers view"></p>
-<h3>Polypane only</h3>
+<h2>Polypane only</h2>
 <p>Polypane also has a <strong>CSS Layers</strong> view that shows the cascade layers in a list:</p>
 <ol>
 <li>Open a page that uses cascade layers like <a href="https://codepen.io/web-dot-dev/full/LYzqPEp">this one</a>.</li>
@@ -78,7 +75,7 @@
 <p><img src="/assets/img/debug-css-cascade-layers-polypane.png" alt="Polypane with a demo page that uses layers, the Elements panel is open and shows three layers in the CSS Layers view, one of which is dimmed."></p>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/find-inactive-styles">Find inactive CSS styles</a>
             <a href="/tips/en/find-inactive-styles" class="other-tip-image">

@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Find broken links</a></h1>
+      <a href="/" class="logo">Find broken links</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,17 +38,14 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-find-broken-links">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Find broken links</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/testing/">testing</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
-<h2 class="tip-title">Find broken links</h2>
 <div class="tip-content" data-pagefind-body>
     <p><em>The link to X on page Y doesn't work</em> is probably a bug report you've received at some point. But how do you find these broken links before someone else does?</p>
 <p>In Polypane, the <strong>Outline Panel</strong> will show you all the links on the page, and check if they return a 200 status code, or if they return an error code (like 404, or 500).</p>
@@ -56,7 +53,7 @@
 <p>Along with broken URLs, Polypane also finds unfinished/placeholder URLs like <code>mailto:</code> and <code>https://</code> without anything else after that text.</p>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/reload-page-after-change">Reload a page when there&#39;s changes on disk</a>
             <a href="/tips/en/reload-page-after-change" class="other-tip-image">

@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Manipulate global objects on page load, before other scripts run</a></h1>
+      <a href="/" class="logo">Manipulate global objects on page load, before other scripts run</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,17 +38,14 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-manipulate-global-objects-on-page-load">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Manipulate global objects on page load, before other scripts run</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/debug/">debug</a></li><li class="tag"><a href="/tag/javascript/">javascript</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
-<h2 class="tip-title">Manipulate global objects on page load, before other scripts run</h2>
 <div class="tip-content" data-pagefind-body>
     <p>When a page loads, and all of its global objects are ready, but before the JavaScript code of the page actually kicks-in, is a great time to inject debugging code. For example, it might be useful to replace global functions with ones that contain altered code.</p>
 <p>Safari lets you do this by creating an <strong>Inspector Bootstrap Script</strong>. This script is guaranteed to run after JavaScript global objects have been created, as long as DevTools is opened.</p>

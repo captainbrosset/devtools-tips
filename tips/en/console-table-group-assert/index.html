@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">console.log() is great, but do you know console.table()? console.group()? console.assert()?</a></h1>
+      <a href="/" class="logo">console.log() is great, but do you know console.table()? console.group()? console.assert()?</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,27 +38,24 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-console-table-group-assert">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">console.log() is great, but do you know console.table()? console.group()? console.assert()?</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
-<h2 class="tip-title">console.log() is great, but do you know console.table()? console.group()? console.assert()?</h2>
 <div class="tip-content" data-pagefind-body>
     <p>You probably know about <code>console.log()</code> already, it's a great way to print variables and objects to the console while the code is running, to debug it. But there are other console methods that can help you debug your code even more easily (you can <a href="/tips/en/list-console-functions">list them all</a> by the way).</p>
-<h3>console.table</h3>
+<h2>console.table</h2>
 <p><code>console.table()</code> is great to print arrays and objects in a tabular format.</p>
 <p>Say you have the following data:</p>
 <pre class="language-json"><code class="language-json">const products = <span class="token punctuation">[</span><span class="token punctuation">{</span><br>  id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span><br>  name<span class="token operator">:</span> 'Instant Pot'<span class="token punctuation">,</span><br>  price<span class="token operator">:</span> <span class="token number">79.99</span><span class="token punctuation">,</span><br>  inStock<span class="token operator">:</span> <span class="token boolean">true</span><br><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><br>  id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span><br>  name<span class="token operator">:</span> 'Aeropress Coffee Maker'<span class="token punctuation">,</span><br>  price<span class="token operator">:</span> <span class="token number">29.99</span><span class="token punctuation">,</span><br>  inStock<span class="token operator">:</span> <span class="token boolean">false</span><br><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><br>  id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span><br>  name<span class="token operator">:</span> 'George Foreman Grill'<span class="token punctuation">,</span><br>  price<span class="token operator">:</span> <span class="token number">25.99</span><span class="token punctuation">,</span><br>  inStock<span class="token operator">:</span> <span class="token boolean">true</span><br><span class="token punctuation">}</span><span class="token punctuation">]</span>;</code></pre>
 <p>You can log it to the console a much more readable way with <code>console.table()</code> by using the following code: <code>console.table(products);</code></p>
 <p><img src="/assets/img/console-table-group-assert-1.jpg" alt="The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column"></p>
 <p>You can even <a href="/tips/en/customize-console-table-columns">customize the table columns that are shown</a>.</p>
-<h3>console.group</h3>
+<h2>console.group</h2>
 <p>When your code generates a lot of logs, it can quickly become difficult to read those logs in the console.</p>
 <p><code>console.group()</code> allows you to group console logs together and indent them in a nice collapsible section, making them easier to read.</p>
 <p>Take the following code example that generate a lot of logs:</p>
@@ -67,7 +64,7 @@
 <p>Now let's use <code>console.group()</code> to group those logs together:</p>
 <pre class="language-js"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> product <span class="token keyword">of</span> products<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  console<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span>product<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'ID:'</span><span class="token punctuation">,</span> product<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Price:'</span><span class="token punctuation">,</span> product<span class="token punctuation">.</span>price<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'In stock:'</span><span class="token punctuation">,</span> product<span class="token punctuation">.</span>inStock<span class="token punctuation">)</span><br>  console<span class="token punctuation">.</span><span class="token function">groupEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <p><img src="/assets/img/console-table-group-assert-3.png" alt="The Chrome DevTools Console tool showing the same logs, but grouped by product"></p>
-<h3>console.assert</h3>
+<h2>console.assert</h2>
 <p>Finally, the <code>console.assert</code> method allows you to log an error to the console only if some predefined condition is not met.</p>
 <p>Let's say you want to make sure that all products in the <code>products</code> array are in stock and log an error if not.</p>
 <p>You could use an <code>if</code> statement and <code>console.error</code>, like this:</p>
@@ -79,7 +76,7 @@
 <p>Credits go to <a href="https://suze.dev/blog/debugging-javascript-beyond-console-log/">Suze Shardlow</a> for sharing this on her site.</p>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/customize-console-table-columns">Customize the columns shown in console.table</a>
             <a href="/tips/en/customize-console-table-columns" class="other-tip-image">

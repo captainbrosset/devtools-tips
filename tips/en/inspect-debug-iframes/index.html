@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">Inspect and debug iframes</a></h1>
+      <a href="/" class="logo">Inspect and debug iframes</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,20 +38,17 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-inspect-debug-iframes">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Inspect and debug iframes</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li></ul>
 </div>
-<h2 class="tip-title">Inspect and debug iframes</h2>
 <div class="tip-content" data-pagefind-body>
     <p>If the page you are working on contains an iframe which you want to inspect and debug, you can actually use DevTools to do so. This can be very useful when working with coding playground sites like <a href="https://codepen.io/">CodePen</a>, <a href="https://jsfiddle.net/">JSFiddle</a>, or <a href="https://glitch.com/">Glitch</a>.</p>
-<h3>Firefox</h3>
+<h2>Firefox</h2>
 <p>Firefox has an iframe selector button in its toolbar that lets you select the iframe you want to inspect. Once selected, the <strong>Inspector</strong> and <strong>Console</strong> tools will be scoped to the iframe you selected. This means that you will only see the DOM tree and the console messages for the iframe you selected. This also means that any JavaScript expression you execute in the <strong>Console</strong> tool will be executed in the context of the iframe.</p>
 <ol>
 <li>Open Firefox DevTools.</li>
@@ -59,7 +56,7 @@
 <li>Select the iframe you want to inspect.</li>
 </ol>
 <p><img src="/assets/img/inspect-debug-iframes-firefox.png" alt="Firefox, with DevTools opened on the side, showing the iframe selector button in the toolbar"></p>
-<h3>Chrome, Edge, Safari</h3>
+<h2>Chrome, Edge, Safari</h2>
 <p>Chromium-based browsers and Safari have a <strong>JavaScript context</strong> selector button located in the <strong>Console</strong> tool which allows you to select the iframe you want to execute JavaScript expressions in. This button does not change what's visible in the <strong>Elements</strong> tool, it only changes the JavaScript context in which the <strong>Console</strong> tool works.</p>
 <ol>
 <li>Open DevTools.</li>
@@ -70,7 +67,7 @@
 <p><img src="/assets/img/inspect-debug-iframes-chrome.png" alt="Chrome, with the Console in DevTools, opened on the side, showing the JS context selector button"></p>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/find-custom-elements-code">Find your web component&#39;s custom element code</a>
             <a href="/tips/en/find-custom-elements-code" class="other-tip-image">

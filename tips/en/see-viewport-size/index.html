@@ -22,7 +22,7 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <h1><a href="/">See the viewport size</a></h1>
+      <a href="/" class="logo">See the viewport size</a>
       <nav>
         <ul class="header-menu">
           <li><a href="/">All tips</a></li>
@@ -38,21 +38,18 @@
     <div class="header-shadow"></div>
     <div class="header-shadow-block"></div>
     <main id="maincontent" style="view-transition-name:post-see-viewport-size">
-      <div class="announcement">
-        <p>Help us make DevTools Tips better! <a href="https://forms.gle/1rhvKkwfAjs3ATqJ8">Fill out this survey</a> to tell us more about your DevTools habits and frustrations.</p>
-      </div>
       <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">See the viewport size</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag"><a href="/tag/debug/">debug</a></li><li class="tag"><a href="/tag/testing/">testing</a></li><li class="tag"><a href="/tag/css/">css</a></li></ul>
     Supported by:
     <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/firefox/">firefox</a></li><li class="browser"><a href="/browser/safari/">safari</a></li><li class="browser"><a href="/browser/polypane/">polypane</a></li></ul>
 </div>
-<h2 class="tip-title">See the viewport size</h2>
 <div class="tip-content" data-pagefind-body>
     <p>The size of the viewport that's used to render a webpage in a browser can be very important at times, such as when creating or debugging <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_media_queries/Using_media_queries">media queries</a>.</p>
 <p>You can easily know what the current size of the viewport is in DevTools. Here are two ways to do it.</p>
-<h3>See the viewport size in the Console</h3>
+<h2>See the viewport size in the Console</h2>
 <p>To display the viewport size in the <strong>Console</strong> tool:</p>
 <ol>
 <li>Open the <strong>Console</strong> tool in DevTools.</li>
@@ -60,7 +57,7 @@
 The size of the viewport, at the time you executed the expression, appears in the <strong>Console</strong>.</li>
 </ol>
 <p>You can also use a <em>live expression</em> to see the size of the viewport in real-time, as you resize the browser window. To learn more, see <a href="/tips/en/live-expressions">Cut down on console noise using live expressions</a>.</p>
-<h3>See the viewport size in the page</h3>
+<h2>See the viewport size in the page</h2>
 <p>You can also see the size of the viewport⁕ in the page directly:</p>
 <ul>
 <li>
@@ -122,7 +119,7 @@ On hover, rulers and the viewport size appear in the page temporarily.</p>
 <p>⁕ In browsers with classic scrollbars, the number shown in the page by DevTools doesn't account for the scrollbar width, if there is one. The actual viewport width is about 15 to 17 pixels small than the number shown.</p>
 
 </div><div class="see-also">
-    <h3>See also</h3>
+    <h2>See also</h2>
     <ul><li>
             <a href="/tips/en/spot-out-of-viewport-elements">Quickly spot out-of-viewport elements</a>
             <a href="/tips/en/spot-out-of-viewport-elements" class="other-tip-image">
