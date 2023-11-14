@@ -6,7 +6,7 @@ tags: ["html", "css", "browser:edge", "browser:safari", "browser:chrome"]
 ---
 See your page in 3 dimensions to quickly find out how deeply nested it is, fix z-index stacking issues, and performance issues.
 
-### In Edge
+## In Edge
 
 * Open the Command Menu by pressing <kbd>ctrl+shift+P</kbd> (or <kbd>cmd+shift+P</kbd> on macOS).
 * Type "3D" and press <kbd>Enter</kbd>. The **3D View** tool opens up.
@@ -14,7 +14,7 @@ See your page in 3 dimensions to quickly find out how deeply nested it is, fix z
 
 ![The 3D view tool showing a page's z-index stacking tree as a 3d scene.](../../assets/img/see-the-page-in-3d.png)
 
-### In Chrome or Safari
+## In Chrome or Safari
 
 Chrome and Safari also have a **Layers** tool that provides the same information as Edge's Composited Layers 3D mode.
 

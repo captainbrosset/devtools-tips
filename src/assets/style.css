@@ -89,12 +89,6 @@ li {
   padding: 0;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
 /* Main styles */
 
 body {
@@ -277,8 +271,8 @@ main {
   background: var(--background-color);
 }
 
-main h2.tip-title {
-  margin: 1rem 0;
+main h1.tip-title {
+  margin: 0 0 1rem 0;
 }
 
 /* List of tips */
@@ -302,8 +296,12 @@ main h2.tip-title {
   }
 }
 
-.page-toolbar h2 {
+.page-toolbar h1 {
   margin-right: auto;
+}
+
+.page-toolbar h1:first-letter {
+  text-transform: capitalize;
 }
 
 .tips {
@@ -572,15 +570,6 @@ footer a {
   position: absolute;
   top: -9999px;
   left: -9999px;
-}
-
-.browser-name {
-  color: var(--accent-color-darker);
-}
-@media (prefers-color-scheme: dark) {
-  .browser-name {
-    color: var(--accent-color-lighter);
-  }
 }
 
 /* Lightbox */

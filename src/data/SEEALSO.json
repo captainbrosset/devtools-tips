@@ -37,8 +37,8 @@
     {
       "title": "Simulate different devices and screen sizes",
       "image": {
-        "alt": "Animation showing how the tool makes it easy to resize the screen size by dragging the mouse.",
-        "src": "../../assets/img/simulate-devices.gif"
+        "alt": "Chrome, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode",
+        "src": "../../assets/img/simulate-devices-chrome.png"
       },
       "link": "/tips/en/simulate-devices"
     }
@@ -3635,6 +3635,14 @@
       "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
     },
     {
+      "title": "Simulate different devices and screen sizes",
+      "image": {
+        "alt": "Chrome, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode",
+        "src": "../../assets/img/simulate-devices-chrome.png"
+      },
+      "link": "/tips/en/simulate-devices"
+    },
+    {
       "title": "Use document.designMode to spell check your webpage",
       "image": {
         "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
@@ -3767,12 +3775,20 @@
       "link": "/tips/en/get-contextual-help"
     },
     {
-      "title": "Simulate a different latitude/longitude geolocation",
+      "title": "Hide or pin the information tooltip while inspecting page elements",
       "image": {
-        "alt": "Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.",
-        "src": "../../assets/img/simulate-geolocation.png"
+        "alt": "Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
+        "src": "../../assets/img/hide-or-pin-inspect-info-tooltip-1.png"
       },
-      "link": "/tips/en/simulate-geolocation"
+      "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
+    },
+    {
+      "title": "Take a screenshot of part of a webpage from the Command Menu",
+      "image": {
+        "alt": "Edge, with DevTools opened, and the Command menu showing the list of screenshot commands",
+        "src": "../../assets/img/screenshot-part-of-page-command-menu.png"
+      },
+      "link": "/tips/en/screenshot-part-of-page-command-menu"
     }
   ],
   "simulate-geolocation.md": [

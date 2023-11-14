@@ -9,7 +9,7 @@ The size of the viewport that's used to render a webpage in a browser can be ver
 
 You can easily know what the current size of the viewport is in DevTools. Here are two ways to do it.
 
-### See the viewport size in the Console
+## See the viewport size in the Console
 
 To display the viewport size in the **Console** tool:
 
@@ -19,7 +19,7 @@ To display the viewport size in the **Console** tool:
 
 You can also use a _live expression_ to see the size of the viewport in real-time, as you resize the browser window. To learn more, see [Cut down on console noise using live expressions](./live-expressions.md).
 
-### See the viewport size in the page
+## See the viewport size in the page
 
 You can also see the size of the viewport⁕ in the page directly:
 
