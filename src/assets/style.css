@@ -89,12 +89,6 @@ li {
   padding: 0;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
 /* Main styles */
 
 body {
@@ -347,8 +341,8 @@ main {
   top: -1rem;
 }
 
-main h2.tip-title {
-  margin: 1rem 0;
+main h1.tip-title {
+  margin: 0 0 1rem 0;
 }
 
 /* List of tips */
@@ -366,8 +360,12 @@ main h2.tip-title {
   }
 }
 
-.page-toolbar h2 {
+.page-toolbar h1 {
   margin-right: auto;
+}
+
+.page-toolbar h1:first-letter {
+  text-transform: capitalize;
 }
 
 .tips {
@@ -638,15 +636,6 @@ footer a {
   left: -9999px;
 }
 
-.browser-name {
-  color: var(--accent-color-darker);
-}
-@media (prefers-color-scheme: dark) {
-  .browser-name {
-    color: var(--accent-color-lighter);
-  }
-}
-
 /* Lightbox */
 
 .lightbox-button {
@@ -760,19 +749,6 @@ footer a {
 }
 .lightbox button:hover {
   background-color: var(--accent-color);
-}
-
-.announcement {
-  background: var(--background-color);
-  padding: .5rem;
-  max-width: max-content;
-  margin: 0 auto 2rem auto;
-}
-
-.announcement p {
-  margin: 0;
-  text-align: center;
-  font-size: .9rem;
 }
 
 .pagination {
