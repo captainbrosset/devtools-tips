@@ -6,21 +6,25 @@
   eleventyExcludeFromCollections: true
 }
 ---
-<div class="page-toolbar">
-  {% include 'filter-tip-list.njk' %}
+<h1>Welcome to DevTools Tips 👋</h1>
+<p>If you're a web developer, DevTools Tips is for you! DevTools Tips is a website that can help you become more comfortable with using the various built-in browser DevTools.</p>
+<p>Whatever your level of experience, and whatever browser you prefer using for web development, use DevTools Tips to learn new tips and tricks on a regular basis.</p>
+<p>The collection of tips, and guides, on the website is growing all the time. There are currently {{collections.all.length }} tips available thanks to all of our wonderful <a href="https://github.com/captainbrosset/devtools-tips/graphs/contributors">open-source contributors</a>. If you know other debugging techniques not documented here, please consider helping the community by submiting a new tip on our <a href="https://github.com/captainbrosset/devtools-tips">GitHub repository</a>!</p>
+<div class="cards">
+  <div class="card">
+    <h2>Latest tips</h2>
+    <ul class="tips">
+    {% set latest_posts = collections.all | reverse %}
+    {%- for post in latest_posts.slice(0, 5) -%}
+      {% include 'tip-in-list.njk' %}
+    {%- endfor -%}
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Guides</h2>
+    <ul class="guides">
+      <li>Understand DevTools</li>
+      <li>Improve runtime performance</li>
+    </ul>
+  </div>
 </div>
-<h1>Welcome to DevTools Tips</h1>
-<p>DevTools Tips offers quick tips and longer guides to help you learn how to use the various built-in browser DevTools.</p>
-<p>If you are a web developer, DevTools Tips helps you get comfortable with your dev browser of choice. We have {{collections.all.length }} tips available and two full-length guides.</p>
-<h2>Latest tips</h2>
-<ul class="tips">
-{% set latest_posts = collections.all | reverse %}
-{%- for post in latest_posts.slice(0, 5) -%}
-  {% include 'tip-in-list.njk' %}
-{%- endfor -%}
-</ul>
-<h2>Guides</h2>
-<ul class="guides">
-  <li>Understand DevTools</li>
-  <li>Improve runtime performance</li>
-</ul>

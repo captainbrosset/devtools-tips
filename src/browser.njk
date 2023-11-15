@@ -18,9 +18,6 @@
   permalink: "browser/{{ browser | slug | processBrowserTagName }}/"
 }
 ---
-<div class="page-toolbar">
-  {% include 'filter-tip-list.njk' %}
-</div>
 <h1>{{ collections[browser].length  }} <span class="browser-name">{{ browser | processBrowserTagName | capitalize }}</span> tips</h1>
 {% include 'unique-browser-features.njk' %}
 <ul class="tips">

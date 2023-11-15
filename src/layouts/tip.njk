@@ -2,9 +2,6 @@
 layout: home.njk
 templateEngineOverride: njk
 ---
-<div class="page-toolbar">
-  {% include 'filter-tip-list.njk' %}
-</div>
 <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 <h1 class="tip-title">{{ title }}</h1>
 <div class="tip-info">
@@ -41,6 +38,6 @@ templateEngineOverride: njk
 {%- endif -%}
 <div class="tip-footer">
     <div class="authors">Authors: <span>{% formatAuthors authors %}</span></div>
-    <p class="last-edit">Last edit: <time datetime="{{ page.date.toISOString() }}">{{ page.date.toLocaleDateString() }}</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/{{ page.inputPath }}">Edit page</a></p>
+    <p class="last-edit">Last edit: <time datetime="{{ page.date.toISOString() }}">{{ page.date.toLocaleDateString() }}</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/{{ page.inputPath }}">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>

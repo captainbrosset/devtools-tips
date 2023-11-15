@@ -17,9 +17,6 @@
   permalink: "tag/{{ tag | slug }}/"
 }
 ---
-<div class="page-toolbar">
-  {% include 'filter-tip-list.njk' %}
-</div>
 <h1>{{collections[tag].length }} {{ tag }} tips</h1>
 <ul class="tips">
 {%- for post in collections[tag] | reverse -%}

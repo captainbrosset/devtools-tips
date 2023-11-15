@@ -15,7 +15,7 @@
   --category-tag-background-color: gold;
   --category-tag-text-color: black;
 
-  --alternate-background-color: aliceblue;
+  --alternate-background-color: #faf1fe;
   --sub-text-color: #555;
 
   --accent-color: gold;
@@ -97,7 +97,7 @@ body {
 	color: var(--text-color);
 	background-image: linear-gradient(to right, var(--alternate-background-color) 0 50%, var(--background-color) 50% 0);
 	display: grid;
-	grid-template-columns: min-content 1fr;
+	grid-template-columns: max-content 1fr;
 	grid-template-rows: min-content 1fr;
 	max-width: 1300px;
 	min-height: 100vh;
@@ -117,7 +117,7 @@ a {
 header {
   align-self: start;
   background: var(--alternate-background-color);
-  padding: 1rem;
+  padding: 2rem;
   position: sticky;
   top: 0;
 }
@@ -125,12 +125,8 @@ header {
 header .title {
   text-align: center;
   display: block;
-  width: 5rem;
   height: 3rem;
-  text-indent: 100vw;
-  overflow: hidden;
-  white-space: nowrap;
-  background: url(/assets/logo.png) no-repeat center;
+  background: url(/assets/logo-small.png) no-repeat center;
   background-size: contain;
 }
 
@@ -140,17 +136,26 @@ header .title {
   }
 }
 
-.header-menu a {
-  color: var(--text-color);
-}
-
-.header-menu a:hover {
-  text-decoration-thickness: 2px;
+header nav {
+  margin-block-start: 2rem;
+  font-size: .9rem;
+  line-height: 1.4;
 }
 
 .header-menu > li {
-  padding: 0.5rem;
-  border-radius: 5px;
+	padding: 1rem 0;
+	border-block-start: 1px solid var(--code-background-color);
+  font-weight: bold;
+}
+
+.header-menu a {
+  font-weight: normal;
+  color: var(--sub-text-color);
+  text-transform: capitalize;
+}
+
+.header-menu .submenu {
+  margin-block-start: 1rem;
 }
 
 @media only screen and (max-width: 400px) {
@@ -185,16 +190,15 @@ header .title {
 }
 
 .search input {
-  flex: 1;
-  flex-basis: 3rem;
-  padding: .5rem;
-  border: 2px solid var(--accent-color-darker);
-  border-radius: 4px;
-  background: var(--accent-color-lighter);
-  width: 0;
-  /* Make font in input the same as elsewhere, and prevent iOS from zooming on tap */
-  font: inherit;
-  color: inherit;
+	flex: 1;
+	flex-basis: 3rem;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 4px;
+	background: var(--alternate-background-color);
+	width: 0;
+	font: inherit;
+	color: inherit;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -266,43 +270,49 @@ header .title {
 /* Content area */
 
 main {
-  padding: 0 1rem 1rem 1rem;
-  line-height: 1.6;
+  padding: 0 5rem 2rem 5rem;
+  line-height: 1.8;
   background: var(--background-color);
 }
 
-main h1.tip-title {
+main h1 {
   margin: 0 0 1rem 0;
 }
 
-/* List of tips */
+/* Toolbar */
 
 .page-toolbar {
-  display: flex;
-  align-items: center;
+  padding-block-start: 2rem;
+	display: flex;
   gap: 1rem;
   position: sticky;
   top: 0;
-  padding-top: 1rem;
-  background: var(--background-color);
-  box-shadow: 0 1rem 1rem 0 var(--background-color);
   z-index: 1;
+  background: var(--background-color);
+  /* This is to align with the logo in the sidebar */
+	height: 7rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .page-toolbar {
-    flex-direction: column;
-    align-items: stretch;
-  }
+.page-toolbar .social {
+  margin-inline-start: auto;
+  display: flex;
+  gap: .5rem;
 }
 
-.page-toolbar h1 {
-  margin-right: auto;
+.page-toolbar .social svg {
+	width: 1.5rem;
+  height: 3rem;
+	fill: color-mix(in srgb, var(--alternate-background-color), #000a);
 }
 
-.page-toolbar h1:first-letter {
-  text-transform: capitalize;
+/* Card layout */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+
+/* List of tips */
 
 .tips {
   margin-top: 2rem;
@@ -311,15 +321,20 @@ main h1.tip-title {
 }
 
 .tip {
-  background: var(--background-color);
-  border-radius: 4px;
-  overflow: hidden;
-  display: grid;
-  gap: 1rem;
-  padding: 1rem;
-  grid-template-columns: 1fr 40%;
-  grid-template-rows: min-content min-content 1fr;
+	overflow: hidden;
+	display: grid;
+	gap: 1rem;
+	padding: 2rem 0;
+	grid-template-columns: 1fr 40%;
+	grid-template-rows: min-content min-content 1fr;
+}
+
+.tip:not(:last-child) {
   border-bottom: 2px solid var(--alternate-background-color);
+}
+
+.tip:first-child {
+  padding-block-start: 0;
 }
 
 .tip .tip-title {
@@ -479,8 +494,8 @@ pre {
 .see-also li {
   display: flex;
   gap: 1rem;
-  background: var(--background-color);
-  padding: .5rem;
+  background: var(--alternate-background-color);
+  padding: 1rem;
   justify-content: space-between;
   align-items: center;
   border-radius: .5rem;
@@ -543,19 +558,6 @@ pre {
 .browsers li a {
   background: var(--browser-tag-background-color);
   color: var(--browser-tag-text-color);
-}
-
-/* Footer */
-
-footer {
-  grid-column: 2;
-  text-align: center;
-  background: var(--background-color);
-  border-top: 2px solid var(--alternate-background-color);
-}
-
-footer a {
-  color: var(--link-color);
 }
 
 /* Misc. */
