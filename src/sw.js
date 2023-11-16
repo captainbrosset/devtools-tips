@@ -1,8 +1,8 @@
 self.importScripts('/assets/localforage-1.10.0.min.js');
 
-// UPDATED: 03/23/2023
+// UPDATED: 11/16/2023
 
-const VERSION = 'v11';
+const VERSION = 'v12';
 const CACHE_NAME = `devtools-tips-${VERSION}`;
 
 const PERIODIC_UPDATE_SUPPORTED = ('periodicSync' in registration);
@@ -12,8 +12,9 @@ const INITIAL_CACHED_RESOURCES = [
   '/',
   '/offline/',
   '/assets/style.css',
-  '/assets/filter-tip-list.js',
-  '/assets/logo.png',
+  '/assets/dialog-lightbox.js',
+  '/pagefind/pagefind-ui.js',
+  '/assets/logo-small.png',
   'https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css',
   '/assets/localforage-1.10.0.min.js'
 ];

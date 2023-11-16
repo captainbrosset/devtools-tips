@@ -16,12 +16,14 @@
   --category-tag-text-color: black;
 
   --alternate-background-color: #faf1fe;
+  --alternate-background-color-fade: color-mix(in srgb, var(--alternate-background-color), white 50%);
+  --separator-color: #f1d0ff;
+  --separator-color-fade: color-mix(in srgb, var(--separator-color), black 50%);
   --sub-text-color: #555;
 
-  --accent-color: gold;
-  --accent-color-lighter: rgb(243, 241, 207);
-  --accent-color-darker: #8c7603;
-  --link-color: #28706c;
+  --accent-color: #2bb2a1;
+  --accent-color-lighter: color-mix(in srgb, var(--accent-color), white 50%);
+  --accent-color-darker: color-mix(in srgb, var(--accent-color), black 50%);
   --focus-border-color: #333;
 }
 
@@ -46,13 +48,15 @@
     --category-tag-background-color: gold;
     --category-tag-text-color: black;
 
-    --alternate-background-color: #111;
+    --alternate-background-color: #1b2c2b;
+    --alternate-background-color-fade: color-mix(in srgb, var(--alternate-background-color), black 50%);
+    --separator-color: #364645;
+    --separator-color-fade: color-mix(in srgb, var(--separator-color), white 50%);
     --sub-text-color: #cbcbcb;
 
-    --accent-color: #bc1b6e;
-    --accent-color-lighter: #e163a4;
-    --accent-color-darker: #740f43;
-    --link-color: #e163a4;
+    --accent-color: #34a29c;
+    --accent-color-lighter: color-mix(in srgb, var(--accent-color), white 50%);
+    --accent-color-darker: color-mix(in srgb, var(--accent-color), black 50%);
     --focus-border-color: rgb(223, 223, 223);
   }
 
@@ -109,7 +113,7 @@ body {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--accent-color);
 }
 
 /* Header */
@@ -120,6 +124,10 @@ header {
   padding: 2rem;
   position: sticky;
   top: 0;
+}
+
+header label[for="show-menu"] {
+  display: none;
 }
 
 header .title {
@@ -144,7 +152,7 @@ header nav {
 
 .header-menu > li {
 	padding: 1rem 0;
-	border-block-start: 1px solid var(--code-background-color);
+  border-block-start: 2px solid var(--separator-color);
   font-weight: bold;
 }
 
@@ -158,16 +166,51 @@ header nav {
   margin-block-start: 1rem;
 }
 
-@media only screen and (max-width: 400px) {
-  .header-menu > li {
-    padding: 0.25rem;
-    font-size: .9rem;
+@media only screen and (max-width: 700px) {
+  body {
+    display: revert;
   }
-}
 
-@media only screen and (max-width: 320px) {
-  .header-menu {
-    flex-direction: column;
+  header {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    translate: -100%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    header {
+      transition: 0.15s ease-in-out translate;
+    }
+  }
+
+  header .title {
+    background-position: left center;
+    margin-inline-end: 3rem;
+  }
+
+  body:has(#show-menu:checked) header {
+    translate: 0;
+  }
+
+  body:has(#show-menu:checked) {
+    overflow-y: hidden;
+  }
+
+  header label[for="show-menu"] {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
+  }
+  
+  header label[for="show-menu"] svg {
+    height: 1.5rem;
+    fill: var(--separator-color-fade);
   }
 }
 
@@ -178,7 +221,7 @@ header nav {
   flex-grow: 1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .search {
     max-width: 100%;
   }
@@ -201,6 +244,10 @@ header nav {
 	color: inherit;
 }
 
+.search input::placeholder {
+  color: var(--text-color);
+}
+
 @media (prefers-color-scheme: dark) {
   .search input {
     border: 2px solid var(--accent-color-lighter);
@@ -210,7 +257,7 @@ header nav {
 
 .search .pagefind-ui__drawer {
   position: absolute;
-  background: var(--background-color);
+  background: var(--alternate-background-color);
   padding: 1rem;
   top: 4rem;
   border: 2px solid var(--accent-color-darker);
@@ -229,7 +276,7 @@ header nav {
 .search .pagefind-ui__search-clear {
   position: absolute;
   right: 1rem;
-  top: 1.5rem;
+  top: 1rem;
   height: 1rem;
   width: 1rem;
   border: none;
@@ -242,8 +289,8 @@ header nav {
   content: "×";
   color: var(--accent-color-lighter);
   position: absolute;
-  left: 0.23rem;
-  top: -0.04rem;
+  left: 0.25rem;
+  top: 0.05rem;
 }
 
 .search .pagefind-ui__message {
@@ -273,6 +320,13 @@ main {
   padding: 0 5rem 2rem 5rem;
   line-height: 1.8;
   background: var(--background-color);
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    padding: 0 2rem 2rem 2rem;
+  }
 }
 
 main h1 {
@@ -287,7 +341,7 @@ main h1 {
   gap: 1rem;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   background: var(--background-color);
   /* This is to align with the logo in the sidebar */
 	height: 7rem;
@@ -299,10 +353,26 @@ main h1 {
   gap: .5rem;
 }
 
-.page-toolbar .social svg {
+.page-toolbar svg {
 	width: 1.5rem;
   height: 3rem;
-	fill: color-mix(in srgb, var(--alternate-background-color), #000a);
+	fill: var(--separator-color-fade);
+}
+
+/* Menu toggle button */
+
+.menu-button {
+	display: none;
+}
+
+.menu-button input {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .menu-button {
+    display: block;
+  }
 }
 
 /* Card layout */
@@ -330,7 +400,7 @@ main h1 {
 }
 
 .tip:not(:last-child) {
-  border-bottom: 2px solid var(--alternate-background-color);
+  border-block-end: 2px solid var(--separator-color);
 }
 
 .tip:first-child {
@@ -494,7 +564,7 @@ pre {
 .see-also li {
   display: flex;
   gap: 1rem;
-  background: var(--alternate-background-color);
+  background: var(--alternate-background-color-fade);
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -603,7 +673,6 @@ pre {
   background: var(--accent-color-lighter) url(/assets/zoom.svg) no-repeat
     center/80%;
   z-index: 1;
-  transition: 0.25s ease-in-out background;
 }
 
 .lightbox-button:hover::after {
@@ -683,11 +752,12 @@ pre {
   border-top-right-radius: 5px;
   background-color: var(--accent-color-lighter);
   color: var(--accent-color-darker);
-  transition: 0.25s ease-in-out background;
 }
 .lightbox button:hover {
   background-color: var(--accent-color);
 }
+
+/* Pagination */
 
 .pagination {
   margin-top: 2rem;
