@@ -9,7 +9,7 @@ You can change the color theme of DevTools to match your preference (see [Change
 
 The process is a little bit complicated, and you will need to keep up with any DevTools changes that may break your custom styles, but it's a great way to make DevTools your own. And by creating it as an extension, it also means you can share it with others.
 
-### Create an extension
+## Create an extension
 
 First, you need to create a browser extension that will load your custom styles in DevTools. This extension is different from traditional browser extensions in that it doesn't create any new UI element in the browser.
 
@@ -54,7 +54,7 @@ First, you need to create a browser extension that will load your custom styles 
     }
     ```
 
-### Enable custom DevTools themes
+## Enable custom DevTools themes
 
 By default, DevTools doesn't load custom themes created by browser extensions. To enable this:
 
@@ -64,7 +64,7 @@ By default, DevTools doesn't load custom themes created by browser extensions. T
 1. Enable **Allow extensions to load custom stylesheets**.
 1. Close the **Settings** page and reload DevTools.
 
-### Load your extension
+## Load your extension
 
 To test locally, you can load your extension as an unpacked extension:
 

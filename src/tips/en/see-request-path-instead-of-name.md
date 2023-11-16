@@ -8,7 +8,7 @@ see-also: ["filter-network-requests.md"]
 
 By default, the **Network** tool displays the name of each requested resource. For example, if a webpage requests an image from `https://mysite.com/assets/img/image.png` then the tool only displays `image.png` by default instead of the full file path.
 
-### Chrome and Edge
+## Chrome and Edge
 
 In Chrome and Edge DevTools, you can see the full path instead, which can be useful to more easily identify resources in the request list:
 
@@ -17,7 +17,7 @@ In Chrome and Edge DevTools, you can see the full path instead, which can be use
 
 ![The Network tool in Edge, showing the contextual menu that's used to customize the network list columns](../../assets/img/see-request-path-instead-of-name.png)
 
-### Firefox
+## Firefox
 
 Firefox doesn't have a **Path** option, but you can display URLs instead:
 

@@ -8,7 +8,7 @@ Have you noticed how the **Console** tool is sometimes displayed in a top-level 
 
 If you've been confused by this in the past, this tip should hopefully help you understand the logic behind it.
 
-### The main panel vs. the drawer
+## The main panel vs. the drawer
 
 All browser DevTools have a main area, let's call it the main panel, and typically display their tools as tabs in this main panel.
 
@@ -27,7 +27,7 @@ After pressing <kbd>Escape</kbd>, here is what DevTools looks like, with the dra
 
 ![DevTools, with one tool displayed at the top, the Elements tool, and the drawer at the bottom, showing the Console](../../assets/img/understand-console-tab-drawer-2.png)
 
-### What's in the drawer?
+## What's in the drawer?
 
 In Firefox, the drawer only contains the **Console** tool. So, whenever you feel the need to see your logs, or execute a bit of JavaScript code while working with another tool, just press <kbd>Escape</kbd>.
 
@@ -35,7 +35,7 @@ In Chrome or Edge, the drawer has its own tabbar, just like the main panel, whic
 
 ![The tabbar in the drawer, containing multiple tools to choose from](../../assets/img/understand-console-tab-drawer-3.png)
 
-### What if you open the Console in the main panel?
+## What if you open the Console in the main panel?
 
 This is where things may be confusing: what if you open the drawer to display the **Console** and then you also open the **Console** in the main panel?
 

@@ -8,7 +8,7 @@ Moving panels around the user interface can be very useful to make DevTools more
 
 There are 2 ways that you can re-arrange panels in DevTools today: dragging them horizontally in the toolbar, to re-order them, and moving them between the top toolbar and the bottom (drawer) toolbar
 
-### To move tabs between the top and bottom areas (Edge only)
+## To move tabs between the top and bottom areas (Edge only)
 
 * Right-click on any of the tabs.
 * Select **Move to Bottom** or **Move to Top** depending on where the tab is.
@@ -17,7 +17,7 @@ This only works in Edge at the moment is makes it super easy to see any 2 tools 
 
 ![Animation in Edge DevTools showing the move to top/bottom menus.](../../assets/img/move-panels-1.gif)
 
-### To re-order panels by dragging (Chrome, Edge, Firefox, Safari)
+## To re-order panels by dragging (Chrome, Edge, Firefox, Safari)
 
 * Click and hold any of the tabs in the toolbar.
 * Move the tab horizontally, left or right, until the desired location is reached.
