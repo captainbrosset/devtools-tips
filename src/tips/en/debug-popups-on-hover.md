@@ -3,6 +3,7 @@ date: 2023-11-18
 authors: Patrick Brosset, Pankaj Parashar
 title: Debug popups that appear on hover
 tags: ["debug", "browser:edge", "browser:chrome"]
+see-also: ["debug-js-hover", "debug-js-hover-2"]
 ---
 
 We had previously described a [couple](https://devtoolstips.org/tips/en/debug-js-hover/) [of](https://devtoolstips.org/tips/en/debug-js-hover-2/) ways to debug popups that appear on hover using JavaScript. The main problem in debugging overlay elements like popups is that they disappear as soon as the page loses focus after activating the DevTools window.
