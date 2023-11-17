@@ -5,6 +5,7 @@ const striptags = require("striptags");
 require("dotenv").config();
 
 const AUTHORS = require("./src/data/AUTHORS.json");
+const EXCERPT_LENGTH = 200;
 
 function extractImage(article) {
   if (!article.hasOwnProperty("templateContent")) {
@@ -35,7 +36,7 @@ function extractExcerpt(article) {
   const content = article.templateContent;
 
   excerpt = striptags(content)
-    .substring(0, 100)
+    .substring(0, EXCERPT_LENGTH)
     .replace(/^\s+|\s+$|\s+(?=\s)/g, "")
     .trim()
     .concat("...");
