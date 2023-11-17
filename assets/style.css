@@ -99,6 +99,7 @@ body {
 	font-size: 1rem;
 	font-family: system-ui, Arial, sans-serif;
 	color: var(--text-color);
+  background-image: linear-gradient(to right, var(--alternate-background-color) 0 50%, var(--background-color) 50% 0);
 	display: grid;
 	grid-template-columns: max-content 1fr;
 	grid-template-rows: min-content 1fr;
