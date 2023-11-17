@@ -9,7 +9,7 @@
   --keyboard-text-color: black;
   --keyboard-background-color: #ddd;
 
-  --browser-tag-background-color: #f06;
+  --browser-tag-background-color: #d99cb5;
   --browser-tag-text-color: black;
 
   --category-tag-background-color: gold;
@@ -21,7 +21,7 @@
   --separator-color-fade: color-mix(in srgb, var(--separator-color), black 50%);
   --sub-text-color: #555;
 
-  --accent-color: #2bb2a1;
+  --accent-color: #1a776b;
   --accent-color-lighter: color-mix(in srgb, var(--accent-color), white 50%);
   --accent-color-darker: color-mix(in srgb, var(--accent-color), black 50%);
   --focus-border-color: #333;
@@ -42,7 +42,7 @@
     --keyboard-text-color: black;
     --keyboard-background-color: #ddd;
 
-    --browser-tag-background-color: #f06;
+    --browser-tag-background-color: #d99cb5;
     --browser-tag-text-color: black;
 
     --category-tag-background-color: gold;
