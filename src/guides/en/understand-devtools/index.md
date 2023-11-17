@@ -67,7 +67,7 @@ When you're writing the code for a website, chances are that bugs will happen. Y
 
 DevTools also allows you to make changes to the page that's being debugged. For example, if you made a CSS mistake in the color of an element, you can change the element's color to test a fix. Because of this ability to make changes to a page, DevTools might be appealing to non web developers too. For example, you could use DevTools to slightly tweak a web page and make it easier to read: you could remove various elements or change the text size and color.
 
-{% includeLearnMoreTip "remove-annoying-overlays.md" %}
+<!-- includeLearnMoreTip "remove-annoying-overlays.md" -->
 
 Continue reading to learn more about how these changes are made, and what they affect.
 
