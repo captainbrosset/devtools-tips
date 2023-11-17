@@ -12,6 +12,6 @@ Chromium-based browsers like Chrome, Edge etc., provides a way to emulate a focu
 
 1. Open the **Command Menu** (`Cmd+Shift+P` or `Ctrl+Shift+P`) > Run "Show Rendering" to open the **Rendering** drawer.
 2. Scroll down and select **Emulate a focused page** option to keep the page focussed.
-3. Now you can to use the DevTools to inspect and debug the popup like any other part of the page.
+3. Now you can use the DevTools to inspect and debug the popup like any other part of the page.
 
 ![Screenshot depicting how to enable the focussed page option in DevTools](../../assets/img/debug-popups-on-hover.png)
