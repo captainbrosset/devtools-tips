@@ -1,0 +1,32 @@
+---js
+{
+  title: "All DevTools Tips",
+  layout: "home.njk",
+  templateEngineOverride: "njk",
+  eleventyExcludeFromCollections: true,
+  pagination: {
+    data: "collections.all",
+    size: 25,
+    before: function(data) {
+      return data.reverse();
+    }
+  }
+}
+---
+<h1>{{collections.all.length }} DevTools Tips</h1>
+<ul class="tips">
+{%- for post in pagination.items -%}
+  {% include 'tip-in-list.njk' %}
+{%- endfor -%}
+</ul>
+<nav class="pagination" aria-label="Pagination navigation">
+  <ul>
+    {% for pageKey in pagination.pages %}
+      <li>
+        <a href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %}aria-current="page"{% endif %}>
+          {% if loop.index === 1 %}Home{% else %}Page {{ loop.index - 1 }}{% endif %}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
