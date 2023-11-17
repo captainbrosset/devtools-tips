@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>All DevTools Tips</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/1/">
+    <meta property="og:url" content="https://devtoolstips.org/all/1/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
     <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
@@ -22,34 +22,65 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <a href="/" class="logo">DevTools Tips</a>
+      <label for="show-menu">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" x="0px" y="0px">
+          <path d="m9.706 8l5.941-5.941c.471-.471.471-1.235 0-1.706-.471-.471-1.235-.471-1.706 0l-5.941 5.941-5.941-5.941c-.471-.471-1.235-.471-1.706 0-.471.471-.471 1.235 0 1.706l5.941 5.941-5.941 5.941c-.471.471-.471 1.235 0 1.706.235.236.544.353.853.353.309 0 .617-.118.853-.353l5.941-5.941 5.941 5.941c.236.236.544.353.853.353.309 0 .617-.118.853-.353.471-.471.471-1.235 0-1.706l-5.941-5.941"></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </label>
+      <a href="/" class="title">
+        <span class="sr-only">DevTools Tips</span>
+      </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/">All tips</a></li>
-          <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          <li><a href="/all/">All tips</a></li>
+          <li>Tips by category
+            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
-          <li tabindex="0">Browsers
-            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          <li>Tips by browser
+            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="header-shadow"></div>
-    <div class="header-shadow-block"></div>
-    <main id="maincontent" >
+    <main >
       <div class="page-toolbar">
-  <h1>160 DevTools Tips</h1>
-  <div id="search" class="search"></div>
-<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+        <label class="menu-button" title="Menu">
+          <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
+            <g transform="translate(0,-952.36218)">
+              <path d="m 13,968.36217 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6 0,3.31359 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.68641 6,-6 0,-3.31381 -2.6863,-6 -6,-6 z m 0,28 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6.00003 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.31384 -2.6863,-6.00003 -6,-6.00003 z m 0,28.00003 c -3.3136998,0 -5.9999998,2.6862 -5.9999998,6 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.3138 -2.6863,-6 -6,-6 z"></path>
+            </g>
+          </svg>
+          <input type="checkbox" id="show-menu">
+          <span class="sr-only">Open menu</span>
+        </label>
+        <div id="search" class="search"></div>
+<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false, translations: { placeholder: 'Search tips' } });"></script>
 
-</div>
+        <div class="social" >
+          <a href="https://github.com/captainbrosset/devtools-tips" title="GitHub repository, to file issues and create new tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            </svg>
+            <span class="sr-only">GitHub repository</span>
+          </a>
+          <a href="https://front-end.social/@devtoolstips" title="Mastodon account, to stay updated with our latest tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"></path>
+            </svg>
+            <span class="sr-only">Mastodon social account</span>
+          </a>
+        </div>
+      </div>
+      <div id="maincontent">
+        <h1>160 DevTools Tips</h1>
 <ul class="tips">
 <li class="hover-box tip " style="view-transition-name:post-list-used-fonts;">
   <a href="/tips/en/list-used-fonts/" class="tip-title">List the fonts used on a page, or an element</a>
   <a href="/tips/en/list-used-fonts/" class="tip-image"><img src="../../assets/img/list-used-fonts-firefox.png" alt="Firefox, with DevTools on the side, showing the Fonts panel that contains the list of fonts. One of the fonts is hovered" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    &quot;What font is that?&quot; or &quot;Why is this font used?&quot; are probably questions you've a...
+    &quot;What font is that?&quot; or &quot;Why is this font used?&quot; are probably questions you've asked yourself while working on a website design.
+However, it's not always easy to know which fonts a...
     <a href="/tips/en/list-used-fonts/">Read more</a>
   </div>
   <div class="tip-info">
@@ -64,7 +95,7 @@
   <a href="/tips/en/see-request-path-instead-of-name/" class="tip-title">See network request paths instead of names in the Network tool</a>
   <a href="/tips/en/see-request-path-instead-of-name/" class="tip-image"><img src="../../assets/img/see-request-path-instead-of-name.png" alt="The Network tool in Edge, showing the contextual menu that's used to customize the network list columns" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    By default, the Network tool displays the name of each requested resource. For example, if a webpage...
+    By default, the Network tool displays the name of each requested resource. For example, if a webpage requests an image from https://mysite.com/assets/img/image.png then the tool only displays image.pn...
     <a href="/tips/en/see-request-path-instead-of-name/">Read more</a>
   </div>
   <div class="tip-info">
@@ -79,7 +110,7 @@
   <a href="/tips/en/display-current-framerate/" class="tip-title">Display the current framerate of your webpage</a>
   <a href="/tips/en/display-current-framerate/" class="tip-image"><img src="../../assets/img/display-current-framerate.png" alt="Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    For a super smooth user experience on your website or app, it's better if the browser manages to ren...
+    For a super smooth user experience on your website or app, it's better if the browser manages to render your page at a high framerate. Ideally, this rate should be 60 frames per second (FPS). This giv...
     <a href="/tips/en/display-current-framerate/">Read more</a>
   </div>
   <div class="tip-info">
@@ -94,7 +125,7 @@
   <a href="/tips/en/detect-unused-code/" class="tip-title">Detect unused CSS and JavaScript code</a>
   <a href="/tips/en/detect-unused-code/" class="tip-image"><img src="../../assets/img/detect-unused-code.png" alt="Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that...
+    To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when th...
     <a href="/tips/en/detect-unused-code/">Read more</a>
   </div>
   <div class="tip-info">
@@ -109,7 +140,8 @@
   <a href="/tips/en/throttle-cpu/" class="tip-title">Throttle your CPU</a>
   <a href="/tips/en/throttle-cpu/" class="tip-image"><img src="../../assets/img/throttle-cpu.png" alt="The Performance tool in Chrome showing the CPU throttling drop-down." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Your development machine is very likely much more powerful than the devices your users have (which a...
+    Your development machine is very likely much more powerful than the devices your users have (which are probably low-end mobile devices).
+Before you ship your new app or site, thinking that it will run...
     <a href="/tips/en/throttle-cpu/">Read more</a>
   </div>
   <div class="tip-info">
@@ -124,7 +156,9 @@
   <a href="/tips/en/get-size-of-resource-types/" class="tip-title">See the size of the transferred data for images, scripts, or other resources</a>
   <a href="/tips/en/get-size-of-resource-types/" class="tip-image"><img src="../../assets/img/get-size-of-resource-types.png" alt="The Network tool in Chrome, with the transferred size highlighted" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    To know how much data your website transfers between the server and the client to display images, or...
+    To know how much data your website transfers between the server and the client to display images, or scripts, or anything else:
+Open the Network tool.
+Refresh the page to make sure the list of req...
     <a href="/tips/en/get-size-of-resource-types/">Read more</a>
   </div>
   <div class="tip-info">
@@ -139,7 +173,8 @@
   <a href="/tips/en/view-logs-for-other-browsers-on-ios/" class="tip-title">View console logs from non-Safari browsers on an iPhone</a>
   <a href="/tips/en/view-logs-for-other-browsers-on-ios/" class="tip-image"><img src="../../assets/img/view-logs-for-other-browsers-on-ios.png" alt="Edge on iOS, showing the about:inspect page, filled with logs" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Using the about:inspect special page you can see your website's logs in Chrome or Edge running on iP...
+    Using the about:inspect special page you can see your website's logs in Chrome or Edge running on iPhone!
+This is important because debugging a webpage that's running in Safari on an iPhone isn't hard...
     <a href="/tips/en/view-logs-for-other-browsers-on-ios/">Read more</a>
   </div>
   <div class="tip-info">
@@ -155,7 +190,7 @@
   <a href="/tips/en/disable-abusive-debugger-statement/" class="tip-image"><img src="../../assets/img/disable-abusive-debugger-statement.gif" alt="The Sources tool in Firefox, showing how to add a conditional breakpoint." loading="lazy"></img></a>
   <div class="tip-excerpt">
     Some websites make it impossible to use DevTools by adding debugger statements in their code.
-The st...
+The statements don't do anything for normal users, but as soon as DevTools is opened, the JavaScript execu...
     <a href="/tips/en/disable-abusive-debugger-statement/">Read more</a>
   </div>
   <div class="tip-info">
@@ -170,7 +205,7 @@ The st...
   <a href="/tips/en/emulate-color-schemes/" class="tip-title">Emulate color schemes</a>
   <a href="/tips/en/emulate-color-schemes/" class="tip-image"><img src="../../assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    In CSS, you can use the prefers-color-scheme media feature (docs) to detect if the user prefers usin...
+    In CSS, you can use the prefers-color-scheme media feature (docs) to detect if the user prefers using a light or a dark theme in their operating system. This is useful to style your website in a way t...
     <a href="/tips/en/emulate-color-schemes/">Read more</a>
   </div>
   <div class="tip-info">
@@ -185,7 +220,8 @@ The st...
   <a href="/tips/en/simulate-multiple-devices/" class="tip-title">Simulate multiple devices that are kept in sync</a>
   <a href="/tips/en/simulate-multiple-devices/" class="tip-image"><img src="../../assets/img/simulate-devices-polypane.png" alt="Polypane showing three different devices side-by-side." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Instead of simulating devices one by one and switching between them, Polypane supports testing on mu...
+    Instead of simulating devices one by one and switching between them, Polypane supports testing on multiple simulated devices and viewports at the same time.
+It lets you test different simulated device...
     <a href="/tips/en/simulate-multiple-devices/">Read more</a>
   </div>
   <div class="tip-info">
@@ -200,7 +236,7 @@ The st...
   <a href="/tips/en/show-web-vitals/" class="tip-title">Show web vitals</a>
   <a href="/tips/en/show-web-vitals/" class="tip-image"><img src="../../assets/img/show-web-vitals.png" alt="The web vitals tooltip in Polypane showing a good CLS, LCP and FCP score and a FID score that needs improvement." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Web vitals are a set of metrics that help you determine how well-built your page is. You can learn m...
+    Web vitals are a set of metrics that help you determine how well-built your page is. You can learn more about them here. These scores can be obtained with various online checks like PageSpeed Insights...
     <a href="/tips/en/show-web-vitals/">Read more</a>
   </div>
   <div class="tip-info">
@@ -215,7 +251,7 @@ The st...
   <a href="/tips/en/manipulate-global-objects-on-page-load/" class="tip-title">Manipulate global objects on page load, before other scripts run</a>
   <a href="/tips/en/manipulate-global-objects-on-page-load/" class="tip-image"><img src="../../assets/img/manipulate-global-objects-on-page-load.png" alt="The Sources tab in Safari's WebInspector, showing the Add resource button and the Bootstrap script type" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When a page loads, and all of its global objects are ready, but before the JavaScript code of the pa...
+    When a page loads, and all of its global objects are ready, but before the JavaScript code of the page actually kicks-in, is a great time to inject debugging code. For example, it might be useful to r...
     <a href="/tips/en/manipulate-global-objects-on-page-load/">Read more</a>
   </div>
   <div class="tip-info">
@@ -230,7 +266,7 @@ The st...
   <a href="/tips/en/form-testing/" class="tip-title">Autofill forms for testing</a>
   <a href="/tips/en/form-testing/" class="tip-image"><img src="../../assets/img/form-testing.gif" alt="Animation of a form being filled after selecting &quot;autofill&quot; in the context menu, followed by the form being emptied after choosing &quot;Clear form&quot; in the context menu." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    In Polypane you can right-click any form on the page and select Autofill form to add dummy values to...
+    In Polypane you can right-click any form on the page and select Autofill form to add dummy values to all input elements. This prevents you from having to go field-by-field to fill in all required fiel...
     <a href="/tips/en/form-testing/">Read more</a>
   </div>
   <div class="tip-info">
@@ -245,7 +281,7 @@ The st...
   <a href="/tips/en/reload-page-after-change/" class="tip-title">Reload a page when there&#39;s changes on disk</a>
   <a href="/tips/en/reload-page-after-change/" class="tip-image"><img src="../../assets/img/reload-page-after-change.png" alt="Polypane with the live reload panel and reload context menu visible." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    While working on a page locally and you're not using a hot reloading dev server, you need to reload...
+    While working on a page locally and you're not using a hot reloading dev server, you need to reload the browser yourself to see the change. You need to do this every time you save a file. Wouldn't it...
     <a href="/tips/en/reload-page-after-change/">Read more</a>
   </div>
   <div class="tip-info">
@@ -260,7 +296,7 @@ The st...
   <a href="/tips/en/test-pwa-protocol-handlers/" class="tip-title">Test your PWA protocol handlers</a>
   <a href="/tips/en/test-pwa-protocol-handlers/" class="tip-image"><img src="../../assets/img/test-pwa-protocol-handlers.png" alt="Microsoft Edge, with the Application tool opened on the side, showing the Protocol Handlers section." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Progressive Web Apps (PWA) can register themselves to handle URIs with pre-defined or custom protoco...
+    Progressive Web Apps (PWA) can register themselves to handle URIs with pre-defined or custom protocols (such as mailto, geo, or web+foo). This is a great capability that makes it possible for installe...
     <a href="/tips/en/test-pwa-protocol-handlers/">Read more</a>
   </div>
   <div class="tip-info">
@@ -275,7 +311,8 @@ The st...
   <a href="/tips/en/see-json-responses/" class="tip-title">See formatted JSON responses</a>
   <a href="/tips/en/see-json-responses/" class="tip-image"><img src="../../assets/img/see-json-responses.png" alt="The JSON viewer in Microsoft Edge." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Edge (starting with 110), Firefox and Polypane all have a very nice JSON viewer tool that makes it e...
+    Edge (starting with 110), Firefox and Polypane all have a very nice JSON viewer tool that makes it easy to view JSON responses from your server directly in the browser window.
+You don't even need to o...
     <a href="/tips/en/see-json-responses/">Read more</a>
   </div>
   <div class="tip-info">
@@ -290,7 +327,8 @@ The st...
   <a href="/tips/en/emulate-idle-detection-states/" class="tip-title">Emulate idle detection states</a>
   <a href="/tips/en/emulate-idle-detection-states/" class="tip-image"><img src="../../assets/img/emulate-idle-detection-states.png" alt="Chrome DevTools' Sensors panel, showing a drop-down list with the different states that can be emulated." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The Idle Detection API is useful for web developers to detect when the user isn't interacting with t...
+    The Idle Detection API is useful for web developers to detect when the user isn't interacting with their device. This can be useful for chat applications, for example, to mark the user as away.
+Note:...
     <a href="/tips/en/emulate-idle-detection-states/">Read more</a>
   </div>
   <div class="tip-info">
@@ -305,7 +343,7 @@ The st...
   <a href="/tips/en/debug-unwanted-scrollbars/" class="tip-title">Debug unwanted scrollbars</a>
   <a href="/tips/en/debug-unwanted-scrollbars/" class="tip-image"><img src="../../assets/img/debug-unwanted-scrollbars-1.png" alt="Firefox DevTools, with the Inspector panel showing the Scroll badge on an element." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes scrollbars appear on a web page in places we don't want them to. And when this happens, it...
+    Sometimes scrollbars appear on a web page in places we don't want them to. And when this happens, it's not always very straightforward to fix the problem. Which container is responsible for the scroll...
     <a href="/tips/en/debug-unwanted-scrollbars/">Read more</a>
   </div>
   <div class="tip-info">
@@ -320,7 +358,9 @@ The st...
   <a href="/tips/en/find-expensive-selectors/" class="tip-title">Find the most expensive CSS selectors</a>
   <a href="/tips/en/find-expensive-selectors/" class="tip-image"><img src="../../assets/img/find-expensive-selectors.png" alt="The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When it comes to performance, we often spend time improving our JavaScript code. But CSS has a role...
+    When it comes to performance, we often spend time improving our JavaScript code. But CSS has a role to play too.
+CSS selectors, in particular, can sometimes be slow to match to the DOM of the page.
+Be...
     <a href="/tips/en/find-expensive-selectors/">Read more</a>
   </div>
   <div class="tip-info">
@@ -335,7 +375,8 @@ The st...
   <a href="/tips/en/list-console-functions/" class="tip-title">List all supported console functions</a>
   <a href="/tips/en/list-console-functions/" class="tip-image"><img src="../../assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the  command result, which is an object containing a list of functions such as assert, clear, debug." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    You've probably already used console.log() in your code to print debugging values to the Console too...
+    You've probably already used console.log() in your code to print debugging values to the Console tool in DevTools. But the console namespace actually has many other functions too!
+To list them all, op...
     <a href="/tips/en/list-console-functions/">Read more</a>
   </div>
   <div class="tip-info">
@@ -350,7 +391,7 @@ The st...
   <a href="/tips/en/hide-or-pin-inspect-info-tooltip/" class="tip-title">Hide or pin the information tooltip while inspecting page elements</a>
   <a href="/tips/en/hide-or-pin-inspect-info-tooltip/" class="tip-image"><img src="../../assets/img/hide-or-pin-inspect-info-tooltip-1.png" alt="Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When selecting elements from the page using the inspect tool, the hovered elements get highlighted,...
+    When selecting elements from the page using the inspect tool, the hovered elements get highlighted, and an information tooltip follows your mouse around and gives you information about the hovered ele...
     <a href="/tips/en/hide-or-pin-inspect-info-tooltip/">Read more</a>
   </div>
   <div class="tip-info">
@@ -365,7 +406,8 @@ The st...
   <a href="/tips/en/understand-flexbox-item-sizing/" class="tip-title">Understand flexbox item sizing</a>
   <a href="/tips/en/understand-flexbox-item-sizing/" class="tip-image"><img src="../../assets/img/understand-flexbox-item-sizing.png" alt="Firefox, with the DevTools Inspector tool opened, showing the Layout sidebar that contains the flex item diagram." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Flexbox is a great way to easily distribute elements and empty space in a row or a column, and creat...
+    Flexbox is a great way to easily distribute elements and empty space in a row or a column, and create interesting layouts.
+It only takes a couple of CSS properties to create nice layouts that automati...
     <a href="/tips/en/understand-flexbox-item-sizing/">Read more</a>
   </div>
   <div class="tip-info">
@@ -380,7 +422,7 @@ The st...
   <a href="/tips/en/customize-keyboard-shortcuts/" class="tip-title">Customize keyboard shortcuts</a>
   <a href="/tips/en/customize-keyboard-shortcuts/" class="tip-image"><img src="../../assets/img/customize-keyboard-shortcuts.png" alt="The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    DevTools comes with tons of keyboard shortcuts. Some are well known (like F12 to open DevTools), but...
+    DevTools comes with tons of keyboard shortcuts. Some are well known (like F12 to open DevTools), but there are many others which you might not be familiar with, and which could make your life easier....
     <a href="/tips/en/customize-keyboard-shortcuts/">Read more</a>
   </div>
   <div class="tip-info">
@@ -395,7 +437,8 @@ The st...
   <a href="/tips/en/use-scripts-as-snippets/" class="tip-title">Re-use scripts as snippets</a>
   <a href="/tips/en/use-scripts-as-snippets/" class="tip-image"><img src="../../assets/img/use-scripts-as-snippets-1.png" alt="The snippets editor in the Sources tool with a snippet open in the editor." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The Console is great to write short JavaScript expressions that read from the document or manipulate...
+    The Console is great to write short JavaScript expressions that read from the document or manipulate it. But it's also a terrible editor.
+You can actually use a full editor in Edge, Chrome, and Safari...
     <a href="/tips/en/use-scripts-as-snippets/">Read more</a>
   </div>
   <div class="tip-info">
@@ -410,7 +453,8 @@ The st...
   <a href="/tips/en/simulate-devices/" class="tip-title">Simulate different devices and screen sizes</a>
   <a href="/tips/en/simulate-devices/" class="tip-image"><img src="../../assets/img/simulate-devices-chrome.png" alt="Chrome, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    All browser DevTools have a built-in mode that you can use to test a webpage under different screen...
+    All browser DevTools have a built-in mode that you can use to test a webpage under different screen sizes and device capabilities.
+As a web developer, it is very important to realize that your website...
     <a href="/tips/en/simulate-devices/">Read more</a>
   </div>
   <div class="tip-info">
@@ -425,54 +469,51 @@ The st...
   <ul>
     
       <li>
-        <a href="/" >
+        <a href="/all/" >
           Home
         </a>
       </li>
     
       <li>
-        <a href="/1/" aria-current="page">
+        <a href="/all/1/" aria-current="page">
           Page 1
         </a>
       </li>
     
       <li>
-        <a href="/2/" >
+        <a href="/all/2/" >
           Page 2
         </a>
       </li>
     
       <li>
-        <a href="/3/" >
+        <a href="/all/3/" >
           Page 3
         </a>
       </li>
     
       <li>
-        <a href="/4/" >
+        <a href="/all/4/" >
           Page 4
         </a>
       </li>
     
       <li>
-        <a href="/5/" >
+        <a href="/all/5/" >
           Page 5
         </a>
       </li>
     
       <li>
-        <a href="/6/" >
+        <a href="/all/6/" >
           Page 6
         </a>
       </li>
     
   </ul>
 </nav>
+      </div>
     </main>
-    <footer role="contentinfo">
-      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
-      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
-    </footer>
 
     
     

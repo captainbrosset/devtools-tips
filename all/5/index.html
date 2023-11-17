@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>All DevTools Tips</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/5/">
+    <meta property="og:url" content="https://devtoolstips.org/all/5/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
     <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
@@ -22,34 +22,64 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <a href="/" class="logo">DevTools Tips</a>
+      <label for="show-menu">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" x="0px" y="0px">
+          <path d="m9.706 8l5.941-5.941c.471-.471.471-1.235 0-1.706-.471-.471-1.235-.471-1.706 0l-5.941 5.941-5.941-5.941c-.471-.471-1.235-.471-1.706 0-.471.471-.471 1.235 0 1.706l5.941 5.941-5.941 5.941c-.471.471-.471 1.235 0 1.706.235.236.544.353.853.353.309 0 .617-.118.853-.353l5.941-5.941 5.941 5.941c.236.236.544.353.853.353.309 0 .617-.118.853-.353.471-.471.471-1.235 0-1.706l-5.941-5.941"></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </label>
+      <a href="/" class="title">
+        <span class="sr-only">DevTools Tips</span>
+      </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/">All tips</a></li>
-          <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          <li><a href="/all/">All tips</a></li>
+          <li>Tips by category
+            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
-          <li tabindex="0">Browsers
-            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          <li>Tips by browser
+            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="header-shadow"></div>
-    <div class="header-shadow-block"></div>
-    <main id="maincontent" >
+    <main >
       <div class="page-toolbar">
-  <h1>160 DevTools Tips</h1>
-  <div id="search" class="search"></div>
-<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+        <label class="menu-button" title="Menu">
+          <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
+            <g transform="translate(0,-952.36218)">
+              <path d="m 13,968.36217 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6 0,3.31359 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.68641 6,-6 0,-3.31381 -2.6863,-6 -6,-6 z m 0,28 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6.00003 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.31384 -2.6863,-6.00003 -6,-6.00003 z m 0,28.00003 c -3.3136998,0 -5.9999998,2.6862 -5.9999998,6 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.3138 -2.6863,-6 -6,-6 z"></path>
+            </g>
+          </svg>
+          <input type="checkbox" id="show-menu">
+          <span class="sr-only">Open menu</span>
+        </label>
+        <div id="search" class="search"></div>
+<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false, translations: { placeholder: 'Search tips' } });"></script>
 
-</div>
+        <div class="social" >
+          <a href="https://github.com/captainbrosset/devtools-tips" title="GitHub repository, to file issues and create new tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            </svg>
+            <span class="sr-only">GitHub repository</span>
+          </a>
+          <a href="https://front-end.social/@devtoolstips" title="Mastodon account, to stay updated with our latest tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"></path>
+            </svg>
+            <span class="sr-only">Mastodon social account</span>
+          </a>
+        </div>
+      </div>
+      <div id="maincontent">
+        <h1>160 DevTools Tips</h1>
 <ul class="tips">
 <li class="hover-box tip " style="view-transition-name:post-force-pwa-periodic-sync;">
   <a href="/tips/en/force-pwa-periodic-sync/" class="tip-title">Force PWA periodic background syncs</a>
   <a href="/tips/en/force-pwa-periodic-sync/" class="tip-image"><img src="../../assets/img/force-pwa-periodic-sync.png" alt="The Application panel in Edge showing the periodic sync input and buttons." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The periodic background sync API, available to PWAs is a great way to fetch new content while the us...
+    The periodic background sync API, available to PWAs is a great way to fetch new content while the user isn't on the site, and while they have access to the network, to make sure they have the latest c...
     <a href="/tips/en/force-pwa-periodic-sync/">Read more</a>
   </div>
   <div class="tip-info">
@@ -64,7 +94,8 @@
   <a href="/tips/en/play-sound-on-js-execution/" class="tip-title">Play a sound when a line of JavaScript is executed</a>
   <a href="/tips/en/play-sound-on-js-execution/" class="tip-image"><img src="../../assets/img/play-sound-on-js-execution.gif" alt="Animation showing how to add the audio breakpoint in Safari Web Inspector." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes pausing execution when a line of JavaScript is executed is too much, sometimes you only wa...
+    Sometimes pausing execution when a line of JavaScript is executed is too much, sometimes you only want to know that the line was executed at all, not pause there.
+To do this you can add console.log()...
     <a href="/tips/en/play-sound-on-js-execution/">Read more</a>
   </div>
   <div class="tip-info">
@@ -79,7 +110,7 @@
   <a href="/tips/en/visualize-screenreader-order/" class="tip-title">Visualize the screen reader order for elements within the page</a>
   <a href="/tips/en/visualize-screenreader-order/" class="tip-image"><img src="../../assets/img/visualize-screenreader-order.png" alt="The source order viewer in Microsoft Edge, showing numbered boxes around elements." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Edge has an accessibility tab within the elements panel that, among other things, lets you visualize...
+    Edge has an accessibility tab within the elements panel that, among other things, lets you visualize the order a screen reader will encounter elements on a page. This is determined by the order of ele...
     <a href="/tips/en/visualize-screenreader-order/">Read more</a>
   </div>
   <div class="tip-info">
@@ -94,7 +125,7 @@
   <a href="/tips/en/block-resources/" class="tip-title">Block resources to test your site without CSS or JavaScript</a>
   <a href="/tips/en/block-resources/" class="tip-image"><img src="../../assets/img/block-resources-1.png" alt="The Network panel in Edge showing the contextual menu with the &quot;block request url&quot; item." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The various resources loaded by your site aren't always guaranteed to reach your users when they vis...
+    The various resources loaded by your site aren't always guaranteed to reach your users when they visit your site. Network problems can occur, JavaScript may be disabled, a CDN may be down, or the brow...
     <a href="/tips/en/block-resources/">Read more</a>
   </div>
   <div class="tip-info">
@@ -109,7 +140,8 @@
   <a href="/tips/en/prototype-content-changes-with-designmode/" class="tip-title">Prototype content changes with designMode</a>
   <a href="/tips/en/prototype-content-changes-with-designmode/" class="tip-image"><img src="../../assets/img/prototype-content-changes-with-designmode.gif" alt="Animation of editable web page with designMode on." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When creating or modifying a design prototype for the web, you may want to quickly edit content in t...
+    When creating or modifying a design prototype for the web, you may want to quickly edit content in the browser without having to find the relevant code.
+When you turn on designMode for the document or...
     <a href="/tips/en/prototype-content-changes-with-designmode/">Read more</a>
   </div>
   <div class="tip-info">
@@ -125,7 +157,7 @@
   <a href="/tips/en/capture-node-creation-stacks/" class="tip-image"><img src="../../assets/img/capture-node-creation-stacks.png" alt="Edge DevTools' Elements panel with the Stack Trace sidebar visible, showing a stack of Vue JS function calls that created an element on the TODOMVC sample app." loading="lazy"></img></a>
   <div class="tip-excerpt">
     Have you ever wanted to know what caused a specific DOM node or element to be created in the page?
-W...
+When working on a site that uses a lot of JavaScript and especially when you don't know the codebase,...
     <a href="/tips/en/capture-node-creation-stacks/">Read more</a>
   </div>
   <div class="tip-info">
@@ -140,7 +172,7 @@ W...
   <a href="/tips/en/throttle-network-speed/" class="tip-title">Throttle the network speed to test your website on slower connections</a>
   <a href="/tips/en/throttle-network-speed/" class="tip-image"><img src="../../assets/img/throttle-network-speed.png" alt="The Network panel in Edge showing the network throttling drop-down." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    While you may develop your website on a fast network connection at home or at work, your users may n...
+    While you may develop your website on a fast network connection at home or at work, your users may not be able to use it with an equally fast connection. Perhaps they're in a moving car, or on the sub...
     <a href="/tips/en/throttle-network-speed/">Read more</a>
   </div>
   <div class="tip-info">
@@ -155,7 +187,7 @@ W...
   <a href="/tips/en/edit-position/" class="tip-title">Edit CSS absolute and relative positions by dragging points in the page</a>
   <a href="/tips/en/edit-position/" class="tip-image"><img src="../../assets/img/edit-position.gif" alt="Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Firefox features a position editor that lets you move elements in the page by drag and drop. This wo...
+    Firefox features a position editor that lets you move elements in the page by drag and drop. This works with elements that are positioned in CSS with position:relative or position:absolute and that ha...
     <a href="/tips/en/edit-position/">Read more</a>
   </div>
   <div class="tip-info">
@@ -170,7 +202,9 @@ W...
   <a href="/tips/en/copy-element-xpath/" class="tip-title">Copy an element&#39;s XPath expression</a>
   <a href="/tips/en/copy-element-xpath/" class="tip-image"><img src="../../assets/img/copy-element-xpath.png" alt="The Elements panel in Edge showing the copy xpath option in the contextual menu." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    You can easily copy an element's XPath expression from DevTools. This is useful if you need this exp...
+    You can easily copy an element's XPath expression from DevTools. This is useful if you need this expression for an automated test for example.
+Go to the Elements (or Inspector) panel
+Use the context-...
     <a href="/tips/en/copy-element-xpath/">Read more</a>
   </div>
   <div class="tip-info">
@@ -185,7 +219,8 @@ W...
   <a href="/tips/en/convert-font-units/" class="tip-title">Convert font property units</a>
   <a href="/tips/en/convert-font-units/" class="tip-image"><img src="../../assets/img/convert-font-units-1.png" alt="The fonts panel in Firefox, showing the unit conversion drop-down." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Font CSS properties such as font-size, line-height or letter-spacing can be expressed in multiple di...
+    Font CSS properties such as font-size, line-height or letter-spacing can be expressed in multiple different length units (like many other CSS properties).
+Firefox, Chrome and Edge allow you to convert...
     <a href="/tips/en/convert-font-units/">Read more</a>
   </div>
   <div class="tip-info">
@@ -200,7 +235,8 @@ W...
   <a href="/tips/en/find-devtools-documentation/" class="tip-title">Find DevTools reference documentation</a>
   <a href="/tips/en/find-devtools-documentation/" class="tip-image"><img src="../../assets/img/find-devtools-documentation.png" alt="The 4 documentation websites listed above." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you want to learn more about what other tools exist in a browser, or what features a given tool p...
+    If you want to learn more about what other tools exist in a browser, or what features a given tool provides, you can find reference documentation from all the major browsers here:
+Firefox Developer T...
     <a href="/tips/en/find-devtools-documentation/">Read more</a>
   </div>
   <div class="tip-info">
@@ -215,7 +251,7 @@ W...
   <a href="/tips/en/drag-drop-dom-nodes/" class="tip-title">Drag and drop nodes in the DOM tree</a>
   <a href="/tips/en/drag-drop-dom-nodes/" class="tip-image"><img src="../../assets/img/drag-drop-dom-nodes.gif" alt="Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you need to move nodes or elements around in the DOM tree, to re-order things in the page, you ca...
+    If you need to move nodes or elements around in the DOM tree, to re-order things in the page, you can do it by drag and dropping nodes around in the Elements (or Inspector) panel....
     <a href="/tips/en/drag-drop-dom-nodes/">Read more</a>
   </div>
   <div class="tip-info">
@@ -230,7 +266,8 @@ W...
   <a href="/tips/en/suppressed-event-listeners-when-paused/" class="tip-title">Event listeners are suppressed when paused</a>
   <a href="/tips/en/suppressed-event-listeners-when-paused/" class="tip-image"><img src="../../assets/img/suppressed-event-listeners-when-paused.png" alt="A page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript....
+    This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript.
+If you use breakpoints in the Sources (or Debugger) tab in DevTools to debug JavaScript, you should...
     <a href="/tips/en/suppressed-event-listeners-when-paused/">Read more</a>
   </div>
   <div class="tip-info">
@@ -245,7 +282,8 @@ W...
   <a href="/tips/en/sample-colors-from-the-page/" class="tip-title">Sample colors from the page</a>
   <a href="/tips/en/sample-colors-from-the-page/" class="tip-image"><img src="../../assets/img/sample-colors-from-the-page-1.gif" alt="Animation of the eyedropper tool being started from the Firefox main menu." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Being able to sample colors from the page is super useful. Firefox, Edge and Chrome all allow you to...
+    Being able to sample colors from the page is super useful. Firefox, Edge and Chrome all allow you to do this in 2 different ways:
+In Firefox it's really simple and doesn't even require opening DevToo...
     <a href="/tips/en/sample-colors-from-the-page/">Read more</a>
   </div>
   <div class="tip-info">
@@ -260,7 +298,7 @@ W...
   <a href="/tips/en/visualize-tabbing-order/" class="tip-title">Visualize the tabbing order on the page</a>
   <a href="/tips/en/visualize-tabbing-order/" class="tip-image"><img src="../../assets/img/visualize-tabbing-order.png" alt="The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Users who do not or can't use a mouse or trackpad can use the tab key to navigate through focusable...
+    Users who do not or can't use a mouse or trackpad can use the tab key to navigate through focusable elements on the page. If the order in which those elements get focused is incorrect, this might give...
     <a href="/tips/en/visualize-tabbing-order/">Read more</a>
   </div>
   <div class="tip-info">
@@ -276,7 +314,7 @@ W...
   <a href="/tips/en/style-console-messages/" class="tip-image"><img src="../../assets/img/style-console-messages.png" alt="A styled console message in Edge." loading="lazy"></img></a>
   <div class="tip-excerpt">
     The console.log output can be styled in DevTools using CSS.
-console.log('%c Hello World', 'color: or...
+console.log('%c Hello World', 'color: orange; font-size: 2em;');...
     <a href="/tips/en/style-console-messages/">Read more</a>
   </div>
   <div class="tip-info">
@@ -291,7 +329,7 @@ console.log('%c Hello World', 'color: or...
   <a href="/tips/en/find-all-images-without-alt-text/" class="tip-title">Find all images without alternative text</a>
   <a href="/tips/en/find-all-images-without-alt-text/" class="tip-image"><img src="../../assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    With HTML, you can add alternative text to images using the alt attribute. It can be used to add a t...
+    With HTML, you can add alternative text to images using the alt attribute. It can be used to add a text description to images, which is extremely useful for accessibility as some people may not be abl...
     <a href="/tips/en/find-all-images-without-alt-text/">Read more</a>
   </div>
   <div class="tip-info">
@@ -306,7 +344,7 @@ console.log('%c Hello World', 'color: or...
   <a href="/tips/en/outline-everything/" class="tip-title">Draw a box around all elements to debug your CSS and page structure</a>
   <a href="/tips/en/outline-everything/" class="tip-image"><img src="../../assets/img/outline-everything.gif" alt="Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Simple, yet powerful, * { outline: 1px solid red; } is a useful debugging trick that helps understan...
+    Simple, yet powerful, * { outline: 1px solid red; } is a useful debugging trick that helps understanding the page structure, finding overflow bugs or understand why elements are being pushed away for...
     <a href="/tips/en/outline-everything/">Read more</a>
   </div>
   <div class="tip-info">
@@ -322,7 +360,7 @@ console.log('%c Hello World', 'color: or...
   <a href="/tips/en/query-dom-from-console/" class="tip-image"><img src="../../assets/img/query-dom-from-console.png" alt="Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions." loading="lazy"></img></a>
   <div class="tip-excerpt">
     $ and $$ are 2 functions you can use in the console to find elements in the page.
-They are essential...
+They are essentially shortcuts to the longer document.querySelector() and document.querySelectorAll() functions, but $...
     <a href="/tips/en/query-dom-from-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -337,7 +375,7 @@ They are essential...
   <a href="/tips/en/persist-logs-across-pages/" class="tip-title">Persist console messages across page navigations and reloads</a>
   <a href="/tips/en/persist-logs-across-pages/" class="tip-image"><img src="../../assets/img/persist-logs-across-pages.png" alt="Edge devtools' console showing the settings panel at the top, with the &quot;perserve log&quot; box checked." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    By default, the messages displayed in the console get removed as soon as you refresh the page (or na...
+    By default, the messages displayed in the console get removed as soon as you refresh the page (or navigate to a new page). If you want to keep those messages as long as DevTools is open, follow these...
     <a href="/tips/en/persist-logs-across-pages/">Read more</a>
   </div>
   <div class="tip-info">
@@ -352,7 +390,8 @@ They are essential...
   <a href="/tips/en/simulate-color-vision-deficiencies/" class="tip-title">Simulate color vision deficiencies</a>
   <a href="/tips/en/simulate-color-vision-deficiencies/" class="tip-image"><img src="../../assets/img/simulate-color-vision-deficiencies-1.png" alt="The color vision simulation drop-down in Firefox." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    People who visit your web pages may have different types of color vision deficiencies that, if you i...
+    People who visit your web pages may have different types of color vision deficiencies that, if you incorrectly use colors for meaning, may affect their experience.
+Firefox, Chrome, Polypane and Edge m...
     <a href="/tips/en/simulate-color-vision-deficiencies/">Read more</a>
   </div>
   <div class="tip-info">
@@ -367,7 +406,8 @@ They are essential...
   <a href="/tips/en/edit-css-angles/" class="tip-title">Edit CSS angles</a>
   <a href="/tips/en/edit-css-angles/" class="tip-image"><img src="../../assets/img/edit-css-angles.gif" alt="Animation of the angle editor in Chrome, where a click is made on the angle swatch, and then the mouse is used to change the angle." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    In CSS, several different properties use angle unit values, such as the rotate() function of a trans...
+    In CSS, several different properties use angle unit values, such as the rotate() function of a transform or the linear-gradient orientation of a background-image, and more.
+In Chrome and Edge, whereve...
     <a href="/tips/en/edit-css-angles/">Read more</a>
   </div>
   <div class="tip-info">
@@ -382,7 +422,8 @@ They are essential...
   <a href="/tips/en/edit-clip-path-shape-outside/" class="tip-title">Edit clip-path and shape-outside CSS properties by dragging points in the page</a>
   <a href="/tips/en/edit-clip-path-shape-outside/" class="tip-image"><img src="../../assets/img/edit-clip-path-shape-outside.gif" alt="Animation of the shape editor in firefox, clicking on the Rules panel icon, and then moving points around in the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The clip-path property is a great way to change the final shape of an element and give it the shape...
+    The clip-path property is a great way to change the final shape of an element and give it the shape that you want.
+You can use this property to make an element be a circle, an ellipse, a polygon or an...
     <a href="/tips/en/edit-clip-path-shape-outside/">Read more</a>
   </div>
   <div class="tip-info">
@@ -397,7 +438,8 @@ They are essential...
   <a href="/tips/en/copy-from-console/" class="tip-title">Copy an object from the console</a>
   <a href="/tips/en/copy-from-console/" class="tip-image"><img src="../../assets/img/copy-from-console.png" alt="Chrome devtools' console with a line of code using the copy() function." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The console panel supports a very handy copy() function that stringifies and copies anything you pas...
+    The console panel supports a very handy copy() function that stringifies and copies anything you pass to it as an argument, so you can then paste it somewhere else.
+For example: copy($$('a').map(a =&g...
     <a href="/tips/en/copy-from-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -412,7 +454,8 @@ They are essential...
   <a href="/tips/en/get-current-element-in-console/" class="tip-title">Get the selected element in the console</a>
   <a href="/tips/en/get-current-element-in-console/" class="tip-image"><img src="../../assets/img/get-current-element-in-console.jpg" alt="Safari's console showing how the $0 shortcut returns the selected element." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you selected an element in the Elements panel (in Chrome, Safari, Polypane or Edge) or the Inspec...
+    If you selected an element in the Elements panel (in Chrome, Safari, Polypane or Edge) or the Inspector panel (in Firefox), you can refer to it in the console using $0.
+This shortcut will return the D...
     <a href="/tips/en/get-current-element-in-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -427,54 +470,51 @@ They are essential...
   <ul>
     
       <li>
-        <a href="/" >
+        <a href="/all/" >
           Home
         </a>
       </li>
     
       <li>
-        <a href="/1/" >
+        <a href="/all/1/" >
           Page 1
         </a>
       </li>
     
       <li>
-        <a href="/2/" >
+        <a href="/all/2/" >
           Page 2
         </a>
       </li>
     
       <li>
-        <a href="/3/" >
+        <a href="/all/3/" >
           Page 3
         </a>
       </li>
     
       <li>
-        <a href="/4/" >
+        <a href="/all/4/" >
           Page 4
         </a>
       </li>
     
       <li>
-        <a href="/5/" aria-current="page">
+        <a href="/all/5/" aria-current="page">
           Page 5
         </a>
       </li>
     
       <li>
-        <a href="/6/" >
+        <a href="/all/6/" >
           Page 6
         </a>
       </li>
     
   </ul>
 </nav>
+      </div>
     </main>
-    <footer role="contentinfo">
-      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
-      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
-    </footer>
 
     
     

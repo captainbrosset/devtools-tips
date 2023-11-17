@@ -22,34 +22,65 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <a href="/" class="logo">Console DevTools Tips</a>
+      <label for="show-menu">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" x="0px" y="0px">
+          <path d="m9.706 8l5.941-5.941c.471-.471.471-1.235 0-1.706-.471-.471-1.235-.471-1.706 0l-5.941 5.941-5.941-5.941c-.471-.471-1.235-.471-1.706 0-.471.471-.471 1.235 0 1.706l5.941 5.941-5.941 5.941c-.471.471-.471 1.235 0 1.706.235.236.544.353.853.353.309 0 .617-.118.853-.353l5.941-5.941 5.941 5.941c.236.236.544.353.853.353.309 0 .617-.118.853-.353.471-.471.471-1.235 0-1.706l-5.941-5.941"></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </label>
+      <a href="/" class="title">
+        <span class="sr-only">DevTools Tips</span>
+      </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/">All tips</a></li>
-          <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          <li><a href="/all/">All tips</a></li>
+          <li>Tips by category
+            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
-          <li tabindex="0">Browsers
-            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          <li>Tips by browser
+            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="header-shadow"></div>
-    <div class="header-shadow-block"></div>
-    <main id="maincontent" >
+    <main >
       <div class="page-toolbar">
-  <h1>console tips</h1>
-  <div id="search" class="search"></div>
-<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+        <label class="menu-button" title="Menu">
+          <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
+            <g transform="translate(0,-952.36218)">
+              <path d="m 13,968.36217 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6 0,3.31359 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.68641 6,-6 0,-3.31381 -2.6863,-6 -6,-6 z m 0,28 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6.00003 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.31384 -2.6863,-6.00003 -6,-6.00003 z m 0,28.00003 c -3.3136998,0 -5.9999998,2.6862 -5.9999998,6 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.3138 -2.6863,-6 -6,-6 z"></path>
+            </g>
+          </svg>
+          <input type="checkbox" id="show-menu">
+          <span class="sr-only">Open menu</span>
+        </label>
+        <div id="search" class="search"></div>
+<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false, translations: { placeholder: 'Search tips' } });"></script>
 
-</div>
+        <div class="social" >
+          <a href="https://github.com/captainbrosset/devtools-tips" title="GitHub repository, to file issues and create new tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            </svg>
+            <span class="sr-only">GitHub repository</span>
+          </a>
+          <a href="https://front-end.social/@devtoolstips" title="Mastodon account, to stay updated with our latest tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"></path>
+            </svg>
+            <span class="sr-only">Mastodon social account</span>
+          </a>
+        </div>
+      </div>
+      <div id="maincontent">
+        <h1>27 console tips</h1>
 <ul class="tips">
 <li class="hover-box tip " style="view-transition-name:post-emulate-user-gesture-in-console;">
   <a href="/tips/en/emulate-user-gesture-in-console/" class="tip-title">Use user gesture restricted APIs in the Console</a>
   <a href="/tips/en/emulate-user-gesture-in-console/" class="tip-image"><img src="../../assets/img/emulate-user-gesture-in-console.png" alt="Safari WebInspector, showing the Console tool, and the user gesture checkbox" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Certain web APIs are user gesture restricted. This means that they can only be called as a result of...
+    Certain web APIs are user gesture restricted. This means that they can only be called as a result of a user action, such as in a click event handler.
+For example, you can't simply put yout website in...
     <a href="/tips/en/emulate-user-gesture-in-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -64,7 +95,8 @@
   <a href="/tips/en/understand-console-tab-drawer/" class="tip-title">Understand when the Console opens in the main panel and in the drawer</a>
   <a href="/tips/en/understand-console-tab-drawer/" class="tip-image"><img src="../../assets/img/understand-console-tab-drawer-1.png" alt="DevTools, with just one tool displayed, the Elements tool" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Have you noticed how the Console tool is sometimes displayed in a top-level tab (just like all other...
+    Have you noticed how the Console tool is sometimes displayed in a top-level tab (just like all other tools), and sometimes in a split pane at the bottom, below the main tool?
+If you've been confused b...
     <a href="/tips/en/understand-console-tab-drawer/">Read more</a>
   </div>
   <div class="tip-info">
@@ -79,7 +111,8 @@
   <a href="/tips/en/find-all-elements-with-style/" class="tip-title">Find all elements with a specific style</a>
   <a href="/tips/en/find-all-elements-with-style/" class="tip-image"><img src="../../assets/img/find-all-elements-with-style.png" alt="The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Let's say you want to list all of the elements on a page that are absolutely positioned. Or maybe yo...
+    Let's say you want to list all of the elements on a page that are absolutely positioned. Or maybe you want to find all of the elements that use CSS grid. How would you do that?
+One way is to run a few...
     <a href="/tips/en/find-all-elements-with-style/">Read more</a>
   </div>
   <div class="tip-info">
@@ -94,7 +127,8 @@
   <a href="/tips/en/customize-console-table-columns/" class="tip-title">Customize the columns shown in console.table</a>
   <a href="/tips/en/customize-console-table-columns/" class="tip-image"><img src="../../assets/img/customize-console-table-columns.png" alt="Example of a console.table output in Chrome DevTools showing a lot of columns, making it hard to read each column header" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The console.table method is great for displaying tabular data in the console, but what if the object...
+    The console.table method is great for displaying tabular data in the console, but what if the objects your're logging contain a lot of properties, causing a lot of columns to appear in the console?
+Fo...
     <a href="/tips/en/customize-console-table-columns/">Read more</a>
   </div>
   <div class="tip-info">
@@ -109,7 +143,9 @@
   <a href="/tips/en/change-video-playback-rate/" class="tip-title">Speed up or slow down a video</a>
   <a href="/tips/en/change-video-playback-rate/" class="tip-image"><img src="../../assets/img/change-video-playback-rate.png" alt="Screenshot of the Console tool showing the playbackRate property" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    You can speed up or slow down a video on a website by using the playbackRate property of the video e...
+    You can speed up or slow down a video on a website by using the playbackRate property of the video element.
+This can be very useful for when the website makes it tricky to do this in the UI!
+Open Dev...
     <a href="/tips/en/change-video-playback-rate/">Read more</a>
   </div>
   <div class="tip-info">
@@ -124,7 +160,8 @@
   <a href="/tips/en/view-logs-for-other-browsers-on-ios/" class="tip-title">View console logs from non-Safari browsers on an iPhone</a>
   <a href="/tips/en/view-logs-for-other-browsers-on-ios/" class="tip-image"><img src="../../assets/img/view-logs-for-other-browsers-on-ios.png" alt="Edge on iOS, showing the about:inspect page, filled with logs" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Using the about:inspect special page you can see your website's logs in Chrome or Edge running on iP...
+    Using the about:inspect special page you can see your website's logs in Chrome or Edge running on iPhone!
+This is important because debugging a webpage that's running in Safari on an iPhone isn't hard...
     <a href="/tips/en/view-logs-for-other-browsers-on-ios/">Read more</a>
   </div>
   <div class="tip-info">
@@ -139,7 +176,8 @@
   <a href="/tips/en/list-console-functions/" class="tip-title">List all supported console functions</a>
   <a href="/tips/en/list-console-functions/" class="tip-image"><img src="../../assets/img/list-console-functions.png" alt="Chrome, with the Console panel opened on the side in DevTools, showing the  command result, which is an object containing a list of functions such as assert, clear, debug." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    You've probably already used console.log() in your code to print debugging values to the Console too...
+    You've probably already used console.log() in your code to print debugging values to the Console tool in DevTools. But the console namespace actually has many other functions too!
+To list them all, op...
     <a href="/tips/en/list-console-functions/">Read more</a>
   </div>
   <div class="tip-info">
@@ -154,7 +192,7 @@
   <a href="/tips/en/access-recent-console-results/" class="tip-title">Access results from recent Console evaluations</a>
   <a href="/tips/en/access-recent-console-results/" class="tip-image"><img src="../../assets/img/access-recent-console-results-firefox.png" alt="The Console in Firefox DevTools showing how using $_ refers to the previous Console result" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Imagine you evaluate a long expression like $$('*').map(el =&gt; Object.values(el.attributes).map(at...
+    Imagine you evaluate a long expression like $$('*').map(el =&gt; Object.values(el.attributes).map(attr =&gt; {return {name: attr.name, value: attr.value}})) which extracts the attributes from all of t...
     <a href="/tips/en/access-recent-console-results/">Read more</a>
   </div>
   <div class="tip-info">
@@ -169,7 +207,8 @@
   <a href="/tips/en/get-recently-selected-dom-nodes-in-console/" class="tip-title">Get the recently selected DOM nodes in the console</a>
   <a href="/tips/en/get-recently-selected-dom-nodes-in-console/" class="tip-image"><img src="../../assets/img/get-recently-selected-dom-nodes-in-console.gif" alt="Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you type $0 in the Console tool, in any browser, the currently selected DOM node is returned. Thi...
+    If you type $0 in the Console tool, in any browser, the currently selected DOM node is returned. This is very handy. To learn more, check Get the selected element in the console.
+On top of this, in Ed...
     <a href="/tips/en/get-recently-selected-dom-nodes-in-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -185,7 +224,9 @@
   <a href="/tips/en/use-designmode-to-spell-check/" class="tip-image"><img src="../../assets/img/use-designmode-to-spell-check.png" alt="Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines" loading="lazy"></img></a>
   <div class="tip-excerpt">
     Amelia Bellamy-Royds shared a really cool tip to spell-check a webpage's content from DevTools:
-Ope...
+Open DevTools, and go to the Console tool.
+Type document.designMode = &quot;on&quot; and press Enter.
+C...
     <a href="/tips/en/use-designmode-to-spell-check/">Read more</a>
   </div>
   <div class="tip-info">
@@ -200,7 +241,8 @@ Ope...
   <a href="/tips/en/quickly-reference-react-console/" class="tip-title">Quickly reference React components in the console</a>
   <a href="/tips/en/quickly-reference-react-console/" class="tip-image"><img src="../../assets/img/quickly-reference-react-console.png" alt="The React DevTools components panel in DevTools, and Console below it, showing the result of $r" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Zee shared a great tip on Twitter if you are working with React and have the React DevTools extensio...
+    Zee shared a great tip on Twitter if you are working with React and have the React DevTools extension installed.
+You can use $r in the Console tool to reference the currently selected element in the R...
     <a href="/tips/en/quickly-reference-react-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -215,7 +257,7 @@ Ope...
   <a href="/tips/en/console-table-group-assert/" class="tip-title">console.log() is great, but do you know console.table()? console.group()? console.assert()?</a>
   <a href="/tips/en/console-table-group-assert/" class="tip-image"><img src="../../assets/img/console-table-group-assert-1.jpg" alt="The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    You probably know about console.log() already, it's a great way to print variables and objects to th...
+    You probably know about console.log() already, it's a great way to print variables and objects to the console while the code is running, to debug it. But there are other console methods that can help...
     <a href="/tips/en/console-table-group-assert/">Read more</a>
   </div>
   <div class="tip-info">
@@ -230,7 +272,9 @@ Ope...
   <a href="/tips/en/track-focused-element/" class="tip-title">Detect the element with focus at any time</a>
   <a href="/tips/en/track-focused-element/" class="tip-image"><img src="../../assets/img/track-focused-element.gif" alt="Animation showing a web page with focus going through different element, and the Edge Console panel with the live expression showing a preview of the focused element." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you want to know which element has the focus on the web page at any time, you can use a live expr...
+    If you want to know which element has the focus on the web page at any time, you can use a live expression in the Console tool.
+Open the Console.
+Click the Create live expression button (it looks lik...
     <a href="/tips/en/track-focused-element/">Read more</a>
   </div>
   <div class="tip-info">
@@ -245,7 +289,9 @@ Ope...
   <a href="/tips/en/query-instances-holders/" class="tip-title">Query object instances and holders from the console</a>
   <a href="/tips/en/query-instances-holders/" class="tip-image"><img src="../../assets/img/query-instances-holders-1.png" alt="The console in Safari, showing the result of queryInstances(app.TodoItem)." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    All browser DevTools have a few built-in functions in the console to do things like get the current...
+    All browser DevTools have a few built-in functions in the console to do things like get the current element, or copy a string. But Safari exposes 2 nice built-in functions:
+queryInstances
+queryHolder...
     <a href="/tips/en/query-instances-holders/">Read more</a>
   </div>
   <div class="tip-info">
@@ -260,7 +306,8 @@ Ope...
   <a href="/tips/en/multi-line-console/" class="tip-title">Write code on multiple lines in the Console</a>
   <a href="/tips/en/multi-line-console/" class="tip-image"><img src="../../assets/img/multi-line-console-firefox.png" alt="Tthe button to switch the Firefox console to the multi-line mode." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you're feeling adventurous and want to write longer pieces of code in the Console to execute more...
+    If you're feeling adventurous and want to write longer pieces of code in the Console to execute more complex things, it can quickly become difficult.
+Thankfully, there are a few ways to make your life...
     <a href="/tips/en/multi-line-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -276,7 +323,7 @@ Ope...
   <a href="/tips/en/automatically-log-name-and-value/" class="tip-image"><img src="../../assets/img/automatically-log-name-and-value.gif" alt="Animation showing the different ways the variables are logged with and without curly braces." loading="lazy"></img></a>
   <div class="tip-excerpt">
     Using the console of DevTools you can to log some information to debug your JavaScript.
-The common w...
+The common way to do that is to add a console.log() statement where you want to learn the value of a certain var...
     <a href="/tips/en/automatically-log-name-and-value/">Read more</a>
   </div>
   <div class="tip-info">
@@ -292,7 +339,9 @@ The common w...
   <a href="/tips/en/format-console-messages/" class="tip-image"><img src="../../assets/img/format-console-messages.png" alt="A formatted console message in Edge." loading="lazy"></img></a>
   <div class="tip-excerpt">
     You can use special formatters in the console.log function to format logs just the way you want.
-Us...
+Use %s to format a variable as a string.
+Use %d to format a variable as an integer.
+Use %f to format a...
     <a href="/tips/en/format-console-messages/">Read more</a>
   </div>
   <div class="tip-info">
@@ -308,7 +357,9 @@ Us...
   <a href="/tips/en/store-node-as-variable/" class="tip-image"><img src="../../assets/img/store-node-as-variable.png" alt="Firefox's &quot;use in console&quot; context menu option in the Inspector, and also showing the Console with a couple of tempN variables." loading="lazy"></img></a>
   <div class="tip-excerpt">
     If you want to use a DOM node from the page in the console:
-Right-click the node in the Elements (o...
+Right-click the node in the Elements (or Inspector in Firefox).
+Click on Store as global variable (or Use in Console in Firefox).
+The Cons...
     <a href="/tips/en/store-node-as-variable/">Read more</a>
   </div>
   <div class="tip-info">
@@ -323,7 +374,10 @@ Right-click the node in the Elements (o...
   <a href="/tips/en/monitor-element-events/" class="tip-title">Monitor all events dispatched on an element</a>
   <a href="/tips/en/monitor-element-events/" class="tip-image"><img src="../../assets/img/monitor-element-events.gif" alt="Animation showing how events get automatically logged when using the monitorEvents function." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    You can use the monitorEvents global function in the Console panel to log all of the events dispatch...
+    You can use the monitorEvents global function in the Console panel to log all of the events dispatched on a particular element.
+Select an element in the Elements panel.
+Go to the Console.
+Type monito...
     <a href="/tips/en/monitor-element-events/">Read more</a>
   </div>
   <div class="tip-info">
@@ -338,7 +392,8 @@ Right-click the node in the Elements (o...
   <a href="/tips/en/prototype-content-changes-with-designmode/" class="tip-title">Prototype content changes with designMode</a>
   <a href="/tips/en/prototype-content-changes-with-designmode/" class="tip-image"><img src="../../assets/img/prototype-content-changes-with-designmode.gif" alt="Animation of editable web page with designMode on." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When creating or modifying a design prototype for the web, you may want to quickly edit content in t...
+    When creating or modifying a design prototype for the web, you may want to quickly edit content in the browser without having to find the relevant code.
+When you turn on designMode for the document or...
     <a href="/tips/en/prototype-content-changes-with-designmode/">Read more</a>
   </div>
   <div class="tip-info">
@@ -354,7 +409,7 @@ Right-click the node in the Elements (o...
   <a href="/tips/en/style-console-messages/" class="tip-image"><img src="../../assets/img/style-console-messages.png" alt="A styled console message in Edge." loading="lazy"></img></a>
   <div class="tip-excerpt">
     The console.log output can be styled in DevTools using CSS.
-console.log('%c Hello World', 'color: or...
+console.log('%c Hello World', 'color: orange; font-size: 2em;');...
     <a href="/tips/en/style-console-messages/">Read more</a>
   </div>
   <div class="tip-info">
@@ -369,7 +424,7 @@ console.log('%c Hello World', 'color: or...
   <a href="/tips/en/find-all-images-without-alt-text/" class="tip-title">Find all images without alternative text</a>
   <a href="/tips/en/find-all-images-without-alt-text/" class="tip-image"><img src="../../assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    With HTML, you can add alternative text to images using the alt attribute. It can be used to add a t...
+    With HTML, you can add alternative text to images using the alt attribute. It can be used to add a text description to images, which is extremely useful for accessibility as some people may not be abl...
     <a href="/tips/en/find-all-images-without-alt-text/">Read more</a>
   </div>
   <div class="tip-info">
@@ -385,7 +440,7 @@ console.log('%c Hello World', 'color: or...
   <a href="/tips/en/query-dom-from-console/" class="tip-image"><img src="../../assets/img/query-dom-from-console.png" alt="Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions." loading="lazy"></img></a>
   <div class="tip-excerpt">
     $ and $$ are 2 functions you can use in the console to find elements in the page.
-They are essential...
+They are essentially shortcuts to the longer document.querySelector() and document.querySelectorAll() functions, but $...
     <a href="/tips/en/query-dom-from-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -400,7 +455,7 @@ They are essential...
   <a href="/tips/en/persist-logs-across-pages/" class="tip-title">Persist console messages across page navigations and reloads</a>
   <a href="/tips/en/persist-logs-across-pages/" class="tip-image"><img src="../../assets/img/persist-logs-across-pages.png" alt="Edge devtools' console showing the settings panel at the top, with the &quot;perserve log&quot; box checked." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    By default, the messages displayed in the console get removed as soon as you refresh the page (or na...
+    By default, the messages displayed in the console get removed as soon as you refresh the page (or navigate to a new page). If you want to keep those messages as long as DevTools is open, follow these...
     <a href="/tips/en/persist-logs-across-pages/">Read more</a>
   </div>
   <div class="tip-info">
@@ -415,7 +470,8 @@ They are essential...
   <a href="/tips/en/copy-from-console/" class="tip-title">Copy an object from the console</a>
   <a href="/tips/en/copy-from-console/" class="tip-image"><img src="../../assets/img/copy-from-console.png" alt="Chrome devtools' console with a line of code using the copy() function." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The console panel supports a very handy copy() function that stringifies and copies anything you pas...
+    The console panel supports a very handy copy() function that stringifies and copies anything you pass to it as an argument, so you can then paste it somewhere else.
+For example: copy($$('a').map(a =&g...
     <a href="/tips/en/copy-from-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -430,7 +486,8 @@ They are essential...
   <a href="/tips/en/get-current-element-in-console/" class="tip-title">Get the selected element in the console</a>
   <a href="/tips/en/get-current-element-in-console/" class="tip-image"><img src="../../assets/img/get-current-element-in-console.jpg" alt="Safari's console showing how the $0 shortcut returns the selected element." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you selected an element in the Elements panel (in Chrome, Safari, Polypane or Edge) or the Inspec...
+    If you selected an element in the Elements panel (in Chrome, Safari, Polypane or Edge) or the Inspector panel (in Firefox), you can refer to it in the console using $0.
+This shortcut will return the D...
     <a href="/tips/en/get-current-element-in-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -445,7 +502,8 @@ They are essential...
   <a href="/tips/en/view-perf-markers-in-order/" class="tip-title">View performance markers in order</a>
   <a href="/tips/en/view-perf-markers-in-order/" class="tip-image"><img src="../../assets/img/view-perf-markers-in-order.png" alt="The console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When logging performance.timing events to the console, they appear in alphabetical order since they...
+    When logging performance.timing events to the console, they appear in alphabetical order since they are properties of the PerformanceTiming object.
+In order to view them in order, you can use console....
     <a href="/tips/en/view-perf-markers-in-order/">Read more</a>
   </div>
   <div class="tip-info">
@@ -457,11 +515,8 @@ They are essential...
 </li>
 </ul>
 
+      </div>
     </main>
-    <footer role="contentinfo">
-      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
-      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
-    </footer>
 
     
     

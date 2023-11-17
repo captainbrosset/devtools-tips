@@ -22,34 +22,65 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <a href="/" class="logo">Css DevTools Tips</a>
+      <label for="show-menu">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" x="0px" y="0px">
+          <path d="m9.706 8l5.941-5.941c.471-.471.471-1.235 0-1.706-.471-.471-1.235-.471-1.706 0l-5.941 5.941-5.941-5.941c-.471-.471-1.235-.471-1.706 0-.471.471-.471 1.235 0 1.706l5.941 5.941-5.941 5.941c-.471.471-.471 1.235 0 1.706.235.236.544.353.853.353.309 0 .617-.118.853-.353l5.941-5.941 5.941 5.941c.236.236.544.353.853.353.309 0 .617-.118.853-.353.471-.471.471-1.235 0-1.706l-5.941-5.941"></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </label>
+      <a href="/" class="title">
+        <span class="sr-only">DevTools Tips</span>
+      </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/">All tips</a></li>
-          <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          <li><a href="/all/">All tips</a></li>
+          <li>Tips by category
+            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
-          <li tabindex="0">Browsers
-            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          <li>Tips by browser
+            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="header-shadow"></div>
-    <div class="header-shadow-block"></div>
-    <main id="maincontent" >
+    <main >
       <div class="page-toolbar">
-  <h1>css tips</h1>
-  <div id="search" class="search"></div>
-<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+        <label class="menu-button" title="Menu">
+          <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
+            <g transform="translate(0,-952.36218)">
+              <path d="m 13,968.36217 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6 0,3.31359 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.68641 6,-6 0,-3.31381 -2.6863,-6 -6,-6 z m 0,28 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6.00003 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.31384 -2.6863,-6.00003 -6,-6.00003 z m 0,28.00003 c -3.3136998,0 -5.9999998,2.6862 -5.9999998,6 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.3138 -2.6863,-6 -6,-6 z"></path>
+            </g>
+          </svg>
+          <input type="checkbox" id="show-menu">
+          <span class="sr-only">Open menu</span>
+        </label>
+        <div id="search" class="search"></div>
+<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false, translations: { placeholder: 'Search tips' } });"></script>
 
-</div>
+        <div class="social" >
+          <a href="https://github.com/captainbrosset/devtools-tips" title="GitHub repository, to file issues and create new tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            </svg>
+            <span class="sr-only">GitHub repository</span>
+          </a>
+          <a href="https://front-end.social/@devtoolstips" title="Mastodon account, to stay updated with our latest tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"></path>
+            </svg>
+            <span class="sr-only">Mastodon social account</span>
+          </a>
+        </div>
+      </div>
+      <div id="maincontent">
+        <h1>44 css tips</h1>
 <ul class="tips">
 <li class="hover-box tip " style="view-transition-name:post-see-viewport-size;">
   <a href="/tips/en/see-viewport-size/" class="tip-title">See the viewport size</a>
   <a href="/tips/en/see-viewport-size/" class="tip-image"><img src="../../assets/img/see-viewport-size-chrome.png" alt="Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The size of the viewport that's used to render a webpage in a browser can be very important at times...
+    The size of the viewport that's used to render a webpage in a browser can be very important at times, such as when creating or debugging media queries.
+You can easily know what the current size of the...
     <a href="/tips/en/see-viewport-size/">Read more</a>
   </div>
   <div class="tip-info">
@@ -64,7 +95,8 @@
   <a href="/tips/en/find-the-offset-parent-of-an-element/" class="tip-title">Find the offset parent of an element</a>
   <a href="/tips/en/find-the-offset-parent-of-an-element/" class="tip-image"><img src="../../assets/img/find-the-offset-parent-of-an-element.png" alt="Polypane showing an inspected element with the Debug tab open. The Offset parent entry is highlighted." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    To know what an element is offset against horizontally or vertically (Which you do with position:rel...
+    To know what an element is offset against horizontally or vertically (Which you do with position:relative and a left, top or inset value) you need to know its offset parent.
+The offset parent of an el...
     <a href="/tips/en/find-the-offset-parent-of-an-element/">Read more</a>
   </div>
   <div class="tip-info">
@@ -79,7 +111,7 @@
   <a href="/tips/en/highlight-elements-from-selector/" class="tip-title">Highlight all elements on the page that match a given CSS selector</a>
   <a href="/tips/en/highlight-elements-from-selector/" class="tip-image"><img src="../../assets/img/highlight-elements-from-selector-firefox.png" alt="Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When you select an element in DevTools (in the Elements or Inspector tool), you see the CSS rules th...
+    When you select an element in DevTools (in the Elements or Inspector tool), you see the CSS rules that apply to it. But, these rules can also apply to other elements in the page than the currently sel...
     <a href="/tips/en/highlight-elements-from-selector/">Read more</a>
   </div>
   <div class="tip-info">
@@ -94,7 +126,7 @@
   <a href="/tips/en/find-rule-that-causes-style/" class="tip-title">Find the CSS rule that causes a specific style to apply</a>
   <a href="/tips/en/find-rule-that-causes-style/" class="tip-image"><img src="../../assets/img/find-rule-that-causes-style-1.png" alt="The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Here is the scenario: you know there's a specific style that applies to an HTML element in your web...
+    Here is the scenario: you know there's a specific style that applies to an HTML element in your web page, say some padding, but you can't seem to find where, in the CSS code, that style is coming from...
     <a href="/tips/en/find-rule-that-causes-style/">Read more</a>
   </div>
   <div class="tip-info">
@@ -109,7 +141,7 @@
   <a href="/tips/en/see-which-font-was-used-in-font-family/" class="tip-title">Know which of the font in a font-family was actually used</a>
   <a href="/tips/en/see-which-font-was-used-in-font-family/" class="tip-image"><img src="../../assets/img/see-which-font-was-used-in-font-family.png" alt="Firefox, DevTools is opened on the side, showing the Inspector tool and the Rules sidebar tab. The font-family property shows a long list of fonts, with one of them being underlined" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The CSS font-family property let's you define a comma-separated list of fonts that the browser engin...
+    The CSS font-family property let's you define a comma-separated list of fonts that the browser engine should choose from (in priority order) to render text. For example, with font-family: &quot;Gill S...
     <a href="/tips/en/see-which-font-was-used-in-font-family/">Read more</a>
   </div>
   <div class="tip-info">
@@ -124,7 +156,8 @@
   <a href="/tips/en/find-all-elements-with-style/" class="tip-title">Find all elements with a specific style</a>
   <a href="/tips/en/find-all-elements-with-style/" class="tip-image"><img src="../../assets/img/find-all-elements-with-style.png" alt="The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Let's say you want to list all of the elements on a page that are absolutely positioned. Or maybe yo...
+    Let's say you want to list all of the elements on a page that are absolutely positioned. Or maybe you want to find all of the elements that use CSS grid. How would you do that?
+One way is to run a few...
     <a href="/tips/en/find-all-elements-with-style/">Read more</a>
   </div>
   <div class="tip-info">
@@ -139,7 +172,8 @@
   <a href="/tips/en/debug-print-css-styles/" class="tip-title">Debug your print CSS styles by simulating print media</a>
   <a href="/tips/en/debug-print-css-styles/" class="tip-image"><img src="../../assets/img/debug-print-css-styles-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the print media button" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you work on a webpage that's supposed to be printed, you probably want to test your print CSS sty...
+    If you work on a webpage that's supposed to be printed, you probably want to test your print CSS styles. You can use your browser's print preview of course, but what if you need to debug the CSS?
+DevT...
     <a href="/tips/en/debug-print-css-styles/">Read more</a>
   </div>
   <div class="tip-info">
@@ -154,7 +188,8 @@
   <a href="/tips/en/list-used-fonts/" class="tip-title">List the fonts used on a page, or an element</a>
   <a href="/tips/en/list-used-fonts/" class="tip-image"><img src="../../assets/img/list-used-fonts-firefox.png" alt="Firefox, with DevTools on the side, showing the Fonts panel that contains the list of fonts. One of the fonts is hovered" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    &quot;What font is that?&quot; or &quot;Why is this font used?&quot; are probably questions you've a...
+    &quot;What font is that?&quot; or &quot;Why is this font used?&quot; are probably questions you've asked yourself while working on a website design.
+However, it's not always easy to know which fonts a...
     <a href="/tips/en/list-used-fonts/">Read more</a>
   </div>
   <div class="tip-info">
@@ -169,7 +204,7 @@
   <a href="/tips/en/detect-unused-code/" class="tip-title">Detect unused CSS and JavaScript code</a>
   <a href="/tips/en/detect-unused-code/" class="tip-image"><img src="../../assets/img/detect-unused-code.png" alt="Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that...
+    To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when th...
     <a href="/tips/en/detect-unused-code/">Read more</a>
   </div>
   <div class="tip-info">
@@ -184,7 +219,7 @@
   <a href="/tips/en/emulate-color-schemes/" class="tip-title">Emulate color schemes</a>
   <a href="/tips/en/emulate-color-schemes/" class="tip-image"><img src="../../assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    In CSS, you can use the prefers-color-scheme media feature (docs) to detect if the user prefers usin...
+    In CSS, you can use the prefers-color-scheme media feature (docs) to detect if the user prefers using a light or a dark theme in their operating system. This is useful to style your website in a way t...
     <a href="/tips/en/emulate-color-schemes/">Read more</a>
   </div>
   <div class="tip-info">
@@ -199,7 +234,7 @@
   <a href="/tips/en/debug-unwanted-scrollbars/" class="tip-title">Debug unwanted scrollbars</a>
   <a href="/tips/en/debug-unwanted-scrollbars/" class="tip-image"><img src="../../assets/img/debug-unwanted-scrollbars-1.png" alt="Firefox DevTools, with the Inspector panel showing the Scroll badge on an element." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes scrollbars appear on a web page in places we don't want them to. And when this happens, it...
+    Sometimes scrollbars appear on a web page in places we don't want them to. And when this happens, it's not always very straightforward to fix the problem. Which container is responsible for the scroll...
     <a href="/tips/en/debug-unwanted-scrollbars/">Read more</a>
   </div>
   <div class="tip-info">
@@ -214,7 +249,9 @@
   <a href="/tips/en/find-expensive-selectors/" class="tip-title">Find the most expensive CSS selectors</a>
   <a href="/tips/en/find-expensive-selectors/" class="tip-image"><img src="../../assets/img/find-expensive-selectors.png" alt="The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When it comes to performance, we often spend time improving our JavaScript code. But CSS has a role...
+    When it comes to performance, we often spend time improving our JavaScript code. But CSS has a role to play too.
+CSS selectors, in particular, can sometimes be slow to match to the DOM of the page.
+Be...
     <a href="/tips/en/find-expensive-selectors/">Read more</a>
   </div>
   <div class="tip-info">
@@ -229,7 +266,7 @@
   <a href="/tips/en/hide-or-pin-inspect-info-tooltip/" class="tip-title">Hide or pin the information tooltip while inspecting page elements</a>
   <a href="/tips/en/hide-or-pin-inspect-info-tooltip/" class="tip-image"><img src="../../assets/img/hide-or-pin-inspect-info-tooltip-1.png" alt="Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When selecting elements from the page using the inspect tool, the hovered elements get highlighted,...
+    When selecting elements from the page using the inspect tool, the hovered elements get highlighted, and an information tooltip follows your mouse around and gives you information about the hovered ele...
     <a href="/tips/en/hide-or-pin-inspect-info-tooltip/">Read more</a>
   </div>
   <div class="tip-info">
@@ -244,7 +281,8 @@
   <a href="/tips/en/understand-flexbox-item-sizing/" class="tip-title">Understand flexbox item sizing</a>
   <a href="/tips/en/understand-flexbox-item-sizing/" class="tip-image"><img src="../../assets/img/understand-flexbox-item-sizing.png" alt="Firefox, with the DevTools Inspector tool opened, showing the Layout sidebar that contains the flex item diagram." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Flexbox is a great way to easily distribute elements and empty space in a row or a column, and creat...
+    Flexbox is a great way to easily distribute elements and empty space in a row or a column, and create interesting layouts.
+It only takes a couple of CSS properties to create nice layouts that automati...
     <a href="/tips/en/understand-flexbox-item-sizing/">Read more</a>
   </div>
   <div class="tip-info">
@@ -259,7 +297,8 @@
   <a href="/tips/en/find-inactive-styles/" class="tip-title">Find inactive CSS styles</a>
   <a href="/tips/en/find-inactive-styles/" class="tip-image"><img src="../../assets/img/find-inactive-styles.png" alt="Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes we write CSS code that's entirely valid but has absolutely no effect at all, and this can...
+    Sometimes we write CSS code that's entirely valid but has absolutely no effect at all, and this can be frustrating.
+Indeed, there are many cases where a CSS declaration has no effect on an element. On...
     <a href="/tips/en/find-inactive-styles/">Read more</a>
   </div>
   <div class="tip-info">
@@ -274,7 +313,7 @@
   <a href="/tips/en/inspect-css-animations/" class="tip-title">Inspect CSS animations</a>
   <a href="/tips/en/inspect-css-animations/" class="tip-image"><img src="../../assets/img/inspect-css-animation.gif" alt="Animation of Chrome DevTools showing how to inspect and modify CSS animations using the Animation inspector." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Modern browser DevTools provide a handy tool to inspect and modify CSS animations, CSS transitions,...
+    Modern browser DevTools provide a handy tool to inspect and modify CSS animations, CSS transitions, and Web animations. These tools not only help you debug animations, but also let you modify the vari...
     <a href="/tips/en/inspect-css-animations/">Read more</a>
   </div>
   <div class="tip-info">
@@ -289,7 +328,7 @@
   <a href="/tips/en/copy-css-selector/" class="tip-title">Copy CSS selector of an element</a>
   <a href="/tips/en/copy-css-selector/" class="tip-image"><img src="../../assets/img/copy-css-selector.png" alt="Edge DevTools, showing how to access the Copy CSS selector option." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes we need to uniquely identify an element that lacks an identifier, so that it can be refere...
+    Sometimes we need to uniquely identify an element that lacks an identifier, so that it can be referenced in JavaScript and other places. All the major browsers have an option to build a unique CSS sel...
     <a href="/tips/en/copy-css-selector/">Read more</a>
   </div>
   <div class="tip-info">
@@ -304,7 +343,7 @@
   <a href="/tips/en/spot-out-of-viewport-elements/" class="tip-title">Quickly spot out-of-viewport elements</a>
   <a href="/tips/en/spot-out-of-viewport-elements/" class="tip-image"><img src="../../assets/img/spot-out-of-viewport-elements.png" alt="Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes, either by accident or on purpose, HTML elements end up outside of the visible browser vie...
+    Sometimes, either by accident or on purpose, HTML elements end up outside of the visible browser viewport. When they do, it can be really hard to find them in DevTools. Indeed, the DOM tree in the Ele...
     <a href="/tips/en/spot-out-of-viewport-elements/">Read more</a>
   </div>
   <div class="tip-info">
@@ -320,7 +359,7 @@
   <a href="/tips/en/copy-element-styles/" class="tip-image"><img src="../../assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values." loading="lazy"></img></a>
   <div class="tip-excerpt">
     You can extract all the styles of an element in one go by using the Copy styles feature.
-No need to...
+No need to go through all CSS rules and properties that apply to the element in the Styles pane, and manually b...
     <a href="/tips/en/copy-element-styles/">Read more</a>
   </div>
   <div class="tip-info">
@@ -335,7 +374,7 @@ No need to...
   <a href="/tips/en/debug-css-cascade-layers/" class="tip-title">Visualize and debug CSS cascade layers</a>
   <a href="/tips/en/debug-css-cascade-layers/" class="tip-image"><img src="../../assets/img/debug-css-cascade-layers-firefox.png" alt="Firefox with a demo page that uses layers, DevTools is opened and shows the Rules panel with two @layer rules" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple la...
+    Cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which these layers apply. Cascade layers are meant to bring an elegant...
     <a href="/tips/en/debug-css-cascade-layers/">Read more</a>
   </div>
   <div class="tip-info">
@@ -350,7 +389,8 @@ No need to...
   <a href="/tips/en/prototype-in-the-browser/" class="tip-title">Start your HTML and CSS prototypes in the browser directly</a>
   <a href="/tips/en/prototype-in-the-browser/" class="tip-image"><img src="../../assets/img/prototype-in-the-browser.png" alt="Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes I need a blank canvas to prototype an idea with HTML and CSS. Something outside of the web...
+    Sometimes I need a blank canvas to prototype an idea with HTML and CSS. Something outside of the website I'm working on. Maybe I need a new layout or component and I'm not sure yet how to do it.
+In th...
     <a href="/tips/en/prototype-in-the-browser/">Read more</a>
   </div>
   <div class="tip-info">
@@ -365,7 +405,7 @@ No need to...
   <a href="/tips/en/debug-grid-areas/" class="tip-title">Debug CSS grid areas</a>
   <a href="/tips/en/debug-grid-areas/" class="tip-image"><img src="../../assets/img/debug-grid-areas.png" alt="Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the &quot;display area names&quot; option checked." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    A really useful way to position elements on a CSS grid is using the grid-template-areas property. Wi...
+    A really useful way to position elements on a CSS grid is using the grid-template-areas property. With it, you can give names to various areas of your grid (potentially spanning multiple cells), and t...
     <a href="/tips/en/debug-grid-areas/">Read more</a>
   </div>
   <div class="tip-info">
@@ -380,7 +420,7 @@ No need to...
   <a href="/tips/en/emulate-forced-colors/" class="tip-title">Emulate forced-color mode</a>
   <a href="/tips/en/emulate-forced-colors/" class="tip-image"><img src="../../assets/img/emulate-forced-colors.png" alt="Edge showing a webpage in forced-colors mode, with the Rendering panel next to it in DevTools." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Operating systems offer an accessibility feature where the colors shown on the screen are converted...
+    Operating systems offer an accessibility feature where the colors shown on the screen are converted to offer higher contrast. When you use this feature, it impacts all the content on the screen: your...
     <a href="/tips/en/emulate-forced-colors/">Read more</a>
   </div>
   <div class="tip-info">
@@ -395,7 +435,8 @@ No need to...
   <a href="/tips/en/past-several-css-declarations/" class="tip-title">Paste multiple CSS declarations at once</a>
   <a href="/tips/en/past-several-css-declarations/" class="tip-image"><img src="../../assets/img/paste-several-css-declarations.gif" alt="Animation showing how pasting several declarations in a CSS rule in DevTools creates them all." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    You know how you can paste a CSS property name or value in the Styles (or Rules) panel? Well, you ca...
+    You know how you can paste a CSS property name or value in the Styles (or Rules) panel? Well, you can actually paste several declarations at once too!
+For example, try copying the following entire CSS...
     <a href="/tips/en/past-several-css-declarations/">Read more</a>
   </div>
   <div class="tip-info">
@@ -410,7 +451,8 @@ No need to...
   <a href="/tips/en/select-pointer-events-none-elements/" class="tip-title">Select elements with pointer-events:none by holding Shift</a>
   <a href="/tips/en/select-pointer-events-none-elements/" class="tip-image"><img src="../../assets/img/select-pointer-events-none-elements.gif" alt="Animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When selecting elements from the page they normally get highlighted on hover and selected on click....
+    When selecting elements from the page they normally get highlighted on hover and selected on click. However certain elements can't be selected.
+Indeed, if an element does not react to pointer events b...
     <a href="/tips/en/select-pointer-events-none-elements/">Read more</a>
   </div>
   <div class="tip-info">
@@ -426,7 +468,7 @@ No need to...
   <a href="/tips/en/highlight-css-properties-on-hover/" class="tip-image"><img src="../../assets/img/highlight-css-properties-on-hover.gif" alt="Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane." loading="lazy"></img></a>
   <div class="tip-excerpt">
     How do certain CSS properties apply to the page isn't always an easy question to answer.
-While some...
+While some properties might be considered simple, others have complex effects that depend on other factors. Pro...
     <a href="/tips/en/highlight-css-properties-on-hover/">Read more</a>
   </div>
   <div class="tip-info">
@@ -441,7 +483,8 @@ While some...
   <a href="/tips/en/visualize-css-transforms/" class="tip-title">Visualize the effect of CSS transforms</a>
   <a href="/tips/en/visualize-css-transforms/" class="tip-image"><img src="../../assets/img/visualize-css-transforms.gif" alt="Animation showing how the CSS transform highlighter appears on the page when hovering over a transform CSS property in the Rules panel." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    CSS transforms can sometimes be hard to wrap your head around, especially when chaining multiple tra...
+    CSS transforms can sometimes be hard to wrap your head around, especially when chaining multiple transformations.
+Firefox helps with a cool visualization tool that allows you to see how and where the...
     <a href="/tips/en/visualize-css-transforms/">Read more</a>
   </div>
   <div class="tip-info">
@@ -456,7 +499,8 @@ While some...
   <a href="/tips/en/copy-rule-as-css-in-js/" class="tip-title">Copy a CSS rule as CSS-in-JS format</a>
   <a href="/tips/en/copy-rule-as-css-in-js/" class="tip-image"><img src="../../assets/img/copy-rule-as-css-in-js.gif" alt="Aimation showing the Styles pane in Edge, with the &quot;Copy all declarations as JS&quot; option being used, and then pasting the result in the Console to show that it is formatted." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Do you use a CSS-in-JS framework? If so, you know how frustrating it can be to copy CSS from DevTool...
+    Do you use a CSS-in-JS framework? If so, you know how frustrating it can be to copy CSS from DevTools and paste it into your code.
+Indeed if the CSS you worked on in the Styles panel looks like this:...
     <a href="/tips/en/copy-rule-as-css-in-js/">Read more</a>
   </div>
   <div class="tip-info">
@@ -471,7 +515,7 @@ While some...
   <a href="/tips/en/simulate-pseudo-classes/" class="tip-title">Simulate pseudo CSS classes</a>
   <a href="/tips/en/simulate-pseudo-classes/" class="tip-image"><img src="../../assets/img/simulate-pseudo-classes.png" alt="The :hov button and the pseudo-class panel in Chrome DevTools" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you use :hover, :active, or other pseudo-classes in your CSS code, it can be tedious to test them...
+    If you use :hover, :active, or other pseudo-classes in your CSS code, it can be tedious to test them. For example, having to hover over an element which is styled with the :hover pseudo-class means th...
     <a href="/tips/en/simulate-pseudo-classes/">Read more</a>
   </div>
   <div class="tip-info">
@@ -486,7 +530,9 @@ While some...
   <a href="/tips/en/see-the-page-in-3d/" class="tip-title">See the page in 3D</a>
   <a href="/tips/en/see-the-page-in-3d/" class="tip-image"><img src="../../assets/img/see-the-page-in-3d.png" alt="The 3D view tool showing a page's z-index stacking tree as a 3d scene." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    See your page in 3 dimensions to quickly find out how deeply nested it is, fix z-index stacking issu...
+    See your page in 3 dimensions to quickly find out how deeply nested it is, fix z-index stacking issues, and performance issues.
+In Edge
+Open the Command Menu by pressing ctrl+shift+P (or cmd+shift+P...
     <a href="/tips/en/see-the-page-in-3d/">Read more</a>
   </div>
   <div class="tip-info">
@@ -501,7 +547,8 @@ While some...
   <a href="/tips/en/increment-css-number-values/" class="tip-title">Easily change CSS number values from the keyboard in increments of 0.1, 1, 10, 100</a>
   <a href="/tips/en/increment-css-number-values/" class="tip-image"><img src="../../assets/img/increment-css-number-values.gif" alt="Animation of the Styles panel in Edge showing how numbers can be changed in various increments." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When playing with styling or layout code in DevTools, it's useful to be able to change widths, margi...
+    When playing with styling or layout code in DevTools, it's useful to be able to change widths, margins, and other CSS number values quickly.
+Manually entering new numbers works of course, but it gets...
     <a href="/tips/en/increment-css-number-values/">Read more</a>
   </div>
   <div class="tip-info">
@@ -516,7 +563,7 @@ While some...
   <a href="/tips/en/find-css-changes/" class="tip-title">Find and export CSS changes</a>
   <a href="/tips/en/find-css-changes/" class="tip-image"><img src="../../assets/img/find-css-changes.png" alt="The Changes panel in Firefox showing a diff-like view of all the CSS changes." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you spent time changing CSS in DevTools, either in the Rules panel (in Firefox), or in the Source...
+    If you spent time changing CSS in DevTools, either in the Rules panel (in Firefox), or in the Sources or Styles panels (in Chrome or Edge), and you don't remember all of the changes you made, you can...
     <a href="/tips/en/find-css-changes/">Read more</a>
   </div>
   <div class="tip-info">
@@ -531,7 +578,9 @@ While some...
   <a href="/tips/en/edit-shadow/" class="tip-title">Edit CSS shadow visually</a>
   <a href="/tips/en/edit-shadow/" class="tip-image"><img src="../../assets/img/edit-shadow.gif" alt="Animation showing the shadow editor in Edge's Styles pane." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you don't remember the CSS syntax for the box-shadow property (and who does!), then Chrome and Ed...
+    If you don't remember the CSS syntax for the box-shadow property (and who does!), then Chrome and Edge can help you with their visual shadow editor!
+Select an element that has some shadow applied.
+Go...
     <a href="/tips/en/edit-shadow/">Read more</a>
   </div>
   <div class="tip-info">
@@ -546,7 +595,9 @@ While some...
   <a href="/tips/en/jump-to-css-variable/" class="tip-title">Jump from a CSS variable usage to where it is defined</a>
   <a href="/tips/en/jump-to-css-variable/" class="tip-image"><img src="../../assets/img/jump-to-css-variable.gif" alt="Animation of clicking on a custom property link in the Styles panel in Edge." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    CSS custom properties (also called variables) are very useful to avoid repeating values in CSS, like...
+    CSS custom properties (also called variables) are very useful to avoid repeating values in CSS, like colors for example.
+You can define and use a custom property as shown below:
+rule-1 { --my-main-co...
     <a href="/tips/en/jump-to-css-variable/">Read more</a>
   </div>
   <div class="tip-info">
@@ -561,7 +612,9 @@ While some...
   <a href="/tips/en/convert-color-formats/" class="tip-title">Convert color formats</a>
   <a href="/tips/en/convert-color-formats/" class="tip-image"><img src="../../assets/img/convert-color-formats.gif" alt="Animation of the rules panel in Firefox, showing the color conversion." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Colors in CSS can be expressed in a number of different formats: keyword (e.g. blue), RGB, HSL, hexa...
+    Colors in CSS can be expressed in a number of different formats: keyword (e.g. blue), RGB, HSL, hexadecimal, and others.
+In DevTools, you can easily convert from one format to the next.
+Find an eleme...
     <a href="/tips/en/convert-color-formats/">Read more</a>
   </div>
   <div class="tip-info">
@@ -576,7 +629,7 @@ While some...
   <a href="/tips/en/edit-position/" class="tip-title">Edit CSS absolute and relative positions by dragging points in the page</a>
   <a href="/tips/en/edit-position/" class="tip-image"><img src="../../assets/img/edit-position.gif" alt="Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Firefox features a position editor that lets you move elements in the page by drag and drop. This wo...
+    Firefox features a position editor that lets you move elements in the page by drag and drop. This works with elements that are positioned in CSS with position:relative or position:absolute and that ha...
     <a href="/tips/en/edit-position/">Read more</a>
   </div>
   <div class="tip-info">
@@ -591,7 +644,8 @@ While some...
   <a href="/tips/en/convert-font-units/" class="tip-title">Convert font property units</a>
   <a href="/tips/en/convert-font-units/" class="tip-image"><img src="../../assets/img/convert-font-units-1.png" alt="The fonts panel in Firefox, showing the unit conversion drop-down." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Font CSS properties such as font-size, line-height or letter-spacing can be expressed in multiple di...
+    Font CSS properties such as font-size, line-height or letter-spacing can be expressed in multiple different length units (like many other CSS properties).
+Firefox, Chrome and Edge allow you to convert...
     <a href="/tips/en/convert-font-units/">Read more</a>
   </div>
   <div class="tip-info">
@@ -607,7 +661,7 @@ While some...
   <a href="/tips/en/style-console-messages/" class="tip-image"><img src="../../assets/img/style-console-messages.png" alt="A styled console message in Edge." loading="lazy"></img></a>
   <div class="tip-excerpt">
     The console.log output can be styled in DevTools using CSS.
-console.log('%c Hello World', 'color: or...
+console.log('%c Hello World', 'color: orange; font-size: 2em;');...
     <a href="/tips/en/style-console-messages/">Read more</a>
   </div>
   <div class="tip-info">
@@ -622,7 +676,7 @@ console.log('%c Hello World', 'color: or...
   <a href="/tips/en/outline-everything/" class="tip-title">Draw a box around all elements to debug your CSS and page structure</a>
   <a href="/tips/en/outline-everything/" class="tip-image"><img src="../../assets/img/outline-everything.gif" alt="Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Simple, yet powerful, * { outline: 1px solid red; } is a useful debugging trick that helps understan...
+    Simple, yet powerful, * { outline: 1px solid red; } is a useful debugging trick that helps understanding the page structure, finding overflow bugs or understand why elements are being pushed away for...
     <a href="/tips/en/outline-everything/">Read more</a>
   </div>
   <div class="tip-info">
@@ -637,7 +691,8 @@ console.log('%c Hello World', 'color: or...
   <a href="/tips/en/edit-css-angles/" class="tip-title">Edit CSS angles</a>
   <a href="/tips/en/edit-css-angles/" class="tip-image"><img src="../../assets/img/edit-css-angles.gif" alt="Animation of the angle editor in Chrome, where a click is made on the angle swatch, and then the mouse is used to change the angle." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    In CSS, several different properties use angle unit values, such as the rotate() function of a trans...
+    In CSS, several different properties use angle unit values, such as the rotate() function of a transform or the linear-gradient orientation of a background-image, and more.
+In Chrome and Edge, whereve...
     <a href="/tips/en/edit-css-angles/">Read more</a>
   </div>
   <div class="tip-info">
@@ -652,7 +707,8 @@ console.log('%c Hello World', 'color: or...
   <a href="/tips/en/edit-clip-path-shape-outside/" class="tip-title">Edit clip-path and shape-outside CSS properties by dragging points in the page</a>
   <a href="/tips/en/edit-clip-path-shape-outside/" class="tip-image"><img src="../../assets/img/edit-clip-path-shape-outside.gif" alt="Animation of the shape editor in firefox, clicking on the Rules panel icon, and then moving points around in the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The clip-path property is a great way to change the final shape of an element and give it the shape...
+    The clip-path property is a great way to change the final shape of an element and give it the shape that you want.
+You can use this property to make an element be a circle, an ellipse, a polygon or an...
     <a href="/tips/en/edit-clip-path-shape-outside/">Read more</a>
   </div>
   <div class="tip-info">
@@ -667,7 +723,10 @@ console.log('%c Hello World', 'color: or...
   <a href="/tips/en/tweak-grid-flex-alignment/" class="tip-title">Tweak css grid and flexbox alignment properties</a>
   <a href="/tips/en/tweak-grid-flex-alignment/" class="tip-image"><img src="../../assets/img/tweak-grid-flex-alignment.png" alt="The grid editor in the Styles pane of Microsoft Edge." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Chrome and Edge both have a visual editor useful for tweaking flexbox and grid alignment properties....
+    Chrome and Edge both have a visual editor useful for tweaking flexbox and grid alignment properties.
+Head over to the Elements panel
+Select an element that is either a grid or flexbox container
+In th...
     <a href="/tips/en/tweak-grid-flex-alignment/">Read more</a>
   </div>
   <div class="tip-info">
@@ -682,7 +741,9 @@ console.log('%c Hello World', 'color: or...
   <a href="/tips/en/highlight-matching-elements/" class="tip-title">Highlight all the elements that a CSS rule matches</a>
   <a href="/tips/en/highlight-matching-elements/" class="tip-image"><img src="../../assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When you want to know which elements a given CSS rule will apply to, in addition to the currently se...
+    When you want to know which elements a given CSS rule will apply to, in addition to the currently selected element, you can:
+In Firefox:
+In the Style Editor panel: hover over any rule selector for s...
     <a href="/tips/en/highlight-matching-elements/">Read more</a>
   </div>
   <div class="tip-info">
@@ -698,7 +759,7 @@ console.log('%c Hello World', 'color: or...
   <a href="/tips/en/edit-css-filters/" class="tip-image"><img src="../../assets/img/edit-css-filters.png" alt="The filter editing UI in Firefox." loading="lazy"></img></a>
   <div class="tip-excerpt">
     The filter property in CSS lets you change the way a particular element gets rendered.
-Firefox provi...
+Firefox provides a visual editor to play with CSS filters. You can add or remove filter functions from the list,...
     <a href="/tips/en/edit-css-filters/">Read more</a>
   </div>
   <div class="tip-info">
@@ -710,11 +771,8 @@ Firefox provi...
 </li>
 </ul>
 
+      </div>
     </main>
-    <footer role="contentinfo">
-      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
-      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
-    </footer>
 
     
     

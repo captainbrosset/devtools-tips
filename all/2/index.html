@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>All DevTools Tips</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/2/">
+    <meta property="og:url" content="https://devtoolstips.org/all/2/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
     <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
@@ -22,34 +22,65 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <a href="/" class="logo">DevTools Tips</a>
+      <label for="show-menu">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" x="0px" y="0px">
+          <path d="m9.706 8l5.941-5.941c.471-.471.471-1.235 0-1.706-.471-.471-1.235-.471-1.706 0l-5.941 5.941-5.941-5.941c-.471-.471-1.235-.471-1.706 0-.471.471-.471 1.235 0 1.706l5.941 5.941-5.941 5.941c-.471.471-.471 1.235 0 1.706.235.236.544.353.853.353.309 0 .617-.118.853-.353l5.941-5.941 5.941 5.941c.236.236.544.353.853.353.309 0 .617-.118.853-.353.471-.471.471-1.235 0-1.706l-5.941-5.941"></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </label>
+      <a href="/" class="title">
+        <span class="sr-only">DevTools Tips</span>
+      </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/">All tips</a></li>
-          <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          <li><a href="/all/">All tips</a></li>
+          <li>Tips by category
+            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
-          <li tabindex="0">Browsers
-            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          <li>Tips by browser
+            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="header-shadow"></div>
-    <div class="header-shadow-block"></div>
-    <main id="maincontent" >
+    <main >
       <div class="page-toolbar">
-  <h1>160 DevTools Tips</h1>
-  <div id="search" class="search"></div>
-<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+        <label class="menu-button" title="Menu">
+          <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
+            <g transform="translate(0,-952.36218)">
+              <path d="m 13,968.36217 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6 0,3.31359 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.68641 6,-6 0,-3.31381 -2.6863,-6 -6,-6 z m 0,28 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6.00003 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.31384 -2.6863,-6.00003 -6,-6.00003 z m 0,28.00003 c -3.3136998,0 -5.9999998,2.6862 -5.9999998,6 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.3138 -2.6863,-6 -6,-6 z"></path>
+            </g>
+          </svg>
+          <input type="checkbox" id="show-menu">
+          <span class="sr-only">Open menu</span>
+        </label>
+        <div id="search" class="search"></div>
+<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false, translations: { placeholder: 'Search tips' } });"></script>
 
-</div>
+        <div class="social" >
+          <a href="https://github.com/captainbrosset/devtools-tips" title="GitHub repository, to file issues and create new tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            </svg>
+            <span class="sr-only">GitHub repository</span>
+          </a>
+          <a href="https://front-end.social/@devtoolstips" title="Mastodon account, to stay updated with our latest tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"></path>
+            </svg>
+            <span class="sr-only">Mastodon social account</span>
+          </a>
+        </div>
+      </div>
+      <div id="maincontent">
+        <h1>160 DevTools Tips</h1>
 <ul class="tips">
 <li class="hover-box tip " style="view-transition-name:post-ignore-scripts;">
   <a href="/tips/en/ignore-scripts/" class="tip-title">Ignore JavaScript code to ease debugging</a>
   <a href="/tips/en/ignore-scripts/" class="tip-image"><img src="../../assets/img/ignore-scripts.png" alt="Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Debugging JavaScript can quickly get out of hand when you have a lot of code and many functions that...
+    Debugging JavaScript can quickly get out of hand when you have a lot of code and many functions that call each other.
+What's even worse is when a lot of this code isn't even yours. This can happen whe...
     <a href="/tips/en/ignore-scripts/">Read more</a>
   </div>
   <div class="tip-info">
@@ -64,7 +95,9 @@
   <a href="/tips/en/edit-javascript-while-debugging/" class="tip-title">Edit JavaScript functions while debugging to test a quick fix</a>
   <a href="/tips/en/edit-javascript-while-debugging/" class="tip-image"><img src="../../assets/img/edit-javascript-while-debugging.gif" alt="Animation showing that it is possible to write code in the Sources panel, while debugging, to test fixes." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes, when debugging JavaScript code in DevTools, you may want to test a quick change and see w...
+    Sometimes, when debugging JavaScript code in DevTools, you may want to test a quick change and see whether that fixes the bug.
+Usually, this involves the following steps:
+Pause at a breakpoint, or an...
     <a href="/tips/en/edit-javascript-while-debugging/">Read more</a>
   </div>
   <div class="tip-info">
@@ -79,7 +112,8 @@
   <a href="/tips/en/extend-devtools/" class="tip-title">Install or create extensions to customize DevTools</a>
   <a href="/tips/en/extend-devtools/" class="tip-image"><img src="../../assets/img/extend-devtools.png" alt="Microsoft Edge, with DevTools opened, showing a custom panel." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    There's a lot of tools in DevTools already, probably more than you use. But in some cases, you may n...
+    There's a lot of tools in DevTools already, probably more than you use. But in some cases, you may need very specific tools that aren't available by default.
+Thankfully, DevTools can be extended with...
     <a href="/tips/en/extend-devtools/">Read more</a>
   </div>
   <div class="tip-info">
@@ -94,7 +128,8 @@
   <a href="/tips/en/use-another-language/" class="tip-title">Use DevTools in another language</a>
   <a href="/tips/en/use-another-language/" class="tip-image"><img src="../../assets/img/use-another-language.png" alt="The settings panel in Edge showing a checkbox to match DevTools with the browser language." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you want to use DevTools in another language than English, you can do it across all major browser...
+    If you want to use DevTools in another language than English, you can do it across all major browsers.
+In Firefox, DevTools will always match the language of the browser, so if you downloaded Firefox...
     <a href="/tips/en/use-another-language/">Read more</a>
   </div>
   <div class="tip-info">
@@ -109,7 +144,7 @@
   <a href="/tips/en/access-recent-console-results/" class="tip-title">Access results from recent Console evaluations</a>
   <a href="/tips/en/access-recent-console-results/" class="tip-image"><img src="../../assets/img/access-recent-console-results-firefox.png" alt="The Console in Firefox DevTools showing how using $_ refers to the previous Console result" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Imagine you evaluate a long expression like $$('*').map(el =&gt; Object.values(el.attributes).map(at...
+    Imagine you evaluate a long expression like $$('*').map(el =&gt; Object.values(el.attributes).map(attr =&gt; {return {name: attr.name, value: attr.value}})) which extracts the attributes from all of t...
     <a href="/tips/en/access-recent-console-results/">Read more</a>
   </div>
   <div class="tip-info">
@@ -124,7 +159,8 @@
   <a href="/tips/en/simulate-geolocation/" class="tip-title">Simulate a different latitude/longitude geolocation</a>
   <a href="/tips/en/simulate-geolocation/" class="tip-image"><img src="../../assets/img/simulate-geolocation.png" alt="Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If your website has features that depend on the geographic location of your users, you can test thes...
+    If your website has features that depend on the geographic location of your users, you can test these features by simulating different geolocations right from DevTools!
+Chrome and Edge DevTools have a...
     <a href="/tips/en/simulate-geolocation/">Read more</a>
   </div>
   <div class="tip-info">
@@ -139,7 +175,8 @@
   <a href="/tips/en/find-inactive-styles/" class="tip-title">Find inactive CSS styles</a>
   <a href="/tips/en/find-inactive-styles/" class="tip-image"><img src="../../assets/img/find-inactive-styles.png" alt="Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes we write CSS code that's entirely valid but has absolutely no effect at all, and this can...
+    Sometimes we write CSS code that's entirely valid but has absolutely no effect at all, and this can be frustrating.
+Indeed, there are many cases where a CSS declaration has no effect on an element. On...
     <a href="/tips/en/find-inactive-styles/">Read more</a>
   </div>
   <div class="tip-info">
@@ -154,7 +191,8 @@
   <a href="/tips/en/get-recently-selected-dom-nodes-in-console/" class="tip-title">Get the recently selected DOM nodes in the console</a>
   <a href="/tips/en/get-recently-selected-dom-nodes-in-console/" class="tip-image"><img src="../../assets/img/get-recently-selected-dom-nodes-in-console.gif" alt="Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you type $0 in the Console tool, in any browser, the currently selected DOM node is returned. Thi...
+    If you type $0 in the Console tool, in any browser, the currently selected DOM node is returned. This is very handy. To learn more, check Get the selected element in the console.
+On top of this, in Ed...
     <a href="/tips/en/get-recently-selected-dom-nodes-in-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -169,7 +207,7 @@
   <a href="/tips/en/inspect-css-animations/" class="tip-title">Inspect CSS animations</a>
   <a href="/tips/en/inspect-css-animations/" class="tip-image"><img src="../../assets/img/inspect-css-animation.gif" alt="Animation of Chrome DevTools showing how to inspect and modify CSS animations using the Animation inspector." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Modern browser DevTools provide a handy tool to inspect and modify CSS animations, CSS transitions,...
+    Modern browser DevTools provide a handy tool to inspect and modify CSS animations, CSS transitions, and Web animations. These tools not only help you debug animations, but also let you modify the vari...
     <a href="/tips/en/inspect-css-animations/">Read more</a>
   </div>
   <div class="tip-info">
@@ -184,7 +222,8 @@
   <a href="/tips/en/remove-annoying-overlays/" class="tip-title">Remove annoying page overlays and other elements</a>
   <a href="/tips/en/remove-annoying-overlays/" class="tip-image"><img src="../../assets/img/remove-annoying-overlays.gif" alt="Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    A lot of websites these days get covered with overlays and crammed with lots of ads and other things...
+    A lot of websites these days get covered with overlays and crammed with lots of ads and other things that make it hard to just read the content of the page.
+To get rid of an annoying overlay, or any o...
     <a href="/tips/en/remove-annoying-overlays/">Read more</a>
   </div>
   <div class="tip-info">
@@ -199,7 +238,7 @@
   <a href="/tips/en/copy-css-selector/" class="tip-title">Copy CSS selector of an element</a>
   <a href="/tips/en/copy-css-selector/" class="tip-image"><img src="../../assets/img/copy-css-selector.png" alt="Edge DevTools, showing how to access the Copy CSS selector option." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes we need to uniquely identify an element that lacks an identifier, so that it can be refere...
+    Sometimes we need to uniquely identify an element that lacks an identifier, so that it can be referenced in JavaScript and other places. All the major browsers have an option to build a unique CSS sel...
     <a href="/tips/en/copy-css-selector/">Read more</a>
   </div>
   <div class="tip-info">
@@ -214,7 +253,7 @@
   <a href="/tips/en/copy-element-js-path/" class="tip-title">Copy an element&#39;s JavaScript path</a>
   <a href="/tips/en/copy-element-js-path/" class="tip-image"><img src="../../assets/img/copy-element-js-path.png" alt="The Elements tool in Edge showing the context menu on an element, with the Copy JS path option." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    JavaScript often needs references to DOM nodes on the page. Getting a reference is sometimes easy wi...
+    JavaScript often needs references to DOM nodes on the page. Getting a reference is sometimes easy with document.getElementById() or similar. Other times however, a more complicated CSS selector needs...
     <a href="/tips/en/copy-element-js-path/">Read more</a>
   </div>
   <div class="tip-info">
@@ -229,7 +268,8 @@
   <a href="/tips/en/jump-to-referenced-elements/" class="tip-title">Jump from a label `for` attribute to the linked input (and more)</a>
   <a href="/tips/en/jump-to-referenced-elements/" class="tip-image"><img src="../../assets/img/jump-to-referenced-elements.gif" alt="Animation showing the Firefox DevTools Inspector panel, the mouse clicks the for attribute of a label element and the selection jumps to the related input element." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    In Firefox, you can jump from an element that references the ID attribute of an other element, to th...
+    In Firefox, you can jump from an element that references the ID attribute of an other element, to that other element, by Cmd+clicking (or Ctrl+clicking) the attribute.
+Here is a common example for whe...
     <a href="/tips/en/jump-to-referenced-elements/">Read more</a>
   </div>
   <div class="tip-info">
@@ -244,7 +284,7 @@
   <a href="/tips/en/fix-color-contrast-issues-with-element-tooltip/" class="tip-title">Fix color contrast issues using the element tooltip</a>
   <a href="/tips/en/fix-color-contrast-issues-with-element-tooltip/" class="tip-image"><img src="../../assets/img/fix-color-contrast-issues-with-element-tooltip.gif" alt="Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    There are multiple ways to detect and fix color contrast issues with DevTools, but here is a nice on...
+    There are multiple ways to detect and fix color contrast issues with DevTools, but here is a nice one to keep in mind. It's not straightforward to use and takes a few steps, but makes it very nice to...
     <a href="/tips/en/fix-color-contrast-issues-with-element-tooltip/">Read more</a>
   </div>
   <div class="tip-info">
@@ -259,7 +299,9 @@
   <a href="/tips/en/empty-cache-refresh/" class="tip-title">Empty the cache and hard refresh</a>
   <a href="/tips/en/empty-cache-refresh/" class="tip-image"><img src="../../assets/img/empty-cache-refresh.png" alt="The Microsoft Edge browser toolbar, showing the contextual menu of the refresh button, with the empty cache and hard refresh menu item." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Here is a nice tip to quickly empty your cache and refresh the page, in order to test new code chang...
+    Here is a nice tip to quickly empty your cache and refresh the page, in order to test new code changes:
+In Chrome, or Edge, open DevTools (F12). This step is not needed for Polypane.
+Right-click on t...
     <a href="/tips/en/empty-cache-refresh/">Read more</a>
   </div>
   <div class="tip-info">
@@ -274,7 +316,7 @@
   <a href="/tips/en/spot-out-of-viewport-elements/" class="tip-title">Quickly spot out-of-viewport elements</a>
   <a href="/tips/en/spot-out-of-viewport-elements/" class="tip-image"><img src="../../assets/img/spot-out-of-viewport-elements.png" alt="Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes, either by accident or on purpose, HTML elements end up outside of the visible browser vie...
+    Sometimes, either by accident or on purpose, HTML elements end up outside of the visible browser viewport. When they do, it can be really hard to find them in DevTools. Indeed, the DOM tree in the Ele...
     <a href="/tips/en/spot-out-of-viewport-elements/">Read more</a>
   </div>
   <div class="tip-info">
@@ -289,7 +331,8 @@
   <a href="/tips/en/edit-elements-with-the-keyboard/" class="tip-title">Edit an element&#39;s attributes and tag name with the keyboard</a>
   <a href="/tips/en/edit-elements-with-the-keyboard/" class="tip-image"><img src="../../assets/img/edit-elements-with-the-keyboard.gif" alt="Animation of a part of the Inspector panel in Firefox, showing how pressing Enter on a focused element goes into edit mode and how Tab allows to navigate from field to field." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Using the keyboard can be faster than using a mouse in certain cases (and for some people). One such...
+    Using the keyboard can be faster than using a mouse in certain cases (and for some people). One such case is editing an element's tag name and attributes in DevTools.
+To do this, select an element in...
     <a href="/tips/en/edit-elements-with-the-keyboard/">Read more</a>
   </div>
   <div class="tip-info">
@@ -304,7 +347,7 @@
   <a href="/tips/en/add-new-devices/" class="tip-title">Create your own simulated devices</a>
   <a href="/tips/en/add-new-devices/" class="tip-image"><img src="../../assets/img/add-new-devices.gif" alt="Animation of the device mode in Firefox, showing how to customize the list of devices, including adding custom devices." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    You can simulate various different devices from DevTools, to get an idea of how your webpage might r...
+    You can simulate various different devices from DevTools, to get an idea of how your webpage might render on those devices (note that this is only a simulation, the tool only changes the screen dimens...
     <a href="/tips/en/add-new-devices/">Read more</a>
   </div>
   <div class="tip-info">
@@ -319,7 +362,8 @@
   <a href="/tips/en/discover-all-tools/" class="tip-title">Discover all the tools</a>
   <a href="/tips/en/discover-all-tools/" class="tip-image"><img src="../../assets/img/discover-all-tools.png" alt="The list of most tools in Edge DevTools, just to illustrate how many there are" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    DevTools is confusing! There's so much functionality packed in such a small UI. Did you know that Ch...
+    DevTools is confusing! There's so much functionality packed in such a small UI. Did you know that Chrome DevTools had more than 30 individual tools! Yes, that's right, 30.
+It's hard for both new users...
     <a href="/tips/en/discover-all-tools/">Read more</a>
   </div>
   <div class="tip-info">
@@ -335,7 +379,7 @@
   <a href="/tips/en/copy-element-styles/" class="tip-image"><img src="../../assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values." loading="lazy"></img></a>
   <div class="tip-excerpt">
     You can extract all the styles of an element in one go by using the Copy styles feature.
-No need to...
+No need to go through all CSS rules and properties that apply to the element in the Styles pane, and manually b...
     <a href="/tips/en/copy-element-styles/">Read more</a>
   </div>
   <div class="tip-info">
@@ -351,7 +395,9 @@ No need to...
   <a href="/tips/en/use-designmode-to-spell-check/" class="tip-image"><img src="../../assets/img/use-designmode-to-spell-check.png" alt="Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines" loading="lazy"></img></a>
   <div class="tip-excerpt">
     Amelia Bellamy-Royds shared a really cool tip to spell-check a webpage's content from DevTools:
-Ope...
+Open DevTools, and go to the Console tool.
+Type document.designMode = &quot;on&quot; and press Enter.
+C...
     <a href="/tips/en/use-designmode-to-spell-check/">Read more</a>
   </div>
   <div class="tip-info">
@@ -366,7 +412,7 @@ Ope...
   <a href="/tips/en/debug-css-cascade-layers/" class="tip-title">Visualize and debug CSS cascade layers</a>
   <a href="/tips/en/debug-css-cascade-layers/" class="tip-image"><img src="../../assets/img/debug-css-cascade-layers-firefox.png" alt="Firefox with a demo page that uses layers, DevTools is opened and shows the Rules panel with two @layer rules" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple la...
+    Cascade layers is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which these layers apply. Cascade layers are meant to bring an elegant...
     <a href="/tips/en/debug-css-cascade-layers/">Read more</a>
   </div>
   <div class="tip-info">
@@ -381,7 +427,7 @@ Ope...
   <a href="/tips/en/get-website-issues/" class="tip-title">Automatically get issues your site has with performance, accessibility, security, compatibility, and others.</a>
   <a href="/tips/en/get-website-issues/" class="tip-image"><img src="../../assets/img/get-website-issues.png" alt="The issues panel in Edge, showing many different issues about the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Edge has a very useful Issues panel that can automatically list a lot of different issues with your...
+    Edge has a very useful Issues panel that can automatically list a lot of different issues with your site. It can detect common issues related to browser compatibility, accessibility, performance, secu...
     <a href="/tips/en/get-website-issues/">Read more</a>
   </div>
   <div class="tip-info">
@@ -396,7 +442,8 @@ Ope...
   <a href="/tips/en/screenshot-part-of-page-command-menu/" class="tip-title">Take a screenshot of part of a webpage from the Command Menu</a>
   <a href="/tips/en/screenshot-part-of-page-command-menu/" class="tip-image"><img src="../../assets/img/screenshot-part-of-page-command-menu.png" alt="Edge, with DevTools opened, and the Command menu showing the list of screenshot commands" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The Command menu in Edge and Chrome is a great way to do many of the things you can do in DevTools w...
+    The Command menu in Edge and Chrome is a great way to do many of the things you can do in DevTools without having to navigate the UI.
+Csaba Kissi shared a great tip on Twitter about the Command menu:...
     <a href="/tips/en/screenshot-part-of-page-command-menu/">Read more</a>
   </div>
   <div class="tip-info">
@@ -411,7 +458,8 @@ Ope...
   <a href="/tips/en/quickly-reference-react-console/" class="tip-title">Quickly reference React components in the console</a>
   <a href="/tips/en/quickly-reference-react-console/" class="tip-image"><img src="../../assets/img/quickly-reference-react-console.png" alt="The React DevTools components panel in DevTools, and Console below it, showing the result of $r" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Zee shared a great tip on Twitter if you are working with React and have the React DevTools extensio...
+    Zee shared a great tip on Twitter if you are working with React and have the React DevTools extension installed.
+You can use $r in the Console tool to reference the currently selected element in the R...
     <a href="/tips/en/quickly-reference-react-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -426,54 +474,51 @@ Ope...
   <ul>
     
       <li>
-        <a href="/" >
+        <a href="/all/" >
           Home
         </a>
       </li>
     
       <li>
-        <a href="/1/" >
+        <a href="/all/1/" >
           Page 1
         </a>
       </li>
     
       <li>
-        <a href="/2/" aria-current="page">
+        <a href="/all/2/" aria-current="page">
           Page 2
         </a>
       </li>
     
       <li>
-        <a href="/3/" >
+        <a href="/all/3/" >
           Page 3
         </a>
       </li>
     
       <li>
-        <a href="/4/" >
+        <a href="/all/4/" >
           Page 4
         </a>
       </li>
     
       <li>
-        <a href="/5/" >
+        <a href="/all/5/" >
           Page 5
         </a>
       </li>
     
       <li>
-        <a href="/6/" >
+        <a href="/all/6/" >
           Page 6
         </a>
       </li>
     
   </ul>
 </nav>
+      </div>
     </main>
-    <footer role="contentinfo">
-      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
-      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
-    </footer>
 
     
     

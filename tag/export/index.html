@@ -22,34 +22,64 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <a href="/" class="logo">Export DevTools Tips</a>
+      <label for="show-menu">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" x="0px" y="0px">
+          <path d="m9.706 8l5.941-5.941c.471-.471.471-1.235 0-1.706-.471-.471-1.235-.471-1.706 0l-5.941 5.941-5.941-5.941c-.471-.471-1.235-.471-1.706 0-.471.471-.471 1.235 0 1.706l5.941 5.941-5.941 5.941c-.471.471-.471 1.235 0 1.706.235.236.544.353.853.353.309 0 .617-.118.853-.353l5.941-5.941 5.941 5.941c.236.236.544.353.853.353.309 0 .617-.118.853-.353.471-.471.471-1.235 0-1.706l-5.941-5.941"></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </label>
+      <a href="/" class="title">
+        <span class="sr-only">DevTools Tips</span>
+      </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/">All tips</a></li>
-          <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          <li><a href="/all/">All tips</a></li>
+          <li>Tips by category
+            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
-          <li tabindex="0">Browsers
-            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          <li>Tips by browser
+            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="header-shadow"></div>
-    <div class="header-shadow-block"></div>
-    <main id="maincontent" >
+    <main >
       <div class="page-toolbar">
-  <h1>export tips</h1>
-  <div id="search" class="search"></div>
-<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+        <label class="menu-button" title="Menu">
+          <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
+            <g transform="translate(0,-952.36218)">
+              <path d="m 13,968.36217 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6 0,3.31359 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.68641 6,-6 0,-3.31381 -2.6863,-6 -6,-6 z m 0,28 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6.00003 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.31384 -2.6863,-6.00003 -6,-6.00003 z m 0,28.00003 c -3.3136998,0 -5.9999998,2.6862 -5.9999998,6 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.3138 -2.6863,-6 -6,-6 z"></path>
+            </g>
+          </svg>
+          <input type="checkbox" id="show-menu">
+          <span class="sr-only">Open menu</span>
+        </label>
+        <div id="search" class="search"></div>
+<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false, translations: { placeholder: 'Search tips' } });"></script>
 
-</div>
+        <div class="social" >
+          <a href="https://github.com/captainbrosset/devtools-tips" title="GitHub repository, to file issues and create new tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            </svg>
+            <span class="sr-only">GitHub repository</span>
+          </a>
+          <a href="https://front-end.social/@devtoolstips" title="Mastodon account, to stay updated with our latest tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"></path>
+            </svg>
+            <span class="sr-only">Mastodon social account</span>
+          </a>
+        </div>
+      </div>
+      <div id="maincontent">
+        <h1>6 export tips</h1>
 <ul class="tips">
 <li class="hover-box tip " style="view-transition-name:post-take-high-res-screenshots;">
   <a href="/tips/en/take-high-res-screenshots/" class="tip-title">Take high-resolution screenshots of web pages</a>
   <a href="/tips/en/take-high-res-screenshots/" class="tip-image"><img src="../../assets/img/take-high-res-screenshots-firefox.png" alt="Firefox, with DevTools opened, and the Console tool visible, showing that :screenshot command" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Taking screenshots of all or parts of web pages is super useful (scroll down to the See Also part at...
+    Taking screenshots of all or parts of web pages is super useful (scroll down to the See Also part at the bottom of this page for more tips on that). But sometimes, the resulting screenshots aren't hig...
     <a href="/tips/en/take-high-res-screenshots/">Read more</a>
   </div>
   <div class="tip-info">
@@ -65,7 +95,7 @@
   <a href="/tips/en/copy-element-styles/" class="tip-image"><img src="../../assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values." loading="lazy"></img></a>
   <div class="tip-excerpt">
     You can extract all the styles of an element in one go by using the Copy styles feature.
-No need to...
+No need to go through all CSS rules and properties that apply to the element in the Styles pane, and manually b...
     <a href="/tips/en/copy-element-styles/">Read more</a>
   </div>
   <div class="tip-info">
@@ -80,7 +110,8 @@ No need to...
   <a href="/tips/en/screenshot-part-of-page-command-menu/" class="tip-title">Take a screenshot of part of a webpage from the Command Menu</a>
   <a href="/tips/en/screenshot-part-of-page-command-menu/" class="tip-image"><img src="../../assets/img/screenshot-part-of-page-command-menu.png" alt="Edge, with DevTools opened, and the Command menu showing the list of screenshot commands" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The Command menu in Edge and Chrome is a great way to do many of the things you can do in DevTools w...
+    The Command menu in Edge and Chrome is a great way to do many of the things you can do in DevTools without having to navigate the UI.
+Csaba Kissi shared a great tip on Twitter about the Command menu:...
     <a href="/tips/en/screenshot-part-of-page-command-menu/">Read more</a>
   </div>
   <div class="tip-info">
@@ -95,7 +126,8 @@ No need to...
   <a href="/tips/en/take-in-device-screenshots/" class="tip-title">Take screenshots of your site in a device frame</a>
   <a href="/tips/en/take-in-device-screenshots/" class="tip-image"><img src="../../assets/img/take-in-device-screenshots.png" alt="Screenshot of the devtoolstips.org website in an iPhone frame" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Taking a photo of a mobile device or tablet is daunting as you have to deal with fingerprints, glare...
+    Taking a photo of a mobile device or tablet is daunting as you have to deal with fingerprints, glare and focus issues. Using Device Emulation makes this a lot easier.
+To take a screenshot of a web pa...
     <a href="/tips/en/take-in-device-screenshots/">Read more</a>
   </div>
   <div class="tip-info">
@@ -111,7 +143,8 @@ No need to...
   <a href="/tips/en/node-screenshot/" class="tip-image"><img src="../../assets/img/node-screenshot.gif" alt="Animation showing taking a node screenshot in Firefox." loading="lazy"></img></a>
   <div class="tip-excerpt">
     In Firefox, Chrome, Polypane and Edge DevTools, you can screenshot a single node from the page.
-Go...
+Go to the Elements panel (or Inspector panel in Firefox).
+Right-click on the node you want to screensho...
     <a href="/tips/en/node-screenshot/">Read more</a>
   </div>
   <div class="tip-info">
@@ -126,7 +159,7 @@ Go...
   <a href="/tips/en/find-css-changes/" class="tip-title">Find and export CSS changes</a>
   <a href="/tips/en/find-css-changes/" class="tip-image"><img src="../../assets/img/find-css-changes.png" alt="The Changes panel in Firefox showing a diff-like view of all the CSS changes." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you spent time changing CSS in DevTools, either in the Rules panel (in Firefox), or in the Source...
+    If you spent time changing CSS in DevTools, either in the Rules panel (in Firefox), or in the Sources or Styles panels (in Chrome or Edge), and you don't remember all of the changes you made, you can...
     <a href="/tips/en/find-css-changes/">Read more</a>
   </div>
   <div class="tip-info">
@@ -138,11 +171,8 @@ Go...
 </li>
 </ul>
 
+      </div>
     </main>
-    <footer role="contentinfo">
-      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
-      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
-    </footer>
 
     
     

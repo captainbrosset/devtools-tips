@@ -22,34 +22,65 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <a href="/" class="logo">Testing DevTools Tips</a>
+      <label for="show-menu">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" x="0px" y="0px">
+          <path d="m9.706 8l5.941-5.941c.471-.471.471-1.235 0-1.706-.471-.471-1.235-.471-1.706 0l-5.941 5.941-5.941-5.941c-.471-.471-1.235-.471-1.706 0-.471.471-.471 1.235 0 1.706l5.941 5.941-5.941 5.941c-.471.471-.471 1.235 0 1.706.235.236.544.353.853.353.309 0 .617-.118.853-.353l5.941-5.941 5.941 5.941c.236.236.544.353.853.353.309 0 .617-.118.853-.353.471-.471.471-1.235 0-1.706l-5.941-5.941"></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </label>
+      <a href="/" class="title">
+        <span class="sr-only">DevTools Tips</span>
+      </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/">All tips</a></li>
-          <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          <li><a href="/all/">All tips</a></li>
+          <li>Tips by category
+            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
-          <li tabindex="0">Browsers
-            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          <li>Tips by browser
+            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="header-shadow"></div>
-    <div class="header-shadow-block"></div>
-    <main id="maincontent" >
+    <main >
       <div class="page-toolbar">
-  <h1>testing tips</h1>
-  <div id="search" class="search"></div>
-<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+        <label class="menu-button" title="Menu">
+          <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
+            <g transform="translate(0,-952.36218)">
+              <path d="m 13,968.36217 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6 0,3.31359 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.68641 6,-6 0,-3.31381 -2.6863,-6 -6,-6 z m 0,28 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6.00003 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.31384 -2.6863,-6.00003 -6,-6.00003 z m 0,28.00003 c -3.3136998,0 -5.9999998,2.6862 -5.9999998,6 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.3138 -2.6863,-6 -6,-6 z"></path>
+            </g>
+          </svg>
+          <input type="checkbox" id="show-menu">
+          <span class="sr-only">Open menu</span>
+        </label>
+        <div id="search" class="search"></div>
+<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false, translations: { placeholder: 'Search tips' } });"></script>
 
-</div>
+        <div class="social" >
+          <a href="https://github.com/captainbrosset/devtools-tips" title="GitHub repository, to file issues and create new tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            </svg>
+            <span class="sr-only">GitHub repository</span>
+          </a>
+          <a href="https://front-end.social/@devtoolstips" title="Mastodon account, to stay updated with our latest tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"></path>
+            </svg>
+            <span class="sr-only">Mastodon social account</span>
+          </a>
+        </div>
+      </div>
+      <div id="maincontent">
+        <h1>24 testing tips</h1>
 <ul class="tips">
 <li class="hover-box tip " style="view-transition-name:post-see-viewport-size;">
   <a href="/tips/en/see-viewport-size/" class="tip-title">See the viewport size</a>
   <a href="/tips/en/see-viewport-size/" class="tip-image"><img src="../../assets/img/see-viewport-size-chrome.png" alt="Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The size of the viewport that's used to render a webpage in a browser can be very important at times...
+    The size of the viewport that's used to render a webpage in a browser can be very important at times, such as when creating or debugging media queries.
+You can easily know what the current size of the...
     <a href="/tips/en/see-viewport-size/">Read more</a>
   </div>
   <div class="tip-info">
@@ -64,7 +95,7 @@
   <a href="/tips/en/detect-3p-cookies/" class="tip-title">Check if a website uses third-party cookies</a>
   <a href="/tips/en/detect-3p-cookies/" class="tip-image"><img src="../../assets/img/detect-3p-cookies.png" alt="Chrome DevTools' Application tool, showing the cookies section containing a bunch of third-party websites" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Cookies are small files that websites save on your computer when you visit them. Websites often use...
+    Cookies are small files that websites save on your computer when you visit them. Websites often use cookies to remember things about your last visit. For example, a weather website can use cookies to...
     <a href="/tips/en/detect-3p-cookies/">Read more</a>
   </div>
   <div class="tip-info">
@@ -79,7 +110,8 @@
   <a href="/tips/en/find-all-elements-with-style/" class="tip-title">Find all elements with a specific style</a>
   <a href="/tips/en/find-all-elements-with-style/" class="tip-image"><img src="../../assets/img/find-all-elements-with-style.png" alt="The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Let's say you want to list all of the elements on a page that are absolutely positioned. Or maybe yo...
+    Let's say you want to list all of the elements on a page that are absolutely positioned. Or maybe you want to find all of the elements that use CSS grid. How would you do that?
+One way is to run a few...
     <a href="/tips/en/find-all-elements-with-style/">Read more</a>
   </div>
   <div class="tip-info">
@@ -94,7 +126,8 @@
   <a href="/tips/en/debug-print-css-styles/" class="tip-title">Debug your print CSS styles by simulating print media</a>
   <a href="/tips/en/debug-print-css-styles/" class="tip-image"><img src="../../assets/img/debug-print-css-styles-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the print media button" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you work on a webpage that's supposed to be printed, you probably want to test your print CSS sty...
+    If you work on a webpage that's supposed to be printed, you probably want to test your print CSS styles. You can use your browser's print preview of course, but what if you need to debug the CSS?
+DevT...
     <a href="/tips/en/debug-print-css-styles/">Read more</a>
   </div>
   <div class="tip-info">
@@ -109,7 +142,8 @@
   <a href="/tips/en/find-broken-links/" class="tip-title">Find broken links</a>
   <a href="/tips/en/find-broken-links/" class="tip-image"><img src="../../assets/img/find-broken-links-polypane.png" alt="Polypane, with the outline panel open. Two of the links show a 404 error code" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The link to X on page Y doesn't work is probably a bug report you've received at some point. But how...
+    The link to X on page Y doesn't work is probably a bug report you've received at some point. But how do you find these broken links before someone else does?
+In Polypane, the Outline Panel will show y...
     <a href="/tips/en/find-broken-links/">Read more</a>
   </div>
   <div class="tip-info">
@@ -124,7 +158,7 @@
   <a href="/tips/en/emulate-color-schemes/" class="tip-title">Emulate color schemes</a>
   <a href="/tips/en/emulate-color-schemes/" class="tip-image"><img src="../../assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    In CSS, you can use the prefers-color-scheme media feature (docs) to detect if the user prefers usin...
+    In CSS, you can use the prefers-color-scheme media feature (docs) to detect if the user prefers using a light or a dark theme in their operating system. This is useful to style your website in a way t...
     <a href="/tips/en/emulate-color-schemes/">Read more</a>
   </div>
   <div class="tip-info">
@@ -139,7 +173,8 @@
   <a href="/tips/en/simulate-multiple-devices/" class="tip-title">Simulate multiple devices that are kept in sync</a>
   <a href="/tips/en/simulate-multiple-devices/" class="tip-image"><img src="../../assets/img/simulate-devices-polypane.png" alt="Polypane showing three different devices side-by-side." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Instead of simulating devices one by one and switching between them, Polypane supports testing on mu...
+    Instead of simulating devices one by one and switching between them, Polypane supports testing on multiple simulated devices and viewports at the same time.
+It lets you test different simulated device...
     <a href="/tips/en/simulate-multiple-devices/">Read more</a>
   </div>
   <div class="tip-info">
@@ -154,7 +189,7 @@
   <a href="/tips/en/show-web-vitals/" class="tip-title">Show web vitals</a>
   <a href="/tips/en/show-web-vitals/" class="tip-image"><img src="../../assets/img/show-web-vitals.png" alt="The web vitals tooltip in Polypane showing a good CLS, LCP and FCP score and a FID score that needs improvement." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Web vitals are a set of metrics that help you determine how well-built your page is. You can learn m...
+    Web vitals are a set of metrics that help you determine how well-built your page is. You can learn more about them here. These scores can be obtained with various online checks like PageSpeed Insights...
     <a href="/tips/en/show-web-vitals/">Read more</a>
   </div>
   <div class="tip-info">
@@ -169,7 +204,7 @@
   <a href="/tips/en/form-testing/" class="tip-title">Autofill forms for testing</a>
   <a href="/tips/en/form-testing/" class="tip-image"><img src="../../assets/img/form-testing.gif" alt="Animation of a form being filled after selecting &quot;autofill&quot; in the context menu, followed by the form being emptied after choosing &quot;Clear form&quot; in the context menu." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    In Polypane you can right-click any form on the page and select Autofill form to add dummy values to...
+    In Polypane you can right-click any form on the page and select Autofill form to add dummy values to all input elements. This prevents you from having to go field-by-field to fill in all required fiel...
     <a href="/tips/en/form-testing/">Read more</a>
   </div>
   <div class="tip-info">
@@ -184,7 +219,7 @@
   <a href="/tips/en/test-pwa-protocol-handlers/" class="tip-title">Test your PWA protocol handlers</a>
   <a href="/tips/en/test-pwa-protocol-handlers/" class="tip-image"><img src="../../assets/img/test-pwa-protocol-handlers.png" alt="Microsoft Edge, with the Application tool opened on the side, showing the Protocol Handlers section." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Progressive Web Apps (PWA) can register themselves to handle URIs with pre-defined or custom protoco...
+    Progressive Web Apps (PWA) can register themselves to handle URIs with pre-defined or custom protocols (such as mailto, geo, or web+foo). This is a great capability that makes it possible for installe...
     <a href="/tips/en/test-pwa-protocol-handlers/">Read more</a>
   </div>
   <div class="tip-info">
@@ -199,7 +234,8 @@
   <a href="/tips/en/emulate-idle-detection-states/" class="tip-title">Emulate idle detection states</a>
   <a href="/tips/en/emulate-idle-detection-states/" class="tip-image"><img src="../../assets/img/emulate-idle-detection-states.png" alt="Chrome DevTools' Sensors panel, showing a drop-down list with the different states that can be emulated." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The Idle Detection API is useful for web developers to detect when the user isn't interacting with t...
+    The Idle Detection API is useful for web developers to detect when the user isn't interacting with their device. This can be useful for chat applications, for example, to mark the user as away.
+Note:...
     <a href="/tips/en/emulate-idle-detection-states/">Read more</a>
   </div>
   <div class="tip-info">
@@ -214,7 +250,8 @@
   <a href="/tips/en/simulate-devices/" class="tip-title">Simulate different devices and screen sizes</a>
   <a href="/tips/en/simulate-devices/" class="tip-image"><img src="../../assets/img/simulate-devices-chrome.png" alt="Chrome, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    All browser DevTools have a built-in mode that you can use to test a webpage under different screen...
+    All browser DevTools have a built-in mode that you can use to test a webpage under different screen sizes and device capabilities.
+As a web developer, it is very important to realize that your website...
     <a href="/tips/en/simulate-devices/">Read more</a>
   </div>
   <div class="tip-info">
@@ -229,7 +266,8 @@
   <a href="/tips/en/simulate-geolocation/" class="tip-title">Simulate a different latitude/longitude geolocation</a>
   <a href="/tips/en/simulate-geolocation/" class="tip-image"><img src="../../assets/img/simulate-geolocation.png" alt="Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If your website has features that depend on the geographic location of your users, you can test thes...
+    If your website has features that depend on the geographic location of your users, you can test these features by simulating different geolocations right from DevTools!
+Chrome and Edge DevTools have a...
     <a href="/tips/en/simulate-geolocation/">Read more</a>
   </div>
   <div class="tip-info">
@@ -244,7 +282,7 @@
   <a href="/tips/en/copy-element-js-path/" class="tip-title">Copy an element&#39;s JavaScript path</a>
   <a href="/tips/en/copy-element-js-path/" class="tip-image"><img src="../../assets/img/copy-element-js-path.png" alt="The Elements tool in Edge showing the context menu on an element, with the Copy JS path option." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    JavaScript often needs references to DOM nodes on the page. Getting a reference is sometimes easy wi...
+    JavaScript often needs references to DOM nodes on the page. Getting a reference is sometimes easy with document.getElementById() or similar. Other times however, a more complicated CSS selector needs...
     <a href="/tips/en/copy-element-js-path/">Read more</a>
   </div>
   <div class="tip-info">
@@ -259,7 +297,9 @@
   <a href="/tips/en/empty-cache-refresh/" class="tip-title">Empty the cache and hard refresh</a>
   <a href="/tips/en/empty-cache-refresh/" class="tip-image"><img src="../../assets/img/empty-cache-refresh.png" alt="The Microsoft Edge browser toolbar, showing the contextual menu of the refresh button, with the empty cache and hard refresh menu item." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Here is a nice tip to quickly empty your cache and refresh the page, in order to test new code chang...
+    Here is a nice tip to quickly empty your cache and refresh the page, in order to test new code changes:
+In Chrome, or Edge, open DevTools (F12). This step is not needed for Polypane.
+Right-click on t...
     <a href="/tips/en/empty-cache-refresh/">Read more</a>
   </div>
   <div class="tip-info">
@@ -274,7 +314,7 @@
   <a href="/tips/en/add-new-devices/" class="tip-title">Create your own simulated devices</a>
   <a href="/tips/en/add-new-devices/" class="tip-image"><img src="../../assets/img/add-new-devices.gif" alt="Animation of the device mode in Firefox, showing how to customize the list of devices, including adding custom devices." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    You can simulate various different devices from DevTools, to get an idea of how your webpage might r...
+    You can simulate various different devices from DevTools, to get an idea of how your webpage might render on those devices (note that this is only a simulation, the tool only changes the screen dimens...
     <a href="/tips/en/add-new-devices/">Read more</a>
   </div>
   <div class="tip-info">
@@ -290,7 +330,9 @@
   <a href="/tips/en/use-designmode-to-spell-check/" class="tip-image"><img src="../../assets/img/use-designmode-to-spell-check.png" alt="Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines" loading="lazy"></img></a>
   <div class="tip-excerpt">
     Amelia Bellamy-Royds shared a really cool tip to spell-check a webpage's content from DevTools:
-Ope...
+Open DevTools, and go to the Console tool.
+Type document.designMode = &quot;on&quot; and press Enter.
+C...
     <a href="/tips/en/use-designmode-to-spell-check/">Read more</a>
   </div>
   <div class="tip-info">
@@ -305,7 +347,7 @@ Ope...
   <a href="/tips/en/get-website-issues/" class="tip-title">Automatically get issues your site has with performance, accessibility, security, compatibility, and others.</a>
   <a href="/tips/en/get-website-issues/" class="tip-image"><img src="../../assets/img/get-website-issues.png" alt="The issues panel in Edge, showing many different issues about the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Edge has a very useful Issues panel that can automatically list a lot of different issues with your...
+    Edge has a very useful Issues panel that can automatically list a lot of different issues with your site. It can detect common issues related to browser compatibility, accessibility, performance, secu...
     <a href="/tips/en/get-website-issues/">Read more</a>
   </div>
   <div class="tip-info">
@@ -320,7 +362,8 @@ Ope...
   <a href="/tips/en/prototype-in-the-browser/" class="tip-title">Start your HTML and CSS prototypes in the browser directly</a>
   <a href="/tips/en/prototype-in-the-browser/" class="tip-image"><img src="../../assets/img/prototype-in-the-browser.png" alt="Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes I need a blank canvas to prototype an idea with HTML and CSS. Something outside of the web...
+    Sometimes I need a blank canvas to prototype an idea with HTML and CSS. Something outside of the website I'm working on. Maybe I need a new layout or component and I'm not sure yet how to do it.
+In th...
     <a href="/tips/en/prototype-in-the-browser/">Read more</a>
   </div>
   <div class="tip-info">
@@ -335,7 +378,7 @@ Ope...
   <a href="/tips/en/use-full-browser-for-device-emulation/" class="tip-title">Use full browser window for device emulation</a>
   <a href="/tips/en/use-full-browser-for-device-emulation/" class="tip-image"><img src="../../assets/img/use-full-browser-for-device-emulation.gif" alt="Animation showing device emulation and how to undock the Developer Tools into an own window." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Emulating different devices in the browser is incredibly useful. It gets tricky when you are on a de...
+    Emulating different devices in the browser is incredibly useful. It gets tricky when you are on a device with limited resolution as the emulated device needs to be zoomed down to fit the screen as a l...
     <a href="/tips/en/use-full-browser-for-device-emulation/">Read more</a>
   </div>
   <div class="tip-info">
@@ -350,7 +393,8 @@ Ope...
   <a href="/tips/en/record-replay/" class="tip-title">Record and replay user flows</a>
   <a href="/tips/en/record-replay/" class="tip-image"><img src="../../assets/img/record-replay.gif" alt="Animation of the Recorder panel automatically replaying a set of recorded steps." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Have you ever had to test the same user scenario again and again while working on a fix or performan...
+    Have you ever had to test the same user scenario again and again while working on a fix or performance improvement?
+Sometimes you just have to click the same buttons and do the same actions every time...
     <a href="/tips/en/record-replay/">Read more</a>
   </div>
   <div class="tip-info">
@@ -365,7 +409,9 @@ Ope...
   <a href="/tips/en/evaluate-xpath/" class="tip-title">Evaluate XPath to find elements in the page</a>
   <a href="/tips/en/evaluate-xpath/" class="tip-image"><img src="../../assets/img/evaluate-xpath-1.png" alt="The Inspector panel in Firefox showing the search field with an XPath expression." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    DevTools supports 2 ways to evaluate XPath expressions to help you locate elements in the page. All...
+    DevTools supports 2 ways to evaluate XPath expressions to help you locate elements in the page. All browsers support those 2 ways:
+From the Elements (or Inspector) panel:
+Click anywhere in the panel...
     <a href="/tips/en/evaluate-xpath/">Read more</a>
   </div>
   <div class="tip-info">
@@ -380,7 +426,7 @@ Ope...
   <a href="/tips/en/block-resources/" class="tip-title">Block resources to test your site without CSS or JavaScript</a>
   <a href="/tips/en/block-resources/" class="tip-image"><img src="../../assets/img/block-resources-1.png" alt="The Network panel in Edge showing the contextual menu with the &quot;block request url&quot; item." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The various resources loaded by your site aren't always guaranteed to reach your users when they vis...
+    The various resources loaded by your site aren't always guaranteed to reach your users when they visit your site. Network problems can occur, JavaScript may be disabled, a CDN may be down, or the brow...
     <a href="/tips/en/block-resources/">Read more</a>
   </div>
   <div class="tip-info">
@@ -395,7 +441,9 @@ Ope...
   <a href="/tips/en/copy-element-xpath/" class="tip-title">Copy an element&#39;s XPath expression</a>
   <a href="/tips/en/copy-element-xpath/" class="tip-image"><img src="../../assets/img/copy-element-xpath.png" alt="The Elements panel in Edge showing the copy xpath option in the contextual menu." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    You can easily copy an element's XPath expression from DevTools. This is useful if you need this exp...
+    You can easily copy an element's XPath expression from DevTools. This is useful if you need this expression for an automated test for example.
+Go to the Elements (or Inspector) panel
+Use the context-...
     <a href="/tips/en/copy-element-xpath/">Read more</a>
   </div>
   <div class="tip-info">
@@ -407,11 +455,8 @@ Ope...
 </li>
 </ul>
 
+      </div>
     </main>
-    <footer role="contentinfo">
-      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
-      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
-    </footer>
 
     
     

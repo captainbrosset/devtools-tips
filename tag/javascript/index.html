@@ -22,34 +22,65 @@
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
-      <a href="/" class="logo">Javascript DevTools Tips</a>
+      <label for="show-menu">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" x="0px" y="0px">
+          <path d="m9.706 8l5.941-5.941c.471-.471.471-1.235 0-1.706-.471-.471-1.235-.471-1.706 0l-5.941 5.941-5.941-5.941c-.471-.471-1.235-.471-1.706 0-.471.471-.471 1.235 0 1.706l5.941 5.941-5.941 5.941c-.471.471-.471 1.235 0 1.706.235.236.544.353.853.353.309 0 .617-.118.853-.353l5.941-5.941 5.941 5.941c.236.236.544.353.853.353.309 0 .617-.118.853-.353.471-.471.471-1.235 0-1.706l-5.941-5.941"></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </label>
+      <a href="/" class="title">
+        <span class="sr-only">DevTools Tips</span>
+      </a>
       <nav>
         <ul class="header-menu">
-          <li><a href="/">All tips</a></li>
-          <li tabindex="0">Categories
-            <ul class="submenu-reveal"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          <li><a href="/all/">All tips</a></li>
+          <li>Tips by category
+            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
-          <li tabindex="0">Browsers
-            <ul class="submenu-reveal"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
+          <li>Tips by browser
+            <ul class="submenu"><li><a href="/browser/chrome/">chrome</a></li><li><a href="/browser/edge/">edge</a></li><li><a href="/browser/firefox/">firefox</a></li><li><a href="/browser/polypane/">polypane</a></li><li><a href="/browser/safari/">safari</a></li></ul>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="header-shadow"></div>
-    <div class="header-shadow-block"></div>
-    <main id="maincontent" >
+    <main >
       <div class="page-toolbar">
-  <h1>javascript tips</h1>
-  <div id="search" class="search"></div>
-<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+        <label class="menu-button" title="Menu">
+          <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
+            <g transform="translate(0,-952.36218)">
+              <path d="m 13,968.36217 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6 0,3.31359 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.68641 6,-6 0,-3.31381 -2.6863,-6 -6,-6 z m 0,28 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6.00003 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.31384 -2.6863,-6.00003 -6,-6.00003 z m 0,28.00003 c -3.3136998,0 -5.9999998,2.6862 -5.9999998,6 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.3138 -2.6863,-6 -6,-6 z"></path>
+            </g>
+          </svg>
+          <input type="checkbox" id="show-menu">
+          <span class="sr-only">Open menu</span>
+        </label>
+        <div id="search" class="search"></div>
+<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false, translations: { placeholder: 'Search tips' } });"></script>
 
-</div>
+        <div class="social" >
+          <a href="https://github.com/captainbrosset/devtools-tips" title="GitHub repository, to file issues and create new tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            </svg>
+            <span class="sr-only">GitHub repository</span>
+          </a>
+          <a href="https://front-end.social/@devtoolstips" title="Mastodon account, to stay updated with our latest tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"></path>
+            </svg>
+            <span class="sr-only">Mastodon social account</span>
+          </a>
+        </div>
+      </div>
+      <div id="maincontent">
+        <h1>24 javascript tips</h1>
 <ul class="tips">
 <li class="hover-box tip " style="view-transition-name:post-force-execution-at-breakpoint;">
   <a href="/tips/en/force-execution-at-breakpoint/" class="tip-title">Force execution, skipping breakpoints, when paused</a>
   <a href="/tips/en/force-execution-at-breakpoint/" class="tip-image"><img src="../../assets/img/force-execution-at-breakpoint-edge.png" alt="The Sources tool in Edge, showing the Force script execution button" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When using breakpoints to debug your JavaScript code, sometimes you end up setting many breakpoints...
+    When using breakpoints to debug your JavaScript code, sometimes you end up setting many breakpoints in different functions. You might want to keep these breakpoints but not always pause at them.
+There...
     <a href="/tips/en/force-execution-at-breakpoint/">Read more</a>
   </div>
   <div class="tip-info">
@@ -64,7 +95,7 @@
   <a href="/tips/en/detect-unused-code/" class="tip-title">Detect unused CSS and JavaScript code</a>
   <a href="/tips/en/detect-unused-code/" class="tip-image"><img src="../../assets/img/detect-unused-code.png" alt="Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that...
+    To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when th...
     <a href="/tips/en/detect-unused-code/">Read more</a>
   </div>
   <div class="tip-info">
@@ -80,7 +111,7 @@
   <a href="/tips/en/disable-abusive-debugger-statement/" class="tip-image"><img src="../../assets/img/disable-abusive-debugger-statement.gif" alt="The Sources tool in Firefox, showing how to add a conditional breakpoint." loading="lazy"></img></a>
   <div class="tip-excerpt">
     Some websites make it impossible to use DevTools by adding debugger statements in their code.
-The st...
+The statements don't do anything for normal users, but as soon as DevTools is opened, the JavaScript execu...
     <a href="/tips/en/disable-abusive-debugger-statement/">Read more</a>
   </div>
   <div class="tip-info">
@@ -95,7 +126,7 @@ The st...
   <a href="/tips/en/manipulate-global-objects-on-page-load/" class="tip-title">Manipulate global objects on page load, before other scripts run</a>
   <a href="/tips/en/manipulate-global-objects-on-page-load/" class="tip-image"><img src="../../assets/img/manipulate-global-objects-on-page-load.png" alt="The Sources tab in Safari's WebInspector, showing the Add resource button and the Bootstrap script type" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When a page loads, and all of its global objects are ready, but before the JavaScript code of the pa...
+    When a page loads, and all of its global objects are ready, but before the JavaScript code of the page actually kicks-in, is a great time to inject debugging code. For example, it might be useful to r...
     <a href="/tips/en/manipulate-global-objects-on-page-load/">Read more</a>
   </div>
   <div class="tip-info">
@@ -110,7 +141,8 @@ The st...
   <a href="/tips/en/use-scripts-as-snippets/" class="tip-title">Re-use scripts as snippets</a>
   <a href="/tips/en/use-scripts-as-snippets/" class="tip-image"><img src="../../assets/img/use-scripts-as-snippets-1.png" alt="The snippets editor in the Sources tool with a snippet open in the editor." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The Console is great to write short JavaScript expressions that read from the document or manipulate...
+    The Console is great to write short JavaScript expressions that read from the document or manipulate it. But it's also a terrible editor.
+You can actually use a full editor in Edge, Chrome, and Safari...
     <a href="/tips/en/use-scripts-as-snippets/">Read more</a>
   </div>
   <div class="tip-info">
@@ -125,7 +157,8 @@ The st...
   <a href="/tips/en/ignore-scripts/" class="tip-title">Ignore JavaScript code to ease debugging</a>
   <a href="/tips/en/ignore-scripts/" class="tip-image"><img src="../../assets/img/ignore-scripts.png" alt="Firefox ignore line contextual menu option, displayed on a few lines of selected JavaScript code." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Debugging JavaScript can quickly get out of hand when you have a lot of code and many functions that...
+    Debugging JavaScript can quickly get out of hand when you have a lot of code and many functions that call each other.
+What's even worse is when a lot of this code isn't even yours. This can happen whe...
     <a href="/tips/en/ignore-scripts/">Read more</a>
   </div>
   <div class="tip-info">
@@ -140,7 +173,9 @@ The st...
   <a href="/tips/en/edit-javascript-while-debugging/" class="tip-title">Edit JavaScript functions while debugging to test a quick fix</a>
   <a href="/tips/en/edit-javascript-while-debugging/" class="tip-image"><img src="../../assets/img/edit-javascript-while-debugging.gif" alt="Animation showing that it is possible to write code in the Sources panel, while debugging, to test fixes." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes, when debugging JavaScript code in DevTools, you may want to test a quick change and see w...
+    Sometimes, when debugging JavaScript code in DevTools, you may want to test a quick change and see whether that fixes the bug.
+Usually, this involves the following steps:
+Pause at a breakpoint, or an...
     <a href="/tips/en/edit-javascript-while-debugging/">Read more</a>
   </div>
   <div class="tip-info">
@@ -155,7 +190,7 @@ The st...
   <a href="/tips/en/copy-element-js-path/" class="tip-title">Copy an element&#39;s JavaScript path</a>
   <a href="/tips/en/copy-element-js-path/" class="tip-image"><img src="../../assets/img/copy-element-js-path.png" alt="The Elements tool in Edge showing the context menu on an element, with the Copy JS path option." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    JavaScript often needs references to DOM nodes on the page. Getting a reference is sometimes easy wi...
+    JavaScript often needs references to DOM nodes on the page. Getting a reference is sometimes easy with document.getElementById() or similar. Other times however, a more complicated CSS selector needs...
     <a href="/tips/en/copy-element-js-path/">Read more</a>
   </div>
   <div class="tip-info">
@@ -170,7 +205,7 @@ The st...
   <a href="/tips/en/manipulate-complex-json/" class="tip-title">Manipulate complex JSON files using DevTools</a>
   <a href="/tips/en/manipulate-complex-json/" class="tip-image"><img src="../../assets/img/manipulate-complex-json.png" alt="VSCode with some JSON data and DevTools next to it with the snippets panel containing JS code to manipulate the JSON." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    I often work with large amount of data that I need to go through and gather interesting information...
+    I often work with large amount of data that I need to go through and gather interesting information from. Sometimes this data is in JSON format. When that's the case, I like using DevTools to turn it...
     <a href="/tips/en/manipulate-complex-json/">Read more</a>
   </div>
   <div class="tip-info">
@@ -185,7 +220,9 @@ The st...
   <a href="/tips/en/track-focused-element/" class="tip-title">Detect the element with focus at any time</a>
   <a href="/tips/en/track-focused-element/" class="tip-image"><img src="../../assets/img/track-focused-element.gif" alt="Animation showing a web page with focus going through different element, and the Edge Console panel with the live expression showing a preview of the focused element." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you want to know which element has the focus on the web page at any time, you can use a live expr...
+    If you want to know which element has the focus on the web page at any time, you can use a live expression in the Console tool.
+Open the Console.
+Click the Create live expression button (it looks lik...
     <a href="/tips/en/track-focused-element/">Read more</a>
   </div>
   <div class="tip-info">
@@ -200,7 +237,8 @@ The st...
   <a href="/tips/en/disable-event-listeners/" class="tip-title">Remove or disable event listeners</a>
   <a href="/tips/en/disable-event-listeners/" class="tip-image"><img src="../../assets/img/disable-event-listeners-firefox.png" alt="The Firefox event popup in the Inspector panel, showing the checkbox to toggle events." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When you're trying to debug something and event listeners on the page keep interfering with what you...
+    When you're trying to debug something and event listeners on the page keep interfering with what you're doing, it can be frustrating.
+Imagine a mousemove event listener that changes some of the inform...
     <a href="/tips/en/disable-event-listeners/">Read more</a>
   </div>
   <div class="tip-info">
@@ -215,7 +253,8 @@ The st...
   <a href="/tips/en/copy-rule-as-css-in-js/" class="tip-title">Copy a CSS rule as CSS-in-JS format</a>
   <a href="/tips/en/copy-rule-as-css-in-js/" class="tip-image"><img src="../../assets/img/copy-rule-as-css-in-js.gif" alt="Aimation showing the Styles pane in Edge, with the &quot;Copy all declarations as JS&quot; option being used, and then pasting the result in the Console to show that it is formatted." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Do you use a CSS-in-JS framework? If so, you know how frustrating it can be to copy CSS from DevTool...
+    Do you use a CSS-in-JS framework? If so, you know how frustrating it can be to copy CSS from DevTools and paste it into your code.
+Indeed if the CSS you worked on in the Styles panel looks like this:...
     <a href="/tips/en/copy-rule-as-css-in-js/">Read more</a>
   </div>
   <div class="tip-info">
@@ -231,7 +270,7 @@ The st...
   <a href="/tips/en/automatically-log-name-and-value/" class="tip-image"><img src="../../assets/img/automatically-log-name-and-value.gif" alt="Animation showing the different ways the variables are logged with and without curly braces." loading="lazy"></img></a>
   <div class="tip-excerpt">
     Using the console of DevTools you can to log some information to debug your JavaScript.
-The common w...
+The common way to do that is to add a console.log() statement where you want to learn the value of a certain var...
     <a href="/tips/en/automatically-log-name-and-value/">Read more</a>
   </div>
   <div class="tip-info">
@@ -246,7 +285,7 @@ The common w...
   <a href="/tips/en/live-expressions/" class="tip-title">Cut down on console noise using live expressions</a>
   <a href="/tips/en/live-expressions/" class="tip-image"><img src="../../assets/img/live-expressions-eye-icon.png" alt="The eye button in DevTools" loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Using the Console of DevTools to log information that changes a lot is a bad idea. First of all, you...
+    Using the Console of DevTools to log information that changes a lot is a bad idea. First of all, you flood it with information. Secondly, it can impact the performance of your product. And last but no...
     <a href="/tips/en/live-expressions/">Read more</a>
   </div>
   <div class="tip-info">
@@ -261,7 +300,9 @@ The common w...
   <a href="/tips/en/use-logpoints/" class="tip-title">Console.log() for the web with logpoints</a>
   <a href="/tips/en/use-logpoints/" class="tip-image"><img src="../../assets/img/use-logpoints.png" alt="Setting a logpoint in the sources tool." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Using the console to log some information is a very common way to debug your JavaScript. But you can...
+    Using the console to log some information is a very common way to debug your JavaScript. But you can also log information in any web site using Logpoints in the sources panel.
+Here's how to do it:
+I...
     <a href="/tips/en/use-logpoints/">Read more</a>
   </div>
   <div class="tip-info">
@@ -276,7 +317,8 @@ The common w...
   <a href="/tips/en/break-on-dom-changes/" class="tip-title">Pause script execution when the DOM changes</a>
   <a href="/tips/en/break-on-dom-changes/" class="tip-image"><img src="../../assets/img/break-on-dom-changes.png" alt="The Elements panel in Edge showing the &quot;Break on&quot; contextual menu on the selected node." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you want to know what JavaScript code removes, adds, or modifies a DOM element in the page, you c...
+    If you want to know what JavaScript code removes, adds, or modifies a DOM element in the page, you can use DOM breakpoints in DevTools. You can choose to break on:
+Subtree modification: this pauses e...
     <a href="/tips/en/break-on-dom-changes/">Read more</a>
   </div>
   <div class="tip-info">
@@ -291,7 +333,8 @@ The common w...
   <a href="/tips/en/play-sound-on-js-execution/" class="tip-title">Play a sound when a line of JavaScript is executed</a>
   <a href="/tips/en/play-sound-on-js-execution/" class="tip-image"><img src="../../assets/img/play-sound-on-js-execution.gif" alt="Animation showing how to add the audio breakpoint in Safari Web Inspector." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes pausing execution when a line of JavaScript is executed is too much, sometimes you only wa...
+    Sometimes pausing execution when a line of JavaScript is executed is too much, sometimes you only want to know that the line was executed at all, not pause there.
+To do this you can add console.log()...
     <a href="/tips/en/play-sound-on-js-execution/">Read more</a>
   </div>
   <div class="tip-info">
@@ -307,7 +350,7 @@ The common w...
   <a href="/tips/en/capture-node-creation-stacks/" class="tip-image"><img src="../../assets/img/capture-node-creation-stacks.png" alt="Edge DevTools' Elements panel with the Stack Trace sidebar visible, showing a stack of Vue JS function calls that created an element on the TODOMVC sample app." loading="lazy"></img></a>
   <div class="tip-excerpt">
     Have you ever wanted to know what caused a specific DOM node or element to be created in the page?
-W...
+When working on a site that uses a lot of JavaScript and especially when you don't know the codebase,...
     <a href="/tips/en/capture-node-creation-stacks/">Read more</a>
   </div>
   <div class="tip-info">
@@ -322,7 +365,8 @@ W...
   <a href="/tips/en/suppressed-event-listeners-when-paused/" class="tip-title">Event listeners are suppressed when paused</a>
   <a href="/tips/en/suppressed-event-listeners-when-paused/" class="tip-image"><img src="../../assets/img/suppressed-event-listeners-when-paused.png" alt="A page in edge with the DevTools Sources paused at a location, and the on-page overlay preventing access to the page." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript....
+    This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript.
+If you use breakpoints in the Sources (or Debugger) tab in DevTools to debug JavaScript, you should...
     <a href="/tips/en/suppressed-event-listeners-when-paused/">Read more</a>
   </div>
   <div class="tip-info">
@@ -337,7 +381,8 @@ W...
   <a href="/tips/en/copy-from-console/" class="tip-title">Copy an object from the console</a>
   <a href="/tips/en/copy-from-console/" class="tip-image"><img src="../../assets/img/copy-from-console.png" alt="Chrome devtools' console with a line of code using the copy() function." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    The console panel supports a very handy copy() function that stringifies and copies anything you pas...
+    The console panel supports a very handy copy() function that stringifies and copies anything you pass to it as an argument, so you can then paste it somewhere else.
+For example: copy($$('a').map(a =&g...
     <a href="/tips/en/copy-from-console/">Read more</a>
   </div>
   <div class="tip-info">
@@ -352,7 +397,7 @@ W...
   <a href="/tips/en/find-custom-elements-code/" class="tip-title">Find your web component&#39;s custom element code</a>
   <a href="/tips/en/find-custom-elements-code/" class="tip-image"><img src="../../assets/img/find-custom-elements-code.gif" alt="Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    In Firefox, when inspecting elements (in the Inspector panel), you can click on the custom badge to...
+    In Firefox, when inspecting elements (in the Inspector panel), you can click on the custom badge to go straight to the custom element's JavaScript source code....
     <a href="/tips/en/find-custom-elements-code/">Read more</a>
   </div>
   <div class="tip-info">
@@ -367,7 +412,8 @@ W...
   <a href="/tips/en/view-perf-markers-in-order/" class="tip-title">View performance markers in order</a>
   <a href="/tips/en/view-perf-markers-in-order/" class="tip-image"><img src="../../assets/img/view-perf-markers-in-order.png" alt="The console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    When logging performance.timing events to the console, they appear in alphabetical order since they...
+    When logging performance.timing events to the console, they appear in alphabetical order since they are properties of the PerformanceTiming object.
+In order to view them in order, you can use console....
     <a href="/tips/en/view-perf-markers-in-order/">Read more</a>
   </div>
   <div class="tip-info">
@@ -382,7 +428,8 @@ W...
   <a href="/tips/en/unminify-javascript-code/" class="tip-title">Unminify JavaScript code to easily read and debug it</a>
   <a href="/tips/en/unminify-javascript-code/" class="tip-image"><img src="../../assets/img/unminify-javascript-code.gif" alt="The Sources panel in Chrome, showing the pretty-print button." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    Sometimes, the JavaScript code that runs on a website is minified and really hard to read. This is c...
+    Sometimes, the JavaScript code that runs on a website is minified and really hard to read. This is common in production.
+You can unminify code in DevTools to read it more easily, and also set breakpoi...
     <a href="/tips/en/unminify-javascript-code/">Read more</a>
   </div>
   <div class="tip-info">
@@ -397,7 +444,7 @@ W...
   <a href="/tips/en/debugger-statement/" class="tip-title">Use the debugger statement to pause script execution</a>
   <a href="/tips/en/debugger-statement/" class="tip-image"><img src="../../assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    If you prefer to use console.log() statements rather than the JavaScript debugger because you find i...
+    If you prefer to use console.log() statements rather than the JavaScript debugger because you find it difficult to set breakpoints in DevTools (or you can't), then you can use the debugger statement i...
     <a href="/tips/en/debugger-statement/">Read more</a>
   </div>
   <div class="tip-info">
@@ -409,11 +456,8 @@ W...
 </li>
 </ul>
 
+      </div>
     </main>
-    <footer role="contentinfo">
-      <p>Have ideas for other tips? We'd love you to submit them on <a href="https://github.com/captainbrosset/devtools-tips">our GitHub repository!</a> ♥</p>
-      <p>Find us on <a href="https://twitter.com/_devtoolstips">Twitter</a> and <a rel="me" href="https://front-end.social/@devtoolstips">Mastodon</a>.</p>
-    </footer>
 
     
     
