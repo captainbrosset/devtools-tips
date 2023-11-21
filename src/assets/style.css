@@ -124,6 +124,7 @@ header {
   padding: 2rem;
   position: sticky;
   top: 0;
+  box-shadow: -100vw 0 0 100vw var(--alternate-background-color);
 }
 
 header label[for="show-menu"] {

@@ -17,7 +17,7 @@
   permalink: "tag/{{ tag | slug }}/"
 }
 ---
-<h1>{{collections[tag].length }} {{ tag }} tips</h1>
+<h1>{{collections[tag].length }} {{ tag | capitalize }} tips</h1>
 <ul class="tips">
 {%- for post in collections[tag] | reverse -%}
   {% include 'tip-in-list.njk' %}
