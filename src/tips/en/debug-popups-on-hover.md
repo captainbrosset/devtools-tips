@@ -3,7 +3,7 @@ date: 2023-11-21
 authors: Pankaj Parashar, Patrick Brosset
 title: Debug popups that appear on hover
 tags: ["debug", "browser:edge", "browser:chrome"]
-see-also: ["debug-js-hover", "debug-js-hover-2"]
+see-also: ["debug-js-hover.md", "debug-js-hover-2.md"]
 ---
 
 As described in [Debug popups that appear on hover using JS](./debug-js-hover.md) and in [Debug popups that appear on hover using the debugger statement](./debug-js-hover-2.md), there are ways to debug popups that appear on hover using JavaScript.
