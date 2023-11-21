@@ -45,6 +45,7 @@ function extractExcerpt(article) {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/guides/**/*.{png,jpg,jpeg,gif,svg}");
   eleventyConfig.addPassthroughCopy("src/sw.js");
   eleventyConfig.addPassthroughCopy("src/manifest.json");
   eleventyConfig.addPassthroughCopy("src/.well-known");
@@ -93,7 +94,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(embedYouTube);
 
-  eleventyConfig.addTransform("fix-urls", async function(content) {
+  eleventyConfig.addTransform("fix-tip-urls", async function(content) {
     if (this.inputPath.includes('/src/tips/en/')) {
       // Replace all relative links to other tips with their absolute links.
       // This is needed because we want relative file links in dev, in order
@@ -102,6 +103,25 @@ module.exports = function (eleventyConfig) {
 
       // Also replace all relative image links with their absolute versions.
       content = content.replace(/src="\.\.\/\.\.\/assets\/img\//g, 'src="/assets/img/');
+    }
+
+    return content; // no change done.
+  });
+
+  eleventyConfig.addTransform("link-from-guides-to-tips", async function(content) {
+    if (this.inputPath.includes('/src/guides/en/')) {
+      // Find "see also" links from guides to tip, and mark them up.
+      function replaceTipLink(match, tipId, tipTitle) {
+        return `
+          <p class="see-also-tip">
+            <a href="/tips/en/${tipId}">${tipTitle}</a>
+          </p>
+        `;
+      }
+
+      content = content.replace(
+        /<a href="\.\.\/\.\.\/\.\.\/tips\/en\/([^.]+)\.md">([^<]+)<\/a>/g,
+        replaceTipLink);
     }
 
     return content; // no change done.

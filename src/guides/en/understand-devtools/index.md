@@ -186,7 +186,9 @@ Don't be afraid to look around for more tools to use. The list below contains mo
 | **Issues** | Browser-reported issues. | Find and fix performance, security, accessibility, and other browser-reporter issues. | This tool only exists in Edge and Chrome, and these two browsers don't log the same issues in it. Firefox displays issues in the **Console** tool. |
 | **Changes** | Collects CSS changes made in DevTools | Bring back CSS modifications made within the **Elements** or **Inspector** tool to the page. | This tool is a separate tab in Chrome and Edge, and a sidebar tab in the **Inspector** tool in Firefox. |
 
-There are many more tools available. <SEE ALSO TIP ABOUT THE LIST OF ALL TOOLS>.
+There are many more tools available.
+
+[Discover all the tools](../../../tips/en/discover-all-tools.md)
 
 Take time to explore the tools that you don't know yet. And refer to the documentation of each browser DevTools to find out more. <SEE ALSO TIP ABOUT WHERE TO FIND THE DOCS FOR EACH DEVTOOLS>.
         
