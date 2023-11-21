@@ -838,6 +838,19 @@
   ],
   "debug-popups-on-hover.md": [
     {
+      "title": "Debug popups that appear on hover using the debugger statement",
+      "image": null,
+      "link": "/tips/en/debug-js-hover-2"
+    },
+    {
+      "title": "Debug popups that appear on hover using JS",
+      "image": {
+        "alt": "Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.",
+        "src": "../../assets/img/debug-js-hover.gif"
+      },
+      "link": "/tips/en/debug-js-hover"
+    },
+    {
       "title": "See the viewport size",
       "image": {
         "alt": "Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage",
@@ -852,22 +865,6 @@
         "src": "../../assets/img/console-table-group-assert-1.jpg"
       },
       "link": "/tips/en/console-table-group-assert"
-    },
-    {
-      "title": "Disable abusive debugger statements that prevent inspecting websites",
-      "image": {
-        "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
-      },
-      "link": "/tips/en/disable-abusive-debugger-statement"
-    },
-    {
-      "title": "Emulate color schemes",
-      "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "../../assets/img/emulate-color-schemes-firefox.png"
-      },
-      "link": "/tips/en/emulate-color-schemes"
     }
   ],
   "debug-print-css-styles.md": [
