@@ -1,17 +1,22 @@
 ---
-date: 2023-11-18
-authors: Patrick Brosset, Pankaj Parashar
+date: 2023-11-21
+authors: Pankaj Parashar, Patrick Brosset
 title: Debug popups that appear on hover
 tags: ["debug", "browser:edge", "browser:chrome"]
 see-also: ["debug-js-hover", "debug-js-hover-2"]
 ---
 
-We had previously described a [couple](https://devtoolstips.org/tips/en/debug-js-hover/) [of](https://devtoolstips.org/tips/en/debug-js-hover-2/) ways to debug popups that appear on hover using JavaScript. The main problem in debugging overlay elements like popups is that they disappear as soon as the page loses focus after activating the DevTools window.
+As described in [Debug popups that appear on hover using JS](./debug-js-hover.md) and in [Debug popups that appear on hover using the debugger statement](./debug-js-hover-2.md), there are ways to debug popups that appear on hover using JavaScript.
 
-Chromium-based browsers like Chrome, Edge etc., provides a way to emulate a focussed page while the DevTools is active. Following are the steps
+The main problem in debugging overlay elements, like popups, is that they disappear as soon as the page loses focus, for example after moving focus to the DevTools window.
 
-1. Open the **Command Menu** (`Cmd+Shift+P` or `Ctrl+Shift+P`) > Run "Show Rendering" to open the **Rendering** drawer.
-2. Scroll down and select **Emulate a focused page** option to keep the page focussed.
-3. Now you can use the DevTools to inspect and debug the popup like any other part of the page.
+Chromium-based browsers such as Chrome and Edge, provide a way to emulate a focused state on the webpage even if DevTools has focus.
 
-![Screenshot depicting how to enable the focussed page option in DevTools](../../assets/img/debug-popups-on-hover.png)
+To emulate a focused state on the webpage:
+
+1. Open the **Command Menu** (`Cmd+Shift+P` or `Ctrl+Shift+P`).
+1. Type **rendering** and select the **Show Rendering** command. The **Rendering** tool appears at the bottom of DevTools.
+1. In the **Rendering** tool, scroll down and check the **Emulate a focused page** option. The webpage now has focus.
+1. Use DevTools to inspect and debug elements that only appear when focus is in the webpage.
+
+![The Rendering tool in DevTools, showing the Emulate a focused page option](../../assets/img/debug-popups-on-hover.png)
