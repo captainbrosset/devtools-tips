@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>List all event listeners on the entire page</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/list-all-event-listeners/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/list-all-event-listeners.png">
+    <meta property="og:description" content="List all event listeners on the entire page">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -43,7 +43,7 @@
         </ul>
       </nav>
     </header>
-    <main >
+    <main style="view-transition-name:post-list-all-event-listeners">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -73,95 +73,62 @@
         </div>
       </div>
       <div id="maincontent">
-        <h1>Welcome to DevTools Tips 👋</h1>
-<p>If you're a web developer, DevTools Tips is for you! DevTools Tips is a website that can help you become more comfortable with using the various built-in browser DevTools.</p>
-<p>Whatever your level of experience, and whatever browser you prefer using for web development, use DevTools Tips to learn new tips and tricks on a regular basis. You can also get tips delivered to your favorite news reader by using our <a href="/feed.xml">RSS feed</a>.</p>
-<p>The collection of tips on the website is growing all the time. There are currently 162 tips available thanks to all of our wonderful <a href="https://github.com/captainbrosset/devtools-tips/graphs/contributors">open-source contributors</a>. If you know other debugging techniques not documented here, please consider helping the community by submiting a new tip on our <a href="https://github.com/captainbrosset/devtools-tips">GitHub repository</a>!</p>
-<div class="cards">
-  <div class="card">
-    <h2>Latest tips</h2>
-    <ul class="tips">
-    
-<li class="hover-box tip " style="view-transition-name:post-list-all-event-listeners;">
-  <a href="/tips/en/list-all-event-listeners/" class="tip-title">List all event listeners on the entire page</a>
-  <a href="/tips/en/list-all-event-listeners/" class="tip-image"><img src="../../assets/img/list-all-event-listeners.png" alt="Chrome, with the devtoolstips.org website loaded, and the DevTools Console on the side, showing the result of the above script" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    When you don't know a codebase, it might be hard to know where to get started, and what events are being listened to by which elements.
-The Console tool, in Chromium-based browsers, comes with a nice...
-    <a href="/tips/en/list-all-event-listeners/">Read more</a>
-  </div>
-  <div class="tip-info">
+        <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">List all event listeners on the entire page</h1>
+<div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/console/" title="See all tips about console">console</a></li><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/console/">console</a></li><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-debug-popups-on-hover;">
-  <a href="/tips/en/debug-popups-on-hover/" class="tip-title">Debug popups that appear on hover</a>
-  <a href="/tips/en/debug-popups-on-hover/" class="tip-image"><img src="../../assets/img/debug-popups-on-hover.png" alt="The Rendering tool in DevTools, showing the Emulate a focused page option" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    As described in Debug popups that appear on hover using JS and in Debug popups that appear on hover using the debugger statement, there are ways to debug popups that appear on hover using JavaScript....
-    <a href="/tips/en/debug-popups-on-hover/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-force-execution-at-breakpoint;">
-  <a href="/tips/en/force-execution-at-breakpoint/" class="tip-title">Force execution, skipping breakpoints, when paused</a>
-  <a href="/tips/en/force-execution-at-breakpoint/" class="tip-image"><img src="../../assets/img/force-execution-at-breakpoint-edge.png" alt="The Sources tool in Edge, showing the Force script execution button" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    When using breakpoints to debug your JavaScript code, sometimes you end up setting many breakpoints in different functions. You might want to keep these breakpoints but not always pause at them.
-There...
-    <a href="/tips/en/force-execution-at-breakpoint/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li><li class="tag"><a href="/tag/javascript/" title="See all tips about javascript">javascript</a></li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-see-viewport-size;">
-  <a href="/tips/en/see-viewport-size/" class="tip-title">See the viewport size</a>
-  <a href="/tips/en/see-viewport-size/" class="tip-image"><img src="../../assets/img/see-viewport-size-chrome.png" alt="Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    The size of the viewport that's used to render a webpage in a browser can be very important at times, such as when creating or debugging media queries.
-You can easily know what the current size of the...
-    <a href="/tips/en/see-viewport-size/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/debug/" title="See all tips about debug">debug</a></li><li class="tag"><a href="/tag/testing/" title="See all tips about testing">testing</a></li><li class="tag"><a href="/tag/css/" title="See all tips about css">css</a></li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li><li class="browser"><a href="/browser/safari/" title="See all tips supported on safari">safari</a></li><li class="browser"><a href="/browser/polypane/" title="See all tips supported on polypane">polypane</a></li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-convert-image-to-data-url;">
-  <a href="/tips/en/convert-image-to-data-url/" class="tip-title">Convert images to data-urls</a>
-  <a href="/tips/en/convert-image-to-data-url/" class="tip-image"><img src="../../assets/img/convert-image-to-data-url.png" alt="The Network tool in Edge, an image is selected, the Preview tab is open, and the right-click menu shows the copy image as data URI item" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    A data URL is a URL that starts with the prefix data: instead of http: or https. This data prefix (or scheme) allows you to embed the actual content of the resource in the URL itself, rather than link...
-    <a href="/tips/en/convert-image-to-data-url/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/productivity/" title="See all tips about productivity">productivity</a></li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/edge/" title="See all tips supported on edge">edge</a></li><li class="browser"><a href="/browser/chrome/" title="See all tips supported on chrome">chrome</a></li><li class="browser"><a href="/browser/firefox/" title="See all tips supported on firefox">firefox</a></li></ul>
-  </div>
-</li>
-</ul>
-  </div>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
+<div class="tip-content" data-pagefind-body>
+    <p>When you don't know a codebase, it might be hard to know where to get started, and what events are being listened to by which elements.</p>
+<p>The <strong>Console</strong> tool, in Chromium-based browsers, comes with a nice utility function named <code>getEventListeners</code> which returns all of the listeners attached to a given element. If we combine this with the <code>$$</code> utility function, we can get a list of all elements on the page, and their listeners.</p>
+<p>The following code snippet will return an array of objects, each containing an element and its listeners. It also filters out all of the elements that don't have any listeners attached to them.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token function">$$</span><span class="token punctuation">(</span><span class="token string">"*"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">el</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>  <span class="token keyword">return</span> <span class="token punctuation">{</span> el<span class="token punctuation">,</span> listeners<span class="token operator">:</span> <span class="token function">getEventListeners</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">data</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>  <span class="token keyword">return</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>listeners<span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>So, to list all elements that have listeners on a page:</p>
+<ol>
+<li>
+<p>Open the <strong>Console</strong> tool, by pressing <kbd>Ctrl+Shift+J</kbd> on Windows or Linux, or <kbd>Command+Option+J</kbd> on macOS.</p>
+</li>
+<li>
+<p>Paste the code snippet above in the <strong>Console</strong>, and press <kbd>Enter</kbd>.</p>
+</li>
+<li>
+<p>The list of all elements with listeners is displayed in the <strong>Console</strong>.</p>
+</li>
+</ol>
+<p><img src="/assets/img/list-all-event-listeners.png" alt="Chrome, with the devtoolstips.org website loaded, and the DevTools Console on the side, showing the result of the above script"></p>
+
+</div><div class="see-also">
+    <h2>See also</h2>
+    <ul><li>
+            <a href="/tips/en/query-dom-from-console">Find DOM elements from the console</a>
+            <a href="/tips/en/query-dom-from-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/query-dom-from-console.png" alt="Firefox&#39;s console panel, showing 3 different examples of using the $ and $$ built-in console functions.">
+            </a>
+        </li><li>
+            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
+            <a href="/tips/en/copy-element-styles" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
+            </a>
+        </li><li>
+            <a href="/tips/en/debug-unwanted-scrollbars">Debug unwanted scrollbars</a>
+            <a href="/tips/en/debug-unwanted-scrollbars" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/debug-unwanted-scrollbars-1.png" alt="Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.">
+            </a>
+        </li><li>
+            <a href="/tips/en/edit-position">Edit CSS absolute and relative positions by dragging points in the page</a>
+            <a href="/tips/en/edit-position" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/edit-position.gif" alt="Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.">
+            </a>
+        </li></ul>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2023-11-21T00:00:00.000Z">11/21/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/list-all-event-listeners.md">Edit this page</a></p>
+</div>
+<script async src="/assets/dialog-lightbox.js"></script>
+
       </div>
     </main>
 

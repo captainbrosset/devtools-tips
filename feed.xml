@@ -12,6 +12,31 @@
   </author>
   
   <entry>
+    <title>List all event listeners on the entire page</title>
+    <link href="https://devtoolstips.org/tips/en/list-all-event-listeners/"/>
+    <updated>2023-11-21T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/list-all-event-listeners/</id>
+    <content type="html">&lt;p&gt;When you don&#39;t know a codebase, it might be hard to know where to get started, and what events are being listened to by which elements.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Console&lt;/strong&gt; tool, in Chromium-based browsers, comes with a nice utility function named &lt;code&gt;getEventListeners&lt;/code&gt; which returns all of the listeners attached to a given element. If we combine this with the &lt;code&gt;$$&lt;/code&gt; utility function, we can get a list of all elements on the page, and their listeners.&lt;/p&gt;
+&lt;p&gt;The following code snippet will return an array of objects, each containing an element and its listeners. It also filters out all of the elements that don&#39;t have any listeners attached to them.&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token function&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;el&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; el&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; listeners&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getEventListeners&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;el&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;listeners&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So, to list all elements that have listeners on a page:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;strong&gt;Console&lt;/strong&gt; tool, by pressing &lt;kbd&gt;Ctrl+Shift+J&lt;/kbd&gt; on Windows or Linux, or &lt;kbd&gt;Command+Option+J&lt;/kbd&gt; on macOS.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Paste the code snippet above in the &lt;strong&gt;Console&lt;/strong&gt;, and press &lt;kbd&gt;Enter&lt;/kbd&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The list of all elements with listeners is displayed in the &lt;strong&gt;Console&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/list-all-event-listeners.png&quot; alt=&quot;Chrome, with the devtoolstips.org website loaded, and the DevTools Console on the side, showing the result of the above script&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>Debug popups that appear on hover</title>
     <link href="https://devtoolstips.org/tips/en/debug-popups-on-hover/"/>
     <updated>2023-11-21T00:00:00.000Z</updated>
