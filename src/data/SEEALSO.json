@@ -789,6 +789,14 @@
       "link": "/tips/en/debugger-statement"
     },
     {
+      "title": "Debug popups that appear on hover",
+      "image": {
+        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
+        "src": "../../assets/img/debug-popups-on-hover.png"
+      },
+      "link": "/tips/en/debug-popups-on-hover"
+    },
+    {
       "title": "Disable abusive debugger statements that prevent inspecting websites",
       "image": {
         "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
@@ -826,6 +834,40 @@
         "src": "../../assets/img/disable-abusive-debugger-statement.gif"
       },
       "link": "/tips/en/disable-abusive-debugger-statement"
+    }
+  ],
+  "debug-popups-on-hover.md": [
+    {
+      "title": "See the viewport size",
+      "image": {
+        "alt": "Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage",
+        "src": "../../assets/img/see-viewport-size-chrome.png"
+      },
+      "link": "/tips/en/see-viewport-size"
+    },
+    {
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
+      "image": {
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
+      },
+      "link": "/tips/en/console-table-group-assert"
+    },
+    {
+      "title": "Disable abusive debugger statements that prevent inspecting websites",
+      "image": {
+        "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
+        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
+      },
+      "link": "/tips/en/disable-abusive-debugger-statement"
+    },
+    {
+      "title": "Emulate color schemes",
+      "image": {
+        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
+      },
+      "link": "/tips/en/emulate-color-schemes"
     }
   ],
   "debug-print-css-styles.md": [
@@ -2428,20 +2470,20 @@
       "link": "/tips/en/see-quick-a11y-info-on-hover"
     },
     {
+      "title": "Debug popups that appear on hover",
+      "image": {
+        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
+        "src": "../../assets/img/debug-popups-on-hover.png"
+      },
+      "link": "/tips/en/debug-popups-on-hover"
+    },
+    {
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
         "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
-    },
-    {
-      "title": "Inspect DevTools with DevTools",
-      "image": {
-        "alt": "Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one",
-        "src": "../../assets/img/inspect-devtools-with-devtools-chrome.png"
-      },
-      "link": "/tips/en/inspect-devtools-with-devtools"
     }
   ],
   "highlight-css-properties-on-hover.md": [
@@ -2627,12 +2669,12 @@
       "link": "/tips/en/debug-grid-areas"
     },
     {
-      "title": "Edit CSS absolute and relative positions by dragging points in the page",
+      "title": "Debug popups that appear on hover",
       "image": {
-        "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "../../assets/img/edit-position.gif"
+        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
+        "src": "../../assets/img/debug-popups-on-hover.png"
       },
-      "link": "/tips/en/edit-position"
+      "link": "/tips/en/debug-popups-on-hover"
     }
   ],
   "jump-to-css-variable.md": [
@@ -2801,20 +2843,20 @@
       "link": "/tips/en/track-focused-element"
     },
     {
+      "title": "Debug popups that appear on hover",
+      "image": {
+        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
+        "src": "../../assets/img/debug-popups-on-hover.png"
+      },
+      "link": "/tips/en/debug-popups-on-hover"
+    },
+    {
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
         "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
-    },
-    {
-      "title": "Highlight all the elements that a CSS rule matches",
-      "image": {
-        "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "../../assets/img/highlight-matching-elements.gif"
-      },
-      "link": "/tips/en/highlight-matching-elements"
     }
   ],
   "monitor-element-events.md": [
@@ -3593,6 +3635,14 @@
   ],
   "see-the-page-in-3d.md": [
     {
+      "title": "Debug popups that appear on hover",
+      "image": {
+        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
+        "src": "../../assets/img/debug-popups-on-hover.png"
+      },
+      "link": "/tips/en/debug-popups-on-hover"
+    },
+    {
       "title": "Discover all the tools",
       "image": {
         "alt": "The list of most tools in Edge DevTools, just to illustrate how many there are",
@@ -3627,6 +3677,14 @@
       "link": "/tips/en/spot-out-of-viewport-elements"
     },
     {
+      "title": "Debug popups that appear on hover",
+      "image": {
+        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
+        "src": "../../assets/img/debug-popups-on-hover.png"
+      },
+      "link": "/tips/en/debug-popups-on-hover"
+    },
+    {
       "title": "Hide or pin the information tooltip while inspecting page elements",
       "image": {
         "alt": "Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
@@ -3641,14 +3699,6 @@
         "src": "../../assets/img/simulate-devices-chrome.png"
       },
       "link": "/tips/en/simulate-devices"
-    },
-    {
-      "title": "Use document.designMode to spell check your webpage",
-      "image": {
-        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
-        "src": "../../assets/img/use-designmode-to-spell-check.png"
-      },
-      "link": "/tips/en/use-designmode-to-spell-check"
     }
   ],
   "see-which-font-was-used-in-font-family.md": [
@@ -3767,6 +3817,14 @@
       "link": "/tips/en/add-new-devices"
     },
     {
+      "title": "Debug popups that appear on hover",
+      "image": {
+        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
+        "src": "../../assets/img/debug-popups-on-hover.png"
+      },
+      "link": "/tips/en/debug-popups-on-hover"
+    },
+    {
       "title": "Get contextual DevTools help",
       "image": {
         "alt": "Animation of the DevTools tooltips in Edge.",
@@ -3781,14 +3839,6 @@
         "src": "../../assets/img/hide-or-pin-inspect-info-tooltip-1.png"
       },
       "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
-    },
-    {
-      "title": "Take a screenshot of part of a webpage from the Command Menu",
-      "image": {
-        "alt": "Edge, with DevTools opened, and the Command menu showing the list of screenshot commands",
-        "src": "../../assets/img/screenshot-part-of-page-command-menu.png"
-      },
-      "link": "/tips/en/screenshot-part-of-page-command-menu"
     }
   ],
   "simulate-geolocation.md": [
@@ -3940,6 +3990,14 @@
   ],
   "suppressed-event-listeners-when-paused.md": [
     {
+      "title": "Debug popups that appear on hover",
+      "image": {
+        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
+        "src": "../../assets/img/debug-popups-on-hover.png"
+      },
+      "link": "/tips/en/debug-popups-on-hover"
+    },
+    {
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
@@ -3962,14 +4020,6 @@
         "src": "../../assets/img/measure-distances.png"
       },
       "link": "/tips/en/measure-distances"
-    },
-    {
-      "title": "Monitor all events dispatched on an element",
-      "image": {
-        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "../../assets/img/monitor-element-events.gif"
-      },
-      "link": "/tips/en/monitor-element-events"
     }
   ],
   "take-high-res-screenshots.md": [
@@ -4112,6 +4162,14 @@
       "link": "/tips/en/copy-element-styles"
     },
     {
+      "title": "Debug popups that appear on hover",
+      "image": {
+        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
+        "src": "../../assets/img/debug-popups-on-hover.png"
+      },
+      "link": "/tips/en/debug-popups-on-hover"
+    },
+    {
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
@@ -4126,14 +4184,6 @@
         "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
-    },
-    {
-      "title": "Monitor all events dispatched on an element",
-      "image": {
-        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "../../assets/img/monitor-element-events.gif"
-      },
-      "link": "/tips/en/monitor-element-events"
     }
   ],
   "tweak-grid-flex-alignment.md": [
