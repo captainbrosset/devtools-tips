@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hide or pin the information tooltip while inspecting page elements</title>
+    <title>Debug popups that appear on hover</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/hide-or-pin-inspect-info-tooltip/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/debug-popups-on-hover/">
     
-    <meta property="og:image" content="http://devtoolstips.org../../assets/img/hide-or-pin-inspect-info-tooltip-1.png">
-    <meta property="og:description" content="Hide or pin the information tooltip while inspecting page elements">
+    <meta property="og:image" content="http://devtoolstips.org../../assets/img/debug-popups-on-hover.png">
+    <meta property="og:description" content="Debug popups that appear on hover">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -43,7 +43,7 @@
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-hide-or-pin-inspect-info-tooltip">
+    <main style="view-transition-name:post-debug-popups-on-hover">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -74,47 +74,42 @@
       </div>
       <div id="maincontent">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Hide or pin the information tooltip while inspecting page elements</h1>
+<h1 class="tip-title">Debug popups that appear on hover</h1>
 <div class="tip-info">
     Categories:
-    <ul class="tags"><li class="tag"><a href="/tag/html/">html</a></li><li class="tag"><a href="/tag/css/">css</a></li><li class="tag"><a href="/tag/highlighter/">highlighter</a></li></ul>
+    <ul class="tags"><li class="tag"><a href="/tag/debug/">debug</a></li></ul>
     Supported by:
-    <ul class="browsers"><li class="browser"><a href="/browser/chrome/">chrome</a></li><li class="browser"><a href="/browser/edge/">edge</a></li></ul>
+    <ul class="browsers"><li class="browser"><a href="/browser/edge/">edge</a></li><li class="browser"><a href="/browser/chrome/">chrome</a></li></ul>
 </div>
 <div class="tip-content" data-pagefind-body>
-    <p>When selecting elements from the page using the <strong>inspect</strong> tool, the hovered elements get highlighted, and an information tooltip follows your mouse around and gives you information about the hovered element.</p>
-<p>You can hide, or pin this information tooltip in Chrome or Edge.</p>
-<h2>To hide the information tooltip</h2>
+    <p>As described in <a href="/tips/en/debug-js-hover">Debug popups that appear on hover using JS</a> and in <a href="/tips/en/debug-js-hover-2">Debug popups that appear on hover using the debugger statement</a>, there are ways to debug popups that appear on hover using JavaScript.</p>
+<p>The main problem in debugging overlay elements, like popups, is that they disappear as soon as the page loses focus, for example after moving focus to the DevTools window.</p>
+<p>Chromium-based browsers such as Chrome and Edge, provide a way to emulate a focused state on the webpage even if DevTools has focus.</p>
+<p>To emulate a focused state on the webpage:</p>
 <ol>
-<li>Start the <strong>inspect</strong> tool by clicking <strong>Select an element in the page to inspect it</strong> (the little cursor icon in the top left corner of DevTools).</li>
-<li>Start hovering over elements in the webpage, elements get highlighted and the information tooltip appears.</li>
-<li>Hold the <kbd>Ctrl</kbd> key on your keyboard, the information tooltip disappears.</li>
+<li>Open the <strong>Command Menu</strong> (<code>Cmd+Shift+P</code> or <code>Ctrl+Shift+P</code>).</li>
+<li>Type <strong>rendering</strong> and select the <strong>Show Rendering</strong> command. The <strong>Rendering</strong> tool appears at the bottom of DevTools.</li>
+<li>In the <strong>Rendering</strong> tool, scroll down and check the <strong>Emulate a focused page</strong> option. The webpage now has focus.</li>
+<li>Use DevTools to inspect and debug elements that only appear when focus is in the webpage.</li>
 </ol>
-<p><img src="/assets/img/hide-or-pin-inspect-info-tooltip-1.png" alt="Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed."></p>
-<h2>To pin the highlight and information tooltip on the current element</h2>
-<ol>
-<li>Start the <strong>inspect</strong> tool by clicking <strong>Select an element in the page to inspect it</strong> (the little cursor icon in the top left corner of DevTools).</li>
-<li>Start hovering over elements in the webpage, elements get highlighted and the information tooltip appears.</li>
-<li>Hold the <kbd>Ctrl</kbd> and <kbd>Alt</kbd> keys on your keyboard, the highlight and information tooltip are pinned on the current element, and you can move your mouse around without losing this information.</li>
-</ol>
-<p><img src="/assets/img/hide-or-pin-inspect-info-tooltip-2.png" alt="Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, but another one is highlighted and has the info tooltip."></p>
+<p><img src="/assets/img/debug-popups-on-hover.png" alt="The Rendering tool in DevTools, showing the Emulate a focused page option"></p>
 
 </div><div class="see-also">
     <h2>See also</h2>
     <ul><li>
-            <a href="/tips/en/remove-annoying-overlays">Remove annoying page overlays and other elements</a>
-            <a href="/tips/en/remove-annoying-overlays" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/remove-annoying-overlays.gif" alt="Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.">
+            <a href="/tips/en/see-viewport-size">See the viewport size</a>
+            <a href="/tips/en/see-viewport-size" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/see-viewport-size-chrome.png" alt="Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage">
             </a>
         </li><li>
-            <a href="/tips/en/see-quick-a11y-info-on-hover">See quick accessibility information on hover</a>
-            <a href="/tips/en/see-quick-a11y-info-on-hover" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/see-quick-a11y-info-on-hover.gif" alt="Animation of the a11y tooltip in chrome.">
+            <a href="/tips/en/console-table-group-assert">console.log() is great, but do you know console.table()? console.group()? console.assert()?</a>
+            <a href="/tips/en/console-table-group-assert" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/console-table-group-assert-1.jpg" alt="The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column">
             </a>
         </li><li>
-            <a href="/tips/en/debug-popups-on-hover">Debug popups that appear on hover</a>
-            <a href="/tips/en/debug-popups-on-hover" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/debug-popups-on-hover.png" alt="The Rendering tool in DevTools, showing the Emulate a focused page option">
+            <a href="/tips/en/disable-abusive-debugger-statement">Disable abusive debugger statements that prevent inspecting websites</a>
+            <a href="/tips/en/disable-abusive-debugger-statement" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/disable-abusive-debugger-statement.gif" alt="The Sources tool in Firefox, showing how to add a conditional breakpoint.">
             </a>
         </li><li>
             <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
@@ -123,8 +118,8 @@
             </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2022-10-27T00:00:00.000Z">10/27/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/hide-or-pin-inspect-info-tooltip.md">Edit this page</a></p>
+    <div class="authors">Authors: <span><a href="https://twitter.com/pankajparashar">Pankaj Parashar</a>, <a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2023-11-21T00:00:00.000Z">11/21/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-popups-on-hover.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
