@@ -838,6 +838,19 @@
   ],
   "debug-popups-on-hover.md": [
     {
+      "title": "Debug popups that appear on hover using the debugger statement",
+      "image": null,
+      "link": "/tips/en/debug-js-hover-2"
+    },
+    {
+      "title": "Debug popups that appear on hover using JS",
+      "image": {
+        "alt": "Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.",
+        "src": "../../assets/img/debug-js-hover.gif"
+      },
+      "link": "/tips/en/debug-js-hover"
+    },
+    {
       "title": "See the viewport size",
       "image": {
         "alt": "Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage",
@@ -852,22 +865,6 @@
         "src": "../../assets/img/console-table-group-assert-1.jpg"
       },
       "link": "/tips/en/console-table-group-assert"
-    },
-    {
-      "title": "Disable abusive debugger statements that prevent inspecting websites",
-      "image": {
-        "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
-      },
-      "link": "/tips/en/disable-abusive-debugger-statement"
-    },
-    {
-      "title": "Emulate color schemes",
-      "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "../../assets/img/emulate-color-schemes-firefox.png"
-      },
-      "link": "/tips/en/emulate-color-schemes"
     }
   ],
   "debug-print-css-styles.md": [
@@ -2712,6 +2709,40 @@
     }
   ],
   "jump-to-referenced-elements.md": [],
+  "list-all-event-listeners.md": [
+    {
+      "title": "Find DOM elements from the console",
+      "image": {
+        "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
+        "src": "../../assets/img/query-dom-from-console.png"
+      },
+      "link": "/tips/en/query-dom-from-console"
+    },
+    {
+      "title": "Copy an elements styles",
+      "image": {
+        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
+        "src": "../../assets/img/copy-element-styles.png"
+      },
+      "link": "/tips/en/copy-element-styles"
+    },
+    {
+      "title": "Debug unwanted scrollbars",
+      "image": {
+        "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
+        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
+      },
+      "link": "/tips/en/debug-unwanted-scrollbars"
+    },
+    {
+      "title": "Edit CSS absolute and relative positions by dragging points in the page",
+      "image": {
+        "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
+        "src": "../../assets/img/edit-position.gif"
+      },
+      "link": "/tips/en/edit-position"
+    }
+  ],
   "list-console-functions.md": [
     {
       "title": "Copy an object from the console",
@@ -3217,20 +3248,20 @@
       "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
     },
     {
+      "title": "List all event listeners on the entire page",
+      "image": {
+        "alt": "Chrome, with the devtoolstips.org website loaded, and the DevTools Console on the side, showing the result of the above script",
+        "src": "../../assets/img/list-all-event-listeners.png"
+      },
+      "link": "/tips/en/list-all-event-listeners"
+    },
+    {
       "title": "List all supported console functions",
       "image": {
         "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
         "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
-    },
-    {
-      "title": "Copy an elements styles",
-      "image": {
-        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "../../assets/img/copy-element-styles.png"
-      },
-      "link": "/tips/en/copy-element-styles"
     }
   ],
   "query-instances-holders.md": [
@@ -4491,12 +4522,12 @@
       "link": "/tips/en/edit-position"
     },
     {
-      "title": "Draw a box around all elements to debug your CSS and page structure",
+      "title": "List all event listeners on the entire page",
       "image": {
-        "alt": "Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page.",
-        "src": "../../assets/img/outline-everything.gif"
+        "alt": "Chrome, with the devtoolstips.org website loaded, and the DevTools Console on the side, showing the result of the above script",
+        "src": "../../assets/img/list-all-event-listeners.png"
       },
-      "link": "/tips/en/outline-everything"
+      "link": "/tips/en/list-all-event-listeners"
     }
   ],
   "visualize-tabbing-order.md": [
