@@ -18,7 +18,7 @@ templateEngineOverride: njk
     {%- endfor -%}
     </ul>
 </div>
-<div class="tip-content" data-pagefind-body>
+<div class="page-content tip-content" data-pagefind-body>
     {{ content | safe }}
 </div>
 {%- if SEEALSO and SEEALSO[page.inputPath.split("/").pop()].length -%}

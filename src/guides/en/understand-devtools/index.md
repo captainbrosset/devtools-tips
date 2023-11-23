@@ -1,11 +1,9 @@
 ---
-date: 2023-10-27
+date: 2023-11-23
 authors: Patrick Brosset
 title: Understand DevTools
-tags: ["guide", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+layout: guide.njk
 ---
-
-# Understand DevTools
 
 This guide is an introduction to DevTools, which is a suite of web development tools that are built-in to most web browsers. Read this guide if you are starting web development and haven't used the built-in browser tools yet. You will learn what DevTools is, who it's for, how to open it, how its UI is organized, what tools exist, and what the main user workflows are.
 
@@ -17,7 +15,7 @@ Be careful, however, with websites that ask you to open DevTools and, within it,
 
 ## Terminology
 
-DevTools is short for _Developer Tools_. 
+DevTools is short for _Developer Tools_.
 
 ## How to open DevTools
 
@@ -25,7 +23,9 @@ Before learning more about DevTools, let's open it so you can have it in front o
 
 Right-click anywhere on this page and then select **Inspect** (or **Inspect element**, depending on your browser). DevTools opens up in a new browser panel either to the right or at the bottom of the current browser window. You can resize the DevTools panel to be larger or smaller.
 
-If you're using Safari, the **Inspect** menu item isn't visible at first and you need to enabled it. <SEE ALSO TIP ABOUT ENABLING SAFARI WEB INSPECTOR TOOL>.
+If you're using Safari, the **Inspect** menu item isn't visible at first and you need to enabled it.
+
+{% insertTip "enable-safari-devtools" %}
 
 Keep reading to learn more about DevTools.
 
@@ -39,7 +39,9 @@ DevTools is a feature that's built-in to web browsers. This feature is hidden by
 
 Because DevTools is built-in to your browser, you don't need to install it as a separate application. When you install Chrome, or Firefox, or any other browser, DevTools is installed at the same time. This also means that when your browser gets updated (which, for many browsers, happens once a month), DevTools gets updated too. You may therefore see differences the next time you open DevTools. Finally, this means that you can't un-install DevTools.
 
-There are ways to disable DevTools. <SEE ALSO TIP ABOUT BLOCKING DEVTOOLS FROM MENU IN SAFARI (DEFAULT), FROM F12 IN EDGE (DEVTOOLS), AND FROM POLICIES (FIND LINKS TO VARIOUS BROWSERS)>.
+There are ways to disable DevTools.
+
+<!-- Add a tip about blocking devtools from menu in safari (Default), from F12 in edge (default), and from policies (various ways in different browsers) -->
 
 ### DevTools is always attached to a target
 
@@ -48,8 +50,6 @@ DevTools is always _attached_ to a single target, which often is a browser tab.
 For example, if you open a new tab in your browser and open DevTools in that tab, then this instance of DevTools is _attached_ to the tab. DevTools can be used to debug the websites that are displayed in that tab only. If you navigate to different websites within the same tab, then the particular instance of DevTools you opened in the tab is still attached to that tab. If you open another tab and open DevTools in the new tab, you now have two instances of DevTools: one for each tab.
 
 In this example, the target that DevTools debugs is a tab. DevTools is, however, capable of debugging other types of targets. For example, you can attach DevTools to a NodeJS process, or you can attach DevTools to a web view that's embedded in a native application. In this guide, we'll only focus on attaching to browser tab targets, but anything that uses a web engine to run can be debugged by DevTools.
-        
-<INSERT DIAGRAM SHOWING THE PER TARGET ATTACH>
 
 ### DevTools is not standard
 
@@ -67,7 +67,7 @@ When you're writing the code for a website, chances are that bugs will happen. Y
 
 DevTools also allows you to make changes to the page that's being debugged. For example, if you made a CSS mistake in the color of an element, you can change the element's color to test a fix. Because of this ability to make changes to a page, DevTools might be appealing to non web developers too. For example, you could use DevTools to slightly tweak a web page and make it easier to read: you could remove various elements or change the text size and color.
 
-<!-- includeLearnMoreTip "remove-annoying-overlays.md" -->
+{% insertTip "remove-annoying-overlays" %}
 
 Continue reading to learn more about how these changes are made, and what they affect.
 
@@ -85,7 +85,7 @@ What runs in the browser for your page to show up is different than the code you
 
 For example, when the browser fetches the HTML content of your web page, it parses it and generates a tree of [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) nodes from it. The DOM tree is what is then used to render the page visually in the browser. DevTools let's you see and interact with the DOM tree, not with the original HTML source code.
 
-<INSERT DIAGRAM OF SOURCE CODE VS. RUNTIME AND WHAT DEVTOOLS SEES>
+![Diagram illustrating that your source code, and the runtime version of your code in the browser, are different, and that DevTools can only see the runtime](./source-vs-runtime.png)
 
 ### DevTools can't change your source code
 
@@ -142,13 +142,11 @@ Now let's put it all back together in one screenshot, so you can see how everyth
 
 This might look like a lot of UI elements, and hard to understand at first. But, hopefully, with the way we've broken it down step by step, it helps making sense of the UI and forming a mental model of how it's organized.
 
-### Main differences between browsers
+### Differences between browsers
 
-The UI of DevTools is something that each browser implements a little bit differently. The high-level UI description above is a generalization of the UI of DevTools across browsers. In this section, we'll look at the main differences between browsers.
+The UI of DevTools is something that each browser implements a little bit differently. The high-level UI description above is a generalization of the UI of DevTools across browsers.
 
 It's a good idea to test your website across different browsers, to find bugs that may manifest on certain browsers only. When this happens, you'll need to use the DevTools of the browser where the bug happens. Therefore, even if this browser isn't the one you normally use, it's good to be familiar with its DevTools.
-
-TODO: are there any other major differences between browsers?
 
 ## The tools
 
@@ -188,10 +186,12 @@ Don't be afraid to look around for more tools to use. The list below contains mo
 
 There are many more tools available.
 
-[Discover all the tools](../../../tips/en/discover-all-tools.md)
+{% insertTip "discover-all-tools" %}
 
-Take time to explore the tools that you don't know yet. And refer to the documentation of each browser DevTools to find out more. <SEE ALSO TIP ABOUT WHERE TO FIND THE DOCS FOR EACH DEVTOOLS>.
-        
+Take time to explore the tools that you don't know yet. And refer to the documentation of each browser DevTools to find out more.
+
+{% insertTip "find-devtools-documentation" %}
+
 ### Where to find the tools
 
 #### Firefox
@@ -202,15 +202,19 @@ Some tools may also be disabled from the DevTools settings. To view the entire l
 
 #### Chrome
 
-TODO
+In Chrome, most tools are also displayed as tabs in the main toolbar, at the top of DevTools. Depending on the size of the DevTools window, not all tabs may be visible. Click the **>>** button at the right of the toolbar to see the hidden tabs.
+
+To see even more tools, in the main toolbar click **Customize and control DevTools** (`⁝`) > **More tools**.
+
+Some tools are also displayed by default in the drawer, at the bottom of DevTools. The drawer also **More tools** (`⁝`) button to open more tools in the drawer toolbar.
 
 #### Edge
 
-TODO
+See the Chrome section above. DevTools in Edge is very similar to DevTools in Chrome.
 
 #### Safari
 
-TODO
+In Safari, the tools are displayed in the main toolbar, at the top of DevTools.
 
 ## The workflow
 
