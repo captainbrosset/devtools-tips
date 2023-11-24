@@ -14,6 +14,9 @@ All browsers have different ways to disable DevTools. Here are the ones we curre
 * **Firefox**:
 
   * You can disable the <kbd>F12</kbd> keyboard shortcut by going to `about:config`, searching for the `devtools.f12_enabled` setting, and setting it to `false`. Other DevTools shortcuts are still enabled by default though.
+
+    ![Disabling F12 in Firefox's about:config page](../../assets/img/block-devtools.png)
+
   * You can disable DevTools for your organization by using the [`DisableDeveloperTools` policy](https://mozilla.github.io/policy-templates/#disabledevelopertools). Learn more about [policies in Firefox](https://support.mozilla.org/products/firefox-enterprise/policies-customization-enterprise/policies-overview-enterprise).
 
 * **Edge**:
