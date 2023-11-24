@@ -2,7 +2,7 @@
 date: 2023-03-22
 authors: Kilian Valkhof
 title: Find broken links
-tags: ["testing", "browser:polypane"]
+tags: ["tip", "testing", "browser:polypane"]
 ---
 
 _The link to X on page Y doesn't work_ is probably a bug report you've received at some point. But how do you find these broken links before someone else does?

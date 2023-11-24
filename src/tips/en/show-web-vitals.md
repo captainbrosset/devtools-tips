@@ -2,7 +2,7 @@
 date: 2023-01-06
 authors: Kilian Valkhof
 title: Show web vitals
-tags: ["perf", "testing", "browser:polypane"]
+tags: ["tip", "perf", "testing", "browser:polypane"]
 ---
 
 Web vitals are a set of metrics that help you determine how well-built your page is. You can [learn more about them here](https://web.dev/vitals/). These scores can be obtained with various online checks like [PageSpeed Insights](https://web.dev/measure/).

@@ -2,7 +2,7 @@
 date: 2021-08-19
 authors: Patrick Brosset
 title: Block resources to test your site without CSS or JavaScript
-tags: ["network", "testing", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "network", "testing", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
 The various resources loaded by your site aren't always guaranteed to reach your users when they visit your site. Network problems can occur, JavaScript may be disabled, a CDN may be down, or the browser can decide to block a resource.
 

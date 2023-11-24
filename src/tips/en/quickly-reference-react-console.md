@@ -2,7 +2,7 @@
 date: 2022-03-25
 authors: Patrick Brosset
 title: Quickly reference React components in the console
-tags: ["console", "productivity", "frameworks", "browser:edge", "browser:firefox", "browser:chrome"]
+tags: ["tip", "console", "productivity", "frameworks", "browser:edge", "browser:firefox", "browser:chrome"]
 see-also: ["get-current-element-in-console.md"]
 ---
 

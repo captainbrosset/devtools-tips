@@ -2,7 +2,7 @@
 date: 2022-04-07
 authors: Patrick Brosset
 title: Automatically get issues your site has with performance, accessibility, security, compatibility, and others.
-tags: ["accessibility", "perf", "testing", "browser:edge"]
+tags: ["tip", "accessibility", "perf", "testing", "browser:edge"]
 ---
 Edge has a very useful **Issues** panel that can automatically list a lot of different issues with your site. It can detect common issues related to browser compatibility, accessibility, performance, security, and more.
 

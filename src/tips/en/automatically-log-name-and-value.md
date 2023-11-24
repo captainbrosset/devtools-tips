@@ -2,7 +2,7 @@
 date: 2021-11-17
 authors: Patrick Brosset, Christian Heilmann
 title: Automatically logging name and value in console.log()
-tags: ["console", "javascript", "browser:edge", "browser:chrome", "browser:firefox","browser:safari","browser:polypane"]
+tags: ["tip", "console", "javascript", "browser:edge", "browser:chrome", "browser:firefox","browser:safari","browser:polypane"]
 ---
 Using the **[console](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/)** of DevTools you can to log some information to debug your JavaScript.
 

@@ -2,7 +2,7 @@
 date: 2022-08-31
 authors: Patrick Brosset
 title: Get the recently selected DOM nodes in the console
-tags: ["console", "html", "browser:edge", "browser:chrome", "browser:polypane"]
+tags: ["tip", "console", "html", "browser:edge", "browser:chrome", "browser:polypane"]
 ---
 If you type `$0` in the **Console** tool, in any browser, the currently selected DOM node is returned. This is very handy. To learn more, check [Get the selected element in the console](./get-current-element-in-console.md).
 

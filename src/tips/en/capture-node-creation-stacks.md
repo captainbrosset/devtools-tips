@@ -2,7 +2,7 @@
 date: 2021-07-27
 authors: Patrick Brosset
 title: Capture node creation stack traces
-tags: ["javascript", "browser:edge", "browser:chrome"]
+tags: ["tip", "javascript", "browser:edge", "browser:chrome"]
 ---
 Have you ever wanted to know what caused a specific DOM node or element to be created in the page?
 When working on a site that uses a lot of JavaScript and especially when you don't know the codebase, this can be a life saver.

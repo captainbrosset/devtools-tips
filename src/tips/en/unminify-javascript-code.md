@@ -2,7 +2,7 @@
 date: 2021-06-08
 authors: Patrick Brosset, Alex Lakatos
 title: Unminify JavaScript code to easily read and debug it
-tags: ["javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
+tags: ["tip", "javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
 ---
 Sometimes, the JavaScript code that runs on a website is minified and really hard to read. This is common in production.
 

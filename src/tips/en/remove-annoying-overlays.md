@@ -2,7 +2,7 @@
 date: 2022-08-09
 authors: Patrick Brosset
 title: Remove annoying page overlays and other elements
-tags: ["productivity", "html", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "productivity", "html", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 A lot of websites these days get covered with overlays and crammed with lots of ads and other things that make it hard to just read the content of the page.
 

@@ -2,8 +2,7 @@
 date: 2022-03-15
 authors: Patrick Brosset, Kilian Valkhof
 title: Emulate forced-color mode
-tags:
-  ["css", "accessibility", "browser:edge", "browser:chrome", "browser:polypane"]
+tags: ["tip", "css", "accessibility", "browser:edge", "browser:chrome", "browser:polypane"]
 ---
 
 Operating systems offer an accessibility feature where the colors shown on the screen are converted to offer higher contrast. When you use this feature, it impacts all the content on the screen: your desktop, folders, native apps, web browser and its web content, etc.

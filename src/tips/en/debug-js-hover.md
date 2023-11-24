@@ -2,7 +2,7 @@
 date: 2021-10-20
 authors: Patrick Brosset
 title: Debug popups that appear on hover using JS
-tags: ["debug", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
+tags: ["tip", "debug", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
 ---
 
 Have you ever been frustrated because you couldn't style a popup or tooltip that appeared on hover? If it uses JavaScript to get displayed, it's hard to style without modifying the code to make it stay visible.

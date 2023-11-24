@@ -2,7 +2,7 @@
 date: 2023-05-21
 authors: Patrick Brosset
 title: Inspect and debug iframes
-tags: ["debug", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "debug", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 If the page you are working on contains an iframe which you want to inspect and debug, you can actually use DevTools to do so. This can be very useful when working with coding playground sites like [CodePen](https://codepen.io/), [JSFiddle](https://jsfiddle.net/), or [Glitch](https://glitch.com/).
 

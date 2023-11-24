@@ -2,7 +2,7 @@
 date: 2022-05-13
 authors: Patrick Brosset, Kilian Valkhof
 title: Discover all the tools
-tags: ["help",  "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
+tags: ["tip", "help",  "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
 ---
 
 DevTools is confusing! There's so much functionality packed in such a small UI. Did you know that Chrome DevTools had more than 30 individual tools! Yes, that's right, 30.

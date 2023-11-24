@@ -2,7 +2,7 @@
 date: 2022-06-02
 authors: Patrick Brosset
 title: Quickly spot out-of-viewport elements
-tags: ["html", "css", "browser:edge"]
+tags: ["tip", "html", "css", "browser:edge"]
 ---
 
 Sometimes, either by accident or on purpose, HTML elements end up outside of the visible browser viewport. When they do, it can be really hard to find them in DevTools. Indeed, the DOM tree in the **Elements** tool is nice and all, but it's not super easy to navigate especially when it's huge and deeply nested.

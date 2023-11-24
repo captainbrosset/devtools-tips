@@ -2,7 +2,7 @@
 date: 2021-07-19
 authors: Patrick Brosset
 title: Edit CSS absolute and relative positions by dragging points in the page
-tags: ["css", "highlighter", "browser:firefox"]
+tags: ["tip", "css", "highlighter", "browser:firefox"]
 ---
 Firefox features a position editor that lets you move elements in the page by drag and drop. This works with elements that are positioned in CSS with `position:relative` or `position:absolute` and that have at least one of `top`, `right`, `bottom` and `left` defined.
 

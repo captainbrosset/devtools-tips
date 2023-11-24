@@ -2,7 +2,7 @@
 date: 2021-10-29
 authors: Patrick Brosset
 title: Use commands to do things faster
-tags: ["productivity", "browser:edge", "browser:chrome"]
+tags: ["tip", "productivity", "browser:edge", "browser:chrome"]
 ---
 There is a command menu in Edge and Chrome that allows you to quickly access many different features of DevTools without having to navigate the UI.
 

@@ -2,7 +2,7 @@
 date: 2021-10-29
 authors: Patrick Brosset
 title: Zoom the DevTools UI to your liking
-tags: ["accessibility", "personalization", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
+tags: ["tip", "accessibility", "personalization", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 Do you find the UI of DevTools too small to comfortably work with? Because this UI is made of HTML and CSS, just like any other web pages, it can be zoomed in (or out) by the browser just like you can zoom in on web pages.
 

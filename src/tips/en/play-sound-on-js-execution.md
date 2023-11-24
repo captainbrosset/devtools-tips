@@ -2,7 +2,7 @@
 date: 2021-09-08
 authors: Patrick Brosset
 title: Play a sound when a line of JavaScript is executed
-tags: ["debug", "javascript", "browser:safari"]
+tags: ["tip", "debug", "javascript", "browser:safari"]
 ---
 Sometimes pausing execution when a line of JavaScript is executed is too much, sometimes you only want to know that the line was executed at all, not pause there.
 

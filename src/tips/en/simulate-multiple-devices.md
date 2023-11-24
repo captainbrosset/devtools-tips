@@ -2,7 +2,7 @@
 date: 2023-01-06
 authors: Kilian Valkhof
 title: Simulate multiple devices that are kept in sync
-tags: ["productivity", "testing", "browser:polypane"]
+tags: ["tip", "productivity", "testing", "browser:polypane"]
 ---
 
 Instead of [simulating devices one by one](./simulate-devices.md) and switching between them, Polypane supports testing on multiple simulated devices and viewports at the same time.

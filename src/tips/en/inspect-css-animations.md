@@ -2,7 +2,7 @@
 date: 2022-08-17
 authors: Pankaj Parashar, Patrick Brosset
 title: Inspect CSS animations
-tags: ["css", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "css", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
 
 Modern browser DevTools provide a handy tool to inspect and modify CSS animations, CSS transitions, and Web animations. These tools not only help you debug animations, but also let you modify the various animation properties.

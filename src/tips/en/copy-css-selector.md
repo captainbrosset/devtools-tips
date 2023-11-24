@@ -2,7 +2,7 @@
 date: 2022-07-26
 authors: Pankaj Parashar
 title: Copy CSS selector of an element
-tags: ["css", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "css", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 
 Sometimes we need to uniquely identify an element that lacks an identifier, so that it can be referenced in JavaScript and other places. All the major browsers have an option to build a unique CSS selector for an element and then copy it to the clipboard.

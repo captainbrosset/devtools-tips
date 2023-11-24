@@ -2,7 +2,7 @@
 date: 2023-09-08
 authors: Patrick Brosset, Kilian Valkhof
 title: Highlight all elements on the page that match a given CSS selector
-tags: ["highlighter", "css", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari", "browser:polypane"]
+tags: ["tip", "highlighter", "css", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari", "browser:polypane"]
 see-also: ["highlight-css-properties-on-hover.md"]
 ---
 

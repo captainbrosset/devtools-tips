@@ -2,7 +2,7 @@
 date: 2021-06-24
 authors: Patrick Brosset, Kilian Valkhof
 title: Persist console messages across page navigations and reloads
-tags: ["console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
+tags: ["tip", "console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 By default, the messages displayed in the console get removed as soon as you refresh the page (or navigate to a new page). If you want to keep those messages as long as DevTools is open, follow these steps:
 

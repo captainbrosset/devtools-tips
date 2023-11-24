@@ -2,7 +2,7 @@
 date: 2022-12-14
 authors: Patrick Brosset
 title: Find the most expensive CSS selectors
-tags: ["css", "perf", "browser:edge"]
+tags: ["tip", "css", "perf", "browser:edge"]
 ---
 
 When it comes to performance, we often spend time improving our JavaScript code. But CSS has a role to play too.

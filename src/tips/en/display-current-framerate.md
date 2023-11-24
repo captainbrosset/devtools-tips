@@ -2,7 +2,7 @@
 date: 2023-03-03
 authors: Patrick Brosset
 title: Display the current framerate of your webpage
-tags: ["perf", "browser:edge", "browser:chrome"]
+tags: ["tip", "perf", "browser:edge", "browser:chrome"]
 ---
 
 For a super smooth user experience on your website or app, it's better if the browser manages to render your page at a high framerate. Ideally, this rate should be 60 frames per second (FPS). This gives the browser 16ms to paint each frame. When the webpage doesn't do anything and the user is just reading the content, that's not hard to achieve. But if you have complicated JavaScript running and updating the page, then the browser has to squeeze a lot more work in these 16 ms frames.

@@ -2,7 +2,7 @@
 date: 2022-05-11
 authors: Patrick Brosset, Kilian Valkhof
 title: Copy an elements styles
-tags: ["css", "export", "browser:edge", "browser:chrome", "browser:polypane"]
+tags: ["tip", "css", "export", "browser:edge", "browser:chrome", "browser:polypane"]
 ---
 
 You can extract all the styles of an element in one go by using the **Copy styles** feature.

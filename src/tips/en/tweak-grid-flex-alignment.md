@@ -2,7 +2,7 @@
 date: 2021-06-15
 authors: Patrick Brosset
 title: Tweak css grid and flexbox alignment properties
-tags: ["css", "browser:edge", "browser:chrome"]
+tags: ["tip", "css", "browser:edge", "browser:chrome"]
 ---
 Chrome and Edge both have a visual editor useful for tweaking flexbox and grid alignment properties.
 

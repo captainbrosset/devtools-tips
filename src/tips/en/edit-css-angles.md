@@ -2,7 +2,7 @@
 date: 2021-06-22
 authors: Patrick Brosset
 title: Edit CSS angles
-tags: ["css", "browser:chrome", "browser:edge"]
+tags: ["tip", "css", "browser:chrome", "browser:edge"]
 ---
 In CSS, several different properties use [angle](https://developer.mozilla.org/en-US/docs/Web/CSS/angle) unit values, such as the `rotate()` function of a `transform` or the `linear-gradient` orientation of a `background-image`, and more.
 

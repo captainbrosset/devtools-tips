@@ -2,7 +2,7 @@
 date: 2023-07-31
 authors: Patrick Brosset
 title: Create your own DevTools theme
-tags: ["personalization", "browser:edge", "browser:chrome"]
+tags: ["tip", "personalization", "browser:edge", "browser:chrome"]
 see-also: ["change-color-theme.md", "extend-devtools.md", "inspect-devtools-with-devtools.md"]
 ---
 You can change the color theme of DevTools to match your preference (see [Change the color theme of DevTools](./change-color-theme.md) to learn more), but you can also create your own theme from scratch by creating a browser extension.

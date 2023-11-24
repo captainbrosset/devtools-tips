@@ -2,7 +2,7 @@
 date: 2021-11-10
 authors: Patrick Brosset
 title: Format console messages
-tags: ["console", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "console", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 You can use special formatters in the `console.log` function to format logs just the way you want.
 

@@ -2,7 +2,7 @@
 date: 2021-08-02
 authors: Patrick Brosset, Rachel Simone Weil, Kilian Valkhof
 title: Prototype content changes with designMode
-tags: ["console", "html", "productivity", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari", "browser:polypane"]
+tags: ["tip", "console", "html", "productivity", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari", "browser:polypane"]
 ---
 
 When creating or modifying a design prototype for the web, you may want to quickly edit content in the browser without having to find the relevant code.

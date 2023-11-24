@@ -2,7 +2,7 @@
 date: 2023-03-03
 authors: Pankaj Parashar, Patrick Brosset
 title: Detect unused CSS and JavaScript code
-tags: ["perf", "css", "javascript", "browser:edge", "browser:chrome", "browser:safari"]
+tags: ["tip", "perf", "css", "javascript", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 
 To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it's really needed.

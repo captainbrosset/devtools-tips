@@ -2,7 +2,7 @@
 date: 2021-11-17
 authors: Patrick Brosset, Kilian Valkhof
 title: Take a screenshot of a single node
-tags: ["html", "export", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
+tags: ["tip", "html", "export", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
 ---
 In Firefox, Chrome, Polypane and Edge DevTools, you can screenshot a single node from the page.
 

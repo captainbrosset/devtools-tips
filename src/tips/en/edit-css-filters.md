@@ -2,7 +2,7 @@
 date: 2021-06-08
 authors: Patrick Brosset, Julian Descottes
 title: Edit CSS filters
-tags: ["css", "browser:firefox"]
+tags: ["tip", "css", "browser:firefox"]
 ---
 The [`filter`](https://developer.mozilla.org/docs/Web/CSS/filter) property in CSS lets you change the way a particular element gets rendered.
 

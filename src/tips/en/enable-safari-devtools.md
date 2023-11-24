@@ -2,7 +2,7 @@
 date: 2023-11-23
 authors: Patrick Brosset
 title: Enable DevTools in Safari
-tags: ["help", "browser:safari"]
+tags: ["tip", "help", "browser:safari"]
 ---
 Unlike other browsers, Safari hides its DevTools (and other developer-related features) by default. That's actually good because 99% of the people using the browser are probably not web developers.
 

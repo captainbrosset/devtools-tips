@@ -2,7 +2,7 @@
 date: 2021-06-28
 authors: Patrick Brosset
 title: Apply CSS styles to console messages
-tags: ["console", "css", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "console", "css", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 The `console.log` output can be styled in DevTools using CSS.
 

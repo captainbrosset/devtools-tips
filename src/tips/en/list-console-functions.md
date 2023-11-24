@@ -2,7 +2,7 @@
 date: 2022-11-23
 authors: Patrick Brosset
 title: List all supported console functions
-tags: ["console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
+tags: ["tip", "console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
 ---
 You've probably already used `console.log()` in your code to print debugging values to the **Console** tool in DevTools. But the `console` namespace actually has many other functions too!
 

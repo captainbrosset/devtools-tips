@@ -2,8 +2,7 @@
 date: 2023-01-13
 authors: Patrick Brosset
 title: Emulate color schemes
-tags:
-  ["css", "testing", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox", "browser:polypane"]
+tags: ["tip", "css", "testing", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox", "browser:polypane"]
 ---
 
 In CSS, you can use the `prefers-color-scheme` media feature ([docs](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme)) to detect if the user prefers using a light or a dark theme in their operating system. This is useful to style your website in a way that better blends with the rest of the operating system and respects the user's preference.

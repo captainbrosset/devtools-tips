@@ -2,7 +2,7 @@
 date: 2023-03-01
 authors: Patrick Brosset
 title: Throttle your CPU
-tags: ["perf", "browser:edge", "browser:chrome"]
+tags: ["tip", "perf", "browser:edge", "browser:chrome"]
 see-also: ["throttle-network-speed.md"]
 ---
 Your development machine is very likely much more powerful than the devices your users have (which are probably low-end mobile devices).

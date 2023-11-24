@@ -2,7 +2,7 @@
 date: 2023-06-10
 authors: Patrick Brosset
 title: Find the CSS rule that causes a specific style to apply
-tags: ["css", "debug", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
+tags: ["tip", "css", "debug", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 Here is the scenario: you know there's a specific style that applies to an HTML element in your web page, say some padding, but you can't seem to find where, in the CSS code, that style is coming from.
 

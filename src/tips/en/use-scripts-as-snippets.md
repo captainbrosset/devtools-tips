@@ -2,7 +2,7 @@
 date: 2022-10-25
 authors: Patrick Brosset, Christian Heilmann, Pankaj Parashar
 title: Re-use scripts as snippets
-tags: ["javascript", "browser:edge", "browser:chrome", "browser:safari"]
+tags: ["tip", "javascript", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 The **Console** is great to write short JavaScript expressions that read from the document or manipulate it. But it's also a terrible editor.
 

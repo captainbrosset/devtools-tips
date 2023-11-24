@@ -2,7 +2,7 @@
 date: 2021-11-15
 authors: Patrick Brosset
 title: Move panels to re-arrange them
-tags: ["personalization", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "personalization", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 Moving panels around the user interface can be very useful to make DevTools more unique to you and adapted to your needs.
 

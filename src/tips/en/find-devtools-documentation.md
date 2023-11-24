@@ -2,7 +2,7 @@
 date: 2021-07-02
 authors: Patrick Brosset
 title: Find DevTools reference documentation
-tags: ["help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox", "browser:polypane"]
+tags: ["tip", "help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox", "browser:polypane"]
 see-also: ["get-contextual-help.md", "send-feedback-about-devtools.md"]
 ---
 If you want to learn more about what other tools exist in a browser, or what features a given tool provides, you can find reference documentation from all the major browsers here:

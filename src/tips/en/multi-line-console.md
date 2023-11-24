@@ -2,7 +2,7 @@
 date: 2021-12-16
 authors: Patrick Brosset
 title: Write code on multiple lines in the Console
-tags: ["console", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
+tags: ["tip", "console", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
 ---
 If you're feeling adventurous and want to write longer pieces of code in the **Console** to execute more complex things, it can quickly become difficult.
 

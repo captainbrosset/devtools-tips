@@ -2,7 +2,7 @@
 date: 2022-01-17
 authors: Patrick Brosset, Kilian Valkhof
 title: Find HTML parsing errors
-tags: ["html", "browser:firefox", "browser:polypane"]
+tags: ["tip", "html", "browser:firefox", "browser:polypane"]
 ---
 DevTools is so full of features these days that we hardly ever use View-Source anymore. But it turns out that it has one trick up its sleeves that other tools don't, at least in Firefox and Polypane.
 

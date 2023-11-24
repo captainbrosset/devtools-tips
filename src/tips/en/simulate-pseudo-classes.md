@@ -2,7 +2,7 @@
 date: 2021-11-07
 authors: Patrick Brosset, Christian Heilmann, Alex Lakatos, Kilian Valkhof
 title: Simulate pseudo CSS classes
-tags: ["html", "css", "debug", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
+tags: ["tip", "html", "css", "debug", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 If you use `:hover`, `:active`, or other pseudo-classes in your CSS code, it can be tedious to test them. For example, having to hover over an element which is styled with the `:hover` pseudo-class means that you can't use your mouse to inspect the element in DevTools at the same time.
 

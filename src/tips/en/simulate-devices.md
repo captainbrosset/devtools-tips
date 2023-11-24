@@ -2,7 +2,7 @@
 date: 2022-10-19
 authors: Patrick Brosset, Kilian Valkhof
 title: Simulate different devices and screen sizes
-tags: ["testing", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
+tags: ["tip", "testing", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 All browser DevTools have a built-in mode that you can use to test a webpage under different screen sizes and device capabilities.
 

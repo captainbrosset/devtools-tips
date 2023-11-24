@@ -2,7 +2,7 @@
 date: 2022-02-25
 authors: Patrick Brosset
 title: Paste multiple CSS declarations at once
-tags: ["css", "browser:firefox", "browser:safari", "browser:chrome", "browser:edge"]
+tags: ["tip", "css", "browser:firefox", "browser:safari", "browser:chrome", "browser:edge"]
 ---
 You know how you can paste a CSS property name or value in the **Styles** (or **Rules**) panel? Well, you can actually paste several declarations at once too!
 

@@ -2,7 +2,7 @@
 date: 2021-06-29
 authors: Patrick Brosset, Kilian Valkhof
 title: Visualize the tabbing order on the page
-tags: ["accessibility", "highlighter", "browser:firefox", "browser:polypane"]
+tags: ["tip", "accessibility", "highlighter", "browser:firefox", "browser:polypane"]
 ---
 
 

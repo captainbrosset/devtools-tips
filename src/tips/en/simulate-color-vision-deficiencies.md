@@ -2,7 +2,7 @@
 date: 2021-06-22
 authors: Patrick Brosset, Kilian Valkhof
 title: Simulate color vision deficiencies
-tags: ["accessibility", "browser:firefox", "browser:chrome", "browser:edge", "browser:polypane"]
+tags: ["tip", "accessibility", "browser:firefox", "browser:chrome", "browser:edge", "browser:polypane"]
 ---
 People who visit your web pages may have different types of color vision deficiencies that, if you incorrectly use colors for meaning, may affect their experience.
 

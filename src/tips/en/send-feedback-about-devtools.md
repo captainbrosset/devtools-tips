@@ -2,7 +2,7 @@
 date: 2022-03-10
 authors: Patrick Brosset
 title: Send feedback, ask for features and report bugs
-tags: ["help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox", "browser:polypane"]
+tags: ["tip", "help", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox", "browser:polypane"]
 see-also: ["get-contextual-help.md", "find-devtools-documentation.md"]
 ---
 ![A feedback illustration showing a stick figure with a speech bubble](../../assets/img/send-feedback-about-devtools.png)

@@ -2,7 +2,7 @@
 date: 2022-09-29
 authors: Patrick Brosset
 title: Access results from recent Console evaluations
-tags: ["console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
+tags: ["tip", "console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 Imagine you evaluate a long expression like `$$('*').map(el => Object.values(el.attributes).map(attr => {return {name: attr.name, value: attr.value}}))` which extracts the attributes from all of the DOM elements on the page.
 

@@ -2,7 +2,7 @@
 date: 2021-06-30
 authors: Patrick Brosset
 title: Event listeners are suppressed when paused
-tags: ["javascript", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
+tags: ["tip", "javascript", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript.
 

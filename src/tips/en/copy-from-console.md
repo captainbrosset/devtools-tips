@@ -2,7 +2,7 @@
 date: 2021-06-21
 authors: Patrick Brosset, Alex Lakatos
 title: Copy an object from the console
-tags: ["console", "javascript", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
+tags: ["tip", "console", "javascript", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
 ---
 The console panel supports a very handy `copy()` function that stringifies and copies anything you pass to it as an argument, so you can then paste it somewhere else.
 

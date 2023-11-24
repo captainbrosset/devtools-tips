@@ -2,7 +2,7 @@
 date: 2021-06-08
 authors: Patrick Brosset, Alex Lakatos
 title: Expand DOM nodes recursively
-tags: ["html", "productivity", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
+tags: ["tip", "html", "productivity", "browser:firefox", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 You can expand all descendants under a given DOM node in one go, to avoid having to expand each node one by one, which may take a while.
 

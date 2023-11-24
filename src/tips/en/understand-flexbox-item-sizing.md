@@ -2,7 +2,7 @@
 date: 2022-10-26
 authors: Patrick Brosset
 title: Understand flexbox item sizing
-tags: ["css", "browser:firefox"]
+tags: ["tip", "css", "browser:firefox"]
 ---
 [Flexbox](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) is a great way to easily distribute elements and empty space in a row or a column, and create interesting layouts.
 

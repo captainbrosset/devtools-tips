@@ -2,7 +2,7 @@
 date: 2023-01-05
 authors: Kilian Valkhof
 title: Reload a page when there's changes on disk
-tags: ["productivity", "browser:polypane"]
+tags: ["tip", "productivity", "browser:polypane"]
 ---
 
 While working on a page locally and you're not using a hot reloading dev server, you need to reload the browser yourself to see the change. You need to do this every time you save a file. Wouldn't it be great if this happened automatically?

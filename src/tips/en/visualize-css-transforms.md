@@ -2,7 +2,7 @@
 date: 2021-12-06
 authors: Patrick Brosset
 title: Visualize the effect of CSS transforms
-tags: ["css", "highlighter", "browser:firefox"]
+tags: ["tip", "css", "highlighter", "browser:firefox"]
 ---
 CSS transforms can sometimes be hard to wrap your head around, especially when chaining multiple transformations.
 

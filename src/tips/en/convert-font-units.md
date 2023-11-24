@@ -2,7 +2,7 @@
 date: 2021-07-12
 authors: Patrick Brosset
 title: Convert font property units
-tags: ["css", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "css", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
 Font CSS properties such as `font-size`, `line-height` or `letter-spacing` can be expressed in multiple different length units (like many other CSS properties).
 

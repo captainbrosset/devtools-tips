@@ -2,7 +2,7 @@
 date: 2021-07-13
 authors: Patrick Brosset
 title: Copy an element's XPath expression
-tags: ["html", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "html", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 You can easily copy an element's [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath) expression from DevTools. This is useful if you need this expression for an automated test for example.
 

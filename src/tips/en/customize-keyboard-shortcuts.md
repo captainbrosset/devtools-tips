@@ -2,7 +2,7 @@
 date: 2022-10-26
 authors: Patrick Brosset
 title: Customize keyboard shortcuts
-tags: ["personalization", "browser:edge", "browser:chrome"]
+tags: ["tip", "personalization", "browser:edge", "browser:chrome"]
 ---
 DevTools comes with tons of keyboard shortcuts. Some are well known (like `F12` to open DevTools), but there are many others which you might not be familiar with, and which could make your life easier.
 

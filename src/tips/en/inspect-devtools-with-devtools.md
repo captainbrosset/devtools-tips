@@ -2,7 +2,7 @@
 date: 2023-07-31
 authors: Patrick Brosset
 title: Inspect DevTools with DevTools
-tags: ["personalization", "productivity", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "personalization", "productivity", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
 The user interface of DevTools is built with HTML, CSS, and JavaScript. This means you can inspect and debug DevTools with DevTools.
 

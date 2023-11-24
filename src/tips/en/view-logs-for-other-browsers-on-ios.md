@@ -2,7 +2,7 @@
 date: 2023-02-07
 authors: Patrick Brosset
 title: View console logs from non-Safari browsers on an iPhone
-tags: ["debug", "console", "browser:edge", "browser:chrome"]
+tags: ["tip", "debug", "console", "browser:edge", "browser:chrome"]
 ---
 Using the `about:inspect` special page you can see your website's logs in Chrome or Edge running on iPhone!
 

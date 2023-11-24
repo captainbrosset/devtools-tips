@@ -2,7 +2,7 @@
 date: 2021-10-29
 authors: Patrick Brosset, Christian Heilmann
 title: Cut down on console noise using live expressions
-tags: ["debug", "javascript", "browser:edge", "browser:chrome"]
+tags: ["tip", "debug", "javascript", "browser:edge", "browser:chrome"]
 ---
 Using the [Console](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/) of DevTools to log information that changes a lot is a bad idea. First of all, you flood it with information. Secondly, it can impact the performance of your product. And last but not least, you are most likely to only log this information to debug your project and end users should never get that information.
 

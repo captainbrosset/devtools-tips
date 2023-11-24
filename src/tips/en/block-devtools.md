@@ -2,7 +2,7 @@
 date: 2023-11-24
 authors: Patrick Brosset
 title: Block DevTools
-tags: ["help", "browser:chrome", "browser:edge", "browser:safari", "browser:firefox"]
+tags: ["tip", "help", "browser:chrome", "browser:edge", "browser:safari", "browser:firefox"]
 ---
 There are two levels to consider when talking about blocking (or disabling) DevTools in a browser:
 

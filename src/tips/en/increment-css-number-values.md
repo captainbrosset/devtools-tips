@@ -2,7 +2,7 @@
 date: 2021-10-29
 authors: Patrick Brosset
 title: Easily change CSS number values from the keyboard in increments of 0.1, 1, 10, 100
-tags: ["css", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
+tags: ["tip", "css", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 When playing with styling or layout code in DevTools, it's useful to be able to change widths, margins, and other CSS number values quickly.
 

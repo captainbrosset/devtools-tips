@@ -2,7 +2,7 @@
 date: 2023-06-21
 authors: Patrick Brosset
 title: Add custom headers to the network table
-tags: ["network", "browser:edge", "browser:chrome"]
+tags: ["tip", "network", "browser:edge", "browser:chrome"]
 see-also: ["see-request-path-instead-of-name.md"]
 ---
 

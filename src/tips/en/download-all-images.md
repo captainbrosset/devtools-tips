@@ -2,7 +2,7 @@
 date: 2021-12-16
 authors: Patrick Brosset
 title: Download all images from the page
-tags: ["productivity", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "productivity", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 If you want to download all of the images on a webpage in one go, you can use the following few lines of JavaScript code to do it:
 

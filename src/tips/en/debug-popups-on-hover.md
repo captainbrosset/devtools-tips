@@ -2,7 +2,7 @@
 date: 2023-11-21
 authors: Pankaj Parashar, Patrick Brosset
 title: Debug popups that appear on hover
-tags: ["debug", "browser:edge", "browser:chrome"]
+tags: ["tip", "debug", "browser:edge", "browser:chrome"]
 see-also: ["debug-js-hover.md", "debug-js-hover-2.md"]
 ---
 

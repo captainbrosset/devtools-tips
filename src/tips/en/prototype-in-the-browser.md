@@ -2,7 +2,7 @@
 date: 2022-03-25
 authors: Patrick Brosset
 title: Start your HTML and CSS prototypes in the browser directly
-tags: ["css", "html", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "css", "html", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 Sometimes I need a blank canvas to prototype an idea with HTML and CSS. Something outside of the website I'm working on. Maybe I need a new layout or component and I'm not sure yet how to do it.
 

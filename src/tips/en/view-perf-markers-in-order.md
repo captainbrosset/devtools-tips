@@ -2,7 +2,7 @@
 date: 2021-06-10
 authors: Patrick Brosset
 title: View performance markers in order
-tags: ["javascript", "perf", "console", "browser:edge", "browser:chrome", "browser:safari"]
+tags: ["tip", "javascript", "perf", "console", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 When logging `performance.timing` events to the console, they appear in alphabetical order since they are properties of the `PerformanceTiming` object.
 

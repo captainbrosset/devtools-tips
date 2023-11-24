@@ -2,7 +2,7 @@
 date: 2022-05-17
 authors: Patrick Brosset
 title: Edit an element's attributes and tag name with the keyboard
-tags: ["html", "productivity", "browser:chrome", "browser:edge", "browser:firefox", "browser:safari"]
+tags: ["tip", "html", "productivity", "browser:chrome", "browser:edge", "browser:firefox", "browser:safari"]
 ---
 
 Using the keyboard can be faster than using a mouse in certain cases (and for some people). One such case is editing an element's tag name and attributes in DevTools.

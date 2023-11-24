@@ -2,7 +2,7 @@
 date: 2022-01-13
 authors: Patrick Brosset
 title: Select elements with pointer-events:none by holding Shift
-tags: ["html", "css", "browser:chrome", "browser:edge", "browser:firefox", "browser:polypane"]
+tags: ["tip", "html", "css", "browser:chrome", "browser:edge", "browser:firefox", "browser:polypane"]
 ---
 When selecting elements from the page they normally get highlighted on hover and selected on click. However certain elements can't be selected.
 

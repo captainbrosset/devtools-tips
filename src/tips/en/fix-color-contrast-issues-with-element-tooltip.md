@@ -2,7 +2,7 @@
 date: 2022-06-30
 authors: Patrick Brosset
 title: Fix color contrast issues using the element tooltip
-tags: ["accessibility", "browser:edge", "browser:chrome"]
+tags: ["tip", "accessibility", "browser:edge", "browser:chrome"]
 ---
 
 There are multiple ways to detect and fix color contrast issues with DevTools, but here is a nice one to keep in mind. It's not straightforward to use and takes a few steps, but makes it very nice to see the resulting contrast ratio as you change the color value.
