@@ -41,7 +41,7 @@ Because DevTools is built-in to your browser, you don't need to install it as a 
 
 There are ways to disable DevTools.
 
-<!-- Add a tip about blocking devtools from menu in safari (Default), from F12 in edge (default), and from policies (various ways in different browsers) -->
+{% insertTip "block-devtools" %}
 
 ### DevTools is always attached to a target
 

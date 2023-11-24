@@ -4,9 +4,7 @@ authors: Patrick Brosset
 title: Block DevTools
 tags: ["help", "browser:chrome", "browser:edge", "browser:safari", "browser:firefox"]
 ---
-This is a web developer website, so it feels weird to talk about blocking or disabling DevTools. But, you may have very good reasons to do this.
-
-There are two levels to consider when talking about blocking/disabling DevTools:
+There are two levels to consider when talking about blocking (or disabling) DevTools in a browser:
 
 1. Disabling DevTools at the browser level. For example, if you have a browser for web development, and another one for personal browsing, you may want to disable DevTools in the latter. Maybe because you don't want <kbd>F12</kbd> to open DevTools. Or maybe it's your mum's browser and she always gets confused when she accidentally opens DevTools.
 1. Disabling DevTools for an entire organization. For example, you're a teacher and you don't want your students to be able to use DevTools. Or your an IT admin and you want to disable DevTools for all the computers in your company.
