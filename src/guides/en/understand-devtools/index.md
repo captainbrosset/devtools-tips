@@ -3,6 +3,10 @@ date: 2023-11-23
 authors: Patrick Brosset
 title: Understand DevTools
 layout: guide.njk
+tags: ["guide"]
+excerpt: This guide is an introduction to DevTools, suited for people who are starting web development and haven't yet used the built-in browser tools. You will learn what DevTools is, who it's for, how to open it, how its UI is organized, what tools exist, and what the main user workflows are.
+thumbnail: /guides/en/understand-devtools/devtools-all-in-one.png
+alt: Illustration of a browser window with DevTools open next to it.
 ---
 
 This guide is an introduction to DevTools, which is a suite of web development tools that are built-in to most web browsers. Read this guide if you are starting web development and haven't used the built-in browser tools yet. You will learn what DevTools is, who it's for, how to open it, how its UI is organized, what tools exist, and what the main user workflows are.

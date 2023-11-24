@@ -381,7 +381,11 @@ main h1 {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.card {
+  flex: 1 1 20rem;
 }
 
 /* List of tips */
@@ -390,6 +394,7 @@ main h1 {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  container-type: inline-size;
 }
 
 .tip {
@@ -453,7 +458,7 @@ main h1 {
   text-overflow: ellipsis;
 }
 
-@media only screen and (max-width: 600px) {
+@container (max-width: 450px) {
   .tip {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
@@ -503,6 +508,10 @@ main h1 {
 }
 
 /* Docs page */
+
+.page-content {
+  container-type: inline-size;
+}
 
 .page-content img {
   max-width: min(100%, 800px);

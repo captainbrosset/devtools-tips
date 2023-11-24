@@ -51,7 +51,7 @@ Choose a unique ID for your new tip:
   date: 2021-10-23
   authors: Patrick Brosset
   title: Store a node as a variable to use it in the console
-  tags: ["html", "console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
+  tags: ["tip", "html", "console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
   see-also: ["get-recently-selected-dom-nodes-in-console.md"]
   ---
   ```

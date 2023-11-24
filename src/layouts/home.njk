@@ -62,6 +62,13 @@
       </a>
       <nav>
         <ul class="header-menu">
+          <li>Guides
+            <ul class="submenu">
+              {%- for guide in collections.guide -%}
+              <li><a href="{{ guide.url }}">{{ guide.data.title }}</a></li>
+              {%- endfor -%}
+            </ul>
+          </li>
           <li><a href="/all/">All tips</a></li>
           <li>Tips by category
             <ul class="submenu">

@@ -5,7 +5,7 @@
   templateEngineOverride: "njk",
   eleventyExcludeFromCollections: true,
   pagination: {
-    data: "collections.all",
+    data: "collections.tip",
     size: 25,
     before: function(data) {
       return data.reverse();
@@ -13,7 +13,7 @@
   }
 }
 ---
-<h1>{{collections.all.length }} DevTools Tips</h1>
+<h1>{{collections.tip.length }} DevTools Tips</h1>
 <ul class="tips">
 {%- for post in pagination.items -%}
   {% include 'tip-in-list.njk' %}
