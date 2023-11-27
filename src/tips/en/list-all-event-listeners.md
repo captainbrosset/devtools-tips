@@ -2,7 +2,7 @@
 date: 2023-11-21
 authors: Patrick Brosset
 title: List all event listeners on the entire page
-tags: ["console", "debug", "browser:edge", "browser:chrome"]
+tags: ["console", "debug", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 
 When you don't know a codebase, it might be hard to know where to get started, and what events are being listened to by which elements.
