@@ -35,10 +35,9 @@ Firefox has a built-in **Edit and Resend** feature that's very convenient becaus
 
 Edge has a built-in feature very similar to Firefox's **Edit and Resend**, but that goes further in that it allows you to create any number of requests to test over time, like [Postman](https://www.postman.com/).
 
-The feature is called **Network Console** and is an experiment for the time being, so use with caution.
+The feature is called **Network Console** and can be accessed like any other panel from the **Activity toolbar**.
 
-* Go to the **Settings** (<kbd>F1</kbd>), then **Experiments**, and check the **Enable Network Console** option (make sure to restart DevTools after that).
-* You can then access the **Network Console** like any other panel, but the easiest way to get started is by going to the **Network** panel and finding the request you want to test.
+* The easiest way to get started is by going to the **Network** panel and finding the request you want to test.
 * Right-click it and select **Edit and Resend**.
 * In the new panel that appears, you can edit the method, url, query string, headers, body, etc.
 * Press **Send** when you're happy with the values.
