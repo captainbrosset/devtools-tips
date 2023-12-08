@@ -113,11 +113,11 @@ body {
 
 a {
   color: var(--accent-color);
+}
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
+a:hover,
+a:focus {
+  text-decoration: none;
 }
 
 /* Header */
@@ -167,12 +167,11 @@ header nav {
   font-weight: normal;
   color: var(--sub-text-color);
   text-transform: capitalize;
+}
 
-  &:hover,
-  &:focus {
-    color: var(--text-color);
-    text-decoration: none;
-  }
+.header-menu a:hover,
+.header-menu a:focus {
+  color: var(--text-color);
 }
 
 .header-menu .submenu {
@@ -405,18 +404,16 @@ main h1 img {
   gap: 0 2rem;
   flex-wrap: wrap;
   align-items: flex-start;
-
-  & > :is(div, p) {
-    flex: 1 1 45%;
-    min-width: 300px;
-    padding: 1rem 0 0;
-    text-wrap: balance;
-  }
-
-  & > p {
-    background: var(--alternate-background-color);
-    padding: 1rem 2rem;
-  }
+}
+.twocol > p {
+  flex: 1 1 45%;
+  min-width: 300px;
+  padding: 1rem 0 0;
+  text-wrap: balance;
+}
+.twocol > .callout {
+  background: var(--alternate-background-color);
+  padding: 1rem 2rem;
 }
 
 /* Card layout */
@@ -691,11 +688,13 @@ pre {
   text-decoration: none;
   border-radius: 3px;
   line-height: 1;
+}
 
-  &:hover,
-  &:focus {
-    outline: 1px solid var(--browser-tag-text-color);
-  }
+.tags a:hover,
+.tags a:focus,
+.browsers a:hover,
+.browsers a:focus {
+  outline: 1px solid var(--browser-tag-text-color);
 }
 
 .tags li a {
