@@ -27,8 +27,10 @@
   <div class="card">
     <h2>Latest tips</h2>
     <ul class="tips">
-      {% set latest_posts = collections.all | reverse %} {%- for post in latest_posts.slice(0, 5) -%} {% include
-      'tip-in-list.njk' %} {%- endfor -%}
+    {% set latest_posts = collections.all | reverse %}
+    {%- for post in latest_posts.slice(0, 5) -%}
+      {% include 'tip-in-list.njk' %}
+    {%- endfor -%}
     </ul>
   </div>
 </div>

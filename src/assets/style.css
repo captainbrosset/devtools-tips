@@ -339,6 +339,12 @@ main {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  main {
+    padding-inline: 1rem;
+  }
+}
+
 main h1 {
   margin: 0 0 1rem 0;
 }
@@ -596,6 +602,7 @@ pre {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  box-sizing: border-box;
 }
 
 .see-also li {
@@ -606,6 +613,7 @@ pre {
   justify-content: space-between;
   align-items: center;
   border-radius: 0.5rem;
+  max-width: 100%;
 }
 
 .see-also .other-tip-image {
@@ -615,6 +623,26 @@ pre {
 .see-also .other-tip-image img {
   width: 100%;
   display: block;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .see-also ul {
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  }
+
+  .see-also li {
+    flex-direction: column;
+  }
+
+  .see-also li a {
+    display: inline;
+    flex:1 1 auto;
+  }
+
+  .see-also .other-tip-image {
+    flex: 1 0 0;
+  }
 }
 
 .tip-footer {
