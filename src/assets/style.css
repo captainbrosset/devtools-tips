@@ -182,6 +182,11 @@ header nav {
   vertical-align: middle;
   height: 1em;
 }
+@media (prefers-color-scheme: dark) {
+  .header-menu a img {
+    filter: invert(1);
+  }
+}
 
 @media only screen and (max-width: 700px) {
   body {
