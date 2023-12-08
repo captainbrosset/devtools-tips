@@ -179,6 +179,11 @@ header nav {
   margin-block-start: 1rem;
 }
 
+.header-menu a img {
+  vertical-align: middle;
+  height: 1em;
+}
+
 @media only screen and (max-width: 700px) {
   body {
     display: revert;
@@ -347,6 +352,10 @@ main {
 
 main h1 {
   margin: 0 0 1rem 0;
+}
+main h1 img {
+  vertical-align: middle;
+  height: 1em;
 }
 
 /* Toolbar */
@@ -625,7 +634,6 @@ pre {
   display: block;
 }
 
-
 @media only screen and (max-width: 400px) {
   .see-also ul {
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
@@ -637,7 +645,7 @@ pre {
 
   .see-also li a {
     display: inline;
-    flex:1 1 auto;
+    flex: 1 1 auto;
   }
 
   .see-also .other-tip-image {
@@ -698,6 +706,10 @@ pre {
 .browsers li a {
   background: var(--browser-tag-background-color);
   color: var(--browser-tag-text-color);
+}
+.browsers li a img {
+  vertical-align: middle;
+  height: 1em;
 }
 
 /* Misc. */
