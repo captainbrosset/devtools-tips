@@ -1,5 +1,5 @@
 ---
-date: 2023-11-23
+date: 2023-12-08
 authors: Patrick Brosset
 title: Understand DevTools
 layout: guide.njk
@@ -37,9 +37,11 @@ Keep reading to learn more about DevTools.
 
 In this guide, we focus on the following web browsers: Firefox, Chrome, Edge, and Safari. However, other browsers such as Opera, Arc, or Brave have similar DevTools. We also focus on the desktop versions of these browsers only. Mobile browsers usually don't have built-in DevTools.
 
+This guide also doesn't focus on specific developer-only browsers like Polypane. These browsers are very useful, but sufficiently different from common web browsers that they're not covered in this guide.
+
 ### DevTools is a built-in browser feature
 
-DevTools is a feature that's built-in to web browsers. This feature is hidden by default and normal users don't see it. For example, you typically don't see DevTools when you're accessing your emails, or doing online shopping. DevTools is usually only useful when you're learning web development and developing your own website. DevTools is a key part of any web development workflow and can help you find and fix bugs on your website.
+DevTools is a feature that's built-in to web browsers. This feature is hidden by default and normal users don't see it. For example, you typically don't see DevTools when you're accessing your emails, or doing online shopping. DevTools is usually only useful when you're doing web development, for example when working on your own website. DevTools is a key part of any web development workflow and can help you find and fix bugs on your website.
 
 Because DevTools is built-in to your browser, you don't need to install it as a separate application. When you install Chrome, or Firefox, or any other browser, DevTools is installed at the same time. This also means that when your browser gets updated (which, for many browsers, happens once a month), DevTools gets updated too. You may therefore see differences the next time you open DevTools. Finally, this means that you can't un-install DevTools.
 
@@ -103,13 +105,15 @@ Because DevTools debugs the runtime version of your webpage, instead of the orig
 
    Reloading the page in the browser after having made changes to it by using DevTools will result in losing the changes. Again, the changes are only made to the runtime version of the page. When you reload the page, the browser goes to the server again, gets the source code for the page, and displays it, clearing anything that was displayed in the same tab before.
 
+Note: there are specific features of DevTools (e.g. **Workspaces** and **Local overrides**) that allow you to persist changes to your source code. These features are more advanced and not covered in this guide.
+
 ## The UI of DevTools
 
 DevTools is not standard, and it therefore looks and behaves differently depending on the browser you choose to use for your web development activity. However, there are high-level similarities between the DevTools of different browsers. In this section, we'll look at the main UI elements of DevTools and how they are organized. The goal of this section isn't to understand every tiny details of the UI, but rather to get a high-level understanding of the main pieces that compose the DevTools UI.
 
 ### Terminology
 
-DevTools has a complex user interface, because it has a lot of different features. Because of this, there are many different terms that are used to describe its UI, like panel, section, drawer, tool, tab, and more. In this guide, we use the following terms consitently:
+DevTools has a complex user interface, because it has a lot of different features. Because of this, there are many different terms that are used to describe its UI, like panel, section, drawer, tool, tab, and more. In this guide, we use the following terms consistently:
 
 * Toolbar: the horizontal (sometimes vertical) bar at the top of DevTools that contains tabs.
 * Tab: a single tab within the toolbar, which allows to switch between different tools.
@@ -144,7 +148,7 @@ Now let's put it all back together in one screenshot, so you can see how everyth
 
 ![The browser with DevTools](./devtools-all-in-one.png)
 
-This might look like a lot of UI elements, and hard to understand at first. But, hopefully, with the way we've broken it down step by step, it helps making sense of the UI and forming a mental model of how it's organized.
+This might look like a lot of UI elements, and hard to understand at first. But, hopefully, the way we've broken it down step by step helps make sense of the UI and help form a mental model of how it's organized.
 
 ### Differences between browsers
 
@@ -154,12 +158,13 @@ It's a good idea to test your website across different browsers, to find bugs th
 
 ## The tools
 
-One of the aspects of DevTools that makes it complex is that it contains many different tools. The web development field is vast and there are many different tasks involved with it such as designing the look of a website, writing the code that makes it interactive, optimizing its performance, making sure it's accessible to everyone. DevTools contains tools that help with all of these tasks, and more. On top of this, DevTools accomodates for different types of users as well.
+One of the aspects of DevTools that makes it complex is that it contains many different tools. The web development field is vast and there are many different tasks involved with it such as designing the look of a website, writing the code that makes it interactive, optimizing its performance, or making sure it's accessible to everyone. DevTools contains tools that help with all of these tasks, and more. On top of this, DevTools accommodates for different types of users as well.
 
-This complexity leads to a high number of tools and features, which translates into a complex UI. But there are two things to keep in mind:
+This complexity leads to a high number of tools and features, which can translate into a complex UI. But it's worth keeping a few things in mind:
 
-* You don't need to use all the tools all of the time. You can focus on just a few tools that are relevant to the task you're working on.
+* You don't need to use all the tools all the time. You can focus on just a few tools that are relevant to the task you're working on.
 * You shouldn't be afraid to explore the tools that you don't know yet. You might find that they become useful to you at certain times.
+* DevTools doesn't mess up with your source code. All the changes you make in DevTools are temporary and don't affect your source code. You can't break anything by using DevTools. Just refresh the page and start over.
 
 ### The main tools
 
@@ -171,9 +176,9 @@ The tools below tend to be the most used ones. Each tool is listed with a short 
 | **Console** | JavaScript environment to print messages and evaluate code. | Log messages and debug JavaScript issues. | |
 | **Network** | HTTP network traffic logger. | Improve load performance, debug broken requests, export requests, replay requests. | |
 | **Sources** | JavaScript debugger. | Set breakpoints, step through code, inspect variables. | This tool is called **Debugger** in Firefox. |
-| **Performance** | Performance profiler. | Improve load and runtime performance, find slow JavaScript functions or rendering issues. | |
+| **Performance** | Performance profiler. | Improve load and runtime performance, find slow JavaScript functions or rendering issues. | This tool is called **Timeline** in Safari. |
 | **Memory** | Memory profiler. | Find memory leaks and high memory consumption issues. | |
-| **Application** | Displays local storage, service workers, web app manifests, and other resources. | Debug storage, web applications, and PWA issues. | In Firefox, the **Application** tool only focuses on service workers and web app manifest. Use the **Storage** tool to inspect and edit storage. |
+| **Application** | Displays local storage, service workers, web app manifests, and other resources. | Debug storage, web applications, and PWA issues. | In Firefox, the **Application** tool only focuses on service workers and web app manifest. Use the **Storage** tool to inspect and edit storage. Safari also has a **Storage** tool to inspect and edit storage. |
 
 ### More tools
 
@@ -183,7 +188,7 @@ Don't be afraid to look around for more tools to use. The list below contains mo
 
 | Tool | Description | Use cases | Specific browser note |
 | ---- | ----------- | -------- | --------------------- |
-| **Accessibility** | Displays accissibility metadata about the page. | Make sure your website is accessible to everyone by viewing the page the way assistive technology sees it. | This tool is a separate tab in the main toolbar only in Firefox. In Chrome and Edge, it's a sidebar tab inside the **Elements** tool. |
+| **Accessibility** | Displays accessibility metadata about the page. | Make sure your website is accessible to everyone by viewing the page the way assistive technology sees it. | This tool is a separate tab in the main toolbar only in Firefox. In Chrome and Edge, it's a sidebar tab inside the **Elements** tool. |
 | **Animations** | Web/CSS animations recorder/replayer. | Debug web animations, CSS animations, and CSS transitions issues, such as timing, delay, or iteration. | In Firefox, this tool is a sidebar tab in the **Inspector** tool. The tool doesn't exist in Safari. |
 | **Issues** | Browser-reported issues. | Find and fix performance, security, accessibility, and other browser-reporter issues. | This tool only exists in Edge and Chrome, and these two browsers don't log the same issues in it. Firefox displays issues in the **Console** tool. |
 | **Changes** | Collects CSS changes made in DevTools | Bring back CSS modifications made within the **Elements** or **Inspector** tool to the page. | This tool is a separate tab in Chrome and Edge, and a sidebar tab in the **Inspector** tool in Firefox. |
@@ -202,23 +207,31 @@ Take time to explore the tools that you don't know yet. And refer to the documen
 
 In Firefox, most tools are displayed as tabs in the main toolbar, at the top of DevTools. Depending on the size of the DevTools window, not all tabs may be visible. Click the **>>** button at the right of the toolbar to see the hidden tabs.
 
+![Firefox, with DevTools opened. The main toolbar with the tools is highlighted, and so is the >> icon to open more tools](./firefox-toolbar.png)
+
 Some tools may also be disabled from the DevTools settings. To view the entire list of tools and toggle them, press <kbd>F1</kbd> to open the **Settings** panel, and then choose the tools you want to see from the **Default Developer Tools** list.
 
 #### Chrome
 
-In Chrome, most tools are also displayed as tabs in the main toolbar, at the top of DevTools. Depending on the size of the DevTools window, not all tabs may be visible. Click the **>>** button at the right of the toolbar to see the hidden tabs.
+In Chrome, most tools are also displayed as tabs in the main toolbar, at the top of DevTools. Depending on the size of the DevTools window, not all tabs may be visible. Click the **More tabs** (**>>**) button at the right of the toolbar to see the hidden tabs.
 
 To see even more tools, in the main toolbar click **Customize and control DevTools** (`⁝`) > **More tools**.
+
+![Chrome, with DevTools opened. The main toolbar, the >> icon, and the ⁝ icon, are highlighted](./chrome-toolbar.png)
 
 Some tools are also displayed by default in the drawer, at the bottom of DevTools. The drawer also **More tools** (`⁝`) button to open more tools in the drawer toolbar.
 
 #### Edge
 
-See the Chrome section above. DevTools in Edge is very similar to DevTools in Chrome.
+DevTools in Edge is very similar to DevTools in Chrome. The main difference is there is no **More tabs** button. Instead, the main toolbar has a **More tools** (**+**) button that gives access to all of the tools, not just the ones that didn't have enough space to be visible in the main toolbar.
+
+![Edge, with DevTools opened. The main toolbar and the More tools icon are highlighted](./edge-toolbar.png)
 
 #### Safari
 
 In Safari, the tools are displayed in the main toolbar, at the top of DevTools.
+
+**TODO: fill in this section and add a screenshot.**
 
 ## The workflow
 
