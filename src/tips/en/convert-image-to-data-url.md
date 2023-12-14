@@ -5,7 +5,7 @@ title: Convert images to data-urls
 tags: ["tip", "productivity", "browser:edge", "browser:chrome", "browser:firefox"]
 see-also: ["download-all-images.md", "find-all-images-without-alt-text.md"]
 ---
-A data URL is a URL that starts with the prefix `data:` instead of `http:` or `https`. This data prefix (or scheme) allows you to embed the actual content of the resource in the URL itself, rather than linking to it. For example `data:text/html,<h1>Hello world</h1>` is a data URL that contains HTML content directly. Try it out in a browser tab!
+A data URL is a URL that starts with the prefix `data:` instead of `http:` or `https:`. This data prefix (or scheme) allows you to embed the actual content of the resource in the URL itself, rather than linking to it. For example `data:text/html,<h1>Hello world</h1>` is a data URL that contains HTML content directly. Try it out in a browser tab!
 
 Images can also be encoded as data URLs. Here is a 2x2 pixel solid red PNG image as a data URL: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEklEQVQIW2P8z8AARAwMjDAGACwBA/+8RVWvAAAAAElFTkSuQmCC`.
 
@@ -17,7 +17,7 @@ To convert any image to a data URL:
 
     1. Open the image you want to convert in a new tab. Or open the webpage that contains the image you want to convert in a tab.
     1. Open DevTools.
-    1. Open the **Elements** tool.
+    1. Open the **Inspector** tool.
     1. Find the image you want to convert in the DOM tree and right-click it.
     1. Select **Copy** > **Image Data-URL**.
 
