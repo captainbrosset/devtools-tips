@@ -168,7 +168,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <link href="https://devtoolstips.org/tips/en/convert-image-to-data-url/"/>
     <updated>2023-10-02T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/convert-image-to-data-url/</id>
-    <content type="html">&lt;p&gt;A data URL is a URL that starts with the prefix &lt;code&gt;data:&lt;/code&gt; instead of &lt;code&gt;http:&lt;/code&gt; or &lt;code&gt;https&lt;/code&gt;. This data prefix (or scheme) allows you to embed the actual content of the resource in the URL itself, rather than linking to it. For example &lt;code&gt;data:text/html,&amp;lt;h1&amp;gt;Hello world&amp;lt;/h1&amp;gt;&lt;/code&gt; is a data URL that contains HTML content directly. Try it out in a browser tab!&lt;/p&gt;
+    <content type="html">&lt;p&gt;A data URL is a URL that starts with the prefix &lt;code&gt;data:&lt;/code&gt; instead of &lt;code&gt;http:&lt;/code&gt; or &lt;code&gt;https:&lt;/code&gt;. This data prefix (or scheme) allows you to embed the actual content of the resource in the URL itself, rather than linking to it. For example &lt;code&gt;data:text/html,&amp;lt;h1&amp;gt;Hello world&amp;lt;/h1&amp;gt;&lt;/code&gt; is a data URL that contains HTML content directly. Try it out in a browser tab!&lt;/p&gt;
 &lt;p&gt;Images can also be encoded as data URLs. Here is a 2x2 pixel solid red PNG image as a data URL: &lt;code&gt;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEklEQVQIW2P8z8AARAwMjDAGACwBA/+8RVWvAAAAAElFTkSuQmCC&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;It can sometimes be useful to convert images to their data URLs, for example when you want to embed the images in a standalone HTML document that doesn&#39;t make any server requests.&lt;/p&gt;
 &lt;p&gt;To convert any image to a data URL:&lt;/p&gt;
@@ -178,7 +178,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open the image you want to convert in a new tab. Or open the webpage that contains the image you want to convert in a tab.&lt;/li&gt;
 &lt;li&gt;Open DevTools.&lt;/li&gt;
-&lt;li&gt;Open the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Inspector&lt;/strong&gt; tool.&lt;/li&gt;
 &lt;li&gt;Find the image you want to convert in the DOM tree and right-click it.&lt;/li&gt;
 &lt;li&gt;Select &lt;strong&gt;Copy&lt;/strong&gt; &amp;gt; &lt;strong&gt;Image Data-URL&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ol&gt;
