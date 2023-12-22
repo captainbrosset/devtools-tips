@@ -69,6 +69,40 @@
       "link": "/tips/en/use-designmode-to-spell-check"
     }
   ],
+  "block-devtools.md": [
+    {
+      "title": "Use DevTools in another language",
+      "image": {
+        "alt": "The settings panel in Edge showing a checkbox to match DevTools with the browser language.",
+        "src": "../../assets/img/use-another-language.png"
+      },
+      "link": "/tips/en/use-another-language"
+    },
+    {
+      "title": "Use document.designMode to spell check your webpage",
+      "image": {
+        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
+        "src": "../../assets/img/use-designmode-to-spell-check.png"
+      },
+      "link": "/tips/en/use-designmode-to-spell-check"
+    },
+    {
+      "title": "Customize keyboard shortcuts",
+      "image": {
+        "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
+        "src": "../../assets/img/customize-keyboard-shortcuts.png"
+      },
+      "link": "/tips/en/customize-keyboard-shortcuts"
+    },
+    {
+      "title": "Empty the cache and hard refresh",
+      "image": {
+        "alt": "The Microsoft Edge browser toolbar, showing the contextual menu of the refresh button, with the empty cache and hard refresh menu item.",
+        "src": "../../assets/img/empty-cache-refresh.png"
+      },
+      "link": "/tips/en/empty-cache-refresh"
+    }
+  ],
   "block-resources.md": [
     {
       "title": "Find broken links",
@@ -151,6 +185,14 @@
   ],
   "change-video-playback-rate.md": [
     {
+      "title": "Get the recently selected DOM nodes in the console",
+      "image": {
+        "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
+        "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
+      },
+      "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
+    },
+    {
       "title": "Convert font property units",
       "image": {
         "alt": "The fonts panel in Firefox, showing the unit conversion drop-down.",
@@ -173,14 +215,6 @@
         "src": "../../assets/img/get-current-element-in-console.jpg"
       },
       "link": "/tips/en/get-current-element-in-console"
-    },
-    {
-      "title": "Get the recently selected DOM nodes in the console",
-      "image": {
-        "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
-        "src": "../../assets/img/get-recently-selected-dom-nodes-in-console.gif"
-      },
-      "link": "/tips/en/get-recently-selected-dom-nodes-in-console"
     }
   ],
   "check-bfcache-readiness.md": [
@@ -687,20 +721,20 @@
       "link": "/tips/en/zoom-devtools-content"
     },
     {
+      "title": "Block DevTools",
+      "image": {
+        "alt": "Disabling F12 in Firefox's about:config page",
+        "src": "../../assets/img/block-devtools.png"
+      },
+      "link": "/tips/en/block-devtools"
+    },
+    {
       "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
       "image": {
         "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
         "src": "../../assets/img/console-table-group-assert-1.jpg"
       },
       "link": "/tips/en/console-table-group-assert"
-    },
-    {
-      "title": "Copy an object from the console",
-      "image": {
-        "alt": "Chrome devtools' console with a line of code using the copy() function.",
-        "src": "../../assets/img/copy-from-console.png"
-      },
-      "link": "/tips/en/copy-from-console"
     }
   ],
   "debug-css-cascade-layers.md": [
@@ -902,6 +936,14 @@
     }
   ],
   "debug-safari-mac-webapps.md": [
+    {
+      "title": "Enable DevTools in Safari",
+      "image": {
+        "alt": "Safari's Preferences, the Advanced tab shows the Show Developer menu in menu bar option",
+        "src": "../../assets/img/enable-safari-devtools.png"
+      },
+      "link": "/tips/en/enable-safari-devtools"
+    },
     {
       "title": "Install or create extensions to customize DevTools",
       "image": {
@@ -1448,6 +1490,14 @@
       "link": "/tips/en/get-website-issues"
     },
     {
+      "title": "Block DevTools",
+      "image": {
+        "alt": "Disabling F12 in Firefox's about:config page",
+        "src": "../../assets/img/block-devtools.png"
+      },
+      "link": "/tips/en/block-devtools"
+    },
+    {
       "title": "Force PWA periodic background syncs",
       "image": {
         "alt": "The Application panel in Edge showing the periodic sync input and buttons.",
@@ -1462,14 +1512,6 @@
         "src": "../../assets/img/form-testing.gif"
       },
       "link": "/tips/en/form-testing"
-    },
-    {
-      "title": "Get contextual DevTools help",
-      "image": {
-        "alt": "Animation of the DevTools tooltips in Edge.",
-        "src": "../../assets/img/get-contextual-help.gif"
-      },
-      "link": "/tips/en/get-contextual-help"
     }
   ],
   "emulate-color-schemes.md": [
@@ -1543,6 +1585,14 @@
   ],
   "emulate-user-gesture-in-console.md": [
     {
+      "title": "Speed up or slow down a video",
+      "image": {
+        "alt": "Screenshot of the Console tool showing the playbackRate property",
+        "src": "../../assets/img/change-video-playback-rate.png"
+      },
+      "link": "/tips/en/change-video-playback-rate"
+    },
+    {
       "title": "Get the recently selected DOM nodes in the console",
       "image": {
         "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
@@ -1565,14 +1615,40 @@
         "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
+    }
+  ],
+  "enable-safari-devtools.md": [
+    {
+      "title": "Debug your Safari Web Apps on macOS",
+      "image": {
+        "alt": "The Develop menu in the Safari menu bar, showing different devices and debugging targets",
+        "src": "../../assets/img/debug-safari-mac-webapps.png"
+      },
+      "link": "/tips/en/debug-safari-mac-webapps"
     },
     {
-      "title": "Query object instances and holders from the console",
+      "title": "Get contextual DevTools help",
       "image": {
-        "alt": "The console in Safari, showing the result of queryInstances(app.TodoItem).",
-        "src": "../../assets/img/query-instances-holders-1.png"
+        "alt": "Animation of the DevTools tooltips in Edge.",
+        "src": "../../assets/img/get-contextual-help.gif"
       },
-      "link": "/tips/en/query-instances-holders"
+      "link": "/tips/en/get-contextual-help"
+    },
+    {
+      "title": "Take a screenshot of part of a webpage from the Command Menu",
+      "image": {
+        "alt": "Edge, with DevTools opened, and the Command menu showing the list of screenshot commands",
+        "src": "../../assets/img/screenshot-part-of-page-command-menu.png"
+      },
+      "link": "/tips/en/screenshot-part-of-page-command-menu"
+    },
+    {
+      "title": "Block DevTools",
+      "image": {
+        "alt": "Disabling F12 in Firefox's about:config page",
+        "src": "../../assets/img/block-devtools.png"
+      },
+      "link": "/tips/en/block-devtools"
     }
   ],
   "evaluate-xpath.md": [
@@ -2152,6 +2228,14 @@
       "link": "/tips/en/use-designmode-to-spell-check"
     },
     {
+      "title": "Block DevTools",
+      "image": {
+        "alt": "Disabling F12 in Firefox's about:config page",
+        "src": "../../assets/img/block-devtools.png"
+      },
+      "link": "/tips/en/block-devtools"
+    },
+    {
       "title": "Empty the cache and hard refresh",
       "image": {
         "alt": "The Microsoft Edge browser toolbar, showing the contextual menu of the refresh button, with the empty cache and hard refresh menu item.",
@@ -2166,14 +2250,6 @@
         "src": "../../assets/img/get-website-issues.png"
       },
       "link": "/tips/en/get-website-issues"
-    },
-    {
-      "title": "Use DevTools in another language",
-      "image": {
-        "alt": "The settings panel in Edge showing a checkbox to match DevTools with the browser language.",
-        "src": "../../assets/img/use-another-language.png"
-      },
-      "link": "/tips/en/use-another-language"
     }
   ],
   "form-testing.md": [],
@@ -2331,20 +2407,20 @@
       "link": "/tips/en/get-current-element-in-console"
     },
     {
+      "title": "Speed up or slow down a video",
+      "image": {
+        "alt": "Screenshot of the Console tool showing the playbackRate property",
+        "src": "../../assets/img/change-video-playback-rate.png"
+      },
+      "link": "/tips/en/change-video-playback-rate"
+    },
+    {
       "title": "Expand DOM nodes recursively",
       "image": {
         "alt": "Animation showing right-clicking on a node in Chrome's Elements panel and choosing \"expand recursively\".",
         "src": "../../assets/img/expand-nodes-recursively.gif"
       },
       "link": "/tips/en/expand-nodes-recursively"
-    },
-    {
-      "title": "List all supported console functions",
-      "image": {
-        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "../../assets/img/list-console-functions.png"
-      },
-      "link": "/tips/en/list-console-functions"
     }
   ],
   "get-size-of-resource-types.md": [
@@ -2399,20 +2475,20 @@
       "link": "/tips/en/reload-page-after-change"
     },
     {
+      "title": "Block DevTools",
+      "image": {
+        "alt": "Disabling F12 in Firefox's about:config page",
+        "src": "../../assets/img/block-devtools.png"
+      },
+      "link": "/tips/en/block-devtools"
+    },
+    {
       "title": "Detect low color contrast issues",
       "image": {
         "alt": "The CSS Overview panel in Chrome, showing the color contrast issues section.",
         "src": "../../assets/img/detect-low-color-contrast-css-overview.png"
       },
       "link": "/tips/en/detect-low-color-contrast"
-    },
-    {
-      "title": "Edit CSS absolute and relative positions by dragging points in the page",
-      "image": {
-        "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "../../assets/img/edit-position.gif"
-      },
-      "link": "/tips/en/edit-position"
     }
   ],
   "hide-extension-resources.md": [
@@ -2910,6 +2986,14 @@
   ],
   "move-panels.md": [
     {
+      "title": "Block DevTools",
+      "image": {
+        "alt": "Disabling F12 in Firefox's about:config page",
+        "src": "../../assets/img/block-devtools.png"
+      },
+      "link": "/tips/en/block-devtools"
+    },
+    {
       "title": "Customize keyboard shortcuts",
       "image": {
         "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
@@ -2932,14 +3016,6 @@
         "src": "../../assets/img/extend-devtools.png"
       },
       "link": "/tips/en/extend-devtools"
-    },
-    {
-      "title": "Get contextual DevTools help",
-      "image": {
-        "alt": "Animation of the DevTools tooltips in Edge.",
-        "src": "../../assets/img/get-contextual-help.gif"
-      },
-      "link": "/tips/en/get-contextual-help"
     }
   ],
   "multi-line-console.md": [
@@ -3198,20 +3274,20 @@
       "link": "/tips/en/zoom-devtools-content"
     },
     {
+      "title": "Block DevTools",
+      "image": {
+        "alt": "Disabling F12 in Firefox's about:config page",
+        "src": "../../assets/img/block-devtools.png"
+      },
+      "link": "/tips/en/block-devtools"
+    },
+    {
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
         "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
-    },
-    {
-      "title": "Copy an element's XPath expression",
-      "image": {
-        "alt": "The Elements panel in Edge showing the copy xpath option in the contextual menu.",
-        "src": "../../assets/img/copy-element-xpath.png"
-      },
-      "link": "/tips/en/copy-element-xpath"
     }
   ],
   "query-dom-from-console.md": [
@@ -4307,20 +4383,20 @@
       "link": "/tips/en/zoom-devtools-content"
     },
     {
+      "title": "Block DevTools",
+      "image": {
+        "alt": "Disabling F12 in Firefox's about:config page",
+        "src": "../../assets/img/block-devtools.png"
+      },
+      "link": "/tips/en/block-devtools"
+    },
+    {
       "title": "List the fonts used on a page, or an element",
       "image": {
         "alt": "Firefox, with DevTools on the side, showing the Fonts panel that contains the list of fonts. One of the fonts is hovered",
         "src": "../../assets/img/list-used-fonts-firefox.png"
       },
       "link": "/tips/en/list-used-fonts"
-    },
-    {
-      "title": "Start your HTML and CSS prototypes in the browser directly",
-      "image": {
-        "alt": "Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.",
-        "src": "../../assets/img/prototype-in-the-browser.png"
-      },
-      "link": "/tips/en/prototype-in-the-browser"
     }
   ],
   "use-designmode-to-spell-check.md": [
@@ -4420,6 +4496,14 @@
     }
   ],
   "view-logs-for-other-browsers-on-ios.md": [
+    {
+      "title": "Block DevTools",
+      "image": {
+        "alt": "Disabling F12 in Firefox's about:config page",
+        "src": "../../assets/img/block-devtools.png"
+      },
+      "link": "/tips/en/block-devtools"
+    },
     {
       "title": "Customize keyboard shortcuts",
       "image": {
