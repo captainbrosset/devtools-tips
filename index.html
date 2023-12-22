@@ -33,9 +33,12 @@
       </a>
       <nav>
         <ul class="header-menu">
+          <!-- <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understand DevTools</a></li></ul>
+          </li> -->
           <li><a href="/all/">All tips</a></li>
           <li>Tips by category
-            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/guide/">guide</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
             <ul class="submenu"><li>
@@ -107,7 +110,7 @@
     <br>Get tips delivered to your favorite news reader by using our <a href="/feed.xml">RSS feed</a>.
   </p>
   <p class="callout">
-    There are currently <strong>162</strong> tips (and we're adding more all the time) available thanks to all of our wonderful
+    There are currently <strong>164</strong> tips (and we're adding more all the time) available thanks to all of our wonderful
     <a href="https://github.com/captainbrosset/devtools-tips/graphs/contributors">open-source contributors</a>.
     <br>If you know other debugging techniques and tips not documented here, submit a new tip on our
     <a href="https://github.com/captainbrosset/devtools-tips">GitHub repository</a>!
@@ -118,6 +121,62 @@
     <h2>Latest tips</h2>
     <ul class="tips">
     
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-enable-safari-devtools;">
+  <a href="/tips/en/enable-safari-devtools/" class="tip-title">Enable DevTools in Safari</a>
+  <a href="/tips/en/enable-safari-devtools/" class="tip-image"><img src="../../assets/img/enable-safari-devtools.png" alt="Safari's Preferences, the Advanced tab shows the Show Developer menu in menu bar option" loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Unlike other browsers, Safari hides its DevTools (and other developer-related features) by default. That's actually good because 99% of the people using the browser are probably not web developers.
+If...
+    <a href="/tips/en/enable-safari-devtools/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/help/" title="List all help tips">help</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip " style="view-transition-name:post-block-devtools;">
+  <a href="/tips/en/block-devtools/" class="tip-title">Block DevTools</a>
+  <a href="/tips/en/block-devtools/" class="tip-image"><img src="../../assets/img/block-devtools.png" alt="Disabling F12 in Firefox's about:config page" loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    There are two levels to consider when talking about blocking (or disabling) DevTools in a browser:
+Disabling DevTools at the browser level. For example, if you have a browser for web development, and...
+    <a href="/tips/en/block-devtools/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/help/" title="List all help tips">help</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li></ul>
+  </div>
+</li>
+
 <li class="hover-box tip " style="view-transition-name:post-list-all-event-listeners;">
   <a href="/tips/en/list-all-event-listeners/" class="tip-title">List all event listeners on the entire page</a>
   <a href="/tips/en/list-all-event-listeners/" class="tip-image"><img src="../../assets/img/list-all-event-listeners.png" alt="Chrome, with the devtoolstips.org website loaded, and the DevTools Console on the side, showing the result of the above script" loading="lazy"></img></a>
@@ -206,79 +265,26 @@ There...
       </li></ul>
   </div>
 </li>
-
-<li class="hover-box tip " style="view-transition-name:post-see-viewport-size;">
-  <a href="/tips/en/see-viewport-size/" class="tip-title">See the viewport size</a>
-  <a href="/tips/en/see-viewport-size/" class="tip-image"><img src="../../assets/img/see-viewport-size-chrome.png" alt="Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    The size of the viewport that's used to render a webpage in a browser can be very important at times, such as when creating or debugging media queries.
-You can easily know what the current size of the...
-    <a href="/tips/en/see-viewport-size/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/debug/" title="List all debug tips">debug</a>
-      </li><li class="tag">
-        <a href="/tag/testing/" title="List all testing tips">testing</a>
-      </li><li class="tag">
-        <a href="/tag/css/" title="List all css tips">css</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li><li class="browser">
-        <a href="/browser/safari/" title="List all tips supported by safari">
-          <img src="/assets/browsers/safari.svg" alt=""> safari
-        </a>
-      </li><li class="browser">
-        <a href="/browser/polypane/" title="List all tips supported by polypane">
-          <img src="/assets/browsers/polypane.svg" alt=""> polypane
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-convert-image-to-data-url;">
-  <a href="/tips/en/convert-image-to-data-url/" class="tip-title">Convert images to data-urls</a>
-  <a href="/tips/en/convert-image-to-data-url/" class="tip-image"><img src="../../assets/img/convert-image-to-data-url.png" alt="The Network tool in Edge, an image is selected, the Preview tab is open, and the right-click menu shows the copy image as data URI item" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    A data URL is a URL that starts with the prefix data: instead of http: or https:. This data prefix (or scheme) allows you to embed the actual content of the resource in the URL itself, rather than lin...
-    <a href="/tips/en/convert-image-to-data-url/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li></ul>
-  </div>
-</li>
 </ul>
   </div>
+  <!-- <div class="card">
+    <h2>Learning guides</h2>
+    <p>The following are longer guides that help learn about and understand broader aspects of DevTools.</p>
+    <ul class="tips">
+      
+        <li class="tip">
+          <a href="/guides/en/understand-devtools/" class="tip-title">Understand DevTools</a>
+          <a href="/guides/en/understand-devtools/" class="tip-image">
+            <img src="/guides/en/understand-devtools/devtools-all-in-one.png" alt="Illustration of a browser window with DevTools open next to it.">
+          </a>
+          <div class="tip-excerpt">
+            This guide is an introduction to DevTools, suited for people who are starting web development and haven&#39;t yet used the built-in browser tools. You will learn what DevTools is, who it&#39;s for, how to open it, how its UI is organized, what tools exist, and what the main user workflows are.
+            <a href="/guides/en/understand-devtools/">Read more</a>
+          </div>
+        </li>
+      
+    </ul>
+  </div> -->
 </div>
 
       </div>

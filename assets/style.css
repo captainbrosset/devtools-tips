@@ -429,7 +429,11 @@ main h1 {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.card {
+  flex: 1 1 20rem;
 }
 
 /* List of tips */
@@ -438,6 +442,7 @@ main h1 {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  container-type: inline-size;
 }
 
 .tip {
@@ -449,7 +454,13 @@ main h1 {
   grid-template-rows: min-content min-content 1fr;
 }
 
-.tip:not(:last-child) {
+.tip.tip-in-guide {
+	padding: 1rem;
+	background: var(--alternate-background-color);
+  border-radius: .5rem;
+}
+
+.tip:not(:last-child):not(.tip-in-guide) {
   border-block-end: 2px solid var(--separator-color);
 }
 
@@ -496,7 +507,7 @@ main h1 {
   text-overflow: ellipsis;
 }
 
-@media only screen and (max-width: 600px) {
+@container (max-width: 450px) {
   .tip {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
@@ -545,10 +556,14 @@ main h1 {
   display: none;
 }
 
-/* Tip page */
+/* Docs page */
 
-.tip-content img {
-  max-width: min(80%, 800px);
+.page-content {
+  container-type: inline-size;
+}
+
+.page-content img {
+  max-width: min(100%, 800px);
   width: auto;
   display: block;
   padding: 1rem;
@@ -556,14 +571,14 @@ main h1 {
   border-radius: 0.5rem;
 }
 
-.tip-content ul,
-.tip-content ul li {
+.page-content ul,
+.page-content ul li {
   list-style: square;
   margin-left: 1rem;
 }
 
-.tip-content ol,
-.tip-content ol li {
+.page-content ol,
+.page-content ol li {
   list-style: decimal;
   margin-left: 1rem;
 }
@@ -671,6 +686,21 @@ pre {
 
 .tip-footer .last-edit::before {
   content: " - ";
+}
+
+/* Table */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px solid var(--separator-color);
+}
+
+table th, table td {
+  padding: .5rem;
+  text-align: start;
+  border: 1px solid var(--separator-color);
 }
 
 /* List of tags and browsers */

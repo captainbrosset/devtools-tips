@@ -5,11 +5,82 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-11-21T00:00:00.000Z</updated>
+  <updated>2023-12-22T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Enable DevTools in Safari</title>
+    <link href="https://devtoolstips.org/tips/en/enable-safari-devtools/"/>
+    <updated>2023-12-22T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/enable-safari-devtools/</id>
+    <content type="html">&lt;p&gt;Unlike other browsers, Safari hides its DevTools (and other developer-related features) by default. That&#39;s actually good because 99% of the people using the browser are probably not web developers.&lt;/p&gt;
+&lt;p&gt;If you are a web developer, though, and you want to use the DevTools in Safari, here&#39;s how to enable the option:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Go to Safari&#39;s Preferences.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the Advanced tab.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check the &lt;strong&gt;Show Develop menu in menu bar&lt;/strong&gt; option.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Develop&lt;/strong&gt; menu will now be available in the menu bar. Use this menu to open DevTools and access other developer-related features.&lt;/p&gt;
+&lt;p&gt;The right-click &amp;gt; &lt;strong&gt;Inspect&lt;/strong&gt; option will also now be available.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/enable-safari-devtools.png&quot; alt=&quot;Safari&#39;s Preferences, the Advanced tab shows the Show Developer menu in menu bar option&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Block DevTools</title>
+    <link href="https://devtoolstips.org/tips/en/block-devtools/"/>
+    <updated>2023-12-22T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/block-devtools/</id>
+    <content type="html">&lt;p&gt;There are two levels to consider when talking about blocking (or disabling) DevTools in a browser:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Disabling DevTools at the browser level. For example, if you have a browser for web development, and another one for personal browsing, you may want to disable DevTools in the latter. Maybe because you don&#39;t want &lt;kbd&gt;F12&lt;/kbd&gt; to open DevTools. Or maybe it&#39;s your mum&#39;s browser and she always gets confused when she accidentally opens DevTools.&lt;/li&gt;
+&lt;li&gt;Disabling DevTools for an entire organization. For example, you&#39;re a teacher and you don&#39;t want your students to be able to use DevTools. Or your an IT admin and you want to disable DevTools for all the computers in your company.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All browsers have different ways to disable DevTools. Here are the ones we currently know about. If you know of others, please &lt;a href=&quot;https://github.com/captainbrosset/devtools-tips&quot;&gt;let us know on the DevTools Tips GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Firefox&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can disable the &lt;kbd&gt;F12&lt;/kbd&gt; keyboard shortcut by going to &lt;code&gt;about:config&lt;/code&gt;, searching for the &lt;code&gt;devtools.f12_enabled&lt;/code&gt; setting, and setting it to &lt;code&gt;false&lt;/code&gt;. Other DevTools shortcuts are still enabled by default though.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/block-devtools.png&quot; alt=&quot;Disabling F12 in Firefox&#39;s about:config page&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can disable DevTools for your organization by using the &lt;a href=&quot;https://mozilla.github.io/policy-templates/#disabledevelopertools&quot;&gt;&lt;code&gt;DisableDeveloperTools&lt;/code&gt; policy&lt;/a&gt;. Learn more about &lt;a href=&quot;https://support.mozilla.org/products/firefox-enterprise/policies-customization-enterprise/policies-overview-enterprise&quot;&gt;policies in Firefox&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Edge&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Edge, the &lt;kbd&gt;F12&lt;/kbd&gt; keyboard is already disabled by default. The first time you press it, a confirmation dialog appears, and you can choose to either open DevTools, or continue blocking the shortcut. You can also ask Edge to remember your decision so you never have to see the dialog again. Other DevTools shortcuts are still enabled by default though.&lt;/li&gt;
+&lt;li&gt;You can disable DevTools for your organization by using the &lt;a href=&quot;https://learn.microsoft.com/deployedge/microsoft-edge-policies#developertoolsavailability&quot;&gt;&lt;code&gt;DeveloperToolsAvailability&lt;/code&gt; policy&lt;/a&gt;. Learn more about &lt;a href=&quot;https://learn.microsoft.com/deployedge/microsoft-edge-policies&quot;&gt;policies in Edge&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Chrome&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can disable DevTools for your organization by using the &lt;a href=&quot;https://chromeenterprise.google/policies/#DeveloperToolsAvailability&quot;&gt;&lt;code&gt;DeveloperToolsAvailability&lt;/code&gt; policy&lt;/a&gt;. Learn more about &lt;a href=&quot;https://chromeenterprise.google/policies/&quot;&gt;policies in Chrome&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Safari&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Safari, DevTools (or &lt;em&gt;Web Inspector&lt;/em&gt; as it&#39;s called there) is disabled by default. You can enable it in the Advanced tab of the Preferences. See &lt;a href=&quot;https://devtoolstips.org/tips/en/block-devtools/enable-safari-devtools.md&quot;&gt;Enable DevTools in Safari&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   
   <entry>
     <title>List all event listeners on the entire page</title>

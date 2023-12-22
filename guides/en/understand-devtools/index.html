@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understand DevTools</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
+    <meta property="og:title" content="DevTools Tips">
+    <meta property="og:url" content="https://devtoolstips.org/guides/en/understand-devtools/">
+    
+    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
+    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    
+    <meta name="twitter:site" content="@_devtoolstips">
+    <meta property="og:site_name" content="DevTools Tips">
+    <meta name="twitter:card" content="summary">
+    <meta name="view-transition" content="same-origin" />
+  </head>
+  <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+      <label for="show-menu">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" x="0px" y="0px">
+          <path d="m9.706 8l5.941-5.941c.471-.471.471-1.235 0-1.706-.471-.471-1.235-.471-1.706 0l-5.941 5.941-5.941-5.941c-.471-.471-1.235-.471-1.706 0-.471.471-.471 1.235 0 1.706l5.941 5.941-5.941 5.941c-.471.471-.471 1.235 0 1.706.235.236.544.353.853.353.309 0 .617-.118.853-.353l5.941-5.941 5.941 5.941c.236.236.544.353.853.353.309 0 .617-.118.853-.353.471-.471.471-1.235 0-1.706l-5.941-5.941"></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </label>
+      <a href="/" class="title">
+        <span class="sr-only">DevTools Tips</span>
+      </a>
+      <nav>
+        <ul class="header-menu">
+          <!-- <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understand DevTools</a></li></ul>
+          </li> -->
+          <li><a href="/all/">All tips</a></li>
+          <li>Tips by category
+            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/guide/">guide</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+          </li>
+          <li>Tips by browser
+            <ul class="submenu"><li>
+                <a href="/browser/chrome/">
+                  <img src="/assets/browsers/chrome.svg" alt="">
+                  <span>chrome</span>
+                </a>
+              </li><li>
+                <a href="/browser/edge/">
+                  <img src="/assets/browsers/edge.svg" alt="">
+                  <span>edge</span>
+                </a>
+              </li><li>
+                <a href="/browser/firefox/">
+                  <img src="/assets/browsers/firefox.svg" alt="">
+                  <span>firefox</span>
+                </a>
+              </li><li>
+                <a href="/browser/polypane/">
+                  <img src="/assets/browsers/polypane.svg" alt="">
+                  <span>polypane</span>
+                </a>
+              </li><li>
+                <a href="/browser/safari/">
+                  <img src="/assets/browsers/safari.svg" alt="">
+                  <span>safari</span>
+                </a>
+              </li></ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main >
+      <div class="page-toolbar">
+        <label class="menu-button" title="Menu">
+          <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
+            <g transform="translate(0,-952.36218)">
+              <path d="m 13,968.36217 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6 0,3.31359 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.68641 6,-6 0,-3.31381 -2.6863,-6 -6,-6 z m 0,28 c -3.3136998,0 -5.9999998,2.68619 -5.9999998,6.00003 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.31384 -2.6863,-6.00003 -6,-6.00003 z m 0,28.00003 c -3.3136998,0 -5.9999998,2.6862 -5.9999998,6 0,3.3136 2.6863,6 5.9999998,6 l 74,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.3138 -2.6863,-6 -6,-6 z"></path>
+            </g>
+          </svg>
+          <input type="checkbox" id="show-menu">
+          <span class="sr-only">Open menu</span>
+        </label>
+        <div id="search" class="search"></div>
+<script src="/pagefind/pagefind-ui.js" async onload="new PagefindUI({ element: '#search', showImages: false, translations: { placeholder: 'Search tips' } });"></script>
+
+        <div class="social" >
+          <a href="https://github.com/captainbrosset/devtools-tips" title="GitHub repository, to file issues and create new tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            </svg>
+            <span class="sr-only">GitHub repository</span>
+          </a>
+          <a href="https://front-end.social/@devtoolstips" title="Mastodon account, to stay updated with our latest tips">
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"></path>
+            </svg>
+            <span class="sr-only">Mastodon social account</span>
+          </a>
+        </div>
+      </div>
+      <div id="maincontent">
+        <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Understand DevTools</h1>
+<div class="page-content guide-content" data-pagefind-body>
+    <p>This guide is an introduction to DevTools, which is a suite of web development tools that are built-in to most web browsers. Read this guide if you are starting web development and haven't used the built-in browser tools yet. You will learn what DevTools is, who it's for, how to open it, how its UI is organized, what tools exist, and what the main user workflows are.</p>
+<h2>A word about security first</h2>
+<p>To some people, DevTools can look complex and sometimes scary. If you've opened DevTools by accident without knowing what it is or understanding web development, it may look like you've been hacked. <strong>Don't worry, this is not the case, DevTools isn't giving privileged access to the website you're viewing, or to your computer, to a bad actor</strong>. You can close the tab where DevTools appeared and continue browsing the web.</p>
+<p>Be careful, however, with websites that ask you to open DevTools and, within it, paste code that they provide you. This might be an attempt to steal sensitive information from you. <strong>Never paste code into DevTools unless you understand what the code does</strong>.</p>
+<h2>Terminology</h2>
+<p>DevTools is short for <em>Developer Tools</em>.</p>
+<h2>How to open DevTools</h2>
+<p>Before learning more about DevTools, let's open it so you can have it in front of you while reading this guide.</p>
+<p>Right-click anywhere on this page and then select <strong>Inspect</strong> (or <strong>Inspect element</strong>, depending on your browser). DevTools opens up in a new browser panel either to the right or at the bottom of the current browser window. You can resize the DevTools panel to be larger or smaller.</p>
+<p>If you're using Safari, the <strong>Inspect</strong> menu item isn't visible at first and you need to enabled it.</p>
+<div class="tip tip-in-guide"><span class="tip-title">Tip: <a href="/tips/en/enable-safari-devtools">Enable DevTools in Safari</a></span><a href="/tips/en/enable-safari-devtools" class="tip-image"><img src="../../../assets/img/enable-safari-devtools.png" alt="Safari's Preferences, the Advanced tab shows the Show Developer menu in menu bar option" loading="lazy"></img></a><div class="tip-excerpt">Unlike other browsers, Safari hides its DevTools (and other developer-related features) by default. That's actually good because 99% of the people using the browser are probably not web developers.
+If...<a href="/tips/en/enable-safari-devtools">Read more</a></div></div>
+<p>Keep reading to learn more about DevTools.</p>
+<h2>What is DevTools</h2>
+<p>In this guide, we focus on the following web browsers: Firefox, Chrome, Edge, and Safari. However, other browsers such as Opera, Arc, or Brave have similar DevTools. We also focus on the desktop versions of these browsers only. Mobile browsers usually don't have built-in DevTools.</p>
+<p>This guide also doesn't focus on specific developer-only browsers like Polypane. These browsers are very useful, but sufficiently different from common web browsers that they're not covered in this guide.</p>
+<h3>DevTools is a built-in browser feature</h3>
+<p>DevTools is a feature that's built-in to web browsers. This feature is hidden by default and normal users don't see it. For example, you typically don't see DevTools when you're accessing your emails, or doing online shopping. DevTools is usually only useful when you're doing web development, for example when working on your own website. DevTools is a key part of any web development workflow and can help you find and fix bugs on your website.</p>
+<p>Because DevTools is built-in to your browser, you don't need to install it as a separate application. When you install Chrome, or Firefox, or any other browser, DevTools is installed at the same time. This also means that when your browser gets updated (which, for many browsers, happens once a month), DevTools gets updated too. You may therefore see differences the next time you open DevTools. Finally, this means that you can't un-install DevTools.</p>
+<p>There are ways to disable DevTools.</p>
+<div class="tip tip-in-guide"><span class="tip-title">Tip: <a href="/tips/en/block-devtools">Block DevTools</a></span><a href="/tips/en/block-devtools" class="tip-image"><img src="../../../assets/img/block-devtools.png" alt="Disabling F12 in Firefox's about:config page" loading="lazy"></img></a><div class="tip-excerpt">There are two levels to consider when talking about blocking (or disabling) DevTools in a browser:
+Disabling DevTools at the browser level. For example, if you have a browser for web development, and...<a href="/tips/en/block-devtools">Read more</a></div></div>
+<h3>DevTools is always attached to a target</h3>
+<p>DevTools is always <em>attached</em> to a single target, which often is a browser tab.</p>
+<p>For example, if you open a new tab in your browser and open DevTools in that tab, then this instance of DevTools is <em>attached</em> to the tab. DevTools can be used to debug the websites that are displayed in that tab only. If you navigate to different websites within the same tab, then the particular instance of DevTools you opened in the tab is still attached to that tab. If you open another tab and open DevTools in the new tab, you now have two instances of DevTools: one for each tab.</p>
+<p>In this example, the target that DevTools debugs is a tab. DevTools is, however, capable of debugging other types of targets. For example, you can attach DevTools to a NodeJS process, or you can attach DevTools to a web view that's embedded in a native application. In this guide, we'll only focus on attaching to browser tab targets, but anything that uses a web engine to run can be debugged by DevTools.</p>
+<h3>DevTools is not standard</h3>
+<p>The web runs on standard technologies. HTML, CSS, JavaScript, and SVG for example, are specified once and implemented the same way in all browsers.</p>
+<p>This is not the case for DevTools. DevTools is not specified and looks and behaves differently in all browsers. For example, you'll see that the DevTools in Safari looks different and has different features than the DevTools in Edge. DevTools is a part of the browser UI. Just like different browsers have different tabs or address bars, they have different DevTools too.</p>
+<p>While this can make it harder to jump between different browser DevTools to test and debug your website across browsers, you'll learn in this guide that there are high-level similarities that ease the pain.</p>
+<h2>Who is DevTools for</h2>
+<p>The vast majority of the people who use DevTools are web developers, but others may find it useful too.</p>
+<p>When you're writing the code for a website, chances are that bugs will happen. You might make a mistake in the HTML content, or in the CSS style of the page, or in the JavaScript logic. DevTools can help you investigate and fix those bugs. With DevTools, you can inspect the code that the browser is running to display your page, find what the problem is, and then correct it in your source code.</p>
+<p>DevTools also allows you to make changes to the page that's being debugged. For example, if you made a CSS mistake in the color of an element, you can change the element's color to test a fix. Because of this ability to make changes to a page, DevTools might be appealing to non web developers too. For example, you could use DevTools to slightly tweak a web page and make it easier to read: you could remove various elements or change the text size and color.</p>
+<div class="tip tip-in-guide"><span class="tip-title">Tip: <a href="/tips/en/remove-annoying-overlays">Remove annoying page overlays and other elements</a></span><a href="/tips/en/remove-annoying-overlays" class="tip-image"><img src="../../../assets/img/remove-annoying-overlays.gif" alt="Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page." loading="lazy"></img></a><div class="tip-excerpt">A lot of websites these days get covered with overlays and crammed with lots of ads and other things that make it hard to just read the content of the page.
+To get rid of an annoying overlay, or any o...<a href="/tips/en/remove-annoying-overlays">Read more</a></div></div>
+<p>Continue reading to learn more about how these changes are made, and what they affect.</p>
+<h2>How DevTools works</h2>
+<h3>DevTools debugs the runtime version of your webpage</h3>
+<p>To understand how DevTools works, you first need to understand how browsers work a little bit. When you enter a URL to a webpage in your browser, the document that lives at that URL, and its dependencies, are fetched and parsed by the browser. The entire code that the webpage needs is run and the page is rendered into the browser tab.</p>
+<p>If you're the author of this webpage, the HTML, CSS, and perhaps JavaScript code that you wrote in your text editor is what led to the page being rendered in the browser. But the code was parsed, interpreted, and run by the browser, which resulted in the page being displayed.</p>
+<p>What runs in the browser for your page to show up is different than the code you wrote, it's an runtime version of it.</p>
+<p><strong>The runtime version of your webpage is what DevTools debugs. DevTools doesn't debug your original source code.</strong></p>
+<p>For example, when the browser fetches the HTML content of your web page, it parses it and generates a tree of <a href="https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction">DOM</a> nodes from it. The DOM tree is what is then used to render the page visually in the browser. DevTools let's you see and interact with the DOM tree, not with the original HTML source code.</p>
+<p><img src="./source-vs-runtime.png" alt="Diagram illustrating that your source code, and the runtime version of your code in the browser, are different, and that DevTools can only see the runtime"></p>
+<h3>DevTools can't change your source code</h3>
+<p>Because DevTools debugs the runtime version of your webpage, instead of the original source code, the changes you make in DevTools are not saved to your source code, and are not persisted when you reload the page.</p>
+<ol>
+<li>
+<p>DevTools can't change your source files in your text editor or on your web server.</p>
+<p>DevTools is only part of the web browser, and doesn't have access to the text editor that you used to write the code. It also doesn't have access to the web server that you're using to host your website. When you make a change with DevTools to some CSS color or margin, or to some text on the page, those changes are only made to the rendered web page that's running in the browser. The changes aren't made to your source code, nor to the files in your web server.</p>
+</li>
+<li>
+<p>Changes made in DevTools are not persisted.</p>
+<p>Reloading the page in the browser after having made changes to it by using DevTools will result in losing the changes. Again, the changes are only made to the runtime version of the page. When you reload the page, the browser goes to the server again, gets the source code for the page, and displays it, clearing anything that was displayed in the same tab before.</p>
+</li>
+</ol>
+<p>Note: there are specific features of DevTools (e.g. <strong>Workspaces</strong> and <strong>Local overrides</strong>) that allow you to persist changes to your source code. These features are more advanced and not covered in this guide.</p>
+<h2>The UI of DevTools</h2>
+<p>DevTools is not standard, and it therefore looks and behaves differently depending on the browser you choose to use for your web development activity. However, there are high-level similarities between the DevTools of different browsers. In this section, we'll look at the main UI elements of DevTools and how they are organized. The goal of this section isn't to understand every tiny details of the UI, but rather to get a high-level understanding of the main pieces that compose the DevTools UI.</p>
+<h3>Terminology</h3>
+<p>DevTools has a complex user interface, because it has a lot of different features. Because of this, there are many different terms that are used to describe its UI, like panel, section, drawer, tool, tab, and more. In this guide, we use the following terms consistently:</p>
+<ul>
+<li>Toolbar: the horizontal (sometimes vertical) bar at the top of DevTools that contains tabs.</li>
+<li>Tab: a single tab within the toolbar, which allows to switch between different tools.</li>
+<li>Panel: the main area that corresponds to a tab, where the content of a tool is displayed.</li>
+<li>Tool: a feature of DevTools, specialized in a particular web development task, which appears inside a panel.</li>
+<li>Sidebar: a vertical bar on the left or right side of a tool's content, within a panel.</li>
+<li>Drawer: a horizontal, toggleable, area, which appears at the bottom and optionally contains a second toolbar for accessing other tools.</li>
+</ul>
+<h3>High-level UI description</h3>
+<p>DevTools appears next to the rendered webpage, in a browser tab. It might appear to the right of the webpage:</p>
+<p><img src="./browser-devtools-right.png" alt="A browser window, with a rendered webpage on the left, and DevTools on the right"></p>
+<p>Or it might appear at the bottom of the webpage:</p>
+<p><img src="./browser-devtools-bottom.png" alt="A browser window, with a rendered webpage on the top, and DevTools at the bottom"></p>
+<p>Now let's focus on just DevTools. The following screenshot shows DevTools only, without the rendered webpage next to it or the browser UI around them. The screenshot shows the toolbar at the top of DevTools, with tabs, one tab per tool. The bottom part contains a panel that displays the content of the currently selected tool:</p>
+<p><img src="./devtools-tabs.png" alt="DevTools with the toolbar at the top, and a panel at the bottom"></p>
+<p>It's also possible for two tools to be visible at once, with one in the panel, and one in a toggleable drawer at the bottom. Often, the tool displayed in the drawer is the <strong>Console</strong> tool, which is used to log messages and run JavaScript code.</p>
+<p><img src="./devtools-drawer.png" alt="DevTools with the toolbar at the top, a panel in the middle, and a drawer at the bottom"></p>
+<p>Let's zoom in one more level and focus on the content of the tool that's displayed in the panel. The following screenshot ignores the toolbar and drawer, and only shows the content of the panel where a tool is displayed. Each tool is different, and they don't all look the same, but the following screenshot shows the main elements that are often present in a tool: a sidebar on the left, with tabs used to display different sections of the tool, and a main content area on the right, which displays the content of the currently selected section:</p>
+<p><img src="./devtools-tool-with-sidear.png" alt="A single DevTools tool, with a sidebar on the left, and a main content area on the right"></p>
+<p>Now let's put it all back together in one screenshot, so you can see how everything fits together. The screenshot shows the entire browser window, with a rendered webpage on the left, and DevTools on the right. DevTools has a toolbar, with tabs, a panel showing the selected tool, and a drawer area at the bottom. The panel shows a tool which contains a sidebar, and a main content area:</p>
+<p><img src="./devtools-all-in-one.png" alt="The browser with DevTools"></p>
+<p>This might look like a lot of UI elements, and hard to understand at first. But, hopefully, the way we've broken it down step by step helps make sense of the UI and help form a mental model of how it's organized.</p>
+<h3>Differences between browsers</h3>
+<p>The UI of DevTools is something that each browser implements a little bit differently. The high-level UI description above is a generalization of the UI of DevTools across browsers.</p>
+<p>It's a good idea to test your website across different browsers, to find bugs that may manifest on certain browsers only. When this happens, you'll need to use the DevTools of the browser where the bug happens. Therefore, even if this browser isn't the one you normally use, it's good to be familiar with its DevTools.</p>
+<h2>The tools</h2>
+<p>One of the aspects of DevTools that makes it complex is that it contains many different tools. The web development field is vast and there are many different tasks involved with it such as designing the look of a website, writing the code that makes it interactive, optimizing its performance, or making sure it's accessible to everyone. DevTools contains tools that help with all of these tasks, and more. On top of this, DevTools accommodates for different types of users as well.</p>
+<p>This complexity leads to a high number of tools and features, which can translate into a complex UI. But it's worth keeping a few things in mind:</p>
+<ul>
+<li>You don't need to use all the tools all the time. You can focus on just a few tools that are relevant to the task you're working on.</li>
+<li>You shouldn't be afraid to explore the tools that you don't know yet. You might find that they become useful to you at certain times.</li>
+<li>DevTools doesn't mess up with your source code. All the changes you make in DevTools are temporary and don't affect your source code. You can't break anything by using DevTools. Just refresh the page and start over.</li>
+</ul>
+<h3>The main tools</h3>
+<p>The tools below tend to be the most used ones. Each tool is listed with a short description of what it's useful for.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>Use cases</th>
+<th>Specific browser note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Elements</strong></td>
+<td>Displays the DOM tree and applied CSS rules.</td>
+<td>Find and fix HTML and CSS bugs by editing the DOM and CSS styles.</td>
+<td>This tool is called <strong>Inspector</strong> in Firefox.</td>
+</tr>
+<tr>
+<td><strong>Console</strong></td>
+<td>JavaScript environment to print messages and evaluate code.</td>
+<td>Log messages and debug JavaScript issues.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Network</strong></td>
+<td>HTTP network traffic logger.</td>
+<td>Improve load performance, debug broken requests, export requests, replay requests.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Sources</strong></td>
+<td>JavaScript debugger.</td>
+<td>Set breakpoints, step through code, inspect variables.</td>
+<td>This tool is called <strong>Debugger</strong> in Firefox.</td>
+</tr>
+<tr>
+<td><strong>Performance</strong></td>
+<td>Performance profiler.</td>
+<td>Improve load and runtime performance, find slow JavaScript functions or rendering issues.</td>
+<td>This tool is called <strong>Timeline</strong> in Safari.</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>Memory profiler.</td>
+<td>Find memory leaks and high memory consumption issues.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Application</strong></td>
+<td>Displays local storage, service workers, web app manifests, and other resources.</td>
+<td>Debug storage, web applications, and PWA issues.</td>
+<td>In Firefox, the <strong>Application</strong> tool only focuses on service workers and web app manifest. Use the <strong>Storage</strong> tool to inspect and edit storage. Safari also has a <strong>Storage</strong> tool to inspect and edit storage.</td>
+</tr>
+</tbody>
+</table>
+<h3>More tools</h3>
+<p>The previous list of tools is far from being exhaustive. They're the most used tools, because they correspond to the tasks that web developers most often need to do. But they also happen to be the tools that are usually opened by default in the DevTools main toolbar.</p>
+<p>Don't be afraid to look around for more tools to use. The list below contains more tools that you might find useful.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>Use cases</th>
+<th>Specific browser note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accessibility</strong></td>
+<td>Displays accessibility metadata about the page.</td>
+<td>Make sure your website is accessible to everyone by viewing the page the way assistive technology sees it.</td>
+<td>This tool is a separate tab in the main toolbar only in Firefox. In Chrome and Edge, it's a sidebar tab inside the <strong>Elements</strong> tool.</td>
+</tr>
+<tr>
+<td><strong>Animations</strong></td>
+<td>Web/CSS animations recorder/replayer.</td>
+<td>Debug web animations, CSS animations, and CSS transitions issues, such as timing, delay, or iteration.</td>
+<td>In Firefox, this tool is a sidebar tab in the <strong>Inspector</strong> tool. The tool doesn't exist in Safari.</td>
+</tr>
+<tr>
+<td><strong>Issues</strong></td>
+<td>Browser-reported issues.</td>
+<td>Find and fix performance, security, accessibility, and other browser-reporter issues.</td>
+<td>This tool only exists in Edge and Chrome, and these two browsers don't log the same issues in it. Firefox displays issues in the <strong>Console</strong> tool.</td>
+</tr>
+<tr>
+<td><strong>Changes</strong></td>
+<td>Collects CSS changes made in DevTools</td>
+<td>Bring back CSS modifications made within the <strong>Elements</strong> or <strong>Inspector</strong> tool to the page.</td>
+<td>This tool is a separate tab in Chrome and Edge, and a sidebar tab in the <strong>Inspector</strong> tool in Firefox.</td>
+</tr>
+</tbody>
+</table>
+<p>There are many more tools available.</p>
+<div class="tip tip-in-guide"><span class="tip-title">Tip: <a href="/tips/en/discover-all-tools">Discover all the tools</a></span><a href="/tips/en/discover-all-tools" class="tip-image"><img src="../../../assets/img/discover-all-tools.png" alt="The list of most tools in Edge DevTools, just to illustrate how many there are" loading="lazy"></img></a><div class="tip-excerpt">DevTools is confusing! There's so much functionality packed in such a small UI. Did you know that Chrome DevTools had more than 30 individual tools! Yes, that's right, 30.
+It's hard for both new users...<a href="/tips/en/discover-all-tools">Read more</a></div></div>
+<p>Take time to explore the tools that you don't know yet. And refer to the documentation of each browser DevTools to find out more.</p>
+<div class="tip tip-in-guide"><span class="tip-title">Tip: <a href="/tips/en/find-devtools-documentation">Find DevTools reference documentation</a></span><a href="/tips/en/find-devtools-documentation" class="tip-image"><img src="../../../assets/img/find-devtools-documentation.png" alt="The 4 documentation websites listed above." loading="lazy"></img></a><div class="tip-excerpt">If you want to learn more about what other tools exist in a browser, or what features a given tool provides, you can find reference documentation from all the major browsers here:
+Firefox Developer T...<a href="/tips/en/find-devtools-documentation">Read more</a></div></div>
+<h3>Where to find the tools</h3>
+<h4>Firefox</h4>
+<p>In Firefox, most tools are displayed as tabs in the main toolbar, at the top of DevTools. Depending on the size of the DevTools window, not all tabs may be visible. Click the <strong>&gt;&gt;</strong> button at the right of the toolbar to see the hidden tabs.</p>
+<p><img src="./firefox-toolbar.png" alt="Firefox, with DevTools opened. The main toolbar with the tools is highlighted, and so is the &gt;&gt; icon to open more tools"></p>
+<p>Some tools may also be disabled from the DevTools settings. To view the entire list of tools and toggle them, press <kbd>F1</kbd> to open the <strong>Settings</strong> panel, and then choose the tools you want to see from the <strong>Default Developer Tools</strong> list.</p>
+<h4>Chrome</h4>
+<p>In Chrome, most tools are also displayed as tabs in the main toolbar, at the top of DevTools. Depending on the size of the DevTools window, not all tabs may be visible. Click the <strong>More tabs</strong> (<strong>&gt;&gt;</strong>) button at the right of the toolbar to see the hidden tabs.</p>
+<p>To see even more tools, in the main toolbar click <strong>Customize and control DevTools</strong> (<code>⁝</code>) &gt; <strong>More tools</strong>.</p>
+<p><img src="./chrome-toolbar.png" alt="Chrome, with DevTools opened. The main toolbar, the &gt;&gt; icon, and the ⁝ icon, are highlighted"></p>
+<p>Some tools are also displayed by default in the drawer, at the bottom of DevTools. The drawer also <strong>More tools</strong> (<code>⁝</code>) button to open more tools in the drawer toolbar.</p>
+<h4>Edge</h4>
+<p>DevTools in Edge is very similar to DevTools in Chrome. The main difference is there is no <strong>More tabs</strong> button. Instead, the main toolbar has a <strong>More tools</strong> (<strong>+</strong>) button that gives access to all of the tools, not just the ones that didn't have enough space to be visible in the main toolbar.</p>
+<p><img src="./edge-toolbar.png" alt="Edge, with DevTools opened. The main toolbar and the More tools icon are highlighted"></p>
+<h4>Safari</h4>
+<p>In Safari, the tools are displayed in the main toolbar, at the top of DevTools.</p>
+<p><strong>TODO: fill in this section and add a screenshot.</strong></p>
+<h2>The workflow</h2>
+<h3>The basic dev loop</h3>
+<p>The most basic workflow when doing web development is also the one that most people use and which has been around the longest. This workflow consists of the following steps:</p>
+<ol>
+<li>Write some code in your editor.</li>
+<li>Save the file.</li>
+<li>Reload the page in the browser to see the result of the code changes you made.</li>
+<li>Open DevTools to investigate a bug.</li>
+<li>Make temporary changes in DevTools to test a fix.</li>
+<li>Go back to step 1 to make the fix permanent in your code.</li>
+</ol>
+<p><img src="./basic-dev-loop.png" alt="The basic web dev loop"></p>
+<p>In its simplest form, web development doesn't require any compilation or packaging step, which other application development platforms often need. This means that this simple workflow can be very effective and fast. You can make changes to your code and immediately see the result in the browser. The changes you make in DevTools are also immediate.</p>
+<p>That said, web development has evolved over the years, and it's now common for web developers to use build tools to compile, minify, or bundle their code. While this can be useful when working on larger projects, with many dependencies, it tends to make it slower to go from making a code change to testing the change in a browser. Therefore, some projects now use techniques known as hot reloading and file change watching to automatically re-build and/or deploy changes to the browser.</p>
+
+</div>
+<div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2023-12-08T00:00:00.000Z">12/8/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/guides/en/understand-devtools/index.md">Edit this page</a></p>
+</div>
+<script async src="/assets/dialog-lightbox.js"></script>
+
+      </div>
+    </main>
+
+    
+    
+    <script>
+      const pixel = new Image();
+      let url = 'https://patrickbrosset.com/pixel.php';
+      url += '?t=' + Date.now();
+      url += '&url=' + encodeURIComponent(window.location.href);
+      pixel.src = url;
+    </script>
+    
+
+    
+    
+    <script>
+      async function registerPeriodicSync() {
+        const registration = await navigator.serviceWorker.ready;
+        // Check if periodicSync is supported
+        if ('periodicSync' in registration) {
+          // Request permission
+          const status = await navigator.permissions.query({
+            name: 'periodic-background-sync',
+          });
+
+          if (status.state === 'granted') {
+            try {
+              // Register new sync every 24 hours
+              await registration.periodicSync.register('update-cached-content', {
+                minInterval: 24 * 60 * 60 * 1000, // 1 day
+              });
+              console.log('Periodic background sync registered!');
+            } catch(e) {
+              console.error(`Periodic background sync failed:\nx${e}`);
+            }
+          } else {
+            console.info('Periodic background sync is not granted.');
+          }
+        } else {
+          console.log('Periodic background sync is not supported.');
+        }
+      }
+
+      if('serviceWorker' in navigator) {
+        // Register the service worker
+        navigator.serviceWorker.register('/sw.js', {
+          scope: '/'
+        });
+
+        // Register the periodic background sync
+        registerPeriodicSync();
+      }
+    </script>
+    
+  </body>
+</html>

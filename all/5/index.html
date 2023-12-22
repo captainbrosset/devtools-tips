@@ -33,9 +33,12 @@
       </a>
       <nav>
         <ul class="header-menu">
+          <!-- <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understand DevTools</a></li></ul>
+          </li> -->
           <li><a href="/all/">All tips</a></li>
           <li>Tips by category
-            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
+            <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/guide/">guide</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
           <li>Tips by browser
             <ul class="submenu"><li>
@@ -98,8 +101,71 @@
         </div>
       </div>
       <div id="maincontent">
-        <h1>162 DevTools Tips</h1>
+        <h1>164 DevTools Tips</h1>
 <ul class="tips">
+<li class="hover-box tip " style="view-transition-name:post-jump-to-css-variable;">
+  <a href="/tips/en/jump-to-css-variable/" class="tip-title">Jump from a CSS variable usage to where it is defined</a>
+  <a href="/tips/en/jump-to-css-variable/" class="tip-image"><img src="../../assets/img/jump-to-css-variable.gif" alt="Animation of clicking on a custom property link in the Styles panel in Edge." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    CSS custom properties (also called variables) are very useful to avoid repeating values in CSS, like colors for example.
+You can define and use a custom property as shown below:
+rule-1 { --my-main-co...
+    <a href="/tips/en/jump-to-css-variable/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/css/" title="List all css tips">css</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip " style="view-transition-name:post-break-on-dom-changes;">
+  <a href="/tips/en/break-on-dom-changes/" class="tip-title">Pause script execution when the DOM changes</a>
+  <a href="/tips/en/break-on-dom-changes/" class="tip-image"><img src="../../assets/img/break-on-dom-changes.png" alt="The Elements panel in Edge showing the &quot;Break on&quot; contextual menu on the selected node." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    If you want to know what JavaScript code removes, adds, or modifies a DOM element in the page, you can use DOM breakpoints in DevTools. You can choose to break on:
+Subtree modification: this pauses e...
+    <a href="/tips/en/break-on-dom-changes/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/javascript/" title="List all javascript tips">javascript</a>
+      </li><li class="tag">
+        <a href="/tag/debug/" title="List all debug tips">debug</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
+  </div>
+</li>
+
 <li class="hover-box tip " style="view-transition-name:post-convert-color-formats;">
   <a href="/tips/en/convert-color-formats/" class="tip-title">Convert color formats</a>
   <a href="/tips/en/convert-color-formats/" class="tip-image"><img src="../../assets/img/convert-color-formats.gif" alt="Animation of the rules panel in Firefox, showing the color conversion." loading="lazy"></img></a>
@@ -857,56 +923,6 @@ Firefox, Chrome, Polypane and Edge m...
       </li><li class="browser">
         <a href="/browser/polypane/" title="List all tips supported by polypane">
           <img src="/assets/browsers/polypane.svg" alt=""> polypane
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-edit-css-angles;">
-  <a href="/tips/en/edit-css-angles/" class="tip-title">Edit CSS angles</a>
-  <a href="/tips/en/edit-css-angles/" class="tip-image"><img src="../../assets/img/edit-css-angles.gif" alt="Animation of the angle editor in Chrome, where a click is made on the angle swatch, and then the mouse is used to change the angle." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    In CSS, several different properties use angle unit values, such as the rotate() function of a transform or the linear-gradient orientation of a background-image, and more.
-In Chrome and Edge, whereve...
-    <a href="/tips/en/edit-css-angles/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/css/" title="List all css tips">css</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-edit-clip-path-shape-outside;">
-  <a href="/tips/en/edit-clip-path-shape-outside/" class="tip-title">Edit clip-path and shape-outside CSS properties by dragging points in the page</a>
-  <a href="/tips/en/edit-clip-path-shape-outside/" class="tip-image"><img src="../../assets/img/edit-clip-path-shape-outside.gif" alt="Animation of the shape editor in firefox, clicking on the Rules panel icon, and then moving points around in the page." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    The clip-path property is a great way to change the final shape of an element and give it the shape that you want.
-You can use this property to make an element be a circle, an ellipse, a polygon or an...
-    <a href="/tips/en/edit-clip-path-shape-outside/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/css/" title="List all css tips">css</a>
-      </li><li class="tag">
-        <a href="/tag/highlighter/" title="List all highlighter tips">highlighter</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
         </a>
       </li></ul>
   </div>
