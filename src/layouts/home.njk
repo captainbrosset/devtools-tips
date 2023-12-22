@@ -73,7 +73,7 @@
           <li>Tips by browser
             <ul class="submenu">
               {%- for browser in getBrowsers(collections) -%}
-              <li><a href="/browser/{{ browser | processBrowserTagName }}/">{{ browser | processBrowserTagName }}</a></li>
+              <li><a href="/browser/{{ browser | processBrowserTagName }}/"><img src="/assets/browsers/{{browser | processBrowserTagName}}.svg" alt=""> {{ browser | processBrowserTagName }}</a></li>
               {%- endfor -%}
             </ul>
           </li>

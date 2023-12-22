@@ -16,7 +16,7 @@
     Supported by:
     <ul class="browsers">
     {%- for browser in post.data.tags | onlyBrowsers -%}
-      <li class="browser"><a href="/browser/{{ browser | processBrowserTagName }}/" title="See all tips supported on {{ browser | processBrowserTagName }}">{{ browser | processBrowserTagName }}</a></li>
+      <li class="browser"><a href="/browser/{{ browser | processBrowserTagName }}/" title="See all tips supported on {{ browser | processBrowserTagName }}"><img src="/assets/browsers/{{browser | processBrowserTagName}}.svg" alt=""> {{ browser | processBrowserTagName }}</a></li>
     {%- endfor -%}
     </ul>
   </div>
