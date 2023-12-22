@@ -14,7 +14,7 @@ templateEngineOverride: njk
     Supported by:
     <ul class="browsers">
     {%- for browser in tags | onlyBrowsers -%}
-        <li class="browser"><a href="/browser/{{ browser | processBrowserTagName }}/">{{ browser | processBrowserTagName }}</a></li>
+        <li class="browser"><a href="/browser/{{ browser | processBrowserTagName }}/"><img src="/assets/browsers/{{browser | processBrowserTagName}}.svg" alt=""> {{ browser | processBrowserTagName }}</a></li>
     {%- endfor -%}
     </ul>
 </div>
