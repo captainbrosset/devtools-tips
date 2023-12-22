@@ -2,7 +2,7 @@
 date: 2023-06-06
 authors: Patrick Brosset
 title: Understand when the Console opens in the main panel and in the drawer
-tags: ["help", "personalization", "console", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "help", "personalization", "console", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 Have you noticed how the **Console** tool is sometimes displayed in a top-level tab (just like all other tools), and sometimes in a split pane at the bottom, below the main tool?
 

@@ -2,7 +2,7 @@
 date: 2022-03-03
 authors: Patrick Brosset, Kilian Valkhof
 title: Detect low color contrast issues
-tags: ["accessibility", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
+tags: ["tip", "accessibility", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
 ---
 Low color vision is very common, and your choice of text and background colors can negatively impact people's experience of your website. What seems legible to you might not be for everyone.
 

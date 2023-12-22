@@ -2,7 +2,7 @@
 date: 2022-03-10
 authors: Patrick Brosset
 title: Manipulate complex JSON files using DevTools
-tags: ["javascript", "browser:edge", "browser:firefox", "browser:chrome"]
+tags: ["tip", "javascript", "browser:edge", "browser:firefox", "browser:chrome"]
 ---
 I often work with large amount of data that I need to go through and gather interesting information from. Sometimes this data is in JSON format. When that's the case, I like using DevTools to turn it into what I want, using JavaScript!
 

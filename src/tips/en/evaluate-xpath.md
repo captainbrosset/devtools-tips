@@ -2,7 +2,7 @@
 date: 2021-10-29
 authors: Patrick Brosset
 title: Evaluate XPath to find elements in the page
-tags: ["html", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "html", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 DevTools supports 2 ways to evaluate [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath) expressions to help you locate elements in the page. All browsers support those 2 ways:
 

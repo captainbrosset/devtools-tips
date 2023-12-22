@@ -2,7 +2,7 @@
 date: 2023-01-04
 authors: Patrick Brosset, Kilian Valkhof
 title: Debug unwanted scrollbars
-tags: ["css", "browser:firefox", "browser:polypane"]
+tags: ["tip", "css", "browser:firefox", "browser:polypane"]
 ---
 Sometimes scrollbars appear on a web page in places we don't want them to. And when this happens, it's not always very straightforward to fix the problem. Which container is responsible for the scrollbars in the first place? Which elements are even causing the scrollbars to appear? Why are they too big?
 

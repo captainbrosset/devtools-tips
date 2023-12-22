@@ -2,7 +2,7 @@
 date: 2022-03-25
 authors: Patrick Brosset, Kilian Valkhof
 title: Fix low color contrast issues
-tags: ["accessibility", "browser:edge", "browser:chrome", "browser:polypane"]
+tags: ["tip", "accessibility", "browser:edge", "browser:chrome", "browser:polypane"]
 ---
 
 With DevTools you can [detect low color contrast issues](./detect-low-color-contrast.md) which is great. But Chrome DevTools, Edge DevTools, and Polypane, you can go one step further and fix these issues directly!

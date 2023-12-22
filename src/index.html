@@ -25,10 +25,28 @@
   <div class="card">
     <h2>Latest tips</h2>
     <ul class="tips">
-    {% set latest_posts = collections.all | reverse %}
+    {% set latest_posts = collections.tip | reverse %}
     {%- for post in latest_posts.slice(0, 5) -%}
       {% include 'tip-in-list.njk' %}
     {%- endfor -%}
     </ul>
   </div>
+  <!-- <div class="card">
+    <h2>Learning guides</h2>
+    <p>The following are longer guides that help learn about and understand broader aspects of DevTools.</p>
+    <ul class="tips">
+      {% for post in collections.guide %}
+        <li class="tip">
+          <a href="{{ post.url }}" class="tip-title">{{ post.data.title }}</a>
+          <a href="{{ post.url }}" class="tip-image">
+            <img src="{{ post.data.thumbnail }}" alt="{{ post.data.alt }}">
+          </a>
+          <div class="tip-excerpt">
+            {{ post.data.excerpt }}
+            <a href="{{ post.url }}">Read more</a>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div> -->
 </div>

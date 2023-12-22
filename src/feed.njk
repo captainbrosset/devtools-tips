@@ -22,12 +22,12 @@
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
   <id>{{ metadata.url }}</id>
-  <updated>{% lastTipDate collections.all %}</updated>
+  <updated>{% lastTipDate collections.tip %}</updated>
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for post in collections.all | reverse %}
+  {%- for post in collections.tip | reverse %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>

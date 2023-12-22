@@ -2,7 +2,7 @@
 date: 2021-06-11
 authors: Patrick Brosset
 title: Filter requests in the Network panel by status code, mime type and more
-tags: ["network", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "network", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
 The Network panel lets you filter requests by status code, or mime type, and more.
 

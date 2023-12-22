@@ -2,7 +2,7 @@
 date: 2023-04-05
 authors: Patrick Brosset
 title: Measure arbitrary distances in the page
-tags: ["productivity", "browser:firefox"]
+tags: ["tip", "productivity", "browser:firefox"]
 ---
 Do you need to find out the dimensions of any element or area in the page? Or perhaps the distance between two things?
 

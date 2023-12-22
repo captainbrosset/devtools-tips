@@ -2,7 +2,7 @@
 date: 2021-10-20
 authors: Patrick Brosset, Christian Heilmann
 title: Console.log() for the web with logpoints
-tags: ["debug", "javascript", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "debug", "javascript", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 Using the [console](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/) to log some information is a very common way to debug your JavaScript. But you can also log information in any web site using **Logpoints** in the [sources](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/sources/) panel.
 

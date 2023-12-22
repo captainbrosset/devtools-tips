@@ -2,7 +2,7 @@
 date: 2023-06-02
 authors: Patrick Brosset
 title: Know which of the font in a font-family was actually used
-tags: ["css", "browser:firefox"]
+tags: ["tip", "css", "browser:firefox"]
 see-also: ["list-used-fonts.md"]
 ---
 

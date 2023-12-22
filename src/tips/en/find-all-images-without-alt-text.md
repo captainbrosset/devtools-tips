@@ -2,7 +2,7 @@
 date: 2021-06-28
 authors: Patrick Brosset, Kilian Valkhof
 title: Find all images without alternative text
-tags: ["console", "html", "accessibility", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
+tags: ["tip", "console", "html", "accessibility", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 With HTML, you can add alternative text to images using the `alt` attribute. It can be used to add a text description to images, which is extremely useful for accessibility as some people may not be able to see the images. With `alt`, screen readers can announce the alternative text to the user.
 

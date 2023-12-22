@@ -7,7 +7,7 @@ require("dotenv").config();
 const AUTHORS = require("./src/data/AUTHORS.json");
 const EXCERPT_LENGTH = 200;
 
-function extractImage(article) {
+function extractImage(article, prefix = '') {
   if (!article.hasOwnProperty("templateContent")) {
     console.warn(
       'Failed to extract excerpt: Document has no property "templateContent".'
@@ -18,7 +18,7 @@ function extractImage(article) {
   const match = article.templateContent.match(/<img src="([^"]+)" alt="([^"]+)"/);
 
   if (match) {
-    return `<img src="${match[1]}" alt="${match[2]}" loading="lazy"></img>`;
+    return `<img src="${prefix}${match[1]}" alt="${match[2]}" loading="lazy"></img>`;
   }
 
   return '';
@@ -45,6 +45,7 @@ function extractExcerpt(article) {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/guides/**/*.{png,jpg,jpeg,gif,svg}");
   eleventyConfig.addPassthroughCopy("src/sw.js");
   eleventyConfig.addPassthroughCopy("src/manifest.json");
   eleventyConfig.addPassthroughCopy("src/.well-known");
@@ -55,7 +56,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("onlyTags", function (tags) {
-    return tags.filter(tag => !tag.startsWith('browser:'));
+    return tags.filter(tag => !tag.startsWith('browser:') && tag !== "tip");
   });
 
   eleventyConfig.addFilter("onlyBrowsers", function (browsers) {
@@ -93,7 +94,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(embedYouTube);
 
-  eleventyConfig.addTransform("fix-urls", async function(content) {
+  eleventyConfig.addTransform("fix-tip-urls", async function(content) {
     if (this.inputPath.includes('/src/tips/en/')) {
       // Replace all relative links to other tips with their absolute links.
       // This is needed because we want relative file links in dev, in order
@@ -105,6 +106,37 @@ module.exports = function (eleventyConfig) {
     }
 
     return content; // no change done.
+  });
+
+  // A hacky way to get all tips. We don't actually use this collection.
+  // We just use this callback to store the tips in an array.
+  const allTips = [];
+  eleventyConfig.addCollection("allTips", function(collectionApi) {
+    return collectionApi.getAll().filter(function(item) {
+      allTips.push(item);
+      return item.inputPath.includes('/src/tips/en/');
+    });
+  });
+
+  eleventyConfig.addShortcode("insertTip", slug => {
+    const tipData = allTips.find(tip => tip.fileSlug === slug);
+    if (!tipData) {
+      return `Tip not found: ${slug}`;
+    }
+
+    // We're generating HTML in MD, so we need to avoid leading
+    // whitespaces at the beginning of each line. Otherwise, it will
+    // be rendered as code.
+    return [
+      `<div class="tip tip-in-guide">`,
+        `<span class="tip-title">Tip: <a href="/tips/en/${slug}">${tipData.data.title}</a></span>`,
+        `<a href="/tips/en/${slug}" class="tip-image">${extractImage(tipData, '../')}</a>`,
+        `<div class="tip-excerpt">`,
+          extractExcerpt(tipData),
+          `<a href="/tips/en/${slug}">Read more</a>`,
+        `</div>`,
+      `</div>`,
+    ].join("");
   });
 
   return {

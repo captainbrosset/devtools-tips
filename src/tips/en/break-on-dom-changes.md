@@ -2,7 +2,7 @@
 date: 2021-09-22
 authors: Patrick Brosset
 title: Pause script execution when the DOM changes
-tags: ["javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
+tags: ["tip", "javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
 ---
 If you want to know what JavaScript code removes, adds, or modifies a DOM element in the page, you can use DOM breakpoints in DevTools. You can choose to break on:
 

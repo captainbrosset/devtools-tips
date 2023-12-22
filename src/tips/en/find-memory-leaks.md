@@ -2,7 +2,7 @@
 date: 2023-07-10
 authors: Patrick Brosset
 title: Find memory leaks by comparing heap snapshots
-tags: ["perf", "browser:edge", "browser:chrome"]
+tags: ["tip", "perf", "browser:edge", "browser:chrome"]
 see-also: ["get-detached-elements.md"]
 ---
 

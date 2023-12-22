@@ -2,7 +2,7 @@
 date: 2021-06-08
 authors: Patrick Brosset, Alex Lakatos, Kilian Valkhof
 title: Highlight all the elements that a CSS rule matches
-tags: ["html", "css", "highlighter", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
+tags: ["tip", "html", "css", "highlighter", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 When you want to know which elements a given CSS rule will apply to, in addition to the currently selected element, you can:
 

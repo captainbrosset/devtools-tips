@@ -2,7 +2,7 @@
 date: 2023-01-04
 authors: Patrick Brosset
 title: Emulate idle detection states
-tags: ["testing", "browser:chrome"]
+tags: ["tip", "testing", "browser:chrome"]
 ---
 
 The [Idle Detection API](https://developer.mozilla.org/docs/Web/API/Idle_Detection_API) is useful for web developers to detect when the user isn't interacting with their device. This can be useful for chat applications, for example, to mark the user as away.

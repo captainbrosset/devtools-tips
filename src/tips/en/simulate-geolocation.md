@@ -2,7 +2,7 @@
 date: 2022-09-15
 authors: Patrick Brosset
 title: Simulate a different latitude/longitude geolocation
-tags: ["testing", "browser:edge", "browser:chrome"]
+tags: ["tip", "testing", "browser:edge", "browser:chrome"]
 ---
 
 If your website has features that depend on the geographic location of your users, you can test these features by simulating different geolocations right from DevTools!

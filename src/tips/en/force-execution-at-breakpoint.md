@@ -2,7 +2,7 @@
 date: 2023-10-26
 authors: Patrick Brosset
 title: Force execution, skipping breakpoints, when paused
-tags: ["debug", "javascript", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "debug", "javascript", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
 When using breakpoints to debug your JavaScript code, sometimes you end up setting many breakpoints in different functions. You might want to keep these breakpoints but not always pause at them.
 

@@ -2,7 +2,7 @@
 date: 2022-02-02
 authors: Patrick Brosset
 title: Record and replay user flows
-tags: ["testing", "perf", "browser:chrome"]
+tags: ["tip", "testing", "perf", "browser:chrome"]
 ---
 Have you ever had to test the same user scenario again and again while working on a fix or performance improvement?
 Sometimes you just have to click the same buttons and do the same actions every time you reload the page to test something. And this can be very time consuming and frustrating.

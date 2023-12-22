@@ -2,7 +2,7 @@
 date: 2023-01-04
 authors: Patrick Brosset
 title: Test your PWA protocol handlers
-tags: ["testing", "apps", "browser:edge", "browser:chrome"]
+tags: ["tip", "testing", "apps", "browser:edge", "browser:chrome"]
 ---
 
 [Progressive Web Apps (PWA)](https://developer.mozilla.org/docs/Web/Progressive_web_apps) can register themselves to handle URIs with pre-defined or custom protocols (such as `mailto`, `geo`, or `web+foo`). This is a great capability that makes it possible for installed PWAs to feel more like real apps.

@@ -2,7 +2,7 @@
 date: 2022-03-16
 authors: Patrick Brosset
 title: Debug CSS grid areas
-tags: ["css", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "css", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
 A really useful way to position elements on a CSS grid is using the [`grid-template-areas`](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas) property. With it, you can give names to various areas of your grid (potentially spanning multiple cells), and then simply position your elements by referring to those names.
 

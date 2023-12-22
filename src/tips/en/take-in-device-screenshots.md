@@ -2,7 +2,7 @@
 date: 2021-11-17
 authors: Patrick Brosset, Christian Heilmann
 title: Take screenshots of your site in a device frame
-tags: ["export", "browser:chrome", "browser:edge"]
+tags: ["tip", "export", "browser:chrome", "browser:edge"]
 ---
 Taking a photo of a mobile device or tablet is daunting as you have to deal with fingerprints, glare and focus issues. Using Device Emulation makes this a lot easier.
 

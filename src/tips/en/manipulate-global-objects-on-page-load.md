@@ -2,7 +2,7 @@
 date: 2023-01-06
 authors: Patrick Brosset
 title: Manipulate global objects on page load, before other scripts run
-tags: ["debug", "javascript", "browser:safari"]
+tags: ["tip", "debug", "javascript", "browser:safari"]
 ---
 When a page loads, and all of its global objects are ready, but before the JavaScript code of the page actually kicks-in, is a great time to inject debugging code. For example, it might be useful to replace global functions with ones that contain altered code.
 

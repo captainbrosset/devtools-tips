@@ -2,7 +2,7 @@
 date: 2022-01-26
 authors: Patrick Brosset
 title: Remove or disable event listeners
-tags: ["javascript", "browser:firefox", "browser:edge", "browser:chrome"]
+tags: ["tip", "javascript", "browser:firefox", "browser:edge", "browser:chrome"]
 ---
 When you're trying to debug something and event listeners on the page keep interfering with what you're doing, it can be frustrating.
 Imagine a `mousemove` event listener that changes some of the information on the page.

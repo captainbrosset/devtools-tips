@@ -2,7 +2,7 @@
 date: 2022-07-01
 authors: Patrick Brosset
 title: Jump from a label `for` attribute to the linked input (and more)
-tags: ["html", "productivity", "browser:firefox"]
+tags: ["tip", "html", "productivity", "browser:firefox"]
 ---
 
 In Firefox, you can jump from an element that references the ID attribute of an other element, to that other element, by <kbd>Cmd</kbd>+clicking (or <kbd>Ctrl</kbd>+clicking) the attribute.

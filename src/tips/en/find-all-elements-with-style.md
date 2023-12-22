@@ -2,7 +2,7 @@
 date: 2023-05-31
 authors: Patrick Brosset
 title: Find all elements with a specific style
-tags: ["css", "console", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
+tags: ["tip", "css", "console", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
 see-also: ["find-all-images-without-alt-text.md", "find-broken-links.md", "download-all-images.md"]
 ---
 

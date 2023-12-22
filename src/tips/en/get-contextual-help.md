@@ -2,7 +2,7 @@
 date: 2021-10-29
 authors: Patrick Brosset
 title: Get contextual DevTools help
-tags: ["help", "browser:edge"]
+tags: ["tip", "help", "browser:edge"]
 see-also: ["find-devtools-documentation.md", "send-feedback-about-devtools.md"]
 ---
 Edge has a feature called the __DevTools Tooltips__ that gives you help about the different tools right inside of DevTools.

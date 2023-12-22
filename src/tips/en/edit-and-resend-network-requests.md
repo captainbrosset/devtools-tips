@@ -2,7 +2,7 @@
 date: 2021-12-15
 authors: Patrick Brosset, Pankaj Parashar
 title: Edit and resend faulty network requests to debug them
-tags: ["network", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "network", "browser:edge", "browser:chrome", "browser:firefox"]
 see-also: ["replay-xhr.md"]
 ---
 When you're investigating a bug where the backend you connect to doesn't respond with the right things it's useful to tweak the requests and try again quickly. You can do this by changing your frontend code, and reloading the page, but DevTools can help you go faster by letting you edit and then resend any request, without having to make any frontend code changes.

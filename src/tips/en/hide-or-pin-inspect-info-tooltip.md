@@ -2,7 +2,7 @@
 date: 2022-10-27
 authors: Patrick Brosset
 title: Hide or pin the information tooltip while inspecting page elements
-tags: ["html", "css", "highlighter", "browser:chrome", "browser:edge"]
+tags: ["tip", "html", "css", "highlighter", "browser:chrome", "browser:edge"]
 ---
 When selecting elements from the page using the **inspect** tool, the hovered elements get highlighted, and an information tooltip follows your mouse around and gives you information about the hovered element.
 

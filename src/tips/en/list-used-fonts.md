@@ -2,7 +2,7 @@
 date: 2023-03-16
 authors: Patrick Brosset
 title: List the fonts used on a page, or an element
-tags: ["css", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
+tags: ["tip", "css", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
 see-also: ["convert-font-units.md"]
 ---
 _"What font is that?"_ or _"Why is this font used?"_ are probably questions you've asked yourself while working on a website design.

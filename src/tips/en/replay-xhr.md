@@ -2,7 +2,7 @@
 date: 2023-03-28
 authors: Patrick Brosset
 title: Replay a XHR request
-tags: ["network", "browser:chrome", "browser:edge"]
+tags: ["tip", "network", "browser:chrome", "browser:edge"]
 see-also: ["edit-and-resend-network-requests.md"]
 ---
 When you're debugging an XHR request to a backend service that doesn't respond with the right things it can be useful to send the request over and over again. Reloading the entire page to do so is tedious.

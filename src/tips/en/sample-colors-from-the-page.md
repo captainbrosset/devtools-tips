@@ -2,7 +2,7 @@
 date: 2021-06-30
 authors: Patrick Brosset, Kilian Valkhof
 title: Sample colors from the page
-tags: ["productivity", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
+tags: ["tip", "productivity", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
 ---
 Being able to sample colors from the page is super useful. Firefox, Edge and Chrome all allow you to do this in 2 different ways:
 

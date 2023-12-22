@@ -2,7 +2,7 @@
 date: 2021-10-29
 authors: Patrick Brosset, Alex Lakatos
 title: See the page in 3D
-tags: ["html", "css", "browser:edge", "browser:safari", "browser:chrome"]
+tags: ["tip", "html", "css", "browser:edge", "browser:safari", "browser:chrome"]
 ---
 See your page in 3 dimensions to quickly find out how deeply nested it is, fix z-index stacking issues, and performance issues.
 

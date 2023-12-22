@@ -2,7 +2,7 @@
 date: 2023-09-13
 authors: Kilian Valkhof
 title: Find the offset parent of an element
-tags: ["css", "browser:polypane"]
+tags: ["tip", "css", "browser:polypane"]
 ---
 
 To know what an element is offset against horizontally or vertically (Which you do with `position:relative` and a `left`, `top` or `inset` value) you need to know its **offset parent**. 

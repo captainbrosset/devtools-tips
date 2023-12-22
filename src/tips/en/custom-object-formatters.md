@@ -2,7 +2,7 @@
 date: 2023-08-23
 authors: Patrick Brosset
 title: Customize the way objects look in DevTools
-tags: ["personalization", "frameworks", "browser:edge", "browser:firefox", "browser:chrome"]
+tags: ["tip", "personalization", "frameworks", "browser:edge", "browser:firefox", "browser:chrome"]
 ---
 
 Objects appear in many places in DevTools. Most commonly in the **Console** tool, but also in various parts of the **Sources** (or **Debugger**) tool when you debug JavaScript code.

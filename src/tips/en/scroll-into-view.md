@@ -2,7 +2,7 @@
 date: 2021-11-23
 authors: Patrick Brosset
 title: Scroll an element into view
-tags: ["html", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "html", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
 If the inspected web page is long with a lot of elements, and its DOM tree is big and complex, it's easy to get lost, not knowing where the selected element is in the page.
 

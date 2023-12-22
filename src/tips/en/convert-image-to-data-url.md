@@ -2,7 +2,7 @@
 date: 2023-10-02
 authors: Patrick Brosset
 title: Convert images to data-urls
-tags: ["productivity", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "productivity", "browser:edge", "browser:chrome", "browser:firefox"]
 see-also: ["download-all-images.md", "find-all-images-without-alt-text.md"]
 ---
 A data URL is a URL that starts with the prefix `data:` instead of `http:` or `https:`. This data prefix (or scheme) allows you to embed the actual content of the resource in the URL itself, rather than linking to it. For example `data:text/html,<h1>Hello world</h1>` is a data URL that contains HTML content directly. Try it out in a browser tab!

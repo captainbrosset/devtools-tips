@@ -2,7 +2,7 @@
 date: 2022-05-02
 authors: Patrick Brosset
 title: Use document.designMode to spell check your webpage
-tags: ["console", "productivity", "testing", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
+tags: ["tip", "console", "productivity", "testing", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 
 [Amelia Bellamy-Royds](https://twitter.com/AmeliasBrain) shared a [really cool tip](https://twitter.com/AmeliasBrain/status/1521146127327801345) to spell-check a webpage's content from DevTools:

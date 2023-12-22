@@ -2,7 +2,7 @@
 date: 2021-09-27
 authors: Patrick Brosset
 title: Jump from a CSS variable usage to where it is defined
-tags: ["css", "browser:chrome", "browser:edge"]
+tags: ["tip", "css", "browser:chrome", "browser:edge"]
 ---
 CSS **[custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)** (also called **variables**) are very useful to avoid repeating values in CSS, like colors for example.
 

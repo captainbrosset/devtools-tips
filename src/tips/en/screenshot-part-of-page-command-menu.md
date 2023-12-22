@@ -2,7 +2,7 @@
 date: 2022-03-25
 authors: Patrick Brosset
 title: Take a screenshot of part of a webpage from the Command Menu
-tags: ["export", "browser:edge", "browser:chrome"]
+tags: ["tip", "export", "browser:edge", "browser:chrome"]
 see-also: ["execute-commands.md", "node-screenshot.md"]
 ---
 The [Command menu](./execute-commands.md) in Edge and Chrome is a great way to do many of the things you can do in DevTools without having to navigate the UI.

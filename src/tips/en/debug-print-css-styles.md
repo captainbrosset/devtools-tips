@@ -2,8 +2,7 @@
 date: 2023-05-02
 authors: Patrick Brosset, Kilian Valkhof, Pankaj Parashar
 title: Debug your print CSS styles by simulating print media
-tags:
-  ["css", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane", "browser:safari"]
+tags: ["tip", "css", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane", "browser:safari"]
 ---
 
 If you work on a webpage that's supposed to be printed, you probably want to test your print CSS styles. You can use your browser's print preview of course, but what if you need to debug the CSS?

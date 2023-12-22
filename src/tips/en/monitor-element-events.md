@@ -2,7 +2,7 @@
 date: 2021-10-15
 authors: Patrick Brosset
 title: Monitor all events dispatched on an element
-tags: ["console", "debug", "browser:edge", "browser:chrome"]
+tags: ["tip", "console", "debug", "browser:edge", "browser:chrome"]
 ---
 
 You can use the `monitorEvents` global function in the **Console** panel to log all of the events dispatched on a particular element.

@@ -2,7 +2,7 @@
 date: 2021-10-08
 authors: Patrick Brosset
 title: Hide resources loaded by extensions in the Network panel
-tags: ["network", "browser:edge", "browser:chrome"]
+tags: ["tip", "network", "browser:edge", "browser:chrome"]
 ---
 If you want to hide scripts and other resources loaded by browser extensions in the **Network** panel, use the `-scheme:chrome-extension` pattern in the filter input box.
 

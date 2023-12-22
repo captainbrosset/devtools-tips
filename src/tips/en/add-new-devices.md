@@ -2,7 +2,7 @@
 date: 2022-05-16
 authors: Patrick Brosset, Kilian Valkhof
 title: Create your own simulated devices
-tags: ["testing", "browser:chrome", "browser:edge", "browser:firefox", "browser:polypane"]
+tags: ["tip", "testing", "browser:chrome", "browser:edge", "browser:firefox", "browser:polypane"]
 ---
 
 You can simulate various different devices from DevTools, to get an idea of how your webpage might render on those devices (note that this is only a simulation, the tool only changes the screen dimensions, touch event handling, and user agent string, but ultimately, the rendering of the webpage is still done by the browser you are using).

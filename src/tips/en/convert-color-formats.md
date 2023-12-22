@@ -2,7 +2,7 @@
 date: 2021-09-20
 authors: Patrick Brosset
 title: Convert color formats
-tags: ["css", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "css", "browser:edge", "browser:chrome", "browser:firefox"]
 ---
 Colors in CSS can be expressed in a number of different formats: keyword (e.g. `blue`), RGB, HSL, hexadecimal, and others.
 

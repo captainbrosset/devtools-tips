@@ -2,7 +2,7 @@
 date: 2022-10-17
 authors: Patrick Brosset
 title: Edit JavaScript functions while debugging to test a quick fix
-tags: ["javascript", "browser:edge", "browser:chrome"]
+tags: ["tip", "javascript", "browser:edge", "browser:chrome"]
 ---
 Sometimes, when debugging JavaScript code in DevTools, you may want to test a quick change and see whether that fixes the bug.
 

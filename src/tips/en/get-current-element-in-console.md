@@ -2,7 +2,7 @@
 date: 2021-06-17
 authors: Patrick Brosset, Alex Lakatos, Kilian Valkhof
 title: Get the selected element in the console
-tags: ["console", "html", "productivity", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
+tags: ["tip", "console", "html", "productivity", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 If you selected an element in the Elements panel (in Chrome, Safari, Polypane or Edge) or the Inspector panel (in Firefox), you can refer to it in the console using `$0`.
 

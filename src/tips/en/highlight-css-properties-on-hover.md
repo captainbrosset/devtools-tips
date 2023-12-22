@@ -2,7 +2,7 @@
 date: 2021-12-09
 authors: Patrick Brosset
 title: Highlight the effect of individual CSS properties on hover
-tags: ["css", "highlighter", "browser:chrome", "browser:edge"]
+tags: ["tip", "css", "highlighter", "browser:chrome", "browser:edge"]
 see-also: ["highlight-elements-from-selector.md"]
 ---
 How do certain CSS properties apply to the page isn't always an easy question to answer.

@@ -2,7 +2,7 @@
 date: 2023-01-04
 authors: ["Patrick Brosset", "Kilian Valkhof"]
 title: See formatted JSON responses
-tags: ["network", "browser:firefox", "browser:edge", "browser:polypane"]
+tags: ["tip", "network", "browser:firefox", "browser:edge", "browser:polypane"]
 ---
 Edge (starting with 110), Firefox and Polypane all have a very nice **JSON viewer** tool that makes it easy to view JSON responses from your server directly in the browser window.
 

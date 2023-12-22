@@ -2,7 +2,7 @@
 date: 2021-08-30
 authors: Patrick Brosset, Olivia Flynn
 title: Visualize the screen reader order for elements within the page
-tags: ["accessibility", "highlighter", "browser:edge", "browser:chrome"]
+tags: ["tip", "accessibility", "highlighter", "browser:edge", "browser:chrome"]
 ---
 Edge has an [accessibility tab](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/accessibility-tab) within the elements panel that, among other things, lets you visualize the order a screen reader will encounter elements on a page. This is determined by the order of elements in the HTML source code.
 

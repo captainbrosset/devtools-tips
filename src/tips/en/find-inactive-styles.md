@@ -2,7 +2,7 @@
 date: 2022-09-02
 authors: Patrick Brosset
 title: Find inactive CSS styles
-tags: ["css", "debug", "browser:firefox", "browser:edge", "browser:chrome"]
+tags: ["tip", "css", "debug", "browser:firefox", "browser:edge", "browser:chrome"]
 ---
 Sometimes we write CSS code that's entirely valid but has absolutely no effect at all, and this can be frustrating.
 

@@ -2,7 +2,7 @@
 date: 2021-06-21
 authors: Patrick Brosset
 title: Edit clip-path and shape-outside CSS properties by dragging points in the page
-tags: ["css", "highlighter", "browser:firefox"]
+tags: ["tip", "css", "highlighter", "browser:firefox"]
 ---
 The [`clip-path` property](https://developer.mozilla.org/docs/Web/CSS/clip-path) is a great way to change the final shape of an element and give it the shape that you want.\
 You can use this property to make an element be a circle, an ellipse, a polygon or any shape that can be described with an [SVG path](https://developer.mozilla.org/docs/Web/SVG/Tutorial/Paths).

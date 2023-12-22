@@ -2,7 +2,7 @@
 date: 2021-06-15
 authors: Patrick Brosset
 title: See quick accessibility information on hover
-tags: ["accessibility", "browser:edge", "browser:chrome", "browser:polypane"]
+tags: ["tip", "accessibility", "browser:edge", "browser:chrome", "browser:polypane"]
 ---
 In Edge, Polypane and Chrome, whenever you use the element selector and hover over elements in the page, a tooltip appears with, among other things, some accessibility information about the hovered element.
 

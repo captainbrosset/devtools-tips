@@ -2,7 +2,7 @@
 date: 2023-10-05
 authors: Patrick Brosset, Pankaj Parashar, Kilian Valkhof
 title: See the viewport size
-tags: ["debug", "testing", "css", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
+tags: ["tip", "debug", "testing", "css", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
 see-also: ["spot-out-of-viewport-elements.md"]
 ---
 The size of the viewport that's used to render a webpage in a browser can be very important at times, such as when creating or debugging [media queries](https://developer.mozilla.org/docs/Web/CSS/CSS_media_queries/Using_media_queries).

@@ -2,7 +2,7 @@
 date: 2023-05-16
 authors: Patrick Brosset
 title: Customize the columns shown in console.table
-tags: ["console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari","browser:polypane"]
+tags: ["tip", "console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari","browser:polypane"]
 see-also: ["console-table-group-assert.md", "find-all-images-without-alt-text.md"]
 ---
 

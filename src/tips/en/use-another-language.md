@@ -2,7 +2,7 @@
 date: 2022-10-04
 authors: Patrick Brosset, Pankaj Parashar
 title: Use DevTools in another language
-tags: ["personalization", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
+tags: ["tip", "personalization", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari"]
 ---
 If you want to use DevTools in another language than English, you can do it across all major browsers.
 

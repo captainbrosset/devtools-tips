@@ -2,7 +2,7 @@
 date: 2023-09-21
 authors: Patrick Brosset
 title: Use user gesture restricted APIs in the Console
-tags: ["console", "browser:edge", "browser:chrome", "browser:safari"]
+tags: ["tip", "console", "browser:edge", "browser:chrome", "browser:safari"]
 ---
 Certain web APIs are _user gesture_ restricted. This means that they can only be called as a result of a user action, such as in a click event handler.
 

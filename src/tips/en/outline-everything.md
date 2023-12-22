@@ -2,7 +2,7 @@
 date: 2021-06-25
 authors: Patrick Brosset, Januario, Kilian Valkhof
 title: Draw a box around all elements to debug your CSS and page structure
-tags: ["highlighter", "css", "html", "browser:chrome", "browser:firefox", "browser:edge", "browser:safari", "browser:polypane"]
+tags: ["tip", "highlighter", "css", "html", "browser:chrome", "browser:firefox", "browser:edge", "browser:safari", "browser:polypane"]
 ---
 Simple, yet powerful, `* { outline: 1px solid red; }` is a useful debugging trick that helps understanding the page structure, finding overflow bugs or understand why elements are being pushed away for no apparent reason.
 

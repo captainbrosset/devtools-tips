@@ -2,7 +2,7 @@
 date: 2023-03-09
 authors: Patrick Brosset
 title: See network request paths instead of names in the Network tool
-tags: ["network", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "network", "browser:edge", "browser:chrome", "browser:firefox"]
 see-also: ["filter-network-requests.md"]
 ---
 

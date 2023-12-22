@@ -2,7 +2,7 @@
 date: 2023-02-16
 authors: Patrick Brosset, Pankaj Parashar
 title: See the size of the transferred data for images, scripts, or other resources
-tags: ["network", "perf", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "network", "perf", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 To know how much data your website transfers between the server and the client to display images, or scripts, or anything else:
 

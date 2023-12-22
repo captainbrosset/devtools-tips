@@ -2,7 +2,7 @@
 date: 2021-09-20
 authors: Patrick Brosset, Alex Lakatos
 title: Change the color theme of DevTools
-tags: ["personalization", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "personalization", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 see-also: ["create-your-own-devtools-theme.md"]
 ---
 Chrome, Firefox and Safari all have a light and dark theme for their DevTools. On top of these two themes, Edge also has about 10 VS Code themes such as Monokai and Solarized Dark.

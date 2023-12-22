@@ -2,7 +2,7 @@
 date: 2022-02-21
 authors: Patrick Brosset
 title: Detect the element with focus at any time
-tags: ["console", "javascript", "browser:edge", "browser:chrome"]
+tags: ["tip", "console", "javascript", "browser:edge", "browser:chrome"]
 ---
 If you want to know which element has the focus on the web page at any time, you can use a [live expression](./live-expressions.md) in the **Console** tool.
 

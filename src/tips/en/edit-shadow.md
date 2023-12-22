@@ -2,7 +2,7 @@
 date: 2021-10-11
 authors: Patrick Brosset
 title: Edit CSS shadow visually
-tags: ["css", "browser:edge", "browser:chrome"]
+tags: ["tip", "css", "browser:edge", "browser:chrome"]
 ---
 If you don't remember the CSS syntax for the `box-shadow` property (and who does!), then Chrome and Edge can help you with their visual shadow editor!
 
