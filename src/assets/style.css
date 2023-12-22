@@ -115,11 +115,6 @@ a {
   color: var(--accent-color);
 }
 
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
 /* Header */
 
 header {
@@ -181,6 +176,14 @@ header nav {
 .header-menu a img {
   vertical-align: middle;
   height: 1em;
+}
+
+.header-menu .submenu a:has(span) {
+  text-decoration: none;
+}
+
+.header-menu .submenu a span {
+  text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -358,16 +361,6 @@ main {
 main h1 {
   margin: 0 0 1rem 0;
 }
-main h1 img {
-  vertical-align: middle;
-  height: 1em;
-}
-
-@media (prefers-color-scheme: dark) {
-  main h1 img {
-    filter: invert(1);
-  }
-}
 
 /* Toolbar */
 
@@ -379,6 +372,8 @@ main h1 img {
   top: 0;
   z-index: 2;
   background: var(--background-color);
+  /* This is to hide the two-col callout shadow */
+  box-shadow: 0 -1rem 0 1rem var(--background-color);
   /* This is to align with the logo in the sidebar */
   height: 7rem;
 }
@@ -411,21 +406,23 @@ main h1 img {
   }
 }
 
-.twocol {
+.two-col {
   display: flex;
   gap: 0 2rem;
   flex-wrap: wrap;
   align-items: flex-start;
 }
-.twocol > p {
+
+.two-col > p {
   flex: 1 1 45%;
   min-width: 300px;
-  padding: 1rem 0 0;
   text-wrap: balance;
 }
-.twocol > .callout {
+
+.two-col > .callout {
   background: var(--alternate-background-color);
-  padding: 1rem 2rem;
+  box-shadow: 0 0 0 1rem var(--alternate-background-color);
+  margin-block-start: 2rem;
 }
 
 /* Card layout */
@@ -490,6 +487,7 @@ main h1 img {
   place-content: start;
   padding: 0;
   grid-column: 1;
+  column-gap: 0.5rem;
 }
 
 .tip .tip-excerpt {
@@ -574,14 +572,6 @@ main h1 img {
   font-size: smaller;
   color: var(--sub-text-color);
   line-height: 2;
-}
-
-.unique-browser,
-*:not(.tip) > .tip-info {
-  background: var(--alternate-background-color-fade);
-  padding: 1rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
 }
 
 code {
@@ -695,7 +685,6 @@ pre {
 .tags a,
 .browsers a {
   padding: 0.25rem;
-  margin: 0 0.25rem;
   display: inline-block;
   text-decoration: none;
   border-radius: 3px;
@@ -710,14 +699,17 @@ pre {
 }
 
 .tags li a {
-  background: var(--category-tag-background-color);
-  color: var(--category-tag-text-color);
+	background: var(--category-tag-background-color);
+	color: var(--category-tag-text-color);
+	height: 1rem;
+	box-sizing: content-box;
 }
 
 .browsers li a {
   background: var(--browser-tag-background-color);
   color: var(--browser-tag-text-color);
 }
+
 .browsers li a img {
   vertical-align: middle;
   height: 1em;
