@@ -8,13 +8,21 @@ templateEngineOverride: njk
     Categories:
     <ul class="tags">
     {%- for tag in tags | onlyTags -%}
-        <li class="tag"><a href="/tag/{{ tag }}/">{{ tag }}</a></li>
+        <li class="tag">
+            <a href="/tag/{{ tag }}/" title="List all {{ tag }} tips">
+                {{ tag }}
+            </a>
+        </li>
     {%- endfor -%}
     </ul>
     Supported by:
     <ul class="browsers">
     {%- for browser in tags | onlyBrowsers -%}
-        <li class="browser"><a href="/browser/{{ browser | processBrowserTagName }}/"><img src="/assets/browsers/{{browser | processBrowserTagName}}.svg" alt=""> {{ browser | processBrowserTagName }}</a></li>
+        <li class="browser">
+            <a href="/browser/{{ browser | processBrowserTagName }}/" title="List all tips supported by {{ browser | processBrowserTagName }}">
+                <img src="/assets/browsers/{{browser | processBrowserTagName}}.svg" alt=""> {{ browser | processBrowserTagName }}
+            </a>
+        </li>
     {%- endfor -%}
     </ul>
 </div>

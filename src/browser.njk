@@ -18,7 +18,7 @@
   permalink: "browser/{{ browser | slug | processBrowserTagName }}/"
 }
 ---
-<h1><img src="/assets/browsers/{{browser | processBrowserTagName}}.svg" alt="">  {{ collections[browser].length  }} <span class="browser-name">{{ browser | processBrowserTagName | capitalize }}</span> tips</h1>
+<h1>{{ collections[browser].length }} <span class="browser-name">{{ browser | processBrowserTagName | capitalize }}</span> tips</h1>
 {% include 'unique-browser-features.njk' %}
 <ul class="tips">
 {%- for post in collections[browser] | reverse -%}
