@@ -1,5 +1,5 @@
 ---
-date: 2023-11-23
+date: 2023-12-22
 authors: Patrick Brosset
 title: Enable DevTools in Safari
 tags: ["tip", "help", "browser:safari"]

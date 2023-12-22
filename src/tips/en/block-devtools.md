@@ -1,5 +1,5 @@
 ---
-date: 2023-11-24
+date: 2023-12-22
 authors: Patrick Brosset
 title: Block DevTools
 tags: ["tip", "help", "browser:chrome", "browser:edge", "browser:safari", "browser:firefox"]

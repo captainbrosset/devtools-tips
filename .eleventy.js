@@ -56,7 +56,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("onlyTags", function (tags) {
-    return tags.filter(tag => !tag.startsWith('browser:'));
+    return tags.filter(tag => !tag.startsWith('browser:') && tag !== "tip");
   });
 
   eleventyConfig.addFilter("onlyBrowsers", function (browsers) {

@@ -3,7 +3,7 @@
   getTags: function(collections) {
     const tags = [];
     for (const name in collections) {
-      if (!name.startsWith('browser:') && name !== 'all') {
+      if (!name.startsWith('browser:') && name !== 'all' && name !== "tip" && name !== "allTips") {
         tags.push(name);
       }
     }
@@ -62,13 +62,13 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <li>Guides
+          <!-- <li>Guides
             <ul class="submenu">
               {%- for guide in collections.guide -%}
               <li><a href="{{ guide.url }}">{{ guide.data.title }}</a></li>
               {%- endfor -%}
             </ul>
-          </li>
+          </li> -->
           <li><a href="/all/">All tips</a></li>
           <li>Tips by category
             <ul class="submenu">
