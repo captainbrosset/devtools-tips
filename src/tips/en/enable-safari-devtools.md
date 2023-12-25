@@ -12,7 +12,7 @@ If you are a web developer, though, and you want to use the DevTools in Safari, 
 
 1. Go to the Advanced tab.
 
-1. Check the **Show Develop menu in menu bar** option.
+1. Check the **Show features for web developers** option.
 
    The **Develop** menu will now be available in the menu bar. Use this menu to open DevTools and access other developer-related features.
 
