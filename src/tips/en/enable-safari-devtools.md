@@ -8,7 +8,7 @@ Unlike other browsers, Safari hides its DevTools (and other developer-related fe
 
 If you are a web developer, though, and you want to use the DevTools in Safari, here's how to enable the option:
 
-1. Go to Safari's Preferences.
+1. Go to Safari's Settings.
 
 1. Go to the Advanced tab.
 
