@@ -16,6 +16,6 @@ If you are a web developer, though, and you want to use the DevTools in Safari, 
 
    This will add the **Develop** menu in the menu bar and the **Develop** tab in Settings. Use this menu to open DevTools and access other developer-related features.
 
-   The right-click > **Inspect** option will also now be available.
+   The right-click > **Inspect Element** option will also now be available.
 
 ![Safari's Preferences, the Advanced tab shows the Show Developer menu in menu bar option](../../assets/img/enable-safari-devtools.png)
