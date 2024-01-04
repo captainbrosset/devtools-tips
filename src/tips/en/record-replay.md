@@ -2,25 +2,36 @@
 date: 2022-02-02
 authors: Patrick Brosset
 title: Record and replay user flows
-tags: ["tip", "testing", "perf", "browser:chrome"]
+tags: ["tip", "testing", "perf", "browser:chrome", "browser:edge"]
 ---
-Have you ever had to test the same user scenario again and again while working on a fix or performance improvement?
-Sometimes you just have to click the same buttons and do the same actions every time you reload the page to test something. And this can be very time consuming and frustrating.
+Sometimes, you need to repeatedly test the same user scenario on a website. This can happen when working on a fix or a performance improvement. Testing the same user scenario over and over again requires clicking the same buttons and do the same actions every time you reload the page. This can quickly become time consuming and frustrating.
 
-Chrome has a very handy **Recorder** panel to help with this. This panel lets you record any user flow once and then replay this flow as many times as you want.
+To automate this process, you can use the **Recorder** tool in Chrome or Edge. The **Recorder** tool allows you to record any user flow once, and then replay the flow as many times as you want.
 
 To record a new flow:
 
-* Open the **Recorder** panel by going to **More options** > **More tools** > **Recorder** (or using the [command menu](./execute-commands.md) to open it from the keyboard).
-* Click **Start new recording**, give your recording a name, and click the record button to start.
-* Use the page as normal, clicking on buttons, using form controls, navigating to other pages, etc.
+* Open the **Recorder** tool:
+
+  * In Chrome, the **Recorder** tab is already available in the main toolbar. If you don't see it, click **More tabs** (`>>`) > **Recorder**.
+  * In Edge, click **More tools** (`+`) in the Activity Bar, then **Recorder**.
+
+* Click **Create a new recording**.
+
+* Enter a name for your recording.
+
+* Click **Start recording**.
+
+* Use the page as normal, for example click on buttons, use form controls, navigate to other pages.
+
 * When you're done with the user flow you want to record, click **End recording**.
 
-From that point on, the recording will be available in the **Recorder** panel and you can simply replay it any time you want:
+Your recording is now available in the **Recorder** tool. To replay your recording, click **Replay**.
 
-* Find your recording in the panel's initial screen, or from the dropdown located in the panel's toolbar.
-* Click the **Play recording** button.
+If you close and then reopen DevTools, your recording will still be available in the **Recorder** tool. To replay it:
 
-![Animation of the Recorder panel automatically replaying a set of recorded steps.](../../assets/img/record-replay.gif)
+* Find your recording in the tool's initial screen, or from the dropdown located in the tool's toolbar.
+* Click **Replay**.
 
-You can learn a lot more about this panel (including how to edit a recording and how to use it to test performance improvements) in [the Recorder documentation](https://developer.chrome.com/docs/devtools/recorder/).
+![Animation of the Recorder panel automatically replaying a set of recorded steps.](../../assets/img/record-replay.png)
+
+To learn more about the **Recorder** tool (including how to edit a recording and how to use it to test performance improvements), see [Record, replay, and measure user flows](https://developer.chrome.com/docs/devtools/recorder/).
