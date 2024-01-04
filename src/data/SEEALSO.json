@@ -1627,20 +1627,12 @@
       "link": "/tips/en/debug-safari-mac-webapps"
     },
     {
-      "title": "Get contextual DevTools help",
+      "title": "Install or create extensions to customize DevTools",
       "image": {
-        "alt": "Animation of the DevTools tooltips in Edge.",
-        "src": "../../assets/img/get-contextual-help.gif"
+        "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
+        "src": "../../assets/img/extend-devtools.png"
       },
-      "link": "/tips/en/get-contextual-help"
-    },
-    {
-      "title": "Take a screenshot of part of a webpage from the Command Menu",
-      "image": {
-        "alt": "Edge, with DevTools opened, and the Command menu showing the list of screenshot commands",
-        "src": "../../assets/img/screenshot-part-of-page-command-menu.png"
-      },
-      "link": "/tips/en/screenshot-part-of-page-command-menu"
+      "link": "/tips/en/extend-devtools"
     },
     {
       "title": "Block DevTools",
@@ -1649,6 +1641,14 @@
         "src": "../../assets/img/block-devtools.png"
       },
       "link": "/tips/en/block-devtools"
+    },
+    {
+      "title": "Debug your print CSS styles by simulating print media",
+      "image": {
+        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the print media button",
+        "src": "../../assets/img/debug-print-css-styles-firefox.png"
+      },
+      "link": "/tips/en/debug-print-css-styles"
     }
   ],
   "evaluate-xpath.md": [
@@ -3394,20 +3394,12 @@
   ],
   "record-replay.md": [
     {
-      "title": "Detect the element with focus at any time",
+      "title": "Check if your site can be instantly reloaded from bfcache",
       "image": {
-        "alt": "Animation showing a web page with focus going through different element, and the Edge Console panel with the live expression showing a preview of the focused element.",
-        "src": "../../assets/img/track-focused-element.gif"
+        "alt": "Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached.",
+        "src": "../../assets/img/check-bfcache-readiness.png"
       },
-      "link": "/tips/en/track-focused-element"
-    },
-    {
-      "title": "Copy an elements styles",
-      "image": {
-        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "../../assets/img/copy-element-styles.png"
-      },
-      "link": "/tips/en/copy-element-styles"
+      "link": "/tips/en/check-bfcache-readiness"
     },
     {
       "title": "Detect low color contrast issues",
@@ -3418,12 +3410,20 @@
       "link": "/tips/en/detect-low-color-contrast"
     },
     {
-      "title": "Remove or disable event listeners",
+      "title": "Emulate color schemes",
       "image": {
-        "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "../../assets/img/disable-event-listeners-firefox.png"
+        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
-      "link": "/tips/en/disable-event-listeners"
+      "link": "/tips/en/emulate-color-schemes"
+    },
+    {
+      "title": "Simulate pseudo CSS classes",
+      "image": {
+        "alt": "The :hov button and the pseudo-class panel in Chrome DevTools",
+        "src": "../../assets/img/simulate-pseudo-classes.png"
+      },
+      "link": "/tips/en/simulate-pseudo-classes"
     }
   ],
   "reload-page-after-change.md": [
