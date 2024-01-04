@@ -8,14 +8,14 @@ Unlike other browsers, Safari hides its DevTools (and other developer-related fe
 
 If you are a web developer, though, and you want to use the DevTools in Safari, here's how to enable the option:
 
-1. Go to Safari's Preferences.
+1. Go to Safari's **Settings** or press `Cmd+,`.
 
 1. Go to the Advanced tab.
 
-1. Check the **Show Develop menu in menu bar** option.
+1. Check the **Show features for web developers** option.
 
-   The **Develop** menu will now be available in the menu bar. Use this menu to open DevTools and access other developer-related features.
+   This will add the **Develop** menu in the menu bar and the **Develop** tab in Settings. Use this menu to open DevTools and access other developer-related features.
 
-   The right-click > **Inspect** option will also now be available.
+   The right-click > **Inspect Element** option will also now be available.
 
 ![Safari's Preferences, the Advanced tab shows the Show Developer menu in menu bar option](../../assets/img/enable-safari-devtools.png)
