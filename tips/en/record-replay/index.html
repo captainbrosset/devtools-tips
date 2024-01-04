@@ -119,38 +119,55 @@
             <a href="/browser/chrome/" title="List all tips supported by chrome">
                 <img src="/assets/browsers/chrome.svg" alt=""> chrome
             </a>
+        </li><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>Have you ever had to test the same user scenario again and again while working on a fix or performance improvement?
-Sometimes you just have to click the same buttons and do the same actions every time you reload the page to test something. And this can be very time consuming and frustrating.</p>
-<p>Chrome has a very handy <strong>Recorder</strong> panel to help with this. This panel lets you record any user flow once and then replay this flow as many times as you want.</p>
+    <p>Sometimes, you need to repeatedly test the same user scenario on a website. This can happen when working on a fix or a performance improvement. Testing the same user scenario over and over again requires clicking the same buttons and do the same actions every time you reload the page. This can quickly become time consuming and frustrating.</p>
+<p>To automate this process, you can use the <strong>Recorder</strong> tool in Chrome or Edge. The <strong>Recorder</strong> tool allows you to record any user flow once, and then replay the flow as many times as you want.</p>
 <p>To record a new flow:</p>
 <ul>
-<li>Open the <strong>Recorder</strong> panel by going to <strong>More options</strong> &gt; <strong>More tools</strong> &gt; <strong>Recorder</strong> (or using the <a href="/tips/en/execute-commands">command menu</a> to open it from the keyboard).</li>
-<li>Click <strong>Start new recording</strong>, give your recording a name, and click the record button to start.</li>
-<li>Use the page as normal, clicking on buttons, using form controls, navigating to other pages, etc.</li>
-<li>When you're done with the user flow you want to record, click <strong>End recording</strong>.</li>
-</ul>
-<p>From that point on, the recording will be available in the <strong>Recorder</strong> panel and you can simply replay it any time you want:</p>
+<li>
+<p>Open the <strong>Recorder</strong> tool:</p>
 <ul>
-<li>Find your recording in the panel's initial screen, or from the dropdown located in the panel's toolbar.</li>
-<li>Click the <strong>Play recording</strong> button.</li>
+<li>In Chrome, the <strong>Recorder</strong> tab is already available in the main toolbar. If you don't see it, click <strong>More tabs</strong> (<code>&gt;&gt;</code>) &gt; <strong>Recorder</strong>.</li>
+<li>In Edge, click <strong>More tools</strong> (<code>+</code>) in the Activity Bar, then <strong>Recorder</strong>.</li>
 </ul>
-<p><img src="/assets/img/record-replay.gif" alt="Animation of the Recorder panel automatically replaying a set of recorded steps."></p>
-<p>You can learn a lot more about this panel (including how to edit a recording and how to use it to test performance improvements) in <a href="https://developer.chrome.com/docs/devtools/recorder/">the Recorder documentation</a>.</p>
+</li>
+<li>
+<p>Click <strong>Create a new recording</strong>.</p>
+</li>
+<li>
+<p>Enter a name for your recording.</p>
+</li>
+<li>
+<p>Click <strong>Start recording</strong>.</p>
+</li>
+<li>
+<p>Use the page as normal, for example click on buttons, use form controls, navigate to other pages.</p>
+</li>
+<li>
+<p>When you're done with the user flow you want to record, click <strong>End recording</strong>.</p>
+</li>
+</ul>
+<p>Your recording is now available in the <strong>Recorder</strong> tool. To replay your recording, click <strong>Replay</strong>.</p>
+<p>If you close and then reopen DevTools, your recording will still be available in the <strong>Recorder</strong> tool. To replay it:</p>
+<ul>
+<li>Find your recording in the tool's initial screen, or from the dropdown located in the tool's toolbar.</li>
+<li>Click <strong>Replay</strong>.</li>
+</ul>
+<p><img src="/assets/img/record-replay.png" alt="Animation of the Recorder panel automatically replaying a set of recorded steps."></p>
+<p>To learn more about the <strong>Recorder</strong> tool (including how to edit a recording and how to use it to test performance improvements), see <a href="https://developer.chrome.com/docs/devtools/recorder/">Record, replay, and measure user flows</a>.</p>
 
 </div><div class="see-also">
     <h2>See also</h2>
     <ul><li>
-            <a href="/tips/en/track-focused-element">Detect the element with focus at any time</a>
-            <a href="/tips/en/track-focused-element" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/track-focused-element.gif" alt="Animation showing a web page with focus going through different element, and the Edge Console panel with the live expression showing a preview of the focused element.">
-            </a>
-        </li><li>
-            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
-            <a href="/tips/en/copy-element-styles" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
+            <a href="/tips/en/check-bfcache-readiness">Check if your site can be instantly reloaded from bfcache</a>
+            <a href="/tips/en/check-bfcache-readiness" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/check-bfcache-readiness.png" alt="Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can&#39;t be cached.">
             </a>
         </li><li>
             <a href="/tips/en/detect-low-color-contrast">Detect low color contrast issues</a>
@@ -158,9 +175,14 @@ Sometimes you just have to click the same buttons and do the same actions every 
                 <img loading="lazy" src="/assets/img/detect-low-color-contrast-css-overview.png" alt="The CSS Overview panel in Chrome, showing the color contrast issues section.">
             </a>
         </li><li>
-            <a href="/tips/en/disable-event-listeners">Remove or disable event listeners</a>
-            <a href="/tips/en/disable-event-listeners" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/disable-event-listeners-firefox.png" alt="The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.">
+            <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
+            <a href="/tips/en/emulate-color-schemes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
+            </a>
+        </li><li>
+            <a href="/tips/en/simulate-pseudo-classes">Simulate pseudo CSS classes</a>
+            <a href="/tips/en/simulate-pseudo-classes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/simulate-pseudo-classes.png" alt="The :hov button and the pseudo-class panel in Chrome DevTools">
             </a>
         </li></ul>
 </div><div class="tip-footer">

@@ -20,15 +20,15 @@
 &lt;p&gt;If you are a web developer, though, and you want to use the DevTools in Safari, here&#39;s how to enable the option:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Go to Safari&#39;s Preferences.&lt;/p&gt;
+&lt;p&gt;Go to Safari&#39;s &lt;strong&gt;Settings&lt;/strong&gt; or press &lt;code&gt;Cmd+,&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Go to the Advanced tab.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Check the &lt;strong&gt;Show Develop menu in menu bar&lt;/strong&gt; option.&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;Develop&lt;/strong&gt; menu will now be available in the menu bar. Use this menu to open DevTools and access other developer-related features.&lt;/p&gt;
-&lt;p&gt;The right-click &amp;gt; &lt;strong&gt;Inspect&lt;/strong&gt; option will also now be available.&lt;/p&gt;
+&lt;p&gt;Check the &lt;strong&gt;Show features for web developers&lt;/strong&gt; option.&lt;/p&gt;
+&lt;p&gt;This will add the &lt;strong&gt;Develop&lt;/strong&gt; menu in the menu bar and the &lt;strong&gt;Develop&lt;/strong&gt; tab in Settings. Use this menu to open DevTools and access other developer-related features.&lt;/p&gt;
+&lt;p&gt;The right-click &amp;gt; &lt;strong&gt;Inspect Element&lt;/strong&gt; option will also now be available.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/enable-safari-devtools.png&quot; alt=&quot;Safari&#39;s Preferences, the Advanced tab shows the Show Developer menu in menu bar option&quot; /&gt;&lt;/p&gt;
@@ -2519,23 +2519,41 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <link href="https://devtoolstips.org/tips/en/record-replay/"/>
     <updated>2022-02-02T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/record-replay/</id>
-    <content type="html">&lt;p&gt;Have you ever had to test the same user scenario again and again while working on a fix or performance improvement?
-Sometimes you just have to click the same buttons and do the same actions every time you reload the page to test something. And this can be very time consuming and frustrating.&lt;/p&gt;
-&lt;p&gt;Chrome has a very handy &lt;strong&gt;Recorder&lt;/strong&gt; panel to help with this. This panel lets you record any user flow once and then replay this flow as many times as you want.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Sometimes, you need to repeatedly test the same user scenario on a website. This can happen when working on a fix or a performance improvement. Testing the same user scenario over and over again requires clicking the same buttons and do the same actions every time you reload the page. This can quickly become time consuming and frustrating.&lt;/p&gt;
+&lt;p&gt;To automate this process, you can use the &lt;strong&gt;Recorder&lt;/strong&gt; tool in Chrome or Edge. The &lt;strong&gt;Recorder&lt;/strong&gt; tool allows you to record any user flow once, and then replay the flow as many times as you want.&lt;/p&gt;
 &lt;p&gt;To record a new flow:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Open the &lt;strong&gt;Recorder&lt;/strong&gt; panel by going to &lt;strong&gt;More options&lt;/strong&gt; &amp;gt; &lt;strong&gt;More tools&lt;/strong&gt; &amp;gt; &lt;strong&gt;Recorder&lt;/strong&gt; (or using the &lt;a href=&quot;https://devtoolstips.org/tips/en/record-replay/execute-commands.md&quot;&gt;command menu&lt;/a&gt; to open it from the keyboard).&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;Start new recording&lt;/strong&gt;, give your recording a name, and click the record button to start.&lt;/li&gt;
-&lt;li&gt;Use the page as normal, clicking on buttons, using form controls, navigating to other pages, etc.&lt;/li&gt;
-&lt;li&gt;When you&#39;re done with the user flow you want to record, click &lt;strong&gt;End recording&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;From that point on, the recording will be available in the &lt;strong&gt;Recorder&lt;/strong&gt; panel and you can simply replay it any time you want:&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;strong&gt;Recorder&lt;/strong&gt; tool:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Find your recording in the panel&#39;s initial screen, or from the dropdown located in the panel&#39;s toolbar.&lt;/li&gt;
-&lt;li&gt;Click the &lt;strong&gt;Play recording&lt;/strong&gt; button.&lt;/li&gt;
+&lt;li&gt;In Chrome, the &lt;strong&gt;Recorder&lt;/strong&gt; tab is already available in the main toolbar. If you don&#39;t see it, click &lt;strong&gt;More tabs&lt;/strong&gt; (&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;) &amp;gt; &lt;strong&gt;Recorder&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;In Edge, click &lt;strong&gt;More tools&lt;/strong&gt; (&lt;code&gt;+&lt;/code&gt;) in the Activity Bar, then &lt;strong&gt;Recorder&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/record-replay.gif&quot; alt=&quot;Animation of the Recorder panel automatically replaying a set of recorded steps.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;You can learn a lot more about this panel (including how to edit a recording and how to use it to test performance improvements) in &lt;a href=&quot;https://developer.chrome.com/docs/devtools/recorder/&quot;&gt;the Recorder documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Create a new recording&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter a name for your recording.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Start recording&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the page as normal, for example click on buttons, use form controls, navigate to other pages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When you&#39;re done with the user flow you want to record, click &lt;strong&gt;End recording&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Your recording is now available in the &lt;strong&gt;Recorder&lt;/strong&gt; tool. To replay your recording, click &lt;strong&gt;Replay&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If you close and then reopen DevTools, your recording will still be available in the &lt;strong&gt;Recorder&lt;/strong&gt; tool. To replay it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find your recording in the tool&#39;s initial screen, or from the dropdown located in the tool&#39;s toolbar.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Replay&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/record-replay.png&quot; alt=&quot;Animation of the Recorder panel automatically replaying a set of recorded steps.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;To learn more about the &lt;strong&gt;Recorder&lt;/strong&gt; tool (including how to edit a recording and how to use it to test performance improvements), see &lt;a href=&quot;https://developer.chrome.com/docs/devtools/recorder/&quot;&gt;Record, replay, and measure user flows&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
