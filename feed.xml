@@ -5,11 +5,31 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2023-12-22T00:00:00.000Z</updated>
+  <updated>2024-01-05T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Explain console errors by using artificial intelligence</title>
+    <link href="https://devtoolstips.org/tips/en/explain-errors-with-ai/"/>
+    <updated>2024-01-05T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/explain-errors-with-ai/</id>
+    <content type="html">&lt;p&gt;Edge DevTools lets use the Microsoft Copilot AI assistant to explain errors and warnings in the &lt;strong&gt;Console&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;p&gt;Console errors can sometimes be hard to understand and fix. The large language models that power modern AI assistants such as Microsoft Copilot are trained on so much data that they are sometimes able to reason about errors and provide helpful explanations.&lt;/p&gt;
+&lt;p&gt;The Console in Edge DevTools is now linked to the Copilot AI assistant sidebar in Edge. To explain an error in Edge DevTools:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make sure you have the Copilot icon displayed in the top-right corner of Microsoft Edge. If not, go to &lt;strong&gt;Settings and more&lt;/strong&gt; (...) &amp;gt; &lt;strong&gt;Settings&lt;/strong&gt; &amp;gt; &lt;strong&gt;Sidebar&lt;/strong&gt; &amp;gt; &lt;strong&gt;Copilot&lt;/strong&gt; to enable it.&lt;/li&gt;
+&lt;li&gt;Make sure you&#39;re sign-in to Microsoft Edge with your personal Microsoft account.&lt;/li&gt;
+&lt;li&gt;Find the error you&#39;re interested in in the &lt;strong&gt;Console&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;ask Copilot: &amp;quot;Explain this error&amp;quot;&lt;/strong&gt; button next to the error message.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The Copilot sidebar appears, your message is sent to the AI assistant, and you get a response that, hopefully, helps you understand the error.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/explain-errors-with-ai.png&quot; alt=&quot;Edge with DevTools opened, an error was clicked, and Copilot is in the Edge sidebar, showing the error message and the explanation&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;To learn more, see &lt;a href=&quot;https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/copilot-explain&quot;&gt;Explain DevTools Console errors and source code using Copilot in Edge&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Enable DevTools in Safari</title>

@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Move panels to re-arrange them</title>
+    <title>Explain console errors by using artificial intelligence</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/move-panels/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/explain-errors-with-ai/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="Move panels to re-arrange them">
+    <meta property="og:description" content="Explain console errors by using artificial intelligence">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-move-panels">
+    <main style="view-transition-name:post-explain-errors-with-ai">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -102,12 +102,16 @@
       </div>
       <div id="maincontent">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Move panels to re-arrange them</h1>
+<h1 class="tip-title">Explain console errors by using artificial intelligence</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-            <a href="/tag/personalization/" title="List all personalization tips">
-                personalization
+            <a href="/tag/console/" title="List all console tips">
+                console
+            </a>
+        </li><li class="tag">
+            <a href="/tag/help/" title="List all help tips">
+                help
             </a>
         </li></ul>
     Supported by:
@@ -115,42 +119,30 @@
             <a href="/browser/edge/" title="List all tips supported by edge">
                 <img src="/assets/browsers/edge.svg" alt=""> edge
             </a>
-        </li><li class="browser">
-            <a href="/browser/chrome/" title="List all tips supported by chrome">
-                <img src="/assets/browsers/chrome.svg" alt=""> chrome
-            </a>
-        </li><li class="browser">
-            <a href="/browser/firefox/" title="List all tips supported by firefox">
-                <img src="/assets/browsers/firefox.svg" alt=""> firefox
-            </a>
-        </li><li class="browser">
-            <a href="/browser/safari/" title="List all tips supported by safari">
-                <img src="/assets/browsers/safari.svg" alt=""> safari
-            </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>Moving panels around the user interface can be very useful to make DevTools more unique to you and adapted to your needs.</p>
-<p>There are 2 ways that you can re-arrange panels in DevTools today: dragging them horizontally in the toolbar, to re-order them, and moving them between the top toolbar and the bottom (drawer) toolbar</p>
-<h2>To move tabs between the top and bottom areas (Edge only)</h2>
-<ul>
-<li>Right-click on any of the tabs.</li>
-<li>Select <strong>Move to Bottom</strong> or <strong>Move to Top</strong> depending on where the tab is.</li>
-</ul>
-<p>This only works in Edge at the moment is makes it super easy to see any 2 tools at once (more information about <a href="https://blogs.windows.com/msedgedev/2021/09/14/edge-devtools-93-personalization/">Edge personalization features</a>).</p>
-<p><img src="/assets/img/move-panels-1.gif" alt="Animation in Edge DevTools showing the move to top/bottom menus."></p>
-<h2>To re-order panels by dragging (Chrome, Edge, Firefox, Safari)</h2>
-<ul>
-<li>Click and hold any of the tabs in the toolbar.</li>
-<li>Move the tab horizontally, left or right, until the desired location is reached.</li>
-<li>Release the mouse button. The new order will be persisted every time you open DevTools.</li>
-</ul>
-<p>If you use some tools more than others, this can be used to group them at the start of the toolbar for example.</p>
-<p><img src="/assets/img/move-panels-2.gif" alt="Animation in Firefox DevTools showing how to move panels in the toolbar."></p>
+    <p>Edge DevTools lets use the Microsoft Copilot AI assistant to explain errors and warnings in the <strong>Console</strong> tool.</p>
+<p>Console errors can sometimes be hard to understand and fix. The large language models that power modern AI assistants such as Microsoft Copilot are trained on so much data that they are sometimes able to reason about errors and provide helpful explanations.</p>
+<p>The Console in Edge DevTools is now linked to the Copilot AI assistant sidebar in Edge. To explain an error in Edge DevTools:</p>
+<ol>
+<li>Make sure you have the Copilot icon displayed in the top-right corner of Microsoft Edge. If not, go to <strong>Settings and more</strong> (...) &gt; <strong>Settings</strong> &gt; <strong>Sidebar</strong> &gt; <strong>Copilot</strong> to enable it.</li>
+<li>Make sure you're sign-in to Microsoft Edge with your personal Microsoft account.</li>
+<li>Find the error you're interested in in the <strong>Console</strong> tool.</li>
+<li>Click the <strong>ask Copilot: &quot;Explain this error&quot;</strong> button next to the error message.</li>
+</ol>
+<p>The Copilot sidebar appears, your message is sent to the AI assistant, and you get a response that, hopefully, helps you understand the error.</p>
+<p><img src="/assets/img/explain-errors-with-ai.png" alt="Edge with DevTools opened, an error was clicked, and Copilot is in the Edge sidebar, showing the error message and the explanation"></p>
+<p>To learn more, see <a href="https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/copilot-explain">Explain DevTools Console errors and source code using Copilot in Edge</a>.</p>
 
 </div><div class="see-also">
     <h2>See also</h2>
     <ul><li>
+            <a href="/tips/en/spot-out-of-viewport-elements">Quickly spot out-of-viewport elements</a>
+            <a href="/tips/en/spot-out-of-viewport-elements" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/spot-out-of-viewport-elements.png" alt="Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.">
+            </a>
+        </li><li>
             <a href="/tips/en/block-devtools">Block DevTools</a>
             <a href="/tips/en/block-devtools" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/block-devtools.png" alt="Disabling F12 in Firefox&#39;s about:config page">
@@ -161,19 +153,14 @@
                 <img loading="lazy" src="/assets/img/customize-keyboard-shortcuts.png" alt="The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.">
             </a>
         </li><li>
-            <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
-            <a href="/tips/en/emulate-color-schemes" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
-            </a>
-        </li><li>
-            <a href="/tips/en/explain-errors-with-ai">Explain console errors by using artificial intelligence</a>
-            <a href="/tips/en/explain-errors-with-ai" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/explain-errors-with-ai.png" alt="Edge with DevTools opened, an error was clicked, and Copilot is in the Edge sidebar, showing the error message and the explanation">
+            <a href="/tips/en/extend-devtools">Install or create extensions to customize DevTools</a>
+            <a href="/tips/en/extend-devtools" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/extend-devtools.png" alt="Microsoft Edge, with DevTools opened, showing a custom panel.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2021-11-15T00:00:00.000Z">11/15/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/move-panels.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-01-05T00:00:00.000Z">1/5/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/explain-errors-with-ai.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 

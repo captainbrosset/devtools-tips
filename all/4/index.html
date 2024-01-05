@@ -101,8 +101,42 @@
         </div>
       </div>
       <div id="maincontent">
-        <h1>164 DevTools Tips</h1>
+        <h1>165 DevTools Tips</h1>
 <ul class="tips">
+<li class="hover-box tip " style="view-transition-name:post-download-all-images;">
+  <a href="/tips/en/download-all-images/" class="tip-title">Download all images from the page</a>
+  <a href="/tips/en/download-all-images/" class="tip-image"><img src="../../assets/img/download-all-images.png" alt="The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded" loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    If you want to download all of the images on a webpage in one go, you can use the following few lines of JavaScript code to do it:
+$$('img').forEach(async (img) => { try { const src = img.src;...
+    <a href="/tips/en/download-all-images/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
+  </div>
+</li>
+
 <li class="hover-box tip " style="view-transition-name:post-edit-and-resend-network-requests;">
   <a href="/tips/en/edit-and-resend-network-requests/" class="tip-title">Edit and resend faulty network requests to debug them</a>
   <a href="/tips/en/edit-and-resend-network-requests/" class="tip-image"><img src="../../assets/img/edit-and-resend-network-requests-curl.png" alt="Chrome DevTools' Copy as cURL feature and the corresponding command in the terminal" loading="lazy"></img></a>
@@ -863,32 +897,6 @@ Go...
     Categories:
     <ul class="tags"><li class="tag">
         <a href="/tag/css/" title="List all css tips">css</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-hide-extension-resources;">
-  <a href="/tips/en/hide-extension-resources/" class="tip-title">Hide resources loaded by extensions in the Network panel</a>
-  <a href="/tips/en/hide-extension-resources/" class="tip-image"><img src="../../assets/img/hide-extension-resources.jpg" alt="The Network panel in Chrome DevTools showing the pattern used in the filter input box." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    If you want to hide scripts and other resources loaded by browser extensions in the Network panel, use the -scheme:chrome-extension pattern in the filter input box.
-Credits go to Sunil for his post on...
-    <a href="/tips/en/hide-extension-resources/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/network/" title="List all network tips">network</a>
       </li></ul>
     Supported by:
     <ul class="browsers"><li class="browser">
