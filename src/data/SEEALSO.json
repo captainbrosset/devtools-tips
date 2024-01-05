@@ -1737,6 +1737,40 @@
       "link": "/tips/en/get-detached-elements"
     }
   ],
+  "explain-errors-with-ai.md": [
+    {
+      "title": "Quickly spot out-of-viewport elements",
+      "image": {
+        "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
+        "src": "../../assets/img/spot-out-of-viewport-elements.png"
+      },
+      "link": "/tips/en/spot-out-of-viewport-elements"
+    },
+    {
+      "title": "Block DevTools",
+      "image": {
+        "alt": "Disabling F12 in Firefox's about:config page",
+        "src": "../../assets/img/block-devtools.png"
+      },
+      "link": "/tips/en/block-devtools"
+    },
+    {
+      "title": "Customize keyboard shortcuts",
+      "image": {
+        "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
+        "src": "../../assets/img/customize-keyboard-shortcuts.png"
+      },
+      "link": "/tips/en/customize-keyboard-shortcuts"
+    },
+    {
+      "title": "Install or create extensions to customize DevTools",
+      "image": {
+        "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
+        "src": "../../assets/img/extend-devtools.png"
+      },
+      "link": "/tips/en/extend-devtools"
+    }
+  ],
   "extend-devtools.md": [
     {
       "title": "Create your own DevTools theme",
@@ -3010,12 +3044,12 @@
       "link": "/tips/en/emulate-color-schemes"
     },
     {
-      "title": "Install or create extensions to customize DevTools",
+      "title": "Explain console errors by using artificial intelligence",
       "image": {
-        "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
-        "src": "../../assets/img/extend-devtools.png"
+        "alt": "Edge with DevTools opened, an error was clicked, and Copilot is in the Edge sidebar, showing the error message and the explanation",
+        "src": "../../assets/img/explain-errors-with-ai.png"
       },
-      "link": "/tips/en/extend-devtools"
+      "link": "/tips/en/explain-errors-with-ai"
     }
   ],
   "multi-line-console.md": [
@@ -4027,12 +4061,12 @@
       "link": "/tips/en/remove-annoying-overlays"
     },
     {
-      "title": "Find all elements with a specific style",
+      "title": "Explain console errors by using artificial intelligence",
       "image": {
-        "alt": "The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right",
-        "src": "../../assets/img/find-all-elements-with-style.png"
+        "alt": "Edge with DevTools opened, an error was clicked, and Copilot is in the Edge sidebar, showing the error message and the explanation",
+        "src": "../../assets/img/explain-errors-with-ai.png"
       },
-      "link": "/tips/en/find-all-elements-with-style"
+      "link": "/tips/en/explain-errors-with-ai"
     }
   ],
   "store-node-as-variable.md": [
