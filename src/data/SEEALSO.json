@@ -431,12 +431,12 @@
       "link": "/tips/en/drag-drop-dom-nodes"
     },
     {
-      "title": "Take a screenshot of a single node",
+      "title": "Inspect the user-agent DOM",
       "image": {
-        "alt": "Animation showing taking a node screenshot in Firefox.",
-        "src": "../../assets/img/node-screenshot.gif"
+        "alt": "The Elements tool in Chrome, an input type=range is expanded, showing it's internal user-agent shadow dom",
+        "src": "../../assets/img/inspect-user-agent-dom.png"
       },
-      "link": "/tips/en/node-screenshot"
+      "link": "/tips/en/inspect-user-agent-dom"
     }
   ],
   "copy-element-styles.md": [
@@ -1241,6 +1241,14 @@
   ],
   "drag-drop-dom-nodes.md": [
     {
+      "title": "Inspect the user-agent DOM",
+      "image": {
+        "alt": "The Elements tool in Chrome, an input type=range is expanded, showing it's internal user-agent shadow dom",
+        "src": "../../assets/img/inspect-user-agent-dom.png"
+      },
+      "link": "/tips/en/inspect-user-agent-dom"
+    },
+    {
       "title": "Copy an element's JavaScript path",
       "image": {
         "alt": "The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.",
@@ -1263,14 +1271,6 @@
         "src": "../../assets/img/expand-nodes-recursively.gif"
       },
       "link": "/tips/en/expand-nodes-recursively"
-    },
-    {
-      "title": "Get detached DOM elements to investigate memory leaks",
-      "image": {
-        "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
-        "src": "../../assets/img/get-detached-elements.png"
-      },
-      "link": "/tips/en/get-detached-elements"
     }
   ],
   "edit-and-resend-network-requests.md": [
@@ -1735,6 +1735,14 @@
         "src": "../../assets/img/get-detached-elements.png"
       },
       "link": "/tips/en/get-detached-elements"
+    },
+    {
+      "title": "Inspect the user-agent DOM",
+      "image": {
+        "alt": "The Elements tool in Chrome, an input type=range is expanded, showing it's internal user-agent shadow dom",
+        "src": "../../assets/img/inspect-user-agent-dom.png"
+      },
+      "link": "/tips/en/inspect-user-agent-dom"
     }
   ],
   "explain-errors-with-ai.md": [
@@ -2766,6 +2774,40 @@
         "src": "../../assets/img/debug-popups-on-hover.png"
       },
       "link": "/tips/en/debug-popups-on-hover"
+    }
+  ],
+  "inspect-user-agent-dom.md": [
+    {
+      "title": "Drag and drop nodes in the DOM tree",
+      "image": {
+        "alt": "Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge.",
+        "src": "../../assets/img/drag-drop-dom-nodes.gif"
+      },
+      "link": "/tips/en/drag-drop-dom-nodes"
+    },
+    {
+      "title": "Inspect DevTools with DevTools",
+      "image": {
+        "alt": "Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one",
+        "src": "../../assets/img/inspect-devtools-with-devtools-chrome.png"
+      },
+      "link": "/tips/en/inspect-devtools-with-devtools"
+    },
+    {
+      "title": "Copy an element's JavaScript path",
+      "image": {
+        "alt": "The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.",
+        "src": "../../assets/img/copy-element-js-path.png"
+      },
+      "link": "/tips/en/copy-element-js-path"
+    },
+    {
+      "title": "Expand DOM nodes recursively",
+      "image": {
+        "alt": "Animation showing right-clicking on a node in Chrome's Elements panel and choosing \"expand recursively\".",
+        "src": "../../assets/img/expand-nodes-recursively.gif"
+      },
+      "link": "/tips/en/expand-nodes-recursively"
     }
   ],
   "jump-to-css-variable.md": [
