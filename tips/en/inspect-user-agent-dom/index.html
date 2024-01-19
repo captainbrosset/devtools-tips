@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webcomponents DevTools Tips</title>
+    <title>Inspect the user-agent DOM</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tag/webcomponents/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/inspect-user-agent-dom/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
+    <meta property="og:description" content="Inspect the user-agent DOM">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main >
+    <main style="view-transition-name:post-inspect-user-agent-dom">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -101,62 +101,93 @@
         </div>
       </div>
       <div id="maincontent">
-        <h1>2 Webcomponents tips</h1>
-<ul class="tips">
-<li class="hover-box tip " style="view-transition-name:post-inspect-user-agent-dom;">
-  <a href="/tips/en/inspect-user-agent-dom/" class="tip-title">Inspect the user-agent DOM</a>
-  <a href="/tips/en/inspect-user-agent-dom/" class="tip-image"><img src="../../assets/img/inspect-user-agent-dom.png" alt="The Elements tool in Chrome, an input type=range is expanded, showing it's internal user-agent shadow dom" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    Browsers often add elements to the DOM of your web pages on top of the ones you, yourself, defined. For example, when you create a &lt;video&gt; element, the browser creates a bunch of nested DOM node...
-    <a href="/tips/en/inspect-user-agent-dom/">Read more</a>
-  </div>
-  <div class="tip-info">
+        <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Inspect the user-agent DOM</h1>
+<div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-        <a href="/tag/html/" title="List all html tips">html</a>
-      </li><li class="tag">
-        <a href="/tag/webcomponents/" title="List all webcomponents tips">webcomponents</a>
-      </li></ul>
+            <a href="/tag/html/" title="List all html tips">
+                html
+            </a>
+        </li><li class="tag">
+            <a href="/tag/webcomponents/" title="List all webcomponents tips">
+                webcomponents
+            </a>
+        </li></ul>
     Supported by:
     <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li></ul>
-  </div>
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li></ul>
+</div>
+<div class="page-content tip-content" data-pagefind-body>
+    <p>Browsers often add elements to the DOM of your web pages on top of the ones you, yourself, defined. For example, when you create a <code>&lt;video&gt;</code> element, the browser creates a bunch of nested DOM nodes within it to display the controls, the progress bar, etc. When you use a <code>&lt;input type=&quot;range&quot;&gt;</code> element, the browser also creates a nested DOM nodes to display the track and the thumb.</p>
+<p>This is called the user-agent DOM. It's called like this because it's the DOM that the user-agent (or browser) creates for you. It's not part of the HTML code of your webpage, and it's also not visible to you in DevTools by default or accessible via JavaScript. It is useful, however, to know that it exists, and sometimes it can be useful to inspect it.</p>
+<p>For example, in Chromium-based browsers, you can style the thumb in an <code>&lt;input type=&quot;range&quot;&gt;</code> element using the <a href="https://developer.mozilla.org/docs/Web/CSS/::-webkit-slider-thumb"><code>::-webkit-slider-thumb</code></a> pseudo-element. But by default, you can't inspect the thumb in DevTools.</p>
+<p>To display user-agent DOM nodes in DevTools, and therefore inspect and style it:</p>
+<ul>
+<li>
+<p>In Firefox:</p>
+<ol>
+<li>Open a new tab and type <code>about:config</code> in the address bar.</li>
+<li>Search for <code>devtools.inspector.showAllAnonymousContent</code> and set it to <code>true</code>.</li>
+<li>Open DevTools, and open the <strong>Inspector</strong> tool.</li>
+<li>Select the element you want to inspect, for example an <code>&lt;input type=&quot;range&quot;&gt;</code> element.</li>
+<li>Expand the element to inspect the DOM nodes generated by the browser for this element.</li>
+</ol>
 </li>
-
-<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-find-custom-elements-code;">
-  <a href="/tips/en/find-custom-elements-code/" class="tip-title">Find your web component&#39;s custom element code</a>
-  <a href="/tips/en/find-custom-elements-code/" class="tip-image"><img src="../../assets/img/find-custom-elements-code.gif" alt="Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    In Firefox, when inspecting elements (in the Inspector panel), you can click on the custom badge to go straight to the custom element's JavaScript source code....
-    <a href="/tips/en/find-custom-elements-code/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/webcomponents/" title="List all webcomponents tips">webcomponents</a>
-      </li><li class="tag">
-        <a href="/tag/javascript/" title="List all javascript tips">javascript</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li></ul>
-  </div>
+<li>
+<p>In Chrome, Edge, or other Chromium-based browsers:</p>
+<ol>
+<li>Open DevTools.</li>
+<li>Go to the <strong>Settings</strong> by pressing <kbd>F1</kbd>.</li>
+<li>Find the <strong>Show user agent shadow DOM</strong> checkbox and select it.</li>
+<li>Close the <strong>Settings</strong>.</li>
+<li>Open the <strong>Elements</strong> tool.</li>
+<li>Select the element you want to inspect, for example an <code>&lt;input type=&quot;range&quot;&gt;</code> element.</li>
+<li>Expand the element to inspect the DOM nodes generated by the browser for this element.</li>
+</ol>
 </li>
 </ul>
+<p><img src="/assets/img/inspect-user-agent-dom.png" alt="The Elements tool in Chrome, an input type=range is expanded, showing it's internal user-agent shadow dom"></p>
+
+</div><div class="see-also">
+    <h2>See also</h2>
+    <ul><li>
+            <a href="/tips/en/drag-drop-dom-nodes">Drag and drop nodes in the DOM tree</a>
+            <a href="/tips/en/drag-drop-dom-nodes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/drag-drop-dom-nodes.gif" alt="Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge.">
+            </a>
+        </li><li>
+            <a href="/tips/en/inspect-devtools-with-devtools">Inspect DevTools with DevTools</a>
+            <a href="/tips/en/inspect-devtools-with-devtools" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/inspect-devtools-with-devtools-chrome.png" alt="Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one">
+            </a>
+        </li><li>
+            <a href="/tips/en/copy-element-js-path">Copy an element&#39;s JavaScript path</a>
+            <a href="/tips/en/copy-element-js-path" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-element-js-path.png" alt="The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.">
+            </a>
+        </li><li>
+            <a href="/tips/en/expand-nodes-recursively">Expand DOM nodes recursively</a>
+            <a href="/tips/en/expand-nodes-recursively" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/expand-nodes-recursively.gif" alt="Animation showing right-clicking on a node in Chrome&#39;s Elements panel and choosing &quot;expand recursively&quot;.">
+            </a>
+        </li></ul>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2024-01-19T00:00:00.000Z">1/19/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/inspect-user-agent-dom.md">Edit this page</a></p>
+</div>
+<script async src="/assets/dialog-lightbox.js"></script>
 
       </div>
     </main>
