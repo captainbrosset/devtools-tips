@@ -38,3 +38,5 @@ To display user-agent DOM nodes in DevTools, and therefore inspect and style it:
   1. User-agent DOM is available as part of the DOM by default without needing to enable any additional setting.
   2. To inspect, expand the element, for example an `<input type="range">` element.
   3. User-agent DOM is visible under the **Shadow Content (User Agent)** section.
+
+![The Inspector tool in Safari, an input type=range is expanded, showing it's internal user-agent shadow dom](../../assets/img/inspect-user-agent-dom-safari.png)
