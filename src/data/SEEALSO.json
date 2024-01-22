@@ -695,12 +695,12 @@
       "link": "/tips/en/copy-element-styles"
     },
     {
-      "title": "Find DOM elements from the console",
+      "title": "Inspect the user-agent DOM",
       "image": {
-        "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
-        "src": "../../assets/img/query-dom-from-console.png"
+        "alt": "The Elements tool in Chrome, an input type=range is expanded, showing it's internal user-agent shadow dom",
+        "src": "../../assets/img/inspect-user-agent-dom.png"
       },
-      "link": "/tips/en/query-dom-from-console"
+      "link": "/tips/en/inspect-user-agent-dom"
     }
   ],
   "customize-keyboard-shortcuts.md": [
@@ -2802,12 +2802,12 @@
       "link": "/tips/en/copy-element-js-path"
     },
     {
-      "title": "Expand DOM nodes recursively",
+      "title": "Customize the columns shown in console.table",
       "image": {
-        "alt": "Animation showing right-clicking on a node in Chrome's Elements panel and choosing \"expand recursively\".",
-        "src": "../../assets/img/expand-nodes-recursively.gif"
+        "alt": "Example of a console.table output in Chrome DevTools showing a lot of columns, making it hard to read each column header",
+        "src": "../../assets/img/customize-console-table-columns.png"
       },
-      "link": "/tips/en/expand-nodes-recursively"
+      "link": "/tips/en/customize-console-table-columns"
     }
   ],
   "jump-to-css-variable.md": [
