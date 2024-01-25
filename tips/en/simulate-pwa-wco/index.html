@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apps DevTools Tips</title>
+    <title>Simulate the Window Controls Overlay feature for PWA</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tag/apps/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/simulate-pwa-wco/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
+    <meta property="og:description" content="Simulate the Window Controls Overlay feature for PWA">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main >
+    <main style="view-transition-name:post-simulate-pwa-wco">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -101,110 +101,51 @@
         </div>
       </div>
       <div id="maincontent">
-        <h1>4 Apps tips</h1>
-<ul class="tips">
-<li class="hover-box tip " style="view-transition-name:post-simulate-pwa-wco;">
-  <a href="/tips/en/simulate-pwa-wco/" class="tip-title">Simulate the Window Controls Overlay feature for PWA</a>
-  <a href="/tips/en/simulate-pwa-wco/" class="tip-image"><img src="../../assets/img/simulate-pwa-wco.png" alt="Edge, DevTools is opened, the Application tool shows the WCO section, and the WCO overlay is simulated in the page" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    If you're building a desktop PWA, you might want to use the Window Controls Overlay (WCO) feature to make your app look more native. With WCO, you gain control over the entire surface area of the inst...
-    <a href="/tips/en/simulate-pwa-wco/">Read more</a>
-  </div>
-  <div class="tip-info">
+        <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Simulate the Window Controls Overlay feature for PWA</h1>
+<div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-        <a href="/tag/css/" title="List all css tips">css</a>
-      </li><li class="tag">
-        <a href="/tag/apps/" title="List all apps tips">apps</a>
-      </li></ul>
+            <a href="/tag/css/" title="List all css tips">
+                css
+            </a>
+        </li><li class="tag">
+            <a href="/tag/apps/" title="List all apps tips">
+                apps
+            </a>
+        </li></ul>
     Supported by:
     <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li></ul>
-  </div>
-</li>
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li></ul>
+</div>
+<div class="page-content tip-content" data-pagefind-body>
+    <p>If you're building a desktop PWA, you might want to use the <a href="https://developer.mozilla.org/docs/Web/API/Window_Controls_Overlay_API">Window Controls Overlay</a> (WCO) feature to make your app look more native. With WCO, you gain control over the entire surface area of the installed app window, and can display your own title bar.</p>
+<p>The only difficulty is testing the feature. To test your new title bar when using WCO, you actually need to install the app on your device first, but also test what the app looks like on all operating systems (macOS, Windows, Linux) because the title bar will look different on each.</p>
+<p>The <strong>Application</strong> tool in both Chrome and Edge let you simulate the WCO feature so that you don't have to leave the comfort of your browser and can test what your app will look like when installed on any OS.</p>
+<p>To simulate WCO:</p>
+<ol>
+<li>Open the PWA where you're using the WCO feature in Chrome or Edge.</li>
+<li>Open DevTools and go to the <strong>Application</strong> tool.</li>
+<li>Select the <strong>Manifest</strong> tab in the sidebar.</li>
+<li>Scroll down to the <strong>Window Controls Overlay</strong> section, at the bottom of the panel.</li>
+<li>Select the <strong>Emulate the Window Controls Overlay</strong> checkbox.</li>
+<li>Select the operating system you want to simulate.</li>
+</ol>
+<p>The OS-specific window controls will appear in the webpage, and your CSS code will work as if the <code>env(titlebar-area-*)</code> environment variables were set. To learn more about the CSS environment variables you can use with WCO, see <a href="https://developer.mozilla.org/docs/Web/CSS/env#using_env_to_ensure_content_is_not_obscured_by_window_control_buttons_in_desktop_pwas">Using env() to ensure content is not obscured by window control buttons in desktop PWAs</a> on MDN.</p>
+<p><img src="/assets/img/simulate-pwa-wco.png" alt="Edge, DevTools is opened, the Application tool shows the WCO section, and the WCO overlay is simulated in the page"></p>
 
-<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-debug-safari-mac-webapps;">
-  <a href="/tips/en/debug-safari-mac-webapps/" class="tip-title">Debug your Safari Web Apps on macOS</a>
-  <a href="/tips/en/debug-safari-mac-webapps/" class="tip-image"><img src="../../assets/img/debug-safari-mac-webapps.png" alt="The Develop menu in the Safari menu bar, showing different devices and debugging targets" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    Starting with Safari 17 (announced at WWDC 2023) any website you use in Safari can be installed as a Web App on macOS. Once installed, the Web App shows up like any other app on macOS, in all of the s...
-    <a href="/tips/en/debug-safari-mac-webapps/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/apps/" title="List all apps tips">apps</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/safari/" title="List all tips supported by safari">
-          <img src="/assets/browsers/safari.svg" alt=""> safari
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-test-pwa-protocol-handlers;">
-  <a href="/tips/en/test-pwa-protocol-handlers/" class="tip-title">Test your PWA protocol handlers</a>
-  <a href="/tips/en/test-pwa-protocol-handlers/" class="tip-image"><img src="../../assets/img/test-pwa-protocol-handlers.png" alt="Microsoft Edge, with the Application tool opened on the side, showing the Protocol Handlers section." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    Progressive Web Apps (PWA) can register themselves to handle URIs with pre-defined or custom protocols (such as mailto, geo, or web+foo). This is a great capability that makes it possible for installe...
-    <a href="/tips/en/test-pwa-protocol-handlers/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/testing/" title="List all testing tips">testing</a>
-      </li><li class="tag">
-        <a href="/tag/apps/" title="List all apps tips">apps</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-force-pwa-periodic-sync;">
-  <a href="/tips/en/force-pwa-periodic-sync/" class="tip-title">Force PWA periodic background syncs</a>
-  <a href="/tips/en/force-pwa-periodic-sync/" class="tip-image"><img src="../../assets/img/force-pwa-periodic-sync.png" alt="The Application panel in Edge showing the periodic sync input and buttons." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    The periodic background sync API, available to PWAs is a great way to fetch new content while the user isn't on the site, and while they have access to the network, to make sure they have the latest c...
-    <a href="/tips/en/force-pwa-periodic-sync/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/network/" title="List all network tips">network</a>
-      </li><li class="tag">
-        <a href="/tag/apps/" title="List all apps tips">apps</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li></ul>
-  </div>
-</li>
-</ul>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2024-01-25T00:00:00.000Z">1/25/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/simulate-pwa-wco.md">Edit this page</a></p>
+</div>
+<script async src="/assets/dialog-lightbox.js"></script>
 
       </div>
     </main>
