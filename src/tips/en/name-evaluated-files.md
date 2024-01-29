@@ -2,7 +2,7 @@
 date: 2024-01-29
 authors: Patrick Brosset
 title: Name evaluated files with the sourceURL pragma
-tags: ["tip", "JavaScript", "debug", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "javascript", "debug", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
 ---
 
 If you insert JavaScript code dynamically in your webpage, for example by using the `eval()` function, you can use the `sourceURL` pragma to give them a name in DevTools.
