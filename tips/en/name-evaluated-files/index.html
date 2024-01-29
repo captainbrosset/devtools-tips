@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detect unused CSS and JavaScript code</title>
+    <title>Name evaluated files with the sourceURL pragma</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/detect-unused-code/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/name-evaluated-files/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="Detect unused CSS and JavaScript code">
+    <meta property="og:description" content="Name evaluated files with the sourceURL pragma">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-detect-unused-code">
+    <main style="view-transition-name:post-name-evaluated-files">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -102,20 +102,16 @@
       </div>
       <div id="maincontent">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Detect unused CSS and JavaScript code</h1>
+<h1 class="tip-title">Name evaluated files with the sourceURL pragma</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-            <a href="/tag/perf/" title="List all perf tips">
-                perf
-            </a>
-        </li><li class="tag">
-            <a href="/tag/css/" title="List all css tips">
-                css
-            </a>
-        </li><li class="tag">
             <a href="/tag/javascript/" title="List all javascript tips">
                 javascript
+            </a>
+        </li><li class="tag">
+            <a href="/tag/debug/" title="List all debug tips">
+                debug
             </a>
         </li></ul>
     Supported by:
@@ -128,57 +124,27 @@
                 <img src="/assets/browsers/chrome.svg" alt=""> chrome
             </a>
         </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li><li class="browser">
             <a href="/browser/safari/" title="List all tips supported by safari">
                 <img src="/assets/browsers/safari.svg" alt=""> safari
             </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it's really needed.</p>
-<h2>In Chromium-based browsers</h2>
-<p>Chrome and Edge have a useful <strong>Coverage</strong> tool that can help identify which parts of code are unused. To detect unused code on page load:</p>
-<ol>
-<li>
-<p>Open the <strong>Coverage</strong> tool by using the <a href="/tips/en/execute-commands">Command Menu</a>: type <kbd>Ctrl+Shift+P</kbd> (or <kbd>cmd+Shift+P</kbd> on mac), then type <strong>Coverage</strong> and press <kbd>Enter</kbd>.</p>
-</li>
-<li>
-<p>In <strong>Coverage</strong>, click the <strong>Start instrumenting coverage and refresh the page</strong> button (i.e., the refresh button).</p>
-</li>
-<li>
-<p>Wait for the webpage to reload and for the coverage report to appear.</p>
-<p>The report shows a list of CSS and JS files with a percentage of unused bytes.</p>
-</li>
-<li>
-<p>Click on any of the files to open it in the <strong>Sources</strong> tool.</p>
-<p>The file appears in the tool, and the line number gutter on the left indicates which lines were used, in blue, and which were unused, in red.</p>
-</li>
-</ol>
-<p>You can now decide whether some parts of your code can be loaded later, when needed only.</p>
-<p><img src="/assets/img/detect-unused-code.png" alt="Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used"></p>
-<h2>In Safari</h2>
-<p>In Safari, you can detect unused JS code, with the following steps,</p>
-<ol>
-<li>
-<p>In the <strong>Sources</strong> panel, open the JS file from the left sidebar.</p>
-</li>
-<li>
-<p>Click the coverage icon <code>C</code> in the toolbar (top-right) to start detecting unexecuted code.</p>
-</li>
-<li>
-<p>Refresh the page.</p>
-</li>
-<li>
-<p>Lines of code that are not executed on page load are greyed out. Executed lines are displayed as normal.</p>
-</li>
-</ol>
-<p><img src="/assets/img/detect-unused-code-safari.png" alt="Safari Web Inspector with Sources panel open, showing unexecuted code in a light gray color for a JS file"></p>
+    <p>If you insert JavaScript code dynamically in your webpage, for example by using the <code>eval()</code> function, you can use the <code>sourceURL</code> pragma to give them a name in DevTools.</p>
+<pre class="language-js"><code class="language-js"><span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">'console.log("Hello world!")\n//# sourceURL=hello-world.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>The above code snippet not only runs the evaluated code, but it also makes it appear in the <strong>Sources</strong> (or <strong>Debugger</strong>) tool as if it came from a file named <code>hello-world.js</code>.</p>
+<p><img src="/assets/img/name-evaluated-files.png" alt="Firefox DevTools, the sourceURL pragma was used when evaluating some code in the Console, and a new file now appears in the Debugger tool, named after the string provided in the sourceURL pragma"></p>
 
 </div><div class="see-also">
     <h2>See also</h2>
     <ul><li>
-            <a href="/tips/en/name-evaluated-files">Name evaluated files with the sourceURL pragma</a>
-            <a href="/tips/en/name-evaluated-files" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/name-evaluated-files.png" alt="Firefox DevTools, the sourceURL pragma was used when evaluating some code in the Console, and a new file now appears in the Debugger tool, named after the string provided in the sourceURL pragma">
+            <a href="/tips/en/detect-unused-code">Detect unused CSS and JavaScript code</a>
+            <a href="/tips/en/detect-unused-code" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/detect-unused-code.png" alt="Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used">
             </a>
         </li><li>
             <a href="/tips/en/ignore-scripts">Ignore JavaScript code to ease debugging</a>
@@ -191,14 +157,14 @@
                 <img loading="lazy" src="/assets/img/console-table-group-assert-1.jpg" alt="The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column">
             </a>
         </li><li>
-            <a href="/tips/en/copy-from-console">Copy an object from the console</a>
-            <a href="/tips/en/copy-from-console" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-from-console.png" alt="Chrome devtools&#39; console with a line of code using the copy() function.">
+            <a href="/tips/en/debugger-statement">Use the debugger statement to pause script execution</a>
+            <a href="/tips/en/debugger-statement" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://twitter.com/pankajparashar">Pankaj Parashar</a>, <a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2023-03-03T00:00:00.000Z">3/3/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/detect-unused-code.md">Edit this page</a></p>
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2024-01-29T00:00:00.000Z">1/29/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/name-evaluated-files.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 

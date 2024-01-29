@@ -5,11 +5,23 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2024-01-25T00:00:00.000Z</updated>
+  <updated>2024-01-29T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Name evaluated files with the sourceURL pragma</title>
+    <link href="https://devtoolstips.org/tips/en/name-evaluated-files/"/>
+    <updated>2024-01-29T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/name-evaluated-files/</id>
+    <content type="html">&lt;p&gt;If you insert JavaScript code dynamically in your webpage, for example by using the &lt;code&gt;eval()&lt;/code&gt; function, you can use the &lt;code&gt;sourceURL&lt;/code&gt; pragma to give them a name in DevTools.&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token function&quot;&gt;eval&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;console.log(&quot;Hello world!&quot;)\n//# sourceURL=hello-world.js&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above code snippet not only runs the evaluated code, but it also makes it appear in the &lt;strong&gt;Sources&lt;/strong&gt; (or &lt;strong&gt;Debugger&lt;/strong&gt;) tool as if it came from a file named &lt;code&gt;hello-world.js&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/name-evaluated-files.png&quot; alt=&quot;Firefox DevTools, the sourceURL pragma was used when evaluating some code in the Console, and a new file now appears in the Debugger tool, named after the string provided in the sourceURL pragma&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Simulate the Window Controls Overlay feature for PWA</title>
