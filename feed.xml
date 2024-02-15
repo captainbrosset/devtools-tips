@@ -240,7 +240,7 @@
 &lt;li&gt;Forcing execution, skipping over other breakpoints.&lt;/li&gt;
 &lt;li&gt;Or temporarily deactivating breakpoints.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Force execution&lt;/h2&gt;
+&lt;h2 id=&quot;force-execution&quot; tabindex=&quot;-1&quot;&gt;Force execution &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/force-execution-at-breakpoint/#force-execution&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Forcing execution is only supported in Chrome and Edge:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open the &lt;strong&gt;Sources&lt;/strong&gt; tool.&lt;/li&gt;
@@ -248,7 +248,7 @@
 &lt;li&gt;Once paused at your first breakpoint, click and hold the &lt;strong&gt;Resume script execution&lt;/strong&gt; button and then select the &lt;strong&gt;Force script execution&lt;/strong&gt; button. The script execution resumes, and doesn&#39;t pause at any other breakpoint.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/force-execution-at-breakpoint-edge.png&quot; alt=&quot;The Sources tool in Edge, showing the Force script execution button&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Temporarily deactivate breakpoints&lt;/h2&gt;
+&lt;h2 id=&quot;temporarily-deactivate-breakpoints&quot; tabindex=&quot;-1&quot;&gt;Temporarily deactivate breakpoints &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/force-execution-at-breakpoint/#temporarily-deactivate-breakpoints&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Chrome, Edge, and Firefox, you can temporarily deactivate breakpoints:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open the &lt;strong&gt;Sources&lt;/strong&gt; tool in Chrome or Edge, or the &lt;strong&gt;Debugger&lt;/strong&gt; tool in Firefox.&lt;/li&gt;
@@ -266,15 +266,15 @@
     <id>https://devtoolstips.org/tips/en/see-viewport-size/</id>
     <content type="html">&lt;p&gt;The size of the viewport that&#39;s used to render a webpage in a browser can be very important at times, such as when creating or debugging &lt;a href=&quot;https://developer.mozilla.org/docs/Web/CSS/CSS_media_queries/Using_media_queries&quot;&gt;media queries&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can easily know what the current size of the viewport is in DevTools. Here are two ways to do it.&lt;/p&gt;
-&lt;h2&gt;See the viewport size in the Console&lt;/h2&gt;
+&lt;h2 id=&quot;see-the-viewport-size-in-the-console&quot; tabindex=&quot;-1&quot;&gt;See the viewport size in the Console &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/see-viewport-size/#see-the-viewport-size-in-the-console&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To display the viewport size in the &lt;strong&gt;Console&lt;/strong&gt; tool:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open the &lt;strong&gt;Console&lt;/strong&gt; tool in DevTools.&lt;/li&gt;
-&lt;li&gt;Enter &lt;code&gt;${document.documentElement.clientWidth} x ${document.documentElement.clientHeight}&lt;/code&gt; in the prompt and press &lt;kbd&gt;Enter&lt;/kbd&gt;.
+&lt;li&gt;Enter &lt;code&gt;${document.documentElement.clientWidth} x ${document.documentElement.clientHeight}&lt;/code&gt; in the prompt and press &lt;kbd&gt;Enter&lt;/kbd&gt;.&lt;br /&gt;
 The size of the viewport, at the time you executed the expression, appears in the &lt;strong&gt;Console&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;You can also use a &lt;em&gt;live expression&lt;/em&gt; to see the size of the viewport in real-time, as you resize the browser window. To learn more, see &lt;a href=&quot;https://devtoolstips.org/tips/en/see-viewport-size/live-expressions.md&quot;&gt;Cut down on console noise using live expressions&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;See the viewport size in the page&lt;/h2&gt;
+&lt;h2 id=&quot;see-the-viewport-size-in-the-page&quot; tabindex=&quot;-1&quot;&gt;See the viewport size in the page &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/see-viewport-size/#see-the-viewport-size-in-the-page&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;You can also see the size of the viewport⁕ in the page directly:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -284,7 +284,7 @@ The size of the viewport, at the time you executed the expression, appears in th
 &lt;p&gt;Open DevTools.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Focus your attention in the top-right corner of the webpage, and then resize the browser window (or the DevTools panel).
+&lt;p&gt;Focus your attention in the top-right corner of the webpage, and then resize the browser window (or the DevTools panel).&lt;br /&gt;
 The viewport size appears as a temporary overlay, in the top-right corner of the webpage:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-viewport-size-chrome.png&quot; alt=&quot;Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage&quot; /&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -297,11 +297,11 @@ The viewport size appears as a temporary overlay, in the top-right corner of the
 &lt;p&gt;Open DevTools and go to the &lt;strong&gt;Settings&lt;/strong&gt; panel (&lt;kbd&gt;F1&lt;/kbd&gt;).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Under &lt;strong&gt;Available Toolbox Buttons&lt;/strong&gt;, select the &lt;strong&gt;Toggle rulers for the page&lt;/strong&gt; setting.
+&lt;p&gt;Under &lt;strong&gt;Available Toolbox Buttons&lt;/strong&gt;, select the &lt;strong&gt;Toggle rulers for the page&lt;/strong&gt; setting.&lt;br /&gt;
 The &lt;strong&gt;Toggle rulers for the page&lt;/strong&gt; icon appears in the DevTools toolbar.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Click the ruler icon to display rulers in the webpage.
+&lt;p&gt;Click the ruler icon to display rulers in the webpage.&lt;br /&gt;
 In addition to the top and left rulers which now are visible in the webpage, the viewport size is displayed in an overlay, in the top-right corner of the webpage.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-viewport-size-firefox.png&quot; alt=&quot;Firefox, with DevTools opened, the viewport size overlay appears in the rendered webpage&quot; /&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -314,7 +314,7 @@ In addition to the top and left rulers which now are visible in the webpage, the
 &lt;p&gt;Open Web Inspector and go to the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Hover over any node displayed in the DOM tree of the tool.
+&lt;p&gt;Hover over any node displayed in the DOM tree of the tool.&lt;br /&gt;
 On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -514,7 +514,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <updated>2023-07-31T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/inspect-devtools-with-devtools/</id>
     <content type="html">&lt;p&gt;The user interface of DevTools is built with HTML, CSS, and JavaScript. This means you can inspect and debug DevTools with DevTools.&lt;/p&gt;
-&lt;h2&gt;Chromium&lt;/h2&gt;
+&lt;h2 id=&quot;chromium&quot; tabindex=&quot;-1&quot;&gt;Chromium &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/inspect-devtools-with-devtools/#chromium&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To debug DevTools in Chromium-based browsers, such as Chrome or Edge:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -529,7 +529,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/inspect-devtools-with-devtools-chrome.png&quot; alt=&quot;Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one&quot; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Firefox&lt;/h2&gt;
+&lt;h2 id=&quot;firefox&quot; tabindex=&quot;-1&quot;&gt;Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/inspect-devtools-with-devtools/#firefox&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To debug DevTools in Firefox:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -560,7 +560,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <id>https://devtoolstips.org/tips/en/create-your-own-devtools-theme/</id>
     <content type="html">&lt;p&gt;You can change the color theme of DevTools to match your preference (see &lt;a href=&quot;https://devtoolstips.org/tips/en/create-your-own-devtools-theme/change-color-theme.md&quot;&gt;Change the color theme of DevTools&lt;/a&gt; to learn more), but you can also create your own theme from scratch by creating a browser extension.&lt;/p&gt;
 &lt;p&gt;The process is a little bit complicated, and you will need to keep up with any DevTools changes that may break your custom styles, but it&#39;s a great way to make DevTools your own. And by creating it as an extension, it also means you can share it with others.&lt;/p&gt;
-&lt;h2&gt;Create an extension&lt;/h2&gt;
+&lt;h2 id=&quot;create-an-extension&quot; tabindex=&quot;-1&quot;&gt;Create an extension &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/create-your-own-devtools-theme/#create-an-extension&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;First, you need to create a browser extension that will load your custom styles in DevTools. This extension is different from traditional browser extensions in that it doesn&#39;t create any new UI element in the browser.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -584,7 +584,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;My DevTools theme&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;1.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;manifest_version&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;devtools_page&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;devtools.html&quot;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Enable custom DevTools themes&lt;/h2&gt;
+&lt;h2 id=&quot;enable-custom-devtools-themes&quot; tabindex=&quot;-1&quot;&gt;Enable custom DevTools themes &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/create-your-own-devtools-theme/#enable-custom-devtools-themes&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;By default, DevTools doesn&#39;t load custom themes created by browser extensions. To enable this:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open DevTools.&lt;/li&gt;
@@ -593,7 +593,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;li&gt;Enable &lt;strong&gt;Allow extensions to load custom stylesheets&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;Close the &lt;strong&gt;Settings&lt;/strong&gt; page and reload DevTools.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Load your extension&lt;/h2&gt;
+&lt;h2 id=&quot;load-your-extension&quot; tabindex=&quot;-1&quot;&gt;Load your extension &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/create-your-own-devtools-theme/#load-your-extension&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To test locally, you can load your extension as an unpacked extension:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open the &lt;code&gt;about:extensions&lt;/code&gt; page in Chrome or Edge.&lt;/li&gt;
@@ -728,7 +728,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <id>https://devtoolstips.org/tips/en/understand-console-tab-drawer/</id>
     <content type="html">&lt;p&gt;Have you noticed how the &lt;strong&gt;Console&lt;/strong&gt; tool is sometimes displayed in a top-level tab (just like all other tools), and sometimes in a split pane at the bottom, below the main tool?&lt;/p&gt;
 &lt;p&gt;If you&#39;ve been confused by this in the past, this tip should hopefully help you understand the logic behind it.&lt;/p&gt;
-&lt;h2&gt;The main panel vs. the drawer&lt;/h2&gt;
+&lt;h2 id=&quot;the-main-panel-vs.-the-drawer&quot; tabindex=&quot;-1&quot;&gt;The main panel vs. the drawer &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/understand-console-tab-drawer/#the-main-panel-vs.-the-drawer&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;All browser DevTools have a main area, let&#39;s call it the main panel, and typically display their tools as tabs in this main panel.&lt;/p&gt;
 &lt;p&gt;But they also also have a bottom area called the &lt;strong&gt;drawer&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This area is not always displayed and can be toggled by pressing the &lt;kbd&gt;Escape&lt;/kbd&gt; on your keyboard. If you don&#39;t see the drawer, press &lt;kbd&gt;Escape&lt;/kbd&gt; and it should appear, therefore splitting the DevTools window into 2 parts:&lt;/p&gt;
@@ -740,11 +740,11 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/understand-console-tab-drawer-1.png&quot; alt=&quot;DevTools, with just one tool displayed, the Elements tool&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;After pressing &lt;kbd&gt;Escape&lt;/kbd&gt;, here is what DevTools looks like, with the drawer at the bottom:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/understand-console-tab-drawer-2.png&quot; alt=&quot;DevTools, with one tool displayed at the top, the Elements tool, and the drawer at the bottom, showing the Console&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;What&#39;s in the drawer?&lt;/h2&gt;
+&lt;h2 id=&quot;what&#39;s-in-the-drawer%3F&quot; tabindex=&quot;-1&quot;&gt;What&#39;s in the drawer? &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/understand-console-tab-drawer/#what&#39;s-in-the-drawer%3F&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Firefox, the drawer only contains the &lt;strong&gt;Console&lt;/strong&gt; tool. So, whenever you feel the need to see your logs, or execute a bit of JavaScript code while working with another tool, just press &lt;kbd&gt;Escape&lt;/kbd&gt;.&lt;/p&gt;
 &lt;p&gt;In Chrome or Edge, the drawer has its own tabbar, just like the main panel, which can contain the &lt;strong&gt;Console&lt;/strong&gt;, but can also be used to open other tools too.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/understand-console-tab-drawer-3.png&quot; alt=&quot;The tabbar in the drawer, containing multiple tools to choose from&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;What if you open the Console in the main panel?&lt;/h2&gt;
+&lt;h2 id=&quot;what-if-you-open-the-console-in-the-main-panel%3F&quot; tabindex=&quot;-1&quot;&gt;What if you open the Console in the main panel? &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/understand-console-tab-drawer/#what-if-you-open-the-console-in-the-main-panel%3F&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This is where things may be confusing: what if you open the drawer to display the &lt;strong&gt;Console&lt;/strong&gt; and then you also open the &lt;strong&gt;Console&lt;/strong&gt; in the main panel?&lt;/p&gt;
 &lt;p&gt;When you do this, the drawer hides itself automatically. This happens because there is only one instance of the &lt;strong&gt;Console&lt;/strong&gt; tool in DevTools. Whether it&#39;s displayed in the main panel or in the drawer makes no difference, it&#39;s the same tool that&#39;s used.&lt;/p&gt;
 &lt;p&gt;So, remember, if you select the &lt;strong&gt;Console&lt;/strong&gt; in the main panel when it&#39;s already displayed in the drawer, the drawer hides away, only to return once you switch over to a different tool.&lt;/p&gt;
@@ -817,7 +817,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <updated>2023-05-21T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/inspect-debug-iframes/</id>
     <content type="html">&lt;p&gt;If the page you are working on contains an iframe which you want to inspect and debug, you can actually use DevTools to do so. This can be very useful when working with coding playground sites like &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;, &lt;a href=&quot;https://jsfiddle.net/&quot;&gt;JSFiddle&lt;/a&gt;, or &lt;a href=&quot;https://glitch.com/&quot;&gt;Glitch&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Firefox&lt;/h2&gt;
+&lt;h2 id=&quot;firefox&quot; tabindex=&quot;-1&quot;&gt;Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/inspect-debug-iframes/#firefox&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Firefox has an iframe selector button in its toolbar that lets you select the iframe you want to inspect. Once selected, the &lt;strong&gt;Inspector&lt;/strong&gt; and &lt;strong&gt;Console&lt;/strong&gt; tools will be scoped to the iframe you selected. This means that you will only see the DOM tree and the console messages for the iframe you selected. This also means that any JavaScript expression you execute in the &lt;strong&gt;Console&lt;/strong&gt; tool will be executed in the context of the iframe.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open Firefox DevTools.&lt;/li&gt;
@@ -825,7 +825,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;li&gt;Select the iframe you want to inspect.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/inspect-debug-iframes-firefox.png&quot; alt=&quot;Firefox, with DevTools opened on the side, showing the iframe selector button in the toolbar&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Chrome, Edge, Safari&lt;/h2&gt;
+&lt;h2 id=&quot;chrome%2C-edge%2C-safari&quot; tabindex=&quot;-1&quot;&gt;Chrome, Edge, Safari &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/inspect-debug-iframes/#chrome%2C-edge%2C-safari&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Chromium-based browsers and Safari have a &lt;strong&gt;JavaScript context&lt;/strong&gt; selector button located in the &lt;strong&gt;Console&lt;/strong&gt; tool which allows you to select the iframe you want to execute JavaScript expressions in. This button does not change what&#39;s visible in the &lt;strong&gt;Elements&lt;/strong&gt; tool, it only changes the JavaScript context in which the &lt;strong&gt;Console&lt;/strong&gt; tool works.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open DevTools.&lt;/li&gt;
@@ -844,12 +844,12 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <id>https://devtoolstips.org/tips/en/take-high-res-screenshots/</id>
     <content type="html">&lt;p&gt;Taking screenshots of all or parts of web pages is super useful (scroll down to the &lt;em&gt;See Also&lt;/em&gt; part at the bottom of this page for more tips on that). But sometimes, the resulting screenshots aren&#39;t high-resolution enough for your needs.&lt;/p&gt;
 &lt;p&gt;It turns you can make DevTools take high-resolution screenshots of your web pages too!&lt;/p&gt;
-&lt;h2&gt;From the Console in Firefox&lt;/h2&gt;
+&lt;h2 id=&quot;from-the-console-in-firefox&quot; tabindex=&quot;-1&quot;&gt;From the Console in Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/take-high-res-screenshots/#from-the-console-in-firefox&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Firefox has a super handy &lt;code&gt;:screenshot&lt;/code&gt; command you can use in the &lt;strong&gt;Console&lt;/strong&gt; tool to take screenshots. It takes a few options, including &lt;code&gt;--dpr&lt;/code&gt; to specify the device pixel ratio. The default value is &lt;code&gt;1&lt;/code&gt;, but you can set it to &lt;code&gt;2&lt;/code&gt;, &lt;code&gt;3&lt;/code&gt;, or any other number to take screenshots at higher resolutions.&lt;/p&gt;
 &lt;p&gt;For example: &lt;code&gt;:screenshot --dpr 3 --fullpage&lt;/code&gt; will take a screenshot of the full page at three times the resolution.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/take-high-res-screenshots-firefox.png&quot; alt=&quot;Firefox, with DevTools opened, and the Console tool visible, showing that :screenshot command&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Find out more about the &lt;code&gt;:screenshot&lt;/code&gt; command and its other options in the &lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/web_console/helpers/index.html&quot;&gt;Firefox DevTools documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;From Device Mode in Chromium-based browsers&lt;/h2&gt;
+&lt;h2 id=&quot;from-device-mode-in-chromium-based-browsers&quot; tabindex=&quot;-1&quot;&gt;From Device Mode in Chromium-based browsers &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/take-high-res-screenshots/#from-device-mode-in-chromium-based-browsers&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Here&#39;s a nice trick to do a similar thing in Chromium-based browsers (Chrome, Edge, Brave, etc.):&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open DevTools and go to the &lt;strong&gt;Device Mode&lt;/strong&gt; tool.&lt;/li&gt;
@@ -858,7 +858,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;li&gt;In the DPR dropdown, select the highest value to take the highest resolution screenshot.&lt;/li&gt;
 &lt;li&gt;Click &lt;strong&gt;More options&lt;/strong&gt; (the three dots icon) and then click &lt;strong&gt;Capture full size screenshot&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/take-high-res-screenshots-edge-1.png&quot; alt=&quot;Edge DevTools showing the options menu with the Add device pixel ratio option highlighted&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/take-high-res-screenshots-edge-1.png&quot; alt=&quot;Edge DevTools showing the options menu with the Add device pixel ratio option highlighted&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;https://devtoolstips.org/tips/assets/img/take-high-res-screenshots-edge-2.png&quot; alt=&quot;Edge DevTools in Device Emulation mode, showing the DPR option to select the DPR value&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
@@ -1006,7 +1006,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;p&gt;Webpages often define multiple different fonts, for example: &lt;code&gt;font-family: Baskerville, &amp;quot;Baskerville Old Face&amp;quot;, &amp;quot;Hoefler Text&amp;quot;, Garamond, &amp;quot;Times New Roman&amp;quot;, serif;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;When the browser renders a page, if the first font in the list is not available on the device, the browser falls back to the next font. If the next one isn&#39;t available either, it falls back to the next one and so on. Also some fonts are defined with generic names such as &lt;code&gt;serif&lt;/code&gt;, or &lt;code&gt;monospace&lt;/code&gt;, which tells you nothing about which exact font the browser chose to use.&lt;/p&gt;
 &lt;p&gt;DevTools can help you determine which fonts are used on a webpage, or on a specific element on a page.&lt;/p&gt;
-&lt;h2&gt;In Firefox&lt;/h2&gt;
+&lt;h2 id=&quot;in-firefox&quot; tabindex=&quot;-1&quot;&gt;In Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/list-used-fonts/#in-firefox&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Firefox has the best tool to inspect fonts. To know which fonts are used on a webpage:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1030,7 +1030,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;li&gt;The &lt;strong&gt;Fonts&lt;/strong&gt; tab updates and gives the list of fonts used in that single element.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Note that an element may require multiple fonts to render correctly, even if this element only contains a single text node. This can happen when the font used to render the element doesn&#39;t have all the glyphs required to render the text, in which case the browser falls back to another font to render the missing glyphs.&lt;/p&gt;
-&lt;h2&gt;In Chrome or Edge&lt;/h2&gt;
+&lt;h2 id=&quot;in-chrome-or-edge&quot; tabindex=&quot;-1&quot;&gt;In Chrome or Edge &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/list-used-fonts/#in-chrome-or-edge&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Chrome or Edge (or other Chromium-based browsers), you can see which font(s) was/were used to render a given text-containing element:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1045,7 +1045,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/list-used-fonts-chrome.png&quot; alt=&quot;Chrome, with Devtools on the side, showing the Computed panel that contains the list of fonts&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;In Polypane&lt;/h2&gt;
+&lt;h2 id=&quot;in-polypane&quot; tabindex=&quot;-1&quot;&gt;In Polypane &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/list-used-fonts/#in-polypane&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Polypane, you can see which font was used to render a given text-containing element:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1068,14 +1068,14 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <updated>2023-03-09T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/see-request-path-instead-of-name/</id>
     <content type="html">&lt;p&gt;By default, the &lt;strong&gt;Network&lt;/strong&gt; tool displays the name of each requested resource. For example, if a webpage requests an image from &lt;code&gt;https://mysite.com/assets/img/image.png&lt;/code&gt; then the tool only displays &lt;code&gt;image.png&lt;/code&gt; by default instead of the full file path.&lt;/p&gt;
-&lt;h2&gt;Chrome and Edge&lt;/h2&gt;
+&lt;h2 id=&quot;chrome-and-edge&quot; tabindex=&quot;-1&quot;&gt;Chrome and Edge &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/see-request-path-instead-of-name/#chrome-and-edge&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Chrome and Edge DevTools, you can see the full path instead, which can be useful to more easily identify resources in the request list:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In the &lt;strong&gt;Network&lt;/strong&gt; tool, right-click one of the table headers.&lt;/li&gt;
 &lt;li&gt;In the list of columns, select &lt;strong&gt;Path&lt;/strong&gt;, and deselect &lt;strong&gt;Name&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-request-path-instead-of-name.png&quot; alt=&quot;The Network tool in Edge, showing the contextual menu that&#39;s used to customize the network list columns&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Firefox&lt;/h2&gt;
+&lt;h2 id=&quot;firefox&quot; tabindex=&quot;-1&quot;&gt;Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/see-request-path-instead-of-name/#firefox&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Firefox doesn&#39;t have a &lt;strong&gt;Path&lt;/strong&gt; option, but you can display URLs instead:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In the &lt;strong&gt;Network&lt;/strong&gt; tool, right-click one of the table headers.&lt;/li&gt;
@@ -1109,7 +1109,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <updated>2023-03-03T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/detect-unused-code/</id>
     <content type="html">&lt;p&gt;To make sure your webpage loads and appears fast for your users, load only the CSS and JS code that your page requires to appear correctly. If some of your CSS or JS code is only needed later, when the user starts interacting with the webpage, then consider deferring this code until it&#39;s really needed.&lt;/p&gt;
-&lt;h2&gt;In Chromium-based browsers&lt;/h2&gt;
+&lt;h2 id=&quot;in-chromium-based-browsers&quot; tabindex=&quot;-1&quot;&gt;In Chromium-based browsers &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/detect-unused-code/#in-chromium-based-browsers&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Chrome and Edge have a useful &lt;strong&gt;Coverage&lt;/strong&gt; tool that can help identify which parts of code are unused. To detect unused code on page load:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1129,7 +1129,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;You can now decide whether some parts of your code can be loaded later, when needed only.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/detect-unused-code.png&quot; alt=&quot;Edge DevTools, with the Coverage tool in the drawer, showing a list of files, and the Sources tool in the main panel, showing one of the files with red and blue bars in the gutter, which indicates which lines are unused vs. used&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;In Safari&lt;/h2&gt;
+&lt;h2 id=&quot;in-safari&quot; tabindex=&quot;-1&quot;&gt;In Safari &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/detect-unused-code/#in-safari&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Safari, you can detect unused JS code, with the following steps,&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1470,7 +1470,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <link href="https://devtoolstips.org/tips/en/find-expensive-selectors/"/>
     <updated>2022-12-14T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/find-expensive-selectors/</id>
-    <content type="html">&lt;p&gt;When it comes to performance, we often spend time improving our JavaScript code. But CSS has a role to play too.
+    <content type="html">&lt;p&gt;When it comes to performance, we often spend time improving our JavaScript code. But CSS has a role to play too.&lt;br /&gt;
 CSS selectors, in particular, can sometimes be slow to match to the DOM of the page.&lt;/p&gt;
 &lt;p&gt;Before rewriting all of your CSS selectors based on some &amp;quot;guidelines&amp;quot; you might have found on the web, it&#39;s really important to measure the performance of your webpage first. Don&#39;t make your selectors unnecessarily complicated because someone somewhere said that a particular selector was slow. Instead, measure the performance of your page, make sure that CSS is having a negative impact, improve your code, and then measure again!&lt;/p&gt;
 &lt;p&gt;So, now, how do you know if CSS is having a negative impact, and how to tell which CSS selectors may be at cause?&lt;/p&gt;
@@ -1514,14 +1514,14 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
     <id>https://devtoolstips.org/tips/en/hide-or-pin-inspect-info-tooltip/</id>
     <content type="html">&lt;p&gt;When selecting elements from the page using the &lt;strong&gt;inspect&lt;/strong&gt; tool, the hovered elements get highlighted, and an information tooltip follows your mouse around and gives you information about the hovered element.&lt;/p&gt;
 &lt;p&gt;You can hide, or pin this information tooltip in Chrome or Edge.&lt;/p&gt;
-&lt;h2&gt;To hide the information tooltip&lt;/h2&gt;
+&lt;h2 id=&quot;to-hide-the-information-tooltip&quot; tabindex=&quot;-1&quot;&gt;To hide the information tooltip &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/hide-or-pin-inspect-info-tooltip/#to-hide-the-information-tooltip&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Start the &lt;strong&gt;inspect&lt;/strong&gt; tool by clicking &lt;strong&gt;Select an element in the page to inspect it&lt;/strong&gt; (the little cursor icon in the top left corner of DevTools).&lt;/li&gt;
 &lt;li&gt;Start hovering over elements in the webpage, elements get highlighted and the information tooltip appears.&lt;/li&gt;
 &lt;li&gt;Hold the &lt;kbd&gt;Ctrl&lt;/kbd&gt; key on your keyboard, the information tooltip disappears.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/hide-or-pin-inspect-info-tooltip-1.png&quot; alt=&quot;Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;To pin the highlight and information tooltip on the current element&lt;/h2&gt;
+&lt;h2 id=&quot;to-pin-the-highlight-and-information-tooltip-on-the-current-element&quot; tabindex=&quot;-1&quot;&gt;To pin the highlight and information tooltip on the current element &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/hide-or-pin-inspect-info-tooltip/#to-pin-the-highlight-and-information-tooltip-on-the-current-element&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Start the &lt;strong&gt;inspect&lt;/strong&gt; tool by clicking &lt;strong&gt;Select an element in the page to inspect it&lt;/strong&gt; (the little cursor icon in the top left corner of DevTools).&lt;/li&gt;
 &lt;li&gt;Start hovering over elements in the webpage, elements get highlighted and the information tooltip appears.&lt;/li&gt;
@@ -1591,7 +1591,7 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
     <content type="html">&lt;p&gt;The &lt;strong&gt;Console&lt;/strong&gt; is great to write short JavaScript expressions that read from the document or manipulate it. But it&#39;s also a terrible editor.&lt;/p&gt;
 &lt;p&gt;You can actually use a full editor in Edge, Chrome, and Safari to write more complex scripts and run them in the context of the current page and even keep them for later re-use.&lt;/p&gt;
 &lt;p&gt;Note: if you&#39;re looking for a way to do this in Firefox, there isn&#39;t currently one. However, you can &lt;a href=&quot;https://devtoolstips.org/tips/en/use-scripts-as-snippets/multi-line-console.md&quot;&gt;write code on multiple lines&lt;/a&gt; which helps a lot already, and even search through previous Console expressions by pressing &lt;kbd&gt;F9&lt;/kbd&gt; in the &lt;strong&gt;Console&lt;/strong&gt; tool.&lt;/p&gt;
-&lt;h2&gt;In Edge &amp;amp; Chrome&lt;/h2&gt;
+&lt;h2 id=&quot;in-edge-%26-chrome&quot; tabindex=&quot;-1&quot;&gt;In Edge &amp;amp; Chrome &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/use-scripts-as-snippets/#in-edge-%26-chrome&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Chromium-based browsers, these are called &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/snippets&quot;&gt;&lt;strong&gt;snippets&lt;/strong&gt;&lt;/a&gt; and you can access them in the &lt;strong&gt;Sources&lt;/strong&gt; tool by clicking &lt;strong&gt;Snippets&lt;/strong&gt; in the left hand side toolbar (you may have to use the &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt; to reach them).&lt;/p&gt;
 &lt;p&gt;You can create as many named snippets as you like and remove ones you don&#39;t need any more.&lt;/p&gt;
 &lt;p&gt;Snippets have full access to the window object and you can use any of the console API methods in them too. For example, this script would replace each image in the document with its alternative text:&lt;/p&gt;
@@ -1600,7 +1600,7 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/use-scripts-as-snippets-1.png&quot; alt=&quot;The snippets editor in the Sources tool with a snippet open in the editor.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Even better, you can use the &lt;a href=&quot;https://devtoolstips.org/tips/en/use-scripts-as-snippets/execute-commands.md&quot;&gt;Command menu&lt;/a&gt; to run snippets more easily. Simply press &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; (or &lt;kbd&gt;cmd&lt;/kbd&gt;+&lt;kbd&gt;P&lt;/kbd&gt; on mac) and type &lt;code&gt;!&lt;/code&gt; followed by the name of your Snippet.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/use-scripts-as-snippets-2.gif&quot; alt=&quot;Running a snippet from the Command menu.&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;In Safari&lt;/h2&gt;
+&lt;h2 id=&quot;in-safari&quot; tabindex=&quot;-1&quot;&gt;In Safari &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/use-scripts-as-snippets/#in-safari&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Safari, these scripts are called Console Snippets and can also be created from the &lt;strong&gt;Sources&lt;/strong&gt; tool by clicking the &lt;code&gt;+&lt;/code&gt; icon at the bottom of the tool, and choosing &lt;strong&gt;Console Snippet...&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/use-scripts-as-snippets-3.gif&quot; alt=&quot;Creating a snippet in Safari.&quot; /&gt;&lt;/p&gt;
 </content>
@@ -1615,7 +1615,7 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
 &lt;p&gt;As a web developer, it is very important to realize that your website won&#39;t only be used on one type of device. People browse the web with many different device types, from small phones, to large desktop monitors, and everything in between.&lt;/p&gt;
 &lt;p&gt;Not only do the devices people use have different screen sizes, but they can also have different pixel densities, support for touch input, network speeds, and more.&lt;/p&gt;
 &lt;p&gt;Browser DevTools make it easy to simulate how a webpage might render under different screen sizes and device capabilities. However, note that &lt;strong&gt;this is only a simulation&lt;/strong&gt;, and you should always test your webpage on the real device too. For example, even if the device mode in Chrome DevTools lets you simulate an iPhone screen, it doesn&#39;t actually render the webpage with the same rendering engine as the iPhone would. So, always test on the real device too.&lt;/p&gt;
-&lt;h2&gt;Available features&lt;/h2&gt;
+&lt;h2 id=&quot;available-features&quot; tabindex=&quot;-1&quot;&gt;Available features &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/simulate-devices/#available-features&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This simulation mode comes with the following features (more might be available depending on the browser you&#39;re using):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Resize the simulated viewport size by hand.&lt;/li&gt;
@@ -1624,18 +1624,18 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
 &lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-devices/take-in-device-screenshots.md&quot;&gt;Capture screenshots&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-devices/throttle-network-speed.md&quot;&gt;Throttle the network speed to test your website on slower connections&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Start simulating&lt;/h2&gt;
-&lt;h3&gt;In Chrome&lt;/h3&gt;
+&lt;h2 id=&quot;start-simulating&quot; tabindex=&quot;-1&quot;&gt;Start simulating &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/simulate-devices/#start-simulating&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;in-chrome&quot; tabindex=&quot;-1&quot;&gt;In Chrome &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/simulate-devices/#in-chrome&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;To enable the device mode in Chrome DevTools, click the &lt;strong&gt;Toggle Device Toolbar&lt;/strong&gt; button or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices-chrome.png&quot; alt=&quot;Chrome, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode&quot; /&gt;&lt;/p&gt;
-&lt;h3&gt;In Edge&lt;/h3&gt;
+&lt;h3 id=&quot;in-edge&quot; tabindex=&quot;-1&quot;&gt;In Edge &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/simulate-devices/#in-edge&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;To enable the device mode in Edge DevTools, click the &lt;strong&gt;Toggle device emulation&lt;/strong&gt; button or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices-edge.png&quot; alt=&quot;Edge, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode&quot; /&gt;&lt;/p&gt;
-&lt;h3&gt;In Firefox&lt;/h3&gt;
+&lt;h3 id=&quot;in-firefox&quot; tabindex=&quot;-1&quot;&gt;In Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/simulate-devices/#in-firefox&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;In Firefox, you don&#39;t need DevTools to be opened to simulate devices. Click &lt;strong&gt;Open application menu&lt;/strong&gt; &amp;gt; &lt;strong&gt;More tools&lt;/strong&gt; &amp;gt; &lt;strong&gt;Responsive design mode&lt;/strong&gt;, or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
 &lt;p&gt;Or, if you&#39;re in DevTools, click the &lt;strong&gt;Responsive Design Mode&lt;/strong&gt; button, or press &lt;kbd&gt;Ctrl+Shift+M&lt;/kbd&gt; (or &lt;kbd&gt;Cmd+Shift+M&lt;/kbd&gt; on macOS).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices-firefox.png&quot; alt=&quot;A rendered webpage in Firefox, wrapped in the responsive design mode&quot; /&gt;&lt;/p&gt;
-&lt;h3&gt;In Safari&lt;/h3&gt;
+&lt;h3 id=&quot;in-safari&quot; tabindex=&quot;-1&quot;&gt;In Safari &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/simulate-devices/#in-safari&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;In Safari, you don&#39;t need DevTools to be opened to simulate devices. Click &lt;strong&gt;Develop&lt;/strong&gt; in Safari&#39;s menu bar, and then click &lt;strong&gt;Enter Responsive Design Mode&lt;/strong&gt;, or press &lt;kbd&gt;Ctrl+Command+R&lt;/kbd&gt;.&lt;/p&gt;
 &lt;p&gt;If you aren&#39;t seeing the &lt;strong&gt;Develop&lt;/strong&gt; menu item, enable it first (this only needs to be done once):&lt;/p&gt;
 &lt;ol&gt;
@@ -1644,7 +1644,7 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
 &lt;li&gt;Click &lt;strong&gt;Show features for web developers&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices-safari.png&quot; alt=&quot;A rendered webpage in Safari, wrapped in the responsive design mode&quot; /&gt;&lt;/p&gt;
-&lt;h3&gt;In Polypane&lt;/h3&gt;
+&lt;h3 id=&quot;in-polypane&quot; tabindex=&quot;-1&quot;&gt;In Polypane &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/simulate-devices/#in-polypane&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Simulating different screen sizes is Polypane&#39;s default behavior. Polypane is the only browser DevTools that allows you to see multiple screen sizes side by side too. To learn more, see &lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-devices/simulate-multiple-devices.md&quot;&gt;Simulate multiple devices that are kept in sync&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-devices-polypane.png&quot; alt=&quot;Polypane showing three different devices side-by-side.&quot; /&gt;&lt;/p&gt;
 </content>
@@ -1709,10 +1709,10 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
 &lt;p&gt;All browsers have their own extension stores where you can find other DevTools extensions: &lt;a href=&quot;https://chrome.google.com/webstore/category/extensions&quot;&gt;Chrome&lt;/a&gt;, &lt;a href=&quot;https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home&quot;&gt;Edge&lt;/a&gt;, &lt;a href=&quot;https://addons.mozilla.org/firefox/&quot;&gt;Firefox&lt;/a&gt;, &lt;a href=&quot;https://developer.apple.com/safari/extensions/&quot;&gt;Safari&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To go further, you can create your own extensions. Here are a few links to learn about developing your own extensions:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://learn.microsoft.com/microsoft-edge/extensions-chromium/developer-guide/devtools-extension&quot;&gt;Create an extension that customizes the DevTools UI&lt;/a&gt; on learn.microsoft.com.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/docs/extensions/mv3/devtools/&quot;&gt;Extending DevTools&lt;/a&gt; on developer.chrome.com.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://learn.microsoft.com/microsoft-edge/extensions-chromium/developer-guide/devtools-extension&quot;&gt;Create an extension that customizes the DevTools UI&lt;/a&gt; on &lt;a href=&quot;http://learn.microsoft.com/&quot;&gt;learn.microsoft.com&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.chrome.com/docs/extensions/mv3/devtools/&quot;&gt;Extending DevTools&lt;/a&gt; on &lt;a href=&quot;http://developer.chrome.com/&quot;&gt;developer.chrome.com&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools&quot;&gt;Extending the developer tools&lt;/a&gt; on MDN.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.apple.com/documentation/safariservices/safari_web_extensions/adding_a_web_development_tool_to_safari_web_inspector&quot;&gt;Adding a web development tool to Safari Web Inspector&lt;/a&gt; on developer.apple.com.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.apple.com/documentation/safariservices/safari_web_extensions/adding_a_web_development_tool_to_safari_web_inspector&quot;&gt;Adding a web development tool to Safari Web Inspector&lt;/a&gt; on &lt;a href=&quot;http://developer.apple.com/&quot;&gt;developer.apple.com&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/extend-devtools.png&quot; alt=&quot;Microsoft Edge, with DevTools opened, showing a custom panel.&quot; /&gt;&lt;/p&gt;
 </content>
@@ -1775,7 +1775,7 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
 &lt;li&gt;In the &lt;strong&gt;Sensors&lt;/strong&gt; tool, find the &lt;strong&gt;Location&lt;/strong&gt; drop-down.&lt;/li&gt;
 &lt;li&gt;Choose any of the preset locations (or create your own by clicking &lt;strong&gt;Manage&lt;/strong&gt;) and refresh the webpage.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;In the following screenshot, the webpage is google.com and the location was set to São Paulo, Brazil. After a refresh, the google.com homepage shows the text in Portuguese.&lt;/p&gt;
+&lt;p&gt;In the following screenshot, the webpage is &lt;a href=&quot;http://google.com/&quot;&gt;google.com&lt;/a&gt; and the location was set to São Paulo, Brazil. After a refresh, the &lt;a href=&quot;http://google.com/&quot;&gt;google.com&lt;/a&gt; homepage shows the text in Portuguese.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-geolocation.png&quot; alt=&quot;Chrome, showing Google in Portuguese, with DevTools opened to the side and the Sensors tool showing that the geolocation was set to São Paulo.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
@@ -1839,7 +1839,7 @@ CSS selectors, in particular, can sometimes be slow to match to the DOM of the p
     <id>https://devtoolstips.org/tips/en/inspect-css-animations/</id>
     <content type="html">&lt;p&gt;Modern browser DevTools provide a handy tool to inspect and modify CSS animations, CSS transitions, and Web animations. These tools not only help you debug animations, but also let you modify the various animation properties.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;For Chromium browsers (Chrome/Edge)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Open the &lt;a href=&quot;https://devtoolstips.org/tips/en/inspect-css-animations/execute-commands.md&quot;&gt;Command Menu&lt;/a&gt; (&lt;code&gt;Cmd+Shift+P&lt;/code&gt; or &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;), type &amp;quot;Show Animations&amp;quot;, and press Enter.
+&lt;p&gt;Open the &lt;a href=&quot;https://devtoolstips.org/tips/en/inspect-css-animations/execute-commands.md&quot;&gt;Command Menu&lt;/a&gt; (&lt;code&gt;Cmd+Shift+P&lt;/code&gt; or &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;), type &amp;quot;Show Animations&amp;quot;, and press Enter.&lt;br /&gt;
 This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;p&gt;Next, trigger an animation in the webpage to record it in the tool. The &lt;strong&gt;Animations&lt;/strong&gt; tool is divided into 4 sections:&lt;/p&gt;
 &lt;ol&gt;
@@ -2110,6 +2110,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Performance monitor&lt;/strong&gt;: Monitor your page&#39;s performance live with CPU usage, memory size, DOM node numbers, etc.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Protocol monitor&lt;/strong&gt;: Monitor the CDP (Chrome DevTools Protocol) traffic that DevTools relies on to debug your page.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Quick source&lt;/strong&gt;: A simpler version of the Sources panel.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recorder&lt;/strong&gt;: Record user scenarios in the tab, and easily replay them automatically.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Rendering&lt;/strong&gt;: Emulate different rendering modes: media features, color vision deficiencies, and more.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Search&lt;/strong&gt;: Search within the resources loaded on the page.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;: Get an overview of the page&#39;s security aspects.&lt;/li&gt;
@@ -2203,7 +2204,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
     <id>https://devtoolstips.org/tips/en/debug-css-cascade-layers/</id>
     <content type="html">&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_layers&quot;&gt;Cascade layers&lt;/a&gt; is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which these layers apply. Cascade layers are meant to bring an elegant solution to problems we&#39;ve historically been fixing by using &lt;code&gt;!important&lt;/code&gt; or artificially making selectors have higher specificity. To learn more about cascade layers, check out &lt;a href=&quot;https://css-tricks.com/css-cascade-layers/&quot;&gt;Miriam Suzanne&#39;s complete guide on CSS Tricks&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In this tip, let&#39;s see how to visualize and debug layers in DevTools. All browser DevTools have support for layers in their &lt;strong&gt;Styles&lt;/strong&gt;/&lt;strong&gt;Rules&lt;/strong&gt; panels, and some browsers have more advanced features.&lt;/p&gt;
-&lt;h2&gt;All browsers&lt;/h2&gt;
+&lt;h2 id=&quot;all-browsers&quot; tabindex=&quot;-1&quot;&gt;All browsers &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/debug-css-cascade-layers/#all-browsers&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Open a page that uses cascade layers like &lt;a href=&quot;https://codepen.io/web-dot-dev/full/LYzqPEp&quot;&gt;this one&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Inspect an element which has styles defined in one of the cascade layers like one of the green links in the above demo.&lt;/li&gt;
@@ -2211,7 +2212,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;li&gt;Rules that are part of a cascade layer have a &lt;code&gt;@layer &amp;lt;layername&amp;gt;&lt;/code&gt; label next to them.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-css-cascade-layers-firefox.png&quot; alt=&quot;Firefox with a demo page that uses layers, DevTools is opened and shows the Rules panel with two @layer rules&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Chrome and Edge only&lt;/h2&gt;
+&lt;h2 id=&quot;chrome-and-edge-only&quot; tabindex=&quot;-1&quot;&gt;Chrome and Edge only &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/debug-css-cascade-layers/#chrome-and-edge-only&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;On top of the above, Chrome and Edge have a &lt;strong&gt;Layers&lt;/strong&gt; view that shows the cascade layers in a list:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open a page that uses cascade layers like &lt;a href=&quot;https://codepen.io/web-dot-dev/full/LYzqPEp&quot;&gt;this one&lt;/a&gt;.&lt;/li&gt;
@@ -2219,7 +2220,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;li&gt;Click the &lt;strong&gt;Toggle CSS layers view&lt;/strong&gt; button in the &lt;strong&gt;Styles&lt;/strong&gt; panel toolbar (next to the search field) to reveal the list of layers.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-css-cascade-layers-edge.png&quot; alt=&quot;Edge with a demo page that uses layers, DevTools is opened and shows the Styles panel with two @layer rules and the layers view&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Polypane only&lt;/h2&gt;
+&lt;h2 id=&quot;polypane-only&quot; tabindex=&quot;-1&quot;&gt;Polypane only &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/debug-css-cascade-layers/#polypane-only&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Polypane also has a &lt;strong&gt;CSS Layers&lt;/strong&gt; view that shows the cascade layers in a list:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open a page that uses cascade layers like &lt;a href=&quot;https://codepen.io/web-dot-dev/full/LYzqPEp&quot;&gt;this one&lt;/a&gt;.&lt;/li&gt;
@@ -2297,7 +2298,7 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;I open my favorite browser and type something like this in the address bar: &lt;code&gt;data:text/html,&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;This is a data URL that will tell the browser to just load the HTML content I provided after the &lt;code&gt;data:text/html,&lt;/code&gt; prefix, instead of loading a remote website.
+&lt;p&gt;This is a data URL that will tell the browser to just load the HTML content I provided after the &lt;code&gt;data:text/html,&lt;/code&gt; prefix, instead of loading a remote website.&lt;br /&gt;
 I can also write more fancy HTML, maybe add more elements, and attributes. But usually just one div is enough to get me started, because my next step ...&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -2318,7 +2319,7 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/prototype-in-the-browser.png&quot; alt=&quot;Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Here is a quick demo I did 4 years ago showing roughly this workflow. Things have changed a bit, but most of it still applies:&lt;/p&gt;
-&lt;p&gt;https://www.youtube.com/watch?v=o5wy237B5qc&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=o5wy237B5qc&quot;&gt;https://www.youtube.com/watch?v=o5wy237B5qc&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -2328,7 +2329,7 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <updated>2022-03-25T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/fix-color-contrast-issues/</id>
     <content type="html">&lt;p&gt;With DevTools you can &lt;a href=&quot;https://devtoolstips.org/tips/en/fix-color-contrast-issues/detect-low-color-contrast.md&quot;&gt;detect low color contrast issues&lt;/a&gt; which is great. But Chrome DevTools, Edge DevTools, and Polypane, you can go one step further and fix these issues directly!&lt;/p&gt;
-&lt;h2&gt;In Chrome and Edge&lt;/h2&gt;
+&lt;h2 id=&quot;in-chrome-and-edge&quot; tabindex=&quot;-1&quot;&gt;In Chrome and Edge &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/fix-color-contrast-issues/#in-chrome-and-edge&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Here is a tip shared on &lt;a href=&quot;https://dev.to/domizajac/how-to-use-chrome-devtools-to-find-a-color-fixing-insufficient-color-contrast-ratio-on-your-html-element-546k&quot;&gt;dev.to&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/domizajac&quot;&gt;Domi&lt;/a&gt;:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Find an element which text color doesn&#39;t have enough contrast with its background color.&lt;/li&gt;
@@ -2339,7 +2340,7 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
 &lt;li&gt;You can also click on the little reload icons next to the AA and AAA labels in the &lt;strong&gt;Contrast ratio&lt;/strong&gt; section to let DevTools suggest a color that would pass the AA or AAA requirements.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/fix-color-contrast-issues-chromium.png&quot; alt=&quot;The chrome color picker, showing the contrast lines and new color suggestions&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;In Polypane&lt;/h2&gt;
+&lt;h2 id=&quot;in-polypane&quot; tabindex=&quot;-1&quot;&gt;In Polypane &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/fix-color-contrast-issues/#in-polypane&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Polypane, these suggestions are made inline on the page itself when enabling the &lt;strong&gt;Contrast checker debug tool&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/fix-color-contrast-issues-polypane.png&quot; alt=&quot;A Polypane Pane with the Contrast checker debug tool active.&quot; /&gt;&lt;/p&gt;
 </content>
@@ -2368,14 +2369,14 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <updated>2022-03-25T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/console-table-group-assert/</id>
     <content type="html">&lt;p&gt;You probably know about &lt;code&gt;console.log()&lt;/code&gt; already, it&#39;s a great way to print variables and objects to the console while the code is running, to debug it. But there are other console methods that can help you debug your code even more easily (you can &lt;a href=&quot;https://devtoolstips.org/tips/en/console-table-group-assert/list-console-functions.md&quot;&gt;list them all&lt;/a&gt; by the way).&lt;/p&gt;
-&lt;h2&gt;console.table&lt;/h2&gt;
+&lt;h2 id=&quot;console.table&quot; tabindex=&quot;-1&quot;&gt;console.table &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/console-table-group-assert/#console.table&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;console.table()&lt;/code&gt; is great to print arrays and objects in a tabular format.&lt;/p&gt;
 &lt;p&gt;Say you have the following data:&lt;/p&gt;
 &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;const products = &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  id&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &#39;Instant Pot&#39;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  price&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;79.99&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  inStock&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  id&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &#39;Aeropress Coffee Maker&#39;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  price&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;29.99&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  inStock&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  id&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  name&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &#39;George Foreman Grill&#39;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  price&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;25.99&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;  inStock&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can log it to the console a much more readable way with &lt;code&gt;console.table()&lt;/code&gt; by using the following code: &lt;code&gt;console.table(products);&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/console-table-group-assert-1.jpg&quot; alt=&quot;The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;You can even &lt;a href=&quot;https://devtoolstips.org/tips/en/console-table-group-assert/customize-console-table-columns.md&quot;&gt;customize the table columns that are shown&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;console.group&lt;/h2&gt;
+&lt;h2 id=&quot;console.group&quot; tabindex=&quot;-1&quot;&gt;console.group &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/console-table-group-assert/#console.group&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;When your code generates a lot of logs, it can quickly become difficult to read those logs in the console.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;console.group()&lt;/code&gt; allows you to group console logs together and indent them in a nice collapsible section, making them easier to read.&lt;/p&gt;
 &lt;p&gt;Take the following code example that generate a lot of logs:&lt;/p&gt;
@@ -2384,7 +2385,7 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
 &lt;p&gt;Now let&#39;s use &lt;code&gt;console.group()&lt;/code&gt; to group those logs together:&lt;/p&gt;
 &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; product &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; products&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;ID:&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Price:&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;price&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;In stock:&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; product&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;inStock&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;groupEnd&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/console-table-group-assert-3.png&quot; alt=&quot;The Chrome DevTools Console tool showing the same logs, but grouped by product&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;console.assert&lt;/h2&gt;
+&lt;h2 id=&quot;console.assert&quot; tabindex=&quot;-1&quot;&gt;console.assert &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/console-table-group-assert/#console.assert&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Finally, the &lt;code&gt;console.assert&lt;/code&gt; method allows you to log an error to the console only if some predefined condition is not met.&lt;/p&gt;
 &lt;p&gt;Let&#39;s say you want to make sure that all products in the &lt;code&gt;products&lt;/code&gt; array are in stock and log an error if not.&lt;/p&gt;
 &lt;p&gt;You could use an &lt;code&gt;if&lt;/code&gt; statement and &lt;code&gt;console.error&lt;/code&gt;, like this:&lt;/p&gt;
@@ -2522,7 +2523,7 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
 &lt;li&gt;Finally I extract the data again using the &lt;code&gt;copy&lt;/code&gt; function, and paste it back into my text editor (&lt;a href=&quot;https://devtoolstips.org/tips/en/manipulate-complex-json/copy-from-console.md&quot;&gt;learn more about copy&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Take a look at the following video to see my workflow in action:&lt;/p&gt;
-&lt;p&gt;https://www.youtube.com/watch?v=W8s9UiEhaLE&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=W8s9UiEhaLE&quot;&gt;https://www.youtube.com/watch?v=W8s9UiEhaLE&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Note that while the workflow works in every browser, the &lt;strong&gt;Snippets&lt;/strong&gt; pane only exists in Edge and Chrome. In Firefox, you can use the &lt;a href=&quot;https://devtoolstips.org/tips/en/manipulate-complex-json/multi-line-console.md&quot;&gt;multi-line console&lt;/a&gt; to do the same thing.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/manipulate-complex-json.png&quot; alt=&quot;VSCode with some JSON data and DevTools next to it with the snippets panel containing JS code to manipulate the JSON.&quot; /&gt;&lt;/p&gt;
 </content>
@@ -2665,7 +2666,7 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <link href="https://devtoolstips.org/tips/en/disable-event-listeners/"/>
     <updated>2022-01-26T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/disable-event-listeners/</id>
-    <content type="html">&lt;p&gt;When you&#39;re trying to debug something and event listeners on the page keep interfering with what you&#39;re doing, it can be frustrating.
+    <content type="html">&lt;p&gt;When you&#39;re trying to debug something and event listeners on the page keep interfering with what you&#39;re doing, it can be frustrating.&lt;br /&gt;
 Imagine a &lt;code&gt;mousemove&lt;/code&gt; event listener that changes some of the information on the page.&lt;/p&gt;
 &lt;p&gt;Fortunately, DevTools can help you here.&lt;/p&gt;
 &lt;p&gt;In Firefox, you can disable (and re-enable) events from the &lt;strong&gt;Inspector&lt;/strong&gt; panel:&lt;/p&gt;
@@ -2744,7 +2745,7 @@ Imagine a &lt;code&gt;mousemove&lt;/code&gt; event listener that changes some of
     <link href="https://devtoolstips.org/tips/en/get-detached-elements/"/>
     <updated>2022-01-10T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/get-detached-elements/</id>
-    <content type="html">&lt;p&gt;Memory leaks can quickly become a big problem for long-running applications, and a common source of memory leaks is detached DOM elements (elements that are no longer attached to the DOM tree).
+    <content type="html">&lt;p&gt;Memory leaks can quickly become a big problem for long-running applications, and a common source of memory leaks is detached DOM elements (elements that are no longer attached to the DOM tree).&lt;br /&gt;
 It&#39;s usually very hard to investigate these memory leaks, because it&#39;s hard to know if elements are detached, and which ones, let alone find which part of your JavaScript code is causing them to be detached.&lt;/p&gt;
 &lt;p&gt;Edge has a tool just for this: the &lt;strong&gt;Detached Elements&lt;/strong&gt; panel. To use it:&lt;/p&gt;
 &lt;ul&gt;
@@ -2801,7 +2802,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
     <id>https://devtoolstips.org/tips/en/edit-and-resend-network-requests/</id>
     <content type="html">&lt;p&gt;When you&#39;re investigating a bug where the backend you connect to doesn&#39;t respond with the right things it&#39;s useful to tweak the requests and try again quickly. You can do this by changing your frontend code, and reloading the page, but DevTools can help you go faster by letting you edit and then resend any request, without having to make any frontend code changes.&lt;/p&gt;
 &lt;p&gt;Below are a few ways to do this, depending on your browser of choice.&lt;/p&gt;
-&lt;h2&gt;Using cURL (Firefox, Chrome, Edge)&lt;/h2&gt;
+&lt;h2 id=&quot;using-curl-(firefox%2C-chrome%2C-edge)&quot; tabindex=&quot;-1&quot;&gt;Using cURL (Firefox, Chrome, Edge) &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/edit-and-resend-network-requests/#using-curl-(firefox%2C-chrome%2C-edge)&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Firefox, Chrome, or Edge, you can copy any request from the &lt;strong&gt;Network&lt;/strong&gt; tool as a &lt;code&gt;cURL&lt;/code&gt; command. Once copied, you can paste the command in your terminal app, edit it to match your needs, and then run it.&lt;/p&gt;
 &lt;p&gt;To copy a request as &lt;code&gt;cURL&lt;/code&gt;:&lt;/p&gt;
 &lt;ol&gt;
@@ -2810,7 +2811,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;li&gt;Paste the command in your terminal app, make any changes you need, and then run it.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/edit-and-resend-network-requests-curl.png&quot; alt=&quot;Chrome DevTools&#39; Copy as cURL feature and the corresponding command in the terminal&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Using fetch (Firefox, Chrome, Edge)&lt;/h2&gt;
+&lt;h2 id=&quot;using-fetch-(firefox%2C-chrome%2C-edge)&quot; tabindex=&quot;-1&quot;&gt;Using fetch (Firefox, Chrome, Edge) &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/edit-and-resend-network-requests/#using-fetch-(firefox%2C-chrome%2C-edge)&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Similar to above, you can also to use the &lt;strong&gt;Copy as Fetch&lt;/strong&gt; option in Firefox, Chrome, or Edege DevTools.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Find the request you want to edit in the &lt;strong&gt;Network&lt;/strong&gt; tool.&lt;/li&gt;
@@ -2818,7 +2819,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;li&gt;Open the &lt;strong&gt;Console&lt;/strong&gt; tool.&lt;/li&gt;
 &lt;li&gt;Paste the copied code in the &lt;strong&gt;Console&lt;/strong&gt; tool, make any changes you need, and then run it.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Using Firefox&#39;s Edit and Resend feature&lt;/h2&gt;
+&lt;h2 id=&quot;using-firefox&#39;s-edit-and-resend-feature&quot; tabindex=&quot;-1&quot;&gt;Using Firefox&#39;s Edit and Resend feature &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/edit-and-resend-network-requests/#using-firefox&#39;s-edit-and-resend-feature&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Firefox has a built-in &lt;strong&gt;Edit and Resend&lt;/strong&gt; feature that&#39;s very convenient because it doesn&#39;t require to switch to the terminal or to the &lt;strong&gt;Console&lt;/strong&gt; tool. With &lt;strong&gt;Edit and Resend&lt;/strong&gt;, you stay in the &lt;strong&gt;Network&lt;/strong&gt; tool and can edit requests directly:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Find the request you want to test in the &lt;strong&gt;Network&lt;/strong&gt; tool.&lt;/li&gt;
@@ -2827,7 +2828,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;li&gt;Click &lt;strong&gt;Send&lt;/strong&gt; to resend the modified request.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/edit-and-resend-network-requests-firefox.png&quot; alt=&quot;The Firefox&#39;s edit and resend feature.&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;Using Edge&#39;s Network Console tool&lt;/h2&gt;
+&lt;h2 id=&quot;using-edge&#39;s-network-console-tool&quot; tabindex=&quot;-1&quot;&gt;Using Edge&#39;s Network Console tool &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/edit-and-resend-network-requests/#using-edge&#39;s-network-console-tool&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Edge has a built-in feature very similar to Firefox&#39;s &lt;strong&gt;Edit and Resend&lt;/strong&gt; named &lt;strong&gt;Network Console&lt;/strong&gt;. This feature lets you edit and resend requests, but also allows you to create any number of requests to test, like &lt;a href=&quot;https://www.postman.com/&quot;&gt;Postman&lt;/a&gt;.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;The easiest way to get started is by going to the &lt;strong&gt;Network&lt;/strong&gt; tool and finding the request you want to test.&lt;/li&gt;
@@ -2895,7 +2896,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;p&gt;Note that you can also use &lt;strong&gt;Copy declaration as JS&lt;/strong&gt; if you only want one. But this feature really shines when you copy all declarations at once.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/copy-rule-as-css-in-js.gif&quot; alt=&quot;Aimation showing the Styles pane in Edge, with the &amp;quot;Copy all declarations as JS&amp;quot; option being used, and then pasting the result in the Console to show that it is formatted.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Find out more about this feature on &lt;a href=&quot;https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/css/css-in-js&quot;&gt;the Microsoft DevTools docs website&lt;/a&gt;, or take a look at this short screencast:&lt;/p&gt;
-&lt;p&gt;https://www.youtube.com/watch?v=DCWSV0J5C8A&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=DCWSV0J5C8A&quot;&gt;https://www.youtube.com/watch?v=DCWSV0J5C8A&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -2924,16 +2925,16 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;p&gt;To take a screenshot of a web page inside a device frame, use either Chrome or Edge (or any Chromium browser):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;In DevTools, turn on &lt;strong&gt;Device Emulation&lt;/strong&gt; by clicking the icon or pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;M&lt;/kbd&gt; (&lt;kbd&gt;Cmd&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;M&lt;/kbd&gt; on Mac).&lt;/li&gt;
-&lt;li&gt;Select a device from the Device dropdown menu. Be aware that not all devices have graphical frames.
+&lt;li&gt;Select a device from the Device dropdown menu. Be aware that not all devices have graphical frames.&lt;br /&gt;
 &lt;img src=&quot;https://devtoolstips.org/tips/assets/img/take-in-device-screenshots-devices-dropdown.png&quot; alt=&quot;The device dropdown menu open and showing all the options.&quot; /&gt;&lt;/li&gt;
-&lt;li&gt;Click the &lt;strong&gt;…&lt;/strong&gt; button (&lt;strong&gt;More options&lt;/strong&gt;) and select &lt;strong&gt;Show device frame&lt;/strong&gt;.
+&lt;li&gt;Click the &lt;strong&gt;…&lt;/strong&gt; button (&lt;strong&gt;More options&lt;/strong&gt;) and select &lt;strong&gt;Show device frame&lt;/strong&gt;.&lt;br /&gt;
 &lt;img src=&quot;https://devtoolstips.org/tips/assets/img/take-in-device-screenshots-show-device-frame.png&quot; alt=&quot;Turning on device frame in the more options menu of the Device emulation tool.&quot; /&gt;&lt;/li&gt;
-&lt;li&gt;Click the &lt;strong&gt;…&lt;/strong&gt; button again and select &lt;strong&gt;Capture screenshot&lt;/strong&gt;.
+&lt;li&gt;Click the &lt;strong&gt;…&lt;/strong&gt; button again and select &lt;strong&gt;Capture screenshot&lt;/strong&gt;.&lt;br /&gt;
 &lt;img src=&quot;https://devtoolstips.org/tips/assets/img/take-in-device-screenshots-capture-screenshot.png&quot; alt=&quot;Selecting the screenshot option from the More Options menu.&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;That&#39;s it, you now have a photo of your web page inside a device on transparent background.&lt;/p&gt;
 &lt;p&gt;You can see this in action in the following video:&lt;/p&gt;
-&lt;p&gt;https://www.youtube.com/watch?v=ZViLMjxpqEE&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ZViLMjxpqEE&quot;&gt;https://www.youtube.com/watch?v=ZViLMjxpqEE&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -2970,7 +2971,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;p&gt;The problem is that this results in lots of numbers in the console without explanations about what they are. If you wrap the values you want to read out in curly brackets &lt;code&gt;{}&lt;/code&gt;, the console automatically displays both the name and the value of the variable.&lt;/p&gt;
 &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;click&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pageX&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; y &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pageY&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; top &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;documentElement&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;scrollTop&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;y&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;top&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/automatically-log-name-and-value.gif&quot; alt=&quot;Animation showing the different ways the variables are logged with and without curly braces.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;https://www.youtube.com/watch?v=xTnqsA5vZX4&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=xTnqsA5vZX4&quot;&gt;https://www.youtube.com/watch?v=xTnqsA5vZX4&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -2981,14 +2982,14 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
     <id>https://devtoolstips.org/tips/en/move-panels/</id>
     <content type="html">&lt;p&gt;Moving panels around the user interface can be very useful to make DevTools more unique to you and adapted to your needs.&lt;/p&gt;
 &lt;p&gt;There are 2 ways that you can re-arrange panels in DevTools today: dragging them horizontally in the toolbar, to re-order them, and moving them between the top toolbar and the bottom (drawer) toolbar&lt;/p&gt;
-&lt;h2&gt;To move tabs between the top and bottom areas (Edge only)&lt;/h2&gt;
+&lt;h2 id=&quot;to-move-tabs-between-the-top-and-bottom-areas-(edge-only)&quot; tabindex=&quot;-1&quot;&gt;To move tabs between the top and bottom areas (Edge only) &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/move-panels/#to-move-tabs-between-the-top-and-bottom-areas-(edge-only)&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Right-click on any of the tabs.&lt;/li&gt;
 &lt;li&gt;Select &lt;strong&gt;Move to Bottom&lt;/strong&gt; or &lt;strong&gt;Move to Top&lt;/strong&gt; depending on where the tab is.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This only works in Edge at the moment is makes it super easy to see any 2 tools at once (more information about &lt;a href=&quot;https://blogs.windows.com/msedgedev/2021/09/14/edge-devtools-93-personalization/&quot;&gt;Edge personalization features&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/move-panels-1.gif&quot; alt=&quot;Animation in Edge DevTools showing the move to top/bottom menus.&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;To re-order panels by dragging (Chrome, Edge, Firefox, Safari)&lt;/h2&gt;
+&lt;h2 id=&quot;to-re-order-panels-by-dragging-(chrome%2C-edge%2C-firefox%2C-safari)&quot; tabindex=&quot;-1&quot;&gt;To re-order panels by dragging (Chrome, Edge, Firefox, Safari) &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/move-panels/#to-re-order-panels-by-dragging-(chrome%2C-edge%2C-firefox%2C-safari)&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Click and hold any of the tabs in the toolbar.&lt;/li&gt;
 &lt;li&gt;Move the tab horizontally, left or right, until the desired location is reached.&lt;/li&gt;
@@ -3045,7 +3046,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-pseudo-classes.png&quot; alt=&quot;The :hov button and the pseudo-class panel in Chrome DevTools&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Here is a screencast showing how to use pseudo-class simulation to check the hover, active, visited and focused state of a link without having to interact with the link using your keyboard or mouse:&lt;/p&gt;
-&lt;p&gt;https://www.youtube.com/watch?v=CgHuHYRyvXc&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=CgHuHYRyvXc&quot;&gt;https://www.youtube.com/watch?v=CgHuHYRyvXc&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;To try it out yourself, &lt;a href=&quot;https://codepen.io/codepo8/pen/WNEMaPO&quot;&gt;here is the demo page&lt;/a&gt; used in the video.&lt;/p&gt;
 </content>
   </entry>
@@ -3071,17 +3072,17 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
     <updated>2021-10-29T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/see-the-page-in-3d/</id>
     <content type="html">&lt;p&gt;See your page in 3 dimensions to quickly find out how deeply nested it is, fix z-index stacking issues, and performance issues.&lt;/p&gt;
-&lt;h2&gt;In Edge&lt;/h2&gt;
+&lt;h2 id=&quot;in-edge&quot; tabindex=&quot;-1&quot;&gt;In Edge &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/see-the-page-in-3d/#in-edge&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Open the Command Menu by pressing &lt;kbd&gt;ctrl+shift+P&lt;/kbd&gt; (or &lt;kbd&gt;cmd+shift+P&lt;/kbd&gt; on macOS).&lt;/li&gt;
 &lt;li&gt;Type &amp;quot;3D&amp;quot; and press &lt;kbd&gt;Enter&lt;/kbd&gt;. The &lt;strong&gt;3D View&lt;/strong&gt; tool opens up.&lt;/li&gt;
 &lt;li&gt;In the tool, choose which 3D mode you want to use: &lt;strong&gt;Z-index&lt;/strong&gt; (to visualize the stacking context tree), DOM (to visualize DOM nesting), and &lt;strong&gt;Composited Layers&lt;/strong&gt; (to visualize the layers created by the browser engine to paint the page in separate chunks).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-the-page-in-3d.png&quot; alt=&quot;The 3D view tool showing a page&#39;s z-index stacking tree as a 3d scene.&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;In Chrome or Safari&lt;/h2&gt;
+&lt;h2 id=&quot;in-chrome-or-safari&quot; tabindex=&quot;-1&quot;&gt;In Chrome or Safari &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/see-the-page-in-3d/#in-chrome-or-safari&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Chrome and Safari also have a &lt;strong&gt;Layers&lt;/strong&gt; tool that provides the same information as Edge&#39;s Composited Layers 3D mode.&lt;/p&gt;
 &lt;p&gt;You can learn more about Edge&#39;s &lt;strong&gt;3D View&lt;/strong&gt; tool in this video:&lt;/p&gt;
-&lt;p&gt;https://www.youtube.com/watch?v=BZAH8ZXhHZA&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BZAH8ZXhHZA&quot;&gt;https://www.youtube.com/watch?v=BZAH8ZXhHZA&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -3240,7 +3241,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;/ol&gt;
 &lt;p&gt;Logpoints are a way to inject a &lt;code&gt;console.log()&lt;/code&gt; into any web site without editing its source code.&lt;/p&gt;
 &lt;p&gt;You can see this in action in this video on YouTube:&lt;/p&gt;
-&lt;p&gt;https://www.youtube.com/watch?v=DRRezUZvZ6I&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=DRRezUZvZ6I&quot;&gt;https://www.youtube.com/watch?v=DRRezUZvZ6I&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -3258,7 +3259,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
 &lt;p&gt;That&#39;s it! The JS engine will pause and freeze the state of the page. You can now switch back to &lt;strong&gt;Elements&lt;/strong&gt;/&lt;strong&gt;Inspector&lt;/strong&gt; and style the popup content!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-js-hover.gif&quot; alt=&quot;Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Thank you to &lt;a href=&quot;https://twitter.com/samselikoff&quot;&gt;Sam Selikoff&lt;/a&gt; for &lt;a href=&quot;https://twitter.com/samselikoff/status/1441142046492807176&quot;&gt;tweeting&lt;/a&gt; about this tip and making a youtube video about it too:&lt;/p&gt;
-&lt;p&gt;https://www.youtube.com/watch?v=aNZ9ci_1gtM&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=aNZ9ci_1gtM&quot;&gt;https://www.youtube.com/watch?v=aNZ9ci_1gtM&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -3517,7 +3518,7 @@ It&#39;s usually very hard to investigate these memory leaks, because it&#39;s h
     <link href="https://devtoolstips.org/tips/en/capture-node-creation-stacks/"/>
     <updated>2021-07-27T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/capture-node-creation-stacks/</id>
-    <content type="html">&lt;p&gt;Have you ever wanted to know what caused a specific DOM node or element to be created in the page?
+    <content type="html">&lt;p&gt;Have you ever wanted to know what caused a specific DOM node or element to be created in the page?&lt;br /&gt;
 When working on a site that uses a lot of JavaScript and especially when you don&#39;t know the codebase, this can be a life saver.&lt;/p&gt;
 &lt;p&gt;It turns out there is a way to do this automatically without having to set breakpoints in the code at all. It is a hidden experiment for now so you will need to first enable it in Chrome or Edge.&lt;/p&gt;
 &lt;ul&gt;
@@ -3674,7 +3675,7 @@ When working on a site that uses a lot of JavaScript and especially when you don
     <id>https://devtoolstips.org/tips/en/suppressed-event-listeners-when-paused/</id>
     <content type="html">&lt;p&gt;This is not really a tip, but rather an interesting thing to be aware of when debugging JavaScript.&lt;/p&gt;
 &lt;p&gt;If you use breakpoints in the Sources (or Debugger) tab in DevTools to debug JavaScript, you should know that all event listeners are suppressed while paused at one of them.&lt;/p&gt;
-&lt;p&gt;For example, if you have a button with an &lt;code&gt;onclick&lt;/code&gt; handler, and you&#39;re paused at a breakpoint, then clicking that button won&#39;t execute the handler. It also won&#39;t execute it later when you resume execution.
+&lt;p&gt;For example, if you have a button with an &lt;code&gt;onclick&lt;/code&gt; handler, and you&#39;re paused at a breakpoint, then clicking that button won&#39;t execute the handler. It also won&#39;t execute it later when you resume execution.&lt;br /&gt;
 In fact, most DevTools display an overlay on top of the entire page that prevents you from accessing it at all.&lt;/p&gt;
 &lt;p&gt;This also happens if you manually try to dispatch new events from the console using &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent&quot;&gt;&lt;code&gt;dispatchEvent&lt;/code&gt;&lt;/a&gt;. If there are handlers for these events, they also won&#39;t get called while execution is paused.&lt;/p&gt;
 &lt;p&gt;The reason for this is that (ignoring workers) JavaScript on your page only runs in one thread. So while that thread is paused at one specific location, it&#39;s not supposed to be able to execute code from other locations.&lt;/p&gt;

@@ -33,10 +33,9 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <!-- <li>Guides
-            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understand DevTools</a></li></ul>
-          </li> -->
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/guide/">guide</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
@@ -68,6 +67,7 @@
                 </a>
               </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
@@ -135,7 +135,7 @@
 <p>Webpages often define multiple different fonts, for example: <code>font-family: Baskerville, &quot;Baskerville Old Face&quot;, &quot;Hoefler Text&quot;, Garamond, &quot;Times New Roman&quot;, serif;</code></p>
 <p>When the browser renders a page, if the first font in the list is not available on the device, the browser falls back to the next font. If the next one isn't available either, it falls back to the next one and so on. Also some fonts are defined with generic names such as <code>serif</code>, or <code>monospace</code>, which tells you nothing about which exact font the browser chose to use.</p>
 <p>DevTools can help you determine which fonts are used on a webpage, or on a specific element on a page.</p>
-<h2>In Firefox</h2>
+<h2 id="in-firefox" tabindex="-1">In Firefox <a class="direct-link" href="#in-firefox">#</a></h2>
 <p>Firefox has the best tool to inspect fonts. To know which fonts are used on a webpage:</p>
 <ol>
 <li>
@@ -159,7 +159,7 @@
 <li>The <strong>Fonts</strong> tab updates and gives the list of fonts used in that single element.</li>
 </ol>
 <p>Note that an element may require multiple fonts to render correctly, even if this element only contains a single text node. This can happen when the font used to render the element doesn't have all the glyphs required to render the text, in which case the browser falls back to another font to render the missing glyphs.</p>
-<h2>In Chrome or Edge</h2>
+<h2 id="in-chrome-or-edge" tabindex="-1">In Chrome or Edge <a class="direct-link" href="#in-chrome-or-edge">#</a></h2>
 <p>In Chrome or Edge (or other Chromium-based browsers), you can see which font(s) was/were used to render a given text-containing element:</p>
 <ol>
 <li>
@@ -174,7 +174,7 @@
 </li>
 </ol>
 <p><img src="/assets/img/list-used-fonts-chrome.png" alt="Chrome, with Devtools on the side, showing the Computed panel that contains the list of fonts"></p>
-<h2>In Polypane</h2>
+<h2 id="in-polypane" tabindex="-1">In Polypane <a class="direct-link" href="#in-polypane">#</a></h2>
 <p>In Polypane, you can see which font was used to render a given text-containing element:</p>
 <ol>
 <li>
@@ -190,7 +190,7 @@
 <p><img src="/assets/img/list-used-fonts-polypane.png" alt="Polypane, with Devtools on the side, showing the Element Overview panel that contains the list of fonts and a node tooltip."></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/convert-font-units">Convert font property units</a>
             <a href="/tips/en/convert-font-units" class="other-tip-image">

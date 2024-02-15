@@ -33,10 +33,9 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <!-- <li>Guides
-            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understand DevTools</a></li></ul>
-          </li> -->
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/guide/">guide</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
@@ -68,6 +67,7 @@
                 </a>
               </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
@@ -138,7 +138,7 @@
 <p>As a web developer, it is very important to realize that your website won't only be used on one type of device. People browse the web with many different device types, from small phones, to large desktop monitors, and everything in between.</p>
 <p>Not only do the devices people use have different screen sizes, but they can also have different pixel densities, support for touch input, network speeds, and more.</p>
 <p>Browser DevTools make it easy to simulate how a webpage might render under different screen sizes and device capabilities. However, note that <strong>this is only a simulation</strong>, and you should always test your webpage on the real device too. For example, even if the device mode in Chrome DevTools lets you simulate an iPhone screen, it doesn't actually render the webpage with the same rendering engine as the iPhone would. So, always test on the real device too.</p>
-<h2>Available features</h2>
+<h2 id="available-features" tabindex="-1">Available features <a class="direct-link" href="#available-features">#</a></h2>
 <p>This simulation mode comes with the following features (more might be available depending on the browser you're using):</p>
 <ul>
 <li>Resize the simulated viewport size by hand.</li>
@@ -147,18 +147,18 @@
 <li><a href="/tips/en/take-in-device-screenshots">Capture screenshots</a>.</li>
 <li><a href="/tips/en/throttle-network-speed">Throttle the network speed to test your website on slower connections</a>.</li>
 </ul>
-<h2>Start simulating</h2>
-<h3>In Chrome</h3>
+<h2 id="start-simulating" tabindex="-1">Start simulating <a class="direct-link" href="#start-simulating">#</a></h2>
+<h3 id="in-chrome" tabindex="-1">In Chrome <a class="direct-link" href="#in-chrome">#</a></h3>
 <p>To enable the device mode in Chrome DevTools, click the <strong>Toggle Device Toolbar</strong> button or press <kbd>Ctrl+Shift+M</kbd> (or <kbd>Cmd+Shift+M</kbd> on macOS).</p>
 <p><img src="/assets/img/simulate-devices-chrome.png" alt="Chrome, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode"></p>
-<h3>In Edge</h3>
+<h3 id="in-edge" tabindex="-1">In Edge <a class="direct-link" href="#in-edge">#</a></h3>
 <p>To enable the device mode in Edge DevTools, click the <strong>Toggle device emulation</strong> button or press <kbd>Ctrl+Shift+M</kbd> (or <kbd>Cmd+Shift+M</kbd> on macOS).</p>
 <p><img src="/assets/img/simulate-devices-edge.png" alt="Edge, with DevTools on the side, and the rendered webpage wrapped in the device simulation mode"></p>
-<h3>In Firefox</h3>
+<h3 id="in-firefox" tabindex="-1">In Firefox <a class="direct-link" href="#in-firefox">#</a></h3>
 <p>In Firefox, you don't need DevTools to be opened to simulate devices. Click <strong>Open application menu</strong> &gt; <strong>More tools</strong> &gt; <strong>Responsive design mode</strong>, or press <kbd>Ctrl+Shift+M</kbd> (or <kbd>Cmd+Shift+M</kbd> on macOS).</p>
 <p>Or, if you're in DevTools, click the <strong>Responsive Design Mode</strong> button, or press <kbd>Ctrl+Shift+M</kbd> (or <kbd>Cmd+Shift+M</kbd> on macOS).</p>
 <p><img src="/assets/img/simulate-devices-firefox.png" alt="A rendered webpage in Firefox, wrapped in the responsive design mode"></p>
-<h3>In Safari</h3>
+<h3 id="in-safari" tabindex="-1">In Safari <a class="direct-link" href="#in-safari">#</a></h3>
 <p>In Safari, you don't need DevTools to be opened to simulate devices. Click <strong>Develop</strong> in Safari's menu bar, and then click <strong>Enter Responsive Design Mode</strong>, or press <kbd>Ctrl+Command+R</kbd>.</p>
 <p>If you aren't seeing the <strong>Develop</strong> menu item, enable it first (this only needs to be done once):</p>
 <ol>
@@ -167,12 +167,12 @@
 <li>Click <strong>Show features for web developers</strong>.</li>
 </ol>
 <p><img src="/assets/img/simulate-devices-safari.png" alt="A rendered webpage in Safari, wrapped in the responsive design mode"></p>
-<h3>In Polypane</h3>
+<h3 id="in-polypane" tabindex="-1">In Polypane <a class="direct-link" href="#in-polypane">#</a></h3>
 <p>Simulating different screen sizes is Polypane's default behavior. Polypane is the only browser DevTools that allows you to see multiple screen sizes side by side too. To learn more, see <a href="/tips/en/simulate-multiple-devices">Simulate multiple devices that are kept in sync</a>.</p>
 <p><img src="/assets/img/simulate-devices-polypane.png" alt="Polypane showing three different devices side-by-side."></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/add-new-devices">Create your own simulated devices</a>
             <a href="/tips/en/add-new-devices" class="other-tip-image">

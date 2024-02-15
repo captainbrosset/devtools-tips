@@ -33,10 +33,9 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <!-- <li>Guides
-            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understand DevTools</a></li></ul>
-          </li> -->
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/guide/">guide</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
@@ -68,6 +67,7 @@
                 </a>
               </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
@@ -124,7 +124,7 @@
 <div class="page-content tip-content" data-pagefind-body>
     <p>You can change the color theme of DevTools to match your preference (see <a href="/tips/en/change-color-theme">Change the color theme of DevTools</a> to learn more), but you can also create your own theme from scratch by creating a browser extension.</p>
 <p>The process is a little bit complicated, and you will need to keep up with any DevTools changes that may break your custom styles, but it's a great way to make DevTools your own. And by creating it as an extension, it also means you can share it with others.</p>
-<h2>Create an extension</h2>
+<h2 id="create-an-extension" tabindex="-1">Create an extension <a class="direct-link" href="#create-an-extension">#</a></h2>
 <p>First, you need to create a browser extension that will load your custom styles in DevTools. This extension is different from traditional browser extensions in that it doesn't create any new UI element in the browser.</p>
 <ol>
 <li>
@@ -148,7 +148,7 @@
 <pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"My DevTools theme"</span><span class="token punctuation">,</span><br>  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0"</span><span class="token punctuation">,</span><br>  <span class="token property">"manifest_version"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span><br>  <span class="token property">"devtools_page"</span><span class="token operator">:</span> <span class="token string">"devtools.html"</span><br><span class="token punctuation">}</span></code></pre>
 </li>
 </ol>
-<h2>Enable custom DevTools themes</h2>
+<h2 id="enable-custom-devtools-themes" tabindex="-1">Enable custom DevTools themes <a class="direct-link" href="#enable-custom-devtools-themes">#</a></h2>
 <p>By default, DevTools doesn't load custom themes created by browser extensions. To enable this:</p>
 <ol>
 <li>Open DevTools.</li>
@@ -157,7 +157,7 @@
 <li>Enable <strong>Allow extensions to load custom stylesheets</strong>.</li>
 <li>Close the <strong>Settings</strong> page and reload DevTools.</li>
 </ol>
-<h2>Load your extension</h2>
+<h2 id="load-your-extension" tabindex="-1">Load your extension <a class="direct-link" href="#load-your-extension">#</a></h2>
 <p>To test locally, you can load your extension as an unpacked extension:</p>
 <ol>
 <li>Open the <code>about:extensions</code> page in Chrome or Edge.</li>
@@ -170,7 +170,7 @@
 <p><img src="/assets/img/create-your-own-devtools-theme.png" alt="Chrome DevTools showing a custom theme where attribute names in the Elements tool are bolded"></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/change-color-theme">Change the color theme of DevTools</a>
             <a href="/tips/en/change-color-theme" class="other-tip-image">

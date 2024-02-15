@@ -33,10 +33,9 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <!-- <li>Guides
-            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understand DevTools</a></li></ul>
-          </li> -->
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/guide/">guide</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
@@ -68,6 +67,7 @@
                 </a>
               </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
@@ -144,15 +144,15 @@
 <div class="page-content tip-content" data-pagefind-body>
     <p>The size of the viewport that's used to render a webpage in a browser can be very important at times, such as when creating or debugging <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_media_queries/Using_media_queries">media queries</a>.</p>
 <p>You can easily know what the current size of the viewport is in DevTools. Here are two ways to do it.</p>
-<h2>See the viewport size in the Console</h2>
+<h2 id="see-the-viewport-size-in-the-console" tabindex="-1">See the viewport size in the Console <a class="direct-link" href="#see-the-viewport-size-in-the-console">#</a></h2>
 <p>To display the viewport size in the <strong>Console</strong> tool:</p>
 <ol>
 <li>Open the <strong>Console</strong> tool in DevTools.</li>
-<li>Enter <code>${document.documentElement.clientWidth} x ${document.documentElement.clientHeight}</code> in the prompt and press <kbd>Enter</kbd>.
+<li>Enter <code>${document.documentElement.clientWidth} x ${document.documentElement.clientHeight}</code> in the prompt and press <kbd>Enter</kbd>.<br>
 The size of the viewport, at the time you executed the expression, appears in the <strong>Console</strong>.</li>
 </ol>
 <p>You can also use a <em>live expression</em> to see the size of the viewport in real-time, as you resize the browser window. To learn more, see <a href="/tips/en/live-expressions">Cut down on console noise using live expressions</a>.</p>
-<h2>See the viewport size in the page</h2>
+<h2 id="see-the-viewport-size-in-the-page" tabindex="-1">See the viewport size in the page <a class="direct-link" href="#see-the-viewport-size-in-the-page">#</a></h2>
 <p>You can also see the size of the viewport⁕ in the page directly:</p>
 <ul>
 <li>
@@ -162,7 +162,7 @@ The size of the viewport, at the time you executed the expression, appears in th
 <p>Open DevTools.</p>
 </li>
 <li>
-<p>Focus your attention in the top-right corner of the webpage, and then resize the browser window (or the DevTools panel).
+<p>Focus your attention in the top-right corner of the webpage, and then resize the browser window (or the DevTools panel).<br>
 The viewport size appears as a temporary overlay, in the top-right corner of the webpage:</p>
 <p><img src="/assets/img/see-viewport-size-chrome.png" alt="Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage"></p>
 </li>
@@ -175,11 +175,11 @@ The viewport size appears as a temporary overlay, in the top-right corner of the
 <p>Open DevTools and go to the <strong>Settings</strong> panel (<kbd>F1</kbd>).</p>
 </li>
 <li>
-<p>Under <strong>Available Toolbox Buttons</strong>, select the <strong>Toggle rulers for the page</strong> setting.
+<p>Under <strong>Available Toolbox Buttons</strong>, select the <strong>Toggle rulers for the page</strong> setting.<br>
 The <strong>Toggle rulers for the page</strong> icon appears in the DevTools toolbar.</p>
 </li>
 <li>
-<p>Click the ruler icon to display rulers in the webpage.
+<p>Click the ruler icon to display rulers in the webpage.<br>
 In addition to the top and left rulers which now are visible in the webpage, the viewport size is displayed in an overlay, in the top-right corner of the webpage.</p>
 <p><img src="/assets/img/see-viewport-size-firefox.png" alt="Firefox, with DevTools opened, the viewport size overlay appears in the rendered webpage"></p>
 </li>
@@ -192,7 +192,7 @@ In addition to the top and left rulers which now are visible in the webpage, the
 <p>Open Web Inspector and go to the <strong>Elements</strong> tool.</p>
 </li>
 <li>
-<p>Hover over any node displayed in the DOM tree of the tool.
+<p>Hover over any node displayed in the DOM tree of the tool.<br>
 On hover, rulers and the viewport size appear in the page temporarily.</p>
 </li>
 <li>
@@ -214,7 +214,7 @@ On hover, rulers and the viewport size appear in the page temporarily.</p>
 <p>⁕ In browsers with classic scrollbars, the number shown in the page by DevTools doesn't account for the scrollbar width, if there is one. The actual viewport width is about 15 to 17 pixels small than the number shown.</p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/spot-out-of-viewport-elements">Quickly spot out-of-viewport elements</a>
             <a href="/tips/en/spot-out-of-viewport-elements" class="other-tip-image">

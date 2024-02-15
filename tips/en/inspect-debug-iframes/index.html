@@ -33,10 +33,9 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <!-- <li>Guides
-            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understand DevTools</a></li></ul>
-          </li> -->
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/guide/">guide</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
@@ -68,6 +67,7 @@
                 </a>
               </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
@@ -131,7 +131,7 @@
 </div>
 <div class="page-content tip-content" data-pagefind-body>
     <p>If the page you are working on contains an iframe which you want to inspect and debug, you can actually use DevTools to do so. This can be very useful when working with coding playground sites like <a href="https://codepen.io/">CodePen</a>, <a href="https://jsfiddle.net/">JSFiddle</a>, or <a href="https://glitch.com/">Glitch</a>.</p>
-<h2>Firefox</h2>
+<h2 id="firefox" tabindex="-1">Firefox <a class="direct-link" href="#firefox">#</a></h2>
 <p>Firefox has an iframe selector button in its toolbar that lets you select the iframe you want to inspect. Once selected, the <strong>Inspector</strong> and <strong>Console</strong> tools will be scoped to the iframe you selected. This means that you will only see the DOM tree and the console messages for the iframe you selected. This also means that any JavaScript expression you execute in the <strong>Console</strong> tool will be executed in the context of the iframe.</p>
 <ol>
 <li>Open Firefox DevTools.</li>
@@ -139,7 +139,7 @@
 <li>Select the iframe you want to inspect.</li>
 </ol>
 <p><img src="/assets/img/inspect-debug-iframes-firefox.png" alt="Firefox, with DevTools opened on the side, showing the iframe selector button in the toolbar"></p>
-<h2>Chrome, Edge, Safari</h2>
+<h2 id="chrome%2C-edge%2C-safari" tabindex="-1">Chrome, Edge, Safari <a class="direct-link" href="#chrome%2C-edge%2C-safari">#</a></h2>
 <p>Chromium-based browsers and Safari have a <strong>JavaScript context</strong> selector button located in the <strong>Console</strong> tool which allows you to select the iframe you want to execute JavaScript expressions in. This button does not change what's visible in the <strong>Elements</strong> tool, it only changes the JavaScript context in which the <strong>Console</strong> tool works.</p>
 <ol>
 <li>Open DevTools.</li>
@@ -150,7 +150,7 @@
 <p><img src="/assets/img/inspect-debug-iframes-chrome.png" alt="Chrome, with the Console in DevTools, opened on the side, showing the JS context selector button"></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/find-custom-elements-code">Find your web component&#39;s custom element code</a>
             <a href="/tips/en/find-custom-elements-code" class="other-tip-image">

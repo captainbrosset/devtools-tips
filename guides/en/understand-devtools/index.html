@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Understand DevTools</title>
+    <title>Understanding DevTools: what is it, who is it for, how to open it, how to use it?</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
@@ -33,10 +33,9 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <!-- <li>Guides
-            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understand DevTools</a></li></ul>
-          </li> -->
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/guide/">guide</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
@@ -68,6 +67,7 @@
                 </a>
               </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
@@ -102,54 +102,60 @@
       </div>
       <div id="maincontent">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Understand DevTools</h1>
+<h1 class="tip-title">Understanding DevTools: what is it, who is it for, how to open it, how to use it?</h1>
 <div class="page-content guide-content" data-pagefind-body>
+    <aside class="toc-container">
+        <h2 id="toc">On this page</h2>
+        <div class="toc" >
+        <ol><li><a href="#a-word-about-security-first">A word about security first</a></li><li><a href="#terminology">Terminology</a></li><li><a href="#how-to-open-devtools">How to open DevTools</a></li><li><a href="#what-is-devtools">What is DevTools</a></li><li><a href="#who-is-devtools-for">Who is DevTools for</a></li><li><a href="#how-devtools-works">How DevTools works</a></li><li><a href="#the-ui-of-devtools">The UI of DevTools</a></li><li><a href="#the-tools">The tools</a></li><li><a href="#the-workflow">The workflow</a></li></ol>
+      </div>
+    </aside>
     <p>This guide is an introduction to DevTools, which is a suite of web development tools that are built-in to most web browsers. Read this guide if you are starting web development and haven't used the built-in browser tools yet. You will learn what DevTools is, who it's for, how to open it, how its UI is organized, what tools exist, and what the main user workflows are.</p>
-<h2>A word about security first</h2>
+<h2 id="a-word-about-security-first" tabindex="-1">A word about security first <a class="direct-link" href="#a-word-about-security-first">#</a></h2>
 <p>To some people, DevTools can look complex and sometimes scary. If you've opened DevTools by accident without knowing what it is or understanding web development, it may look like you've been hacked. <strong>Don't worry, this is not the case, DevTools isn't giving privileged access to the website you're viewing, or to your computer, to a bad actor</strong>. You can close the tab where DevTools appeared and continue browsing the web.</p>
 <p>Be careful, however, with websites that ask you to open DevTools and, within it, paste code that they provide you. This might be an attempt to steal sensitive information from you. <strong>Never paste code into DevTools unless you understand what the code does</strong>.</p>
-<h2>Terminology</h2>
+<h2 id="terminology" tabindex="-1">Terminology <a class="direct-link" href="#terminology">#</a></h2>
 <p>DevTools is short for <em>Developer Tools</em>.</p>
-<h2>How to open DevTools</h2>
+<h2 id="how-to-open-devtools" tabindex="-1">How to open DevTools <a class="direct-link" href="#how-to-open-devtools">#</a></h2>
 <p>Before learning more about DevTools, let's open it so you can have it in front of you while reading this guide.</p>
 <p>Right-click anywhere on this page and then select <strong>Inspect</strong> (or <strong>Inspect element</strong>, depending on your browser). DevTools opens up in a new browser panel either to the right or at the bottom of the current browser window. You can resize the DevTools panel to be larger or smaller.</p>
 <p>If you're using Safari, the <strong>Inspect</strong> menu item isn't visible at first and you need to enabled it.</p>
-<div class="tip tip-in-guide"><span class="tip-title">Tip: <a href="/tips/en/enable-safari-devtools">Enable DevTools in Safari</a></span><a href="/tips/en/enable-safari-devtools" class="tip-image"><img src="../../../assets/img/enable-safari-devtools.png" alt="Safari's Preferences, the Advanced tab shows the Show Developer menu in menu bar option" loading="lazy"></img></a><div class="tip-excerpt">Unlike other browsers, Safari hides its DevTools (and other developer-related features) by default. That's actually good because 99% of the people using the browser are probably not web developers.
-If...<a href="/tips/en/enable-safari-devtools">Read more</a></div></div>
+<div class="tip tip-in-guide"><span class="tip-title">See also: <a href="/tips/en/enable-safari-devtools">Enable DevTools in Safari</a></span><a href="/tips/en/enable-safari-devtools" class="tip-image"><img src="../../../assets/img/enable-safari-devtools.png" alt="Safari's Preferences, the Advanced tab shows the Show Developer menu in menu bar option" loading="lazy"></img></a><div class="tip-excerpt">Unlike other browsers, Safari hides its DevTools (and other developer-related features) by default. That's actually good because 99% of the people using the browser are probably not web developers.
+If... <a href="/tips/en/enable-safari-devtools">Read more</a></div></div>
 <p>Keep reading to learn more about DevTools.</p>
-<h2>What is DevTools</h2>
+<h2 id="what-is-devtools" tabindex="-1">What is DevTools <a class="direct-link" href="#what-is-devtools">#</a></h2>
 <p>In this guide, we focus on the following web browsers: Firefox, Chrome, Edge, and Safari. However, other browsers such as Opera, Arc, or Brave have similar DevTools. We also focus on the desktop versions of these browsers only. Mobile browsers usually don't have built-in DevTools.</p>
 <p>This guide also doesn't focus on specific developer-only browsers like Polypane. These browsers are very useful, but sufficiently different from common web browsers that they're not covered in this guide.</p>
-<h3>DevTools is a built-in browser feature</h3>
+<h3 id="devtools-is-a-built-in-browser-feature" tabindex="-1">DevTools is a built-in browser feature <a class="direct-link" href="#devtools-is-a-built-in-browser-feature">#</a></h3>
 <p>DevTools is a feature that's built-in to web browsers. This feature is hidden by default and normal users don't see it. For example, you typically don't see DevTools when you're accessing your emails, or doing online shopping. DevTools is usually only useful when you're doing web development, for example when working on your own website. DevTools is a key part of any web development workflow and can help you find and fix bugs on your website.</p>
 <p>Because DevTools is built-in to your browser, you don't need to install it as a separate application. When you install Chrome, or Firefox, or any other browser, DevTools is installed at the same time. This also means that when your browser gets updated (which, for many browsers, happens once a month), DevTools gets updated too. You may therefore see differences the next time you open DevTools. Finally, this means that you can't un-install DevTools.</p>
 <p>There are ways to disable DevTools.</p>
-<div class="tip tip-in-guide"><span class="tip-title">Tip: <a href="/tips/en/block-devtools">Block DevTools</a></span><a href="/tips/en/block-devtools" class="tip-image"><img src="../../../assets/img/block-devtools.png" alt="Disabling F12 in Firefox's about:config page" loading="lazy"></img></a><div class="tip-excerpt">There are two levels to consider when talking about blocking (or disabling) DevTools in a browser:
-Disabling DevTools at the browser level. For example, if you have a browser for web development, and...<a href="/tips/en/block-devtools">Read more</a></div></div>
-<h3>DevTools is always attached to a target</h3>
+<div class="tip tip-in-guide"><span class="tip-title">See also: <a href="/tips/en/block-devtools">Block DevTools</a></span><a href="/tips/en/block-devtools" class="tip-image"><img src="../../../assets/img/block-devtools.png" alt="Disabling F12 in Firefox's about:config page" loading="lazy"></img></a><div class="tip-excerpt">There are two levels to consider when talking about blocking (or disabling) DevTools in a browser:
+Disabling DevTools at the browser level. For example, if you have a browser for web development, and... <a href="/tips/en/block-devtools">Read more</a></div></div>
+<h3 id="devtools-is-always-attached-to-a-target" tabindex="-1">DevTools is always attached to a target <a class="direct-link" href="#devtools-is-always-attached-to-a-target">#</a></h3>
 <p>DevTools is always <em>attached</em> to a single target, which often is a browser tab.</p>
 <p>For example, if you open a new tab in your browser and open DevTools in that tab, then this instance of DevTools is <em>attached</em> to the tab. DevTools can be used to debug the websites that are displayed in that tab only. If you navigate to different websites within the same tab, then the particular instance of DevTools you opened in the tab is still attached to that tab. If you open another tab and open DevTools in the new tab, you now have two instances of DevTools: one for each tab.</p>
 <p>In this example, the target that DevTools debugs is a tab. DevTools is, however, capable of debugging other types of targets. For example, you can attach DevTools to a NodeJS process, or you can attach DevTools to a web view that's embedded in a native application. In this guide, we'll only focus on attaching to browser tab targets, but anything that uses a web engine to run can be debugged by DevTools.</p>
-<h3>DevTools is not standard</h3>
+<h3 id="devtools-is-not-standard" tabindex="-1">DevTools is not standard <a class="direct-link" href="#devtools-is-not-standard">#</a></h3>
 <p>The web runs on standard technologies. HTML, CSS, JavaScript, and SVG for example, are specified once and implemented the same way in all browsers.</p>
 <p>This is not the case for DevTools. DevTools is not specified and looks and behaves differently in all browsers. For example, you'll see that the DevTools in Safari looks different and has different features than the DevTools in Edge. DevTools is a part of the browser UI. Just like different browsers have different tabs or address bars, they have different DevTools too.</p>
 <p>While this can make it harder to jump between different browser DevTools to test and debug your website across browsers, you'll learn in this guide that there are high-level similarities that ease the pain.</p>
-<h2>Who is DevTools for</h2>
+<h2 id="who-is-devtools-for" tabindex="-1">Who is DevTools for <a class="direct-link" href="#who-is-devtools-for">#</a></h2>
 <p>The vast majority of the people who use DevTools are web developers, but others may find it useful too.</p>
 <p>When you're writing the code for a website, chances are that bugs will happen. You might make a mistake in the HTML content, or in the CSS style of the page, or in the JavaScript logic. DevTools can help you investigate and fix those bugs. With DevTools, you can inspect the code that the browser is running to display your page, find what the problem is, and then correct it in your source code.</p>
 <p>DevTools also allows you to make changes to the page that's being debugged. For example, if you made a CSS mistake in the color of an element, you can change the element's color to test a fix. Because of this ability to make changes to a page, DevTools might be appealing to non web developers too. For example, you could use DevTools to slightly tweak a web page and make it easier to read: you could remove various elements or change the text size and color.</p>
-<div class="tip tip-in-guide"><span class="tip-title">Tip: <a href="/tips/en/remove-annoying-overlays">Remove annoying page overlays and other elements</a></span><a href="/tips/en/remove-annoying-overlays" class="tip-image"><img src="../../../assets/img/remove-annoying-overlays.gif" alt="Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page." loading="lazy"></img></a><div class="tip-excerpt">A lot of websites these days get covered with overlays and crammed with lots of ads and other things that make it hard to just read the content of the page.
-To get rid of an annoying overlay, or any o...<a href="/tips/en/remove-annoying-overlays">Read more</a></div></div>
+<div class="tip tip-in-guide"><span class="tip-title">See also: <a href="/tips/en/remove-annoying-overlays">Remove annoying page overlays and other elements</a></span><a href="/tips/en/remove-annoying-overlays" class="tip-image"><img src="../../../assets/img/remove-annoying-overlays.gif" alt="Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page." loading="lazy"></img></a><div class="tip-excerpt">A lot of websites these days get covered with overlays and crammed with lots of ads and other things that make it hard to just read the content of the page.
+To get rid of an annoying overlay, or any o... <a href="/tips/en/remove-annoying-overlays">Read more</a></div></div>
 <p>Continue reading to learn more about how these changes are made, and what they affect.</p>
-<h2>How DevTools works</h2>
-<h3>DevTools debugs the runtime version of your webpage</h3>
+<h2 id="how-devtools-works" tabindex="-1">How DevTools works <a class="direct-link" href="#how-devtools-works">#</a></h2>
+<h3 id="devtools-debugs-the-runtime-version-of-your-webpage" tabindex="-1">DevTools debugs the runtime version of your webpage <a class="direct-link" href="#devtools-debugs-the-runtime-version-of-your-webpage">#</a></h3>
 <p>To understand how DevTools works, you first need to understand how browsers work a little bit. When you enter a URL to a webpage in your browser, the document that lives at that URL, and its dependencies, are fetched and parsed by the browser. The entire code that the webpage needs is run and the page is rendered into the browser tab.</p>
 <p>If you're the author of this webpage, the HTML, CSS, and perhaps JavaScript code that you wrote in your text editor is what led to the page being rendered in the browser. But the code was parsed, interpreted, and run by the browser, which resulted in the page being displayed.</p>
 <p>What runs in the browser for your page to show up is different than the code you wrote, it's an runtime version of it.</p>
 <p><strong>The runtime version of your webpage is what DevTools debugs. DevTools doesn't debug your original source code.</strong></p>
 <p>For example, when the browser fetches the HTML content of your web page, it parses it and generates a tree of <a href="https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction">DOM</a> nodes from it. The DOM tree is what is then used to render the page visually in the browser. DevTools let's you see and interact with the DOM tree, not with the original HTML source code.</p>
 <p><img src="./source-vs-runtime.png" alt="Diagram illustrating that your source code, and the runtime version of your code in the browser, are different, and that DevTools can only see the runtime"></p>
-<h3>DevTools can't change your source code</h3>
+<h3 id="devtools-can't-change-your-source-code" tabindex="-1">DevTools can't change your source code <a class="direct-link" href="#devtools-can't-change-your-source-code">#</a></h3>
 <p>Because DevTools debugs the runtime version of your webpage, instead of the original source code, the changes you make in DevTools are not saved to your source code, and are not persisted when you reload the page.</p>
 <ol>
 <li>
@@ -162,9 +168,9 @@ To get rid of an annoying overlay, or any o...<a href="/tips/en/remove-annoying-
 </li>
 </ol>
 <p>Note: there are specific features of DevTools (e.g. <strong>Workspaces</strong> and <strong>Local overrides</strong>) that allow you to persist changes to your source code. These features are more advanced and not covered in this guide.</p>
-<h2>The UI of DevTools</h2>
+<h2 id="the-ui-of-devtools" tabindex="-1">The UI of DevTools <a class="direct-link" href="#the-ui-of-devtools">#</a></h2>
 <p>DevTools is not standard, and it therefore looks and behaves differently depending on the browser you choose to use for your web development activity. However, there are high-level similarities between the DevTools of different browsers. In this section, we'll look at the main UI elements of DevTools and how they are organized. The goal of this section isn't to understand every tiny details of the UI, but rather to get a high-level understanding of the main pieces that compose the DevTools UI.</p>
-<h3>Terminology</h3>
+<h3 id="terminology-1" tabindex="-1">Terminology <a class="direct-link" href="#terminology-1">#</a></h3>
 <p>DevTools has a complex user interface, because it has a lot of different features. Because of this, there are many different terms that are used to describe its UI, like panel, section, drawer, tool, tab, and more. In this guide, we use the following terms consistently:</p>
 <ul>
 <li>Toolbar: the horizontal (sometimes vertical) bar at the top of DevTools that contains tabs.</li>
@@ -174,7 +180,7 @@ To get rid of an annoying overlay, or any o...<a href="/tips/en/remove-annoying-
 <li>Sidebar: a vertical bar on the left or right side of a tool's content, within a panel.</li>
 <li>Drawer: a horizontal, toggleable, area, which appears at the bottom and optionally contains a second toolbar for accessing other tools.</li>
 </ul>
-<h3>High-level UI description</h3>
+<h3 id="high-level-ui-description" tabindex="-1">High-level UI description <a class="direct-link" href="#high-level-ui-description">#</a></h3>
 <p>DevTools appears next to the rendered webpage, in a browser tab. It might appear to the right of the webpage:</p>
 <p><img src="./browser-devtools-right.png" alt="A browser window, with a rendered webpage on the left, and DevTools on the right"></p>
 <p>Or it might appear at the bottom of the webpage:</p>
@@ -188,10 +194,10 @@ To get rid of an annoying overlay, or any o...<a href="/tips/en/remove-annoying-
 <p>Now let's put it all back together in one screenshot, so you can see how everything fits together. The screenshot shows the entire browser window, with a rendered webpage on the left, and DevTools on the right. DevTools has a toolbar, with tabs, a panel showing the selected tool, and a drawer area at the bottom. The panel shows a tool which contains a sidebar, and a main content area:</p>
 <p><img src="./devtools-all-in-one.png" alt="The browser with DevTools"></p>
 <p>This might look like a lot of UI elements, and hard to understand at first. But, hopefully, the way we've broken it down step by step helps make sense of the UI and help form a mental model of how it's organized.</p>
-<h3>Differences between browsers</h3>
+<h3 id="differences-between-browsers" tabindex="-1">Differences between browsers <a class="direct-link" href="#differences-between-browsers">#</a></h3>
 <p>The UI of DevTools is something that each browser implements a little bit differently. The high-level UI description above is a generalization of the UI of DevTools across browsers.</p>
 <p>It's a good idea to test your website across different browsers, to find bugs that may manifest on certain browsers only. When this happens, you'll need to use the DevTools of the browser where the bug happens. Therefore, even if this browser isn't the one you normally use, it's good to be familiar with its DevTools.</p>
-<h2>The tools</h2>
+<h2 id="the-tools" tabindex="-1">The tools <a class="direct-link" href="#the-tools">#</a></h2>
 <p>One of the aspects of DevTools that makes it complex is that it contains many different tools. The web development field is vast and there are many different tasks involved with it such as designing the look of a website, writing the code that makes it interactive, optimizing its performance, or making sure it's accessible to everyone. DevTools contains tools that help with all of these tasks, and more. On top of this, DevTools accommodates for different types of users as well.</p>
 <p>This complexity leads to a high number of tools and features, which can translate into a complex UI. But it's worth keeping a few things in mind:</p>
 <ul>
@@ -199,7 +205,7 @@ To get rid of an annoying overlay, or any o...<a href="/tips/en/remove-annoying-
 <li>You shouldn't be afraid to explore the tools that you don't know yet. You might find that they become useful to you at certain times.</li>
 <li>DevTools doesn't mess up with your source code. All the changes you make in DevTools are temporary and don't affect your source code. You can't break anything by using DevTools. Just refresh the page and start over.</li>
 </ul>
-<h3>The main tools</h3>
+<h3 id="the-main-tools" tabindex="-1">The main tools <a class="direct-link" href="#the-main-tools">#</a></h3>
 <p>The tools below tend to be the most used ones. Each tool is listed with a short description of what it's useful for.</p>
 <table>
 <thead>
@@ -255,7 +261,7 @@ To get rid of an annoying overlay, or any o...<a href="/tips/en/remove-annoying-
 </tr>
 </tbody>
 </table>
-<h3>More tools</h3>
+<h3 id="more-tools" tabindex="-1">More tools <a class="direct-link" href="#more-tools">#</a></h3>
 <p>The previous list of tools is far from being exhaustive. They're the most used tools, because they correspond to the tasks that web developers most often need to do. But they also happen to be the tools that are usually opened by default in the DevTools main toolbar.</p>
 <p>Don't be afraid to look around for more tools to use. The list below contains more tools that you might find useful.</p>
 <table>
@@ -295,29 +301,28 @@ To get rid of an annoying overlay, or any o...<a href="/tips/en/remove-annoying-
 </tbody>
 </table>
 <p>There are many more tools available.</p>
-<div class="tip tip-in-guide"><span class="tip-title">Tip: <a href="/tips/en/discover-all-tools">Discover all the tools</a></span><a href="/tips/en/discover-all-tools" class="tip-image"><img src="../../../assets/img/discover-all-tools.png" alt="The list of most tools in Edge DevTools, just to illustrate how many there are" loading="lazy"></img></a><div class="tip-excerpt">DevTools is confusing! There's so much functionality packed in such a small UI. Did you know that Chrome DevTools had more than 30 individual tools! Yes, that's right, 30.
-It's hard for both new users...<a href="/tips/en/discover-all-tools">Read more</a></div></div>
+<div class="tip tip-in-guide"><span class="tip-title">See also: <a href="/tips/en/discover-all-tools">Discover all the tools</a></span><a href="/tips/en/discover-all-tools" class="tip-image"><img src="../../../assets/img/discover-all-tools.png" alt="The list of most tools in Edge DevTools, just to illustrate how many there are" loading="lazy"></img></a><div class="tip-excerpt">DevTools is confusing! There's so much functionality packed in such a small UI. Did you know that Chrome DevTools had more than 30 individual tools! Yes, that's right, 30.
+It's hard for both new users... <a href="/tips/en/discover-all-tools">Read more</a></div></div>
 <p>Take time to explore the tools that you don't know yet. And refer to the documentation of each browser DevTools to find out more.</p>
-<div class="tip tip-in-guide"><span class="tip-title">Tip: <a href="/tips/en/find-devtools-documentation">Find DevTools reference documentation</a></span><a href="/tips/en/find-devtools-documentation" class="tip-image"><img src="../../../assets/img/find-devtools-documentation.png" alt="The 4 documentation websites listed above." loading="lazy"></img></a><div class="tip-excerpt">If you want to learn more about what other tools exist in a browser, or what features a given tool provides, you can find reference documentation from all the major browsers here:
-Firefox Developer T...<a href="/tips/en/find-devtools-documentation">Read more</a></div></div>
-<h3>Where to find the tools</h3>
-<h4>Firefox</h4>
+<div class="tip tip-in-guide"><span class="tip-title">See also: <a href="/tips/en/find-devtools-documentation">Find DevTools reference documentation</a></span><a href="/tips/en/find-devtools-documentation" class="tip-image"><img src="../../../assets/img/find-devtools-documentation.png" alt="The 4 documentation websites listed above." loading="lazy"></img></a><div class="tip-excerpt">If you want to learn more about what other tools exist in a browser, or what features a given tool provides, you can find reference documentation from all the major browsers here:
+Firefox Developer T... <a href="/tips/en/find-devtools-documentation">Read more</a></div></div>
+<h3 id="where-to-find-the-tools" tabindex="-1">Where to find the tools <a class="direct-link" href="#where-to-find-the-tools">#</a></h3>
+<h4 id="firefox" tabindex="-1">Firefox <a class="direct-link" href="#firefox">#</a></h4>
 <p>In Firefox, most tools are displayed as tabs in the main toolbar, at the top of DevTools. Depending on the size of the DevTools window, not all tabs may be visible. Click the <strong>&gt;&gt;</strong> button at the right of the toolbar to see the hidden tabs.</p>
 <p><img src="./firefox-toolbar.png" alt="Firefox, with DevTools opened. The main toolbar with the tools is highlighted, and so is the &gt;&gt; icon to open more tools"></p>
 <p>Some tools may also be disabled from the DevTools settings. To view the entire list of tools and toggle them, press <kbd>F1</kbd> to open the <strong>Settings</strong> panel, and then choose the tools you want to see from the <strong>Default Developer Tools</strong> list.</p>
-<h4>Chrome</h4>
+<h4 id="chrome" tabindex="-1">Chrome <a class="direct-link" href="#chrome">#</a></h4>
 <p>In Chrome, most tools are also displayed as tabs in the main toolbar, at the top of DevTools. Depending on the size of the DevTools window, not all tabs may be visible. Click the <strong>More tabs</strong> (<strong>&gt;&gt;</strong>) button at the right of the toolbar to see the hidden tabs.</p>
 <p>To see even more tools, in the main toolbar click <strong>Customize and control DevTools</strong> (<code>⁝</code>) &gt; <strong>More tools</strong>.</p>
 <p><img src="./chrome-toolbar.png" alt="Chrome, with DevTools opened. The main toolbar, the &gt;&gt; icon, and the ⁝ icon, are highlighted"></p>
 <p>Some tools are also displayed by default in the drawer, at the bottom of DevTools. The drawer also <strong>More tools</strong> (<code>⁝</code>) button to open more tools in the drawer toolbar.</p>
-<h4>Edge</h4>
+<h4 id="edge" tabindex="-1">Edge <a class="direct-link" href="#edge">#</a></h4>
 <p>DevTools in Edge is very similar to DevTools in Chrome. The main difference is there is no <strong>More tabs</strong> button. Instead, the main toolbar has a <strong>More tools</strong> (<strong>+</strong>) button that gives access to all of the tools, not just the ones that didn't have enough space to be visible in the main toolbar.</p>
 <p><img src="./edge-toolbar.png" alt="Edge, with DevTools opened. The main toolbar and the More tools icon are highlighted"></p>
-<h4>Safari</h4>
-<p>In Safari, the tools are displayed in the main toolbar, at the top of DevTools.</p>
-<p><strong>TODO: fill in this section and add a screenshot.</strong></p>
-<h2>The workflow</h2>
-<h3>The basic dev loop</h3>
+<h4 id="safari" tabindex="-1">Safari <a class="direct-link" href="#safari">#</a></h4>
+<p>In Safari, the tools are displayed in the main toolbar, at the top of DevTools, similar to Firefox and Chrome.</p>
+<h2 id="the-workflow" tabindex="-1">The workflow <a class="direct-link" href="#the-workflow">#</a></h2>
+<h3 id="the-basic-dev-loop" tabindex="-1">The basic dev loop <a class="direct-link" href="#the-basic-dev-loop">#</a></h3>
 <p>The most basic workflow when doing web development is also the one that most people use and which has been around the longest. This workflow consists of the following steps:</p>
 <ol>
 <li>Write some code in your editor.</li>
@@ -334,7 +339,7 @@ Firefox Developer T...<a href="/tips/en/find-devtools-documentation">Read more</
 </div>
 <div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2023-12-08T00:00:00.000Z">12/8/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/guides/en/understand-devtools/index.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-02-15T00:00:00.000Z">2/15/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/guides/en/understand-devtools/index.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 

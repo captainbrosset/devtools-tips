@@ -33,10 +33,9 @@
       </a>
       <nav>
         <ul class="header-menu">
-          <!-- <li>Guides
-            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understand DevTools</a></li></ul>
-          </li> -->
-          <li><a href="/all/">All tips</a></li>
+          <li>Guides
+            <ul class="submenu"><li><a href="/guides/en/understand-devtools/">Understanding DevTools</a></li></ul>
+          </li>
           <li>Tips by category
             <ul class="submenu"><li><a href="/tag/accessibility/">accessibility</a></li><li><a href="/tag/apps/">apps</a></li><li><a href="/tag/console/">console</a></li><li><a href="/tag/css/">css</a></li><li><a href="/tag/debug/">debug</a></li><li><a href="/tag/export/">export</a></li><li><a href="/tag/frameworks/">frameworks</a></li><li><a href="/tag/guide/">guide</a></li><li><a href="/tag/help/">help</a></li><li><a href="/tag/highlighter/">highlighter</a></li><li><a href="/tag/html/">html</a></li><li><a href="/tag/javascript/">javascript</a></li><li><a href="/tag/network/">network</a></li><li><a href="/tag/perf/">perf</a></li><li><a href="/tag/personalization/">personalization</a></li><li><a href="/tag/productivity/">productivity</a></li><li><a href="/tag/testing/">testing</a></li><li><a href="/tag/webcomponents/">webcomponents</a></li></ul>
           </li>
@@ -68,6 +67,7 @@
                 </a>
               </li></ul>
           </li>
+          <li><a href="/all/">All tips</a></li>
         </ul>
       </nav>
     </header>
@@ -128,7 +128,7 @@
 <div class="page-content tip-content" data-pagefind-body>
     <p>When you're investigating a bug where the backend you connect to doesn't respond with the right things it's useful to tweak the requests and try again quickly. You can do this by changing your frontend code, and reloading the page, but DevTools can help you go faster by letting you edit and then resend any request, without having to make any frontend code changes.</p>
 <p>Below are a few ways to do this, depending on your browser of choice.</p>
-<h2>Using cURL (Firefox, Chrome, Edge)</h2>
+<h2 id="using-curl-(firefox%2C-chrome%2C-edge)" tabindex="-1">Using cURL (Firefox, Chrome, Edge) <a class="direct-link" href="#using-curl-(firefox%2C-chrome%2C-edge)">#</a></h2>
 <p>In Firefox, Chrome, or Edge, you can copy any request from the <strong>Network</strong> tool as a <code>cURL</code> command. Once copied, you can paste the command in your terminal app, edit it to match your needs, and then run it.</p>
 <p>To copy a request as <code>cURL</code>:</p>
 <ol>
@@ -137,7 +137,7 @@
 <li>Paste the command in your terminal app, make any changes you need, and then run it.</li>
 </ol>
 <p><img src="/assets/img/edit-and-resend-network-requests-curl.png" alt="Chrome DevTools' Copy as cURL feature and the corresponding command in the terminal"></p>
-<h2>Using fetch (Firefox, Chrome, Edge)</h2>
+<h2 id="using-fetch-(firefox%2C-chrome%2C-edge)" tabindex="-1">Using fetch (Firefox, Chrome, Edge) <a class="direct-link" href="#using-fetch-(firefox%2C-chrome%2C-edge)">#</a></h2>
 <p>Similar to above, you can also to use the <strong>Copy as Fetch</strong> option in Firefox, Chrome, or Edege DevTools.</p>
 <ol>
 <li>Find the request you want to edit in the <strong>Network</strong> tool.</li>
@@ -145,7 +145,7 @@
 <li>Open the <strong>Console</strong> tool.</li>
 <li>Paste the copied code in the <strong>Console</strong> tool, make any changes you need, and then run it.</li>
 </ol>
-<h2>Using Firefox's Edit and Resend feature</h2>
+<h2 id="using-firefox's-edit-and-resend-feature" tabindex="-1">Using Firefox's Edit and Resend feature <a class="direct-link" href="#using-firefox's-edit-and-resend-feature">#</a></h2>
 <p>Firefox has a built-in <strong>Edit and Resend</strong> feature that's very convenient because it doesn't require to switch to the terminal or to the <strong>Console</strong> tool. With <strong>Edit and Resend</strong>, you stay in the <strong>Network</strong> tool and can edit requests directly:</p>
 <ol>
 <li>Find the request you want to test in the <strong>Network</strong> tool.</li>
@@ -154,7 +154,7 @@
 <li>Click <strong>Send</strong> to resend the modified request.</li>
 </ol>
 <p><img src="/assets/img/edit-and-resend-network-requests-firefox.png" alt="The Firefox's edit and resend feature."></p>
-<h2>Using Edge's Network Console tool</h2>
+<h2 id="using-edge's-network-console-tool" tabindex="-1">Using Edge's Network Console tool <a class="direct-link" href="#using-edge's-network-console-tool">#</a></h2>
 <p>Edge has a built-in feature very similar to Firefox's <strong>Edit and Resend</strong> named <strong>Network Console</strong>. This feature lets you edit and resend requests, but also allows you to create any number of requests to test, like <a href="https://www.postman.com/">Postman</a>.</p>
 <ol>
 <li>The easiest way to get started is by going to the <strong>Network</strong> tool and finding the request you want to test.</li>
@@ -166,7 +166,7 @@
 <p><img src="/assets/img/edit-and-resend-network-requests-edge.png" alt="The Edge's Network Console feature."></p>
 
 </div><div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul><li>
             <a href="/tips/en/replay-xhr">Replay a XHR request</a>
             <a href="/tips/en/replay-xhr" class="other-tip-image">
