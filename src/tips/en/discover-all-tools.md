@@ -84,6 +84,7 @@ So here is a list of all the panels available in DevTools, per browser! Want to 
   * **Performance monitor**: Monitor your page's performance live with CPU usage, memory size, DOM node numbers, etc.
   * **Protocol monitor**: Monitor the CDP (Chrome DevTools Protocol) traffic that DevTools relies on to debug your page.
   * **Quick source**: A simpler version of the Sources panel.
+  * **Recorder**: Record user scenarios in the tab, and easily replay them automatically.
   * **Rendering**: Emulate different rendering modes: media features, color vision deficiencies, and more.
   * **Search**: Search within the resources loaded on the page.
   * **Security**: Get an overview of the page's security aspects.

@@ -16,7 +16,11 @@
   --category-tag-text-color: black;
 
   --alternate-background-color: #faf1fe;
-  --alternate-background-color-fade: color-mix(in srgb, var(--alternate-background-color), white 50%);
+  --alternate-background-color-fade: color-mix(
+    in srgb,
+    var(--alternate-background-color),
+    white 50%
+  );
   --separator-color: #f1d0ff;
   --separator-color-fade: color-mix(in srgb, var(--separator-color), black 50%);
   --sub-text-color: #555;
@@ -49,9 +53,17 @@
     --category-tag-text-color: black;
 
     --alternate-background-color: #1b2c2b;
-    --alternate-background-color-fade: color-mix(in srgb, var(--alternate-background-color), black 50%);
+    --alternate-background-color-fade: color-mix(
+      in srgb,
+      var(--alternate-background-color),
+      black 50%
+    );
     --separator-color: #364645;
-    --separator-color-fade: color-mix(in srgb, var(--separator-color), white 50%);
+    --separator-color-fade: color-mix(
+      in srgb,
+      var(--separator-color),
+      white 50%
+    );
     --sub-text-color: #cbcbcb;
 
     --accent-color: #34a29c;
@@ -94,6 +106,11 @@ li {
 }
 
 /* Main styles */
+
+html {
+  overflow: auto;
+  scroll-padding-top: 7rem;
+}
 
 body {
   font-size: 1rem;
@@ -455,9 +472,16 @@ main h1 {
 }
 
 .tip.tip-in-guide {
-	padding: 1rem;
-	background: var(--alternate-background-color);
-  border-radius: .5rem;
+  padding: 1rem;
+  background: var(--alternate-background-color);
+  border-radius: 0.5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content;
+  margin: 0 0 0 2rem;
+}
+
+.tip.tip-in-guide .tip-image {
+  display: none;
 }
 
 .tip:not(:last-child):not(.tip-in-guide) {
@@ -697,8 +721,9 @@ table {
   border: 1px solid var(--separator-color);
 }
 
-table th, table td {
-  padding: .5rem;
+table th,
+table td {
+  padding: 0.5rem;
   text-align: start;
   border: 1px solid var(--separator-color);
 }
@@ -729,10 +754,10 @@ table th, table td {
 }
 
 .tags li a {
-	background: var(--category-tag-background-color);
-	color: var(--category-tag-text-color);
-	height: 1rem;
-	box-sizing: content-box;
+  background: var(--category-tag-background-color);
+  color: var(--category-tag-text-color);
+  height: 1rem;
+  box-sizing: content-box;
 }
 
 .browsers li a {
@@ -785,7 +810,8 @@ table th, table td {
   padding: 3%;
   border-radius: 20%;
   background-origin: padding-box;
-  background: var(--accent-color-lighter) url(/assets/zoom.svg) no-repeat center/80%;
+  background: var(--accent-color-lighter) url(/assets/zoom.svg) no-repeat
+    center/80%;
   z-index: 1;
 }
 
@@ -887,4 +913,48 @@ table th, table td {
 .pagination [aria-current] {
   color: var(--text-color);
   text-decoration: none;
+}
+
+/* Guides TOC */
+
+.toc-container {
+	font-size: 0.9rem;
+	padding: 1rem;
+	background: var(--alternate-background-color);
+	border-radius: 0.5rem;
+	float: inline-end;
+	margin: 0 0 1rem 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .toc-container {
+    float: none;
+    margin: 0;
+  }
+}
+
+.toc-container h2 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.toc ol, .toc ol li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc ol ol {
+  padding-inline-start: 1rem;
+}
+
+.direct-link {
+  display: none;
+  text-decoration: none;
+  font-weight: normal;
+  color: var(--sub-text-color);
+}
+
+:is(h1, h2, h3, h4, h5, h6):hover .direct-link {
+  display: inline;
 }

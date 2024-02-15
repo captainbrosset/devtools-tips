@@ -31,7 +31,7 @@ templateEngineOverride: njk
 </div>
 {%- if SEEALSO and SEEALSO[page.inputPath.split("/").pop()].length -%}
 <div class="see-also">
-    <h2>See also</h2>
+    <h2 id="see-also">See also</h2>
     <ul>
       {%- for otherTip in SEEALSO[page.inputPath.split("/").pop()] -%}
         <li>

@@ -1,7 +1,8 @@
 ---
-date: 2023-12-08
+date: 2024-02-15
 authors: Patrick Brosset
-title: Understand DevTools
+title: "Understanding DevTools: what is it, who is it for, how to open it, how to use it?"
+shortTitle: Understanding DevTools
 layout: guide.njk
 tags: ["guide"]
 excerpt: This guide is an introduction to DevTools, suited for people who are starting web development and haven't yet used the built-in browser tools. You will learn what DevTools is, who it's for, how to open it, how its UI is organized, what tools exist, and what the main user workflows are.
@@ -229,9 +230,7 @@ DevTools in Edge is very similar to DevTools in Chrome. The main difference is t
 
 #### Safari
 
-In Safari, the tools are displayed in the main toolbar, at the top of DevTools.
-
-**TODO: fill in this section and add a screenshot.**
+In Safari, the tools are displayed in the main toolbar, at the top of DevTools, similar to Firefox and Chrome.
 
 ## The workflow
 
