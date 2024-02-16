@@ -132,6 +132,10 @@ a {
   color: var(--accent-color);
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 /* Header */
 
 header {
@@ -201,6 +205,10 @@ header nav {
 
 .header-menu .submenu a span {
   text-decoration: underline;
+}
+
+.header-menu .submenu a:hover span {
+  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
