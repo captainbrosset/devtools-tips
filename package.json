@@ -18,6 +18,7 @@
         "@11ty/eleventy": "^0.12.1",
         "@11ty/eleventy-plugin-rss": "^1.1.1",
         "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+        "@actions/github": "^2.1.1",
         "dotenv": "^16.0.3",
         "eleventy-plugin-toc": "^1.1.5",
         "eleventy-plugin-youtube-embed": "^1.4.5",

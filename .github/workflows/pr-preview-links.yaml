@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@v2
+      - name: Install the npm dependencies
+        uses: bahmutov/npm-install@v1
       - name: Generate description
         run: |
           cd .github/scripts
