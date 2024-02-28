@@ -7,6 +7,8 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
       - name: Set md files changed in PR
         id: diff
         run: |
