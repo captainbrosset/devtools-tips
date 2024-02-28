@@ -5,7 +5,7 @@ title: Pause script execution when the DOM changes
 tags: ["tip", "javascript", "debug", "browser:firefox", "browser:chrome", "browser:edge", "browser:safari"]
 ---
 If you want to know what JavaScript code removes, adds, or modifies a DOM element in the page, you can use DOM breakpoints in DevTools. You can choose to break on:
-
+test
 * Subtree modification: this pauses execution when any element in the subtree of the selected element is modified (added, removed, or changed attribute).
 * Attribute modification: this pauses execution when an attribute of the selected element is modified.
 * Node removal: this pauses execution when the selected node is removed from the DOM tree.
