@@ -5,7 +5,7 @@ title: Customize the columns shown in console.table
 tags: ["tip", "console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari","browser:polypane"]
 see-also: ["console-table-group-assert.md", "find-all-images-without-alt-text.md"]
 ---
-
+test
 The [`console.table`](./console-table-group-assert.md) method is great for displaying tabular data in the console, but what if the objects your're logging contain a lot of properties, causing a lot of columns to appear in the console?
 
 For example, let's log all DOM elements on a page with `console.table($$("*"))`:
