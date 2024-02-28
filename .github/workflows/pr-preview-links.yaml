@@ -7,14 +7,7 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Set md files changed in PR
-        id: diff
-        run: |
-          FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep -E '\.md$')
-          echo "::set-output name=changed_files::$FILES"
       - name: Generate description
         run: |
           cd .github/scripts
-          token=${{ secrets.GITHUB_TOKEN }} node generate-pr-description.js "${{ steps.diff.outputs.changed_files }}"
+          token=${{ secrets.GITHUB_TOKEN }} node generate-pr-description.js
