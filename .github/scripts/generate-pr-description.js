@@ -1,5 +1,4 @@
 const github = require("@actions/github");
-const github = require("@actions/github");
 
 async function main() {
   const octokit = github.getOctokit(process.env.token);
