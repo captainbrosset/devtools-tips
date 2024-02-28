@@ -6,7 +6,7 @@ tags: ["tip", "testing", "network", "browser:chrome", "browser:edge", "browser:f
 ---
 
 Cookies are small files that websites save on your computer when you visit them. Websites often use cookies to remember things about your last visit. For example, a weather website can use cookies to store your preferred location, so you don’t have to enter it every time. 
-
+test
 Third-party cookies are just cookies too, but they are created by websites other than the one you are visiting, for example when the website you are visiting embeds an advertisement iframe.
 
 Third-party cookies are often used by advertisers to keep track of the websites a user visits, collect information about their browsing activity, with the hope of offering targeted ads and getting them to return to a website to buy products.
