@@ -5,7 +5,7 @@ title: Access results from recent Console evaluations
 tags: ["tip", "console", "browser:edge", "browser:firefox", "browser:chrome", "browser:safari", "browser:polypane"]
 ---
 Imagine you evaluate a long expression like `$$('*').map(el => Object.values(el.attributes).map(attr => {return {name: attr.name, value: attr.value}}))` which extracts the attributes from all of the DOM elements on the page.
-
+test
 Now imagine you want to access one element in particular from the giant returned array. You could just type the same expression again and add `[14]` at the end of it to access the 15th item.
 
 Or, you can use this great Console trick to reference the previous result without having to type it again:
