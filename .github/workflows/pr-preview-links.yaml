@@ -7,6 +7,8 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
       - name: Generate description
         run: |
           cd .github/scripts
