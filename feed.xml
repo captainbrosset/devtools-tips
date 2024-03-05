@@ -5,11 +5,56 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2024-01-29T00:00:00.000Z</updated>
+  <updated>2024-03-05T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>See the accessibility tree</title>
+    <link href="https://devtoolstips.org/tips/en/see-accessibility-tree/"/>
+    <updated>2024-03-05T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/see-accessibility-tree/</id>
+    <content type="html">&lt;p&gt;The accessibility tree is a representation of the structure of a web page that is used by assistive technologies such as screen readers. It is similar to the DOM tree, but it only includes the elements that are relevant for accessibility. For example, it includes text nodes, links, images, or form controls, but not generic elements such as &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It&#39;s best to actually use a screen reader, or another assistive technology, to experience how your webpage is perceived by users with disabilities. But, it can sometimes be useful to see the accessibility tree in DevTools to understand how a page is structured.&lt;/p&gt;
+&lt;h2 id=&quot;firefox&quot; tabindex=&quot;-1&quot;&gt;Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/see-accessibility-tree/#firefox&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Firefox has a dedicated &lt;strong&gt;Accessibility&lt;/strong&gt; tool. To open it:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Press &lt;kbd&gt;F12&lt;/kbd&gt; to open DevTools.&lt;/li&gt;
+&lt;li&gt;In the main toolbar, click the &lt;strong&gt;Accessibility&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;Expand the &lt;strong&gt;document&lt;/strong&gt; node that&#39;s displayed in the tool to reveal the accessibility tree.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Supported features include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hovering over nodes in the tree highlights the corresponding DOM elements in the page.&lt;/li&gt;
+&lt;li&gt;Selecting nodes reveals their accessibility properties in the sidebar.&lt;/li&gt;
+&lt;li&gt;Accessibility issues are displayed next to the corresponding nodes in the tree.&lt;/li&gt;
+&lt;li&gt;Checking for more issues, tabbing order, or simulating color vision deficiencies from the toolbar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-accessibility-tree-firefox.png&quot; alt=&quot;The Accessibility tool in Firefox, showing the accessibility tree&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;chrome-and-edge&quot; tabindex=&quot;-1&quot;&gt;Chrome and Edge &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/see-accessibility-tree/#chrome-and-edge&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Chrome and Edge have an option to display the accessibility tree in the &lt;strong&gt;Elements&lt;/strong&gt; tool, instead of the DOM tree. To enable it:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Press &lt;kbd&gt;F12&lt;/kbd&gt; to open DevTools.&lt;/li&gt;
+&lt;li&gt;Go to the &lt;strong&gt;Settings&lt;/strong&gt; panel by pressing &lt;kbd&gt;F1&lt;/kbd&gt;.&lt;/li&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Experiments&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Find the &lt;strong&gt;Enable full accessibility tree view in the Elements panel&lt;/strong&gt; checkbox and select it.&lt;/li&gt;
+&lt;li&gt;Restart DevTools.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To see the accessibility tree in the &lt;strong&gt;Elements&lt;/strong&gt; tool:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Switch to Accessibility Tree View&lt;/strong&gt; in the top-right corner of the DOM tree.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Supported features include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hovering over nodes in the tree highlights the corresponding DOM elements in the page.&lt;/li&gt;
+&lt;li&gt;Selecting nodes reveals the matching CSS styles in the &lt;strong&gt;Styles&lt;/strong&gt; pane and lets you update them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/see-accessibility-tree-edge.png&quot; alt=&quot;The Elements tool in Edge, showing the accessibility tree where the DOM tree normally is&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Name evaluated files with the sourceURL pragma</title>
@@ -3865,32 +3910,23 @@ In fact, most DevTools display an overlay on top of the entire page that prevent
     <id>https://devtoolstips.org/tips/en/simulate-color-vision-deficiencies/</id>
     <content type="html">&lt;p&gt;People who visit your web pages may have different types of color vision deficiencies that, if you incorrectly use colors for meaning, may affect their experience.&lt;/p&gt;
 &lt;p&gt;Firefox, Chrome, Polypane and Edge make it possible for you to test how a web page may appear to somebody with a color vision deficiency.&lt;/p&gt;
+&lt;h2 id=&quot;firefox&quot; tabindex=&quot;-1&quot;&gt;Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/simulate-color-vision-deficiencies/#firefox&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;In Firefox:
-&lt;ul&gt;
-&lt;li&gt;Go to the Accessibility panel&lt;/li&gt;
-&lt;li&gt;In the toolbar at the top, choose from a selection of different color vision deficiencies in the &amp;quot;Simulate&amp;quot; drop-down&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Accessibility&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;In the toolbar at the top, choose from a selection of different color vision deficiencies in the &lt;strong&gt;Simulate&lt;/strong&gt; drop-down.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-color-vision-deficiencies-1.png&quot; alt=&quot;The color vision simulation drop-down in Firefox.&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;chrome-and-edge&quot; tabindex=&quot;-1&quot;&gt;Chrome and Edge &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/simulate-color-vision-deficiencies/#chrome-and-edge&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;In Chrome, or in Edge:
-&lt;ul&gt;
-&lt;li&gt;You first need to open the Rendering panel. Either use the &lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-color-vision-deficiencies/execute-commands.md&quot;&gt;command menu&lt;/a&gt; and type &lt;code&gt;rendering&lt;/code&gt; or use the main menu (the three-dots icon in the top-right corner of the screen) and go to More Tools to find it.&lt;/li&gt;
-&lt;li&gt;Scroll down until you find the &amp;quot;Emulate vision deficiencies&amp;quot; section, and choose from the drop-down&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Rendering&lt;/strong&gt; tool by either using the &lt;a href=&quot;https://devtoolstips.org/tips/en/simulate-color-vision-deficiencies/execute-commands.md&quot;&gt;command menu&lt;/a&gt; and type &amp;quot;rendering&amp;quot;, or by using the main menu (the &lt;strong&gt;...&lt;/strong&gt; icon in the top-right corner of the screen) and by going to &lt;strong&gt;More Tools&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Scroll down until you find the &lt;strong&gt;Emulate vision deficiencies&lt;/strong&gt; section, and choose from the drop-down.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-color-vision-deficiencies-2.png&quot; alt=&quot;The color vision simulation drop-down in Chrome.&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;In Polypane:
+&lt;h2 id=&quot;polypane&quot; tabindex=&quot;-1&quot;&gt;Polypane &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/simulate-color-vision-deficiencies/#polypane&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Open the &lt;strong&gt;Debug tools&lt;/strong&gt; option of a pane.&lt;/li&gt;
 &lt;li&gt;Switch to &lt;strong&gt;Simulators&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Select one of the nine available color vision simulators or hover over the &amp;quot;i&amp;quot; icon for additional information.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;Select one of the nine available color vision simulators or hover over the &lt;strong&gt;i&lt;/strong&gt; icon for additional information.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/simulate-color-vision-deficiencies-3.png&quot; alt=&quot;The simulator drop-down in Polypane.&quot; /&gt;&lt;/p&gt;
 </content>
