@@ -1062,6 +1062,14 @@
       "link": "/tips/en/fix-color-contrast-issues"
     },
     {
+      "title": "Simulate color vision deficiencies",
+      "image": {
+        "alt": "The color vision simulation drop-down in Firefox.",
+        "src": "../../assets/img/simulate-color-vision-deficiencies-1.png"
+      },
+      "link": "/tips/en/simulate-color-vision-deficiencies"
+    },
+    {
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
@@ -1076,14 +1084,6 @@
         "src": "../../assets/img/fix-color-contrast-issues-with-element-tooltip.gif"
       },
       "link": "/tips/en/fix-color-contrast-issues-with-element-tooltip"
-    },
-    {
-      "title": "Simulate color vision deficiencies",
-      "image": {
-        "alt": "The color vision simulation drop-down in Firefox.",
-        "src": "../../assets/img/simulate-color-vision-deficiencies-1.png"
-      },
-      "link": "/tips/en/simulate-color-vision-deficiencies"
     }
   ],
   "detect-unused-code.md": [
@@ -1241,6 +1241,14 @@
   ],
   "drag-drop-dom-nodes.md": [
     {
+      "title": "See the accessibility tree",
+      "image": {
+        "alt": "The Accessibility tool in Firefox, showing the accessibility tree",
+        "src": "../../assets/img/see-accessibility-tree-firefox.png"
+      },
+      "link": "/tips/en/see-accessibility-tree"
+    },
+    {
       "title": "Inspect the user-agent DOM",
       "image": {
         "alt": "The Elements tool in Chrome, an input type=range is expanded, showing it's internal user-agent shadow dom",
@@ -1263,14 +1271,6 @@
         "src": "../../assets/img/spot-out-of-viewport-elements.png"
       },
       "link": "/tips/en/spot-out-of-viewport-elements"
-    },
-    {
-      "title": "Expand DOM nodes recursively",
-      "image": {
-        "alt": "Animation showing right-clicking on a node in Chrome's Elements panel and choosing \"expand recursively\".",
-        "src": "../../assets/img/expand-nodes-recursively.gif"
-      },
-      "link": "/tips/en/expand-nodes-recursively"
     }
   ],
   "edit-and-resend-network-requests.md": [
@@ -2794,20 +2794,20 @@
       "link": "/tips/en/inspect-devtools-with-devtools"
     },
     {
+      "title": "See the accessibility tree",
+      "image": {
+        "alt": "The Accessibility tool in Firefox, showing the accessibility tree",
+        "src": "../../assets/img/see-accessibility-tree-firefox.png"
+      },
+      "link": "/tips/en/see-accessibility-tree"
+    },
+    {
       "title": "Copy an element's JavaScript path",
       "image": {
         "alt": "The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.",
         "src": "../../assets/img/copy-element-js-path.png"
       },
       "link": "/tips/en/copy-element-js-path"
-    },
-    {
-      "title": "Customize the columns shown in console.table",
-      "image": {
-        "alt": "Example of a console.table output in Chrome DevTools showing a lot of columns, making it hard to read each column header",
-        "src": "../../assets/img/customize-console-table-columns.png"
-      },
-      "link": "/tips/en/customize-console-table-columns"
     }
   ],
   "jump-to-css-variable.md": [
@@ -3732,6 +3732,40 @@
       "link": "/tips/en/find-custom-elements-code"
     }
   ],
+  "see-accessibility-tree.md": [
+    {
+      "title": "Simulate color vision deficiencies",
+      "image": {
+        "alt": "The color vision simulation drop-down in Firefox.",
+        "src": "../../assets/img/simulate-color-vision-deficiencies-1.png"
+      },
+      "link": "/tips/en/simulate-color-vision-deficiencies"
+    },
+    {
+      "title": "Visualize the tabbing order on the page",
+      "image": {
+        "alt": "The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.",
+        "src": "../../assets/img/visualize-tabbing-order.png"
+      },
+      "link": "/tips/en/visualize-tabbing-order"
+    },
+    {
+      "title": "Drag and drop nodes in the DOM tree",
+      "image": {
+        "alt": "Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge.",
+        "src": "../../assets/img/drag-drop-dom-nodes.gif"
+      },
+      "link": "/tips/en/drag-drop-dom-nodes"
+    },
+    {
+      "title": "Inspect the user-agent DOM",
+      "image": {
+        "alt": "The Elements tool in Chrome, an input type=range is expanded, showing it's internal user-agent shadow dom",
+        "src": "../../assets/img/inspect-user-agent-dom.png"
+      },
+      "link": "/tips/en/inspect-user-agent-dom"
+    }
+  ],
   "see-json-responses.md": [
     {
       "title": "Install or create extensions to customize DevTools",
@@ -4000,12 +4034,28 @@
   ],
   "simulate-color-vision-deficiencies.md": [
     {
+      "title": "See the accessibility tree",
+      "image": {
+        "alt": "The Accessibility tool in Firefox, showing the accessibility tree",
+        "src": "../../assets/img/see-accessibility-tree-firefox.png"
+      },
+      "link": "/tips/en/see-accessibility-tree"
+    },
+    {
       "title": "Detect low color contrast issues",
       "image": {
         "alt": "The CSS Overview panel in Chrome, showing the color contrast issues section.",
         "src": "../../assets/img/detect-low-color-contrast-css-overview.png"
       },
       "link": "/tips/en/detect-low-color-contrast"
+    },
+    {
+      "title": "Fix low color contrast issues",
+      "image": {
+        "alt": "The chrome color picker, showing the contrast lines and new color suggestions",
+        "src": "../../assets/img/fix-color-contrast-issues-chromium.png"
+      },
+      "link": "/tips/en/fix-color-contrast-issues"
     }
   ],
   "simulate-devices.md": [
@@ -4138,12 +4188,12 @@
       "link": "/tips/en/remove-annoying-overlays"
     },
     {
-      "title": "Explain console errors by using artificial intelligence",
+      "title": "See the accessibility tree",
       "image": {
-        "alt": "Edge with DevTools opened, an error was clicked, and Copilot is in the Edge sidebar, showing the error message and the explanation",
-        "src": "../../assets/img/explain-errors-with-ai.png"
+        "alt": "The Accessibility tool in Firefox, showing the accessibility tree",
+        "src": "../../assets/img/see-accessibility-tree-firefox.png"
       },
-      "link": "/tips/en/explain-errors-with-ai"
+      "link": "/tips/en/see-accessibility-tree"
     }
   ],
   "store-node-as-variable.md": [
