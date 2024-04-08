@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find the CSS rule that causes a specific style to apply</title>
+    <title>Find why a CSS property is overridden</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/find-rule-that-causes-style/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/find-why-css-property-is-overridden/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/firefox.svg">
-    <meta property="og:description" content="Find the CSS rule that causes a specific style to apply">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
+    <meta property="og:description" content="Find why a CSS property is overridden">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-find-rule-that-causes-style">
+    <main style="view-transition-name:post-find-why-css-property-is-overridden">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -102,7 +102,7 @@
       </div>
       <div id="maincontent">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Find the CSS rule that causes a specific style to apply</h1>
+<h1 class="tip-title">Find why a CSS property is overridden</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
@@ -116,10 +116,6 @@
         </li></ul>
     Supported by:
     <ul class="browsers"><li class="browser">
-            <a href="/browser/firefox/" title="List all tips supported by firefox">
-                <img src="/assets/browsers/firefox.svg" alt=""> firefox
-            </a>
-        </li><li class="browser">
             <a href="/browser/edge/" title="List all tips supported by edge">
                 <img src="/assets/browsers/edge.svg" alt=""> edge
             </a>
@@ -131,34 +127,60 @@
             <a href="/browser/safari/" title="List all tips supported by safari">
                 <img src="/assets/browsers/safari.svg" alt=""> safari
             </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>Here is the scenario: you know there's a specific style that applies to an HTML element in your web page, say some padding, but you can't seem to find where, in the CSS code, that style is coming from.</p>
-<p>This can easily happen when working on a large codebase where a lot of CSS rules apply to the element you're looking at.</p>
-<p>One neat way to help with this is to use the <strong>Computed</strong> panel:</p>
+    <p>In CSS, the <strong>cascade</strong> plays a very important role in which CSS properties apply to an element. This key concept is not explained here, but you can learn more on MDN, at <a href="https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance">Cascade, specificity, and inheritance</a>.</p>
+<p>When debugging CSS, sometimes you realize that the CSS property you meant to apply to an element is actually overridden by another property. Finding the overriding property is not always easy, especially when the element is styled with many CSS rules that define many properties.</p>
+<p>Here are ways to find the overriding CSS property.</p>
+<h3 id="by-using-the-computed-styles" tabindex="-1">By using the computed styles <a class="direct-link" href="#by-using-the-computed-styles">#</a></h3>
 <ol>
-<li>Open DevTools, and select the element you're interested in.</li>
-<li>In the <strong>Elements</strong> (or <strong>Inspector</strong>) tool, open the <strong>Computed</strong> sidebar panel.</li>
-<li>In the list, search for the CSS property you are interested in, say <code>padding-bottom</code>.</li>
-<li>Expand the little arrow next to the property name to see the CSS rule (or rules) that caused this style to be applied.</li>
-<li>Click the first link in the list to jump to the actual location, in your code, where the rule is defined. In Firefox, you will end up in the <strong>Style Editor</strong> tool, and in Chromium-based browser the link will take you to the <strong>Sources</strong> tool.</li>
+<li>
+<p>Open the <strong>Computed</strong> styles panel in your browser DevTools. In Firefox, it's located in the <strong>Inspector</strong> tool. In other browsers, it's in the <strong>Elements</strong> tool.</p>
+</li>
+<li>
+<p>Find the property which is overridden.</p>
+</li>
+<li>
+<p>Expand the property by clicking the triangle icon next to it.</p>
+<p>The list of CSS rules that define this property appears, ordered by their specificity. The rule that wins is at the top of the list.</p>
+</li>
+<li>
+<p>To navigate to the overriding property, click the link next to the winning rule.</p>
+</li>
 </ol>
-<p><img src="/assets/img/find-rule-that-causes-style-1.png" alt="The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from"></p>
-<p>Quick note: in Chrome, Edge, and Safari only, you can also jump from the <strong>Computed</strong> panel to the right place in the <strong>Styles</strong> panel by clicking to the right of the property name:</p>
-<p><img src="/assets/img/find-rule-that-causes-style-2.png" alt="The Elements tool in Chrome, showing the Computed tab. The hovered property has an arrow icon next to it that can be clicked to go to the corresponding place in the Styles panel."></p>
+<h3 id="by-filtering-the-applied-rules" tabindex="-1">By filtering the applied rules <a class="direct-link" href="#by-filtering-the-applied-rules">#</a></h3>
+<p>Firefox DevTools has a helpful feature that allows you to filter the applied CSS rules that are displayed in the <strong>Rules</strong> panel. This can help you find the overriding property:</p>
+<ol>
+<li>
+<p>Locate the CSS property that is overridden in the <strong>Rules</strong> panel of the <strong>Inspector</strong> tool.</p>
+</li>
+<li>
+<p>Click the <strong>Filter rules containing this property</strong> icon (a funnel) next to the property name.</p>
+<p>The list of CSS rules is filtered to show only the rules that contain the overridden property. In addition, the property is highlighted everywhere it appears in the panel.</p>
+</li>
+<li>
+<p>Scroll through the list of properties to find the overriding property (i.e. the one that's not struck through).</p>
+</li>
+</ol>
+<p>You can achieve the same result in other browsers by using the <strong>Filter</strong> text box that's at the top of the <strong>Styles</strong> panel in the <strong>Elements</strong> tool.</p>
+<p><img src="/assets/img/find-why-css-property-is-overridden.png" alt="Firefox DevTools, showing the Inspector tool and the Rules panel. The filter icon was clicked next to the display property, and the other display properties from other rules are highlighted."></p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/find-why-css-property-is-overridden">Find why a CSS property is overridden</a>
-            <a href="/tips/en/find-why-css-property-is-overridden" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-why-css-property-is-overridden.png" alt="Firefox DevTools, showing the Inspector tool and the Rules panel. The filter icon was clicked next to the display property, and the other display properties from other rules are highlighted.">
+            <a href="/tips/en/find-rule-that-causes-style">Find the CSS rule that causes a specific style to apply</a>
+            <a href="/tips/en/find-rule-that-causes-style" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-rule-that-causes-style-1.png" alt="The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from">
             </a>
         </li><li>
-            <a href="/tips/en/highlight-matching-elements">Highlight all the elements that a CSS rule matches</a>
-            <a href="/tips/en/highlight-matching-elements" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page.">
+            <a href="/tips/en/visualize-css-transforms">Visualize the effect of CSS transforms</a>
+            <a href="/tips/en/visualize-css-transforms" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/visualize-css-transforms.gif" alt="Animation showing how the CSS transform highlighter appears on the page when hovering over a transform CSS property in the Rules panel.">
             </a>
         </li><li>
             <a href="/tips/en/convert-font-units">Convert font property units</a>
@@ -166,14 +188,14 @@
                 <img loading="lazy" src="/assets/img/convert-font-units-1.png" alt="The fonts panel in Firefox, showing the unit conversion drop-down.">
             </a>
         </li><li>
-            <a href="/tips/en/debug-js-hover">Debug popups that appear on hover using JS</a>
-            <a href="/tips/en/debug-js-hover" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/debug-js-hover.gif" alt="Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.">
+            <a href="/tips/en/edit-css-filters">Edit CSS filters</a>
+            <a href="/tips/en/edit-css-filters" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/edit-css-filters.png" alt="The filter editing UI in Firefox.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2023-06-10T00:00:00.000Z">6/10/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-rule-that-causes-style.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-04-08T00:00:00.000Z">4/8/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-why-css-property-is-overridden.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
