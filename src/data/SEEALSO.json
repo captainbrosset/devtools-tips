@@ -209,12 +209,12 @@
       "link": "/tips/en/find-rule-that-causes-style"
     },
     {
-      "title": "Get the selected element in the console",
+      "title": "Find why a CSS property is overridden",
       "image": {
-        "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
-        "src": "../../assets/img/get-current-element-in-console.jpg"
+        "alt": "Firefox DevTools, showing the Inspector tool and the Rules panel. The filter icon was clicked next to the display property, and the other display properties from other rules are highlighted.",
+        "src": "../../assets/img/find-why-css-property-is-overridden.png"
       },
-      "link": "/tips/en/get-current-element-in-console"
+      "link": "/tips/en/find-why-css-property-is-overridden"
     }
   ],
   "check-bfcache-readiness.md": [
@@ -329,12 +329,12 @@
       "link": "/tips/en/find-rule-that-causes-style"
     },
     {
-      "title": "Visualize the effect of CSS transforms",
+      "title": "Find why a CSS property is overridden",
       "image": {
-        "alt": "Animation showing how the CSS transform highlighter appears on the page when hovering over a transform CSS property in the Rules panel.",
-        "src": "../../assets/img/visualize-css-transforms.gif"
+        "alt": "Firefox DevTools, showing the Inspector tool and the Rules panel. The filter icon was clicked next to the display property, and the other display properties from other rules are highlighted.",
+        "src": "../../assets/img/find-why-css-property-is-overridden.png"
       },
-      "link": "/tips/en/visualize-css-transforms"
+      "link": "/tips/en/find-why-css-property-is-overridden"
     }
   ],
   "convert-image-to-data-url.md": [
@@ -1336,6 +1336,14 @@
   "edit-css-angles.md": [],
   "edit-css-filters.md": [
     {
+      "title": "Find why a CSS property is overridden",
+      "image": {
+        "alt": "Firefox DevTools, showing the Inspector tool and the Rules panel. The filter icon was clicked next to the display property, and the other display properties from other rules are highlighted.",
+        "src": "../../assets/img/find-why-css-property-is-overridden.png"
+      },
+      "link": "/tips/en/find-why-css-property-is-overridden"
+    },
+    {
       "title": "Convert color formats",
       "image": {
         "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
@@ -1358,14 +1366,6 @@
         "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
-    },
-    {
-      "title": "Edit CSS shadow visually",
-      "image": {
-        "alt": "Animation showing the shadow editor in Edge's Styles pane.",
-        "src": "../../assets/img/edit-shadow.gif"
-      },
-      "link": "/tips/en/edit-shadow"
     }
   ],
   "edit-elements-with-the-keyboard.md": [
@@ -2124,6 +2124,14 @@
   ],
   "find-rule-that-causes-style.md": [
     {
+      "title": "Find why a CSS property is overridden",
+      "image": {
+        "alt": "Firefox DevTools, showing the Inspector tool and the Rules panel. The filter icon was clicked next to the display property, and the other display properties from other rules are highlighted.",
+        "src": "../../assets/img/find-why-css-property-is-overridden.png"
+      },
+      "link": "/tips/en/find-why-css-property-is-overridden"
+    },
+    {
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
@@ -2146,14 +2154,6 @@
         "src": "../../assets/img/debug-js-hover.gif"
       },
       "link": "/tips/en/debug-js-hover"
-    },
-    {
-      "title": "Find the most expensive CSS selectors",
-      "image": {
-        "alt": "The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.",
-        "src": "../../assets/img/find-expensive-selectors.png"
-      },
-      "link": "/tips/en/find-expensive-selectors"
     }
   ],
   "find-the-offset-parent-of-an-element.md": [
@@ -2180,6 +2180,40 @@
         "src": "../../assets/img/get-current-element-in-console.jpg"
       },
       "link": "/tips/en/get-current-element-in-console"
+    }
+  ],
+  "find-why-css-property-is-overridden.md": [
+    {
+      "title": "Find the CSS rule that causes a specific style to apply",
+      "image": {
+        "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
+        "src": "../../assets/img/find-rule-that-causes-style-1.png"
+      },
+      "link": "/tips/en/find-rule-that-causes-style"
+    },
+    {
+      "title": "Visualize the effect of CSS transforms",
+      "image": {
+        "alt": "Animation showing how the CSS transform highlighter appears on the page when hovering over a transform CSS property in the Rules panel.",
+        "src": "../../assets/img/visualize-css-transforms.gif"
+      },
+      "link": "/tips/en/visualize-css-transforms"
+    },
+    {
+      "title": "Convert font property units",
+      "image": {
+        "alt": "The fonts panel in Firefox, showing the unit conversion drop-down.",
+        "src": "../../assets/img/convert-font-units-1.png"
+      },
+      "link": "/tips/en/convert-font-units"
+    },
+    {
+      "title": "Edit CSS filters",
+      "image": {
+        "alt": "The filter editing UI in Firefox.",
+        "src": "../../assets/img/edit-css-filters.png"
+      },
+      "link": "/tips/en/edit-css-filters"
     }
   ],
   "fix-color-contrast-issues-with-element-tooltip.md": [
@@ -4701,6 +4735,14 @@
   "view-perf-markers-in-order.md": [],
   "visualize-css-transforms.md": [
     {
+      "title": "Find why a CSS property is overridden",
+      "image": {
+        "alt": "Firefox DevTools, showing the Inspector tool and the Rules panel. The filter icon was clicked next to the display property, and the other display properties from other rules are highlighted.",
+        "src": "../../assets/img/find-why-css-property-is-overridden.png"
+      },
+      "link": "/tips/en/find-why-css-property-is-overridden"
+    },
+    {
       "title": "Convert font property units",
       "image": {
         "alt": "The fonts panel in Firefox, showing the unit conversion drop-down.",
@@ -4723,14 +4765,6 @@
         "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
-    },
-    {
-      "title": "Find inactive CSS styles",
-      "image": {
-        "alt": "Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.",
-        "src": "../../assets/img/find-inactive-styles.png"
-      },
-      "link": "/tips/en/find-inactive-styles"
     }
   ],
   "visualize-screenreader-order.md": [
