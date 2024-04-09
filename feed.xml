@@ -53,7 +53,7 @@
 &lt;p&gt;Repeat with the other CSS files you want to disable.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;by-using-polypane&#39;s-disable-css-option&quot; tabindex=&quot;-1&quot;&gt;By using Polypane&#39;s Disable CSS option &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/disable-all-css/#by-using-polypane&#39;s-disable-css-option&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;by-using-polypane&#39;s-disable-css-option&quot; tabindex=&quot;-1&quot;&gt;By using Polypane&#39;s Disable CSS option &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/disable-all-css/#by-using-polypane&#39;s-disable-css-option&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;In Polypane, you can disable all CSS styles by using the &lt;strong&gt;Disable CSS&lt;/strong&gt; option:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;In the pane where you want to disable CSS styles, open the &lt;strong&gt;Debug tools&lt;/strong&gt; menu.&lt;/li&gt;
