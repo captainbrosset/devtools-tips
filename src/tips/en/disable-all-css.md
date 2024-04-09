@@ -39,7 +39,7 @@ Firefox has a tool named **Style Editor**, which lists all the stylesheets used 
 
 1. Repeat with the other CSS files you want to disable.
 
-## By using Polypane's Disable CSS option
+### By using Polypane's Disable CSS option
 
 In Polypane, you can disable all CSS styles by using the **Disable CSS** option:
 
