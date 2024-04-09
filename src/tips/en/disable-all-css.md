@@ -1,6 +1,6 @@
 ---
 date: 2024-04-09
-authors: Patrick Brosset
+authors: Patrick Brosset, Kilian Valkhof
 title: Disable all CSS styles on the page
 tags: ["tip", "css", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
 ---
@@ -39,8 +39,11 @@ Firefox has a tool named **Style Editor**, which lists all the stylesheets used 
 
 1. Repeat with the other CSS files you want to disable.
 
-## In Polypane
+## By using Polypane's Disable CSS option
 
-In Polypane, you can disable all CSS styles by opening up the **debug tools** for a pane and selecting the **Disable CSS** option:
+In Polypane, you can disable all CSS styles by using the **Disable CSS** option:
 
-![Polypane showing two panes. One has CSS applied and the other has CSS disabled. The pane with disabled CSS Has an opened menu with 'disable CSS' highlighted](../../assets/img/disable-all-css-polypane.png)
+1. In the pane where you want to disable CSS styles, open the **Debug tools** menu.
+1. Click **Disable CSS** in the menu.
+
+![Polypane showing two panes. One has CSS applied and the other has CSS disabled. The pane with disabled CSS has an opened menu with the Disable CSS option highlighted](../../assets/img/disable-all-css-polypane.png)

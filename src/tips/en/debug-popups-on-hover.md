@@ -1,6 +1,6 @@
 ---
 date: 2023-11-21
-authors: Pankaj Parashar, Patrick Brosset
+authors: Pankaj Parashar, Patrick Brosset, Kilian Valkhof
 title: Debug popups that appear on hover
 tags: ["tip", "debug", "browser:edge", "browser:chrome", "browser:polypane"]
 see-also: ["debug-js-hover.md", "debug-js-hover-2.md"]
@@ -8,9 +8,11 @@ see-also: ["debug-js-hover.md", "debug-js-hover-2.md"]
 
 As described in [Debug popups that appear on hover using JS](./debug-js-hover.md) and in [Debug popups that appear on hover using the debugger statement](./debug-js-hover-2.md), there are ways to debug popups that appear on hover using JavaScript.
 
-The main problem in debugging overlay elements, like popups, is that they disappear as soon as the page loses focus, for example after moving focus to the DevTools window.
+The main problem in debugging overlay elements, like popups, is that they disappear as soon as the page loses focus, for example after moving focus to the DevTools window. Use the techniques below to keep focus on the webpage while using DevTools.
 
-Chromium-based browsers such as Chrome and Edge, provide a way to emulate a focused state on the webpage even if DevTools has focus.
+## In Chrome or Edge
+
+Chromium-based browsers, such as Chrome and Edge, provide a way to emulate a focused state on the webpage even if DevTools has focus.
 
 To emulate a focused state on the webpage:
 
@@ -23,11 +25,9 @@ To emulate a focused state on the webpage:
 
 ## In Polypane
 
-Polypane has a similar feature to retain the focus state inside each pane. To enable this feature:
+Polypane provides a way to retain the focus state inside each pane. To retain the focus:
 
-1. Right-click the sync icon.
-1. Check "focus".
-
-In addition to retaining the focus, it is also kept in sync across all panes.
+1. Right-click on the **Sync** icon in the toolbar.
+1. Check the **Focus** option. The focus in now retained in all panes, and also kept in sync across all panes.
 
 ![Polypane with an opened context menu on the sync button, and the 'Focus' option checked and highlighted](../../assets/img/debug-popups-on-hover-polypane.png)
