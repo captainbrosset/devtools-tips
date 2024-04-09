@@ -53,6 +53,13 @@
 &lt;p&gt;Repeat with the other CSS files you want to disable.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&quot;by-using-polypane&#39;s-disable-css-option&quot; tabindex=&quot;-1&quot;&gt;By using Polypane&#39;s Disable CSS option &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/disable-all-css/#by-using-polypane&#39;s-disable-css-option&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In Polypane, you can disable all CSS styles by using the &lt;strong&gt;Disable CSS&lt;/strong&gt; option:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the pane where you want to disable CSS styles, open the &lt;strong&gt;Debug tools&lt;/strong&gt; menu.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Disable CSS&lt;/strong&gt; in the menu.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/disable-all-css-polypane.png&quot; alt=&quot;Polypane showing two panes. One has CSS applied and the other has CSS disabled. The pane with disabled CSS has an opened menu with the Disable CSS option highlighted&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -349,8 +356,9 @@
     <updated>2023-11-21T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/debug-popups-on-hover/</id>
     <content type="html">&lt;p&gt;As described in &lt;a href=&quot;https://devtoolstips.org/tips/en/debug-popups-on-hover/debug-js-hover.md&quot;&gt;Debug popups that appear on hover using JS&lt;/a&gt; and in &lt;a href=&quot;https://devtoolstips.org/tips/en/debug-popups-on-hover/debug-js-hover-2.md&quot;&gt;Debug popups that appear on hover using the debugger statement&lt;/a&gt;, there are ways to debug popups that appear on hover using JavaScript.&lt;/p&gt;
-&lt;p&gt;The main problem in debugging overlay elements, like popups, is that they disappear as soon as the page loses focus, for example after moving focus to the DevTools window.&lt;/p&gt;
-&lt;p&gt;Chromium-based browsers such as Chrome and Edge, provide a way to emulate a focused state on the webpage even if DevTools has focus.&lt;/p&gt;
+&lt;p&gt;The main problem in debugging overlay elements, like popups, is that they disappear as soon as the page loses focus, for example after moving focus to the DevTools window. Use the techniques below to keep focus on the webpage while using DevTools.&lt;/p&gt;
+&lt;h2 id=&quot;in-chrome-or-edge&quot; tabindex=&quot;-1&quot;&gt;In Chrome or Edge &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/debug-popups-on-hover/#in-chrome-or-edge&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Chromium-based browsers, such as Chrome and Edge, provide a way to emulate a focused state on the webpage even if DevTools has focus.&lt;/p&gt;
 &lt;p&gt;To emulate a focused state on the webpage:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open the &lt;strong&gt;Command Menu&lt;/strong&gt; (&lt;code&gt;Cmd+Shift+P&lt;/code&gt; or &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;).&lt;/li&gt;
@@ -359,6 +367,13 @@
 &lt;li&gt;Use DevTools to inspect and debug elements that only appear when focus is in the webpage.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-popups-on-hover.png&quot; alt=&quot;The Rendering tool in DevTools, showing the Emulate a focused page option&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;in-polypane&quot; tabindex=&quot;-1&quot;&gt;In Polypane &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/debug-popups-on-hover/#in-polypane&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Polypane provides a way to retain the focus state inside each pane. To retain the focus:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Right-click on the &lt;strong&gt;Sync&lt;/strong&gt; icon in the toolbar.&lt;/li&gt;
+&lt;li&gt;Check the &lt;strong&gt;Focus&lt;/strong&gt; option. The focus in now retained in all panes, and also kept in sync across all panes.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-popups-on-hover-polypane.png&quot; alt=&quot;Polypane with an opened context menu on the sync button, and the &#39;Focus&#39; option checked and highlighted&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   

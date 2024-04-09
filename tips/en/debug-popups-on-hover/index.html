@@ -119,12 +119,17 @@
             <a href="/browser/chrome/" title="List all tips supported by chrome">
                 <img src="/assets/browsers/chrome.svg" alt=""> chrome
             </a>
+        </li><li class="browser">
+            <a href="/browser/polypane/" title="List all tips supported by polypane">
+                <img src="/assets/browsers/polypane.svg" alt=""> polypane
+            </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
     <p>As described in <a href="/tips/en/debug-js-hover">Debug popups that appear on hover using JS</a> and in <a href="/tips/en/debug-js-hover-2">Debug popups that appear on hover using the debugger statement</a>, there are ways to debug popups that appear on hover using JavaScript.</p>
-<p>The main problem in debugging overlay elements, like popups, is that they disappear as soon as the page loses focus, for example after moving focus to the DevTools window.</p>
-<p>Chromium-based browsers such as Chrome and Edge, provide a way to emulate a focused state on the webpage even if DevTools has focus.</p>
+<p>The main problem in debugging overlay elements, like popups, is that they disappear as soon as the page loses focus, for example after moving focus to the DevTools window. Use the techniques below to keep focus on the webpage while using DevTools.</p>
+<h2 id="in-chrome-or-edge" tabindex="-1">In Chrome or Edge <a class="direct-link" href="#in-chrome-or-edge">#</a></h2>
+<p>Chromium-based browsers, such as Chrome and Edge, provide a way to emulate a focused state on the webpage even if DevTools has focus.</p>
 <p>To emulate a focused state on the webpage:</p>
 <ol>
 <li>Open the <strong>Command Menu</strong> (<code>Cmd+Shift+P</code> or <code>Ctrl+Shift+P</code>).</li>
@@ -133,6 +138,13 @@
 <li>Use DevTools to inspect and debug elements that only appear when focus is in the webpage.</li>
 </ol>
 <p><img src="/assets/img/debug-popups-on-hover.png" alt="The Rendering tool in DevTools, showing the Emulate a focused page option"></p>
+<h2 id="in-polypane" tabindex="-1">In Polypane <a class="direct-link" href="#in-polypane">#</a></h2>
+<p>Polypane provides a way to retain the focus state inside each pane. To retain the focus:</p>
+<ol>
+<li>Right-click on the <strong>Sync</strong> icon in the toolbar.</li>
+<li>Check the <strong>Focus</strong> option. The focus in now retained in all panes, and also kept in sync across all panes.</li>
+</ol>
+<p><img src="/assets/img/debug-popups-on-hover-polypane.png" alt="Polypane with an opened context menu on the sync button, and the 'Focus' option checked and highlighted"></p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
@@ -147,18 +159,18 @@
                 <img loading="lazy" src="/assets/img/debug-js-hover.gif" alt="Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.">
             </a>
         </li><li>
+            <a href="/tips/en/hide-or-pin-inspect-info-tooltip">Hide or pin the information tooltip while inspecting page elements</a>
+            <a href="/tips/en/hide-or-pin-inspect-info-tooltip" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/hide-or-pin-inspect-info-tooltip-1.png" alt="Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.">
+            </a>
+        </li><li>
             <a href="/tips/en/see-viewport-size">See the viewport size</a>
             <a href="/tips/en/see-viewport-size" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/see-viewport-size-chrome.png" alt="Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage">
             </a>
-        </li><li>
-            <a href="/tips/en/console-table-group-assert">console.log() is great, but do you know console.table()? console.group()? console.assert()?</a>
-            <a href="/tips/en/console-table-group-assert" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/console-table-group-assert-1.jpg" alt="The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column">
-            </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://twitter.com/pankajparashar">Pankaj Parashar</a>, <a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <div class="authors">Authors: <span><a href="https://twitter.com/pankajparashar">Pankaj Parashar</a>, <a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
     <p class="last-edit">Last edit: <time datetime="2023-11-21T00:00:00.000Z">11/21/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-popups-on-hover.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
