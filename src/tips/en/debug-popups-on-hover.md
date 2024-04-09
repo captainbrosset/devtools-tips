@@ -2,7 +2,7 @@
 date: 2023-11-21
 authors: Pankaj Parashar, Patrick Brosset
 title: Debug popups that appear on hover
-tags: ["tip", "debug", "browser:edge", "browser:chrome"]
+tags: ["tip", "debug", "browser:edge", "browser:chrome", "browser:polypane"]
 see-also: ["debug-js-hover.md", "debug-js-hover-2.md"]
 ---
 
@@ -20,3 +20,14 @@ To emulate a focused state on the webpage:
 1. Use DevTools to inspect and debug elements that only appear when focus is in the webpage.
 
 ![The Rendering tool in DevTools, showing the Emulate a focused page option](../../assets/img/debug-popups-on-hover.png)
+
+## In Polypane
+
+Polypane has a similar feature to retain the focus state inside each pane. To enable this feature:
+
+1. Right-click the sync icon.
+1. Check "focus".
+
+In addition to retaining the focus, it is also kept in sync across all panes.
+
+![Polypane with an opened context menu on the sync button, and the 'Focus' option checked and highlighted](../../assets/img/debug-popups-on-hover-polypane.png)
