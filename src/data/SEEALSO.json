@@ -1151,6 +1151,40 @@
       "link": "/tips/en/debug-js-hover"
     }
   ],
+  "disable-all-css.md": [
+    {
+      "title": "Highlight the effect of individual CSS properties on hover",
+      "image": {
+        "alt": "Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.",
+        "src": "../../assets/img/highlight-css-properties-on-hover.gif"
+      },
+      "link": "/tips/en/highlight-css-properties-on-hover"
+    },
+    {
+      "title": "Apply CSS styles to console messages",
+      "image": {
+        "alt": "A styled console message in Edge.",
+        "src": "../../assets/img/style-console-messages.png"
+      },
+      "link": "/tips/en/style-console-messages"
+    },
+    {
+      "title": "Copy an elements styles",
+      "image": {
+        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
+        "src": "../../assets/img/copy-element-styles.png"
+      },
+      "link": "/tips/en/copy-element-styles"
+    },
+    {
+      "title": "Copy a CSS rule as CSS-in-JS format",
+      "image": {
+        "alt": "Aimation showing the Styles pane in Edge, with the \"Copy all declarations as JS\" option being used, and then pasting the result in the Console to show that it is formatted.",
+        "src": "../../assets/img/copy-rule-as-css-in-js.gif"
+      },
+      "link": "/tips/en/copy-rule-as-css-in-js"
+    }
+  ],
   "disable-event-listeners.md": [
     {
       "title": "Find your web component's custom element code",
@@ -1187,6 +1221,14 @@
   ],
   "discover-all-tools.md": [
     {
+      "title": "Disable all CSS styles on the page",
+      "image": {
+        "alt": "Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run",
+        "src": "../../assets/img/disable-all-css.png"
+      },
+      "link": "/tips/en/disable-all-css"
+    },
+    {
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
@@ -1209,14 +1251,6 @@
         "src": "../../assets/img/reload-page-after-change.png"
       },
       "link": "/tips/en/reload-page-after-change"
-    },
-    {
-      "title": "Scroll an element into view",
-      "image": {
-        "alt": "Animation showing how the page is scrolled to reveal the selected element.",
-        "src": "../../assets/img/scroll-into-view.gif"
-      },
-      "link": "/tips/en/scroll-into-view"
     }
   ],
   "display-current-framerate.md": [
@@ -2045,6 +2079,14 @@
   ],
   "find-expensive-selectors.md": [
     {
+      "title": "Disable all CSS styles on the page",
+      "image": {
+        "alt": "Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run",
+        "src": "../../assets/img/disable-all-css.png"
+      },
+      "link": "/tips/en/disable-all-css"
+    },
+    {
       "title": "Find the CSS rule that causes a specific style to apply",
       "image": {
         "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
@@ -2067,14 +2109,6 @@
         "src": "../../assets/img/inspect-css-animation.gif"
       },
       "link": "/tips/en/inspect-css-animations"
-    },
-    {
-      "title": "Jump from a CSS variable usage to where it is defined",
-      "image": {
-        "alt": "Animation of clicking on a custom property link in the Styles panel in Edge.",
-        "src": "../../assets/img/jump-to-css-variable.gif"
-      },
-      "link": "/tips/en/jump-to-css-variable"
     }
   ],
   "find-html-parsing-errors.md": [],
@@ -2645,12 +2679,12 @@
       "link": "/tips/en/copy-element-styles"
     },
     {
-      "title": "Edit CSS absolute and relative positions by dragging points in the page",
+      "title": "Disable all CSS styles on the page",
       "image": {
-        "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "../../assets/img/edit-position.gif"
+        "alt": "Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run",
+        "src": "../../assets/img/disable-all-css.png"
       },
-      "link": "/tips/en/edit-position"
+      "link": "/tips/en/disable-all-css"
     }
   ],
   "highlight-elements-from-selector.md": [
@@ -3912,6 +3946,14 @@
       "link": "/tips/en/debug-popups-on-hover"
     },
     {
+      "title": "Disable all CSS styles on the page",
+      "image": {
+        "alt": "Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run",
+        "src": "../../assets/img/disable-all-css.png"
+      },
+      "link": "/tips/en/disable-all-css"
+    },
+    {
       "title": "Discover all the tools",
       "image": {
         "alt": "The list of most tools in Edge DevTools, just to illustrate how many there are",
@@ -3926,14 +3968,6 @@
         "src": "../../assets/img/scroll-into-view.gif"
       },
       "link": "/tips/en/scroll-into-view"
-    },
-    {
-      "title": "Quickly spot out-of-viewport elements",
-      "image": {
-        "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
-        "src": "../../assets/img/spot-out-of-viewport-elements.png"
-      },
-      "link": "/tips/en/spot-out-of-viewport-elements"
     }
   ],
   "see-viewport-size.md": [
@@ -4265,6 +4299,14 @@
     }
   ],
   "style-console-messages.md": [
+    {
+      "title": "Disable all CSS styles on the page",
+      "image": {
+        "alt": "Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run",
+        "src": "../../assets/img/disable-all-css.png"
+      },
+      "link": "/tips/en/disable-all-css"
+    },
     {
       "title": "Format console messages",
       "image": {
