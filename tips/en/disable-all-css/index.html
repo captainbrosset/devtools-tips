@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Highlight the effect of individual CSS properties on hover</title>
+    <title>Disable all CSS styles on the page</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/highlight-css-properties-on-hover/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/disable-all-css/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/chrome.svg">
-    <meta property="og:description" content="Highlight the effect of individual CSS properties on hover">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
+    <meta property="og:description" content="Disable all CSS styles on the page">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-highlight-css-properties-on-hover">
+    <main style="view-transition-name:post-disable-all-css">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -102,7 +102,7 @@
       </div>
       <div id="maincontent">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Highlight the effect of individual CSS properties on hover</h1>
+<h1 class="tip-title">Disable all CSS styles on the page</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
@@ -110,43 +110,79 @@
                 css
             </a>
         </li><li class="tag">
-            <a href="/tag/highlighter/" title="List all highlighter tips">
-                highlighter
+            <a href="/tag/testing/" title="List all testing tips">
+                testing
             </a>
         </li></ul>
     Supported by:
     <ul class="browsers"><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
             <a href="/browser/chrome/" title="List all tips supported by chrome">
                 <img src="/assets/browsers/chrome.svg" alt=""> chrome
             </a>
         </li><li class="browser">
-            <a href="/browser/edge/" title="List all tips supported by edge">
-                <img src="/assets/browsers/edge.svg" alt=""> edge
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
             </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>How do certain CSS properties apply to the page isn't always an easy question to answer.</p>
-<p>While some properties might be considered simple, others have complex effects that depend on other factors. Properties like <code>justify-content</code> or <code>gap</code> depend on writing and layout direction for example.</p>
-<p>Edge and Chrome help with this by highlighting the effect that individual CSS properties have in the page. This doesn't work with all properties, but does work with <code>margin</code>, <code>padding</code>, <code>border</code>, <code>justify-content</code>, <code>align-items</code>, <code>gap</code>.</p>
-<ul>
-<li>Find one of the above properties in the <strong>Styles</strong> panel.</li>
-<li>Move your mouse cursor over it.</li>
-<li>Watch as the corresponding affected region of the element gets highlighted in the page.</li>
-</ul>
-<p><img src="/assets/img/highlight-css-properties-on-hover.gif" alt="Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane."></p>
+    <p>To remove all CSS styles on a webpage, for example to test the accessibility of a page when styles are disabled, or to verify the order in which content is displayed, you can use the techniques below. Don't worry, the styles will be re-enabled when you refresh the page.</p>
+<h3 id="by-running-javascript-in-the-console" tabindex="-1">By running JavaScript in the console <a class="direct-link" href="#by-running-javascript-in-the-console">#</a></h3>
+<ol>
+<li>
+<p>Open the <strong>Console</strong> tool in your browser DevTools.</p>
+</li>
+<li>
+<p>Enter the following JavaScript expression:</p>
+<pre class="language-javascript"><code class="language-javascript">document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'style, link[rel="stylesheet"]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">e</span> <span class="token operator">=></span> e<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>The expression above finds all <code>&lt;style&gt;</code> elements and <code>&lt;link rel=&quot;stylesheet&quot;&gt;</code> elements on the page, and removes them.</p>
+</li>
+<li>
+<p>Press <kbd>Enter</kbd> to run the expression. The page is now displayed without any CSS styles:</p>
+<p><img src="/assets/img/disable-all-css.png" alt="Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run"></p>
+</li>
+</ol>
+<h3 id="by-using-firefox's-style-editor-tool" tabindex="-1">By using Firefox's Style Editor tool <a class="direct-link" href="#by-using-firefox's-style-editor-tool">#</a></h3>
+<p>Firefox has a tool named <strong>Style Editor</strong>, which lists all the stylesheets used on the page. To disable the styles on the page:</p>
+<ol>
+<li>Open the <strong>Style Editor</strong> tool in Firefox DevTools.</li>
+<li>Click the <strong>Toggle style sheet visibility</strong> buttons (the eye icons) next to each stylesheet to disable it.</li>
+</ol>
+<h3 id="by-using-the-sources-tool-in-other-browsers" tabindex="-1">By using the Sources tool in other browsers <a class="direct-link" href="#by-using-the-sources-tool-in-other-browsers">#</a></h3>
+<ol>
+<li>
+<p>Open the <strong>Sources</strong> tool in Chrome or Edge DevTools.</p>
+</li>
+<li>
+<p>Find the CSS files that you want to disable, for example by pressing <kbd>Ctrl+P</kbd> (or <kbd>Command+P</kbd> on macOS) to open the <strong>Command Menu</strong> and by typing <strong>.css</strong> to filter the CSS files.</p>
+</li>
+<li>
+<p>Select the entire text in the CSS file and delete it.</p>
+</li>
+<li>
+<p>Repeat with the other CSS files you want to disable.</p>
+</li>
+</ol>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/highlight-elements-from-selector">Highlight all elements on the page that match a given CSS selector</a>
-            <a href="/tips/en/highlight-elements-from-selector" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/highlight-elements-from-selector-firefox.png" alt="Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane">
+            <a href="/tips/en/highlight-css-properties-on-hover">Highlight the effect of individual CSS properties on hover</a>
+            <a href="/tips/en/highlight-css-properties-on-hover" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/highlight-css-properties-on-hover.gif" alt="Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.">
             </a>
         </li><li>
-            <a href="/tips/en/find-inactive-styles">Find inactive CSS styles</a>
-            <a href="/tips/en/find-inactive-styles" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-inactive-styles.png" alt="Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.">
+            <a href="/tips/en/style-console-messages">Apply CSS styles to console messages</a>
+            <a href="/tips/en/style-console-messages" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/style-console-messages.png" alt="A styled console message in Edge.">
             </a>
         </li><li>
             <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
@@ -154,14 +190,14 @@
                 <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
             </a>
         </li><li>
-            <a href="/tips/en/disable-all-css">Disable all CSS styles on the page</a>
-            <a href="/tips/en/disable-all-css" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/disable-all-css.png" alt="Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run">
+            <a href="/tips/en/copy-rule-as-css-in-js">Copy a CSS rule as CSS-in-JS format</a>
+            <a href="/tips/en/copy-rule-as-css-in-js" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-rule-as-css-in-js.gif" alt="Aimation showing the Styles pane in Edge, with the &quot;Copy all declarations as JS&quot; option being used, and then pasting the result in the Console to show that it is formatted.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2021-12-09T00:00:00.000Z">12/9/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/highlight-css-properties-on-hover.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-04-09T00:00:00.000Z">4/9/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/disable-all-css.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 

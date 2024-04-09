@@ -5,11 +5,56 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2024-04-08T00:00:00.000Z</updated>
+  <updated>2024-04-09T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Disable all CSS styles on the page</title>
+    <link href="https://devtoolstips.org/tips/en/disable-all-css/"/>
+    <updated>2024-04-09T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/disable-all-css/</id>
+    <content type="html">&lt;p&gt;To remove all CSS styles on a webpage, for example to test the accessibility of a page when styles are disabled, or to verify the order in which content is displayed, you can use the techniques below. Don&#39;t worry, the styles will be re-enabled when you refresh the page.&lt;/p&gt;
+&lt;h3 id=&quot;by-running-javascript-in-the-console&quot; tabindex=&quot;-1&quot;&gt;By running JavaScript in the console &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/disable-all-css/#by-running-javascript-in-the-console&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;strong&gt;Console&lt;/strong&gt; tool in your browser DevTools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter the following JavaScript expression:&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelectorAll&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;style, link[rel=&quot;stylesheet&quot;]&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The expression above finds all &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; elements and &lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&lt;/code&gt; elements on the page, and removes them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press &lt;kbd&gt;Enter&lt;/kbd&gt; to run the expression. The page is now displayed without any CSS styles:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/disable-all-css.png&quot; alt=&quot;Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;by-using-firefox&#39;s-style-editor-tool&quot; tabindex=&quot;-1&quot;&gt;By using Firefox&#39;s Style Editor tool &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/disable-all-css/#by-using-firefox&#39;s-style-editor-tool&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Firefox has a tool named &lt;strong&gt;Style Editor&lt;/strong&gt;, which lists all the stylesheets used on the page. To disable the styles on the page:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Style Editor&lt;/strong&gt; tool in Firefox DevTools.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Toggle style sheet visibility&lt;/strong&gt; buttons (the eye icons) next to each stylesheet to disable it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;by-using-the-sources-tool-in-other-browsers&quot; tabindex=&quot;-1&quot;&gt;By using the Sources tool in other browsers &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/disable-all-css/#by-using-the-sources-tool-in-other-browsers&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;strong&gt;Sources&lt;/strong&gt; tool in Chrome or Edge DevTools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find the CSS files that you want to disable, for example by pressing &lt;kbd&gt;Ctrl+P&lt;/kbd&gt; (or &lt;kbd&gt;Command+P&lt;/kbd&gt; on macOS) to open the &lt;strong&gt;Command Menu&lt;/strong&gt; and by typing &lt;strong&gt;.css&lt;/strong&gt; to filter the CSS files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select the entire text in the CSS file and delete it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Repeat with the other CSS files you want to disable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Find why a CSS property is overridden</title>
