@@ -885,20 +885,20 @@
       "link": "/tips/en/debug-js-hover"
     },
     {
+      "title": "Hide or pin the information tooltip while inspecting page elements",
+      "image": {
+        "alt": "Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
+        "src": "../../assets/img/hide-or-pin-inspect-info-tooltip-1.png"
+      },
+      "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
+    },
+    {
       "title": "See the viewport size",
       "image": {
         "alt": "Chrome, with DevTools opened, the viewport size overlay appears in the rendered webpage",
         "src": "../../assets/img/see-viewport-size-chrome.png"
       },
       "link": "/tips/en/see-viewport-size"
-    },
-    {
-      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
-      "image": {
-        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
-        "src": "../../assets/img/console-table-group-assert-1.jpg"
-      },
-      "link": "/tips/en/console-table-group-assert"
     }
   ],
   "debug-print-css-styles.md": [
@@ -1070,20 +1070,20 @@
       "link": "/tips/en/simulate-color-vision-deficiencies"
     },
     {
+      "title": "Debug popups that appear on hover",
+      "image": {
+        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
+        "src": "../../assets/img/debug-popups-on-hover.png"
+      },
+      "link": "/tips/en/debug-popups-on-hover"
+    },
+    {
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
         "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
-    },
-    {
-      "title": "Fix color contrast issues using the element tooltip",
-      "image": {
-        "alt": "Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast.",
-        "src": "../../assets/img/fix-color-contrast-issues-with-element-tooltip.gif"
-      },
-      "link": "/tips/en/fix-color-contrast-issues-with-element-tooltip"
     }
   ],
   "detect-unused-code.md": [
@@ -3078,20 +3078,20 @@
       "link": "/tips/en/track-focused-element"
     },
     {
-      "title": "Debug popups that appear on hover",
-      "image": {
-        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
-        "src": "../../assets/img/debug-popups-on-hover.png"
-      },
-      "link": "/tips/en/debug-popups-on-hover"
-    },
-    {
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
         "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
+    },
+    {
+      "title": "Highlight all the elements that a CSS rule matches",
+      "image": {
+        "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
+        "src": "../../assets/img/highlight-matching-elements.gif"
+      },
+      "link": "/tips/en/highlight-matching-elements"
     }
   ],
   "monitor-element-events.md": [
@@ -3938,14 +3938,6 @@
   ],
   "see-the-page-in-3d.md": [
     {
-      "title": "Debug popups that appear on hover",
-      "image": {
-        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
-        "src": "../../assets/img/debug-popups-on-hover.png"
-      },
-      "link": "/tips/en/debug-popups-on-hover"
-    },
-    {
       "title": "Disable all CSS styles on the page",
       "image": {
         "alt": "Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run",
@@ -3968,6 +3960,14 @@
         "src": "../../assets/img/scroll-into-view.gif"
       },
       "link": "/tips/en/scroll-into-view"
+    },
+    {
+      "title": "Quickly spot out-of-viewport elements",
+      "image": {
+        "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
+        "src": "../../assets/img/spot-out-of-viewport-elements.png"
+      },
+      "link": "/tips/en/spot-out-of-viewport-elements"
     }
   ],
   "see-viewport-size.md": [
@@ -4318,14 +4318,6 @@
   ],
   "suppressed-event-listeners-when-paused.md": [
     {
-      "title": "Debug popups that appear on hover",
-      "image": {
-        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
-        "src": "../../assets/img/debug-popups-on-hover.png"
-      },
-      "link": "/tips/en/debug-popups-on-hover"
-    },
-    {
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
@@ -4348,6 +4340,14 @@
         "src": "../../assets/img/measure-distances.png"
       },
       "link": "/tips/en/measure-distances"
+    },
+    {
+      "title": "Monitor all events dispatched on an element",
+      "image": {
+        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
+        "src": "../../assets/img/monitor-element-events.gif"
+      },
+      "link": "/tips/en/monitor-element-events"
     }
   ],
   "take-high-res-screenshots.md": [
@@ -4490,14 +4490,6 @@
       "link": "/tips/en/copy-element-styles"
     },
     {
-      "title": "Debug popups that appear on hover",
-      "image": {
-        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
-        "src": "../../assets/img/debug-popups-on-hover.png"
-      },
-      "link": "/tips/en/debug-popups-on-hover"
-    },
-    {
       "title": "Remove or disable event listeners",
       "image": {
         "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
@@ -4512,6 +4504,14 @@
         "src": "../../assets/img/find-custom-elements-code.gif"
       },
       "link": "/tips/en/find-custom-elements-code"
+    },
+    {
+      "title": "Monitor all events dispatched on an element",
+      "image": {
+        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
+        "src": "../../assets/img/monitor-element-events.gif"
+      },
+      "link": "/tips/en/monitor-element-events"
     }
   ],
   "tweak-grid-flex-alignment.md": [
