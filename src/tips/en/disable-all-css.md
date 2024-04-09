@@ -2,7 +2,7 @@
 date: 2024-04-09
 authors: Patrick Brosset
 title: Disable all CSS styles on the page
-tags: ["tip", "css", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "css", "testing", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
 ---
 To remove all CSS styles on a webpage, for example to test the accessibility of a page when styles are disabled, or to verify the order in which content is displayed, you can use the techniques below. Don't worry, the styles will be re-enabled when you refresh the page.
 
@@ -38,3 +38,9 @@ Firefox has a tool named **Style Editor**, which lists all the stylesheets used 
 1. Select the entire text in the CSS file and delete it.
 
 1. Repeat with the other CSS files you want to disable.
+
+## In Polypane
+
+In Polypane, you can disable all CSS styles by opening up the **debug tools** for a pane and selecting the **Disable CSS** option:
+
+![Polypane showing two panes. One has CSS applied and the other has CSS disabled. The pane with disabled CSS Has an opened menu with 'disable CSS' highlighted](../../assets/img/disable-all-css-polypane.png)
