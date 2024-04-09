@@ -2,7 +2,7 @@
 date: 2023-05-05
 authors: Patrick Brosset
 title: Speed up or slow down a video
-tags: ["tip", "console", "personalization", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "console", "personalization", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
 ---
 
 You can speed up or slow down a video on a website by using the [`playbackRate`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/playbackRate) property of the video element.
