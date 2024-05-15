@@ -1618,22 +1618,21 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <link href="https://devtoolstips.org/tips/en/find-expensive-selectors/"/>
     <updated>2022-12-14T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/find-expensive-selectors/</id>
-    <content type="html">&lt;p&gt;When it comes to performance, we often spend time improving our JavaScript code. But CSS has a role to play too.&lt;br /&gt;
-CSS selectors, in particular, can sometimes be slow to match to the DOM of the page.&lt;/p&gt;
-&lt;p&gt;Before rewriting all of your CSS selectors based on some &amp;quot;guidelines&amp;quot; you might have found on the web, it&#39;s really important to measure the performance of your webpage first. Don&#39;t make your selectors unnecessarily complicated because someone somewhere said that a particular selector was slow. Instead, measure the performance of your page, make sure that CSS is having a negative impact, improve your code, and then measure again!&lt;/p&gt;
-&lt;p&gt;So, now, how do you know if CSS is having a negative impact, and how to tell which CSS selectors may be at cause?&lt;/p&gt;
-&lt;p&gt;Microsoft Edge has a very useful new feature starting with Edge version 110 called &lt;strong&gt;Selector Stats&lt;/strong&gt; that can help with this. Here&#39;s how to use it:&lt;/p&gt;
+    <content type="html">&lt;p&gt;When it comes to improving web rendering performance, we often spend time working on JavaScript code. But CSS has an important role to play too in how fast a web page renders. CSS selectors, in particular, can sometimes be slow for the browser engine to match to the DOM of the page, and this can become a big problem when the web page has a large DOM tree, a lot of CSS rules, and where the DOM changes often.&lt;/p&gt;
+&lt;p&gt;Chrome and Edge have a useful feature in the &lt;strong&gt;Performance&lt;/strong&gt; tool to investigate inefficient CSS selectors, called &lt;strong&gt;Selector Stats&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;So, before blindly rewriting your CSS selectors by following random guidelines you might have found on the web, measure the performance of slow scenarios on your web page, make sure that CSS is indeed having a negative impact, use &lt;strong&gt;Selector Stats&lt;/strong&gt; to get ideas for what to improve, improve your code, and then measure again.&lt;/p&gt;
+&lt;p&gt;To use &lt;strong&gt;Selector Stats&lt;/strong&gt; in Chrome or Edge:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Open the &lt;strong&gt;Performance&lt;/strong&gt; tool in Edge.&lt;/li&gt;
-&lt;li&gt;Open the &lt;strong&gt;Settings&lt;/strong&gt; of the tool by using the little cog icon in the top-right corner of the tool.&lt;/li&gt;
-&lt;li&gt;Check the &lt;strong&gt;Enable advanced rendering instrumentation (slow)&lt;/strong&gt; box.&lt;/li&gt;
-&lt;li&gt;Start the perf recording, run through your scenario, and then stop the recording.&lt;/li&gt;
-&lt;li&gt;When the profile has loaded, identify the long &lt;strong&gt;Recalculate Style&lt;/strong&gt; blocks (they are purple).&lt;/li&gt;
-&lt;li&gt;Click on one of them.&lt;/li&gt;
-&lt;li&gt;In the details section below, the &lt;strong&gt;Selector Stats&lt;/strong&gt; tab appears, click on it.&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Performance&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Capture settings&lt;/strong&gt; in the tool&#39;s top toolbar, and then select the &lt;strong&gt;Enable CSS selector stats&lt;/strong&gt; checkbox.&lt;/li&gt;
+&lt;li&gt;Start a new performance recording, run through your slow scenario, and then stop the recording.&lt;/li&gt;
+&lt;li&gt;In the captured profile, identify a long-running &lt;strong&gt;Recalculate Style&lt;/strong&gt; event and select it.&lt;/li&gt;
+&lt;li&gt;In the bottom section of the &lt;strong&gt;Performance&lt;/strong&gt; tool, open the &lt;strong&gt;Selector Stats&lt;/strong&gt; tab.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;You now have access to the list of CSS selectors that got matched against the DOM tree of the web page during this style recalculation task. You can sort the table by elapsed time or match count to get an understanding of which selectors needed the most time to run.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/find-expensive-selectors.png&quot; alt=&quot;The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Selector Stats&lt;/strong&gt; tab displays the list of CSS selectors that the browser engine had to (at least attempt to) match during this &lt;strong&gt;Recalculate Style&lt;/strong&gt; event.&lt;/p&gt;
+&lt;p&gt;Sort the table by &lt;strong&gt;Elapsed time&lt;/strong&gt; to find the selectors that took the most time for the engine to match. Make sure to review the &lt;strong&gt;Match Attempts&lt;/strong&gt; and &lt;strong&gt;Match Counts&lt;/strong&gt; columns too. For example, if the browser engine attempted to match, say, 1000 elements, but ended up really matching 0 elements, then this selector is likely too broad and could be optimized. Finally, make sure to review the &lt;strong&gt;% of slow-path non-matches&lt;/strong&gt; column. This column tells you the ratio of elements that ended up not matching the selector, and for which the browser engine had to use a less optimized code path to match.&lt;/p&gt;
+&lt;p&gt;To view the &lt;strong&gt;Selector Stats&lt;/strong&gt; for the entire profile instead of just a single &lt;strong&gt;Recalculate Style&lt;/strong&gt; event, deselect any &lt;strong&gt;Recalculate Style&lt;/strong&gt; event that you have selected by clicking in an empty area of the profile.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/find-expensive-selectors.png&quot; alt=&quot;The Performance tool in Chrome showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
