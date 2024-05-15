@@ -2079,36 +2079,12 @@
   ],
   "find-expensive-selectors.md": [
     {
-      "title": "Disable all CSS styles on the page",
-      "image": {
-        "alt": "Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run",
-        "src": "../../assets/img/disable-all-css.png"
-      },
-      "link": "/tips/en/disable-all-css"
-    },
-    {
-      "title": "Find the CSS rule that causes a specific style to apply",
-      "image": {
-        "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
-        "src": "../../assets/img/find-rule-that-causes-style-1.png"
-      },
-      "link": "/tips/en/find-rule-that-causes-style"
-    },
-    {
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
         "src": "../../assets/img/highlight-matching-elements.gif"
       },
       "link": "/tips/en/highlight-matching-elements"
-    },
-    {
-      "title": "Inspect CSS animations",
-      "image": {
-        "alt": "Animation of Chrome DevTools showing how to inspect and modify CSS animations using the Animation inspector.",
-        "src": "../../assets/img/inspect-css-animation.gif"
-      },
-      "link": "/tips/en/inspect-css-animations"
     }
   ],
   "find-html-parsing-errors.md": [],
@@ -2896,20 +2872,20 @@
       "link": "/tips/en/find-inactive-styles"
     },
     {
-      "title": "Find the most expensive CSS selectors",
-      "image": {
-        "alt": "The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.",
-        "src": "../../assets/img/find-expensive-selectors.png"
-      },
-      "link": "/tips/en/find-expensive-selectors"
-    },
-    {
       "title": "Highlight the effect of individual CSS properties on hover",
       "image": {
         "alt": "Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.",
         "src": "../../assets/img/highlight-css-properties-on-hover.gif"
       },
       "link": "/tips/en/highlight-css-properties-on-hover"
+    },
+    {
+      "title": "Apply CSS styles to console messages",
+      "image": {
+        "alt": "A styled console message in Edge.",
+        "src": "../../assets/img/style-console-messages.png"
+      },
+      "link": "/tips/en/style-console-messages"
     }
   ],
   "jump-to-referenced-elements.md": [],
@@ -4438,12 +4414,12 @@
       "link": "/tips/en/console-table-group-assert"
     },
     {
-      "title": "Find the most expensive CSS selectors",
+      "title": "List all supported console functions",
       "image": {
-        "alt": "The Edge DevTools Performance tool, showing a recorded profile with a selected Recalculate Style block, and the Selector Stats table below it.",
-        "src": "../../assets/img/find-expensive-selectors.png"
+        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
+        "src": "../../assets/img/list-console-functions.png"
       },
-      "link": "/tips/en/find-expensive-selectors"
+      "link": "/tips/en/list-console-functions"
     }
   ],
   "throttle-network-speed.md": [
