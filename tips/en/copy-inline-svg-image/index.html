@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find all elements with a specific style</title>
+    <title>Copy an inline SVG image&#39;s source code</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/find-all-elements-with-style/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/copy-inline-svg-image/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="Find all elements with a specific style">
+    <meta property="og:description" content="Copy an inline SVG image&#39;s source code">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-find-all-elements-with-style">
+    <main style="view-transition-name:post-copy-inline-svg-image">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -102,20 +102,12 @@
       </div>
       <div id="maincontent">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Find all elements with a specific style</h1>
+<h1 class="tip-title">Copy an inline SVG image&#39;s source code</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-            <a href="/tag/css/" title="List all css tips">
-                css
-            </a>
-        </li><li class="tag">
-            <a href="/tag/console/" title="List all console tips">
-                console
-            </a>
-        </li><li class="tag">
-            <a href="/tag/testing/" title="List all testing tips">
-                testing
+            <a href="/tag/export/" title="List all export tips">
+                export
             </a>
         </li></ul>
     Supported by:
@@ -135,60 +127,54 @@
             <a href="/browser/safari/" title="List all tips supported by safari">
                 <img src="/assets/browsers/safari.svg" alt=""> safari
             </a>
-        </li><li class="browser">
-            <a href="/browser/polypane/" title="List all tips supported by polypane">
-                <img src="/assets/browsers/polypane.svg" alt=""> polypane
-            </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>Let's say you want to list all of the elements on a page that are absolutely positioned. Or maybe you want to find all of the elements that use CSS grid. How would you do that?</p>
-<p>One way is to run a few lines of JavaScript code in the <strong>Console</strong> tool to iterate over all of the elements and check their computed styles. Here's how:</p>
+    <p>To copy the SVG source code of an SVG image that's embedded directly in the HTML of a webpage, use the <strong>Elements</strong> tool in DevTools (<strong>Inspector</strong> in Firefox).</p>
 <ol>
 <li>
-<p>Open the <strong>Console</strong> tool.</p>
+<p>To open DevTools, right-click the SVG image on the webpage, and then click <strong>Inspect</strong>.</p>
+<p>DevTools opens up, with the <strong>Elements</strong> (or <strong>Inspector</strong>) tool showing the HTML of the page.</p>
 </li>
 <li>
-<p>Copy the below code snippet and paste it in the <strong>Console</strong>. Change the <code>whatToFind</code> object to match your needs.</p>
+<p>Make sure the <code>&lt;svg&gt;</code> element is selected. Depending on where you right-clicked on the webpage, an element that's inside the <code>&lt;svg&gt;</code> element might be selected instead. If so, click the <code>&lt;svg&gt;</code> element to select it.</p>
+</li>
+<li>
+<p>Right-click the <code>&lt;svg&gt;</code> element in the <strong>Elements</strong> (or <strong>Inspector</strong>) tool, and then click <strong>Copy</strong> &gt; <strong>Copy outerHTML</strong> (or <strong>Outer HTML</strong> in Firefox).</p>
+<p>The SVG source code is now copied to your clipboard.</p>
+</li>
+<li>
+<p>Paste the SVG source code wherever you want to use it.</p>
 </li>
 </ol>
-<pre class="language-js"><code class="language-js"><span class="token keyword">var</span> whatToFind <span class="token operator">=</span> <span class="token punctuation">{</span><br>  property<span class="token operator">:</span> <span class="token string">"position"</span><span class="token punctuation">,</span><br>  values<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"absolute"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span><br><br><span class="token keyword">var</span> walker <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createTreeWalker</span><span class="token punctuation">(</span><br>  document<span class="token punctuation">.</span>documentElement<span class="token punctuation">,</span><br>  NodeFilter<span class="token punctuation">.</span><span class="token constant">SHOW_ELEMENT</span><span class="token punctuation">,</span><br>  <span class="token parameter">el</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>    <span class="token keyword">const</span> style <span class="token operator">=</span> <span class="token function">getComputedStyle</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span><span class="token punctuation">[</span>whatToFind<span class="token punctuation">.</span>property<span class="token punctuation">]</span><span class="token punctuation">;</span><br>    <span class="token keyword">return</span> whatToFind<span class="token punctuation">.</span>values<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>style<span class="token punctuation">)</span><br>      <span class="token operator">?</span> NodeFilter<span class="token punctuation">.</span><span class="token constant">FILTER_ACCEPT</span><br>      <span class="token operator">:</span> NodeFilter<span class="token punctuation">.</span><span class="token constant">FILTER_SKIP</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token keyword">while</span> <span class="token punctuation">(</span>walker<span class="token punctuation">.</span><span class="token function">nextNode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>walker<span class="token punctuation">.</span>currentNode<span class="token punctuation">)</span><span class="token punctuation">;</span> <br><span class="token punctuation">}</span></code></pre>
-<ol start="3">
-<li>Press <kbd>Enter</kbd> and voila! In the screenshot below, all of the absolutely positioned elements on the page are listed.</li>
-</ol>
-<p><img src="/assets/img/find-all-elements-with-style.png" alt="The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right"></p>
-<ol start="4">
-<li>If you wanted to find all of the elements that use CSS grid, you would change the <code>whatToFind</code> object to this:</li>
-</ol>
-<pre class="language-js"><code class="language-js"><span class="token keyword">var</span> whatToFind <span class="token operator">=</span> <span class="token punctuation">{</span><br>  property<span class="token operator">:</span> <span class="token string">"display"</span><span class="token punctuation">,</span><br>  values<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"grid"</span><span class="token punctuation">,</span> <span class="token string">"inline-grid"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
-<p>To avoid having to copy or type this code every time, you can also use the <strong>Snippet</strong> tool in Chromium-based browsers as explained in <a href="/tips/en/use-scripts-as-snippets">Re-use scripts as snippets</a>.</p>
+<p><img src="/assets/img/copy-inline-svg-image.png" alt="Copying the SVG source code in Edge DevTools"></p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/download-all-images">Download all images from the page</a>
-            <a href="/tips/en/download-all-images" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/download-all-images.png" alt="The Snippets panel in Edge, with the JS code from above, and the download panel open showing all images have been downloaded">
+            <a href="/tips/en/copy-from-console">Copy an object from the console</a>
+            <a href="/tips/en/copy-from-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-from-console.png" alt="Chrome devtools&#39; console with a line of code using the copy() function.">
             </a>
         </li><li>
-            <a href="/tips/en/find-all-images-without-alt-text">Find all images without alternative text</a>
-            <a href="/tips/en/find-all-images-without-alt-text" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-all-images-without-alt-text.png" alt="The output of the console.table command from above shown in the Firefox DevTools console.">
+            <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
+            <a href="/tips/en/emulate-color-schemes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
             </a>
         </li><li>
-            <a href="/tips/en/find-broken-links">Find broken links</a>
-            <a href="/tips/en/find-broken-links" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-broken-links-polypane.png" alt="Polypane, with the outline panel open. Two of the links show a 404 error code">
+            <a href="/tips/en/hide-or-pin-inspect-info-tooltip">Hide or pin the information tooltip while inspecting page elements</a>
+            <a href="/tips/en/hide-or-pin-inspect-info-tooltip" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/hide-or-pin-inspect-info-tooltip-1.png" alt="Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.">
             </a>
         </li><li>
-            <a href="/tips/en/copy-inline-svg-image">Copy an inline SVG image&#39;s source code</a>
-            <a href="/tips/en/copy-inline-svg-image" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-inline-svg-image.png" alt="Copying the SVG source code in Edge DevTools">
+            <a href="/tips/en/inspect-devtools-with-devtools">Inspect DevTools with DevTools</a>
+            <a href="/tips/en/inspect-devtools-with-devtools" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/inspect-devtools-with-devtools-chrome.png" alt="Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2023-05-31T00:00:00.000Z">5/31/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-all-elements-with-style.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-05-28T00:00:00.000Z">5/28/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/copy-inline-svg-image.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
