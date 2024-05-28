@@ -423,20 +423,20 @@
       "link": "/tips/en/copy-element-styles"
     },
     {
+      "title": "Copy an inline SVG image's source code",
+      "image": {
+        "alt": "Copying the SVG source code in Edge DevTools",
+        "src": "../../assets/img/copy-inline-svg-image.png"
+      },
+      "link": "/tips/en/copy-inline-svg-image"
+    },
+    {
       "title": "Drag and drop nodes in the DOM tree",
       "image": {
         "alt": "Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge.",
         "src": "../../assets/img/drag-drop-dom-nodes.gif"
       },
       "link": "/tips/en/drag-drop-dom-nodes"
-    },
-    {
-      "title": "Inspect the user-agent DOM",
-      "image": {
-        "alt": "The Elements tool in Chrome, an input type=range is expanded, showing it's internal user-agent shadow dom",
-        "src": "../../assets/img/inspect-user-agent-dom.png"
-      },
-      "link": "/tips/en/inspect-user-agent-dom"
     }
   ],
   "copy-element-styles.md": [
@@ -491,20 +491,20 @@
       "link": "/tips/en/copy-element-js-path"
     },
     {
+      "title": "Copy an inline SVG image's source code",
+      "image": {
+        "alt": "Copying the SVG source code in Edge DevTools",
+        "src": "../../assets/img/copy-inline-svg-image.png"
+      },
+      "link": "/tips/en/copy-inline-svg-image"
+    },
+    {
       "title": "Evaluate XPath to find elements in the page",
       "image": {
         "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
         "src": "../../assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
-    },
-    {
-      "title": "Find DOM elements from the console",
-      "image": {
-        "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
-        "src": "../../assets/img/query-dom-from-console.png"
-      },
-      "link": "/tips/en/query-dom-from-console"
     }
   ],
   "copy-from-console.md": [
@@ -539,6 +539,40 @@
         "src": "../../assets/img/console-table-group-assert-1.jpg"
       },
       "link": "/tips/en/console-table-group-assert"
+    }
+  ],
+  "copy-inline-svg-image.md": [
+    {
+      "title": "Copy an object from the console",
+      "image": {
+        "alt": "Chrome devtools' console with a line of code using the copy() function.",
+        "src": "../../assets/img/copy-from-console.png"
+      },
+      "link": "/tips/en/copy-from-console"
+    },
+    {
+      "title": "Emulate color schemes",
+      "image": {
+        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
+      },
+      "link": "/tips/en/emulate-color-schemes"
+    },
+    {
+      "title": "Hide or pin the information tooltip while inspecting page elements",
+      "image": {
+        "alt": "Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
+        "src": "../../assets/img/hide-or-pin-inspect-info-tooltip-1.png"
+      },
+      "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
+    },
+    {
+      "title": "Inspect DevTools with DevTools",
+      "image": {
+        "alt": "Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one",
+        "src": "../../assets/img/inspect-devtools-with-devtools-chrome.png"
+      },
+      "link": "/tips/en/inspect-devtools-with-devtools"
     }
   ],
   "copy-rule-as-css-in-js.md": [
@@ -1454,20 +1488,20 @@
       "link": "/tips/en/copy-from-console"
     },
     {
+      "title": "Copy an inline SVG image's source code",
+      "image": {
+        "alt": "Copying the SVG source code in Edge DevTools",
+        "src": "../../assets/img/copy-inline-svg-image.png"
+      },
+      "link": "/tips/en/copy-inline-svg-image"
+    },
+    {
       "title": "Use the debugger statement to pause script execution",
       "image": {
         "alt": "The Sources panel in Edge, paused at a debugger statement.",
         "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
-    },
-    {
-      "title": "Emulate color schemes",
-      "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "../../assets/img/emulate-color-schemes-firefox.png"
-      },
-      "link": "/tips/en/emulate-color-schemes"
     }
   ],
   "edit-position.md": [
@@ -1609,12 +1643,12 @@
       "link": "/tips/en/copy-from-console"
     },
     {
-      "title": "Customize keyboard shortcuts",
+      "title": "Copy an inline SVG image's source code",
       "image": {
-        "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
-        "src": "../../assets/img/customize-keyboard-shortcuts.png"
+        "alt": "Copying the SVG source code in Edge DevTools",
+        "src": "../../assets/img/copy-inline-svg-image.png"
       },
-      "link": "/tips/en/customize-keyboard-shortcuts"
+      "link": "/tips/en/copy-inline-svg-image"
     }
   ],
   "emulate-user-gesture-in-console.md": [
@@ -1899,12 +1933,12 @@
       "link": "/tips/en/find-broken-links"
     },
     {
-      "title": "Highlight all the elements that a CSS rule matches",
+      "title": "Copy an inline SVG image's source code",
       "image": {
-        "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "../../assets/img/highlight-matching-elements.gif"
+        "alt": "Copying the SVG source code in Edge DevTools",
+        "src": "../../assets/img/copy-inline-svg-image.png"
       },
-      "link": "/tips/en/highlight-matching-elements"
+      "link": "/tips/en/copy-inline-svg-image"
     }
   ],
   "find-all-images-without-alt-text.md": [
@@ -2613,20 +2647,20 @@
       "link": "/tips/en/see-quick-a11y-info-on-hover"
     },
     {
+      "title": "Copy an inline SVG image's source code",
+      "image": {
+        "alt": "Copying the SVG source code in Edge DevTools",
+        "src": "../../assets/img/copy-inline-svg-image.png"
+      },
+      "link": "/tips/en/copy-inline-svg-image"
+    },
+    {
       "title": "Debug popups that appear on hover",
       "image": {
         "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
         "src": "../../assets/img/debug-popups-on-hover.png"
       },
       "link": "/tips/en/debug-popups-on-hover"
-    },
-    {
-      "title": "Emulate color schemes",
-      "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "../../assets/img/emulate-color-schemes-firefox.png"
-      },
-      "link": "/tips/en/emulate-color-schemes"
     }
   ],
   "highlight-css-properties-on-hover.md": [
@@ -2804,20 +2838,20 @@
       "link": "/tips/en/extend-devtools"
     },
     {
+      "title": "Copy an inline SVG image's source code",
+      "image": {
+        "alt": "Copying the SVG source code in Edge DevTools",
+        "src": "../../assets/img/copy-inline-svg-image.png"
+      },
+      "link": "/tips/en/copy-inline-svg-image"
+    },
+    {
       "title": "Debug CSS grid areas",
       "image": {
         "alt": "Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the \"display area names\" option checked.",
         "src": "../../assets/img/debug-grid-areas.png"
       },
       "link": "/tips/en/debug-grid-areas"
-    },
-    {
-      "title": "Debug popups that appear on hover",
-      "image": {
-        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
-        "src": "../../assets/img/debug-popups-on-hover.png"
-      },
-      "link": "/tips/en/debug-popups-on-hover"
     }
   ],
   "inspect-user-agent-dom.md": [
@@ -3025,6 +3059,14 @@
         "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
+    },
+    {
+      "title": "Copy an inline SVG image's source code",
+      "image": {
+        "alt": "Copying the SVG source code in Edge DevTools",
+        "src": "../../assets/img/copy-inline-svg-image.png"
+      },
+      "link": "/tips/en/copy-inline-svg-image"
     },
     {
       "title": "Zoom the DevTools UI to your liking",
