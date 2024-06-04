@@ -3,6 +3,7 @@ date: 2022-04-20
 authors: Patrick Brosset, Kilian Valkhof
 title: Visualize and debug CSS cascade layers
 tags: ["tip", "css", "browser:chrome", "browser:edge", "browser:firefox", "browser:safari", "browser:polypane"]
+see-also: ["display-css-selector-specificity.md"]
 ---
 
 [Cascade layers](https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_layers) is a CSS feature that allows web developers to define their CSS styles in multiple layers and control the order in which these layers apply. Cascade layers are meant to bring an elegant solution to problems we've historically been fixing by using `!important` or artificially making selectors have higher specificity. To learn more about cascade layers, check out [Miriam Suzanne's complete guide on CSS Tricks](https://css-tricks.com/css-cascade-layers/).

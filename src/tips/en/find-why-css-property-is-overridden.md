@@ -3,6 +3,7 @@ date: 2024-04-08
 authors: Patrick Brosset
 title: Find why a CSS property is overridden
 tags: ["tip", "css", "debug", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
+see-also: ["display-css-selector-specificity.md"]
 ---
 In CSS, the **cascade** plays a very important role in which CSS properties apply to an element. This key concept is not explained here, but you can learn more on MDN, at [Cascade, specificity, and inheritance](https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance).
 
