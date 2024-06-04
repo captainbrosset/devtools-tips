@@ -551,6 +551,14 @@
       "link": "/tips/en/copy-from-console"
     },
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
@@ -565,14 +573,6 @@
         "src": "../../assets/img/hide-or-pin-inspect-info-tooltip-1.png"
       },
       "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
-    },
-    {
-      "title": "Inspect DevTools with DevTools",
-      "image": {
-        "alt": "Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one",
-        "src": "../../assets/img/inspect-devtools-with-devtools-chrome.png"
-      },
-      "link": "/tips/en/inspect-devtools-with-devtools"
     }
   ],
   "copy-rule-as-css-in-js.md": [
@@ -773,6 +773,14 @@
   ],
   "debug-css-cascade-layers.md": [
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Find inactive CSS styles",
       "image": {
         "alt": "Part of the Rules panel in Firefox, showing a greyed out flex-grow property, with a tooltip saying that the property is inactive because the selected element is not a flex item.",
@@ -795,14 +803,6 @@
         "src": "../../assets/img/copy-element-styles.png"
       },
       "link": "/tips/en/copy-element-styles"
-    },
-    {
-      "title": "Copy a CSS rule as CSS-in-JS format",
-      "image": {
-        "alt": "Aimation showing the Styles pane in Edge, with the \"Copy all declarations as JS\" option being used, and then pasting the result in the Console to show that it is formatted.",
-        "src": "../../assets/img/copy-rule-as-css-in-js.gif"
-      },
-      "link": "/tips/en/copy-rule-as-css-in-js"
     }
   ],
   "debug-grid-areas.md": [
@@ -1285,6 +1285,40 @@
         "src": "../../assets/img/reload-page-after-change.png"
       },
       "link": "/tips/en/reload-page-after-change"
+    }
+  ],
+  "display-css-selector-specificity.md": [
+    {
+      "title": "Visualize and debug CSS cascade layers",
+      "image": {
+        "alt": "Firefox with a demo page that uses layers, DevTools is opened and shows the Rules panel with two @layer rules",
+        "src": "../../assets/img/debug-css-cascade-layers-firefox.png"
+      },
+      "link": "/tips/en/debug-css-cascade-layers"
+    },
+    {
+      "title": "Find why a CSS property is overridden",
+      "image": {
+        "alt": "Firefox DevTools, showing the Inspector tool and the Rules panel. The filter icon was clicked next to the display property, and the other display properties from other rules are highlighted.",
+        "src": "../../assets/img/find-why-css-property-is-overridden.png"
+      },
+      "link": "/tips/en/find-why-css-property-is-overridden"
+    },
+    {
+      "title": "Highlight all the elements that a CSS rule matches",
+      "image": {
+        "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
+        "src": "../../assets/img/highlight-matching-elements.gif"
+      },
+      "link": "/tips/en/highlight-matching-elements"
+    },
+    {
+      "title": "Highlight all elements on the page that match a given CSS selector",
+      "image": {
+        "alt": "Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane",
+        "src": "../../assets/img/highlight-elements-from-selector-firefox.png"
+      },
+      "link": "/tips/en/highlight-elements-from-selector"
     }
   ],
   "display-current-framerate.md": [
@@ -2228,6 +2262,14 @@
   ],
   "find-why-css-property-is-overridden.md": [
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Find the CSS rule that causes a specific style to apply",
       "image": {
         "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
@@ -2250,14 +2292,6 @@
         "src": "../../assets/img/convert-font-units-1.png"
       },
       "link": "/tips/en/convert-font-units"
-    },
-    {
-      "title": "Edit CSS filters",
-      "image": {
-        "alt": "The filter editing UI in Firefox.",
-        "src": "../../assets/img/edit-css-filters.png"
-      },
-      "link": "/tips/en/edit-css-filters"
     }
   ],
   "fix-color-contrast-issues-with-element-tooltip.md": [
@@ -2707,6 +2741,14 @@
       "link": "/tips/en/highlight-css-properties-on-hover"
     },
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Copy an elements styles",
       "image": {
         "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
@@ -2721,17 +2763,17 @@
         "src": "../../assets/img/highlight-matching-elements.gif"
       },
       "link": "/tips/en/highlight-matching-elements"
-    },
-    {
-      "title": "Tweak css grid and flexbox alignment properties",
-      "image": {
-        "alt": "The grid editor in the Styles pane of Microsoft Edge.",
-        "src": "../../assets/img/tweak-grid-flex-alignment.png"
-      },
-      "link": "/tips/en/tweak-grid-flex-alignment"
     }
   ],
   "highlight-matching-elements.md": [
+    {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
     {
       "title": "Copy an elements styles",
       "image": {
@@ -2755,14 +2797,6 @@
         "src": "../../assets/img/find-rule-that-causes-style-1.png"
       },
       "link": "/tips/en/find-rule-that-causes-style"
-    },
-    {
-      "title": "Highlight all elements on the page that match a given CSS selector",
-      "image": {
-        "alt": "Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane",
-        "src": "../../assets/img/highlight-elements-from-selector-firefox.png"
-      },
-      "link": "/tips/en/highlight-elements-from-selector"
     }
   ],
   "ignore-scripts.md": [
@@ -3300,20 +3334,20 @@
       "link": "/tips/en/see-quick-a11y-info-on-hover"
     },
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Find all elements with a specific style",
       "image": {
         "alt": "The Firefox DevTools Console tool, with the code shown on the left, and the resulting nodes listed on the right",
         "src": "../../assets/img/find-all-elements-with-style.png"
       },
       "link": "/tips/en/find-all-elements-with-style"
-    },
-    {
-      "title": "Find and export CSS changes",
-      "image": {
-        "alt": "The Changes panel in Firefox showing a diff-like view of all the CSS changes.",
-        "src": "../../assets/img/find-css-changes.png"
-      },
-      "link": "/tips/en/find-css-changes"
     }
   ],
   "past-several-css-declarations.md": [
@@ -3324,6 +3358,14 @@
         "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
+    },
+    {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
     },
     {
       "title": "Copy an elements styles",
@@ -3340,14 +3382,6 @@
         "src": "../../assets/img/copy-rule-as-css-in-js.gif"
       },
       "link": "/tips/en/copy-rule-as-css-in-js"
-    },
-    {
-      "title": "Debug your print CSS styles by simulating print media",
-      "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the print media button",
-        "src": "../../assets/img/debug-print-css-styles-firefox.png"
-      },
-      "link": "/tips/en/debug-print-css-styles"
     }
   ],
   "persist-logs-across-pages.md": [
@@ -3896,6 +3930,14 @@
       "link": "/tips/en/outline-everything"
     },
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Highlight all the elements that a CSS rule matches",
       "image": {
         "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
@@ -3910,14 +3952,6 @@
         "src": "../../assets/img/sample-colors-from-the-page-1.gif"
       },
       "link": "/tips/en/sample-colors-from-the-page"
-    },
-    {
-      "title": "Select elements with pointer-events:none by holding Shift",
-      "image": {
-        "alt": "Animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed.",
-        "src": "../../assets/img/select-pointer-events-none-elements.gif"
-      },
-      "link": "/tips/en/select-pointer-events-none-elements"
     }
   ],
   "see-request-path-instead-of-name.md": [
@@ -4324,6 +4358,14 @@
         "src": "../../assets/img/disable-all-css.png"
       },
       "link": "/tips/en/disable-all-css"
+    },
+    {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
     },
     {
       "title": "Format console messages",
