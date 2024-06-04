@@ -5,11 +5,39 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2024-05-28T00:00:00.000Z</updated>
+  <updated>2024-06-04T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Display the specificity of a CSS selector</title>
+    <link href="https://devtoolstips.org/tips/en/display-css-selector-specificity/"/>
+    <updated>2024-06-04T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/display-css-selector-specificity/</id>
+    <content type="html">&lt;p&gt;The specificity of a CSS selector is a score that the browser computes based on the different parts of the selector. It is used to determine which CSS rule takes precedence when multiple rules from the same origin and layer target the same element. &lt;a href=&quot;https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance&quot;&gt;Cascade, specificity, and inheritance&lt;/a&gt;, at MDN, is a good resource to learn more.&lt;/p&gt;
+&lt;p&gt;To display the specificity of a CSS selector in DevTools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;In Chrome, Edge, and Safari&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to the &lt;strong&gt;Elements&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;li&gt;Hover over a CSS selector in the &lt;strong&gt;Styles&lt;/strong&gt; pane.&lt;/li&gt;
+&lt;li&gt;The specificity of the selector is displayed in a tooltip.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/display-css-selector-specificity.png&quot; alt=&quot;Chrome DevTools showing the specificity of a CSS selector in a tooltip&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;In Polypane&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Style&lt;/strong&gt; tab of the &lt;strong&gt;Elements&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;li&gt;The specificity is displayed next to each CSS selectors, to the right.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Copy an inline SVG image&#39;s source code</title>

@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>See quick accessibility information on hover</title>
+    <title>Display the specificity of a CSS selector</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/see-quick-a11y-info-on-hover/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/display-css-selector-specificity/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="See quick accessibility information on hover">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/chrome.svg">
+    <meta property="og:description" content="Display the specificity of a CSS selector">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-see-quick-a11y-info-on-hover">
+    <main style="view-transition-name:post-display-css-selector-specificity">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -102,22 +102,26 @@
       </div>
       <div id="maincontent">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">See quick accessibility information on hover</h1>
+<h1 class="tip-title">Display the specificity of a CSS selector</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-            <a href="/tag/accessibility/" title="List all accessibility tips">
-                accessibility
+            <a href="/tag/css/" title="List all css tips">
+                css
             </a>
         </li></ul>
     Supported by:
     <ul class="browsers"><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
             <a href="/browser/edge/" title="List all tips supported by edge">
                 <img src="/assets/browsers/edge.svg" alt=""> edge
             </a>
         </li><li class="browser">
-            <a href="/browser/chrome/" title="List all tips supported by chrome">
-                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
             </a>
         </li><li class="browser">
             <a href="/browser/polypane/" title="List all tips supported by polypane">
@@ -126,24 +130,38 @@
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>In Edge, Polypane and Chrome, whenever you use the element selector and hover over elements in the page, a tooltip appears with, among other things, some accessibility information about the hovered element.</p>
+    <p>The specificity of a CSS selector is a score that the browser computes based on the different parts of the selector. It is used to determine which CSS rule takes precedence when multiple rules from the same origin and layer target the same element. <a href="https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance">Cascade, specificity, and inheritance</a>, at MDN, is a good resource to learn more.</p>
+<p>To display the specificity of a CSS selector in DevTools:</p>
 <ul>
-<li>To start the element selector, click on the mouse cursor icon in the top-left corner of the DevTools window.</li>
-<li>Then simply hover over elements in the page</li>
+<li>
+<p><strong>In Chrome, Edge, and Safari</strong></p>
+<ol>
+<li>Go to the <strong>Elements</strong> panel.</li>
+<li>Hover over a CSS selector in the <strong>Styles</strong> pane.</li>
+<li>The specificity of the selector is displayed in a tooltip.</li>
+</ol>
+<p><img src="/assets/img/display-css-selector-specificity.png" alt="Chrome DevTools showing the specificity of a CSS selector in a tooltip"></p>
+</li>
+<li>
+<p><strong>In Polypane</strong></p>
+<ol>
+<li>Open the <strong>Style</strong> tab of the <strong>Elements</strong> panel.</li>
+<li>The specificity is displayed next to each CSS selectors, to the right.</li>
+</ol>
+</li>
 </ul>
-<p><img src="/assets/img/see-quick-a11y-info-on-hover.gif" alt="Animation of the a11y tooltip in chrome."></p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/outline-everything">Draw a box around all elements to debug your CSS and page structure</a>
-            <a href="/tips/en/outline-everything" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/outline-everything.gif" alt="Animation showing how adding the rule in the styles pane if Chrome DevTools outlines all elements in the page.">
+            <a href="/tips/en/debug-css-cascade-layers">Visualize and debug CSS cascade layers</a>
+            <a href="/tips/en/debug-css-cascade-layers" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/debug-css-cascade-layers-firefox.png" alt="Firefox with a demo page that uses layers, DevTools is opened and shows the Rules panel with two @layer rules">
             </a>
         </li><li>
-            <a href="/tips/en/display-css-selector-specificity">Display the specificity of a CSS selector</a>
-            <a href="/tips/en/display-css-selector-specificity" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/display-css-selector-specificity.png" alt="Chrome DevTools showing the specificity of a CSS selector in a tooltip">
+            <a href="/tips/en/find-why-css-property-is-overridden">Find why a CSS property is overridden</a>
+            <a href="/tips/en/find-why-css-property-is-overridden" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-why-css-property-is-overridden.png" alt="Firefox DevTools, showing the Inspector tool and the Rules panel. The filter icon was clicked next to the display property, and the other display properties from other rules are highlighted.">
             </a>
         </li><li>
             <a href="/tips/en/highlight-matching-elements">Highlight all the elements that a CSS rule matches</a>
@@ -151,14 +169,14 @@
                 <img loading="lazy" src="/assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page.">
             </a>
         </li><li>
-            <a href="/tips/en/sample-colors-from-the-page">Sample colors from the page</a>
-            <a href="/tips/en/sample-colors-from-the-page" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/sample-colors-from-the-page-1.gif" alt="Animation of the eyedropper tool being started from the Firefox main menu.">
+            <a href="/tips/en/highlight-elements-from-selector">Highlight all elements on the page that match a given CSS selector</a>
+            <a href="/tips/en/highlight-elements-from-selector" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/highlight-elements-from-selector-firefox.png" alt="Firefox, with a webpage showing 3 highlighted elements, and the button enabled in the Styles pane">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2021-06-15T00:00:00.000Z">6/15/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/see-quick-a11y-info-on-hover.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-06-04T00:00:00.000Z">6/4/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/display-css-selector-specificity.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
