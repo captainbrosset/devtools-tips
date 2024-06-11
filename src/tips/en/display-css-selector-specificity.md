@@ -2,7 +2,7 @@
 date: 2024-06-04
 authors: Patrick Brosset
 title: Display the specificity of a CSS selector
-tags: ["tip", "css", "browser:chrome", "browser:edge", "browser:safari", "browser:polypane"]
+tags: ["tip", "css", "browser:chrome", "browser:edge", "browser:safari", "browser:polypane", "browser:firefox"]
 see-also: ["debug-css-cascade-layers.md", "find-why-css-property-is-overridden.md"]
 ---
 
@@ -10,9 +10,9 @@ The specificity of a CSS selector is a score that the browser computes based on 
 
 To display the specificity of a CSS selector in DevTools:
 
-* **In Chrome, Edge, and Safari**
+* **In Chrome, Edge, Firefox, and Safari**
 
-  1. Go to the **Elements** panel.
+  1. Go to the **Elements** tool (called **Inspector** in Firefox).
   1. Hover over a CSS selector in the **Styles** pane.
   1. The specificity of the selector is displayed in a tooltip.
 
