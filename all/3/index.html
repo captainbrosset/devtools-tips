@@ -101,8 +101,68 @@
         </div>
       </div>
       <div id="maincontent">
-        <h1>173 DevTools Tips</h1>
+        <h1>175 DevTools Tips</h1>
 <ul class="tips">
+<li class="hover-box tip " style="view-transition-name:post-copy-css-selector;">
+  <a href="/tips/en/copy-css-selector/" class="tip-title">Copy CSS selector of an element</a>
+  <a href="/tips/en/copy-css-selector/" class="tip-image"><img src="../../assets/img/copy-css-selector.png" alt="Edge DevTools, showing how to access the Copy CSS selector option." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Sometimes we need to uniquely identify an element that lacks an identifier, so that it can be referenced in JavaScript and other places. All the major browsers have an option to build a unique CSS sel...
+    <a href="/tips/en/copy-css-selector/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/css/" title="List all css tips">css</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li><li class="browser">
+        <a href="/browser/firefox/" title="List all tips supported by firefox">
+          <img src="/assets/browsers/firefox.svg" alt=""> firefox
+        </a>
+      </li><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip " style="view-transition-name:post-copy-element-js-path;">
+  <a href="/tips/en/copy-element-js-path/" class="tip-title">Copy an element&#39;s JavaScript path</a>
+  <a href="/tips/en/copy-element-js-path/" class="tip-image"><img src="../../assets/img/copy-element-js-path.png" alt="The Elements tool in Edge showing the context menu on an element, with the Copy JS path option." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    JavaScript often needs references to DOM nodes on the page. Getting a reference is sometimes easy with document.getElementById() or similar. Other times however, a more complicated CSS selector needs...
+    <a href="/tips/en/copy-element-js-path/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/javascript/" title="List all javascript tips">javascript</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li></ul>
+  </div>
+</li>
+
 <li class="hover-box tip unique-browser-feature" style="view-transition-name:post-jump-to-referenced-elements;">
   <a href="/tips/en/jump-to-referenced-elements/" class="tip-title">Jump from a label `for` attribute to the linked input (and more)</a>
   <a href="/tips/en/jump-to-referenced-elements/" class="tip-image"><img src="../../assets/img/jump-to-referenced-elements.gif" alt="Animation showing the Firefox DevTools Inspector panel, the mouse clicks the for attribute of a label element and the selection jumps to the related input element." loading="lazy"></img></a>
@@ -834,69 +894,6 @@ DevTools...
       </li><li class="browser">
         <a href="/browser/polypane/" title="List all tips supported by polypane">
           <img src="/assets/browsers/polypane.svg" alt=""> polypane
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-past-several-css-declarations;">
-  <a href="/tips/en/past-several-css-declarations/" class="tip-title">Paste multiple CSS declarations at once</a>
-  <a href="/tips/en/past-several-css-declarations/" class="tip-image"><img src="../../assets/img/paste-several-css-declarations.gif" alt="Animation showing how pasting several declarations in a CSS rule in DevTools creates them all." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    You know how you can paste a CSS property name or value in the Styles (or Rules) panel? Well, you can actually paste several declarations at once too!
-For example, try copying the following entire CSS...
-    <a href="/tips/en/past-several-css-declarations/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/css/" title="List all css tips">css</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li><li class="browser">
-        <a href="/browser/safari/" title="List all tips supported by safari">
-          <img src="/assets/browsers/safari.svg" alt=""> safari
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-track-focused-element;">
-  <a href="/tips/en/track-focused-element/" class="tip-title">Detect the element with focus at any time</a>
-  <a href="/tips/en/track-focused-element/" class="tip-image"><img src="../../assets/img/track-focused-element.gif" alt="Animation showing a web page with focus going through different element, and the Edge Console panel with the live expression showing a preview of the focused element." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    If you want to know which element has the focus on the web page at any time, you can use a live expression in the Console tool.
-Open the Console.
-Click the Create live expression button (it looks lik...
-    <a href="/tips/en/track-focused-element/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/console/" title="List all console tips">console</a>
-      </li><li class="tag">
-        <a href="/tag/javascript/" title="List all javascript tips">javascript</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
         </a>
       </li></ul>
   </div>

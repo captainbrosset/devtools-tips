@@ -5,11 +5,134 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2024-06-04T00:00:00.000Z</updated>
+  <updated>2024-06-11T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Pick a color from the webpage, or the screen</title>
+    <link href="https://devtoolstips.org/tips/en/pick-a-color-from-the-page/"/>
+    <updated>2024-06-11T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/pick-a-color-from-the-page/</id>
+    <content type="html">&lt;p&gt;When working with the CSS of a webpage, from the &lt;strong&gt;Elements&lt;/strong&gt; or &lt;strong&gt;Inspector&lt;/strong&gt; tool, in DevTools, there may be times when you want to reuse a existing color from the webpage, or from the screen, but might not know the exact color value. This can happen, for example, in cases when the color you want to pick is part of an image.&lt;/p&gt;
+&lt;p&gt;To copy the color value from a pixel on the inspected webpage, or on the entire screen, use the &lt;strong&gt;Eye Dropper&lt;/strong&gt; tool in DevTools.&lt;/p&gt;
+&lt;h2 id=&quot;in-firefox&quot; tabindex=&quot;-1&quot;&gt;In Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/pick-a-color-from-the-page/#in-firefox&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In Firefox, you can use the &lt;strong&gt;Eye Dropper&lt;/strong&gt; tool in two ways: either to copy a color to the clipboard, or to change a color in the CSS code displayed in the &lt;strong&gt;Rules&lt;/strong&gt; tab.&lt;/p&gt;
+&lt;h3 id=&quot;copy-a-color-to-the-clipboard&quot; tabindex=&quot;-1&quot;&gt;Copy a color to the clipboard &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/pick-a-color-from-the-page/#copy-a-color-to-the-clipboard&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open DevTools and go to the &lt;strong&gt;Inspector&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the &lt;strong&gt;Grab a color from the page&lt;/strong&gt; button, that&#39;s located in the &lt;strong&gt;Inspector&lt;/strong&gt; toolbar, above the DOM tree panel.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Eye Dropper&lt;/strong&gt; tool appears in the page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move your cursor over the webpage to find the color you want to copy, and then click.&lt;/p&gt;
+&lt;p&gt;The color value is copied into your clipboard.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/pick-a-color-from-the-page-firefox-1.png&quot; alt=&quot;The Eye Dropper tool in Firefox, copying a color from the webpage&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;change-a-color-in-the-css-code&quot; tabindex=&quot;-1&quot;&gt;Change a color in the CSS code &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/pick-a-color-from-the-page/#change-a-color-in-the-css-code&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open DevTools and go to the &lt;strong&gt;Inspector&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find the CSS color value you want to change in the &lt;strong&gt;Rules&lt;/strong&gt; tab.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the colored circle next to the color value.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Color Picker&lt;/strong&gt; dropdown appears.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the &lt;strong&gt;Eye Dropper&lt;/strong&gt; icon that&#39;s displayed in the bottom left corner of the &lt;strong&gt;Color Picker&lt;/strong&gt; dropdown.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Eye Dropper&lt;/strong&gt; tool appears in the page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move your cursor over the webpage to find the color you want to use, and then click.&lt;/p&gt;
+&lt;p&gt;The color value that&#39;s displayed in the &lt;strong&gt;Rules&lt;/strong&gt; tab is changed to match the color you selected.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/pick-a-color-from-the-page-firefox-2.png&quot; alt=&quot;The Color Picker in the Rules tab of Firefox DevTools, showing the Eye Dropper icon to change a color value in the CSS code&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;in-chrome%2C-edge%2C-and-safari&quot; tabindex=&quot;-1&quot;&gt;In Chrome, Edge, and Safari &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/pick-a-color-from-the-page/#in-chrome%2C-edge%2C-and-safari&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Chrome and Edge don&#39;t have a way to copy a color to your clipboard. They only support using the &lt;strong&gt;Eye Dropper&lt;/strong&gt; tool to change a color displayed in the CSS code in the &lt;strong&gt;Styles&lt;/strong&gt; pane. However, these browsers support grabbing a color from the &lt;em&gt;entire screen&lt;/em&gt;, not just the webpage.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open DevTools and go to the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find the CSS color value you want to change in the &lt;strong&gt;Styles&lt;/strong&gt; pane.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the colored square next to the color value.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Color Picker&lt;/strong&gt; dropdown appears.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the &lt;strong&gt;Eye Dropper&lt;/strong&gt; icon in the &lt;strong&gt;Color Picker&lt;/strong&gt; dropdown.&lt;/p&gt;
+&lt;p&gt;Your cursor changes into the &lt;strong&gt;Eye Dropper&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move your cursor over the webpage or the screen to find the color you want to use, and then click.&lt;/p&gt;
+&lt;p&gt;The color value that&#39;s displayed in the &lt;strong&gt;Styles&lt;/strong&gt; pane is changed to match the color you selected.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/pick-a-color-from-the-page-chrome.png&quot; alt=&quot;The Color Picker in Chrome DevTools, showing the Eye Dropper button&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;in-polypane&quot; tabindex=&quot;-1&quot;&gt;In Polypane &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/pick-a-color-from-the-page/#in-polypane&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open Polypane.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the &lt;strong&gt;Eye Dropper&lt;/strong&gt; icon in the browser top toolbar.&lt;/p&gt;
+&lt;p&gt;Your cursor changes into the &lt;strong&gt;Eye Dropper&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move your cursor over the Polypane UI or over the screen to find the color you want to use, and then click.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Eye Dropper&lt;/strong&gt; UI appears, showing the selected color, as well previously selected colors, and contrast ratio information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/pick-a-color-from-the-page-polypane.png&quot; alt=&quot;The Eye Dropper icon and Eye Dropper UI in Polypane&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Highlight areas that the browser engine re-paints</title>
+    <link href="https://devtoolstips.org/tips/en/highlighted-repainted-areas/"/>
+    <updated>2024-06-11T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/highlighted-repainted-areas/</id>
+    <content type="html">&lt;p&gt;When you scroll through a webpage, or when parts of the webpage change, the browser engine sometimes needs to repaint parts of the page. The process of converting the layout and style information into pixels on the screen is specific to each browser engine, but it can be quite expensive in terms of performance, especially when the repainted areas are large and when repaints occur often.&lt;/p&gt;
+&lt;p&gt;Use &lt;strong&gt;Paint flashing&lt;/strong&gt; in DevTools if you suspect that your webpage is slow because of frequent and large repaints. &lt;strong&gt;Paint flashing&lt;/strong&gt; highlights the areas of the webpage that the browser engine repaints, making it possible for you to visually identify the problematic areas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;: using &lt;strong&gt;Paint flashing&lt;/strong&gt; may not be suitable for people prone to photosensitive epilepsy.&lt;/p&gt;
+&lt;h2 id=&quot;in-chrome-and-edge&quot; tabindex=&quot;-1&quot;&gt;In Chrome and Edge &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/highlighted-repainted-areas/#in-chrome-and-edge&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open DevTools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;strong&gt;Rendering&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select the &lt;strong&gt;Paint flashing&lt;/strong&gt; checkbox.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Interact with the webpage to see the areas that the browser engine repaints.&lt;/p&gt;
+&lt;p&gt;As the browser engine repaints areas of the page, these areas get highlighted in a different color:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/highlighted-repainted-areas.png&quot; alt=&quot;Paint flashing in Edge&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;in-safari&quot; tabindex=&quot;-1&quot;&gt;In Safari &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/highlighted-repainted-areas/#in-safari&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the Web Inspector.&lt;/li&gt;
+&lt;li&gt;Go to the &lt;strong&gt;Elements&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Paint flashing&lt;/strong&gt; button in the toolbar.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;in-firefox&quot; tabindex=&quot;-1&quot;&gt;In Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/highlighted-repainted-areas/#in-firefox&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Unfortunately, Firefox no longer has a built-in paint flashing tool. This is due to the new rendering engine (WebRender) that Firefox uses, and which doesn&#39;t support paint flashing. See &lt;a href=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=1612922&quot;&gt;Paint flashing DevTools for WebRender&lt;/a&gt; on Bugzilla if you want to follow the updates on this feature.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Display the specificity of a CSS selector</title>
@@ -20,9 +143,9 @@
 &lt;p&gt;To display the specificity of a CSS selector in DevTools:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;In Chrome, Edge, and Safari&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In Chrome, Edge, Firefox, and Safari&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to the &lt;strong&gt;Elements&lt;/strong&gt; panel.&lt;/li&gt;
+&lt;li&gt;Go to the &lt;strong&gt;Elements&lt;/strong&gt; tool (called &lt;strong&gt;Inspector&lt;/strong&gt; in Firefox).&lt;/li&gt;
 &lt;li&gt;Hover over a CSS selector in the &lt;strong&gt;Styles&lt;/strong&gt; pane.&lt;/li&gt;
 &lt;li&gt;The specificity of the selector is displayed in a tooltip.&lt;/li&gt;
 &lt;/ol&gt;

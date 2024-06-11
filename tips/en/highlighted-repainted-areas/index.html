@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Debug CSS grid areas</title>
+    <title>Highlight areas that the browser engine re-paints</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/debug-grid-areas/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/highlighted-repainted-areas/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="Debug CSS grid areas">
+    <meta property="og:description" content="Highlight areas that the browser engine re-paints">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-debug-grid-areas">
+    <main style="view-transition-name:post-highlighted-repainted-areas">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -102,12 +102,16 @@
       </div>
       <div id="maincontent">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Debug CSS grid areas</h1>
+<h1 class="tip-title">Highlight areas that the browser engine re-paints</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-            <a href="/tag/css/" title="List all css tips">
-                css
+            <a href="/tag/perf/" title="List all perf tips">
+                perf
+            </a>
+        </li><li class="tag">
+            <a href="/tag/highlighter/" title="List all highlighter tips">
+                highlighter
             </a>
         </li></ul>
     Supported by:
@@ -120,50 +124,57 @@
                 <img src="/assets/browsers/chrome.svg" alt=""> chrome
             </a>
         </li><li class="browser">
-            <a href="/browser/firefox/" title="List all tips supported by firefox">
-                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
             </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>A really useful way to position elements on a CSS grid is using the <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas"><code>grid-template-areas</code></a> property. With it, you can give names to various areas of your grid (potentially spanning multiple cells), and then simply position your elements by referring to those names.</p>
-<p>The syntax for the <code>grid-template-areas</code> property is a bit special though. It consists in a series of strings where each corresponds to one row in the grid. For example:</p>
-<pre class="language-css"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">grid-template-areas</span><span class="token punctuation">:</span> <span class="token string">"header  header"</span><br>                       <span class="token string">"sidebar main  "</span><br>                       <span class="token string">"sidebar footer"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>DevTools in Firefox, Chrome, and Edge make it very easy to debug potential problems that may occur when making mistakes with the above syntax.</p>
-<ul>
-<li>Open the <strong>Elements</strong> panel (or <strong>Inspector</strong> panel in Firefox).</li>
-<li>Highlight a grid on your page that has named areas (you can use the <strong>grid</strong> badge in the DOM tree for example).</li>
-<li>Go to the <strong>Layout</strong> sidebar pane.</li>
-<li>Under the <strong>Grid</strong> section, check the <strong>Show area names</strong> box.</li>
-</ul>
-<p><img src="/assets/img/debug-grid-areas.png" alt="Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the &quot;display area names&quot; option checked."></p>
+    <p>When you scroll through a webpage, or when parts of the webpage change, the browser engine sometimes needs to repaint parts of the page. The process of converting the layout and style information into pixels on the screen is specific to each browser engine, but it can be quite expensive in terms of performance, especially when the repainted areas are large and when repaints occur often.</p>
+<p>Use <strong>Paint flashing</strong> in DevTools if you suspect that your webpage is slow because of frequent and large repaints. <strong>Paint flashing</strong> highlights the areas of the webpage that the browser engine repaints, making it possible for you to visually identify the problematic areas.</p>
+<p><strong>Warning</strong>: using <strong>Paint flashing</strong> may not be suitable for people prone to photosensitive epilepsy.</p>
+<h2 id="in-chrome-and-edge" tabindex="-1">In Chrome and Edge <a class="direct-link" href="#in-chrome-and-edge">#</a></h2>
+<ol>
+<li>
+<p>Open DevTools.</p>
+</li>
+<li>
+<p>Open the <strong>Rendering</strong> tool.</p>
+</li>
+<li>
+<p>Select the <strong>Paint flashing</strong> checkbox.</p>
+</li>
+<li>
+<p>Interact with the webpage to see the areas that the browser engine repaints.</p>
+<p>As the browser engine repaints areas of the page, these areas get highlighted in a different color:</p>
+<p><img src="/assets/img/highlighted-repainted-areas.png" alt="Paint flashing in Edge"></p>
+</li>
+</ol>
+<h2 id="in-safari" tabindex="-1">In Safari <a class="direct-link" href="#in-safari">#</a></h2>
+<ol>
+<li>Open the Web Inspector.</li>
+<li>Go to the <strong>Elements</strong> tool.</li>
+<li>Click the <strong>Paint flashing</strong> button in the toolbar.</li>
+</ol>
+<h2 id="in-firefox" tabindex="-1">In Firefox <a class="direct-link" href="#in-firefox">#</a></h2>
+<p>Unfortunately, Firefox no longer has a built-in paint flashing tool. This is due to the new rendering engine (WebRender) that Firefox uses, and which doesn't support paint flashing. See <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1612922">Paint flashing DevTools for WebRender</a> on Bugzilla if you want to follow the updates on this feature.</p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/disable-event-listeners">Remove or disable event listeners</a>
-            <a href="/tips/en/disable-event-listeners" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/disable-event-listeners-firefox.png" alt="The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.">
+            <a href="/tips/en/display-current-framerate">Display the current framerate of your webpage</a>
+            <a href="/tips/en/display-current-framerate" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/display-current-framerate.png" alt="Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu">
             </a>
         </li><li>
-            <a href="/tips/en/display-css-selector-specificity">Display the specificity of a CSS selector</a>
-            <a href="/tips/en/display-css-selector-specificity" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/display-css-selector-specificity.png" alt="Chrome DevTools showing the specificity of a CSS selector in a tooltip">
-            </a>
-        </li><li>
-            <a href="/tips/en/edit-position">Edit CSS absolute and relative positions by dragging points in the page</a>
-            <a href="/tips/en/edit-position" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/edit-position.gif" alt="Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.">
-            </a>
-        </li><li>
-            <a href="/tips/en/inspect-devtools-with-devtools">Inspect DevTools with DevTools</a>
-            <a href="/tips/en/inspect-devtools-with-devtools" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/inspect-devtools-with-devtools-chrome.png" alt="Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one">
+            <a href="/tips/en/use-designmode-to-spell-check">Use document.designMode to spell check your webpage</a>
+            <a href="/tips/en/use-designmode-to-spell-check" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/use-designmode-to-spell-check.png" alt="Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2022-03-16T00:00:00.000Z">3/16/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-grid-areas.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-06-11T00:00:00.000Z">6/11/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/highlighted-repainted-areas.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 

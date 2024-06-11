@@ -101,8 +101,59 @@
         </div>
       </div>
       <div id="maincontent">
-        <h1>173 DevTools Tips</h1>
+        <h1>175 DevTools Tips</h1>
 <ul class="tips">
+<li class="hover-box tip " style="view-transition-name:post-find-memory-leaks;">
+  <a href="/tips/en/find-memory-leaks/" class="tip-title">Find memory leaks by comparing heap snapshots</a>
+  <a href="/tips/en/find-memory-leaks/" class="tip-image"><img src="../../assets/img/find-memory-leaks-1.png" alt="Microsoft Edge, with a demo webpage, and DevTools on the side with the Memory tool showing 2 snapshots have been recorded" loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Note: If you think your memory leak comes from DOM nodes, you can also use the Detached Elements tool in Edge, see Get detached DOM elements to investigate memory leaks.
+Memory leaks are hard to find...
+    <a href="/tips/en/find-memory-leaks/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/perf/" title="List all perf tips">perf</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip " style="view-transition-name:post-custom-headers-in-network-table;">
+  <a href="/tips/en/custom-headers-in-network-table/" class="tip-title">Add custom headers to the network table</a>
+  <a href="/tips/en/custom-headers-in-network-table/" class="tip-image"><img src="../../assets/img/custom-headers-in-network-table.png" alt="Edge DevTools Network tool, showing a list of requests in the table, and the x-powered-by custom header as a column" loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    On the web, when a client (a browser) and a server communicate using HTTP, the requests and responses they send to each other contain headers. These headers are key/value pairs that contain metadata a...
+    <a href="/tips/en/custom-headers-in-network-table/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/network/" title="List all network tips">network</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/edge/" title="List all tips supported by edge">
+          <img src="/assets/browsers/edge.svg" alt=""> edge
+        </a>
+      </li><li class="browser">
+        <a href="/browser/chrome/" title="List all tips supported by chrome">
+          <img src="/assets/browsers/chrome.svg" alt=""> chrome
+        </a>
+      </li></ul>
+  </div>
+</li>
+
 <li class="hover-box tip " style="view-transition-name:post-find-rule-that-causes-style;">
   <a href="/tips/en/find-rule-that-causes-style/" class="tip-title">Find the CSS rule that causes a specific style to apply</a>
   <a href="/tips/en/find-rule-that-causes-style/" class="tip-image"><img src="../../assets/img/find-rule-that-causes-style-1.png" alt="The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from" loading="lazy"></img></a>
@@ -813,52 +864,6 @@ It lets you test different simulated device...
     <ul class="browsers"><li class="browser">
         <a href="/browser/polypane/" title="List all tips supported by polypane">
           <img src="/assets/browsers/polypane.svg" alt=""> polypane
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-show-web-vitals;">
-  <a href="/tips/en/show-web-vitals/" class="tip-title">Show web vitals</a>
-  <a href="/tips/en/show-web-vitals/" class="tip-image"><img src="../../assets/img/show-web-vitals.png" alt="The web vitals tooltip in Polypane showing a good CLS, LCP and FCP score and a FID score that needs improvement." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    Web vitals are a set of metrics that help you determine how well-built your page is. You can learn more about them here. These scores can be obtained with various online checks like PageSpeed Insights...
-    <a href="/tips/en/show-web-vitals/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/perf/" title="List all perf tips">perf</a>
-      </li><li class="tag">
-        <a href="/tag/testing/" title="List all testing tips">testing</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/polypane/" title="List all tips supported by polypane">
-          <img src="/assets/browsers/polypane.svg" alt=""> polypane
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-manipulate-global-objects-on-page-load;">
-  <a href="/tips/en/manipulate-global-objects-on-page-load/" class="tip-title">Manipulate global objects on page load, before other scripts run</a>
-  <a href="/tips/en/manipulate-global-objects-on-page-load/" class="tip-image"><img src="../../assets/img/manipulate-global-objects-on-page-load.png" alt="The Sources tab in Safari's WebInspector, showing the Add resource button and the Bootstrap script type" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    When a page loads, and all of its global objects are ready, but before the JavaScript code of the page actually kicks-in, is a great time to inject debugging code. For example, it might be useful to r...
-    <a href="/tips/en/manipulate-global-objects-on-page-load/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/debug/" title="List all debug tips">debug</a>
-      </li><li class="tag">
-        <a href="/tag/javascript/" title="List all javascript tips">javascript</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/safari/" title="List all tips supported by safari">
-          <img src="/assets/browsers/safari.svg" alt=""> safari
         </a>
       </li></ul>
   </div>

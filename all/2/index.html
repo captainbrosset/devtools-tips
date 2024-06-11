@@ -101,8 +101,54 @@
         </div>
       </div>
       <div id="maincontent">
-        <h1>173 DevTools Tips</h1>
+        <h1>175 DevTools Tips</h1>
 <ul class="tips">
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-show-web-vitals;">
+  <a href="/tips/en/show-web-vitals/" class="tip-title">Show web vitals</a>
+  <a href="/tips/en/show-web-vitals/" class="tip-image"><img src="../../assets/img/show-web-vitals.png" alt="The web vitals tooltip in Polypane showing a good CLS, LCP and FCP score and a FID score that needs improvement." loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    Web vitals are a set of metrics that help you determine how well-built your page is. You can learn more about them here. These scores can be obtained with various online checks like PageSpeed Insights...
+    <a href="/tips/en/show-web-vitals/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/perf/" title="List all perf tips">perf</a>
+      </li><li class="tag">
+        <a href="/tag/testing/" title="List all testing tips">testing</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/polypane/" title="List all tips supported by polypane">
+          <img src="/assets/browsers/polypane.svg" alt=""> polypane
+        </a>
+      </li></ul>
+  </div>
+</li>
+
+<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-manipulate-global-objects-on-page-load;">
+  <a href="/tips/en/manipulate-global-objects-on-page-load/" class="tip-title">Manipulate global objects on page load, before other scripts run</a>
+  <a href="/tips/en/manipulate-global-objects-on-page-load/" class="tip-image"><img src="../../assets/img/manipulate-global-objects-on-page-load.png" alt="The Sources tab in Safari's WebInspector, showing the Add resource button and the Bootstrap script type" loading="lazy"></img></a>
+  <div class="tip-excerpt">
+    When a page loads, and all of its global objects are ready, but before the JavaScript code of the page actually kicks-in, is a great time to inject debugging code. For example, it might be useful to r...
+    <a href="/tips/en/manipulate-global-objects-on-page-load/">Read more</a>
+  </div>
+  <div class="tip-info">
+    Categories:
+    <ul class="tags"><li class="tag">
+        <a href="/tag/debug/" title="List all debug tips">debug</a>
+      </li><li class="tag">
+        <a href="/tag/javascript/" title="List all javascript tips">javascript</a>
+      </li></ul>
+    Supported by:
+    <ul class="browsers"><li class="browser">
+        <a href="/browser/safari/" title="List all tips supported by safari">
+          <img src="/assets/browsers/safari.svg" alt=""> safari
+        </a>
+      </li></ul>
+  </div>
+</li>
+
 <li class="hover-box tip unique-browser-feature" style="view-transition-name:post-form-testing;">
   <a href="/tips/en/form-testing/" class="tip-title">Autofill forms for testing</a>
   <a href="/tips/en/form-testing/" class="tip-image"><img src="../../assets/img/form-testing.gif" alt="Animation of a form being filled after selecting &quot;autofill&quot; in the context menu, followed by the form being emptied after choosing &quot;Clear form&quot; in the context menu." loading="lazy"></img></a>
@@ -776,66 +822,6 @@ To get rid of an annoying overlay, or any o...
       </li><li class="browser">
         <a href="/browser/safari/" title="List all tips supported by safari">
           <img src="/assets/browsers/safari.svg" alt=""> safari
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-copy-css-selector;">
-  <a href="/tips/en/copy-css-selector/" class="tip-title">Copy CSS selector of an element</a>
-  <a href="/tips/en/copy-css-selector/" class="tip-image"><img src="../../assets/img/copy-css-selector.png" alt="Edge DevTools, showing how to access the Copy CSS selector option." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    Sometimes we need to uniquely identify an element that lacks an identifier, so that it can be referenced in JavaScript and other places. All the major browsers have an option to build a unique CSS sel...
-    <a href="/tips/en/copy-css-selector/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/css/" title="List all css tips">css</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li><li class="browser">
-        <a href="/browser/safari/" title="List all tips supported by safari">
-          <img src="/assets/browsers/safari.svg" alt=""> safari
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-copy-element-js-path;">
-  <a href="/tips/en/copy-element-js-path/" class="tip-title">Copy an element&#39;s JavaScript path</a>
-  <a href="/tips/en/copy-element-js-path/" class="tip-image"><img src="../../assets/img/copy-element-js-path.png" alt="The Elements tool in Edge showing the context menu on an element, with the Copy JS path option." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    JavaScript often needs references to DOM nodes on the page. Getting a reference is sometimes easy with document.getElementById() or similar. Other times however, a more complicated CSS selector needs...
-    <a href="/tips/en/copy-element-js-path/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/javascript/" title="List all javascript tips">javascript</a>
-      </li><li class="tag">
-        <a href="/tag/testing/" title="List all testing tips">testing</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
         </a>
       </li></ul>
   </div>

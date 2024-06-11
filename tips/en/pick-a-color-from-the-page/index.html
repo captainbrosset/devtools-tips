@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Debug CSS grid areas</title>
+    <title>Pick a color from the webpage, or the screen</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/debug-grid-areas/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/pick-a-color-from-the-page/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="Debug CSS grid areas">
+    <meta property="og:description" content="Pick a color from the webpage, or the screen">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-debug-grid-areas">
+    <main style="view-transition-name:post-pick-a-color-from-the-page">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -102,7 +102,7 @@
       </div>
       <div id="maincontent">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Debug CSS grid areas</h1>
+<h1 class="tip-title">Pick a color from the webpage, or the screen</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
@@ -123,47 +123,113 @@
             <a href="/browser/firefox/" title="List all tips supported by firefox">
                 <img src="/assets/browsers/firefox.svg" alt=""> firefox
             </a>
+        </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li><li class="browser">
+            <a href="/browser/polypane/" title="List all tips supported by polypane">
+                <img src="/assets/browsers/polypane.svg" alt=""> polypane
+            </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>A really useful way to position elements on a CSS grid is using the <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas"><code>grid-template-areas</code></a> property. With it, you can give names to various areas of your grid (potentially spanning multiple cells), and then simply position your elements by referring to those names.</p>
-<p>The syntax for the <code>grid-template-areas</code> property is a bit special though. It consists in a series of strings where each corresponds to one row in the grid. For example:</p>
-<pre class="language-css"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">grid-template-areas</span><span class="token punctuation">:</span> <span class="token string">"header  header"</span><br>                       <span class="token string">"sidebar main  "</span><br>                       <span class="token string">"sidebar footer"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>DevTools in Firefox, Chrome, and Edge make it very easy to debug potential problems that may occur when making mistakes with the above syntax.</p>
-<ul>
-<li>Open the <strong>Elements</strong> panel (or <strong>Inspector</strong> panel in Firefox).</li>
-<li>Highlight a grid on your page that has named areas (you can use the <strong>grid</strong> badge in the DOM tree for example).</li>
-<li>Go to the <strong>Layout</strong> sidebar pane.</li>
-<li>Under the <strong>Grid</strong> section, check the <strong>Show area names</strong> box.</li>
-</ul>
-<p><img src="/assets/img/debug-grid-areas.png" alt="Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the &quot;display area names&quot; option checked."></p>
+    <p>When working with the CSS of a webpage, from the <strong>Elements</strong> or <strong>Inspector</strong> tool, in DevTools, there may be times when you want to reuse a existing color from the webpage, or from the screen, but might not know the exact color value. This can happen, for example, in cases when the color you want to pick is part of an image.</p>
+<p>To copy the color value from a pixel on the inspected webpage, or on the entire screen, use the <strong>Eye Dropper</strong> tool in DevTools.</p>
+<h2 id="in-firefox" tabindex="-1">In Firefox <a class="direct-link" href="#in-firefox">#</a></h2>
+<p>In Firefox, you can use the <strong>Eye Dropper</strong> tool in two ways: either to copy a color to the clipboard, or to change a color in the CSS code displayed in the <strong>Rules</strong> tab.</p>
+<h3 id="copy-a-color-to-the-clipboard" tabindex="-1">Copy a color to the clipboard <a class="direct-link" href="#copy-a-color-to-the-clipboard">#</a></h3>
+<ol>
+<li>
+<p>Open DevTools and go to the <strong>Inspector</strong> tool.</p>
+</li>
+<li>
+<p>Click the <strong>Grab a color from the page</strong> button, that's located in the <strong>Inspector</strong> toolbar, above the DOM tree panel.</p>
+<p>The <strong>Eye Dropper</strong> tool appears in the page.</p>
+</li>
+<li>
+<p>Move your cursor over the webpage to find the color you want to copy, and then click.</p>
+<p>The color value is copied into your clipboard.</p>
+</li>
+</ol>
+<p><img src="/assets/img/pick-a-color-from-the-page-firefox-1.png" alt="The Eye Dropper tool in Firefox, copying a color from the webpage"></p>
+<h3 id="change-a-color-in-the-css-code" tabindex="-1">Change a color in the CSS code <a class="direct-link" href="#change-a-color-in-the-css-code">#</a></h3>
+<ol>
+<li>
+<p>Open DevTools and go to the <strong>Inspector</strong> tool.</p>
+</li>
+<li>
+<p>Find the CSS color value you want to change in the <strong>Rules</strong> tab.</p>
+</li>
+<li>
+<p>Click the colored circle next to the color value.</p>
+<p>The <strong>Color Picker</strong> dropdown appears.</p>
+</li>
+<li>
+<p>Click the <strong>Eye Dropper</strong> icon that's displayed in the bottom left corner of the <strong>Color Picker</strong> dropdown.</p>
+<p>The <strong>Eye Dropper</strong> tool appears in the page.</p>
+</li>
+<li>
+<p>Move your cursor over the webpage to find the color you want to use, and then click.</p>
+<p>The color value that's displayed in the <strong>Rules</strong> tab is changed to match the color you selected.</p>
+</li>
+</ol>
+<p><img src="/assets/img/pick-a-color-from-the-page-firefox-2.png" alt="The Color Picker in the Rules tab of Firefox DevTools, showing the Eye Dropper icon to change a color value in the CSS code"></p>
+<h2 id="in-chrome%2C-edge%2C-and-safari" tabindex="-1">In Chrome, Edge, and Safari <a class="direct-link" href="#in-chrome%2C-edge%2C-and-safari">#</a></h2>
+<p>Chrome and Edge don't have a way to copy a color to your clipboard. They only support using the <strong>Eye Dropper</strong> tool to change a color displayed in the CSS code in the <strong>Styles</strong> pane. However, these browsers support grabbing a color from the <em>entire screen</em>, not just the webpage.</p>
+<ol>
+<li>
+<p>Open DevTools and go to the <strong>Elements</strong> tool.</p>
+</li>
+<li>
+<p>Find the CSS color value you want to change in the <strong>Styles</strong> pane.</p>
+</li>
+<li>
+<p>Click the colored square next to the color value.</p>
+<p>The <strong>Color Picker</strong> dropdown appears.</p>
+</li>
+<li>
+<p>Click the <strong>Eye Dropper</strong> icon in the <strong>Color Picker</strong> dropdown.</p>
+<p>Your cursor changes into the <strong>Eye Dropper</strong> tool.</p>
+</li>
+<li>
+<p>Move your cursor over the webpage or the screen to find the color you want to use, and then click.</p>
+<p>The color value that's displayed in the <strong>Styles</strong> pane is changed to match the color you selected.</p>
+</li>
+</ol>
+<p><img src="/assets/img/pick-a-color-from-the-page-chrome.png" alt="The Color Picker in Chrome DevTools, showing the Eye Dropper button"></p>
+<h2 id="in-polypane" tabindex="-1">In Polypane <a class="direct-link" href="#in-polypane">#</a></h2>
+<ol>
+<li>
+<p>Open Polypane.</p>
+</li>
+<li>
+<p>Click the <strong>Eye Dropper</strong> icon in the browser top toolbar.</p>
+<p>Your cursor changes into the <strong>Eye Dropper</strong> tool.</p>
+</li>
+<li>
+<p>Move your cursor over the Polypane UI or over the screen to find the color you want to use, and then click.</p>
+<p>The <strong>Eye Dropper</strong> UI appears, showing the selected color, as well previously selected colors, and contrast ratio information.</p>
+</li>
+</ol>
+<p><img src="/assets/img/pick-a-color-from-the-page-polypane.png" alt="The Eye Dropper icon and Eye Dropper UI in Polypane"></p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/disable-event-listeners">Remove or disable event listeners</a>
-            <a href="/tips/en/disable-event-listeners" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/disable-event-listeners-firefox.png" alt="The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.">
+            <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
+            <a href="/tips/en/emulate-color-schemes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
             </a>
         </li><li>
-            <a href="/tips/en/display-css-selector-specificity">Display the specificity of a CSS selector</a>
-            <a href="/tips/en/display-css-selector-specificity" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/display-css-selector-specificity.png" alt="Chrome DevTools showing the specificity of a CSS selector in a tooltip">
-            </a>
-        </li><li>
-            <a href="/tips/en/edit-position">Edit CSS absolute and relative positions by dragging points in the page</a>
-            <a href="/tips/en/edit-position" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/edit-position.gif" alt="Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.">
-            </a>
-        </li><li>
-            <a href="/tips/en/inspect-devtools-with-devtools">Inspect DevTools with DevTools</a>
-            <a href="/tips/en/inspect-devtools-with-devtools" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/inspect-devtools-with-devtools-chrome.png" alt="Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one">
+            <a href="/tips/en/fix-color-contrast-issues-with-element-tooltip">Fix color contrast issues using the element tooltip</a>
+            <a href="/tips/en/fix-color-contrast-issues-with-element-tooltip" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/fix-color-contrast-issues-with-element-tooltip.gif" alt="Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2022-03-16T00:00:00.000Z">3/16/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-grid-areas.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-06-11T00:00:00.000Z">6/11/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/pick-a-color-from-the-page.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
