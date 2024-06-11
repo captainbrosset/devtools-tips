@@ -815,6 +815,14 @@
       "link": "/tips/en/disable-event-listeners"
     },
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
@@ -829,14 +837,6 @@
         "src": "../../assets/img/inspect-devtools-with-devtools-chrome.png"
       },
       "link": "/tips/en/inspect-devtools-with-devtools"
-    },
-    {
-      "title": "Take a screenshot of a single node",
-      "image": {
-        "alt": "Animation showing taking a node screenshot in Firefox.",
-        "src": "../../assets/img/node-screenshot.gif"
-      },
-      "link": "/tips/en/node-screenshot"
     }
   ],
   "debug-js-hover-2.md": [
@@ -1323,6 +1323,14 @@
   ],
   "display-current-framerate.md": [
     {
+      "title": "Highlight areas that the browser engine re-paints",
+      "image": {
+        "alt": "Paint flashing in Edge",
+        "src": "../../assets/img/highlighted-repainted-areas.png"
+      },
+      "link": "/tips/en/highlighted-repainted-areas"
+    },
+    {
       "title": "Use document.designMode to spell check your webpage",
       "image": {
         "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
@@ -1462,12 +1470,12 @@
       "link": "/tips/en/convert-font-units"
     },
     {
-      "title": "Edit CSS absolute and relative positions by dragging points in the page",
+      "title": "Display the specificity of a CSS selector",
       "image": {
-        "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "../../assets/img/edit-position.gif"
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
       },
-      "link": "/tips/en/edit-position"
+      "link": "/tips/en/display-css-selector-specificity"
     }
   ],
   "edit-elements-with-the-keyboard.md": [
@@ -1556,20 +1564,20 @@
       "link": "/tips/en/visualize-tabbing-order"
     },
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Highlight the effect of individual CSS properties on hover",
       "image": {
         "alt": "Animation showing a flex layout in the page, and the cursor moving over various properties in the Styles pane.",
         "src": "../../assets/img/highlight-css-properties-on-hover.gif"
       },
       "link": "/tips/en/highlight-css-properties-on-hover"
-    },
-    {
-      "title": "Highlight all the elements that a CSS rule matches",
-      "image": {
-        "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "../../assets/img/highlight-matching-elements.gif"
-      },
-      "link": "/tips/en/highlight-matching-elements"
     }
   ],
   "edit-shadow.md": [
@@ -2061,20 +2069,20 @@
       "link": "/tips/en/disable-event-listeners"
     },
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
         "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
-    },
-    {
-      "title": "Reload a page when there's changes on disk",
-      "image": {
-        "alt": "Polypane with the live reload panel and reload context menu visible.",
-        "src": "../../assets/img/reload-page-after-change.png"
-      },
-      "link": "/tips/en/reload-page-after-change"
     }
   ],
   "find-custom-elements-code.md": [
@@ -2799,6 +2807,24 @@
       "link": "/tips/en/find-rule-that-causes-style"
     }
   ],
+  "highlighted-repainted-areas.md": [
+    {
+      "title": "Display the current framerate of your webpage",
+      "image": {
+        "alt": "Chrome, with the FPS meter in the webpage, and DevTools opened to the side, showing the FPS command in the Command Menu",
+        "src": "../../assets/img/display-current-framerate.png"
+      },
+      "link": "/tips/en/display-current-framerate"
+    },
+    {
+      "title": "Use document.designMode to spell check your webpage",
+      "image": {
+        "alt": "Edge, with DevTools opened on the side. The designMode trick was used in the Console, and the webpage shows a lot of red squiggly lines",
+        "src": "../../assets/img/use-designmode-to-spell-check.png"
+      },
+      "link": "/tips/en/use-designmode-to-spell-check"
+    }
+  ],
   "ignore-scripts.md": [
     {
       "title": "Find your web component's custom element code",
@@ -2856,6 +2882,14 @@
   ],
   "inspect-devtools-with-devtools.md": [
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Disable abusive debugger statements that prevent inspecting websites",
       "image": {
         "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
@@ -2878,14 +2912,6 @@
         "src": "../../assets/img/copy-inline-svg-image.png"
       },
       "link": "/tips/en/copy-inline-svg-image"
-    },
-    {
-      "title": "Debug CSS grid areas",
-      "image": {
-        "alt": "Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the \"display area names\" option checked.",
-        "src": "../../assets/img/debug-grid-areas.png"
-      },
-      "link": "/tips/en/debug-grid-areas"
     }
   ],
   "inspect-user-agent-dom.md": [
@@ -3416,6 +3442,24 @@
         "src": "../../assets/img/list-console-functions.png"
       },
       "link": "/tips/en/list-console-functions"
+    }
+  ],
+  "pick-a-color-from-the-page.md": [
+    {
+      "title": "Emulate color schemes",
+      "image": {
+        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
+      },
+      "link": "/tips/en/emulate-color-schemes"
+    },
+    {
+      "title": "Fix color contrast issues using the element tooltip",
+      "image": {
+        "alt": "Animation of the Elements panel in Microsoft Edge. User clicks on color value, then activates the inspect tool, then hovers over an element on the page, then uses the arrow keys to change the color. We see the element tooltip showing the background and text colors as well as the resulting contrast.",
+        "src": "../../assets/img/fix-color-contrast-issues-with-element-tooltip.gif"
+      },
+      "link": "/tips/en/fix-color-contrast-issues-with-element-tooltip"
     }
   ],
   "play-sound-on-js-execution.md": [
