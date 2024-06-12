@@ -567,12 +567,12 @@
       "link": "/tips/en/emulate-color-schemes"
     },
     {
-      "title": "Hide or pin the information tooltip while inspecting page elements",
+      "title": "Hide elements from the page, without changing the layout",
       "image": {
-        "alt": "Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
-        "src": "../../assets/img/hide-or-pin-inspect-info-tooltip-1.png"
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
       },
-      "link": "/tips/en/hide-or-pin-inspect-info-tooltip"
+      "link": "/tips/en/hide-elements"
     }
   ],
   "copy-rule-as-css-in-js.md": [
@@ -1359,6 +1359,14 @@
       "link": "/tips/en/see-accessibility-tree"
     },
     {
+      "title": "Hide elements from the page, without changing the layout",
+      "image": {
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
+      },
+      "link": "/tips/en/hide-elements"
+    },
+    {
       "title": "Inspect the user-agent DOM",
       "image": {
         "alt": "The Elements tool in Chrome, an input type=range is expanded, showing it's internal user-agent shadow dom",
@@ -1373,14 +1381,6 @@
         "src": "../../assets/img/copy-element-js-path.png"
       },
       "link": "/tips/en/copy-element-js-path"
-    },
-    {
-      "title": "Quickly spot out-of-viewport elements",
-      "image": {
-        "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
-        "src": "../../assets/img/spot-out-of-viewport-elements.png"
-      },
-      "link": "/tips/en/spot-out-of-viewport-elements"
     }
   ],
   "edit-and-resend-network-requests.md": [
@@ -1642,20 +1642,20 @@
       "link": "/tips/en/spot-out-of-viewport-elements"
     },
     {
+      "title": "Hide elements from the page, without changing the layout",
+      "image": {
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
+      },
+      "link": "/tips/en/hide-elements"
+    },
+    {
       "title": "Remove annoying page overlays and other elements",
       "image": {
         "alt": "Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.",
         "src": "../../assets/img/remove-annoying-overlays.gif"
       },
       "link": "/tips/en/remove-annoying-overlays"
-    },
-    {
-      "title": "Understand when the Console opens in the main panel and in the drawer",
-      "image": {
-        "alt": "DevTools, with just one tool displayed, the Elements tool",
-        "src": "../../assets/img/understand-console-tab-drawer-1.png"
-      },
-      "link": "/tips/en/understand-console-tab-drawer"
     }
   ],
   "emulate-forced-colors.md": [],
@@ -2653,6 +2653,40 @@
       "link": "/tips/en/detect-low-color-contrast"
     }
   ],
+  "hide-elements.md": [
+    {
+      "title": "Remove annoying page overlays and other elements",
+      "image": {
+        "alt": "Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.",
+        "src": "../../assets/img/remove-annoying-overlays.gif"
+      },
+      "link": "/tips/en/remove-annoying-overlays"
+    },
+    {
+      "title": "Quickly spot out-of-viewport elements",
+      "image": {
+        "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
+        "src": "../../assets/img/spot-out-of-viewport-elements.png"
+      },
+      "link": "/tips/en/spot-out-of-viewport-elements"
+    },
+    {
+      "title": "Drag and drop nodes in the DOM tree",
+      "image": {
+        "alt": "Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge.",
+        "src": "../../assets/img/drag-drop-dom-nodes.gif"
+      },
+      "link": "/tips/en/drag-drop-dom-nodes"
+    },
+    {
+      "title": "Emulate color schemes",
+      "image": {
+        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
+      },
+      "link": "/tips/en/emulate-color-schemes"
+    }
+  ],
   "hide-extension-resources.md": [
     {
       "title": "Filter requests in the Network panel by status code, mime type and more",
@@ -3164,12 +3198,12 @@
       "link": "/tips/en/emulate-color-schemes"
     },
     {
-      "title": "Highlight all the elements that a CSS rule matches",
+      "title": "Hide elements from the page, without changing the layout",
       "image": {
-        "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "../../assets/img/highlight-matching-elements.gif"
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
       },
-      "link": "/tips/en/highlight-matching-elements"
+      "link": "/tips/en/hide-elements"
     }
   ],
   "monitor-element-events.md": [
@@ -3736,6 +3770,14 @@
   ],
   "remove-annoying-overlays.md": [
     {
+      "title": "Hide elements from the page, without changing the layout",
+      "image": {
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
+      },
+      "link": "/tips/en/hide-elements"
+    },
+    {
       "title": "Hide or pin the information tooltip while inspecting page elements",
       "image": {
         "alt": "Chrome, with a webpage and DevTools opened to the side. The inspect mode is on, the mouse is hovering an element in the webpage, which is highlighted, but the information tooltip is not displayed.",
@@ -3758,14 +3800,6 @@
         "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
-    },
-    {
-      "title": "Quickly spot out-of-viewport elements",
-      "image": {
-        "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
-        "src": "../../assets/img/spot-out-of-viewport-elements.png"
-      },
-      "link": "/tips/en/spot-out-of-viewport-elements"
     }
   ],
   "replay-xhr.md": [
@@ -4050,20 +4084,20 @@
       "link": "/tips/en/discover-all-tools"
     },
     {
+      "title": "Hide elements from the page, without changing the layout",
+      "image": {
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
+      },
+      "link": "/tips/en/hide-elements"
+    },
+    {
       "title": "Scroll an element into view",
       "image": {
         "alt": "Animation showing how the page is scrolled to reveal the selected element.",
         "src": "../../assets/img/scroll-into-view.gif"
       },
       "link": "/tips/en/scroll-into-view"
-    },
-    {
-      "title": "Quickly spot out-of-viewport elements",
-      "image": {
-        "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
-        "src": "../../assets/img/spot-out-of-viewport-elements.png"
-      },
-      "link": "/tips/en/spot-out-of-viewport-elements"
     }
   ],
   "see-viewport-size.md": [
@@ -4328,6 +4362,14 @@
   "simulate-pwa-wco.md": [],
   "spot-out-of-viewport-elements.md": [
     {
+      "title": "Hide elements from the page, without changing the layout",
+      "image": {
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
+      },
+      "link": "/tips/en/hide-elements"
+    },
+    {
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
@@ -4350,14 +4392,6 @@
         "src": "../../assets/img/remove-annoying-overlays.gif"
       },
       "link": "/tips/en/remove-annoying-overlays"
-    },
-    {
-      "title": "See the accessibility tree",
-      "image": {
-        "alt": "The Accessibility tool in Firefox, showing the accessibility tree",
-        "src": "../../assets/img/see-accessibility-tree-firefox.png"
-      },
-      "link": "/tips/en/see-accessibility-tree"
     }
   ],
   "store-node-as-variable.md": [
@@ -4430,6 +4464,14 @@
       "link": "/tips/en/disable-event-listeners"
     },
     {
+      "title": "Hide elements from the page, without changing the layout",
+      "image": {
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
+      },
+      "link": "/tips/en/hide-elements"
+    },
+    {
       "title": "Inspect DevTools with DevTools",
       "image": {
         "alt": "Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one",
@@ -4444,14 +4486,6 @@
         "src": "../../assets/img/measure-distances.png"
       },
       "link": "/tips/en/measure-distances"
-    },
-    {
-      "title": "Monitor all events dispatched on an element",
-      "image": {
-        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
-        "src": "../../assets/img/monitor-element-events.gif"
-      },
-      "link": "/tips/en/monitor-element-events"
     }
   ],
   "take-high-res-screenshots.md": [
@@ -4939,12 +4973,12 @@
       "link": "/tips/en/edit-position"
     },
     {
-      "title": "List all event listeners on the entire page",
+      "title": "Hide elements from the page, without changing the layout",
       "image": {
-        "alt": "Chrome, with the devtoolstips.org website loaded, and the DevTools Console on the side, showing the result of the above script",
-        "src": "../../assets/img/list-all-event-listeners.png"
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
       },
-      "link": "/tips/en/list-all-event-listeners"
+      "link": "/tips/en/hide-elements"
     }
   ],
   "visualize-tabbing-order.md": [
