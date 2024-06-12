@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>See the page in 3D</title>
+    <title>Hide elements from the page, without changing the layout</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/see-the-page-in-3d/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/hide-elements/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="See the page in 3D">
+    <meta property="og:description" content="Hide elements from the page, without changing the layout">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -71,7 +71,7 @@
         </ul>
       </nav>
     </header>
-    <main style="view-transition-name:post-see-the-page-in-3d">
+    <main style="view-transition-name:post-hide-elements">
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -102,12 +102,12 @@
       </div>
       <div id="maincontent">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">See the page in 3D</h1>
+<h1 class="tip-title">Hide elements from the page, without changing the layout</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-            <a href="/tag/html/" title="List all html tips">
-                html
+            <a href="/tag/personalization/" title="List all personalization tips">
+                personalization
             </a>
         </li><li class="tag">
             <a href="/tag/css/" title="List all css tips">
@@ -120,55 +120,69 @@
                 <img src="/assets/browsers/edge.svg" alt=""> edge
             </a>
         </li><li class="browser">
-            <a href="/browser/safari/" title="List all tips supported by safari">
-                <img src="/assets/browsers/safari.svg" alt=""> safari
-            </a>
-        </li><li class="browser">
             <a href="/browser/chrome/" title="List all tips supported by chrome">
                 <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
             </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>See your page in 3 dimensions to quickly find out how deeply nested it is, fix z-index stacking issues, and performance issues.</p>
-<h2 id="in-edge" tabindex="-1">In Edge <a class="direct-link" href="#in-edge">#</a></h2>
+    <p>In the DevTools' <strong>Elements</strong> (or <strong>Inspector</strong>) tool, you can delete nodes from the DOM tree by selecting them in the tool and then pressing <kbd>Delete</kbd> or <kbd>Backspace</kbd>. While this is great to completely remove the elements and make others take more space for example, it can also break the CSS layout of the page.</p>
+<p>Hiding elements without altering the DOM tree or the layout can be useful in some cases, such as:</p>
 <ul>
-<li>Open the Command Menu by pressing <kbd>ctrl+shift+P</kbd> (or <kbd>cmd+shift+P</kbd> on macOS).</li>
-<li>Type &quot;3D&quot; and press <kbd>Enter</kbd>. The <strong>3D View</strong> tool opens up.</li>
-<li>In the tool, choose which 3D mode you want to use: <strong>Z-index</strong> (to visualize the stacking context tree), DOM (to visualize DOM nesting), and <strong>Composited Layers</strong> (to visualize the layers created by the browser engine to paint the page in separate chunks).</li>
+<li>When elements overlap each other, and you want to see what's behind them.</li>
+<li>When you want to take a screenshot of the page without some information being visible.</li>
+<li>When you want to focus on just one part of the page without being distracted by other elements.</li>
 </ul>
-<p><img src="/assets/img/see-the-page-in-3d.png" alt="The 3D view tool showing a page's z-index stacking tree as a 3d scene."></p>
-<h2 id="in-chrome-or-safari" tabindex="-1">In Chrome or Safari <a class="direct-link" href="#in-chrome-or-safari">#</a></h2>
-<p>Chrome and Safari also have a <strong>Layers</strong> tool that provides the same information as Edge's Composited Layers 3D mode.</p>
-<p>You can learn more about Edge's <strong>3D View</strong> tool in this video:</p>
-<div id="BZAH8ZXhHZA" class="eleventy-plugin-youtube-embed"style="position:relative;width:100%;padding-top: 56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" width="100%" height="100%" frameborder="0" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/BZAH8ZXhHZA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>To hide an element without removing it from the DOM tree, in DevTools:</p>
+<ol>
+<li>
+<p>Go to the <strong>Elements</strong> tool (called <strong>Inspector</strong> in Firefox).</p>
+</li>
+<li>
+<p>Select the element you want to hide.</p>
+<ul>
+<li>Either from the poage, by right-clicking on it and selecting <strong>Inspect</strong>.</li>
+<li>Or from the tool, by finding and clicking on the element in the DOM tree.</li>
+</ul>
+</li>
+<li>
+<p>Press <kbd>H</kbd> on your keyboard.</p>
+<p>The element remains in the DOM tree, but becomes invisible in the page.</p>
+</li>
+</ol>
+<p>To show the element again, make sure it's selected in the <strong>Elements</strong>/<strong>Inspector</strong> tool, and press <kbd>H</kbd> again.</p>
+<p><img src="/assets/img/hide-elements.png" alt="Chrome with DevTools opened, showing how pressing H hides elements from the page"></p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/disable-all-css">Disable all CSS styles on the page</a>
-            <a href="/tips/en/disable-all-css" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/disable-all-css.png" alt="Edge showing a website with no CSS styles. The Console tool is opened on the side, and shows that the expression to remove all stylesheets was run">
+            <a href="/tips/en/remove-annoying-overlays">Remove annoying page overlays and other elements</a>
+            <a href="/tips/en/remove-annoying-overlays" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/remove-annoying-overlays.gif" alt="Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.">
             </a>
         </li><li>
-            <a href="/tips/en/discover-all-tools">Discover all the tools</a>
-            <a href="/tips/en/discover-all-tools" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/discover-all-tools.png" alt="The list of most tools in Edge DevTools, just to illustrate how many there are">
+            <a href="/tips/en/spot-out-of-viewport-elements">Quickly spot out-of-viewport elements</a>
+            <a href="/tips/en/spot-out-of-viewport-elements" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/spot-out-of-viewport-elements.png" alt="Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.">
             </a>
         </li><li>
-            <a href="/tips/en/hide-elements">Hide elements from the page, without changing the layout</a>
-            <a href="/tips/en/hide-elements" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/hide-elements.png" alt="Chrome with DevTools opened, showing how pressing H hides elements from the page">
+            <a href="/tips/en/drag-drop-dom-nodes">Drag and drop nodes in the DOM tree</a>
+            <a href="/tips/en/drag-drop-dom-nodes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/drag-drop-dom-nodes.gif" alt="Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge.">
             </a>
         </li><li>
-            <a href="/tips/en/scroll-into-view">Scroll an element into view</a>
-            <a href="/tips/en/scroll-into-view" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/scroll-into-view.gif" alt="Animation showing how the page is scrolled to reveal the selected element.">
+            <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
+            <a href="/tips/en/emulate-color-schemes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
             </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://alexlakatos.com/about/">Alex Lakatos</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2021-10-29T00:00:00.000Z">10/29/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/see-the-page-in-3d.md">Edit this page</a></p>
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2024-06-12T00:00:00.000Z">6/12/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/hide-elements.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 

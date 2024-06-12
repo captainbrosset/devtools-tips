@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTools Tips</title>
+    <title>All DevTools Tips</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/">
+    <meta property="og:url" content="https://devtoolstips.org/all/7/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
     <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
@@ -101,187 +101,34 @@
         </div>
       </div>
       <div id="maincontent">
-        
-<h1>Learn to get more comfortable with DevTools</h1>
-<div class="two-col">
-  <p>
-    If you're a web developer, <strong>DevTools Tips</strong> is for you! Whatever your level of experience, and whatever browser you
-    prefer using for web development, use DevTools Tips to learn new tips and tricks on a regular basis.
-    <br>Get tips delivered to your favorite news reader by using our <a href="/feed.xml">RSS feed</a>.
-  </p>
-  <p class="callout">
-    There are currently <strong>176</strong> tips (and we're adding more all the time) available thanks to all of our wonderful
-    <a href="https://github.com/captainbrosset/devtools-tips/graphs/contributors">open-source contributors</a>.
-    <br>If you know other debugging techniques and tips not documented here, submit a new tip on our
-    <a href="https://github.com/captainbrosset/devtools-tips">GitHub repository</a>!
-  </p>
-</div>
-<div class="cards">
-  <div class="card">
-    <h2>Latest tips</h2>
-    <ul class="tips">
-    
-<li class="hover-box tip " style="view-transition-name:post-hide-elements;">
-  <a href="/tips/en/hide-elements/" class="tip-title">Hide elements from the page, without changing the layout</a>
-  <a href="/tips/en/hide-elements/" class="tip-image"><img src="../../assets/img/hide-elements.png" alt="Chrome with DevTools opened, showing how pressing H hides elements from the page" loading="lazy"></img></a>
+        <h1>176 DevTools Tips</h1>
+<ul class="tips">
+<li class="hover-box tip " style="view-transition-name:post-debugger-statement;">
+  <a href="/tips/en/debugger-statement/" class="tip-title">Use the debugger statement to pause script execution</a>
+  <a href="/tips/en/debugger-statement/" class="tip-image"><img src="../../assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement." loading="lazy"></img></a>
   <div class="tip-excerpt">
-    In the DevTools' Elements (or Inspector) tool, you can delete nodes from the DOM tree by selecting them in the tool and then pressing Delete or Backspace. While this is great to completely remove the...
-    <a href="/tips/en/hide-elements/">Read more</a>
+    If you prefer to use console.log() statements rather than the JavaScript debugger because you find it difficult to set breakpoints in DevTools (or you can't), then you can use the debugger statement i...
+    <a href="/tips/en/debugger-statement/">Read more</a>
   </div>
   <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-        <a href="/tag/personalization/" title="List all personalization tips">personalization</a>
+        <a href="/tag/javascript/" title="List all javascript tips">javascript</a>
       </li><li class="tag">
-        <a href="/tag/css/" title="List all css tips">css</a>
+        <a href="/tag/debug/" title="List all debug tips">debug</a>
       </li></ul>
     Supported by:
     <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-pick-a-color-from-the-page;">
-  <a href="/tips/en/pick-a-color-from-the-page/" class="tip-title">Pick a color from the webpage, or the screen</a>
-  <a href="/tips/en/pick-a-color-from-the-page/" class="tip-image"><img src="../../assets/img/pick-a-color-from-the-page-firefox-1.png" alt="The Eye Dropper tool in Firefox, copying a color from the webpage" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    When working with the CSS of a webpage, from the Elements or Inspector tool, in DevTools, there may be times when you want to reuse a existing color from the webpage, or from the screen, but might not...
-    <a href="/tips/en/pick-a-color-from-the-page/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/css/" title="List all css tips">css</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
         <a href="/browser/firefox/" title="List all tips supported by firefox">
           <img src="/assets/browsers/firefox.svg" alt=""> firefox
         </a>
       </li><li class="browser">
-        <a href="/browser/safari/" title="List all tips supported by safari">
-          <img src="/assets/browsers/safari.svg" alt=""> safari
-        </a>
-      </li><li class="browser">
-        <a href="/browser/polypane/" title="List all tips supported by polypane">
-          <img src="/assets/browsers/polypane.svg" alt=""> polypane
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-highlighted-repainted-areas;">
-  <a href="/tips/en/highlighted-repainted-areas/" class="tip-title">Highlight areas that the browser engine re-paints</a>
-  <a href="/tips/en/highlighted-repainted-areas/" class="tip-image"><img src="../../assets/img/highlighted-repainted-areas.png" alt="Paint flashing in Edge" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    When you scroll through a webpage, or when parts of the webpage change, the browser engine sometimes needs to repaint parts of the page. The process of converting the layout and style information into...
-    <a href="/tips/en/highlighted-repainted-areas/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/perf/" title="List all perf tips">perf</a>
-      </li><li class="tag">
-        <a href="/tag/highlighter/" title="List all highlighter tips">highlighter</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/safari/" title="List all tips supported by safari">
-          <img src="/assets/browsers/safari.svg" alt=""> safari
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-display-css-selector-specificity;">
-  <a href="/tips/en/display-css-selector-specificity/" class="tip-title">Display the specificity of a CSS selector</a>
-  <a href="/tips/en/display-css-selector-specificity/" class="tip-image"><img src="../../assets/img/display-css-selector-specificity.png" alt="Chrome DevTools showing the specificity of a CSS selector in a tooltip" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    The specificity of a CSS selector is a score that the browser computes based on the different parts of the selector. It is used to determine which CSS rule takes precedence when multiple rules from th...
-    <a href="/tips/en/display-css-selector-specificity/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/css/" title="List all css tips">css</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
         <a href="/browser/chrome/" title="List all tips supported by chrome">
           <img src="/assets/browsers/chrome.svg" alt=""> chrome
         </a>
       </li><li class="browser">
         <a href="/browser/edge/" title="List all tips supported by edge">
           <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/safari/" title="List all tips supported by safari">
-          <img src="/assets/browsers/safari.svg" alt=""> safari
-        </a>
-      </li><li class="browser">
-        <a href="/browser/polypane/" title="List all tips supported by polypane">
-          <img src="/assets/browsers/polypane.svg" alt=""> polypane
-        </a>
-      </li><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li></ul>
-  </div>
-</li>
-
-<li class="hover-box tip " style="view-transition-name:post-copy-inline-svg-image;">
-  <a href="/tips/en/copy-inline-svg-image/" class="tip-title">Copy an inline SVG image&#39;s source code</a>
-  <a href="/tips/en/copy-inline-svg-image/" class="tip-image"><img src="../../assets/img/copy-inline-svg-image.png" alt="Copying the SVG source code in Edge DevTools" loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    To copy the SVG source code of an SVG image that's embedded directly in the HTML of a webpage, use the Elements tool in DevTools (Inspector in Firefox).
-To open DevTools, right-click the SVG image o...
-    <a href="/tips/en/copy-inline-svg-image/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/export/" title="List all export tips">export</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
         </a>
       </li><li class="browser">
         <a href="/browser/safari/" title="List all tips supported by safari">
@@ -291,27 +138,59 @@ To open DevTools, right-click the SVG image o...
   </div>
 </li>
 </ul>
-  </div>
-  <!-- <div class="card">
-    <h2>Learning guides</h2>
-    <p>The following are longer guides that help learn about and understand broader aspects of DevTools.</p>
-    <ul class="tips">
-      
-        <li class="tip">
-          <a href="/guides/en/understand-devtools/" class="tip-title">Understanding DevTools: what is it, who is it for, how to open it, how to use it?</a>
-          <a href="/guides/en/understand-devtools/" class="tip-image">
-            <img src="/guides/en/understand-devtools/devtools-all-in-one.png" alt="Illustration of a browser window with DevTools open next to it.">
-          </a>
-          <div class="tip-excerpt">
-            This guide is an introduction to DevTools, suited for people who are starting web development and haven&#39;t yet used the built-in browser tools. You will learn what DevTools is, who it&#39;s for, how to open it, how its UI is organized, what tools exist, and what the main user workflows are.
-            <a href="/guides/en/understand-devtools/">Read more</a>
-          </div>
-        </li>
-      
-    </ul>
-  </div> -->
-</div>
-
+<nav class="pagination" aria-label="Pagination navigation">
+  <ul>
+    
+      <li>
+        <a href="/all/" >
+          Home
+        </a>
+      </li>
+    
+      <li>
+        <a href="/all/1/" >
+          Page 1
+        </a>
+      </li>
+    
+      <li>
+        <a href="/all/2/" >
+          Page 2
+        </a>
+      </li>
+    
+      <li>
+        <a href="/all/3/" >
+          Page 3
+        </a>
+      </li>
+    
+      <li>
+        <a href="/all/4/" >
+          Page 4
+        </a>
+      </li>
+    
+      <li>
+        <a href="/all/5/" >
+          Page 5
+        </a>
+      </li>
+    
+      <li>
+        <a href="/all/6/" >
+          Page 6
+        </a>
+      </li>
+    
+      <li>
+        <a href="/all/7/" aria-current="page">
+          Page 7
+        </a>
+      </li>
+    
+  </ul>
+</nav>
       </div>
     </main>
 
