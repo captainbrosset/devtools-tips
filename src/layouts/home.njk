@@ -46,7 +46,6 @@
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
     <meta name="twitter:card" content="summary">
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
@@ -92,7 +91,7 @@
         </ul>
       </nav>
     </header>
-    <main {% if page.url.includes('/tips/') %}style="view-transition-name:post-{{ page.fileSlug }}"{% endif %}>
+    <main>
       <div class="page-toolbar">
         <label class="menu-button" title="Menu">
           <svg aria-hidden="true" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
@@ -119,7 +118,7 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
+      <div id="maincontent"{% if page.url.includes('/tips/') %}style="view-transition-name:post-{{ page.fileSlug }}"{% endif %}>
         {{ content | safe }}
       </div>
     </main>

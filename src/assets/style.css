@@ -1,3 +1,8 @@
+/* View transitions */
+@view-transition {
+  navigation: auto;
+}
+
 /* Themes  */
 :root {
   --text-color: black;
