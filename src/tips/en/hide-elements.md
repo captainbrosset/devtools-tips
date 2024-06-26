@@ -18,7 +18,7 @@ To hide an element without removing it from the DOM tree, in DevTools:
 1. Go to the **Elements** tool (called **Inspector** in Firefox).
 1. Select the element you want to hide.
    
-   * Either from the poage, by right-clicking on it and selecting **Inspect**.
+   * Either from the page, by right-clicking on it and selecting **Inspect**.
    * Or from the tool, by finding and clicking on the element in the DOM tree.
 
 1. Press <kbd>H</kbd> on your keyboard.
