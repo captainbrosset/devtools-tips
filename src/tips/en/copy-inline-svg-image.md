@@ -2,7 +2,7 @@
 date: 2024-05-28
 authors: Patrick Brosset
 title: Copy an inline SVG image's source code
-tags: ["tip", "export", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari"]
+tags: ["tip", "export", "browser:edge", "browser:chrome", "browser:firefox", "browser:safari", "browser:polypane"]
 ---
 
 To copy the SVG source code of an SVG image that's embedded directly in the HTML of a webpage, use the **Elements** tool in DevTools (**Inspector** in Firefox).
