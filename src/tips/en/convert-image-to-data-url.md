@@ -2,7 +2,7 @@
 date: 2023-10-02
 authors: Patrick Brosset
 title: Convert images to data-urls
-tags: ["tip", "productivity", "browser:edge", "browser:chrome", "browser:firefox"]
+tags: ["tip", "productivity", "browser:edge", "browser:chrome", "browser:firefox", "browser:polypane"]
 see-also: ["download-all-images.md", "find-all-images-without-alt-text.md"]
 ---
 A data URL is a URL that starts with the prefix `data:` instead of `http:` or `https:`. This data prefix (or scheme) allows you to embed the actual content of the resource in the URL itself, rather than linking to it. For example `data:text/html,<h1>Hello world</h1>` is a data URL that contains HTML content directly. Try it out in a browser tab!
@@ -29,5 +29,10 @@ To convert any image to a data URL:
     1. Find the image you want to convert in the list of requests and click it.
     1. Click the **Preview** tab in the sidebar.
     1. Right-click on the image preview and select **Copy image as data URI**.
+
+* In Polypane:
+
+    1. Right-click on the image you want to convert.
+    1. Select **Copy...** > **Copy as data URI**. Other options include coping as an IMG tag, copying as markdown and as CSS background-image.
 
 ![The Network tool in Edge, an image is selected, the Preview tab is open, and the right-click menu shows the copy image as data URI item](../../assets/img/convert-image-to-data-url.png)
