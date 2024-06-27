@@ -22,3 +22,6 @@ To display the specificity of a CSS selector in DevTools:
 
   1. Open the **Style** tab of the **Elements** panel.
   1. The specificity is displayed next to each CSS selectors, to the right.
+  1. Click on the specificity to see how the specificity for the selector is calculated.
+
+  ![Polypane DevTools showing the specificity of a CSS selector](../../assets/img/display-css-selector-specificity-polypane.png)
