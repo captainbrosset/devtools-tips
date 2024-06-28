@@ -23,6 +23,7 @@
 &lt;li&gt;When you want to take a screenshot of the page without some information being visible.&lt;/li&gt;
 &lt;li&gt;When you want to focus on just one part of the page without being distracted by other elements.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&quot;in-chrome%2C-edge%2C-or-firefox&quot; tabindex=&quot;-1&quot;&gt;In Chrome, Edge, or Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/hide-elements/#in-chrome%2C-edge%2C-or-firefox&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;To hide an element without removing it from the DOM tree, in DevTools:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -31,7 +32,7 @@
 &lt;li&gt;
 &lt;p&gt;Select the element you want to hide.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Either from the poage, by right-clicking on it and selecting &lt;strong&gt;Inspect&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Either from the page, by right-clicking on it and selecting &lt;strong&gt;Inspect&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;Or from the tool, by finding and clicking on the element in the DOM tree.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -42,6 +43,20 @@
 &lt;/ol&gt;
 &lt;p&gt;To show the element again, make sure it&#39;s selected in the &lt;strong&gt;Elements&lt;/strong&gt;/&lt;strong&gt;Inspector&lt;/strong&gt; tool, and press &lt;kbd&gt;H&lt;/kbd&gt; again.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/hide-elements.png&quot; alt=&quot;Chrome with DevTools opened, showing how pressing H hides elements from the page&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;in-polypane&quot; tabindex=&quot;-1&quot;&gt;In Polypane &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/hide-elements/#in-polypane&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Select the element you want to hide in the &lt;strong&gt;Elements&lt;/strong&gt; panel.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the &lt;strong&gt;Eye&lt;/strong&gt; icon in the toolbar.&lt;/p&gt;
+&lt;p&gt;The icon changes from an open eye to a closed eye.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the icon again to show the element again.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/hide-elements-polypane.png&quot; alt=&quot;Polypane with the Elements panel opened, showing how Clicking the eye icon hides elements from the page&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -190,7 +205,9 @@
 &lt;ol&gt;
 &lt;li&gt;Open the &lt;strong&gt;Style&lt;/strong&gt; tab of the &lt;strong&gt;Elements&lt;/strong&gt; panel.&lt;/li&gt;
 &lt;li&gt;The specificity is displayed next to each CSS selectors, to the right.&lt;/li&gt;
+&lt;li&gt;Click on the specificity to see how the specificity for the selector is calculated.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/display-css-selector-specificity-polypane.png&quot; alt=&quot;Polypane DevTools showing the specificity of a CSS selector&quot; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
@@ -204,21 +221,28 @@
     <content type="html">&lt;p&gt;To copy the SVG source code of an SVG image that&#39;s embedded directly in the HTML of a webpage, use the &lt;strong&gt;Elements&lt;/strong&gt; tool in DevTools (&lt;strong&gt;Inspector&lt;/strong&gt; in Firefox).&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;To open DevTools, right-click the SVG image on the webpage, and then click &lt;strong&gt;Inspect&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;DevTools opens up, with the &lt;strong&gt;Elements&lt;/strong&gt; (or &lt;strong&gt;Inspector&lt;/strong&gt;) tool showing the HTML of the page.&lt;/p&gt;
+&lt;p&gt;To open DevTools, right-click the SVG image in the webpage, and then click &lt;strong&gt;Inspect&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Elements&lt;/strong&gt; (or &lt;strong&gt;Inspector&lt;/strong&gt;) tool opens, with the SVG element selected in the DOM tree of the page.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Make sure the &lt;code&gt;&amp;lt;svg&amp;gt;&lt;/code&gt; element is selected. Depending on where you right-clicked on the webpage, an element that&#39;s inside the &lt;code&gt;&amp;lt;svg&amp;gt;&lt;/code&gt; element might be selected instead. If so, click the &lt;code&gt;&amp;lt;svg&amp;gt;&lt;/code&gt; element to select it.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Right-click the &lt;code&gt;&amp;lt;svg&amp;gt;&lt;/code&gt; element in the &lt;strong&gt;Elements&lt;/strong&gt; (or &lt;strong&gt;Inspector&lt;/strong&gt;) tool, and then click &lt;strong&gt;Copy&lt;/strong&gt; &amp;gt; &lt;strong&gt;Copy outerHTML&lt;/strong&gt; (or &lt;strong&gt;Outer HTML&lt;/strong&gt; in Firefox).&lt;/p&gt;
+&lt;p&gt;To copy the SVG source code:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Firefox, Chrome, Edge, or Safari: Right-click the &lt;code&gt;&amp;lt;svg&amp;gt;&lt;/code&gt; element in the &lt;strong&gt;Elements&lt;/strong&gt; (or &lt;strong&gt;Inspector&lt;/strong&gt;) tool, and then click &lt;strong&gt;Copy&lt;/strong&gt; &amp;gt; &lt;strong&gt;Copy outerHTML&lt;/strong&gt; (or &lt;strong&gt;Outer HTML&lt;/strong&gt; in Firefox).&lt;/li&gt;
+&lt;li&gt;In Polypane: Click the &lt;strong&gt;Copy&lt;/strong&gt; icon and then click &lt;strong&gt;Copy Outer HTML&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;The SVG source code is now copied to your clipboard.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Paste the SVG source code wherever you want to use it.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;The following screenshot shows the &lt;strong&gt;Copy&lt;/strong&gt; menu in Microsoft Edge:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/copy-inline-svg-image.png&quot; alt=&quot;Copying the SVG source code in Edge DevTools&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;And the following screenshot shows the &lt;strong&gt;Copy&lt;/strong&gt; icon in Polypane:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/copy-inline-svg-image-polypane.png&quot; alt=&quot;Copying the SVG source code in Polypane Elements Panel&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
   
@@ -725,6 +749,13 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;li&gt;Find the image you want to convert in the list of requests and click it.&lt;/li&gt;
 &lt;li&gt;Click the &lt;strong&gt;Preview&lt;/strong&gt; tab in the sidebar.&lt;/li&gt;
 &lt;li&gt;Right-click on the image preview and select &lt;strong&gt;Copy image as data URI&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Polypane:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Right-click on the image you want to convert.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Copy...&lt;/strong&gt; &amp;gt; &lt;strong&gt;Copy as data URI&lt;/strong&gt;. Other options include coping as an IMG tag, copying as markdown and as CSS background-image.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

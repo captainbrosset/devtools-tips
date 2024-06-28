@@ -126,6 +126,10 @@
             <a href="/browser/firefox/" title="List all tips supported by firefox">
                 <img src="/assets/browsers/firefox.svg" alt=""> firefox
             </a>
+        </li><li class="browser">
+            <a href="/browser/polypane/" title="List all tips supported by polypane">
+                <img src="/assets/browsers/polypane.svg" alt=""> polypane
+            </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
@@ -136,6 +140,7 @@
 <li>When you want to take a screenshot of the page without some information being visible.</li>
 <li>When you want to focus on just one part of the page without being distracted by other elements.</li>
 </ul>
+<h2 id="in-chrome%2C-edge%2C-or-firefox" tabindex="-1">In Chrome, Edge, or Firefox <a class="direct-link" href="#in-chrome%2C-edge%2C-or-firefox">#</a></h2>
 <p>To hide an element without removing it from the DOM tree, in DevTools:</p>
 <ol>
 <li>
@@ -144,7 +149,7 @@
 <li>
 <p>Select the element you want to hide.</p>
 <ul>
-<li>Either from the poage, by right-clicking on it and selecting <strong>Inspect</strong>.</li>
+<li>Either from the page, by right-clicking on it and selecting <strong>Inspect</strong>.</li>
 <li>Or from the tool, by finding and clicking on the element in the DOM tree.</li>
 </ul>
 </li>
@@ -155,6 +160,20 @@
 </ol>
 <p>To show the element again, make sure it's selected in the <strong>Elements</strong>/<strong>Inspector</strong> tool, and press <kbd>H</kbd> again.</p>
 <p><img src="/assets/img/hide-elements.png" alt="Chrome with DevTools opened, showing how pressing H hides elements from the page"></p>
+<h2 id="in-polypane" tabindex="-1">In Polypane <a class="direct-link" href="#in-polypane">#</a></h2>
+<ol>
+<li>
+<p>Select the element you want to hide in the <strong>Elements</strong> panel.</p>
+</li>
+<li>
+<p>Click the <strong>Eye</strong> icon in the toolbar.</p>
+<p>The icon changes from an open eye to a closed eye.</p>
+</li>
+<li>
+<p>Click the icon again to show the element again.</p>
+</li>
+</ol>
+<p><img src="/assets/img/hide-elements-polypane.png" alt="Polypane with the Elements panel opened, showing how Clicking the eye icon hides elements from the page"></p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
@@ -174,13 +193,13 @@
                 <img loading="lazy" src="/assets/img/drag-drop-dom-nodes.gif" alt="Animation showing a node being dragged by the mouse in the DOM tree view of the Elements panel in Edge.">
             </a>
         </li><li>
-            <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
-            <a href="/tips/en/emulate-color-schemes" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
+            <a href="/tips/en/debug-unwanted-scrollbars">Debug unwanted scrollbars</a>
+            <a href="/tips/en/debug-unwanted-scrollbars" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/debug-unwanted-scrollbars-1.png" alt="Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
     <p class="last-edit">Last edit: <time datetime="2024-06-12T00:00:00.000Z">6/12/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/hide-elements.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
