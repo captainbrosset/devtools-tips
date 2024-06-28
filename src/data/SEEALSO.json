@@ -543,36 +543,36 @@
   ],
   "copy-inline-svg-image.md": [
     {
+      "title": "Copy an element's JavaScript path",
+      "image": {
+        "alt": "The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.",
+        "src": "../../assets/img/copy-element-js-path.png"
+      },
+      "link": "/tips/en/copy-element-js-path"
+    },
+    {
+      "title": "Copy an elements styles",
+      "image": {
+        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
+        "src": "../../assets/img/copy-element-styles.png"
+      },
+      "link": "/tips/en/copy-element-styles"
+    },
+    {
+      "title": "Copy an element's XPath expression",
+      "image": {
+        "alt": "The Elements panel in Edge showing the copy xpath option in the contextual menu.",
+        "src": "../../assets/img/copy-element-xpath.png"
+      },
+      "link": "/tips/en/copy-element-xpath"
+    },
+    {
       "title": "Copy an object from the console",
       "image": {
         "alt": "Chrome devtools' console with a line of code using the copy() function.",
         "src": "../../assets/img/copy-from-console.png"
       },
       "link": "/tips/en/copy-from-console"
-    },
-    {
-      "title": "Display the specificity of a CSS selector",
-      "image": {
-        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
-        "src": "../../assets/img/display-css-selector-specificity.png"
-      },
-      "link": "/tips/en/display-css-selector-specificity"
-    },
-    {
-      "title": "Emulate color schemes",
-      "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "../../assets/img/emulate-color-schemes-firefox.png"
-      },
-      "link": "/tips/en/emulate-color-schemes"
-    },
-    {
-      "title": "Hide elements from the page, without changing the layout",
-      "image": {
-        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
-        "src": "../../assets/img/hide-elements.png"
-      },
-      "link": "/tips/en/hide-elements"
     }
   ],
   "copy-rule-as-css-in-js.md": [
@@ -997,6 +997,14 @@
       "link": "/tips/en/visualize-tabbing-order"
     },
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Evaluate XPath to find elements in the page",
       "image": {
         "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
@@ -1011,14 +1019,6 @@
         "src": "../../assets/img/node-screenshot.gif"
       },
       "link": "/tips/en/node-screenshot"
-    },
-    {
-      "title": "Edit CSS absolute and relative positions by dragging points in the page",
-      "image": {
-        "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "../../assets/img/edit-position.gif"
-      },
-      "link": "/tips/en/edit-position"
     }
   ],
   "debugger-statement.md": [
@@ -1530,20 +1530,20 @@
       "link": "/tips/en/copy-from-console"
     },
     {
-      "title": "Copy an inline SVG image's source code",
-      "image": {
-        "alt": "Copying the SVG source code in Edge DevTools",
-        "src": "../../assets/img/copy-inline-svg-image.png"
-      },
-      "link": "/tips/en/copy-inline-svg-image"
-    },
-    {
       "title": "Use the debugger statement to pause script execution",
       "image": {
         "alt": "The Sources panel in Edge, paused at a debugger statement.",
         "src": "../../assets/img/debugger-statement.png"
       },
       "link": "/tips/en/debugger-statement"
+    },
+    {
+      "title": "Emulate color schemes",
+      "image": {
+        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
+      },
+      "link": "/tips/en/emulate-color-schemes"
     }
   ],
   "edit-position.md": [
@@ -1642,20 +1642,20 @@
       "link": "/tips/en/spot-out-of-viewport-elements"
     },
     {
-      "title": "Hide elements from the page, without changing the layout",
-      "image": {
-        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
-        "src": "../../assets/img/hide-elements.png"
-      },
-      "link": "/tips/en/hide-elements"
-    },
-    {
       "title": "Remove annoying page overlays and other elements",
       "image": {
         "alt": "Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.",
         "src": "../../assets/img/remove-annoying-overlays.gif"
       },
       "link": "/tips/en/remove-annoying-overlays"
+    },
+    {
+      "title": "Understand when the Console opens in the main panel and in the drawer",
+      "image": {
+        "alt": "DevTools, with just one tool displayed, the Elements tool",
+        "src": "../../assets/img/understand-console-tab-drawer-1.png"
+      },
+      "link": "/tips/en/understand-console-tab-drawer"
     }
   ],
   "emulate-forced-colors.md": [],
@@ -1685,12 +1685,12 @@
       "link": "/tips/en/copy-from-console"
     },
     {
-      "title": "Copy an inline SVG image's source code",
+      "title": "Customize keyboard shortcuts",
       "image": {
-        "alt": "Copying the SVG source code in Edge DevTools",
-        "src": "../../assets/img/copy-inline-svg-image.png"
+        "alt": "The Settings panel in Microsoft Edge, showing the keyboard shortcut customization screen.",
+        "src": "../../assets/img/customize-keyboard-shortcuts.png"
       },
-      "link": "/tips/en/copy-inline-svg-image"
+      "link": "/tips/en/customize-keyboard-shortcuts"
     }
   ],
   "emulate-user-gesture-in-console.md": [
@@ -2679,12 +2679,12 @@
       "link": "/tips/en/drag-drop-dom-nodes"
     },
     {
-      "title": "Emulate color schemes",
+      "title": "Debug unwanted scrollbars",
       "image": {
-        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
-        "src": "../../assets/img/emulate-color-schemes-firefox.png"
+        "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
+        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
       },
-      "link": "/tips/en/emulate-color-schemes"
+      "link": "/tips/en/debug-unwanted-scrollbars"
     }
   ],
   "hide-extension-resources.md": [
@@ -2723,20 +2723,20 @@
       "link": "/tips/en/see-quick-a11y-info-on-hover"
     },
     {
-      "title": "Copy an inline SVG image's source code",
-      "image": {
-        "alt": "Copying the SVG source code in Edge DevTools",
-        "src": "../../assets/img/copy-inline-svg-image.png"
-      },
-      "link": "/tips/en/copy-inline-svg-image"
-    },
-    {
       "title": "Debug popups that appear on hover",
       "image": {
         "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
         "src": "../../assets/img/debug-popups-on-hover.png"
       },
       "link": "/tips/en/debug-popups-on-hover"
+    },
+    {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
     }
   ],
   "highlight-css-properties-on-hover.md": [
@@ -2940,12 +2940,12 @@
       "link": "/tips/en/extend-devtools"
     },
     {
-      "title": "Copy an inline SVG image's source code",
+      "title": "Debug CSS grid areas",
       "image": {
-        "alt": "Copying the SVG source code in Edge DevTools",
-        "src": "../../assets/img/copy-inline-svg-image.png"
+        "alt": "Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the \"display area names\" option checked.",
+        "src": "../../assets/img/debug-grid-areas.png"
       },
-      "link": "/tips/en/copy-inline-svg-image"
+      "link": "/tips/en/debug-grid-areas"
     }
   ],
   "inspect-user-agent-dom.md": [
@@ -3155,14 +3155,6 @@
       "link": "/tips/en/copy-from-console"
     },
     {
-      "title": "Copy an inline SVG image's source code",
-      "image": {
-        "alt": "Copying the SVG source code in Edge DevTools",
-        "src": "../../assets/img/copy-inline-svg-image.png"
-      },
-      "link": "/tips/en/copy-inline-svg-image"
-    },
-    {
       "title": "Zoom the DevTools UI to your liking",
       "image": {
         "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
@@ -3344,6 +3336,14 @@
   ],
   "node-screenshot.md": [
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Visualize the tabbing order on the page",
       "image": {
         "alt": "The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.",
@@ -3366,14 +3366,6 @@
         "src": "../../assets/img/store-node-as-variable.png"
       },
       "link": "/tips/en/store-node-as-variable"
-    },
-    {
-      "title": "Copy an element's JavaScript path",
-      "image": {
-        "alt": "The Elements tool in Edge showing the context menu on an element, with the Copy JS path option.",
-        "src": "../../assets/img/copy-element-js-path.png"
-      },
-      "link": "/tips/en/copy-element-js-path"
     }
   ],
   "outline-everything.md": [
@@ -3966,6 +3958,14 @@
   ],
   "see-json-responses.md": [
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Install or create extensions to customize DevTools",
       "image": {
         "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
@@ -3988,14 +3988,6 @@
         "src": "../../assets/img/node-screenshot.gif"
       },
       "link": "/tips/en/node-screenshot"
-    },
-    {
-      "title": "Throttle the network speed to test your website on slower connections",
-      "image": {
-        "alt": "The Network panel in Edge showing the network throttling drop-down.",
-        "src": "../../assets/img/throttle-network-speed.png"
-      },
-      "link": "/tips/en/throttle-network-speed"
     }
   ],
   "see-quick-a11y-info-on-hover.md": [
@@ -4362,20 +4354,20 @@
   "simulate-pwa-wco.md": [],
   "spot-out-of-viewport-elements.md": [
     {
-      "title": "Hide elements from the page, without changing the layout",
-      "image": {
-        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
-        "src": "../../assets/img/hide-elements.png"
-      },
-      "link": "/tips/en/hide-elements"
-    },
-    {
       "title": "Emulate color schemes",
       "image": {
         "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
         "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
+    },
+    {
+      "title": "Hide elements from the page, without changing the layout",
+      "image": {
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
+      },
+      "link": "/tips/en/hide-elements"
     },
     {
       "title": "Drag and drop nodes in the DOM tree",
@@ -4464,14 +4456,6 @@
       "link": "/tips/en/disable-event-listeners"
     },
     {
-      "title": "Hide elements from the page, without changing the layout",
-      "image": {
-        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
-        "src": "../../assets/img/hide-elements.png"
-      },
-      "link": "/tips/en/hide-elements"
-    },
-    {
       "title": "Inspect DevTools with DevTools",
       "image": {
         "alt": "Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one",
@@ -4486,6 +4470,14 @@
         "src": "../../assets/img/measure-distances.png"
       },
       "link": "/tips/en/measure-distances"
+    },
+    {
+      "title": "Monitor all events dispatched on an element",
+      "image": {
+        "alt": "Animation showing how events get automatically logged when using the monitorEvents function.",
+        "src": "../../assets/img/monitor-element-events.gif"
+      },
+      "link": "/tips/en/monitor-element-events"
     }
   ],
   "take-high-res-screenshots.md": [
@@ -4999,20 +4991,20 @@
       "link": "/tips/en/debug-unwanted-scrollbars"
     },
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Take a screenshot of a single node",
       "image": {
         "alt": "Animation showing taking a node screenshot in Firefox.",
         "src": "../../assets/img/node-screenshot.gif"
       },
       "link": "/tips/en/node-screenshot"
-    },
-    {
-      "title": "Select elements with pointer-events:none by holding Shift",
-      "image": {
-        "alt": "Animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed.",
-        "src": "../../assets/img/select-pointer-events-none-elements.gif"
-      },
-      "link": "/tips/en/select-pointer-events-none-elements"
     }
   ],
   "zoom-devtools-content.md": [
@@ -5033,20 +5025,20 @@
       "link": "/tips/en/customize-keyboard-shortcuts"
     },
     {
+      "title": "Display the specificity of a CSS selector",
+      "image": {
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
+      },
+      "link": "/tips/en/display-css-selector-specificity"
+    },
+    {
       "title": "Get contextual DevTools help",
       "image": {
         "alt": "Animation of the DevTools tooltips in Edge.",
         "src": "../../assets/img/get-contextual-help.gif"
       },
       "link": "/tips/en/get-contextual-help"
-    },
-    {
-      "title": "Simulate pseudo CSS classes",
-      "image": {
-        "alt": "The :hov button and the pseudo-class panel in Chrome DevTools",
-        "src": "../../assets/img/simulate-pseudo-classes.png"
-      },
-      "link": "/tips/en/simulate-pseudo-classes"
     }
   ]
 }
