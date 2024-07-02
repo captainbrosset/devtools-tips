@@ -4712,6 +4712,14 @@
         "src": "../../assets/img/tweak-grid-flex-alignment.png"
       },
       "link": "/tips/en/tweak-grid-flex-alignment"
+    },
+    {
+      "title": "Visualize the screen reader order for elements within the page",
+      "image": {
+        "alt": "The source order viewer in Chrome, showing numbered boxes around elements",
+        "src": "../../assets/img/visualize-screenreader-order.png"
+      },
+      "link": "/tips/en/visualize-screenreader-order"
     }
   ],
   "unminify-javascript-code.md": [
@@ -4949,6 +4957,14 @@
       "link": "/tips/en/visualize-tabbing-order"
     },
     {
+      "title": "Copy an inline SVG image's source code",
+      "image": {
+        "alt": "Copying the SVG source code in Edge DevTools",
+        "src": "../../assets/img/copy-inline-svg-image.png"
+      },
+      "link": "/tips/en/copy-inline-svg-image"
+    },
+    {
       "title": "Debug unwanted scrollbars",
       "image": {
         "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
@@ -4963,14 +4979,6 @@
         "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
-    },
-    {
-      "title": "Hide elements from the page, without changing the layout",
-      "image": {
-        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
-        "src": "../../assets/img/hide-elements.png"
-      },
-      "link": "/tips/en/hide-elements"
     }
   ],
   "visualize-tabbing-order.md": [
