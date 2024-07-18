@@ -5,11 +5,53 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2024-06-12T00:00:00.000Z</updated>
+  <updated>2024-07-18T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Override HTTP response headers</title>
+    <link href="https://devtoolstips.org/tips/en/override-headers/"/>
+    <updated>2024-07-18T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/override-headers/</id>
+    <content type="html">&lt;p&gt;With DevTools, you can override the response headers of a network request and test your website under different conditions.&lt;/p&gt;
+&lt;p&gt;HTTP response headers are metadata sent by the server to the browser, along with a response such as an HTML page, or a JS, CSS, or image resource. These headers control how the browser handles the response, such as caching, content type, and various features or security settings.&lt;/p&gt;
+&lt;p&gt;Overriding response headers from within DevTools means that you can test all of these aspects without needing to modify the server, which can be useful when you don&#39;t have access to the server, or to do quick tests.&lt;/p&gt;
+&lt;p&gt;For example, the JS self-profiling API allows you to run a JavaScript profiler, programmatically, on your website, and requires the &lt;code&gt;Document-Policy: js-profiling&lt;/code&gt; header to be set. If you want to test your JS self-profiling code locally, without adding the header to your server, override the response header in DevTools:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open Chrome or Edge DevTools, and go to the &lt;strong&gt;Network&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reload the page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find the request for which you want to override the response headers. In the example above, you would look for the initial HTML request.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Right-click on the request and select &lt;strong&gt;Override headers&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Headers&lt;/strong&gt; tab appears in the side panel, with a list of existing response headers under the section &lt;strong&gt;Response Headers&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To add a new header, click the &lt;strong&gt;+ Add header&lt;/strong&gt; button.&lt;/p&gt;
+&lt;p&gt;A new row appears in the list of headers, where you can enter the name and value of the header you want to add.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter a header name, such as &lt;code&gt;Document-Policy&lt;/code&gt;, and a value, such as &lt;code&gt;js-profiling&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To edit an existing header, click on the header value and enter a new value.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reload the page.&lt;/p&gt;
+&lt;p&gt;The resource for which you overrode the headers should now be loaded with the new headers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/override-headers.png&quot; alt=&quot;Edge DevTools Network tool, the initial HTML request is selected, the Response Headers section is visible in the sidebar, showing the Add header button, and the new header.&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Hide elements from the page, without changing the layout</title>

@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All DevTools Tips</title>
+    <title>Override HTTP response headers</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/all/7/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/override-headers/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
+    <meta property="og:description" content="Override HTTP response headers">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -99,119 +99,81 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
-        <h1>177 DevTools Tips</h1>
-<ul class="tips">
-<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-edit-css-filters;">
-  <a href="/tips/en/edit-css-filters/" class="tip-title">Edit CSS filters</a>
-  <a href="/tips/en/edit-css-filters/" class="tip-image"><img src="../../assets/img/edit-css-filters.png" alt="The filter editing UI in Firefox." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    The filter property in CSS lets you change the way a particular element gets rendered.
-Firefox provides a visual editor to play with CSS filters. You can add or remove filter functions from the list,...
-    <a href="/tips/en/edit-css-filters/">Read more</a>
-  </div>
-  <div class="tip-info">
+      <div id="maincontent"style="view-transition-name:post-override-headers">
+        <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Override HTTP response headers</h1>
+<div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-        <a href="/tag/css/" title="List all css tips">css</a>
-      </li></ul>
+            <a href="/tag/network/" title="List all network tips">
+                network
+            </a>
+        </li><li class="tag">
+            <a href="/tag/testing/" title="List all testing tips">
+                testing
+            </a>
+        </li></ul>
     Supported by:
     <ul class="browsers"><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li></ul>
-  </div>
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li></ul>
+</div>
+<div class="page-content tip-content" data-pagefind-body>
+    <p>With DevTools, you can override the response headers of a network request and test your website under different conditions.</p>
+<p>HTTP response headers are metadata sent by the server to the browser, along with a response such as an HTML page, or a JS, CSS, or image resource. These headers control how the browser handles the response, such as caching, content type, and various features or security settings.</p>
+<p>Overriding response headers from within DevTools means that you can test all of these aspects without needing to modify the server, which can be useful when you don't have access to the server, or to do quick tests.</p>
+<p>For example, the JS self-profiling API allows you to run a JavaScript profiler, programmatically, on your website, and requires the <code>Document-Policy: js-profiling</code> header to be set. If you want to test your JS self-profiling code locally, without adding the header to your server, override the response header in DevTools:</p>
+<ol>
+<li>
+<p>Open Chrome or Edge DevTools, and go to the <strong>Network</strong> tool.</p>
 </li>
+<li>
+<p>Reload the page.</p>
+</li>
+<li>
+<p>Find the request for which you want to override the response headers. In the example above, you would look for the initial HTML request.</p>
+</li>
+<li>
+<p>Right-click on the request and select <strong>Override headers</strong>.</p>
+<p>The <strong>Headers</strong> tab appears in the side panel, with a list of existing response headers under the section <strong>Response Headers</strong>.</p>
+</li>
+<li>
+<p>To add a new header, click the <strong>+ Add header</strong> button.</p>
+<p>A new row appears in the list of headers, where you can enter the name and value of the header you want to add.</p>
+</li>
+<li>
+<p>Enter a header name, such as <code>Document-Policy</code>, and a value, such as <code>js-profiling</code>.</p>
+</li>
+<li>
+<p>To edit an existing header, click on the header value and enter a new value.</p>
+</li>
+<li>
+<p>Reload the page.</p>
+<p>The resource for which you overrode the headers should now be loaded with the new headers.</p>
+</li>
+</ol>
+<p><img src="/assets/img/override-headers.png" alt="Edge DevTools Network tool, the initial HTML request is selected, the Response Headers section is visible in the sidebar, showing the Add header button, and the new header."></p>
 
-<li class="hover-box tip " style="view-transition-name:post-debugger-statement;">
-  <a href="/tips/en/debugger-statement/" class="tip-title">Use the debugger statement to pause script execution</a>
-  <a href="/tips/en/debugger-statement/" class="tip-image"><img src="../../assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    If you prefer to use console.log() statements rather than the JavaScript debugger because you find it difficult to set breakpoints in DevTools (or you can't), then you can use the debugger statement i...
-    <a href="/tips/en/debugger-statement/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/javascript/" title="List all javascript tips">javascript</a>
-      </li><li class="tag">
-        <a href="/tag/debug/" title="List all debug tips">debug</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/safari/" title="List all tips supported by safari">
-          <img src="/assets/browsers/safari.svg" alt=""> safari
-        </a>
-      </li></ul>
-  </div>
-</li>
-</ul>
-<nav class="pagination" aria-label="Pagination navigation">
-  <ul>
-    
-      <li>
-        <a href="/all/" >
-          Home
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/1/" >
-          Page 1
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/2/" >
-          Page 2
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/3/" >
-          Page 3
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/4/" >
-          Page 4
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/5/" >
-          Page 5
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/6/" >
-          Page 6
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/7/" aria-current="page">
-          Page 7
-        </a>
-      </li>
-    
-  </ul>
-</nav>
+</div><div class="see-also">
+    <h2 id="see-also">See also</h2>
+    <ul><li>
+            <a href="/tips/en/custom-headers-in-network-table">Add custom headers to the network table</a>
+            <a href="/tips/en/custom-headers-in-network-table" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/custom-headers-in-network-table.png" alt="Edge DevTools Network tool, showing a list of requests in the table, and the x-powered-by custom header as a column">
+            </a>
+        </li></ul>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2024-07-18T00:00:00.000Z">7/18/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/override-headers.md">Edit this page</a></p>
+</div>
+<script async src="/assets/dialog-lightbox.js"></script>
+
       </div>
     </main>
 
