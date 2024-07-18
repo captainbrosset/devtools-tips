@@ -3,7 +3,7 @@ date: 2023-06-21
 authors: Patrick Brosset
 title: Add custom headers to the network table
 tags: ["tip", "network", "browser:edge", "browser:chrome"]
-see-also: ["see-request-path-instead-of-name.md"]
+see-also: ["see-request-path-instead-of-name.md", "override-headers.md"]
 ---
 
 On the web, when a client (a browser) and a server communicate using HTTP, the requests and responses they send to each other contain headers. These headers are key/value pairs that contain metadata about the request and the response. Common examples of headers include the `Content-Type` header, which tells the browser what type of content the server is sending back, or the `User-Agent` header, which tells the server what browser the client is using.
