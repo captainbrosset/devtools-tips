@@ -15,8 +15,8 @@ To copy the SVG source code of an SVG image that's embedded directly in the HTML
 
 1. To copy the SVG source code:
 
-   * In Firefox, Chrome, Edge, or Safari: Right-click the `<svg>` element in the **Elements** (or **Inspector**) tool, and then click **Copy** > **Copy outerHTML** (or **Outer HTML** in Firefox).
-   * In Polypane: Click the **Copy** icon and then click **Copy Outer HTML**.
+   - In Firefox, Chrome, Edge, or Safari: Right-click the `<svg>` element in the **Elements** (or **Inspector**) tool, and then click **Copy** > **Copy outerHTML** (or **Outer HTML** in Firefox).
+   - In Polypane: Click the **Copy** icon and then click **Copy Outer HTML**.
 
    The SVG source code is now copied to your clipboard.
 
@@ -29,3 +29,5 @@ The following screenshot shows the **Copy** menu in Microsoft Edge:
 And the following screenshot shows the **Copy** icon in Polypane:
 
 ![Copying the SVG source code in Polypane Elements Panel](../../assets/img/copy-inline-svg-image-polypane.png)
+
+Alternative method in Polypane: right-click the SVG, then click **Copy SVG as...** > **Copy as code**. This method copies the SVG source code as well.

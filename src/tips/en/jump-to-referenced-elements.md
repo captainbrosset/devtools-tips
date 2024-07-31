@@ -2,10 +2,10 @@
 date: 2022-07-01
 authors: Patrick Brosset
 title: Jump from a label `for` attribute to the linked input (and more)
-tags: ["tip", "html", "productivity", "browser:firefox"]
+tags: ["tip", "html", "productivity", "browser:firefox", "browser:polypane"]
 ---
 
-In Firefox, you can jump from an element that references the ID attribute of an other element, to that other element, by <kbd>Cmd</kbd>+clicking (or <kbd>Ctrl</kbd>+clicking) the attribute.
+In Firefox and Polypane you can jump from an element that references the ID attribute of an other element, to that other element, by <kbd>Cmd</kbd>+clicking (or <kbd>Ctrl</kbd>+clicking) the attribute or in Polypane by just clicking the attribute.
 
 Here is a common example for when this is useful:
 
