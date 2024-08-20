@@ -71,8 +71,6 @@ Chrome and Edge don't have a way to copy a color to your clipboard. They only su
 
 ## In Polypane
 
-1. Open Polypane.
-
 1. Click the **Eye Dropper** icon in the browser top toolbar.
 
    Your cursor changes into the **Eye Dropper** tool.
