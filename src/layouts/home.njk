@@ -71,7 +71,7 @@
           <li>Tips by category
             <ul class="submenu">
               {%- for tag in getTags(collections) -%}
-              <li><a href="/tag/{{ tag }}/">{{ tag }}</a></li>
+              {%- if tag !== "guide" %}<li><a href="/tag/{{ tag }}/">{{ tag }}</a></li>{%- endif %}
               {%- endfor -%}
             </ul>
           </li>

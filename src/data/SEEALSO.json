@@ -645,6 +645,14 @@
   ],
   "custom-headers-in-network-table.md": [
     {
+      "title": "Override HTTP response headers",
+      "image": {
+        "alt": "Edge DevTools Network tool, the initial HTML request is selected, the Response Headers section is visible in the sidebar, showing the Add header button, and the new header.",
+        "src": "../../assets/img/override-headers.png"
+      },
+      "link": "/tips/en/override-headers"
+    },
+    {
       "title": "See network request paths instead of names in the Network tool",
       "image": {
         "alt": "The Network tool in Edge, showing the contextual menu that's used to customize the network list columns",
@@ -667,14 +675,6 @@
         "src": "../../assets/img/filter-network-requests.png"
       },
       "link": "/tips/en/filter-network-requests"
-    },
-    {
-      "title": "See the size of the transferred data for images, scripts, or other resources",
-      "image": {
-        "alt": "The Network tool in Chrome, with the transferred size highlighted",
-        "src": "../../assets/img/get-size-of-resource-types.png"
-      },
-      "link": "/tips/en/get-size-of-resource-types"
     }
   ],
   "custom-object-formatters.md": [
@@ -3400,6 +3400,16 @@
         "src": "../../assets/img/find-all-elements-with-style.png"
       },
       "link": "/tips/en/find-all-elements-with-style"
+    }
+  ],
+  "override-headers.md": [
+    {
+      "title": "Add custom headers to the network table",
+      "image": {
+        "alt": "Edge DevTools Network tool, showing a list of requests in the table, and the x-powered-by custom header as a column",
+        "src": "../../assets/img/custom-headers-in-network-table.png"
+      },
+      "link": "/tips/en/custom-headers-in-network-table"
     }
   ],
   "past-several-css-declarations.md": [
