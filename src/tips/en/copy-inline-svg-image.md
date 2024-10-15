@@ -30,4 +30,4 @@ And the following screenshot shows the **Copy** icon in Polypane:
 
 ![Copying the SVG source code in Polypane Elements Panel](../../assets/img/copy-inline-svg-image-polypane.png)
 
-Alternative method in Polypane: right-click the SVG, then click **Copy SVG as...** > **Copy as code**. This method copies the SVG source code as well.
+Alternatively, in Polypane, you can right-click the SVG and then select **Copy SVG as...** > **Copy as code**.
