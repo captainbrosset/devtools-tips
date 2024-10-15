@@ -3412,6 +3412,16 @@
       "link": "/tips/en/custom-headers-in-network-table"
     }
   ],
+  "override-source-files.md": [
+    {
+      "title": "Start your HTML and CSS prototypes in the browser directly",
+      "image": {
+        "alt": "Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.",
+        "src": "../../assets/img/prototype-in-the-browser.png"
+      },
+      "link": "/tips/en/prototype-in-the-browser"
+    }
+  ],
   "past-several-css-declarations.md": [
     {
       "title": "Copy an object from the console",
