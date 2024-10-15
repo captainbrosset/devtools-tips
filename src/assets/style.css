@@ -102,6 +102,14 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+  line-height: 1.4;
+}
+
 ul,
 ol,
 li {
@@ -931,12 +939,12 @@ table td {
 /* Guides TOC */
 
 .toc-container {
-	font-size: 0.9rem;
-	padding: 1rem;
-	background: var(--alternate-background-color);
-	border-radius: 0.5rem;
-	float: inline-end;
-	margin: 0 0 1rem 1rem;
+  font-size: 0.9rem;
+  padding: 1rem;
+  background: var(--alternate-background-color);
+  border-radius: 0.5rem;
+  float: inline-end;
+  margin: 0 0 1rem 1rem;
 }
 
 @media only screen and (max-width: 700px) {
@@ -951,7 +959,8 @@ table td {
   font-size: 1em;
 }
 
-.toc ol, .toc ol li {
+.toc ol,
+.toc ol li {
   list-style-type: none;
   padding: 0;
   margin: 0;
