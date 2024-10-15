@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All DevTools Tips</title>
+    <title>Override source files to test changes in the browser</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/all/7/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/override-source-files/">
     
-    <meta property="og:image" content="http://devtoolstips.org/assets/logo.png">
-    <meta property="og:description" content="Discover helpful cross-browser DevTools tips and tricks">
+    <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
+    <meta property="og:description" content="Override source files to test changes in the browser">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -99,156 +99,107 @@
           </a>
         </div>
       </div>
-      <div id="maincontent">
-        <h1>178 DevTools Tips</h1>
-<ul class="tips">
-<li class="hover-box tip " style="view-transition-name:post-expand-nodes-recursively;">
-  <a href="/tips/en/expand-nodes-recursively/" class="tip-title">Expand DOM nodes recursively</a>
-  <a href="/tips/en/expand-nodes-recursively/" class="tip-image"><img src="../../assets/img/expand-nodes-recursively.gif" alt="Animation showing right-clicking on a node in Chrome's Elements panel and choosing &quot;expand recursively&quot;." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    You can expand all descendants under a given DOM node in one go, to avoid having to expand each node one by one, which may take a while.
-In Chrome and Edge
-Right-click on the node you want to expand...
-    <a href="/tips/en/expand-nodes-recursively/">Read more</a>
-  </div>
-  <div class="tip-info">
+      <div id="maincontent"style="view-transition-name:post-override-source-files">
+        <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+<h1 class="tip-title">Override source files to test changes in the browser</h1>
+<div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-        <a href="/tag/html/" title="List all html tips">html</a>
-      </li><li class="tag">
-        <a href="/tag/productivity/" title="List all productivity tips">productivity</a>
-      </li></ul>
+            <a href="/tag/debug/" title="List all debug tips">
+                debug
+            </a>
+        </li><li class="tag">
+            <a href="/tag/testing/" title="List all testing tips">
+                testing
+            </a>
+        </li></ul>
     Supported by:
     <ul class="browsers"><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/safari/" title="List all tips supported by safari">
-          <img src="/assets/browsers/safari.svg" alt=""> safari
-        </a>
-      </li></ul>
-  </div>
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
+        </li></ul>
+</div>
+<div class="page-content tip-content" data-pagefind-body>
+    <p>It can be helpful to make quick changes to the source code that a site uses, especially when debugging a site in production. For example, if you suspect that a bug is caused by a specific line of code, and you want to test a fix, it can be faster and easier to make the required change temporarily on the production code directly, rather than setting up a local development environment.</p>
+<p>Chrome, Edge, and Firefox allow you to temporarily override any source file that a site uses with files stored locally on your computer.</p>
+<p>Note that the files are only overridden while DevTools is open, and no changes are made to the original files on the server.</p>
+<h2 id="override-files-in-the-firefox-devtools-debugger-tool" tabindex="-1">Override files in the Firefox DevTools Debugger tool <a class="direct-link" href="#override-files-in-the-firefox-devtools-debugger-tool">#</a></h2>
+<ol>
+<li>
+<p>In Firefox DevTools, open the <strong>Debugger</strong> tool.</p>
 </li>
+<li>
+<p>In the <strong>Sources</strong> panel, find the file that you want to override.</p>
+</li>
+<li>
+<p>Right-click the file and select <strong>Add script override</strong>.</p>
+<p>A file explorer window opens.</p>
+</li>
+<li>
+<p>Choose a location for the file override and submit.</p>
+</li>
+<li>
+<p>Make changes to the local file stored at the location you chose.</p>
+</li>
+<li>
+<p>Refresh the page in Firefox to see the changes.</p>
+</li>
+</ol>
+<h2 id="override-files-in-the-chrome-or-edge-devtools-sources-tool" tabindex="-1">Override files in the Chrome or Edge DevTools Sources tool <a class="direct-link" href="#override-files-in-the-chrome-or-edge-devtools-sources-tool">#</a></h2>
+<ol>
+<li>
+<p>In Chrome or Edge DevTools, open the <strong>Sources</strong> tool.</p>
+</li>
+<li>
+<p>In the right pane, open the <strong>Overrides</strong> tab. You might need to click the <strong>More tabs</strong> chevron icon to see that tab.</p>
+</li>
+<li>
+<p>Click <strong>Select folder for overrides</strong>.</p>
+<p>A file explorer window opens.</p>
+</li>
+<li>
+<p>Choose a folder for the file overrides to be stored in, and then submit.</p>
+<p>DevTools requests your permission to access the file system, click <strong>Allow</strong>.</p>
+</li>
+<li>
+<p>In the right pane, open the <strong>Page</strong> tab.</p>
+</li>
+<li>
+<p>Find the file that you want to override and click it.</p>
+<p>The file content appears in the editor.</p>
+</li>
+<li>
+<p>Make changes to the file content, and then save the file.</p>
+<p>The changes get saved locally within a subfolder of the folder you chose. The subfolder is named after the domain of the site you're debugging. If you go to another site and override a file from that site, the overrides are stored in another subfolder of the folder your chose.</p>
+</li>
+<li>
+<p>Refresh the page in Chrome or Edge to see the changes.</p>
+</li>
+</ol>
 
-<li class="hover-box tip unique-browser-feature" style="view-transition-name:post-edit-css-filters;">
-  <a href="/tips/en/edit-css-filters/" class="tip-title">Edit CSS filters</a>
-  <a href="/tips/en/edit-css-filters/" class="tip-image"><img src="../../assets/img/edit-css-filters.png" alt="The filter editing UI in Firefox." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    The filter property in CSS lets you change the way a particular element gets rendered.
-Firefox provides a visual editor to play with CSS filters. You can add or remove filter functions from the list,...
-    <a href="/tips/en/edit-css-filters/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/css/" title="List all css tips">css</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li></ul>
-  </div>
-</li>
+</div><div class="see-also">
+    <h2 id="see-also">See also</h2>
+    <ul><li>
+            <a href="/tips/en/prototype-in-the-browser">Start your HTML and CSS prototypes in the browser directly</a>
+            <a href="/tips/en/prototype-in-the-browser" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/prototype-in-the-browser.png" alt="Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.">
+            </a>
+        </li></ul>
+</div><div class="tip-footer">
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2024-10-15T00:00:00.000Z">10/15/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/override-source-files.md">Edit this page</a></p>
+</div>
+<script async src="/assets/dialog-lightbox.js"></script>
 
-<li class="hover-box tip " style="view-transition-name:post-debugger-statement;">
-  <a href="/tips/en/debugger-statement/" class="tip-title">Use the debugger statement to pause script execution</a>
-  <a href="/tips/en/debugger-statement/" class="tip-image"><img src="../../assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement." loading="lazy"></img></a>
-  <div class="tip-excerpt">
-    If you prefer to use console.log() statements rather than the JavaScript debugger because you find it difficult to set breakpoints in DevTools (or you can't), then you can use the debugger statement i...
-    <a href="/tips/en/debugger-statement/">Read more</a>
-  </div>
-  <div class="tip-info">
-    Categories:
-    <ul class="tags"><li class="tag">
-        <a href="/tag/javascript/" title="List all javascript tips">javascript</a>
-      </li><li class="tag">
-        <a href="/tag/debug/" title="List all debug tips">debug</a>
-      </li></ul>
-    Supported by:
-    <ul class="browsers"><li class="browser">
-        <a href="/browser/firefox/" title="List all tips supported by firefox">
-          <img src="/assets/browsers/firefox.svg" alt=""> firefox
-        </a>
-      </li><li class="browser">
-        <a href="/browser/chrome/" title="List all tips supported by chrome">
-          <img src="/assets/browsers/chrome.svg" alt=""> chrome
-        </a>
-      </li><li class="browser">
-        <a href="/browser/edge/" title="List all tips supported by edge">
-          <img src="/assets/browsers/edge.svg" alt=""> edge
-        </a>
-      </li><li class="browser">
-        <a href="/browser/safari/" title="List all tips supported by safari">
-          <img src="/assets/browsers/safari.svg" alt=""> safari
-        </a>
-      </li></ul>
-  </div>
-</li>
-</ul>
-<nav class="pagination" aria-label="Pagination navigation">
-  <ul>
-    
-      <li>
-        <a href="/all/" >
-          Home
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/1/" >
-          Page 1
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/2/" >
-          Page 2
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/3/" >
-          Page 3
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/4/" >
-          Page 4
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/5/" >
-          Page 5
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/6/" >
-          Page 6
-        </a>
-      </li>
-    
-      <li>
-        <a href="/all/7/" aria-current="page">
-          Page 7
-        </a>
-      </li>
-    
-  </ul>
-</nav>
       </div>
     </main>
 

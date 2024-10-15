@@ -5,11 +5,75 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2024-07-18T00:00:00.000Z</updated>
+  <updated>2024-10-15T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Override source files to test changes in the browser</title>
+    <link href="https://devtoolstips.org/tips/en/override-source-files/"/>
+    <updated>2024-10-15T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/override-source-files/</id>
+    <content type="html">&lt;p&gt;It can be helpful to make quick changes to the source code that a site uses, especially when debugging a site in production. For example, if you suspect that a bug is caused by a specific line of code, and you want to test a fix, it can be faster and easier to make the required change temporarily on the production code directly, rather than setting up a local development environment.&lt;/p&gt;
+&lt;p&gt;Chrome, Edge, and Firefox allow you to temporarily override any source file that a site uses with files stored locally on your computer.&lt;/p&gt;
+&lt;p&gt;Note that the files are only overridden while DevTools is open, and no changes are made to the original files on the server.&lt;/p&gt;
+&lt;h2 id=&quot;override-files-in-the-firefox-devtools-debugger-tool&quot; tabindex=&quot;-1&quot;&gt;Override files in the Firefox DevTools Debugger tool &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/override-source-files/#override-files-in-the-firefox-devtools-debugger-tool&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;In Firefox DevTools, open the &lt;strong&gt;Debugger&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the &lt;strong&gt;Sources&lt;/strong&gt; panel, find the file that you want to override.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Right-click the file and select &lt;strong&gt;Add script override&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A file explorer window opens.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose a location for the file override and submit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make changes to the local file stored at the location you chose.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Refresh the page in Firefox to see the changes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;override-files-in-the-chrome-or-edge-devtools-sources-tool&quot; tabindex=&quot;-1&quot;&gt;Override files in the Chrome or Edge DevTools Sources tool &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/override-source-files/#override-files-in-the-chrome-or-edge-devtools-sources-tool&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;In Chrome or Edge DevTools, open the &lt;strong&gt;Sources&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the right pane, open the &lt;strong&gt;Overrides&lt;/strong&gt; tab. You might need to click the &lt;strong&gt;More tabs&lt;/strong&gt; chevron icon to see that tab.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Select folder for overrides&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A file explorer window opens.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose a folder for the file overrides to be stored in, and then submit.&lt;/p&gt;
+&lt;p&gt;DevTools requests your permission to access the file system, click &lt;strong&gt;Allow&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the right pane, open the &lt;strong&gt;Page&lt;/strong&gt; tab.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find the file that you want to override and click it.&lt;/p&gt;
+&lt;p&gt;The file content appears in the editor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make changes to the file content, and then save the file.&lt;/p&gt;
+&lt;p&gt;The changes get saved locally within a subfolder of the folder you chose. The subfolder is named after the domain of the site you&#39;re debugging. If you go to another site and override a file from that site, the overrides are stored in another subfolder of the folder your chose.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Refresh the page in Chrome or Edge to see the changes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Override HTTP response headers</title>
