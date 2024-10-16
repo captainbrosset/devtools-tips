@@ -238,9 +238,6 @@
 &lt;h2 id=&quot;in-polypane&quot; tabindex=&quot;-1&quot;&gt;In Polypane &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/pick-a-color-from-the-page/#in-polypane&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Open Polypane.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
 &lt;p&gt;Click the &lt;strong&gt;Eye Dropper&lt;/strong&gt; icon in the browser top toolbar.&lt;/p&gt;
 &lt;p&gt;Your cursor changes into the &lt;strong&gt;Eye Dropper&lt;/strong&gt; tool.&lt;/p&gt;
 &lt;/li&gt;
@@ -349,6 +346,7 @@
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/copy-inline-svg-image.png&quot; alt=&quot;Copying the SVG source code in Edge DevTools&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;And the following screenshot shows the &lt;strong&gt;Copy&lt;/strong&gt; icon in Polypane:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/copy-inline-svg-image-polypane.png&quot; alt=&quot;Copying the SVG source code in Polypane Elements Panel&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Alternatively, in Polypane, you can right-click the SVG and then select &lt;strong&gt;Copy SVG as...&lt;/strong&gt; &amp;gt; &lt;strong&gt;Copy as code&lt;/strong&gt;.&lt;/p&gt;
 </content>
   </entry>
   
@@ -2374,15 +2372,28 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
     <link href="https://devtoolstips.org/tips/en/copy-css-selector/"/>
     <updated>2022-07-26T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/copy-css-selector/</id>
-    <content type="html">&lt;p&gt;Sometimes we need to uniquely identify an element that lacks an identifier, so that it can be referenced in JavaScript and other places. All the major browsers have an option to build a unique CSS selector for an element and then copy it to the clipboard.&lt;/p&gt;
-&lt;p&gt;In the Element tree, right click on the element and select,&lt;/p&gt;
+    <content type="html">&lt;p&gt;To uniquely identify an element that lacks an identifier, so that you can reference the element in JavaScript and other places, use DevTools&#39; ability to copy unique CSS selectors.&lt;/p&gt;
+&lt;p&gt;All DevTools have the option to build a unique CSS selector for an element and then copy it to the clipboard:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In &lt;strong&gt;Chrome&lt;/strong&gt; and &lt;strong&gt;Edge&lt;/strong&gt;, &lt;code&gt;Copy&lt;/code&gt; &amp;gt; &lt;code&gt;Copy selector&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;In &lt;strong&gt;Firefox&lt;/strong&gt;, &lt;code&gt;Copy&lt;/code&gt; &amp;gt; &lt;code&gt;CSS Selector&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;In &lt;strong&gt;Safari&lt;/strong&gt;, &lt;code&gt;Copy&lt;/code&gt; &amp;gt; &lt;code&gt;Selector Path&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In &lt;strong&gt;Chrome&lt;/strong&gt; and &lt;strong&gt;Edge&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;In the &lt;strong&gt;Elements&lt;/strong&gt; tool, right-click an element, and then select &lt;code&gt;Copy&lt;/code&gt; &amp;gt; &lt;code&gt;Copy selector&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In &lt;strong&gt;Firefox&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;In the &lt;strong&gt;Inspector&lt;/strong&gt; tool, right-click an element, and then select &lt;code&gt;Copy&lt;/code&gt; &amp;gt; &lt;code&gt;CSS Selector&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In &lt;strong&gt;Safari&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;In the &lt;strong&gt;Elements&lt;/strong&gt; tool, right-click an element, and then select &lt;code&gt;Copy&lt;/code&gt; &amp;gt; &lt;code&gt;Selector Path&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In &lt;strong&gt;Polypane&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;In the &lt;strong&gt;Elements&lt;/strong&gt; panel, right-click an element, and then select &lt;code&gt;Copy Selector&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This will copy the CSS selector for the element, which can then be used in JavaScript to reference the element in the following way,&lt;/p&gt;
-&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;#maincontent &gt; div &gt; h2&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;h2&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;104&lt;/span&gt; DevTools Tips&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;h2&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This copies a unique CSS selector for the element, which you can then use in your JavaScript code, for example, to reference the element:&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;#maincontent &gt; div &gt; h2&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/copy-css-selector.png&quot; alt=&quot;Edge DevTools, showing how to access the Copy CSS selector option.&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
@@ -2408,16 +2419,21 @@ This will open the &lt;strong&gt;Animations&lt;/strong&gt; tool.&lt;/p&gt;
     <link href="https://devtoolstips.org/tips/en/jump-to-referenced-elements/"/>
     <updated>2022-07-01T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/jump-to-referenced-elements/</id>
-    <content type="html">&lt;p&gt;In Firefox, you can jump from an element that references the ID attribute of an other element, to that other element, by &lt;kbd&gt;Cmd&lt;/kbd&gt;+clicking (or &lt;kbd&gt;Ctrl&lt;/kbd&gt;+clicking) the attribute.&lt;/p&gt;
-&lt;p&gt;Here is a common example for when this is useful:&lt;/p&gt;
-&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;label&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;foo&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Label&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;...&lt;br /&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;foo&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In the above example, clicking the &lt;code&gt;foo&lt;/code&gt; attribute value in the &lt;code&gt;label&lt;/code&gt; element (while holding the &lt;kbd&gt;Cmd&lt;/kbd&gt; or &lt;kbd&gt;Ctrl&lt;/kbd&gt; key) will jump to the &lt;code&gt;input&lt;/code&gt; element and select it. This can be very useful if the elements are far apart in the DOM tree.&lt;/p&gt;
-&lt;p&gt;Note that this also works for other kinds of &amp;quot;links&amp;quot; like:&lt;/p&gt;
+    <content type="html">&lt;p&gt;In HTML, it&#39;s possible for certain attributes to reference other elements by their IDs. For example, a &lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;&#39;s &lt;code&gt;for&lt;/code&gt; attribute can be used to link the label to the input it&#39;s associated with:&lt;/p&gt;
+&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;label&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;foo&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Label&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;label&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;foo&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Other cases of attributes referencing the ID of other elements include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;button form=&amp;quot;formID&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;input list=&amp;quot;datalistID&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;td headers=&amp;quot;header1ID,header2ID&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;In DevTools, to jump from an element that references another element&#39;s ID attribute, to that other element, use the following steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Firefox, in the &lt;strong&gt;Inspector&lt;/strong&gt; tool: hold &lt;kbd&gt;Cmd&lt;/kbd&gt; on MacOS or &lt;kbd&gt;Ctrl&lt;/kbd&gt; on Windows or Linux, and then click the attribute.&lt;/li&gt;
+&lt;li&gt;In Polypane, in the &lt;strong&gt;Elements&lt;/strong&gt; panel: click the attribute.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The referenced element is selected in the DOM tree.&lt;/p&gt;
+&lt;p&gt;In the above &lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;/&lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; example, using the above steps on the &lt;code&gt;foo&lt;/code&gt; value of the &lt;code&gt;for&lt;/code&gt; attribute selects the &lt;code&gt;input&lt;/code&gt; element.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/jump-to-referenced-elements.gif&quot; alt=&quot;Animation showing the Firefox DevTools Inspector panel, the mouse clicks the for attribute of a label element and the selection jumps to the related input element.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Thank you to &lt;a href=&quot;https://twitter.com/mmatuzo&quot;&gt;Manuel Matuzović&lt;/a&gt; for &lt;a href=&quot;https://twitter.com/mmatuzo/status/1542768792836636672&quot;&gt;sharing on twitter&lt;/a&gt;.&lt;/p&gt;
 </content>

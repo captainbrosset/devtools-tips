@@ -118,24 +118,56 @@
             <a href="/browser/firefox/" title="List all tips supported by firefox">
                 <img src="/assets/browsers/firefox.svg" alt=""> firefox
             </a>
+        </li><li class="browser">
+            <a href="/browser/polypane/" title="List all tips supported by polypane">
+                <img src="/assets/browsers/polypane.svg" alt=""> polypane
+            </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>In Firefox, you can jump from an element that references the ID attribute of an other element, to that other element, by <kbd>Cmd</kbd>+clicking (or <kbd>Ctrl</kbd>+clicking) the attribute.</p>
-<p>Here is a common example for when this is useful:</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>foo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Label<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>...<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>foo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
-<p>In the above example, clicking the <code>foo</code> attribute value in the <code>label</code> element (while holding the <kbd>Cmd</kbd> or <kbd>Ctrl</kbd> key) will jump to the <code>input</code> element and select it. This can be very useful if the elements are far apart in the DOM tree.</p>
-<p>Note that this also works for other kinds of &quot;links&quot; like:</p>
+    <p>In HTML, it's possible for certain attributes to reference other elements by their IDs. For example, a <code>&lt;label&gt;</code>'s <code>for</code> attribute can be used to link the label to the input it's associated with:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>foo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Label<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>foo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<p>Other cases of attributes referencing the ID of other elements include:</p>
 <ul>
 <li><code>&lt;button form=&quot;formID&quot;&gt;</code></li>
 <li><code>&lt;input list=&quot;datalistID&quot;&gt;</code></li>
 <li><code>&lt;td headers=&quot;header1ID,header2ID&quot;&gt;</code></li>
 </ul>
+<p>In DevTools, to jump from an element that references another element's ID attribute, to that other element, use the following steps:</p>
+<ul>
+<li>In Firefox, in the <strong>Inspector</strong> tool: hold <kbd>Cmd</kbd> on MacOS or <kbd>Ctrl</kbd> on Windows or Linux, and then click the attribute.</li>
+<li>In Polypane, in the <strong>Elements</strong> panel: click the attribute.</li>
+</ul>
+<p>The referenced element is selected in the DOM tree.</p>
+<p>In the above <code>&lt;label&gt;</code>/<code>&lt;input&gt;</code> example, using the above steps on the <code>foo</code> value of the <code>for</code> attribute selects the <code>input</code> element.</p>
 <p><img src="/assets/img/jump-to-referenced-elements.gif" alt="Animation showing the Firefox DevTools Inspector panel, the mouse clicks the for attribute of a label element and the selection jumps to the related input element."></p>
 <p>Thank you to <a href="https://twitter.com/mmatuzo">Manuel Matuzović</a> for <a href="https://twitter.com/mmatuzo/status/1542768792836636672">sharing on twitter</a>.</p>
 
+</div><div class="see-also">
+    <h2 id="see-also">See also</h2>
+    <ul><li>
+            <a href="/tips/en/inspect-user-agent-dom">Inspect the user-agent DOM</a>
+            <a href="/tips/en/inspect-user-agent-dom" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/inspect-user-agent-dom.png" alt="The Elements tool in Chrome, an input type=range is expanded, showing it&#39;s internal user-agent shadow dom">
+            </a>
+        </li><li>
+            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
+            <a href="/tips/en/copy-element-styles" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
+            </a>
+        </li><li>
+            <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
+            <a href="/tips/en/emulate-color-schemes" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
+            </a>
+        </li><li>
+            <a href="/tips/en/get-detached-elements">Get detached DOM elements to investigate memory leaks</a>
+            <a href="/tips/en/get-detached-elements" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-detached-elements.png" alt="The Detached Elements panel in Edge, with the Memory panel next to it.">
+            </a>
+        </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
     <p class="last-edit">Last edit: <time datetime="2022-07-01T00:00:00.000Z">7/1/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/jump-to-referenced-elements.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
