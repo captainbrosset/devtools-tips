@@ -381,28 +381,28 @@
       "link": "/tips/en/copy-element-styles"
     },
     {
-      "title": "Convert color formats",
+      "title": "Convert images to data-urls",
       "image": {
-        "alt": "Animation of the rules panel in Firefox, showing the color conversion.",
-        "src": "../../assets/img/convert-color-formats.gif"
+        "alt": "The Network tool in Edge, an image is selected, the Preview tab is open, and the right-click menu shows the copy image as data URI item",
+        "src": "../../assets/img/convert-image-to-data-url.png"
       },
-      "link": "/tips/en/convert-color-formats"
+      "link": "/tips/en/convert-image-to-data-url"
     },
     {
-      "title": "Convert font property units",
+      "title": "Find the CSS rule that causes a specific style to apply",
       "image": {
-        "alt": "The fonts panel in Firefox, showing the unit conversion drop-down.",
-        "src": "../../assets/img/convert-font-units-1.png"
+        "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
+        "src": "../../assets/img/find-rule-that-causes-style-1.png"
       },
-      "link": "/tips/en/convert-font-units"
+      "link": "/tips/en/find-rule-that-causes-style"
     },
     {
-      "title": "Copy a CSS rule as CSS-in-JS format",
+      "title": "Simulate pseudo CSS classes",
       "image": {
-        "alt": "Aimation showing the Styles pane in Edge, with the \"Copy all declarations as JS\" option being used, and then pasting the result in the Console to show that it is formatted.",
-        "src": "../../assets/img/copy-rule-as-css-in-js.gif"
+        "alt": "The :hov button and the pseudo-class panel in Chrome DevTools",
+        "src": "../../assets/img/simulate-pseudo-classes.png"
       },
-      "link": "/tips/en/copy-rule-as-css-in-js"
+      "link": "/tips/en/simulate-pseudo-classes"
     }
   ],
   "copy-element-js-path.md": [
@@ -2234,12 +2234,12 @@
       "link": "/tips/en/convert-font-units"
     },
     {
-      "title": "Debug popups that appear on hover using JS",
+      "title": "Copy CSS selector of an element",
       "image": {
-        "alt": "Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.",
-        "src": "../../assets/img/debug-js-hover.gif"
+        "alt": "Edge DevTools, showing how to access the Copy CSS selector option.",
+        "src": "../../assets/img/copy-css-selector.png"
       },
-      "link": "/tips/en/debug-js-hover"
+      "link": "/tips/en/copy-css-selector"
     }
   ],
   "find-the-offset-parent-of-an-element.md": [
@@ -3016,7 +3016,40 @@
       "link": "/tips/en/style-console-messages"
     }
   ],
-  "jump-to-referenced-elements.md": [],
+  "jump-to-referenced-elements.md": [
+    {
+      "title": "Inspect the user-agent DOM",
+      "image": {
+        "alt": "The Elements tool in Chrome, an input type=range is expanded, showing it's internal user-agent shadow dom",
+        "src": "../../assets/img/inspect-user-agent-dom.png"
+      },
+      "link": "/tips/en/inspect-user-agent-dom"
+    },
+    {
+      "title": "Copy an elements styles",
+      "image": {
+        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
+        "src": "../../assets/img/copy-element-styles.png"
+      },
+      "link": "/tips/en/copy-element-styles"
+    },
+    {
+      "title": "Emulate color schemes",
+      "image": {
+        "alt": "Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons",
+        "src": "../../assets/img/emulate-color-schemes-firefox.png"
+      },
+      "link": "/tips/en/emulate-color-schemes"
+    },
+    {
+      "title": "Get detached DOM elements to investigate memory leaks",
+      "image": {
+        "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
+        "src": "../../assets/img/get-detached-elements.png"
+      },
+      "link": "/tips/en/get-detached-elements"
+    }
+  ],
   "list-all-event-listeners.md": [
     {
       "title": "Find DOM elements from the console",
@@ -4363,12 +4396,12 @@
       "link": "/tips/en/zoom-devtools-content"
     },
     {
-      "title": "Remove or disable event listeners",
+      "title": "Copy CSS selector of an element",
       "image": {
-        "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "../../assets/img/disable-event-listeners-firefox.png"
+        "alt": "Edge DevTools, showing how to access the Copy CSS selector option.",
+        "src": "../../assets/img/copy-css-selector.png"
       },
-      "link": "/tips/en/disable-event-listeners"
+      "link": "/tips/en/copy-css-selector"
     }
   ],
   "simulate-pwa-wco.md": [],
