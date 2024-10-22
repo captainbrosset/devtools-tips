@@ -6,6 +6,8 @@ tags: ["tip", "perf", "browser:edge"]
 see-also: ["find-memory-leaks.md"]
 ---
 
+**Note**: This Microsoft Edge-specific feature is being removed starting with Edge 133. The feature that it provides will continue to be available by using the **Memory** tool instead, and using the upcoming **Detached Elements** profiling type. The new profiling type will be available in all Chromium-browsers.
+
 Memory leaks can quickly become a big problem for long-running applications, and a common source of memory leaks is detached DOM elements (elements that are no longer attached to the DOM tree).
 It's usually very hard to investigate these memory leaks, because it's hard to know if elements are detached, and which ones, let alone find which part of your JavaScript code is causing them to be detached.
 
