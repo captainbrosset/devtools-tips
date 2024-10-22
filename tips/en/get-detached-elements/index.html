@@ -117,7 +117,8 @@
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>Memory leaks can quickly become a big problem for long-running applications, and a common source of memory leaks is detached DOM elements (elements that are no longer attached to the DOM tree).<br>
+    <p><strong>Note</strong>: This Microsoft Edge-specific feature is being removed starting with Edge 133. The feature that it provides will continue to be available by using the <strong>Memory</strong> tool instead, and using the upcoming <strong>Detached Elements</strong> profiling type. The new profiling type will be available in all Chromium-browsers.</p>
+<p>Memory leaks can quickly become a big problem for long-running applications, and a common source of memory leaks is detached DOM elements (elements that are no longer attached to the DOM tree).<br>
 It's usually very hard to investigate these memory leaks, because it's hard to know if elements are detached, and which ones, let alone find which part of your JavaScript code is causing them to be detached.</p>
 <p>Edge has a tool just for this: the <strong>Detached Elements</strong> panel. To use it:</p>
 <ul>
@@ -137,9 +138,9 @@ It's usually very hard to investigate these memory leaks, because it's hard to k
                 <img loading="lazy" src="/assets/img/find-memory-leaks-1.png" alt="Microsoft Edge, with a demo webpage, and DevTools on the side with the Memory tool showing 2 snapshots have been recorded">
             </a>
         </li><li>
-            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
-            <a href="/tips/en/copy-element-styles" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
+            <a href="/tips/en/spot-out-of-viewport-elements">Quickly spot out-of-viewport elements</a>
+            <a href="/tips/en/spot-out-of-viewport-elements" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/spot-out-of-viewport-elements.png" alt="Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.">
             </a>
         </li><li>
             <a href="/tips/en/emulate-color-schemes">Emulate color schemes</a>
@@ -147,9 +148,9 @@ It's usually very hard to investigate these memory leaks, because it's hard to k
                 <img loading="lazy" src="/assets/img/emulate-color-schemes-firefox.png" alt="Firefox, with DevTools open, showing the Inspector tool, with the color scheme buttons">
             </a>
         </li><li>
-            <a href="/tips/en/highlight-matching-elements">Highlight all the elements that a CSS rule matches</a>
-            <a href="/tips/en/highlight-matching-elements" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/highlight-matching-elements.gif" alt="Animation showing how hovering over selectors in chrome highlights the matching elements in the page.">
+            <a href="/tips/en/copy-element-styles">Copy an elements styles</a>
+            <a href="/tips/en/copy-element-styles" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/copy-element-styles.png" alt="The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.">
             </a>
         </li></ul>
 </div><div class="tip-footer">

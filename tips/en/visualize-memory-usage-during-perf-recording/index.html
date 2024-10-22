@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Force execution, skipping breakpoints, when paused</title>
+    <title>Visualize a webpage&#39;s memory usage during a performance recording</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/force-execution-at-breakpoint/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/visualize-memory-usage-during-perf-recording/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="Force execution, skipping breakpoints, when paused">
+    <meta property="og:description" content="Visualize a webpage&#39;s memory usage during a performance recording">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -99,18 +99,14 @@
           </a>
         </div>
       </div>
-      <div id="maincontent"style="view-transition-name:post-force-execution-at-breakpoint">
+      <div id="maincontent"style="view-transition-name:post-visualize-memory-usage-during-perf-recording">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Force execution, skipping breakpoints, when paused</h1>
+<h1 class="tip-title">Visualize a webpage&#39;s memory usage during a performance recording</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-            <a href="/tag/debug/" title="List all debug tips">
-                debug
-            </a>
-        </li><li class="tag">
-            <a href="/tag/javascript/" title="List all javascript tips">
-                javascript
+            <a href="/tag/perf/" title="List all perf tips">
+                perf
             </a>
         </li></ul>
     Supported by:
@@ -122,52 +118,52 @@
             <a href="/browser/chrome/" title="List all tips supported by chrome">
                 <img src="/assets/browsers/chrome.svg" alt=""> chrome
             </a>
-        </li><li class="browser">
-            <a href="/browser/firefox/" title="List all tips supported by firefox">
-                <img src="/assets/browsers/firefox.svg" alt=""> firefox
-            </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>When using breakpoints to debug your JavaScript code, sometimes you end up setting many breakpoints in different functions. You might want to keep these breakpoints but not always pause at them.</p>
-<p>There are two ways to do this in DevTools:</p>
-<ul>
-<li>Forcing execution, skipping over other breakpoints.</li>
-<li>Or temporarily deactivating breakpoints.</li>
-</ul>
-<h2 id="force-execution" tabindex="-1">Force execution <a class="direct-link" href="#force-execution">#</a></h2>
-<p>Forcing execution is only supported in Chrome and Edge:</p>
+    <p>To check how much memory a webpage consumes over the time of a specific user scenario, and to identify potential memory leaks, you can use the <strong>Memory</strong> tool in Chrome or Edge DevTools with the <strong>Memory</strong> option.</p>
 <ol>
-<li>Open the <strong>Sources</strong> tool.</li>
-<li>Set all of the breakpoints that you need.</li>
-<li>Once paused at your first breakpoint, click and hold the <strong>Resume script execution</strong> button and then select the <strong>Force script execution</strong> button. The script execution resumes, and doesn't pause at any other breakpoint.</li>
+<li>
+<p>Open DevTools and go to the <strong>Performance</strong> tool.</p>
+</li>
+<li>
+<p>In the toolbar, enable the <strong>Memory</strong> option.</p>
+</li>
+<li>
+<p>Click <strong>Record</strong> to start the recording.</p>
+</li>
+<li>
+<p>Interact with the page like a user would, to simulate the user scenario you want to analyze.</p>
+</li>
+<li>
+<p>Click <strong>Stop</strong> to end the recording.</p>
+<p>Once the resulting profile appears in the tool, a memory graph is displayed below the main flame chart area.</p>
+</li>
 </ol>
-<p><img src="/assets/img/force-execution-at-breakpoint-edge.png" alt="The Sources tool in Edge, showing the Force script execution button"></p>
-<h2 id="temporarily-deactivate-breakpoints" tabindex="-1">Temporarily deactivate breakpoints <a class="direct-link" href="#temporarily-deactivate-breakpoints">#</a></h2>
-<p>In Chrome, Edge, and Firefox, you can temporarily deactivate breakpoints:</p>
-<ol>
-<li>Open the <strong>Sources</strong> tool in Chrome or Edge, or the <strong>Debugger</strong> tool in Firefox.</li>
-<li>Set all of the breakpoints that you need.</li>
-<li>Once paused at your first breakpoint, click the <strong>Deactivate breakpoints</strong> button, and then click <strong>Resume</strong>. The script execution resumes, and doesn't pause at any other breakpoint.</li>
-</ol>
-<p><img src="/assets/img/force-execution-at-breakpoint-firefox.png" alt="The Debugger tool in Firefox, showing the Deactive breakpoints button"></p>
+<p>The memory graph shows the memory usage of the page over the time of the recording. For example, you can see how the JS heap memory (i.e, the memory region where all the JavaScript objects live) usage evolves when new objects get created (the blue line goes up) and then get garbage collected (sudden drops on the blue line).</p>
+<p><img src="/assets/img/visualize-memory-usage-during-perf-recording.png" alt="Chrome DevTools' Memory tool, showing a recorded performance profile that has a memory graph section"></p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/break-on-dom-changes">Pause script execution when the DOM changes</a>
-            <a href="/tips/en/break-on-dom-changes" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/break-on-dom-changes.png" alt="The Elements panel in Edge showing the &quot;Break on&quot; contextual menu on the selected node.">
+            <a href="/tips/en/find-memory-leaks">Find memory leaks by comparing heap snapshots</a>
+            <a href="/tips/en/find-memory-leaks" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-memory-leaks-1.png" alt="Microsoft Edge, with a demo webpage, and DevTools on the side with the Memory tool showing 2 snapshots have been recorded">
             </a>
         </li><li>
             <a href="/tips/en/get-detached-elements">Get detached DOM elements to investigate memory leaks</a>
             <a href="/tips/en/get-detached-elements" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/get-detached-elements.png" alt="The Detached Elements panel in Edge, with the Memory panel next to it.">
             </a>
+        </li><li>
+            <a href="/tips/en/throttle-cpu">Throttle your CPU</a>
+            <a href="/tips/en/throttle-cpu" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/throttle-cpu.png" alt="The Performance tool in Chrome showing the CPU throttling drop-down.">
+            </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2023-10-26T00:00:00.000Z">10/26/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/force-execution-at-breakpoint.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-10-22T00:00:00.000Z">10/22/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/visualize-memory-usage-during-perf-recording.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 

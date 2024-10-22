@@ -5,11 +5,40 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2024-10-15T00:00:00.000Z</updated>
+  <updated>2024-10-22T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Visualize a webpage&#39;s memory usage during a performance recording</title>
+    <link href="https://devtoolstips.org/tips/en/visualize-memory-usage-during-perf-recording/"/>
+    <updated>2024-10-22T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/visualize-memory-usage-during-perf-recording/</id>
+    <content type="html">&lt;p&gt;To check how much memory a webpage consumes over the time of a specific user scenario, and to identify potential memory leaks, you can use the &lt;strong&gt;Memory&lt;/strong&gt; tool in Chrome or Edge DevTools with the &lt;strong&gt;Memory&lt;/strong&gt; option.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open DevTools and go to the &lt;strong&gt;Performance&lt;/strong&gt; tool.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the toolbar, enable the &lt;strong&gt;Memory&lt;/strong&gt; option.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Record&lt;/strong&gt; to start the recording.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Interact with the page like a user would, to simulate the user scenario you want to analyze.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Stop&lt;/strong&gt; to end the recording.&lt;/p&gt;
+&lt;p&gt;Once the resulting profile appears in the tool, a memory graph is displayed below the main flame chart area.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The memory graph shows the memory usage of the page over the time of the recording. For example, you can see how the JS heap memory (i.e, the memory region where all the JavaScript objects live) usage evolves when new objects get created (the blue line goes up) and then get garbage collected (sudden drops on the blue line).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/visualize-memory-usage-during-perf-recording.png&quot; alt=&quot;Chrome DevTools&#39; Memory tool, showing a recorded performance profile that has a memory graph section&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Override source files to test changes in the browser</title>
@@ -3256,7 +3285,8 @@ Imagine a &lt;code&gt;mousemove&lt;/code&gt; event listener that changes some of
     <link href="https://devtoolstips.org/tips/en/get-detached-elements/"/>
     <updated>2022-01-10T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/get-detached-elements/</id>
-    <content type="html">&lt;p&gt;Memory leaks can quickly become a big problem for long-running applications, and a common source of memory leaks is detached DOM elements (elements that are no longer attached to the DOM tree).&lt;br /&gt;
+    <content type="html">&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: This Microsoft Edge-specific feature is being removed starting with Edge 133. The feature that it provides will continue to be available by using the &lt;strong&gt;Memory&lt;/strong&gt; tool instead, and using the upcoming &lt;strong&gt;Detached Elements&lt;/strong&gt; profiling type. The new profiling type will be available in all Chromium-browsers.&lt;/p&gt;
+&lt;p&gt;Memory leaks can quickly become a big problem for long-running applications, and a common source of memory leaks is detached DOM elements (elements that are no longer attached to the DOM tree).&lt;br /&gt;
 It&#39;s usually very hard to investigate these memory leaks, because it&#39;s hard to know if elements are detached, and which ones, let alone find which part of your JavaScript code is causing them to be detached.&lt;/p&gt;
 &lt;p&gt;Edge has a tool just for this: the &lt;strong&gt;Detached Elements&lt;/strong&gt; panel. To use it:&lt;/p&gt;
 &lt;ul&gt;
