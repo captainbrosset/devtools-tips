@@ -2206,6 +2206,14 @@
         "src": "../../assets/img/get-detached-elements.png"
       },
       "link": "/tips/en/get-detached-elements"
+    },
+    {
+      "title": "Visualize a webpage's memory usage during a performance recording",
+      "image": {
+        "alt": "Chrome DevTools' Memory tool, showing a recorded performance profile that has a memory graph section",
+        "src": "../../assets/img/visualize-memory-usage-during-perf-recording.png"
+      },
+      "link": "/tips/en/visualize-memory-usage-during-perf-recording"
     }
   ],
   "find-rule-that-causes-style.md": [
@@ -2378,6 +2386,14 @@
         "src": "../../assets/img/break-on-dom-changes.png"
       },
       "link": "/tips/en/break-on-dom-changes"
+    },
+    {
+      "title": "Get detached DOM elements to investigate memory leaks",
+      "image": {
+        "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
+        "src": "../../assets/img/get-detached-elements.png"
+      },
+      "link": "/tips/en/get-detached-elements"
     }
   ],
   "force-pwa-periodic-sync.md": [
@@ -2527,12 +2543,12 @@
       "link": "/tips/en/find-memory-leaks"
     },
     {
-      "title": "Copy an elements styles",
+      "title": "Quickly spot out-of-viewport elements",
       "image": {
-        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
-        "src": "../../assets/img/copy-element-styles.png"
+        "alt": "Edge DevTools showing the Elements tool at the top with the DOM tree and the 3D View tool at the bottom, showing a 3D render of the page, with most elements in the same rectangle, and 2 smaller elements outside of the main rectangle.",
+        "src": "../../assets/img/spot-out-of-viewport-elements.png"
       },
-      "link": "/tips/en/copy-element-styles"
+      "link": "/tips/en/spot-out-of-viewport-elements"
     },
     {
       "title": "Emulate color schemes",
@@ -2543,12 +2559,12 @@
       "link": "/tips/en/emulate-color-schemes"
     },
     {
-      "title": "Highlight all the elements that a CSS rule matches",
+      "title": "Copy an elements styles",
       "image": {
-        "alt": "Animation showing how hovering over selectors in chrome highlights the matching elements in the page.",
-        "src": "../../assets/img/highlight-matching-elements.gif"
+        "alt": "The Edge DevTools Elements panel, showing the context menu on an element and the Copy styles menu item. The screenshot also shows what the result of copying styles is: a flat list of CSS properties and values.",
+        "src": "../../assets/img/copy-element-styles.png"
       },
-      "link": "/tips/en/highlight-matching-elements"
+      "link": "/tips/en/copy-element-styles"
     }
   ],
   "get-recently-selected-dom-nodes-in-console.md": [
@@ -2679,12 +2695,12 @@
       "link": "/tips/en/drag-drop-dom-nodes"
     },
     {
-      "title": "Debug unwanted scrollbars",
+      "title": "Get detached DOM elements to investigate memory leaks",
       "image": {
-        "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
-        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
+        "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
+        "src": "../../assets/img/get-detached-elements.png"
       },
-      "link": "/tips/en/debug-unwanted-scrollbars"
+      "link": "/tips/en/get-detached-elements"
     }
   ],
   "hide-extension-resources.md": [
@@ -3771,12 +3787,12 @@
       "link": "/tips/en/emulate-color-schemes"
     },
     {
-      "title": "Simulate pseudo CSS classes",
+      "title": "Get detached DOM elements to investigate memory leaks",
       "image": {
-        "alt": "The :hov button and the pseudo-class panel in Chrome DevTools",
-        "src": "../../assets/img/simulate-pseudo-classes.png"
+        "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
+        "src": "../../assets/img/get-detached-elements.png"
       },
-      "link": "/tips/en/simulate-pseudo-classes"
+      "link": "/tips/en/get-detached-elements"
     }
   ],
   "reload-page-after-change.md": [
@@ -4415,6 +4431,14 @@
       "link": "/tips/en/emulate-color-schemes"
     },
     {
+      "title": "Get detached DOM elements to investigate memory leaks",
+      "image": {
+        "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
+        "src": "../../assets/img/get-detached-elements.png"
+      },
+      "link": "/tips/en/get-detached-elements"
+    },
+    {
       "title": "Hide elements from the page, without changing the layout",
       "image": {
         "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
@@ -4429,14 +4453,6 @@
         "src": "../../assets/img/drag-drop-dom-nodes.gif"
       },
       "link": "/tips/en/drag-drop-dom-nodes"
-    },
-    {
-      "title": "Remove annoying page overlays and other elements",
-      "image": {
-        "alt": "Animation showing the whole flow from selecting the element with the inspect tool and pressing delete, resulting in the element disappearing from the page.",
-        "src": "../../assets/img/remove-annoying-overlays.gif"
-      },
-      "link": "/tips/en/remove-annoying-overlays"
     }
   ],
   "store-node-as-variable.md": [
@@ -4605,6 +4621,14 @@
       "link": "/tips/en/throttle-network-speed"
     },
     {
+      "title": "Visualize a webpage's memory usage during a performance recording",
+      "image": {
+        "alt": "Chrome DevTools' Memory tool, showing a recorded performance profile that has a memory graph section",
+        "src": "../../assets/img/visualize-memory-usage-during-perf-recording.png"
+      },
+      "link": "/tips/en/visualize-memory-usage-during-perf-recording"
+    },
+    {
       "title": "Check if your site can be instantly reloaded from bfcache",
       "image": {
         "alt": "Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can't be cached.",
@@ -4619,14 +4643,6 @@
         "src": "../../assets/img/console-table-group-assert-1.jpg"
       },
       "link": "/tips/en/console-table-group-assert"
-    },
-    {
-      "title": "List all supported console functions",
-      "image": {
-        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "../../assets/img/list-console-functions.png"
-      },
-      "link": "/tips/en/list-console-functions"
     }
   ],
   "throttle-network-speed.md": [
@@ -4998,6 +5014,32 @@
         "src": "../../assets/img/convert-color-formats.gif"
       },
       "link": "/tips/en/convert-color-formats"
+    }
+  ],
+  "visualize-memory-usage-during-perf-recording.md": [
+    {
+      "title": "Find memory leaks by comparing heap snapshots",
+      "image": {
+        "alt": "Microsoft Edge, with a demo webpage, and DevTools on the side with the Memory tool showing 2 snapshots have been recorded",
+        "src": "../../assets/img/find-memory-leaks-1.png"
+      },
+      "link": "/tips/en/find-memory-leaks"
+    },
+    {
+      "title": "Get detached DOM elements to investigate memory leaks",
+      "image": {
+        "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
+        "src": "../../assets/img/get-detached-elements.png"
+      },
+      "link": "/tips/en/get-detached-elements"
+    },
+    {
+      "title": "Throttle your CPU",
+      "image": {
+        "alt": "The Performance tool in Chrome showing the CPU throttling drop-down.",
+        "src": "../../assets/img/throttle-cpu.png"
+      },
+      "link": "/tips/en/throttle-cpu"
     }
   ],
   "visualize-screenreader-order.md": [
