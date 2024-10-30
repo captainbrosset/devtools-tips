@@ -2,16 +2,16 @@
 date: 2023-01-04
 authors: Patrick Brosset, Kilian Valkhof
 title: Debug unwanted scrollbars
-tags: ["tip", "css", "browser:firefox", "browser:polypane"]
+tags: ["tip", "css", "browser:firefox", "browser:safari", "browser:chrome", "browser:polypane"]
 ---
 Sometimes scrollbars appear on a web page in places we don't want them to. And when this happens, it's not always very straightforward to fix the problem. Which container is responsible for the scrollbars in the first place? Which elements are even causing the scrollbars to appear? Why are they too big?
 
 All very good questions that can cause a lot of time lost and frustration.
 
 
-**In Firefox**
+**In Firefox, Chrome, and Safari**
 
-In the **Inspector** panel, where the DOM tree of the page is displayed, you will notice **scroll** badges next to all elements that have scrollbars!
+In the **Elements** (or **Inspector** in Firefox) panel, where the DOM tree of the page is displayed, you will notice **scroll** badges next to all elements that have scrollbars!
 
 ![Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.](../../assets/img/debug-unwanted-scrollbars-1.png)
 
