@@ -1,6 +1,6 @@
 ---
 date: 2022-03-16
-authors: Patrick Brosset
+authors: Patrick Brosset, mirnovov
 title: Debug CSS grid areas
 tags: ["tip", "css", "browser:edge", "browser:chrome", "browser:safari", "browser:firefox"]
 ---
@@ -16,11 +16,11 @@ The syntax for the `grid-template-areas` property is a bit special though. It co
 }
 ```
 
-DevTools in Firefox, Chrome, Safari, and Edge make it very easy to debug potential problems that may occur when making mistakes with the above syntax.
+DevTools makes it very easy to debug potential problems that may occur when making mistakes with the above syntax:
 
-* Open the **Elements** panel (or **Inspector** panel in Firefox).
-* Highlight a grid on your page that has named areas (you can use the **grid** badge in the DOM tree for example).
-* Go to the **Layout** sidebar pane.
-* Under the **Grid** section, check the **Show area names** box (or **Area Names** in Safari).
+* Open the **Elements** tool (or **Inspector** tool in Firefox).
+* Select an element from the page that defines a grid container with named areas (you can use the **grid** badge in the DOM tree to find grid containers).
+* Open the **Layout** sidebar pane.
+* Under the **Grid** section, enable the **Show area names** checkbox (named **Area Names** in Safari).
 
 ![Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the "display area names" option checked.](../../assets/img/debug-grid-areas.png)
