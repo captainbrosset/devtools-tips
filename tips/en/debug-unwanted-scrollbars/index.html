@@ -115,54 +115,68 @@
                 <img src="/assets/browsers/firefox.svg" alt=""> firefox
             </a>
         </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li><li class="browser">
+            <a href="/browser/chrome/" title="List all tips supported by chrome">
+                <img src="/assets/browsers/chrome.svg" alt=""> chrome
+            </a>
+        </li><li class="browser">
+            <a href="/browser/edge/" title="List all tips supported by edge">
+                <img src="/assets/browsers/edge.svg" alt=""> edge
+            </a>
+        </li><li class="browser">
             <a href="/browser/polypane/" title="List all tips supported by polypane">
                 <img src="/assets/browsers/polypane.svg" alt=""> polypane
             </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>Sometimes scrollbars appear on a web page in places we don't want them to. And when this happens, it's not always very straightforward to fix the problem. Which container is responsible for the scrollbars in the first place? Which elements are even causing the scrollbars to appear? Why are they too big?</p>
-<p>All very good questions that can cause a lot of time lost and frustration.</p>
-<p><strong>In Firefox</strong></p>
-<p>In the <strong>Inspector</strong> panel, where the DOM tree of the page is displayed, you will notice <strong>scroll</strong> badges next to all elements that have scrollbars!</p>
+    <p>Scrollbars can sometimes appear on a webpage unexpectedly. When this happens, finding which HTML element is the cause of the scrollbars isn't always straightforward. DevTools provides features that help you debug unwanted scrollbars.</p>
+<h2 id="firefox" tabindex="-1">Firefox <a class="direct-link" href="#firefox">#</a></h2>
+<p>In the DOM tree in the <strong>Inspector</strong> tool, <strong>scroll</strong> badges appear next to elements that have scrollbars.</p>
 <p><img src="/assets/img/debug-unwanted-scrollbars-1.png" alt="Firefox DevTools, with the Inspector panel showing the Scroll badge on an element."></p>
-<p>This takes care of our first question: which element is scrolling? As for the second question: which elements are causing the scrolling, if you just click on one of the <strong>scroll</strong> badges, the <strong>Inspector</strong> will jump to the element (or elements) that caused the scrollbars to appear and highlight them for you!</p>
+<p>The <strong>scroll</strong> badges help you identify which elements in the DOM tree are scrolling.</p>
+<p>Click a <strong>scroll</strong> badge to highlight the descendant elements that are causing the scrolling parent to overflow. The <strong>Inspector</strong> reveals the overflowing elements:</p>
 <p><img src="/assets/img/debug-unwanted-scrollbars-2.png" alt="Firefox DevTools, with the Inspector panel showing the Overflow badge on 3 highlighted elements."></p>
-<p>Now this feature won't answer our third question: Why are these elements too big? But once you know which elements are the root cause of the problem, you can use the <strong>Rules</strong> siderbar pane to figure out which CSS properties are responsible for it.</p>
-<p><a href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Debug_Scrollable_Overflow">Learn more here</a>.</p>
-<p><strong>In Polypane</strong></p>
-<p>When a page has a horizontal scrollbar, Polypane will display an <strong>Overflow icon</strong> below it. This will tell you why there is a horizontal overflow: either there are elements that are too wide or there is a <code>100vw</code> applied to the page.</p>
+<p>Once you know which elements are the root cause of the problem, use the <strong>Rules</strong> sidebar pane to figure out which CSS properties are causing the overflow.</p>
+<p>To learn more, see <a href="https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/debug_scrollable_overflow/index.html">Debug scrollable overflow</a>.</p>
+<h2 id="chrome%2C-edge%2C-and-safari" tabindex="-1">Chrome, Edge, and Safari <a class="direct-link" href="#chrome%2C-edge%2C-and-safari">#</a></h2>
+<p>Similar to Firefox, in the DOM tree in the <strong>Elements</strong> tool of Chrome, Edge, or Safari DevTools, <strong>scroll</strong> badges appear next to elements that have scrollbars. The <strong>scroll</strong> badges help you identify which elements in the DOM tree are scrolling.</p>
+<h2 id="polypane" tabindex="-1">Polypane <a class="direct-link" href="#polypane">#</a></h2>
+<p>Polypane displays an <strong>Horizontal overflow detected</strong> icon below pages that have a horizontal scrollbar. The <strong>Horizontal overflow detected</strong> icon helps you understand why a page has a horizontal scrollbar:</p>
 <p><img src="/assets/img/debug-unwanted-scrollbars-3.png" alt="Polypane, with an overflow icon below a Pane. The text in the tooltip reads &quot;Horizontal overflow detected!&quot;."></p>
-<p>After clicking the icon, Polypane finds the elements causing an overflow in your page and highlights them in red.</p>
+<p>To find the elements that are causing the horizontal overflow in the page, click the icon. Polypane finds the elements and highlights them in red:</p>
 <p><img src="/assets/img/debug-unwanted-scrollbars-4.png" alt="Polypane showing a page. A single element is highlighted in red and is clearly expanding beyond the edge&quot;."></p>
-<p>From here, you can inspect the element and find the cause of the problem.</p>
-<p><a href="https://polypane.app/docs/horizontal-overflow/">Learn more here</a>.</p>
+<p>To fix the overflow problem, inspect the highlighted elements.</p>
+<p>To learn more, see <a href="https://polypane.app/docs/horizontal-overflow/">Horizontal overflow detection</a>.</p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/visualize-tabbing-order">Visualize the tabbing order on the page</a>
-            <a href="/tips/en/visualize-tabbing-order" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/visualize-tabbing-order.png" alt="The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.">
-            </a>
-        </li><li>
             <a href="/tips/en/display-css-selector-specificity">Display the specificity of a CSS selector</a>
             <a href="/tips/en/display-css-selector-specificity" class="other-tip-image">
                 <img loading="lazy" src="/assets/img/display-css-selector-specificity.png" alt="Chrome DevTools showing the specificity of a CSS selector in a tooltip">
             </a>
         </li><li>
-            <a href="/tips/en/evaluate-xpath">Evaluate XPath to find elements in the page</a>
-            <a href="/tips/en/evaluate-xpath" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/evaluate-xpath-1.png" alt="The Inspector panel in Firefox showing the search field with an XPath expression.">
+            <a href="/tips/en/find-the-offset-parent-of-an-element">Find the offset parent of an element</a>
+            <a href="/tips/en/find-the-offset-parent-of-an-element" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-the-offset-parent-of-an-element.png" alt="Polypane showing an inspected element with the Debug tab open. The Offset parent entry is highlighted.">
             </a>
         </li><li>
-            <a href="/tips/en/node-screenshot">Take a screenshot of a single node</a>
-            <a href="/tips/en/node-screenshot" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/node-screenshot.gif" alt="Animation showing taking a node screenshot in Firefox.">
+            <a href="/tips/en/fix-color-contrast-issues">Fix low color contrast issues</a>
+            <a href="/tips/en/fix-color-contrast-issues" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/fix-color-contrast-issues-chromium.png" alt="The chrome color picker, showing the contrast lines and new color suggestions">
+            </a>
+        </li><li>
+            <a href="/tips/en/get-current-element-in-console">Get the selected element in the console</a>
+            <a href="/tips/en/get-current-element-in-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/get-current-element-in-console.jpg" alt="Safari&#39;s console showing how the $0 shortcut returns the selected element.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a>, <a href="https://github.com/mirnovov">mirnovov</a></span></div>
     <p class="last-edit">Last edit: <time datetime="2023-01-04T00:00:00.000Z">1/4/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-unwanted-scrollbars.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>

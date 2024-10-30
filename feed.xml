@@ -1750,6 +1750,7 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <content type="html">&lt;p&gt;Some websites make it impossible to use DevTools by adding &lt;code&gt;debugger&lt;/code&gt; statements in their code.&lt;/p&gt;
 &lt;p&gt;The statements don&#39;t do anything for normal users, but as soon as DevTools is opened, the JavaScript execution pauses, and this makes it impossible to debug or inspect the site as normal.&lt;/p&gt;
 &lt;p&gt;To disable the abusive &lt;code&gt;debugger&lt;/code&gt; statement:&lt;/p&gt;
+&lt;h2 id=&quot;in-firefox%2C-chrome%2C-and-edge&quot; tabindex=&quot;-1&quot;&gt;In Firefox, Chrome, and Edge &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/disable-abusive-debugger-statement/#in-firefox%2C-chrome%2C-and-edge&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Open the &lt;strong&gt;Sources&lt;/strong&gt; tool (or &lt;strong&gt;Debugger&lt;/strong&gt; tool in Firefox).&lt;/li&gt;
 &lt;li&gt;Right-click the line number gutter, right next to the &lt;code&gt;debugger&lt;/code&gt; statement.&lt;/li&gt;
@@ -1760,6 +1761,12 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
 &lt;p&gt;Now, everytime this line of code is executed, the nasty &lt;code&gt;debugger&lt;/code&gt; statement will be ignored and the page will run normally!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/disable-abusive-debugger-statement.gif&quot; alt=&quot;The Sources tool in Firefox, showing how to add a conditional breakpoint.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Thank you &lt;a href=&quot;https://twitter.com/quicksave2k/status/1610250172210073607&quot;&gt;François for the tweet&lt;/a&gt; and &lt;a href=&quot;https://github.com/captainbrosset/devtools-tips/issues/66&quot;&gt;Pankaj Parashar for the tip about using the &lt;strong&gt;Never pause here&lt;/strong&gt; option&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;in-safari&quot; tabindex=&quot;-1&quot;&gt;In Safari &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/disable-abusive-debugger-statement/#in-safari&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the &lt;strong&gt;Sources&lt;/strong&gt; tool.&lt;/li&gt;
+&lt;li&gt;At the top left of the tool, in the list of breakpoints, click the arrow next to &lt;strong&gt;Debugger Statements&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Any further &lt;code&gt;debugger&lt;/code&gt; statement will be ignored.&lt;/p&gt;
 </content>
   </entry>
   
@@ -1969,22 +1976,24 @@ On hover, rulers and the viewport size appear in the page temporarily.&lt;/p&gt;
     <link href="https://devtoolstips.org/tips/en/debug-unwanted-scrollbars/"/>
     <updated>2023-01-04T00:00:00.000Z</updated>
     <id>https://devtoolstips.org/tips/en/debug-unwanted-scrollbars/</id>
-    <content type="html">&lt;p&gt;Sometimes scrollbars appear on a web page in places we don&#39;t want them to. And when this happens, it&#39;s not always very straightforward to fix the problem. Which container is responsible for the scrollbars in the first place? Which elements are even causing the scrollbars to appear? Why are they too big?&lt;/p&gt;
-&lt;p&gt;All very good questions that can cause a lot of time lost and frustration.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;In Firefox&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In the &lt;strong&gt;Inspector&lt;/strong&gt; panel, where the DOM tree of the page is displayed, you will notice &lt;strong&gt;scroll&lt;/strong&gt; badges next to all elements that have scrollbars!&lt;/p&gt;
+    <content type="html">&lt;p&gt;Scrollbars can sometimes appear on a webpage unexpectedly. When this happens, finding which HTML element is the cause of the scrollbars isn&#39;t always straightforward. DevTools provides features that help you debug unwanted scrollbars.&lt;/p&gt;
+&lt;h2 id=&quot;firefox&quot; tabindex=&quot;-1&quot;&gt;Firefox &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/debug-unwanted-scrollbars/#firefox&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In the DOM tree in the &lt;strong&gt;Inspector&lt;/strong&gt; tool, &lt;strong&gt;scroll&lt;/strong&gt; badges appear next to elements that have scrollbars.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-unwanted-scrollbars-1.png&quot; alt=&quot;Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;This takes care of our first question: which element is scrolling? As for the second question: which elements are causing the scrolling, if you just click on one of the &lt;strong&gt;scroll&lt;/strong&gt; badges, the &lt;strong&gt;Inspector&lt;/strong&gt; will jump to the element (or elements) that caused the scrollbars to appear and highlight them for you!&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;scroll&lt;/strong&gt; badges help you identify which elements in the DOM tree are scrolling.&lt;/p&gt;
+&lt;p&gt;Click a &lt;strong&gt;scroll&lt;/strong&gt; badge to highlight the descendant elements that are causing the scrolling parent to overflow. The &lt;strong&gt;Inspector&lt;/strong&gt; reveals the overflowing elements:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-unwanted-scrollbars-2.png&quot; alt=&quot;Firefox DevTools, with the Inspector panel showing the Overflow badge on 3 highlighted elements.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Now this feature won&#39;t answer our third question: Why are these elements too big? But once you know which elements are the root cause of the problem, you can use the &lt;strong&gt;Rules&lt;/strong&gt; siderbar pane to figure out which CSS properties are responsible for it.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Debug_Scrollable_Overflow&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;In Polypane&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;When a page has a horizontal scrollbar, Polypane will display an &lt;strong&gt;Overflow icon&lt;/strong&gt; below it. This will tell you why there is a horizontal overflow: either there are elements that are too wide or there is a &lt;code&gt;100vw&lt;/code&gt; applied to the page.&lt;/p&gt;
+&lt;p&gt;Once you know which elements are the root cause of the problem, use the &lt;strong&gt;Rules&lt;/strong&gt; sidebar pane to figure out which CSS properties are causing the overflow.&lt;/p&gt;
+&lt;p&gt;To learn more, see &lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/debug_scrollable_overflow/index.html&quot;&gt;Debug scrollable overflow&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;chrome%2C-edge%2C-and-safari&quot; tabindex=&quot;-1&quot;&gt;Chrome, Edge, and Safari &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/debug-unwanted-scrollbars/#chrome%2C-edge%2C-and-safari&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Similar to Firefox, in the DOM tree in the &lt;strong&gt;Elements&lt;/strong&gt; tool of Chrome, Edge, or Safari DevTools, &lt;strong&gt;scroll&lt;/strong&gt; badges appear next to elements that have scrollbars. The &lt;strong&gt;scroll&lt;/strong&gt; badges help you identify which elements in the DOM tree are scrolling.&lt;/p&gt;
+&lt;h2 id=&quot;polypane&quot; tabindex=&quot;-1&quot;&gt;Polypane &lt;a class=&quot;direct-link&quot; href=&quot;https://devtoolstips.org/tips/en/debug-unwanted-scrollbars/#polypane&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Polypane displays an &lt;strong&gt;Horizontal overflow detected&lt;/strong&gt; icon below pages that have a horizontal scrollbar. The &lt;strong&gt;Horizontal overflow detected&lt;/strong&gt; icon helps you understand why a page has a horizontal scrollbar:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-unwanted-scrollbars-3.png&quot; alt=&quot;Polypane, with an overflow icon below a Pane. The text in the tooltip reads &amp;quot;Horizontal overflow detected!&amp;quot;.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;After clicking the icon, Polypane finds the elements causing an overflow in your page and highlights them in red.&lt;/p&gt;
+&lt;p&gt;To find the elements that are causing the horizontal overflow in the page, click the icon. Polypane finds the elements and highlights them in red:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-unwanted-scrollbars-4.png&quot; alt=&quot;Polypane showing a page. A single element is highlighted in red and is clearly expanding beyond the edge&amp;quot;.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;From here, you can inspect the element and find the cause of the problem.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://polypane.app/docs/horizontal-overflow/&quot;&gt;Learn more here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To fix the overflow problem, inspect the highlighted elements.&lt;/p&gt;
+&lt;p&gt;To learn more, see &lt;a href=&quot;https://polypane.app/docs/horizontal-overflow/&quot;&gt;Horizontal overflow detection&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   
@@ -2946,12 +2955,12 @@ I can also write more fancy HTML, maybe add more elements, and attributes. But u
     <content type="html">&lt;p&gt;A really useful way to position elements on a CSS grid is using the &lt;a href=&quot;https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas&quot;&gt;&lt;code&gt;grid-template-areas&lt;/code&gt;&lt;/a&gt; property. With it, you can give names to various areas of your grid (potentially spanning multiple cells), and then simply position your elements by referring to those names.&lt;/p&gt;
 &lt;p&gt;The syntax for the &lt;code&gt;grid-template-areas&lt;/code&gt; property is a bit special though. It consists in a series of strings where each corresponds to one row in the grid. For example:&lt;/p&gt;
 &lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;grid-template-areas&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;header  header&quot;&lt;/span&gt;&lt;br /&gt;                       &lt;span class=&quot;token string&quot;&gt;&quot;sidebar main  &quot;&lt;/span&gt;&lt;br /&gt;                       &lt;span class=&quot;token string&quot;&gt;&quot;sidebar footer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;DevTools in Firefox, Chrome, and Edge make it very easy to debug potential problems that may occur when making mistakes with the above syntax.&lt;/p&gt;
+&lt;p&gt;DevTools makes it very easy to debug potential problems that may occur when making mistakes with the above syntax:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Open the &lt;strong&gt;Elements&lt;/strong&gt; panel (or &lt;strong&gt;Inspector&lt;/strong&gt; panel in Firefox).&lt;/li&gt;
-&lt;li&gt;Highlight a grid on your page that has named areas (you can use the &lt;strong&gt;grid&lt;/strong&gt; badge in the DOM tree for example).&lt;/li&gt;
-&lt;li&gt;Go to the &lt;strong&gt;Layout&lt;/strong&gt; sidebar pane.&lt;/li&gt;
-&lt;li&gt;Under the &lt;strong&gt;Grid&lt;/strong&gt; section, check the &lt;strong&gt;Show area names&lt;/strong&gt; box.&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Elements&lt;/strong&gt; tool (or &lt;strong&gt;Inspector&lt;/strong&gt; tool in Firefox).&lt;/li&gt;
+&lt;li&gt;Select an element from the page that defines a grid container with named areas (you can use the &lt;strong&gt;grid&lt;/strong&gt; badge in the DOM tree to find grid containers).&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Layout&lt;/strong&gt; sidebar pane.&lt;/li&gt;
+&lt;li&gt;Under the &lt;strong&gt;Grid&lt;/strong&gt; section, enable the &lt;strong&gt;Show area names&lt;/strong&gt; checkbox (named &lt;strong&gt;Area Names&lt;/strong&gt; in Safari).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/debug-grid-areas.png&quot; alt=&quot;Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the &amp;quot;display area names&amp;quot; option checked.&quot; /&gt;&lt;/p&gt;
 </content>

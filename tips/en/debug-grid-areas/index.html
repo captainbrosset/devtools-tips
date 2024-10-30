@@ -119,6 +119,10 @@
                 <img src="/assets/browsers/chrome.svg" alt=""> chrome
             </a>
         </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li><li class="browser">
             <a href="/browser/firefox/" title="List all tips supported by firefox">
                 <img src="/assets/browsers/firefox.svg" alt=""> firefox
             </a>
@@ -128,40 +132,25 @@
     <p>A really useful way to position elements on a CSS grid is using the <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas"><code>grid-template-areas</code></a> property. With it, you can give names to various areas of your grid (potentially spanning multiple cells), and then simply position your elements by referring to those names.</p>
 <p>The syntax for the <code>grid-template-areas</code> property is a bit special though. It consists in a series of strings where each corresponds to one row in the grid. For example:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">grid-template-areas</span><span class="token punctuation">:</span> <span class="token string">"header  header"</span><br>                       <span class="token string">"sidebar main  "</span><br>                       <span class="token string">"sidebar footer"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<p>DevTools in Firefox, Chrome, and Edge make it very easy to debug potential problems that may occur when making mistakes with the above syntax.</p>
+<p>DevTools makes it very easy to debug potential problems that may occur when making mistakes with the above syntax:</p>
 <ul>
-<li>Open the <strong>Elements</strong> panel (or <strong>Inspector</strong> panel in Firefox).</li>
-<li>Highlight a grid on your page that has named areas (you can use the <strong>grid</strong> badge in the DOM tree for example).</li>
-<li>Go to the <strong>Layout</strong> sidebar pane.</li>
-<li>Under the <strong>Grid</strong> section, check the <strong>Show area names</strong> box.</li>
+<li>Open the <strong>Elements</strong> tool (or <strong>Inspector</strong> tool in Firefox).</li>
+<li>Select an element from the page that defines a grid container with named areas (you can use the <strong>grid</strong> badge in the DOM tree to find grid containers).</li>
+<li>Open the <strong>Layout</strong> sidebar pane.</li>
+<li>Under the <strong>Grid</strong> section, enable the <strong>Show area names</strong> checkbox (named <strong>Area Names</strong> in Safari).</li>
 </ul>
 <p><img src="/assets/img/debug-grid-areas.png" alt="Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the &quot;display area names&quot; option checked."></p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/disable-event-listeners">Remove or disable event listeners</a>
-            <a href="/tips/en/disable-event-listeners" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/disable-event-listeners-firefox.png" alt="The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.">
-            </a>
-        </li><li>
-            <a href="/tips/en/display-css-selector-specificity">Display the specificity of a CSS selector</a>
-            <a href="/tips/en/display-css-selector-specificity" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/display-css-selector-specificity.png" alt="Chrome DevTools showing the specificity of a CSS selector in a tooltip">
-            </a>
-        </li><li>
-            <a href="/tips/en/edit-position">Edit CSS absolute and relative positions by dragging points in the page</a>
-            <a href="/tips/en/edit-position" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/edit-position.gif" alt="Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.">
-            </a>
-        </li><li>
-            <a href="/tips/en/inspect-devtools-with-devtools">Inspect DevTools with DevTools</a>
-            <a href="/tips/en/inspect-devtools-with-devtools" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/inspect-devtools-with-devtools-chrome.png" alt="Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one">
+            <a href="/tips/en/tweak-grid-flex-alignment">Tweak css grid and flexbox alignment properties</a>
+            <a href="/tips/en/tweak-grid-flex-alignment" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/tweak-grid-flex-alignment.png" alt="The grid editor in the Styles pane of Microsoft Edge.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://github.com/mirnovov">mirnovov</a></span></div>
     <p class="last-edit">Last edit: <time datetime="2022-03-16T00:00:00.000Z">3/16/2022</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/debug-grid-areas.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>

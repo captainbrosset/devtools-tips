@@ -123,6 +123,10 @@
                 <img src="/assets/browsers/chrome.svg" alt=""> chrome
             </a>
         </li><li class="browser">
+            <a href="/browser/safari/" title="List all tips supported by safari">
+                <img src="/assets/browsers/safari.svg" alt=""> safari
+            </a>
+        </li><li class="browser">
             <a href="/browser/edge/" title="List all tips supported by edge">
                 <img src="/assets/browsers/edge.svg" alt=""> edge
             </a>
@@ -132,6 +136,7 @@
     <p>Some websites make it impossible to use DevTools by adding <code>debugger</code> statements in their code.</p>
 <p>The statements don't do anything for normal users, but as soon as DevTools is opened, the JavaScript execution pauses, and this makes it impossible to debug or inspect the site as normal.</p>
 <p>To disable the abusive <code>debugger</code> statement:</p>
+<h2 id="in-firefox%2C-chrome%2C-and-edge" tabindex="-1">In Firefox, Chrome, and Edge <a class="direct-link" href="#in-firefox%2C-chrome%2C-and-edge">#</a></h2>
 <ul>
 <li>Open the <strong>Sources</strong> tool (or <strong>Debugger</strong> tool in Firefox).</li>
 <li>Right-click the line number gutter, right next to the <code>debugger</code> statement.</li>
@@ -142,13 +147,19 @@
 <p>Now, everytime this line of code is executed, the nasty <code>debugger</code> statement will be ignored and the page will run normally!</p>
 <p><img src="/assets/img/disable-abusive-debugger-statement.gif" alt="The Sources tool in Firefox, showing how to add a conditional breakpoint."></p>
 <p>Thank you <a href="https://twitter.com/quicksave2k/status/1610250172210073607">François for the tweet</a> and <a href="https://github.com/captainbrosset/devtools-tips/issues/66">Pankaj Parashar for the tip about using the <strong>Never pause here</strong> option</a>.</p>
+<h2 id="in-safari" tabindex="-1">In Safari <a class="direct-link" href="#in-safari">#</a></h2>
+<ul>
+<li>Open the <strong>Sources</strong> tool.</li>
+<li>At the top left of the tool, in the list of breakpoints, click the arrow next to <strong>Debugger Statements</strong>.</li>
+</ul>
+<p>Any further <code>debugger</code> statement will be ignored.</p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/debugger-statement">Use the debugger statement to pause script execution</a>
-            <a href="/tips/en/debugger-statement" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement.">
+            <a href="/tips/en/find-custom-elements-code">Find your web component&#39;s custom element code</a>
+            <a href="/tips/en/find-custom-elements-code" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/find-custom-elements-code.gif" alt="Animation showing the custom button in Firefox&#39;s inspector and that clicking on it goes to the debugger.">
             </a>
         </li><li>
             <a href="/tips/en/name-evaluated-files">Name evaluated files with the sourceURL pragma</a>
@@ -156,18 +167,13 @@
                 <img loading="lazy" src="/assets/img/name-evaluated-files.png" alt="Firefox DevTools, the sourceURL pragma was used when evaluating some code in the Console, and a new file now appears in the Debugger tool, named after the string provided in the sourceURL pragma">
             </a>
         </li><li>
-            <a href="/tips/en/debug-js-hover-2">Debug popups that appear on hover using the debugger statement</a>
-            <a href="/tips/en/debug-js-hover-2" class="other-tip-image">
-                <img loading="lazy" src="" alt="">
-            </a>
-        </li><li>
-            <a href="/tips/en/debug-js-hover">Debug popups that appear on hover using JS</a>
-            <a href="/tips/en/debug-js-hover" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/debug-js-hover.gif" alt="Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.">
+            <a href="/tips/en/debugger-statement">Use the debugger statement to pause script execution</a>
+            <a href="/tips/en/debugger-statement" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/debugger-statement.png" alt="The Sources panel in Edge, paused at a debugger statement.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://github.com/mirnovov">mirnovov</a></span></div>
     <p class="last-edit">Last edit: <time datetime="2023-02-02T00:00:00.000Z">2/2/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/disable-abusive-debugger-statement.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
