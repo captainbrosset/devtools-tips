@@ -1,6 +1,6 @@
 ---
 date: 2023-02-02
-authors: Patrick Brosset
+authors: Patrick Brosset, mirnovov
 title: Disable abusive debugger statements that prevent inspecting websites
 tags: ["tip", "javascript", "debug", "browser:firefox", "browser:chrome", "browser:safari", "browser:edge"]
 ---
@@ -10,7 +10,7 @@ The statements don't do anything for normal users, but as soon as DevTools is op
 
 To disable the abusive `debugger` statement:
 
-**In Firefox, Chrome, and Edge**
+## In Firefox, Chrome, and Edge
 
 * Open the **Sources** tool (or **Debugger** tool in Firefox).
 * Right-click the line number gutter, right next to the `debugger` statement.
@@ -24,9 +24,9 @@ Now, everytime this line of code is executed, the nasty `debugger` statement wil
 
 Thank you [François for the tweet](https://twitter.com/quicksave2k/status/1610250172210073607) and [Pankaj Parashar for the tip about using the **Never pause here** option](https://github.com/captainbrosset/devtools-tips/issues/66).
 
-**In Safari**
+## In Safari
 
-* Open the **Sources** pane.
-* On the top left, there is a list of breakpoints, including several built-in ones. Click the arrow on the right of the **Debugger Statements** breakpoint to disable it.
+* Open the **Sources** tool.
+* At the top left of the tool, in the list of breakpoints, click the arrow next to **Debugger Statements**.
 
-Any further `debugger` statements will be ignored unless the **Debugger Statements** breakpoint is re-enabled.
+Any further `debugger` statement will be ignored.
