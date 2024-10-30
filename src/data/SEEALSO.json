@@ -807,36 +807,12 @@
   ],
   "debug-grid-areas.md": [
     {
-      "title": "Remove or disable event listeners",
+      "title": "Tweak css grid and flexbox alignment properties",
       "image": {
-        "alt": "The Firefox event popup in the Inspector panel, showing the checkbox to toggle events.",
-        "src": "../../assets/img/disable-event-listeners-firefox.png"
+        "alt": "The grid editor in the Styles pane of Microsoft Edge.",
+        "src": "../../assets/img/tweak-grid-flex-alignment.png"
       },
-      "link": "/tips/en/disable-event-listeners"
-    },
-    {
-      "title": "Display the specificity of a CSS selector",
-      "image": {
-        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
-        "src": "../../assets/img/display-css-selector-specificity.png"
-      },
-      "link": "/tips/en/display-css-selector-specificity"
-    },
-    {
-      "title": "Edit CSS absolute and relative positions by dragging points in the page",
-      "image": {
-        "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
-        "src": "../../assets/img/edit-position.gif"
-      },
-      "link": "/tips/en/edit-position"
-    },
-    {
-      "title": "Inspect DevTools with DevTools",
-      "image": {
-        "alt": "Two Chrome DevTools windows, the first one inspects a webpage, the second one inspects the first one",
-        "src": "../../assets/img/inspect-devtools-with-devtools-chrome.png"
-      },
-      "link": "/tips/en/inspect-devtools-with-devtools"
+      "link": "/tips/en/tweak-grid-flex-alignment"
     }
   ],
   "debug-js-hover-2.md": [
@@ -865,12 +841,12 @@
       "link": "/tips/en/debug-popups-on-hover"
     },
     {
-      "title": "Disable abusive debugger statements that prevent inspecting websites",
+      "title": "Name evaluated files with the sourceURL pragma",
       "image": {
-        "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
+        "alt": "Firefox DevTools, the sourceURL pragma was used when evaluating some code in the Console, and a new file now appears in the Debugger tool, named after the string provided in the sourceURL pragma",
+        "src": "../../assets/img/name-evaluated-files.png"
       },
-      "link": "/tips/en/disable-abusive-debugger-statement"
+      "link": "/tips/en/name-evaluated-files"
     }
   ],
   "debug-js-hover.md": [
@@ -896,12 +872,12 @@
       "link": "/tips/en/debugger-statement"
     },
     {
-      "title": "Disable abusive debugger statements that prevent inspecting websites",
+      "title": "Find the CSS rule that causes a specific style to apply",
       "image": {
-        "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
+        "alt": "The Elements tool in Chrome, showing the Computed tab. The expander icon next to the CSS property has been clicked, revealing the stylesheet location where this style comes from",
+        "src": "../../assets/img/find-rule-that-causes-style-1.png"
       },
-      "link": "/tips/en/disable-abusive-debugger-statement"
+      "link": "/tips/en/find-rule-that-causes-style"
     }
   ],
   "debug-popups-on-hover.md": [
@@ -989,14 +965,6 @@
   ],
   "debug-unwanted-scrollbars.md": [
     {
-      "title": "Visualize the tabbing order on the page",
-      "image": {
-        "alt": "The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.",
-        "src": "../../assets/img/visualize-tabbing-order.png"
-      },
-      "link": "/tips/en/visualize-tabbing-order"
-    },
-    {
       "title": "Display the specificity of a CSS selector",
       "image": {
         "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
@@ -1005,20 +973,28 @@
       "link": "/tips/en/display-css-selector-specificity"
     },
     {
-      "title": "Evaluate XPath to find elements in the page",
+      "title": "Find the offset parent of an element",
       "image": {
-        "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
-        "src": "../../assets/img/evaluate-xpath-1.png"
+        "alt": "Polypane showing an inspected element with the Debug tab open. The Offset parent entry is highlighted.",
+        "src": "../../assets/img/find-the-offset-parent-of-an-element.png"
       },
-      "link": "/tips/en/evaluate-xpath"
+      "link": "/tips/en/find-the-offset-parent-of-an-element"
     },
     {
-      "title": "Take a screenshot of a single node",
+      "title": "Fix low color contrast issues",
       "image": {
-        "alt": "Animation showing taking a node screenshot in Firefox.",
-        "src": "../../assets/img/node-screenshot.gif"
+        "alt": "The chrome color picker, showing the contrast lines and new color suggestions",
+        "src": "../../assets/img/fix-color-contrast-issues-chromium.png"
       },
-      "link": "/tips/en/node-screenshot"
+      "link": "/tips/en/fix-color-contrast-issues"
+    },
+    {
+      "title": "Get the selected element in the console",
+      "image": {
+        "alt": "Safari's console showing how the $0 shortcut returns the selected element.",
+        "src": "../../assets/img/get-current-element-in-console.jpg"
+      },
+      "link": "/tips/en/get-current-element-in-console"
     }
   ],
   "debugger-statement.md": [
@@ -1026,14 +1002,6 @@
       "title": "Debug popups that appear on hover using the debugger statement",
       "image": null,
       "link": "/tips/en/debug-js-hover-2"
-    },
-    {
-      "title": "Disable abusive debugger statements that prevent inspecting websites",
-      "image": {
-        "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
-      },
-      "link": "/tips/en/disable-abusive-debugger-statement"
     },
     {
       "title": "Write code on multiple lines in the Console",
@@ -1050,6 +1018,14 @@
         "src": "../../assets/img/name-evaluated-files.png"
       },
       "link": "/tips/en/name-evaluated-files"
+    },
+    {
+      "title": "Unminify JavaScript code to easily read and debug it",
+      "image": {
+        "alt": "The Sources panel in Chrome, showing the pretty-print button.",
+        "src": "../../assets/img/unminify-javascript-code.gif"
+      },
+      "link": "/tips/en/unminify-javascript-code"
     }
   ],
   "detect-3p-cookies.md": [
@@ -1156,12 +1132,12 @@
   ],
   "disable-abusive-debugger-statement.md": [
     {
-      "title": "Use the debugger statement to pause script execution",
+      "title": "Find your web component's custom element code",
       "image": {
-        "alt": "The Sources panel in Edge, paused at a debugger statement.",
-        "src": "../../assets/img/debugger-statement.png"
+        "alt": "Animation showing the custom button in Firefox's inspector and that clicking on it goes to the debugger.",
+        "src": "../../assets/img/find-custom-elements-code.gif"
       },
-      "link": "/tips/en/debugger-statement"
+      "link": "/tips/en/find-custom-elements-code"
     },
     {
       "title": "Name evaluated files with the sourceURL pragma",
@@ -1172,17 +1148,12 @@
       "link": "/tips/en/name-evaluated-files"
     },
     {
-      "title": "Debug popups that appear on hover using the debugger statement",
-      "image": null,
-      "link": "/tips/en/debug-js-hover-2"
-    },
-    {
-      "title": "Debug popups that appear on hover using JS",
+      "title": "Use the debugger statement to pause script execution",
       "image": {
-        "alt": "Animation showing how to pause the debugger with F8 while a tooltip is visible to then style it in the Inspector panel of Firefox.",
-        "src": "../../assets/img/debug-js-hover.gif"
+        "alt": "The Sources panel in Edge, paused at a debugger statement.",
+        "src": "../../assets/img/debugger-statement.png"
       },
-      "link": "/tips/en/debug-js-hover"
+      "link": "/tips/en/debugger-statement"
     }
   ],
   "disable-all-css.md": [
@@ -1779,20 +1750,20 @@
       "link": "/tips/en/copy-from-console"
     },
     {
-      "title": "Debug unwanted scrollbars",
-      "image": {
-        "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
-        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
-      },
-      "link": "/tips/en/debug-unwanted-scrollbars"
-    },
-    {
       "title": "Find DOM elements from the console",
       "image": {
         "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
         "src": "../../assets/img/query-dom-from-console.png"
       },
       "link": "/tips/en/query-dom-from-console"
+    },
+    {
+      "title": "Automatically logging name and value in console.log()",
+      "image": {
+        "alt": "Animation showing the different ways the variables are logged with and without curly braces.",
+        "src": "../../assets/img/automatically-log-name-and-value.gif"
+      },
+      "link": "/tips/en/automatically-log-name-and-value"
     }
   ],
   "execute-commands.md": [
@@ -2251,6 +2222,14 @@
     }
   ],
   "find-the-offset-parent-of-an-element.md": [
+    {
+      "title": "Debug unwanted scrollbars",
+      "image": {
+        "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
+        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
+      },
+      "link": "/tips/en/debug-unwanted-scrollbars"
+    },
     {
       "title": "Edit an element's attributes and tag name with the keyboard",
       "image": {
@@ -2940,14 +2919,6 @@
       "link": "/tips/en/display-css-selector-specificity"
     },
     {
-      "title": "Disable abusive debugger statements that prevent inspecting websites",
-      "image": {
-        "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
-      },
-      "link": "/tips/en/disable-abusive-debugger-statement"
-    },
-    {
       "title": "Install or create extensions to customize DevTools",
       "image": {
         "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
@@ -2956,12 +2927,20 @@
       "link": "/tips/en/extend-devtools"
     },
     {
-      "title": "Debug CSS grid areas",
+      "title": "Debug popups that appear on hover",
       "image": {
-        "alt": "Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the \"display area names\" option checked.",
-        "src": "../../assets/img/debug-grid-areas.png"
+        "alt": "The Rendering tool in DevTools, showing the Emulate a focused page option",
+        "src": "../../assets/img/debug-popups-on-hover.png"
       },
-      "link": "/tips/en/debug-grid-areas"
+      "link": "/tips/en/debug-popups-on-hover"
+    },
+    {
+      "title": "Edit CSS absolute and relative positions by dragging points in the page",
+      "image": {
+        "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
+        "src": "../../assets/img/edit-position.gif"
+      },
+      "link": "/tips/en/edit-position"
     }
   ],
   "inspect-user-agent-dom.md": [
@@ -3084,20 +3063,20 @@
       "link": "/tips/en/copy-element-styles"
     },
     {
-      "title": "Debug unwanted scrollbars",
-      "image": {
-        "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
-        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
-      },
-      "link": "/tips/en/debug-unwanted-scrollbars"
-    },
-    {
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
         "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
+    },
+    {
+      "title": "Hide elements from the page, without changing the layout",
+      "image": {
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
+      },
+      "link": "/tips/en/hide-elements"
     }
   ],
   "list-console-functions.md": [
@@ -4239,12 +4218,12 @@
       "link": "/tips/en/visualize-tabbing-order"
     },
     {
-      "title": "Debug CSS grid areas",
+      "title": "Display the specificity of a CSS selector",
       "image": {
-        "alt": "Firefox showing a highlighted grid in the page showing the area names, and DevTools below it with the \"display area names\" option checked.",
-        "src": "../../assets/img/debug-grid-areas.png"
+        "alt": "Chrome DevTools showing the specificity of a CSS selector in a tooltip",
+        "src": "../../assets/img/display-css-selector-specificity.png"
       },
-      "link": "/tips/en/debug-grid-areas"
+      "link": "/tips/en/display-css-selector-specificity"
     }
   ],
   "send-feedback-about-devtools.md": [
@@ -4903,16 +4882,7 @@
       "link": "/tips/en/take-in-device-screenshots"
     }
   ],
-  "use-logpoints.md": [
-    {
-      "title": "Disable abusive debugger statements that prevent inspecting websites",
-      "image": {
-        "alt": "The Sources tool in Firefox, showing how to add a conditional breakpoint.",
-        "src": "../../assets/img/disable-abusive-debugger-statement.gif"
-      },
-      "link": "/tips/en/disable-abusive-debugger-statement"
-    }
-  ],
+  "use-logpoints.md": [],
   "use-scripts-as-snippets.md": [
     {
       "title": "Write code on multiple lines in the Console",
@@ -5060,20 +5030,20 @@
       "link": "/tips/en/copy-inline-svg-image"
     },
     {
-      "title": "Debug unwanted scrollbars",
-      "image": {
-        "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
-        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
-      },
-      "link": "/tips/en/debug-unwanted-scrollbars"
-    },
-    {
       "title": "Edit CSS absolute and relative positions by dragging points in the page",
       "image": {
         "alt": "Animation of the geometry editor in Firefox, toggling it from the Layout panel, and then dragging top and left points to move the element in the page.",
         "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
+    },
+    {
+      "title": "Hide elements from the page, without changing the layout",
+      "image": {
+        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
+        "src": "../../assets/img/hide-elements.png"
+      },
+      "link": "/tips/en/hide-elements"
     }
   ],
   "visualize-tabbing-order.md": [
@@ -5084,14 +5054,6 @@
         "src": "../../assets/img/edit-position.gif"
       },
       "link": "/tips/en/edit-position"
-    },
-    {
-      "title": "Debug unwanted scrollbars",
-      "image": {
-        "alt": "Firefox DevTools, with the Inspector panel showing the Scroll badge on an element.",
-        "src": "../../assets/img/debug-unwanted-scrollbars-1.png"
-      },
-      "link": "/tips/en/debug-unwanted-scrollbars"
     },
     {
       "title": "Display the specificity of a CSS selector",
@@ -5108,6 +5070,14 @@
         "src": "../../assets/img/node-screenshot.gif"
       },
       "link": "/tips/en/node-screenshot"
+    },
+    {
+      "title": "Select elements with pointer-events:none by holding Shift",
+      "image": {
+        "alt": "Animation showing how a pointer-events:none element normally can't be selected, except when Shift is pressed.",
+        "src": "../../assets/img/select-pointer-events-none-elements.gif"
+      },
+      "link": "/tips/en/select-pointer-events-none-elements"
     }
   ],
   "zoom-devtools-content.md": [
