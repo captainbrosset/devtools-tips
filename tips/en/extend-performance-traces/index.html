@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Throttle your CPU</title>
+    <title>Extend traces recorded in the Performance tool with your own custom data</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/throttle-cpu/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/extend-performance-traces/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="Throttle your CPU">
+    <meta property="og:description" content="Extend traces recorded in the Performance tool with your own custom data">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -99,9 +99,9 @@
           </a>
         </div>
       </div>
-      <div id="maincontent"style="view-transition-name:post-throttle-cpu">
+      <div id="maincontent"style="view-transition-name:post-extend-performance-traces">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Throttle your CPU</h1>
+<h1 class="tip-title">Extend traces recorded in the Performance tool with your own custom data</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
@@ -121,44 +121,30 @@
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>Your development machine is very likely much more powerful than the devices your users have (which are probably low-end mobile devices).</p>
-<p>Before you ship your new app or site, thinking that it will run as smoothly as it does on your computer, test it on other devices. Build empathy for your users and what they have to go through while using your app or site.</p>
-<p>The best way to do this is to test on the real devices your users actually have! A proxy to this is to simulate a slower CPU from DevTools.</p>
-<p>To throttle your CPU in Chrome or Edge DevTools:</p>
-<ol>
-<li>In DevTools, open the <strong>Performance</strong> tool.</li>
-<li>Click <strong>Capture settings</strong>. It's the gear icon in the top right corner of the <strong>Performance</strong> tool.</li>
-<li>Using the <strong>CPU</strong> dropdown, simulate a 4x or 6x slowdown.</li>
-</ol>
-<p>Even though the setting is in the <strong>Performance</strong> tool, you don't need to record a performance trace for the slowdown to take effect. As soon as a slowdown value is set, it takes effect immediately.</p>
-<p><img src="/assets/img/throttle-cpu.png" alt="The Performance tool in Chrome showing the CPU throttling drop-down."></p>
+    <p>The <strong>Performance</strong> tool lets you add custom tracks with your own custom events, when recording performance traces. This is useful to surface your own performance data, which might not map directly to the functions defined in the code.</p>
+<p>To extend traces, use the <a href="https://developer.mozilla.org/docs/Web/API/Performance_API">Performance API</a> in your JavaScript code. For example, to start measuring a custom event, you can use <code>performance.now()</code> as shown below:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> start <span class="token operator">=</span> performance<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Then, later in your code, you can stop measuring that event, and display it in a custom track in the <strong>Performance</strong> tool:</p>
+<pre class="language-javascript"><code class="language-javascript">performance<span class="token punctuation">.</span><span class="token function">measure</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Analyse</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token punctuation">{</span><br>  start<span class="token operator">:</span> start<span class="token punctuation">,</span><br>  end<span class="token operator">:</span> performance<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>  detail<span class="token operator">:</span> <span class="token punctuation">{</span><br>    devtools<span class="token operator">:</span> <span class="token punctuation">{</span><br>      dataType<span class="token operator">:</span> <span class="token string">"track-entry"</span><span class="token punctuation">,</span><br>      <span class="token comment">// The name of the custom track.</span><br>      track<span class="token operator">:</span> <span class="token string">"Feature handling"</span><span class="token punctuation">,</span><br>      <span class="token comment">// Custom properties of the event, displayed in the Summary pane, when the event is selected.</span><br>      properties<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">"id"</span><span class="token punctuation">,</span> id<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">"size"</span><span class="token punctuation">,</span> size<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>      <span class="token comment">// Tooltip text which appears when hovering over the event in the custom track.</span><br>      tooltipText<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Feature </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>When you later record a performance trace in the tool, a new track named <strong>Feature handling</strong> is displayed in addition to the <strong>Main</strong> track where the function call stacks and other browser rendering events are displayed. The custom events you added are displayed in this new custom track.</p>
+<p><img src="/assets/img/extend-performance-traces.png" alt="A trace displayed in the Performance tool of Chrome DevTools, showing a custom track called &quot;Feature handling&quot;, and containing custom events."></p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/throttle-network-speed">Throttle the network speed to test your website on slower connections</a>
-            <a href="/tips/en/throttle-network-speed" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/throttle-network-speed.png" alt="The Network panel in Edge showing the network throttling drop-down.">
+            <a href="/tips/en/view-perf-markers-in-order">View performance markers in order</a>
+            <a href="/tips/en/view-perf-markers-in-order" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/view-perf-markers-in-order.png" alt="The console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties.">
             </a>
         </li><li>
-            <a href="/tips/en/extend-performance-traces">Extend traces recorded in the Performance tool with your own custom data</a>
-            <a href="/tips/en/extend-performance-traces" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/extend-performance-traces.png" alt="A trace displayed in the Performance tool of Chrome DevTools, showing a custom track called &quot;Feature handling&quot;, and containing custom events.">
-            </a>
-        </li><li>
-            <a href="/tips/en/visualize-memory-usage-during-perf-recording">Visualize a webpage&#39;s memory usage during a performance recording</a>
-            <a href="/tips/en/visualize-memory-usage-during-perf-recording" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/visualize-memory-usage-during-perf-recording.png" alt="Chrome DevTools&#39; Memory tool, showing a recorded performance profile that has a memory graph section">
-            </a>
-        </li><li>
-            <a href="/tips/en/check-bfcache-readiness">Check if your site can be instantly reloaded from bfcache</a>
-            <a href="/tips/en/check-bfcache-readiness" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/check-bfcache-readiness.png" alt="Chrome DevTools with the Application tool, and the bfcache tab selected, showing a warning that the page can&#39;t be cached.">
+            <a href="/tips/en/throttle-cpu">Throttle your CPU</a>
+            <a href="/tips/en/throttle-cpu" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/throttle-cpu.png" alt="The Performance tool in Chrome showing the CPU throttling drop-down.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2023-03-01T00:00:00.000Z">3/1/2023</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/throttle-cpu.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-11-26T00:00:00.000Z">11/26/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/extend-performance-traces.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
