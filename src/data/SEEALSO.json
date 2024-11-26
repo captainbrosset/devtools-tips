@@ -1894,6 +1894,24 @@
       "link": "/tips/en/custom-object-formatters"
     }
   ],
+  "extend-performance-traces.md": [
+    {
+      "title": "View performance markers in order",
+      "image": {
+        "alt": "The console in Edge showing the PerformanceTiming object, with alphabetical properties, and then using console.table to sort properties.",
+        "src": "../../assets/img/view-perf-markers-in-order.png"
+      },
+      "link": "/tips/en/view-perf-markers-in-order"
+    },
+    {
+      "title": "Throttle your CPU",
+      "image": {
+        "alt": "The Performance tool in Chrome showing the CPU throttling drop-down.",
+        "src": "../../assets/img/throttle-cpu.png"
+      },
+      "link": "/tips/en/throttle-cpu"
+    }
+  ],
   "filter-network-requests.md": [
     {
       "title": "Hide resources loaded by extensions in the Network panel",
@@ -4600,6 +4618,14 @@
       "link": "/tips/en/throttle-network-speed"
     },
     {
+      "title": "Extend traces recorded in the Performance tool with your own custom data",
+      "image": {
+        "alt": "A trace displayed in the Performance tool of Chrome DevTools, showing a custom track called \"Feature handling\", and containing custom events.",
+        "src": "../../assets/img/extend-performance-traces.png"
+      },
+      "link": "/tips/en/extend-performance-traces"
+    },
+    {
       "title": "Visualize a webpage's memory usage during a performance recording",
       "image": {
         "alt": "Chrome DevTools' Memory tool, showing a recorded performance profile that has a memory graph section",
@@ -4614,14 +4640,6 @@
         "src": "../../assets/img/check-bfcache-readiness.png"
       },
       "link": "/tips/en/check-bfcache-readiness"
-    },
-    {
-      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
-      "image": {
-        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
-        "src": "../../assets/img/console-table-group-assert-1.jpg"
-      },
-      "link": "/tips/en/console-table-group-assert"
     }
   ],
   "throttle-network-speed.md": [
@@ -4951,7 +4969,16 @@
       "link": "/tips/en/get-current-element-in-console"
     }
   ],
-  "view-perf-markers-in-order.md": [],
+  "view-perf-markers-in-order.md": [
+    {
+      "title": "Extend traces recorded in the Performance tool with your own custom data",
+      "image": {
+        "alt": "A trace displayed in the Performance tool of Chrome DevTools, showing a custom track called \"Feature handling\", and containing custom events.",
+        "src": "../../assets/img/extend-performance-traces.png"
+      },
+      "link": "/tips/en/extend-performance-traces"
+    }
+  ],
   "visualize-css-transforms.md": [
     {
       "title": "Find why a CSS property is overridden",
