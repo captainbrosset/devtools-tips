@@ -327,6 +327,9 @@ header nav {
   border: 2px solid var(--accent-color-darker);
   border-radius: 4px;
   z-index: 1;
+  max-height: min(calc(100vh - 7em), 40em);
+  overflow-y: scroll;
+  overscroll-behavior-block: contain;
 }
 
 .search .pagefind-ui__hidden {
