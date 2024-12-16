@@ -1750,20 +1750,20 @@
       "link": "/tips/en/copy-from-console"
     },
     {
+      "title": "Find in files",
+      "image": {
+        "alt": "The Debugger tool in Firefox, showing the Search sidebar panel. A search for the word \"trace\" was done, and a list of matches appear in the panel.",
+        "src": "../../assets/img/find-in-files-firefox.png"
+      },
+      "link": "/tips/en/find-in-files"
+    },
+    {
       "title": "Find DOM elements from the console",
       "image": {
         "alt": "Firefox's console panel, showing 3 different examples of using the $ and $$ built-in console functions.",
         "src": "../../assets/img/query-dom-from-console.png"
       },
       "link": "/tips/en/query-dom-from-console"
-    },
-    {
-      "title": "Automatically logging name and value in console.log()",
-      "image": {
-        "alt": "Animation showing the different ways the variables are logged with and without curly braces.",
-        "src": "../../assets/img/automatically-log-name-and-value.gif"
-      },
-      "link": "/tips/en/automatically-log-name-and-value"
     }
   ],
   "execute-commands.md": [
@@ -2153,6 +2153,16 @@
     }
   ],
   "find-html-parsing-errors.md": [],
+  "find-in-files.md": [
+    {
+      "title": "Evaluate XPath to find elements in the page",
+      "image": {
+        "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
+        "src": "../../assets/img/evaluate-xpath-1.png"
+      },
+      "link": "/tips/en/evaluate-xpath"
+    }
+  ],
   "find-inactive-styles.md": [
     {
       "title": "Copy an elements styles",
@@ -3212,6 +3222,14 @@
   "manipulate-global-objects-on-page-load.md": [],
   "measure-distances.md": [
     {
+      "title": "Find in files",
+      "image": {
+        "alt": "The Debugger tool in Firefox, showing the Search sidebar panel. A search for the word \"trace\" was done, and a list of matches appear in the panel.",
+        "src": "../../assets/img/find-in-files-firefox.png"
+      },
+      "link": "/tips/en/find-in-files"
+    },
+    {
       "title": "Sample colors from the page",
       "image": {
         "alt": "Animation of the eyedropper tool being started from the Firefox main menu.",
@@ -3234,14 +3252,6 @@
         "src": "../../assets/img/emulate-color-schemes-firefox.png"
       },
       "link": "/tips/en/emulate-color-schemes"
-    },
-    {
-      "title": "Hide elements from the page, without changing the layout",
-      "image": {
-        "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
-        "src": "../../assets/img/hide-elements.png"
-      },
-      "link": "/tips/en/hide-elements"
     }
   ],
   "monitor-element-events.md": [
@@ -3784,12 +3794,12 @@
       "link": "/tips/en/emulate-color-schemes"
     },
     {
-      "title": "Get detached DOM elements to investigate memory leaks",
+      "title": "Find in files",
       "image": {
-        "alt": "The Detached Elements panel in Edge, with the Memory panel next to it.",
-        "src": "../../assets/img/get-detached-elements.png"
+        "alt": "The Debugger tool in Firefox, showing the Search sidebar panel. A search for the word \"trace\" was done, and a list of matches appear in the panel.",
+        "src": "../../assets/img/find-in-files-firefox.png"
       },
-      "link": "/tips/en/get-detached-elements"
+      "link": "/tips/en/find-in-files"
     }
   ],
   "reload-page-after-change.md": [
@@ -4142,20 +4152,20 @@
       "link": "/tips/en/discover-all-tools"
     },
     {
+      "title": "Find in files",
+      "image": {
+        "alt": "The Debugger tool in Firefox, showing the Search sidebar panel. A search for the word \"trace\" was done, and a list of matches appear in the panel.",
+        "src": "../../assets/img/find-in-files-firefox.png"
+      },
+      "link": "/tips/en/find-in-files"
+    },
+    {
       "title": "Hide elements from the page, without changing the layout",
       "image": {
         "alt": "Chrome with DevTools opened, showing how pressing H hides elements from the page",
         "src": "../../assets/img/hide-elements.png"
       },
       "link": "/tips/en/hide-elements"
-    },
-    {
-      "title": "Scroll an element into view",
-      "image": {
-        "alt": "Animation showing how the page is scrolled to reveal the selected element.",
-        "src": "../../assets/img/scroll-into-view.gif"
-      },
-      "link": "/tips/en/scroll-into-view"
     }
   ],
   "see-viewport-size.md": [
