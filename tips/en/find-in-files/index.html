@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluate XPath to find elements in the page</title>
+    <title>Find in files</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/evaluate-xpath/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/find-in-files/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="Evaluate XPath to find elements in the page">
+    <meta property="og:description" content="Find in files">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -99,18 +99,14 @@
           </a>
         </div>
       </div>
-      <div id="maincontent"style="view-transition-name:post-evaluate-xpath">
+      <div id="maincontent"style="view-transition-name:post-find-in-files">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Evaluate XPath to find elements in the page</h1>
+<h1 class="tip-title">Find in files</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
-            <a href="/tag/html/" title="List all html tips">
-                html
-            </a>
-        </li><li class="tag">
-            <a href="/tag/testing/" title="List all testing tips">
-                testing
+            <a href="/tag/productivity/" title="List all productivity tips">
+                productivity
             </a>
         </li></ul>
     Supported by:
@@ -126,61 +122,70 @@
             <a href="/browser/firefox/" title="List all tips supported by firefox">
                 <img src="/assets/browsers/firefox.svg" alt=""> firefox
             </a>
-        </li><li class="browser">
-            <a href="/browser/safari/" title="List all tips supported by safari">
-                <img src="/assets/browsers/safari.svg" alt=""> safari
-            </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>DevTools supports 2 ways to evaluate <a href="https://developer.mozilla.org/en-US/docs/Web/XPath">XPath</a> expressions to help you locate elements in the page. All browsers support those 2 ways:</p>
+    <p>To find occurrences of a string in all of the files of the webpage you are inspecting, for example to find where a specific CSS class is defined, or where a specific JavaScript API is used:</p>
 <ul>
-<li>From the Elements (or Inspector) panel:
+<li>
+<p>In Firefox:</p>
 <ul>
-<li>Click anywhere in the panel to make sure it has focus</li>
-<li>Press <kbd>ctrl</kbd>+<kbd>F</kbd> (or <kbd>cmd</kbd>+<kbd>F</kbd> on Mac) to focus the search field</li>
-<li>Enter your XPath expression and press enter to find the elements that match</li>
-</ul>
+<li>
+<p>Open the <strong>Debugger</strong> tool.</p>
+</li>
+<li>
+<p>Press <kbd>Ctrl+Shift+F</kbd> (or <kbd>Cmd+Option+F</kbd> on macOS).</p>
+<p>The <strong>Search</strong> sidebar panel appears.</p>
+</li>
+<li>
+<p>Enter the string you want to search for and then press <kbd>Enter</kbd>.</p>
+<p>The results are displayed in the <strong>Search</strong> sidebar panel.</p>
+<p>Results from CSS stylesheets don't appear in the results however. To find occurrences in CSS stylesheets, open the <strong>Style Editor</strong> tool and press <kbd>Ctrl+F</kbd> (or <kbd>Cmd+F</kbd> on macOS).</p>
+</li>
+<li>
+<p>Click one of the results to display the file, at the right location, in the <strong>Debugger</strong> tool.</p>
+<p><img src="/assets/img/find-in-files-firefox.png" alt="The Debugger tool in Firefox, showing the Search sidebar panel. A search for the word &quot;trace&quot; was done, and a list of matches appear in the panel."></p>
 </li>
 </ul>
-<p><img src="/assets/img/evaluate-xpath-1.png" alt="The Inspector panel in Firefox showing the search field with an XPath expression."></p>
-<p>Note that you can also <a href="/tips/en/copy-element-xpath">copy the XPath expression from any element in DevTools</a>.</p>
+</li>
+<li>
+<p>In Chrome or Edge:</p>
 <ul>
-<li>From the Console panel:
-<ul>
-<li>You can use the built-in <code>$x()</code> helper function like this:</li>
-</ul>
+<li>
+<p>Press <kbd>Ctrl+Shift+F</kbd> (or <kbd>Cmd+Option+F</kbd> on macOS).</p>
+<p>The <strong>Search</strong> tool appears in the bottom drawer area.</p>
+</li>
+<li>
+<p>Enter the string you want to search for and then press <kbd>Enter</kbd>.</p>
+<p>The results are displayed in the <strong>Search</strong> tool.</p>
+</li>
+<li>
+<p>Click one of the results to display the file, at the right location, in the <strong>Sources</strong> tool.</p>
+<p><img src="/assets/img/find-in-files-chrome.png" alt="The Search tool in the drawer area of  Chrome devtools. A search for the word &quot;trace&quot; was done, and a list of matches appear in the drawer."></p>
 </li>
 </ul>
-<pre class="language-javascript"><code class="language-javascript"><span class="token function">$x</span><span class="token punctuation">(</span><span class="token string">'//div/div/label'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<p><img src="/assets/img/evaluate-xpath-2.png" alt="The Console panel in Safari showing an array of elements, as the result of executing the above function."></p>
+</li>
+<li>
+<p>In Safari:</p>
+<p><em>Missing content. Click <strong>Edit this page</strong>, at the bottom of the page, to add the missing content.</em></p>
+</li>
+<li>
+<p>In Polypane:</p>
+<p><em>Missing content. Click <strong>Edit this page</strong>, at the bottom of the page, to add the missing content.</em></p>
+</li>
+</ul>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/copy-element-xpath">Copy an element&#39;s XPath expression</a>
-            <a href="/tips/en/copy-element-xpath" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-element-xpath.png" alt="The Elements panel in Edge showing the copy xpath option in the contextual menu.">
-            </a>
-        </li><li>
-            <a href="/tips/en/copy-from-console">Copy an object from the console</a>
-            <a href="/tips/en/copy-from-console" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-from-console.png" alt="Chrome devtools&#39; console with a line of code using the copy() function.">
-            </a>
-        </li><li>
-            <a href="/tips/en/find-in-files">Find in files</a>
-            <a href="/tips/en/find-in-files" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/find-in-files-firefox.png" alt="The Debugger tool in Firefox, showing the Search sidebar panel. A search for the word &quot;trace&quot; was done, and a list of matches appear in the panel.">
-            </a>
-        </li><li>
-            <a href="/tips/en/query-dom-from-console">Find DOM elements from the console</a>
-            <a href="/tips/en/query-dom-from-console" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/query-dom-from-console.png" alt="Firefox&#39;s console panel, showing 3 different examples of using the $ and $$ built-in console functions.">
+            <a href="/tips/en/evaluate-xpath">Evaluate XPath to find elements in the page</a>
+            <a href="/tips/en/evaluate-xpath" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/evaluate-xpath-1.png" alt="The Inspector panel in Firefox showing the search field with an XPath expression.">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2021-10-29T00:00:00.000Z">10/29/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/evaluate-xpath.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2024-12-16T00:00:00.000Z">12/16/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/find-in-files.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
