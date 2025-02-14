@@ -609,6 +609,40 @@
       "link": "/tips/en/past-several-css-declarations"
     }
   ],
+  "create-contextual-console-loggers.md": [
+    {
+      "title": "Customize the way objects look in DevTools",
+      "image": {
+        "alt": "Example of how a ColorCombo object looks in the Console tool of Chrome DevTools",
+        "src": "../../assets/img/custom-object-formatters.png"
+      },
+      "link": "/tips/en/custom-object-formatters"
+    },
+    {
+      "title": "Apply CSS styles to console messages",
+      "image": {
+        "alt": "A styled console message in Edge.",
+        "src": "../../assets/img/style-console-messages.png"
+      },
+      "link": "/tips/en/style-console-messages"
+    },
+    {
+      "title": "Quickly reference React components in the console",
+      "image": {
+        "alt": "The React DevTools components panel in DevTools, and Console below it, showing the result of $r",
+        "src": "../../assets/img/quickly-reference-react-console.png"
+      },
+      "link": "/tips/en/quickly-reference-react-console"
+    },
+    {
+      "title": "console.log() is great, but do you know console.table()? console.group()? console.assert()?",
+      "image": {
+        "alt": "The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column",
+        "src": "../../assets/img/console-table-group-assert-1.jpg"
+      },
+      "link": "/tips/en/console-table-group-assert"
+    }
+  ],
   "create-your-own-devtools-theme.md": [
     {
       "title": "Change the color theme of DevTools",
@@ -1674,6 +1708,14 @@
       "link": "/tips/en/change-video-playback-rate"
     },
     {
+      "title": "Create contextual console loggers",
+      "image": {
+        "alt": "Console tool in Edge DevTools, showing many logs of different colors, coming from different components of the app.",
+        "src": "../../assets/img/create-contextual-console-loggers-1.png"
+      },
+      "link": "/tips/en/create-contextual-console-loggers"
+    },
+    {
       "title": "Get the recently selected DOM nodes in the console",
       "image": {
         "alt": "Chrome DevTools, with the Elements and Console tools shown. 5 DOM nodes are selected, one after the other, and then the $0, $1, $2, $3, and $4 shortcuts are used in the Console, showing how they refer to the previously selected DOM nodes.",
@@ -1688,14 +1730,6 @@
         "src": "../../assets/img/inspect-debug-iframes-firefox.png"
       },
       "link": "/tips/en/inspect-debug-iframes"
-    },
-    {
-      "title": "List all supported console functions",
-      "image": {
-        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "../../assets/img/list-console-functions.png"
-      },
-      "link": "/tips/en/list-console-functions"
     }
   ],
   "enable-safari-devtools.md": [
@@ -3530,20 +3564,20 @@
       "link": "/tips/en/copy-from-console"
     },
     {
+      "title": "Create contextual console loggers",
+      "image": {
+        "alt": "Console tool in Edge DevTools, showing many logs of different colors, coming from different components of the app.",
+        "src": "../../assets/img/create-contextual-console-loggers-1.png"
+      },
+      "link": "/tips/en/create-contextual-console-loggers"
+    },
+    {
       "title": "Evaluate XPath to find elements in the page",
       "image": {
         "alt": "The Inspector panel in Firefox showing the search field with an XPath expression.",
         "src": "../../assets/img/evaluate-xpath-1.png"
       },
       "link": "/tips/en/evaluate-xpath"
-    },
-    {
-      "title": "List all supported console functions",
-      "image": {
-        "alt": "Chrome, with the Console panel opened on the side in DevTools, showing the `console.log(console)` command result, which is an object containing a list of functions such as assert, clear, debug.",
-        "src": "../../assets/img/list-console-functions.png"
-      },
-      "link": "/tips/en/list-console-functions"
     }
   ],
   "pick-a-color-from-the-page.md": [
@@ -3760,12 +3794,12 @@
       "link": "/tips/en/copy-from-console"
     },
     {
-      "title": "Install or create extensions to customize DevTools",
+      "title": "Create contextual console loggers",
       "image": {
-        "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
-        "src": "../../assets/img/extend-devtools.png"
+        "alt": "Console tool in Edge DevTools, showing many logs of different colors, coming from different components of the app.",
+        "src": "../../assets/img/create-contextual-console-loggers-1.png"
       },
-      "link": "/tips/en/extend-devtools"
+      "link": "/tips/en/create-contextual-console-loggers"
     }
   ],
   "record-replay.md": [
