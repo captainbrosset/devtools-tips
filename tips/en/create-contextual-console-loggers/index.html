@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persist console messages across page navigations and reloads</title>
+    <title>Create contextual console loggers</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/persist-logs-across-pages/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/create-contextual-console-loggers/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="Persist console messages across page navigations and reloads">
+    <meta property="og:description" content="Create contextual console loggers">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -99,9 +99,9 @@
           </a>
         </div>
       </div>
-      <div id="maincontent"style="view-transition-name:post-persist-logs-across-pages">
+      <div id="maincontent"style="view-transition-name:post-create-contextual-console-loggers">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Persist console messages across page navigations and reloads</h1>
+<h1 class="tip-title">Create contextual console loggers</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
@@ -115,75 +115,69 @@
                 <img src="/assets/browsers/edge.svg" alt=""> edge
             </a>
         </li><li class="browser">
-            <a href="/browser/firefox/" title="List all tips supported by firefox">
-                <img src="/assets/browsers/firefox.svg" alt=""> firefox
-            </a>
-        </li><li class="browser">
             <a href="/browser/chrome/" title="List all tips supported by chrome">
                 <img src="/assets/browsers/chrome.svg" alt=""> chrome
-            </a>
-        </li><li class="browser">
-            <a href="/browser/safari/" title="List all tips supported by safari">
-                <img src="/assets/browsers/safari.svg" alt=""> safari
-            </a>
-        </li><li class="browser">
-            <a href="/browser/polypane/" title="List all tips supported by polypane">
-                <img src="/assets/browsers/polypane.svg" alt=""> polypane
             </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>By default, the messages displayed in the console get removed as soon as you refresh the page (or navigate to a new page). If you want to keep those messages as long as DevTools is open, follow these steps:</p>
-<ul>
-<li>In Firefox:
-<ul>
-<li>In the Console panel, click on the cog icon (top-right corner) and select &quot;Persist Logs&quot;</li>
-</ul>
+    <p>Applications are often made up of multiple subsystems or components, each with its own set of log messages. When you're debugging such an application, it might be hard to find the logs you're looking for in the <strong>Console</strong> tool, as the logs from all of the different parts of the app are mixed together.</p>
+<p><code>console.context()</code> can help you with this. This console API is an experiment in Chromium-based browsers only, but is a good step in the right direction.</p>
+<ol>
+<li>
+<p>Create a specific logger instance for a part of your app:</p>
+<p><code>const myComponentLogger = console.context(&quot;name-of-my-component&quot;);</code></p>
 </li>
-<li>In Edge or Chrome:
-<ul>
-<li>In the Console panel, click on the cog icon (top-right corner) and check the &quot;Preserve Log&quot; box</li>
-</ul>
+<li>
+<p>Then log messages as normal, using your new logger:</p>
+<p><code>myComponentLogger.log(&quot;This is a log message from my component&quot;);</code></p>
+<p><code>myComponentLogger.warn(&quot;This is a warning message from my component&quot;);</code></p>
+<p>For an even nicer experience, give your logger a color:</p>
+<p><code>myComponentLogger.log(&quot;%cThis is a log message from my component&quot;, &quot;background-color:lemonchiffon;&quot;);</code></p>
+<p>Here is what the <strong>Console</strong> tool might look like, with the logs from all of the components of the app:</p>
+<p><img src="/assets/img/create-contextual-console-loggers-1.png" alt="Console tool in Edge DevTools, showing many logs of different colors, coming from different components of the app."></p>
 </li>
-<li>In Safari:
+<li>
+<p>When reviewing logs in the <strong>Console</strong> tool, filter the messages by using the name of the context:</p>
 <ul>
-<li>In the Console panel, check the &quot;Preserve Log&quot; box in the top toolbar</li>
-</ul>
+<li>
+<p>Click <strong>Filter</strong> to focus the search field.</p>
 </li>
-<li>In Polypane:
-<ul>
-<li>In the Console panel, check the &quot;Preserve&quot; box in the top toolbar</li>
-</ul>
+<li>
+<p>Enter <strong>context:name-of-my-component</strong> to see only the logs from your component.</p>
 </li>
 </ul>
-<p><img src="/assets/img/persist-logs-across-pages.png" alt="Edge devtools' console showing the settings panel at the top, with the &quot;perserve log&quot; box checked."></p>
+<p>Here is what the <strong>Console</strong> tool would show, once the logs have been filtered by context, to show only the logs from one component:</p>
+<p><img src="/assets/img/create-contextual-console-loggers-2.png" alt="Console tool in Edge DevTools, showing the logs of only one component. The filter &quot;context:storage&quot; was entered."></p>
+</li>
+</ol>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/visualize-tabbing-order">Visualize the tabbing order on the page</a>
-            <a href="/tips/en/visualize-tabbing-order" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/visualize-tabbing-order.png" alt="The tabbing order highlighter in Firefox, showing numbered boxes around focusable elements.">
+            <a href="/tips/en/custom-object-formatters">Customize the way objects look in DevTools</a>
+            <a href="/tips/en/custom-object-formatters" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/custom-object-formatters.png" alt="Example of how a ColorCombo object looks in the Console tool of Chrome DevTools">
             </a>
         </li><li>
-            <a href="/tips/en/copy-from-console">Copy an object from the console</a>
-            <a href="/tips/en/copy-from-console" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/copy-from-console.png" alt="Chrome devtools&#39; console with a line of code using the copy() function.">
+            <a href="/tips/en/style-console-messages">Apply CSS styles to console messages</a>
+            <a href="/tips/en/style-console-messages" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/style-console-messages.png" alt="A styled console message in Edge.">
             </a>
         </li><li>
-            <a href="/tips/en/create-contextual-console-loggers">Create contextual console loggers</a>
-            <a href="/tips/en/create-contextual-console-loggers" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/create-contextual-console-loggers-1.png" alt="Console tool in Edge DevTools, showing many logs of different colors, coming from different components of the app.">
+            <a href="/tips/en/quickly-reference-react-console">Quickly reference React components in the console</a>
+            <a href="/tips/en/quickly-reference-react-console" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/quickly-reference-react-console.png" alt="The React DevTools components panel in DevTools, and Console below it, showing the result of $r">
             </a>
         </li><li>
-            <a href="/tips/en/evaluate-xpath">Evaluate XPath to find elements in the page</a>
-            <a href="/tips/en/evaluate-xpath" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/evaluate-xpath-1.png" alt="The Inspector panel in Firefox showing the search field with an XPath expression.">
+            <a href="/tips/en/console-table-group-assert">console.log() is great, but do you know console.table()? console.group()? console.assert()?</a>
+            <a href="/tips/en/console-table-group-assert" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/console-table-group-assert-1.jpg" alt="The Chrome DevTools Console tool showing a table that contains each object in a separate row, and each object property in its own column">
             </a>
         </li></ul>
 </div><div class="tip-footer">
-    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a>, <a href="https://kilianvalkhof.com">Kilian Valkhof</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2021-06-24T00:00:00.000Z">6/24/2021</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/persist-logs-across-pages.md">Edit this page</a></p>
+    <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
+    <p class="last-edit">Last edit: <time datetime="2025-02-14T00:00:00.000Z">2/14/2025</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/create-contextual-console-loggers.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 

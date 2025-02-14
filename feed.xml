@@ -5,11 +5,49 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2024-12-16T00:00:00.000Z</updated>
+  <updated>2025-02-14T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Create contextual console loggers</title>
+    <link href="https://devtoolstips.org/tips/en/create-contextual-console-loggers/"/>
+    <updated>2025-02-14T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/create-contextual-console-loggers/</id>
+    <content type="html">&lt;p&gt;Applications are often made up of multiple subsystems or components, each with its own set of log messages. When you&#39;re debugging such an application, it might be hard to find the logs you&#39;re looking for in the &lt;strong&gt;Console&lt;/strong&gt; tool, as the logs from all of the different parts of the app are mixed together.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;console.context()&lt;/code&gt; can help you with this. This console API is an experiment in Chromium-based browsers only, but is a good step in the right direction.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a specific logger instance for a part of your app:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;const myComponentLogger = console.context(&amp;quot;name-of-my-component&amp;quot;);&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then log messages as normal, using your new logger:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;myComponentLogger.log(&amp;quot;This is a log message from my component&amp;quot;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;myComponentLogger.warn(&amp;quot;This is a warning message from my component&amp;quot;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;For an even nicer experience, give your logger a color:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;myComponentLogger.log(&amp;quot;%cThis is a log message from my component&amp;quot;, &amp;quot;background-color:lemonchiffon;&amp;quot;);&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Here is what the &lt;strong&gt;Console&lt;/strong&gt; tool might look like, with the logs from all of the components of the app:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/create-contextual-console-loggers-1.png&quot; alt=&quot;Console tool in Edge DevTools, showing many logs of different colors, coming from different components of the app.&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When reviewing logs in the &lt;strong&gt;Console&lt;/strong&gt; tool, filter the messages by using the name of the context:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Filter&lt;/strong&gt; to focus the search field.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enter &lt;strong&gt;context:name-of-my-component&lt;/strong&gt; to see only the logs from your component.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is what the &lt;strong&gt;Console&lt;/strong&gt; tool would show, once the logs have been filtered by context, to show only the logs from one component:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://devtoolstips.org/tips/assets/img/create-contextual-console-loggers-2.png&quot; alt=&quot;Console tool in Edge DevTools, showing the logs of only one component. The filter &amp;quot;context:storage&amp;quot; was entered.&quot; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Find in files</title>
