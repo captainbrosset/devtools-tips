@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Override HTTP response headers</title>
+    <title>Override network responses with local files</title>
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/atom+xml" href="https://devtoolstips.org/feed.xml" />
     <meta property="og:title" content="DevTools Tips">
-    <meta property="og:url" content="https://devtoolstips.org/tips/en/override-headers/">
+    <meta property="og:url" content="https://devtoolstips.org/tips/en/override-responses-with-files/">
     
     <meta property="og:image" content="http://devtoolstips.org/assets/browsers/edge.svg">
-    <meta property="og:description" content="Override HTTP response headers">
+    <meta property="og:description" content="Override network responses with local files">
     
     <meta name="twitter:site" content="@_devtoolstips">
     <meta property="og:site_name" content="DevTools Tips">
@@ -99,9 +99,9 @@
           </a>
         </div>
       </div>
-      <div id="maincontent"style="view-transition-name:post-override-headers">
+      <div id="maincontent"style="view-transition-name:post-override-responses-with-files">
         <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-<h1 class="tip-title">Override HTTP response headers</h1>
+<h1 class="tip-title">Override network responses with local files</h1>
 <div class="tip-info">
     Categories:
     <ul class="tags"><li class="tag">
@@ -122,60 +122,108 @@
             <a href="/browser/chrome/" title="List all tips supported by chrome">
                 <img src="/assets/browsers/chrome.svg" alt=""> chrome
             </a>
+        </li><li class="browser">
+            <a href="/browser/firefox/" title="List all tips supported by firefox">
+                <img src="/assets/browsers/firefox.svg" alt=""> firefox
+            </a>
         </li></ul>
 </div>
 <div class="page-content tip-content" data-pagefind-body>
-    <p>With DevTools, you can override the response headers of a network request and test your website under different conditions.</p>
-<p>HTTP response headers are metadata sent by the server to the browser, along with a response such as an HTML page, or a JS, CSS, or image resource. These headers control how the browser handles the response, such as caching, content type, and various features or security settings.</p>
-<p>Overriding response headers from within DevTools means that you can test all of these aspects without needing to modify the server, which can be useful when you don't have access to the server, or to do quick tests.</p>
-<p>For example, the JS self-profiling API allows you to run a JavaScript profiler, programmatically, on your website, and requires the <code>Document-Policy: js-profiling</code> header to be set. If you want to test your JS self-profiling code locally, without adding the header to your server, override the response header in DevTools:</p>
+    <p>To test a quick fix locally, in DevTools, without editing the source file and deploying it to a server, override network responses with local files.</p>
+<h2 id="firefox" tabindex="-1">Firefox <a class="direct-link" href="#firefox">#</a></h2>
 <ol>
 <li>
-<p>Open Chrome or Edge DevTools, and go to the <strong>Network</strong> tool.</p>
+<p>Open the <strong>Network</strong> tool.</p>
+</li>
+<li>
+<p>Find the request which you want to override.</p>
+</li>
+<li>
+<p>Right-click the request and select <strong>Set Network Override</strong>.</p>
+</li>
+<li>
+<p>Choose a location on your computer to save the response.</p>
+<p>The current response to the request is saved to that location.</p>
+</li>
+<li>
+<p>Open the local file in a text editor, make the necessary changes, and save the file.</p>
 </li>
 <li>
 <p>Reload the page.</p>
-</li>
-<li>
-<p>Find the request for which you want to override the response headers. In the example above, you would look for the initial HTML request.</p>
-</li>
-<li>
-<p>Right-click on the request and select <strong>Override headers</strong>.</p>
-<p>The <strong>Headers</strong> tab appears in the side panel, with a list of existing response headers under the section <strong>Response Headers</strong>.</p>
-</li>
-<li>
-<p>To add a new header, click the <strong>+ Add header</strong> button.</p>
-<p>A new row appears in the list of headers, where you can enter the name and value of the header you want to add.</p>
-</li>
-<li>
-<p>Enter a header name, such as <code>Document-Policy</code>, and a value, such as <code>js-profiling</code>.</p>
-</li>
-<li>
-<p>To edit an existing header, click on the header value and enter a new value.</p>
-</li>
-<li>
-<p>Reload the page.</p>
-<p>The resource for which you overrode the headers should now be loaded with the new headers.</p>
+<p>DevTools now uses the local file, with your modifications, as the response instead of the original server response.</p>
 </li>
 </ol>
-<p><img src="/assets/img/override-headers.png" alt="Edge DevTools Network tool, the initial HTML request is selected, the Response Headers section is visible in the sidebar, showing the Add header button, and the new header."></p>
+<p>To remove the override, right-click the request again and select <strong>Remove Network Override</strong>.</p>
+<p><img src="/assets/img/override-responses-with-files-1.png" alt="The Network tool in Firefox DevTools. A request was right-clicked, the contextual menu is visible, and the Set Network Override menu item is highlighted."></p>
+<h2 id="chrome-and-edge" tabindex="-1">Chrome and Edge <a class="direct-link" href="#chrome-and-edge">#</a></h2>
+<ol>
+<li>
+<p>Open the <strong>Network</strong> tool.</p>
+</li>
+<li>
+<p>Find the request which you want to override.</p>
+</li>
+<li>
+<p>Right-click the request and select <strong>Override content</strong>.</p>
+</li>
+<li>
+<p>In the banner that appears at the top of DevTools, click <strong>Select folder</strong></p>
+</li>
+<li>
+<p>Choose a location on your computer to save the response, and click <strong>Allow</strong> to let DevTools access the folder.</p>
+<p>A new folder, matching the website's domain name, is created at that location, and the current response to the request is saved in that folder.</p>
+</li>
+<li>
+<p>Open the local file in a text editor, make the necessary changes, and save the file.</p>
+</li>
+<li>
+<p>Reload the page.</p>
+<p>DevTools now uses the local file, with your modifications, as the response instead of the original server response.</p>
+</li>
+</ol>
+<p>To remove the override:</p>
+<ol>
+<li>
+<p>Open the <strong>Sources</strong> tool.</p>
+</li>
+<li>
+<p>In the left pane, click <strong>Overrides</strong>.</p>
+</li>
+<li>
+<p>To temporarily disable the override, clear the <strong>Enable Local Overrides</strong> checkbox.</p>
+</li>
+<li>
+<p>To permanently remove the override, click <strong>Clear configuration</strong>.</p>
+</li>
+</ol>
+<p><img src="/assets/img/override-responses-with-files-2.png" alt="The Network tool in Chrome DevTools. A request was right-clicked, the contextual menu is visible, and the Override content menu item is highlighted."></p>
 
 </div><div class="see-also">
     <h2 id="see-also">See also</h2>
     <ul><li>
-            <a href="/tips/en/custom-headers-in-network-table">Add custom headers to the network table</a>
-            <a href="/tips/en/custom-headers-in-network-table" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/custom-headers-in-network-table.png" alt="Edge DevTools Network tool, showing a list of requests in the table, and the x-powered-by custom header as a column">
+            <a href="/tips/en/override-headers">Override HTTP response headers</a>
+            <a href="/tips/en/override-headers" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/override-headers.png" alt="Edge DevTools Network tool, the initial HTML request is selected, the Response Headers section is visible in the sidebar, showing the Add header button, and the new header.">
             </a>
         </li><li>
-            <a href="/tips/en/override-responses-with-files">Override network responses with local files</a>
-            <a href="/tips/en/override-responses-with-files" class="other-tip-image">
-                <img loading="lazy" src="/assets/img/override-responses-with-files-1.png" alt="The Network tool in Firefox DevTools. A request was right-clicked, the contextual menu is visible, and the Set Network Override menu item is highlighted.">
+            <a href="/tips/en/block-resources">Block resources to test your site without CSS or JavaScript</a>
+            <a href="/tips/en/block-resources" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/block-resources-1.png" alt="The Network panel in Edge showing the contextual menu with the &quot;block request url&quot; item.">
+            </a>
+        </li><li>
+            <a href="/tips/en/replay-xhr">Replay a XHR request</a>
+            <a href="/tips/en/replay-xhr" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/replay-xhr.png" alt="Chrome&#39;s Network tool, with the Replay XHR contextual menu item">
+            </a>
+        </li><li>
+            <a href="/tips/en/see-request-path-instead-of-name">See network request paths instead of names in the Network tool</a>
+            <a href="/tips/en/see-request-path-instead-of-name" class="other-tip-image">
+                <img loading="lazy" src="/assets/img/see-request-path-instead-of-name.png" alt="The Network tool in Edge, showing the contextual menu that&#39;s used to customize the network list columns">
             </a>
         </li></ul>
 </div><div class="tip-footer">
     <div class="authors">Authors: <span><a href="https://patrickbrosset.com">Patrick Brosset</a></span></div>
-    <p class="last-edit">Last edit: <time datetime="2024-07-18T00:00:00.000Z">7/18/2024</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/override-headers.md">Edit this page</a></p>
+    <p class="last-edit">Last edit: <time datetime="2025-02-27T00:00:00.000Z">2/27/2025</time> - <a href="https://github.com/captainbrosset/devtools-tips/edit/main/./src/tips/en/override-responses-with-files.md">Edit this page</a></p>
 </div>
 <script async src="/assets/dialog-lightbox.js"></script>
 
