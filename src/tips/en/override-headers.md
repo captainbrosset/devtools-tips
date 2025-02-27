@@ -3,7 +3,7 @@ date: 2024-07-18
 authors: Patrick Brosset
 title: Override HTTP response headers
 tags: ["tip", "network", "testing", "browser:edge", "browser:chrome"]
-see-also: ["custom-headers-in-network-table.md"]
+see-also: ["override-responses-with-files.md", "custom-headers-in-network-table.md"]
 ---
 With DevTools, you can override the response headers of a network request and test your website under different conditions.
 
