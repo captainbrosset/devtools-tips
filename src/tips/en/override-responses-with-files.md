@@ -37,7 +37,7 @@ To remove the override, right-click the request again and select **Remove Networ
 
 1. Right-click the request and select **Override content**.
 
-1. In the banner that appears at the top of DevTools, click **Selecto folder**
+1. In the banner that appears at the top of DevTools, click **Select folder**
 
 1. Choose a location on your computer to save the response, and click **Allow** to let DevTools access the folder.
 
