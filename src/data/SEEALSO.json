@@ -113,6 +113,14 @@
       "link": "/tips/en/find-broken-links"
     },
     {
+      "title": "Override network responses with local files",
+      "image": {
+        "alt": "The Network tool in Firefox DevTools. A request was right-clicked, the contextual menu is visible, and the Set Network Override menu item is highlighted.",
+        "src": "../../assets/img/override-responses-with-files-1.png"
+      },
+      "link": "/tips/en/override-responses-with-files"
+    },
+    {
       "title": "Replay a XHR request",
       "image": {
         "alt": "Chrome's Network tool, with the Replay XHR contextual menu item",
@@ -3500,6 +3508,48 @@
         "src": "../../assets/img/custom-headers-in-network-table.png"
       },
       "link": "/tips/en/custom-headers-in-network-table"
+    },
+    {
+      "title": "Override network responses with local files",
+      "image": {
+        "alt": "The Network tool in Firefox DevTools. A request was right-clicked, the contextual menu is visible, and the Set Network Override menu item is highlighted.",
+        "src": "../../assets/img/override-responses-with-files-1.png"
+      },
+      "link": "/tips/en/override-responses-with-files"
+    }
+  ],
+  "override-responses-with-files.md": [
+    {
+      "title": "Override HTTP response headers",
+      "image": {
+        "alt": "Edge DevTools Network tool, the initial HTML request is selected, the Response Headers section is visible in the sidebar, showing the Add header button, and the new header.",
+        "src": "../../assets/img/override-headers.png"
+      },
+      "link": "/tips/en/override-headers"
+    },
+    {
+      "title": "Block resources to test your site without CSS or JavaScript",
+      "image": {
+        "alt": "The Network panel in Edge showing the contextual menu with the \"block request url\" item.",
+        "src": "../../assets/img/block-resources-1.png"
+      },
+      "link": "/tips/en/block-resources"
+    },
+    {
+      "title": "Replay a XHR request",
+      "image": {
+        "alt": "Chrome's Network tool, with the Replay XHR contextual menu item",
+        "src": "../../assets/img/replay-xhr.png"
+      },
+      "link": "/tips/en/replay-xhr"
+    },
+    {
+      "title": "See network request paths instead of names in the Network tool",
+      "image": {
+        "alt": "The Network tool in Edge, showing the contextual menu that's used to customize the network list columns",
+        "src": "../../assets/img/see-request-path-instead-of-name.png"
+      },
+      "link": "/tips/en/see-request-path-instead-of-name"
     }
   ],
   "override-source-files.md": [
@@ -3920,6 +3970,14 @@
         "src": "../../assets/img/block-resources-1.png"
       },
       "link": "/tips/en/block-resources"
+    },
+    {
+      "title": "Override network responses with local files",
+      "image": {
+        "alt": "The Network tool in Firefox DevTools. A request was right-clicked, the contextual menu is visible, and the Set Network Override menu item is highlighted.",
+        "src": "../../assets/img/override-responses-with-files-1.png"
+      },
+      "link": "/tips/en/override-responses-with-files"
     },
     {
       "title": "See network request paths instead of names in the Network tool",
