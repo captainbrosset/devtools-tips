@@ -1,5 +1,3 @@
-self.importScripts('/assets/localforage-1.10.0.min.js');
-
 // UPDATED: 02/03/2026
 
 const VERSION = 'v13';
@@ -13,8 +11,7 @@ const INITIAL_CACHED_RESOURCES = [
   '/assets/dialog-lightbox.js',
   '/pagefind/pagefind-ui.js',
   '/assets/logo-small.png',
-  'https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css',
-  '/assets/localforage-1.10.0.min.js'
+  'https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css'
 ];
 
 // Cached resources that match the following strings should not be periodically updated.
@@ -22,8 +19,7 @@ const INITIAL_CACHED_RESOURCES = [
 // Everything else, we try to update on a regular basis, to make sure lists of tips get updated.
 const DONT_UPDATE_RESOURCES = [
   '/offline/',
-  'prismjs',
-  'localforage'
+  'prismjs'
 ];
 
 // Use the activate event to delete old caches and avoid running out of space.
