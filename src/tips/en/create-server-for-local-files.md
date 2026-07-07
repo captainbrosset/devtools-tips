@@ -26,3 +26,5 @@ In Firefox, you can use **Local Mode** to map a domain of your choice to local f
 1. In the **Custom domain** text field, either use the default `firefox.localhost` value, or enter another custom domain of your choice.
 
 Now, whenever you have DevTools open and visit `https://firefox.localhost` (or your own custom domain), Firefox serves the file from the folder you selected.
+
+![Part of the Firefox DevTools Settings panel, showing the Local Mode settings: the custom domain field, with the value firefox.localhost, and the local folder setting, pointing to a dev folder on the device. The button Add a new local mapping is highlighted. There are also two other buttons: Disable and Remove local mapping.](../../assets/img/create-server-for-local-files.png)
