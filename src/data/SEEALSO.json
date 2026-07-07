@@ -675,14 +675,6 @@
         "src": "../../assets/img/zoom-devtools-content.gif"
       },
       "link": "/tips/en/zoom-devtools-content"
-    },
-    {
-      "title": "Install or create extensions to customize DevTools",
-      "image": {
-        "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
-        "src": "../../assets/img/extend-devtools.png"
-      },
-      "link": "/tips/en/extend-devtools"
     }
   ],
   "create-your-own-devtools-theme.md": [
