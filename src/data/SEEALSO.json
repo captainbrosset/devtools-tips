@@ -651,6 +651,40 @@
       "link": "/tips/en/console-table-group-assert"
     }
   ],
+  "create-server-for-local-files.md": [
+    {
+      "title": "Override HTTP response headers",
+      "image": {
+        "alt": "Edge DevTools Network tool, the initial HTML request is selected, the Response Headers section is visible in the sidebar, showing the Add header button, and the new header.",
+        "src": "../../assets/img/override-headers.png"
+      },
+      "link": "/tips/en/override-headers"
+    },
+    {
+      "title": "Start your HTML and CSS prototypes in the browser directly",
+      "image": {
+        "alt": "Edge , with a tab opened on the HTML data-url, and DevTools opened showing the Elements and Sources panels with local changes made.",
+        "src": "../../assets/img/prototype-in-the-browser.png"
+      },
+      "link": "/tips/en/prototype-in-the-browser"
+    },
+    {
+      "title": "Zoom the DevTools UI to your liking",
+      "image": {
+        "alt": "Animation showing the UI of Chrome DevTools being zoomed in and out.",
+        "src": "../../assets/img/zoom-devtools-content.gif"
+      },
+      "link": "/tips/en/zoom-devtools-content"
+    },
+    {
+      "title": "Install or create extensions to customize DevTools",
+      "image": {
+        "alt": "Microsoft Edge, with DevTools opened, showing a custom panel.",
+        "src": "../../assets/img/extend-devtools.png"
+      },
+      "link": "/tips/en/extend-devtools"
+    }
+  ],
   "create-your-own-devtools-theme.md": [
     {
       "title": "Change the color theme of DevTools",
