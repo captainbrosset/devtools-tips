@@ -5,11 +5,42 @@
   <link href="https://devtoolstips.org/feed.xml" rel="self"/>
   <link href="https://devtoolstips.org/"/>
   <id>https://devtoolstips.org/</id>
-  <updated>2025-02-27T00:00:00.000Z</updated>
+  <updated>2026-07-07T00:00:00.000Z</updated>
   <author>
     <name>Patrick Brosset</name>
     <email>patrickbrosset@gmail.com</email>
   </author>
+  
+  <entry>
+    <title>Create a web server to test local files</title>
+    <link href="https://devtoolstips.org/tips/en/create-server-for-local-files/"/>
+    <updated>2026-07-07T00:00:00.000Z</updated>
+    <id>https://devtoolstips.org/tips/en/create-server-for-local-files/</id>
+    <content type="html">&lt;p&gt;Use Firefox&#39;s &lt;strong&gt;Local Mode&lt;/strong&gt; to test local files without having to set up a web server.&lt;/p&gt;
+&lt;p&gt;Certain web APIs require to use a web server to work properly. For example, &lt;code&gt;navigator.clipboard&lt;/code&gt; requires a secure context (HTTPS or localhost). Many web projects have a local dev server built-in which, once started, lets you access your site locally via &lt;code&gt;http://localhost:8080&lt;/code&gt; or similar. However, sometimes you just want to test a simple HTML file without having to set up a full project or starting a local web server.&lt;/p&gt;
+&lt;p&gt;In Firefox, you can use &lt;strong&gt;Local Mode&lt;/strong&gt; to map a domain of your choice to local files:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open DevTools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Customize Developer Tools and Get Help&lt;/strong&gt; (&lt;strong&gt;...&lt;/strong&gt;) &amp;gt; &lt;strong&gt;Settings&lt;/strong&gt; in the top right corner of DevTools. Or, press &lt;kbd&gt;F1&lt;/kbd&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Under the &lt;strong&gt;Local Mode&lt;/strong&gt; section, click &lt;strong&gt;Add new local mapping&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The file picker opens.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select the folder which you want to serve locally.&lt;/p&gt;
+&lt;p&gt;A new mapping entry appears in the list.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the &lt;strong&gt;Custom domain&lt;/strong&gt; text field, either use the default &lt;code&gt;firefox.localhost&lt;/code&gt; value, or enter another custom domain of your choice.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, whenever you have DevTools open and visit &lt;code&gt;https://firefox.localhost&lt;/code&gt; (or your own custom domain), Firefox serves the file from the folder you selected.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Override network responses with local files</title>
